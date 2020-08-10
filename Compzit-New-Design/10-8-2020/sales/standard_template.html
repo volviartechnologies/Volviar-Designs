@@ -101,7 +101,7 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
-<!--------css_Included_closed------->
+<!--------css_Included_closed------>
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
 
@@ -111,12 +111,15 @@ function closeNav5() {
 <body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
 
  <div class="mySave1" id="mySave">
-  <div class="save_sec">
+  <div class="save_sec" style="padding-top: 10px;">
     <button type="submit" class="btn sub1">Update</button>
-      <button type="submit" class="btn sub2">Return Without Approval</button>
-      <button type="submit" class="btn sub1">Save & Approval</button>
-      <button type="submit" class="btn sub3">Preview PDF</button>
-      <button type="submit" class="btn sub4">Close</button>
+    <button type="submit" class="btn sub3">Confirm</button>
+    <button type="submit" class="btn sub1">Reopen</button>
+    <button type="submit" class="btn sub3">Delivered</button>
+    <button type="submit" class="btn sub2" title="Return Without Approval">Return</button>
+    <button type="submit" class="btn sub1" title="Save & Approval">Approve</button>
+    <button type="submit" class="btn sub3">Preview PDF</button>
+    <button type="submit" class="btn sub4">Close</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -479,7 +482,7 @@ function closeNav5() {
     <button class="btn act_btn bn4 bt_e bt_fx_crqt" title="Customer Requirements" data-toggle="popover" data-placement="right" data-html="true" data-content="<label class='form1 mar_bo'>
         
         
-      </label><textarea cols='64' rows='18' style='width:100%;outline:none!important;border:none;' placeholder='Regards,
+      </label><textarea cols='64' rows='18' style='width:100%;outline:none!important;border:none;background-color:#fff;' disabled='' placeholder='Regards,
 
 www.albalagh.com
 
@@ -510,20 +513,21 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
             <div class="top_br_1 pa_h1">
               <div class="col-md-5 tx_100 hcm_1_2 ref_box_head gray_ul">
                 <ul>
-                  <li><span class="fg2 li_100">Owner Name:</span> <span class="fg6_66 li_100_1"> Arabian Suppliers</span></li>
-                  <li><span class="fg2 li_100">Division:</span> <span class="fg6_66 li_100_1"> IT Solutions</span></li>
+                  <li><span class="fg6_22 li_100">Customer Name:</span> <span class="fg6_78 li_100_1"> Arabian Suppliers</span></li>
+                  <li><span class="fg6_22 li_100">Division:</span> <span class="fg6_78 li_100_1"> IT Solutions</span></li>
                 </ul>
               </div>
-              <div class="col-md-5 tx_100 hcm_1_2 ref_box_head">
+              <div class="col-md-4 tx_100 hcm_1_2 ref_box_head">
                 <ul>
-                  <li><span class="fg2 li_100">Title:</span> <span class="fg6_66 li_100_1"> Test Enquiry</span></li>
-                  <li><span class="fg2 li_100">Status:</span> <span class="fg6_66 li_100_1"> Confirmed</span></li>
+                  <li><span class="fg6_10 li_100">Title:</span> <span class="fg6_90 li_100_1"> Test Enquiry</span></li>
+                  <li><span class="fg6_10 li_100">Status:</span> <span class="fg6_90 li_100_1"> Confirmed</span></li>
                 </ul>
               </div>
 
-              <div class="col-md-2 tx_100 hcm_1_2 ref_box_head ">
+              <div class="col-md-3 tx_100 hcm_1_2 ref_box_head ">
                 <ul>
-                  <li><span class="fg2 li_100">Date:</span> <span class="fg6_66 li_100_1"> 23/07/2020 </span></li>
+                  <li><span class="fg6_14 fg2 li_100">Date:</span> <span class="fg6_86 li_100_1"> 23/07/2020 </span></li>
+                  <li><span class="fg6_14 i_100">Ref#:</span> <span class="fg6_86 li_100_1"> 355/QT/OILGAS010027/609/2020/8</span></li>
                 </ul>
               </div>
             </div>
@@ -541,7 +545,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 
    <p class="plc1 pl_rg">PRODUCT / SERVICE DETAILS<button class="btn tab_but1 butn5 cpy_hi" data-toggle="modal" data-target="#myModal_3" title="Copy From Previous"><i class="fa fa-files-o"></i></button></p>
 
-  <div class="spl_hcm wid_100_1 hei_102" style="margin-bottom: 10px;">
+  <div class="spl_hcm wid_100_1 hei_102 bg_ne_1" style="margin-bottom: 10px;">
     <div class="fg2">
         Quotation For:<input type="text" class="form-control fg2_inp1 tr_l" id="myInput_2" placeholder="Quotation For" title="Type in a name">
     </div>
@@ -554,8 +558,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
       <table class="table table-bordered tbl_1024">
         <thead class="thead1">
           <tr>
-            <th class="th_b2 tr_l">PRODUCT Name</th>
-            <th class="th_b7 tr_c">UNIT</th>
+            <th class="th_b2 tr_l">PRODUCT / Service <span class="opp_ico_img_ptp1" data-toggle="tooltip" title="You can use F9 key to toggle between direct product entry and existing product selection."  tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span></th>
+            <th class="th_b6 tr_c">UNIT</th>
             <th class="th_b1 tr_c">QTY</th>
             <th class="th_b7 tr_r">COST PRICE</th>
             <th class="th_b7">Margin%</th>
@@ -588,7 +592,12 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 </select>
               </td>
               <td>
-                <input type="text" class="form-control fg2_inp2 tr_c" placeholder="Unit" disabled="">
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" disabled="">
+                  <option>Unit 1</option>
+                  <option>Unit 2</option>
+                  <option>Unit 3</option>
+                  <option>Unit 4</option>
+                </select>
               </td>
               <td>
                 <input type="text" class="form-control fg2_inp2 tr_c" placeholder="0" disabled="">
@@ -649,7 +658,12 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 </select>
               </td>
               <td>
-                <input type="text" class="form-control fg2_inp2 tr_c" placeholder="Unit">
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" disabled="">
+                  <option>Unit 1</option>
+                  <option>Unit 2</option>
+                  <option>Unit 3</option>
+                  <option>Unit 4</option>
+                </select>
               </td>
               <td>
                 <input type="text" class="form-control fg2_inp2 tr_c" placeholder="0">
@@ -898,9 +912,10 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
         </span>
         <p class="pz_s">Send Quotation Automatically While Approval</p>
       </label>
-        <span class="ble ft_sz1" title="Please Review E-Mail Settings of Employee, Division And Customer">
+      <span class="opp_ico_img_ptp1 btm_info" data-toggle="tooltip" title="Please Review E-Mail Settings of Employee, Division And Customer" tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span>
+        <!-- <span class="ble ft_sz1" title="Please Review E-Mail Settings of Employee, Division And Customer">
           <i class="fa fa-file-text-o"></i>
-        </span>
+        </span> -->
     </div>
     <div class="fg7 sa_1">
       <div class="t1_b blink">
@@ -918,12 +933,14 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
         <div class="sub_cont pull-right">
     <div class="save_sec">
       <button type="submit" class="btn sub1">Update</button>
-      <button type="submit" class="btn sub2">Return Without Approval</button>
-      <button type="submit" class="btn sub1">Save & Approval</button>
+      <button type="submit" class="btn sub3">Confirm</button>
+      <button type="submit" class="btn sub1">Reopen</button>
+      <button type="submit" class="btn sub3">Delivered</button>
+      <button type="submit" class="btn sub2" title="Return Without Approval">Return</button>
+      <button type="submit" class="btn sub1" title="Save & Approval">Approve</button>
       <button type="submit" class="btn sub3">Preview PDF</button>
       <button type="submit" class="btn sub4">Close</button>
-      <button type="submit" class="btn sub2" data-toggle="modal" data-target="#exampleModal2" title="Reopen">Reopen</button>
-    </div>
+      </div>
     <div class="edit_sec">
       <button type="submit" class="btn sub1">Update</button>
       <button type="submit" class="btn sub3">Update & Close</button>
@@ -951,6 +968,32 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 </a>
 
 <a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
+
+<a href="#" type="button" onclick="topFunction()" id="myBtn" class="dropdown dd_spl1 opp_btz tp_ovr" title="Change Quotation Status">
+<i class="fa fa-file-text-o"></i>
+</a>
+<div class="stat_sbox">
+  <ul>
+    <a href="#" data-toggle="modal" data-target="#" title="Under Negotiation">
+      <li class="">
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i> Negotiation
+      </li>
+    </a>
+    <a href="#" data-toggle="modal" data-target="#" title="Project On Hold">
+       <li>
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i> On Hold
+  </li>
+    </a>
+    <a href="#" data-toggle="modal" data-target="#" title="Project Cancelled">
+      <li>
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i>Cancelled
+      </li>
+    </a>
+</ul>
+</div>
+
+
 
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Sales Force Automation</p>
@@ -1672,9 +1715,52 @@ $(".closs").click(function(){
 <script>
 $('.wrapper').on('click', '.remove', function() {
   $('.remove').closest('.wrapper').find('.spl_hcm').not(':first').last().remove();
+  $(".clone_sec  .bg_ne_1").removeClass("bg_ne_2");
 });
 $('.wrapper').on('click', '.clone', function() {
   $('.clone').closest('.wrapper').find('.spl_hcm').first().clone().appendTo('.clone_sec');
+  $(".clone_sec .bg_ne_1").addClass("bg_ne_2");
+});
+</script>
+
+
+<script type="text/javascript">
+  $('.bn11_chk').each(function() {
+  $(this).popover({    
+    content : $(this).attr("popover-content"),
+    title : $(this).attr("popover-title")         
+  })     
+  $(this).tooltip({    
+    placement : 'bottom',  
+    title : $(this).attr("tooltip-title")         
+  })     
+})
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".dislike").click(function(){
+    $(".stat_sbox").toggle();
+    $(".stat_sbox1").hide();
+  });
+  $(".opp_btz").click(function(){
+    $(".stat_sbox").toggle();
+    $(".stat_sbox1").hide();
+  });
+  $(".save_b").hover(function(){
+    $(".stat_sbox, .stat_sbox1").hide();
+  });
+  $(".allo_btn, .btn, .cont_contr").click(function(){
+    $(".stat_sbox, .stat_sbox1").hide();
+  });
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.stat_sbox').hide();
+   $('.stat_sbox1').hide();
+  } 
+});
 });
 </script>
 
