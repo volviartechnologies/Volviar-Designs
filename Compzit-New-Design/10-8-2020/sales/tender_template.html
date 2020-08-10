@@ -112,11 +112,15 @@ function closeNav5() {
 <body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
 
  <div class="mySave1" id="mySave">
-  <div class="save_sec">
-    <button type="submit" class="btn sub1 bt_b">Save</button>
-    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
-    <button type="submit" class="btn sub4 bt_b">Cancel</button>
-    <button type="submit" class="btn sub2 bt_b">Clear</button>
+  <div class="save_sec" style="padding-top: 10px;">
+    <button type="submit" class="btn sub1">Update</button>
+    <button type="submit" class="btn sub3">Confirm</button>
+    <button type="submit" class="btn sub1">Reopen</button>
+    <button type="submit" class="btn sub3">Delivered</button>
+    <button type="submit" class="btn sub2" title="Return Without Approval">Return</button>
+    <button type="submit" class="btn sub1" title="Save & Approval">Approve</button>
+    <button type="submit" class="btn sub3">Preview PDF</button>
+    <button type="submit" class="btn sub4">Close</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -585,12 +589,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 </select>
               </td>
               <td>
-                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" disabled="">
-                  <option>Unit 1</option>
-                  <option>Unit 2</option>
-                  <option>Unit 3</option>
-                  <option>Unit 4</option>
-                </select>
+                <input type="text" class="form-control fg2_inp2 tr_c" placeholder="Unit" disabled="">
               </td>
               <td>
                 <input type="text" class="form-control fg2_inp2 tr_c" placeholder="0" disabled="">
@@ -651,12 +650,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 </select>
               </td>
               <td>
-                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" disabled="">
-                  <option>Unit 1</option>
-                  <option>Unit 2</option>
-                  <option>Unit 3</option>
-                  <option>Unit 4</option>
-                </select>
+                <input type="text" class="form-control fg2_inp2 tr_c" placeholder="Unit">
               </td>
               <td>
                 <input type="text" class="form-control fg2_inp2 tr_c" placeholder="0">
@@ -956,6 +950,30 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 </a>
 
 <a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
+
+<a href="#" type="button" onclick="topFunction()" id="myBtn" class="dropdown dd_spl1 opp_btz tp_ovr" title="Change Quotation Status">
+<i class="fa fa-file-text-o"></i>
+</a>
+<div class="stat_sbox">
+  <ul>
+    <a href="#" data-toggle="modal" data-target="#" title="Under Negotiation">
+      <li class="">
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i> Negotiation
+      </li>
+    </a>
+    <a href="#" data-toggle="modal" data-target="#" title="Project On Hold">
+       <li>
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i> On Hold
+  </li>
+    </a>
+    <a href="#" data-toggle="modal" data-target="#" title="Project Cancelled">
+      <li>
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i>Cancelled
+      </li>
+    </a>
+</ul>
+</div>
 
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Sales Force Automation</p>
@@ -1611,6 +1629,12 @@ $(".icon_3").click(function(){
 </script>
 
 <script type="text/javascript">
+$(".icon_3").click(function(){
+  $(".icon_2").toggle();
+});
+</script>
+
+<script type="text/javascript">
 $(".closs").click(function(){
   $(".closs1").toggle();
 });$(".closs").click(function(){
@@ -1622,13 +1646,54 @@ $(".closs").click(function(){
 <script>
 $('.wrapper').on('click', '.remove', function() {
   $('.remove').closest('.wrapper').find('.spl_hcm').not(':first').last().remove();
+  $(".clone_sec  .bg_ne_1").removeClass("bg_ne_2");
 });
 $('.wrapper').on('click', '.clone', function() {
   $('.clone').closest('.wrapper').find('.spl_hcm').first().clone().appendTo('.clone_sec');
+  $(".clone_sec .bg_ne_1").addClass("bg_ne_2");
 });
 </script>
-</body>
-</html>
+
+
+<script type="text/javascript">
+  $('.bn11_chk').each(function() {
+  $(this).popover({    
+    content : $(this).attr("popover-content"),
+    title : $(this).attr("popover-title")         
+  })     
+  $(this).tooltip({    
+    placement : 'bottom',  
+    title : $(this).attr("tooltip-title")         
+  })     
+})
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".dislike").click(function(){
+    $(".stat_sbox").toggle();
+    $(".stat_sbox1").hide();
+  });
+  $(".opp_btz").click(function(){
+    $(".stat_sbox").toggle();
+    $(".stat_sbox1").hide();
+  });
+  $(".save_b").hover(function(){
+    $(".stat_sbox, .stat_sbox1").hide();
+  });
+  $(".allo_btn, .btn, .cont_contr").click(function(){
+    $(".stat_sbox, .stat_sbox1").hide();
+  });
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.stat_sbox').hide();
+   $('.stat_sbox1').hide();
+  } 
+});
+});
+</script>
 
 </body>
 </html>

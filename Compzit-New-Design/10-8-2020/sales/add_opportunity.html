@@ -489,6 +489,13 @@ function closeNav5() {
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
         </div>
+        <div class="form-group fg2 sa_o_fg1">
+          <label for="pwd" class="fg2_la1">Rating & Scoring:<span class="spn1">*</span></label>
+          <select id="e1" class="form-control">
+            <option value="AL" data-badge="3">Alabama</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </div>
         <div class="form-group fg2 sa_fg4 sa_480" style=" padding-bottom: 2px;">
           <label for="pwd" class="fg2_la1">Rating & Scoring:<span class="spn1">*</span></label>
                   
@@ -1867,6 +1874,16 @@ angular
     title : $(this).attr("tooltip-title")         
   })     
 })
+</script>
+
+<script type="text/javascript">
+  $("#e1").select2
+  theme: "bootstrap"
+  templateResult: (data) ->
+    badge = $(data.element).data('badge')
+    if badge
+      return $(document.createTextNode(data.text)).add($('<span class="badge pull-right">').text(badge))
+    data.text
 </script>
 
 </body>

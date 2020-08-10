@@ -3082,3 +3082,15 @@ body{position: fixed;left: 0;right: 0;}
 .tp_ovr{top:260px!important;}
 .bg_ne_1{background-color: #f8fbfd;}
 .clone_sec .bg_ne_2{background-color:#fbfbfb;}
+
+.drop-cap::first-letter {
+  -webkit-initial-letter: 4;
+          initial-letter: 4;
+  color: orange;
+  font-weight: bold;
+  margin-right: .75em;
+}
+#select_graphtype{font-size: 13px;font-family:'Open Sans', sans-serif; }
+.ck27 {width: 32%;}
+.sel_1_opt_7 {width: 54%!important;float: right;padding-top: 2px;font-size: 11px;height: 25px!important;padding-bottom: 2px;}
+.lb_2{height: 16px;}

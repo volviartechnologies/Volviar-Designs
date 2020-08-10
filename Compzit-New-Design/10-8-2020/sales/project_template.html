@@ -112,11 +112,15 @@ function closeNav5() {
 <body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
 
  <div class="mySave1" id="mySave">
-  <div class="save_sec">
-    <button type="submit" class="btn sub1 bt_b">Save</button>
-    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
-    <button type="submit" class="btn sub4 bt_b">Cancel</button>
-    <button type="submit" class="btn sub2 bt_b">Clear</button>
+  <div class="save_sec" style="padding-top: 10px;">
+    <button type="submit" class="btn sub1">Update</button>
+    <button type="submit" class="btn sub3">Confirm</button>
+    <button type="submit" class="btn sub1">Reopen</button>
+    <button type="submit" class="btn sub3">Delivered</button>
+    <button type="submit" class="btn sub2" title="Return Without Approval">Return</button>
+    <button type="submit" class="btn sub1" title="Save & Approval">Approve</button>
+    <button type="submit" class="btn sub3">Preview PDF</button>
+    <button type="submit" class="btn sub4">Close</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -536,49 +540,47 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 <div class="clearfix"></div>
 <div class="devider"></div>
 
-
-  <div class="fg2 sa_1">
-    <label for="email" class="fg2_la1 pad_l">Choose CSV File for Importing Data: <span class="spn1">&nbsp;</span></label>
-    <input type="file" id="file-upload" multiple required />
-    <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-    <div id="file-upload-filename" class="file_n"></div>
-    <!-- <input type="file" class="custom-file-input" id="customFile" name="filename">
-    <label class="custom-file-label" for="customFile"></label> -->
-  </div>
-
-  <div class="form-group fg2 sa_1">
-    <label class="form1 mar_bo">
-      <span class="button-checkbox">
-        <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-        <input type="checkbox" class="hidden" />
-      </span>
-      <p class="pz_s">Skip all Row without Item Name</p>
-    </label><br>
-  </div>
-
-  <div class="form-group fg2 sa_1">
-    <label class="form1 mar_bo">
-      <span class="button-checkbox">
-        <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-        <input type="checkbox" class="hidden" />
-      </span>
-      <p class="pz_s">My data has Headers</p>
-    </label><br>
-  </div>
-  <div class="fg2">
-    <!-- <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1">&nbsp;</span></label> -->
-    <button class="btn tab_but1 butn5"><i class="fa fa-files-o"></i> Import from CSV file</button>
-  </div>
-
-  <div class="clearfix"></div>
-  <div class="devider"></div>
-
   
 
    <p class="plc1 pl_rg">PRODUCT / SERVICE DETAILS<button class="btn tab_but1 butn5 cpy_hi" data-toggle="modal" data-target="#myModal_3" title="Copy From Previous"><i class="fa fa-files-o"></i></button></p>
 
-  <div class="spl_hcm wid_100_1 hei_102" style="margin-bottom: 10px;">
-    <div class="fg2">
+  <div class="spl_hcm wid_100_1 hei_102 bg_ne_1" style="margin-bottom: 10px;">
+
+    <div class="fg6">
+      <div class="fg4 sa_1">
+        <label for="email" class="fg2_la1 pad_l">CSV: <span class="spn1">&nbsp;</span></label>
+        <input type="file" id="file-upload" multiple required />
+        <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+        <div id="file-upload-filename" class="file_n"></div>
+        <!-- <input type="file" class="custom-file-input" id="customFile" name="filename">
+        <label class="custom-file-label" for="customFile"></label> -->
+      </div>
+
+      <div class="form-group fg4 sa_1">
+        <label class="form1 mar_bo">
+          <span class="button-checkbox">
+            <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+            <input type="checkbox" class="hidden" />
+          </span>
+          <p class="pz_s" data-toggle="tooltip" title="Skip all records without product / service name">Skip Records</p>
+        </label><br>
+        <label class="form1 mar_bo">
+          <span class="button-checkbox">
+            <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+            <input type="checkbox" class="hidden" />
+          </span>
+          <p class="pz_s">My Data Has Headers</p>
+        </label><br>
+      </div>
+      <div class="fg5">
+        <!-- <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1">&nbsp;</span></label> -->
+        <button class="btn tab_but1 butn5"><i class="fa fa-files-o"></i> Import from CSV file</button>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+  <div class="devider"></div>
+
+   <div class="fg2">
         Quotation For:<input type="text" class="form-control fg2_inp1 tr_l" id="myInput_2" placeholder="Quotation For" title="Type in a name">
     </div>
     <div class="fg2 flt_r tr_r">
@@ -590,8 +592,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
       <table class="table table-bordered tbl_1024">
         <thead class="thead1">
           <tr>
-            <th class="th_b2 tr_l">PRODUCT Name</th>
-            <th class="th_b7 tr_c">UNIT</th>
+            <th class="th_b2 tr_l">PRODUCT / Service <span class="opp_ico_img_ptp1" data-toggle="tooltip" title="You can use F9 key to toggle between direct product entry and existing product selection."  tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span></th>
+            <th class="th_b6 tr_c">UNIT</th>
             <th class="th_b1 tr_c">QTY</th>
             <th class="th_b7 tr_r">COST PRICE</th>
             <th class="th_b7">Margin%</th>
@@ -802,8 +804,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     </div>
   </div>
 
-    <div class="clone_sec"></div>
-
+  <div class="clone_sec"></div>
    <div class="clearfix"></div>
    <div class="devider"></div>
 
@@ -989,6 +990,30 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 <i class="fa fa-arrow-circle-left"></i>
 </a>
 <a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
+<a href="#" type="button" onclick="topFunction()" id="myBtn" class="dropdown dd_spl1 opp_btz tp_ovr" title="Change Quotation Status">
+<i class="fa fa-file-text-o"></i>
+</a>
+<div class="stat_sbox">
+  <ul>
+    <a href="#" data-toggle="modal" data-target="#" title="Under Negotiation">
+      <li class="">
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i> Negotiation
+      </li>
+    </a>
+    <a href="#" data-toggle="modal" data-target="#" title="Project On Hold">
+       <li>
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i> On Hold
+  </li>
+    </a>
+    <a href="#" data-toggle="modal" data-target="#" title="Project Cancelled">
+      <li>
+        <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i>Cancelled
+      </li>
+    </a>
+</ul>
+</div>
+
 
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Sales Force Automation</p>
@@ -1644,6 +1669,12 @@ $(".icon_3").click(function(){
 </script>
 
 <script type="text/javascript">
+$(".icon_3").click(function(){
+  $(".icon_2").toggle();
+});
+</script>
+
+<script type="text/javascript">
 $(".closs").click(function(){
   $(".closs1").toggle();
 });$(".closs").click(function(){
@@ -1655,10 +1686,56 @@ $(".closs").click(function(){
 <script>
 $('.wrapper').on('click', '.remove', function() {
   $('.remove').closest('.wrapper').find('.spl_hcm').not(':first').last().remove();
+  $(".clone_sec  .bg_ne_1").removeClass("bg_ne_2");
 });
 $('.wrapper').on('click', '.clone', function() {
   $('.clone').closest('.wrapper').find('.spl_hcm').first().clone().appendTo('.clone_sec');
+  $(".clone_sec .bg_ne_1").addClass("bg_ne_2");
 });
 </script>
+
+
+<script type="text/javascript">
+  $('.bn11_chk').each(function() {
+  $(this).popover({    
+    content : $(this).attr("popover-content"),
+    title : $(this).attr("popover-title")         
+  })     
+  $(this).tooltip({    
+    placement : 'bottom',  
+    title : $(this).attr("tooltip-title")         
+  })
+  $('label').click(function() {  
+    $("tooltip-title").hide();   
+})
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".dislike").click(function(){
+    $(".stat_sbox").toggle();
+    $(".stat_sbox1").hide();
+  });
+  $(".opp_btz").click(function(){
+    $(".stat_sbox").toggle();
+    $(".stat_sbox1").hide();
+  });
+  $(".save_b").hover(function(){
+    $(".stat_sbox, .stat_sbox1").hide();
+  });
+  $(".allo_btn, .btn, .cont_contr").click(function(){
+    $(".stat_sbox, .stat_sbox1").hide();
+  });
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.stat_sbox').hide();
+   $('.stat_sbox1').hide();
+  } 
+});
+});
+</script>
+
 </body>
 </html>
