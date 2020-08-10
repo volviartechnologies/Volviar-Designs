@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html>
+<title>Compzit Admin Dashboard</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<head>
+<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "320px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0px";
+}
+
+</script>
+
+
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "280px";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0px";
+}
+
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.height = "106px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.height = "0";
+}
+</script>
+
+<link rel="shortcut icon" href="../images/com.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/boot.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!---Font_Awesome_section_opened----------->
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.min.css">
+<!---Font_Awesome_section_closed----------->
+
+<!--------css_Included------->
+
+<link rel="stylesheet" type="text/css" href="../css/afsdez.css">
+<!-- 
+<link rel="stylesheet" type="text/css" href="../css/afsdez_org.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_gray.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_red.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/rec.css">
+<link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
+<link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
+
+<link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
+<script type="text/javascript" src="../js/datepick.min.js"></script>
+
+<!--------css_Included_closed------->
+<Style>
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
+
+</Style>
+
+</head>
+<body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+
+ <div class="mySave1" id="mySave">
+  <div class="save_sec">
+    <button type="submit" class="btn sub1 bt_b">Save</button>
+    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+  <div class="edit_sec">
+    <button type="submit" class="btn sub1 bt_b">Update</button>
+    <button type="submit" class="btn sub3 bt_b">Update & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Confirm</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+</div>
+
+
+<!------------------==============mySidenav4_opned=====================--------------------->
+
+<div id="mySidenav4" class="sidenav4">
+ <div class="menu_strip">
+  <h1><!-- <i class="fa fa-line-chart ft_ico"></i> -->
+    <i class="ft_ico"><img src="../images/ft_ico2.png"></i> Auto Workshop Management System</h1>
+    <a href="#" onclick="closeNav4()">
+      <i class="fa fa-chevron-circle-left fa_arro"></i>
+    </a>
+  </div>
+
+  <div class="content_sec1 overlay">
+    <div class="serch_1">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a category" class="mySearch se_1">
+    </div>
+    <div class="menu_item"> 
+      <ul id="myUL" class="menu_ul">
+        <li class="dropdown drop2 pin1">
+          <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/pn.png"></i> Frequently Used <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="vehicle_lst.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Vehicle
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Vehicle Management <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="vehicle_lst.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Vehicle
+              </a>
+            </li>
+            <li>
+              <a href="vehicle_renwl_lst.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Vehicle Renewal
+              </a>
+            </li>
+            <li>
+              <a href="vehicle_altmnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Vehicle Allotment
+              </a>
+            </li>
+            <li>
+              <a href="vehicle_cls.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Vehicle Class
+              </a>
+            </li>
+            <li>
+              <a href="fuel_typ.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Fuel Type
+              </a>
+            </li>
+            <li>
+              <a href="insrnce_typ.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Insurance Coverage Type
+              </a>
+            </li>
+            <li>
+              <a href="vehicle_sts_mstr.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Vehicle Status Master
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Water Management <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="water_card.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Water Card
+              </a>
+            </li>
+            <li>
+              <a href="water_card_rechrg.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Water Card Recharge
+              </a>
+            </li>
+            <li>
+              <a href="water_billing.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Water Billing
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Duty Management <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="job.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Job
+              </a>
+            </li>
+            <li>
+              <a href="emply_off_duty.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Off Duty
+              </a>
+            </li>
+            <li>
+              <a href="holiday.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Holiday
+              </a>
+            </li>
+            <li>
+              <a href="leave_typ.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Type
+              </a>
+            </li>
+            <li>
+              <a href="job_schedule.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Job Schedule
+              </a>
+            </li>
+            <li>
+              <a href="duty_roster.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Duty Roster
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Traffic Management <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="trafic_violation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Traffic Violation
+              </a>
+            </li>
+            <li>
+              <a href="trafic_viola_settlemnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Traffic Violation Settlement
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> AWMS Reports <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="time_sheet_rprt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Time Sheet Report
+              </a>
+            </li>
+            <li>
+              <a href="trafic_viola_settlemnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Traffic Violation Report
+              </a>
+            </li>
+            <li>
+              <a href="duty_roster_rprt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Duty Roster Report
+              </a>
+            </li>
+          </ul>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!------------------==================mySidenav4_closed======================--------------------->
+
+
+
+
+  <div class="wrapper wr2" onmouseover="closesave()">
+
+<div class="menu_fix">
+  <a href="#"  onclick="openNav4()">
+      <i class="fa fa-bars bar"></i>
+    </a>
+</div>
+
+  <a href="#"  onclick="openNav7()">
+    <div class="menu_fix1">
+      <i class="fa fa-tasks bar rot"></i><span class="badge beln cht cht1">4</span>
+      <h5>Task</h5>
+    </div>
+</a>
+
+<!------------------mySidenav7_opened--------------------->
+<div id="mySidenav7" class="sidenav7">
+  <a href="#" onclick="closeNav7()">
+    <i class="fa fa-arrow-circle-right fa_arro1"></i>
+  </a>
+  <h3>TASK MANAGER</h3>
+  <div class="task1 overlay">
+   <ul class="nav nav-tabs">
+    <li class="tab_text1 active"><a data-toggle="tab" href="#home">Tasks</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu1">Add New</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu2">View All</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu3">Settings</a></li>
+  </ul>
+
+  <div class="tab-content tab">
+    <div id="home" class="tab-pane fade in active">
+     <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+      <h3>Add new task</h3>
+      <div class="fo_tsk">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email" class="labl1">Task Name:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="labl1">Details of Task:</label>
+            <textarea type="text" class="form-control" id="pwd" placeholder="Enter your task" name="pwd"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>View All</h3>
+      <p>Under Construction</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Settings</h3>
+      <p>Under Construction</p>
+    </div>
+  </div> 
+
+  </div>
+</div>
+<!------------------mySidenav7_Closed--------------------->
+
+<!------------------mySidenav5_opned--------------------->
+<div id="mySidenav5" class="sidenav5" onclick="closeNav5()">         
+  <div class="head_sec1" style="width: 100%;height:70px;">
+    <a href="#" onclick="openNav5()"></a>
+   
+      <div id="flipper" class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-th fa6"></i>
+          <h5>Apps</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box ap_bx1 bo1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+          <i class="fa fa-sitemap fa6"></i>
+          <h5>Business Unit</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+     
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+  </div>
+  <a href="#">
+    <div class="closed">
+       <i class="fa fa-arrow-circle-up ar_top"></i>
+    </div>    
+  </a>   
+</div>
+<!------------------mySidenav5_closed--------------------->
+
+
+
+<!------------------mySidenav_opned--------------------->
+<div id="mySidenav" class="sidenav">
+  <div class="profile_contain">
+    <div class="pro_cir1">
+      <img src="../images/user.png" class="user_res1">
+    </div>
+
+  <div class="dropdown drop1">
+    <button class="dropdown-toggle bt2" type="button" data-toggle="dropdown"><h5>Ahammed hamood hamdan mubarack</h5>
+    <span class="caret c1"></span>
+    </button>
+    <ul class="dropdown-menu drop_dn ul1">
+      <li><a href="#" class="lia1">HTML</a></li>
+      <li><a href="#" class="lia1">CSS</a></li>
+      <li><a href="#" class="lia1">JavaScript</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times-circle"></i></a>
+  </div>
+  <li>
+    <a href="#"><i class="fa fa-envelope f1 fa1"></i> Message</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-bell f1 fa1"></i> Notification</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-comments f1 fa1"></i> Chat</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-power-off f1 fa1"></i> Logout</a>
+  </li>
+</div>
+<!------------------mySidenav_Closed--------------------->
+
+<!----------------------------------------------header_section_opened---------------------------------------------->
+    <div class="header_container" onclick="closeNav4()">
+      <div class="head_sec2 head_lft">
+        <div class="head_sec2_sub1">
+          <img src="../images/alb_logo.png" class="img_alb1">
+          <h1> <span>JIO AL-BALAGH TRADING & CONTRACTING CO. WLL.</span></h1>
+        </div>
+        <div class="head_sec2_sub2 hd1" onmouseout="">
+          <a href="#"><i class="fa fa-envelope"><span class="badge beln cht">41</span></i></a>
+          <a href="#"><i class="fa fa-bell"><span class="badge beln">4</span></i></a>
+          <i class="fa fa-comments f1"><span class="badge beln cht">4</span></i>
+          <div class="dropdown">
+              <button class="dropdown-toggle bt1" type="button" data-toggle="dropdown"><h6>Ahammed hamood Hamdan Mubarack</h6>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu drop_dn">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+            <div class="pro_cir">
+              <img src="../images/user.png" class="user_res">
+            </div>
+            <div class="power">
+            
+            <i class="fa fa-power-off"></i>
+            </div>
+        </div>
+
+        <div class="menu-tog">
+          <a onmouseover="openNav()"><i class="fa fa-ellipsis-h"></i></a>
+        </div>  
+      </div>
+
+      <div class="head_sec1 head_rgt">
+        <a href="#" onmouseover="openNav5()" onclick="closeNav5()">
+        <div class="left_dot">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        </a>
+      </div>
+
+    </div><!--header_container_closed--->
+<!----------------------------------------------header_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+
+<!---breadcrumb_section_started---->    
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">AWMS</a></li>
+      <li class="active">Duty Roster</li>
+    </ol>
+<!---breadcrumb_section_started----> 
+
+    <div class="content_sec2 cont_contr">
+      <div class="content_area_container cont_contr"> 
+        <div class="content_box1 cont_contr">
+<!---frame_border_area_opened---->
+
+<!---inner_content_sections area_started--->
+          <h1 class="h1_con">Duty Roster</h1>
+
+        
+
+<!---=================section_devider============--->
+      <div class="clearfix"></div>
+      <!-- <div class="devider"></div> -->
+<!---=================section_devider============--->
+
+          <div class="r_1024">
+            <table class="display table-bordered pro_tab1 tbl_1024" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b13 tr_l">Employee</th>
+                  <th colspan="6">
+                    <div class="sec_wek tr_c">
+                      <button class="btn btn-info fg8 brd_lft btn_arw flt_l"><<</button>
+                      <input class="flt_l tr_c hei_1" type="text" value="11/11/2019 To 17/11/2019" disabled="">
+                      <button class="btn btn-info fg8 brd_rgt btn_arw flt_l">>></button>
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th>
+                    <select class="fnt_clr fg12 form-control">
+                      <option>Employee 1</option>
+                      <option>Employee 2</option>
+                      <option>Employee 3</option>
+                    </select>
+                  </th>
+                  <th><span class="sp_rost">Off Duty</span><br>
+                    <button class="btn bg1_btn mar_bt_1r fnt_sz" title="Print Duty Slip"><i class="fa fa-print"></i></button>
+                    <button class="btn btn-info fnt_sz" title="Create Duty Slip"><i class="fa fa-clipboard"></i> Duty Slip</button>
+                  </th>
+                  <th>
+                  <span class="sp_rost">&nbsp;</span><br>
+                    <button class="btn bg1_btn mar_bt_1r fnt_sz" title="Print Duty Slip"><i class="fa fa-print"></i></button>
+                    <button class="btn btn-info fnt_sz" title="Create Duty Slip"><i class="fa fa-clipboard"></i> Duty Slip</button>
+                  </th>
+                  <th>
+                  <span class="sp_rost">&nbsp;</span><br>
+                    <button class="btn bg1_btn mar_bt_1r fnt_sz" title="Print Duty Slip"><i class="fa fa-print"></i></button>
+                    <button class="btn btn-info fnt_sz" title="Create Duty Slip"><i class="fa fa-clipboard"></i> Duty Slip</button>
+                  </th>
+                  <th>
+                  <span class="sp_rost">&nbsp;</span><br>
+                    <button class="btn bg1_btn mar_bt_1r fnt_sz" title="Print Duty Slip"><i class="fa fa-print"></i></button>
+                    <button class="btn btn-info fnt_sz" title="Create Duty Slip"><i class="fa fa-clipboard"></i> Duty Slip</button>
+                  </th>
+                  <th>
+                  <span class="sp_rost">&nbsp;</span><br>
+                    <button class="btn bg1_btn mar_bt_1r fnt_sz" title="Print Duty Slip"><i class="fa fa-print"></i></button>
+                    <button class="btn btn-info fnt_sz" title="Create Duty Slip"><i class="fa fa-clipboard"></i> Duty Slip</button>
+                  </th>
+                  <th>
+                  <span class="sp_rost">Off Duty</span><br>
+                    <button class="btn bg1_btn mar_bt_1r fnt_sz" title="Print Duty Slip"><i class="fa fa-print"></i></button>
+                    <button class="btn btn-info fnt_sz" title="Create Duty Slip"><i class="fa fa-clipboard"></i> Duty Slip</button>
+                  </th>
+                </tr>
+                <tr>
+                  <th class="tr_l">
+                    <button class="btn btn-info fg6 fnt_sz"><< Show Prev 25 Employees</button>
+                    <button class="btn btn-primary fg6 pull-right fnt_sz">Show Next 25 Employees >></button>
+                  </th>
+                  <th class="th_b1">
+                    <span class="wid_10"><i class="fa fa-long-arrow-down rd" aria-hidden="true"></i> 19 <i class="fa fa-long-arrow-up grn" aria-hidden="true"></i></span>
+                  </th>
+                  <th class="th_b1">
+                    <span class="wid_10"><i class="fa fa-long-arrow-down rd" aria-hidden="true"></i> 20 <i class="fa fa-long-arrow-up grn" aria-hidden="true"></i></span>
+                  </th>
+                  <th class="th_b1">
+                    <span class="wid_10"><i class="fa fa-long-arrow-down rd" aria-hidden="true"></i> 21 <i class="fa fa-long-arrow-up grn" aria-hidden="true"></i></span>
+                  </th>
+                  <th class="th_b1">
+                    <span class="wid_10"><i class="fa fa-long-arrow-down rd" aria-hidden="true"></i> 22 <i class="fa fa-long-arrow-up grn" aria-hidden="true"></i></span>
+                  </th>
+                  <th class="th_b1">
+                    <span class="wid_10"><i class="fa fa-long-arrow-down rd" aria-hidden="true"></i> 23 <i class="fa fa-long-arrow-up grn" aria-hidden="true"></i></span>
+                  </th>
+                  <th class="th_b1">
+                    <span class="wid_10"><i class="fa fa-long-arrow-down rd" aria-hidden="true"></i> 24 <i class="fa fa-long-arrow-up grn" aria-hidden="true"></i></span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_l">Abin AA</td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tr_l">Abin AA</td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                  <td>
+                    <button class="btn btn-success pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Schedule">
+                      <i class="fa fa-arrow-circle-o-up fnt_s1" aria-hidden="true"></i>
+                    </button>
+                    <span class="dev_dr">|</span>
+                    <button class="btn btn-warning pa_d1" data-toggle="modal" data-target="#exampleModal" title="Duty Submit">
+                      <i class="fa fa-arrow-circle-o-down fnt_s1" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+<!---inner_content_sections area_closed--->
+
+<!---frame_border_area_closed---->
+        </div>
+      </div>
+    </div>
+  </div>
+<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+
+</div><!--wrapper_closed-->
+
+
+<!---print_button--->
+<a href="#" type="button" class="print_o" title="Print page">
+  <i class="fa fa-print"></i>
+</a>
+<!---print_button_closed--->
+
+<!---add_button--->
+<!-- <a href="add_vehicle_lst.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
+<i class="fa fa-plus-circle"></i>
+</a> -->
+<!---add_button_closed--->
+
+
+<div class="import_opt">
+  <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
+  <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
+</div>
+<!---import_button_section_closed--->
+
+
+<!---alert_message_section---->
+<div class="myAlert-top alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> Changes completed succesfully is simply dummy text of the printing and typesetting industry.
+</div>
+
+<div class="myAlert-bottom alert alert-danger">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Danger!</strong> Request not conmpleted is simply dummy text of the printing and typesetting industry.
+</div>
+<!----alert_message_section_closed---->
+
+
+<!-------------------footer_section_opened------------------------------------->
+  <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+    <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico2.png"></i> Auto Workshop Management System</p>
+    <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+    <p class="pull-right tr_c foot_l ">Designed by <span>Volviar</span> Technologies</p>
+  </div>
+<!-------------------footer_section_closed------------------------------------->
+
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod2 mo3" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title mod1 flt_l mar_tp_0" id="exampleModalLabel"><i class="fa fa-business-time"></i> Job Schedule</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body md_bd1 dbt_nte pa_al mod_bdy">
+        <div class="fg2">
+          <label for="email" class="fg2_la1">Name:<span class="spn1">&nbsp;</span></label>
+          <input type="text" class="fg2_inp2 fg_chs1 in_br" id="email" placeholder="Employee 1" name="email" required="" disabled="">
+        </div>
+        <div class=" flt_r">
+          <label for="email" class="fg2_la1">Time Slot:<span class="spn1">&nbsp;</span></label>
+          <select class="fg2_inp2 fg_chs1 in_br">
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>12:00</option>
+            <option>01:00</option>
+          </select>
+        </div>
+        <div class=" flt_r">
+          <label for="email" class="fg2_la1">Date:<span class="spn1">&nbsp;</span></label>
+          <input type="text" class="fg2_inp2 fg2_inp3 fg_chs1" id="email" placeholder="08/06/2020" name="email" required="" disabled="">
+        </div>
+       <table class="table table-bordered">
+            <thead class="thead1">
+              <tr>
+              <th class="col-md-3 td1 tr_l">Job</th>
+                <th class="col-md-2 tr_l">Vehicle</th>
+                <th class="col-md-3 tr_l">Project</th>
+                <th class="col-md-1">From Time</th>
+                <th class="col-md-1">To Time</th>
+                <th class="col-md-2">Actions</th>
+              </tr>
+            </thead>
+          <tbody id="myTable">
+            <tr class="tr1">
+              <td scope="row" class="td1">
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Job 1</option>
+                  <option>Job 2</option>
+                  <option>Job 3</option>
+                  <option>Job 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Vehicle 1</option>
+                  <option>Vehicle 2</option>
+                  <option>Vehicle 3</option>
+                  <option>Vehicle 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Project 1</option>
+                  <option>Project 2</option>
+                  <option>Project 3</option>
+                  <option>Project 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br tr_c">
+                  <option>08:00 AM</option>
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br tr_c">
+                  <option>08:00 AM</option>
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                </select>
+              </td>
+              <td class="td1">
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" title="Edit"><i class="fa fa-edit"></i></button>
+                  <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
+                </div>
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1"><i class="fa fa-edit"></i> Edit</button>
+                  <button class="btn act_btn bn3"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1"> Edit</button>
+                  <button class="btn act_btn bn3"> Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="tr">
+              <td scope="row" class="td1">
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Job 1</option>
+                  <option>Job 2</option>
+                  <option>Job 3</option>
+                  <option>Job 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Vehicle 1</option>
+                  <option>Vehicle 2</option>
+                  <option>Vehicle 3</option>
+                  <option>Vehicle 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Project 1</option>
+                  <option>Project 2</option>
+                  <option>Project 3</option>
+                  <option>Project 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br tr_c">
+                  <option>08:00 AM</option>
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br tr_c">
+                  <option>08:00 AM</option>
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                </select>
+              </td>
+              <td class="td1">
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" title="Edit"><i class="fa fa-edit"></i></button>
+                  <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
+                </div>
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1"><i class="fa fa-edit"></i> Edit</button>
+                  <button class="btn act_btn bn3"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1"> Edit</button>
+                  <button class="btn act_btn bn3"> Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="tr1">
+              <td scope="row" class="td1">
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Job 1</option>
+                  <option>Job 2</option>
+                  <option>Job 3</option>
+                  <option>Job 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Vehicle 1</option>
+                  <option>Vehicle 2</option>
+                  <option>Vehicle 3</option>
+                  <option>Vehicle 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br">
+                  <option>Project 1</option>
+                  <option>Project 2</option>
+                  <option>Project 3</option>
+                  <option>Project 4</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br tr_c">
+                  <option>08:00 AM</option>
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                </select>
+              </td>
+              <td>
+                <select class="fg2_inp2 fg_chs1 in_br tr_c">
+                  <option>08:00 AM</option>
+                  <option>09:00 AM</option>
+                  <option>10:00 AM</option>
+                  <option>11:00 AM</option>
+                </select>
+              </td>
+              <td class="td1">
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" title="Edit"><i class="fa fa-edit"></i></button>
+                  <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
+                </div>
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1"><i class="fa fa-edit"></i> Edit</button>
+                  <button class="btn act_btn bn3"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1"> Edit</button>
+                  <button class="btn act_btn bn3"> Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="clearfix"></div>
+
+        <h3>Vehicle Details</h3>
+        <table class="table table-bordered">
+          <thead class="thead1">
+            <tr>
+              <th class="col-md-9 tr_l">Vehicle</th>
+              <th class="col-md-3 tr_c">Present Milage</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr class="tr">
+              <td class="tr_l">Vehicle</td>
+              <td>100</td>
+            </tr>
+            <tr class="tr1">
+              <td class="tr_l">Vehicle</td>
+              <td>100</td>
+            </tr>
+            <tr class="tr">
+              <td class="tr_l">Vehicle</td>
+              <td>100</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-success">Schedule</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!----modal_closed--->
+
+
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Reason for delete</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="al-box war">Warning Alert !!!</div>
+        <textarea placeholder="Write reason for delete" row="6" class="text_ar1"></textarea>
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" id="war-btn">Proceed</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade mod2_c" id="exampleModal2">
+  <div class="modal-dialog mod2" role="document">
+    <div class="modal-content mod2_con">
+      <div class="modal-header mbo_btm">
+        <h5 class="modal-title mod2_tit" id="exampleModalLabel"><i class="fa fa-sitemap"></i> Select Business Unit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <button class="btn bu_btn bu_at"><i class="fa fa-building"></i> Albalagh Trading Company - Qatar</button>
+        <button class="btn bu_btn"><i class="fa fa-building"></i> Albalagh Trading Company - Dubai</button>
+        <button class="btn bu_btn"><i class="fa fa-building"></i> Albalagh Trading Company - Saudi Arabia</button>
+        <button class="btn bu_btn"><i class="fa fa-building"></i> Albalagh Trading Company - Oman</button>
+      </div>
+      <div class="modal-footer mbo_tp">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button><!-- 
+        <button type="button" class="btn btn-primary">Proceed</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div><!--wrapper_closed-->
+
+
+<!--------script section_started---------->
+
+<!-----table_search------------>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-----table_search_closed------------>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "180px";
+    document.getElementById("main").style.marginright = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginright= "0";
+}
+</script>
+
+<!--app_more button_onclick----->
+<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.height = "200px";
+    document.getElementById("main").style.marginbottom = "Auto";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.height = "0";
+    document.getElementById("main").style.marginbottom= "0";
+}
+</script>
+
+<script>
+function openNav2() {
+    document.getElementByclass("content_sec1").style.width = "250";
+    document.getElementByclass("main").style.marginLeft = "0px";
+}
+
+function closeNav2() {
+    document.getElementById("myNav1").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".slide-toggle").click(function(){
+    $(".content_sec1").animate({
+      width: "18%"
+    });
+  });
+});
+
+</script>
+
+<!--searchbox_list_script_opened------->
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<!----checkbox_started--->
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'fa fa-check-square-o'
+                },
+                off: {
+                    icon: 'fa fa-square-o gly2'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-d')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color)
+                    .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+</script>
+<!--checkbox_closed-->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab2content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
+
+<!--------tooltips------------>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip1"]').tooltip();   
+});
+</script>
+
+<!--add new div---->
+<script>
+$(document).ready(function(){
+  $("#btx1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+});
+</script>
+
+<!--button_click_disable --->
+<script>
+function myFunct() {
+    document.getElementById("myinpb").disabled = false;
+    document.getElementById("myinpc").disabled = true;
+    document.getElementById("myinpc1").disabled = true;
+    document.getElementById("myinpc2").disabled = true;
+    document.getElementById("myinpc3").disabled = true;
+}
+</script>
+
+<script>
+function mysave() {
+  var x = document.getElementById("mysav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+function issue_chk() {
+  var x = document.getElementById("is_chk");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "140px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+}
+</script>
+<!--save_pop up_closed-->
+
+<!----hide/Show_section---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c1h").hide();
+  });
+  $("#show").click(function(){
+    $(".c1h").show();
+  });
+});
+</script>
+
+<!----hide/Show_section2---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c2h").hide();
+  });
+  $("#show1").click(function(){
+    $(".c2h").show();
+  });
+});
+</script>
+
+<!-----Enable_disable script--->
+<script>
+$(document).ready(function(){
+  $(".bu1").click(function(){
+    $("#mySe1").toggle();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".bu").click(function(){
+    $("#mySe").toggle();
+  });
+});
+</script>
+<!-----Enable_disable script_closed--->
+
+<!------hide and visible div--->
+<script>
+function sel1() {
+  var x = document.getElementById('sel');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+</script>
+<!------hide and visible div_closed--->
+
+
+<!-----table_sec_fixed--->
+<script type="text/javascript">
+  // requires jquery library
+jQuery(document).ready(function() {
+   jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');   
+ });
+
+</script>
+
+
+</body>
+</html>

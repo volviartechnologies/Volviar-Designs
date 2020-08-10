@@ -1,0 +1,30 @@
+
+PMS SECTION CHANGES
+=======================
+
+PURCHASE ORDER PAGE CHANGES
+
+
+1. Multiple file uploaded section allignment corrected in purchase order page (in note popup modal)
+codes changes:-
+Added css in pro_mng.css
+.attch_row{height: 35px;width: 100%;margin: auto;float: left;}
+-----------------------------------------------------------------
+added html codes in purchase order
+<div class="attch_row">
+    <input type="file" id="file-upload" multiple required />
+    <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+    <div id="file-upload-filename" class="file_n gbb"></div>
+    <div class="gbn pull-right">
+        <button class="btn act_btn bn2" title="Add New"><i class="fa fa-plus-circle"></i></button>
+        <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
+    </div>
+</div>
+=============================================================================================
+2. Veiw attached documents in note popup modal in purchase order page are updated.
+
+added this code in purchase order list page
+<span class="attc_h" >
+    <a href="../images/bg1.jpg" target="_blank"><i class="fa fa-download" aria-hidden="true"></i> warehouse.docx</a>
+</span>
+==================================================================================================

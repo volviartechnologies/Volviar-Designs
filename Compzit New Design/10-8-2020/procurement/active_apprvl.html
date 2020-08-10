@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html>
+<title>Compzit Admin Dashboard</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<head>
+
+<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "320px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0px";
+}
+
+</script>
+
+
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "280px";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0px";
+}
+
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.height = "106px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.height = "0";
+}
+</script>
+
+<link rel="shortcut icon" href="../images/com.ico" type="image/x-icon">
+
+
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/boot.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!---Font_Awesome_section_opened----------->
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.min.css">
+<!---Font_Awesome_section_closed----------->
+
+<!--------css_Included------->
+
+<link rel="stylesheet" type="text/css" href="../css/afsdez.css">
+<!-- 
+<link rel="stylesheet" type="text/css" href="../css/afsdez_org.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_gray.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_red.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/rec.css">
+<link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
+
+<link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
+<script type="text/javascript" src="../js/datepick.min.js"></script>
+
+<!--------css_Included_closed------->
+<Style>
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
+
+</Style>
+
+</head>
+<body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+
+
+
+
+<!------------------mySidenav4_opned--------------------->
+<div id="mySidenav4" class="sidenav4">
+  
+   <div class="menu_strip">
+      <h1><!-- <i class="fa fa-line-chart ft_ico"></i> -->
+      <i class="ft_ico"><img src="../images/ft_ico.png"></i> Procurement Management</h1>
+      <a href="#" onclick="closeNav4()">
+        <i class="fa fa-chevron-circle-left fa_arro"></i>
+      </a>
+    </div>
+ 
+  <div class="content_sec1 overlay">
+   
+    <div class="serch_1">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a category" class="mySearch se_1">
+    </div>
+     <div class="menu_item"> 
+      <ul id="myUL" class="menu_ul">
+         <li>
+          <a href="charge_heads.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Charge Heads
+          </a>
+        </li>
+        <li>
+          <a href="ware_house.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Warehouse Master
+          </a>
+        </li>
+        <li>
+          <a href="vendor.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Vendor Category
+          </a>
+        </li>
+        <li>
+          <a href="aprved_hie_tmp.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Approval Hierarchy Template
+          </a>
+        </li>
+        <li>
+          <a href="approvl-set_list.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Approval Set
+          </a>
+        </li>
+        <li>
+          <a href="apprvl_assmnt.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Approval Assignment
+          </a>
+        </li>
+        <li>
+          <a href="dcmt_work.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Document Workflow
+          </a>
+        </li>
+        <li>
+          <a href="add_replace_apprvr.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Replace Approver
+          </a>
+        </li>
+        <li>
+          <a href="prchse_ordr.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Purchase Order
+          </a>
+        </li>
+        <li>
+          <a href="add_apprvl_console.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Approval Console
+          </a>
+        </li>
+        <li>
+          <a href="active_apprvl.html" class="active"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Active Approval Set
+          </a>
+        </li>
+        
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Reports <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="#"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Purchase Order Reports
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+<!------------------mySidenav4_closed--------------------->
+
+
+<div class="wrapper wr2" onmouseover="closesave()" onclick="cls_qkser()">
+
+  <div class="menu_fix">
+    <a href="#"  onclick="openNav4()">
+      <i class="fa fa-bars bar"></i>
+    </a>
+  </div>
+
+<!------------------mySidenav5_opned--------------------->
+  <div id="mySidenav5" class="sidenav5" onclick="closeNav5()">         
+    <div class="head_sec1" style="width: 100%;height:70px;">
+      <a href="#" onclick="openNav5()"></a>  
+      <div id="flipper" class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-th fa6"></i>
+          <h5>Apps</h5>
+        </a>
+      </div>
+      <div class="app_box ap_bx1 bo1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+          <i class="fa fa-sitemap fa6"></i>
+          <h5>Business Unit</h5>
+        </a>
+      </div>
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    </div>
+    <a href="#">
+      <div class="closed">
+        <i class="fa fa-arrow-circle-up ar_top"></i>
+      </div>    
+    </a>   
+  </div>
+<!------------------mySidenav5_closed--------------------->
+
+<!------------------mySidenav_opned--------------------->
+  <div id="mySidenav" class="sidenav">
+    <div class="profile_contain">
+      <div class="pro_cir1">
+        <img src="../images/user.png" class="user_res1">
+      </div>
+
+      <div class="dropdown drop1">
+        <button class="dropdown-toggle bt2" type="button" data-toggle="dropdown"><h5>Ahammed hamood hamdan mubarack</h5>
+          <span class="caret c1"></span>
+        </button>
+        <ul class="dropdown-menu drop_dn ul1">
+          <li><a href="#" class="lia1">HTML</a></li>
+          <li><a href="#" class="lia1">CSS</a></li>
+          <li><a href="#" class="lia1">JavaScript</a></li>
+        </ul>
+      </div>
+      <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times-circle"></i></a>
+    </div>
+    <li>
+      <a href="#"><i class="fa fa-envelope f1 fa1"></i> Message</a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-bell f1 fa1"></i> Notification</a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-comments f1 fa1"></i> Chat</a>
+    </li>
+    <li>
+      <a href="#"><i class="fa fa-power-off f1 fa1"></i> Logout</a>
+    </li>
+  </div>
+<!------------------mySidenav_Closed--------------------->
+
+<!----------------------------------------------header_section_opened---------------------------------------------->
+  <div class="header_container" onclick="closeNav4()">
+    <div class="head_sec2 head_lft">
+      <div class="head_sec2_sub1">
+        <img src="../images/alb_logo.png" class="img_alb1">
+        <h1> <span>JIO AL-BALAGH TRADING & CONTRACTING CO. WLL.</span></h1>
+      </div>
+      <div class="head_sec2_sub2 hd1" onmouseout="">
+        <a href="#"><i class="fa fa-envelope"><span class="badge beln cht">41</span></i></a>
+        <a href="#"><i class="fa fa-bell"><span class="badge beln">4</span></i></a>
+        <i class="fa fa-comments f1"><span class="badge beln cht">4</span></i>
+        <div class="dropdown">
+          <button class="dropdown-toggle bt1" type="button" data-toggle="dropdown"><h6>Ahammed hamood Hamdan Mubarack</h6>
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu drop_dn">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+        <div class="pro_cir">
+          <img src="../images/user.png" class="user_res">
+        </div>
+        <div class="power">
+          <i class="fa fa-power-off"></i>
+        </div>
+      </div>
+      <div class="menu-tog">
+        <a onmouseover="openNav()"><i class="fa fa-ellipsis-h"></i></a>
+      </div>  
+    </div>
+    <div class="head_sec1 head_rgt">
+      <a href="#" onmouseover="openNav5()" onclick="closeNav5()">
+        <div class="left_dot">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+      </a>
+    </div>
+  </div><!--header_container_closed--->
+<!----------------------------------------------header_section_closed------------------------------------------------------------->
+
+
+<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+
+<!---breadcrumb_section_started---->    
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Procurement Management</a></li>
+      <li class="active">Active Approval Set</li>
+    </ol>
+<!---breadcrumb_section_started----> 
+
+    <div class="content_sec2 cont_contr">
+      <div class="content_area_container cont_contr"> 
+        <div class="content_box1 cont_contr">
+<!---frame_border_area_opened---->
+
+<!---inner_content_sections area_started--->
+          <h1 class="h1_con">Active Approval Set</h1>
+
+        <div class="clearfix"></div>
+    <div class="free_sp"></div>
+
+
+          <div class="form-group fg2">
+            <label for="email" class="fg2_la1">Designation:<span class="spn1">*</span></label>
+            <select class="form-control fg2_inp1 fg_chs1">
+              <option>Manager(production)</option>
+              <option>Manager2</option>
+              <option>Manager3</option>
+               </select>      
+          </div>
+
+           
+ <!----==========--->
+ <div class="clearfix"></div>
+ <!----==========--->
+
+         <div class="prdct_po">
+          <table class="table table-bordered tbset_r">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b8 tr_l">Document</th>
+                <th class="th_b8 tr_l">Approval Set</th>
+                <th class="th_b6 tr_r">Start Date</th>
+                <th class="th_b6">End Start</th>
+                </tr>
+            </thead>
+            <tbody id="myTable">
+            <tr class="">
+              <td class="tr_l">Purchase Order-Marketing Dept.</td>
+              <td class="tr_l">PO Approval
+                <button class="btn act_btn bn4 bt_v pull-right" data-toggle="modal" data-target="#exampleModal" title="View">
+                      <i class="fa fa-list-alt"></i>
+                    </button></td>
+              <td>
+                  <div id="datepicker9" class="input-group date" data-date-format="mm-dd-yyyy">
+                    <input class="form-control inp_bdr inp_pro1 pa_l1 pa_r1" id="dte_1" type="text" disabled="" />
+                    <span class="input-group-addon date1 dt_pro1"><i class="fa fa-calendar"></i></span>
+                  </div>
+                </td>
+                <td>
+                  <div id="datepicker8" class="input-group date" data-date-format="mm-dd-yyyy">
+                    <input class="form-control inp_bdr inp_pro1 pa_l1 pa_r1" id="dte_1" type="text" disabled=""  />
+                    <span class="input-group-addon date1 dt_pro1"><i class="fa fa-calendar"></i></span>
+                  </div>
+                </td>
+                
+            </tr> 
+            <tr class="tr1">
+              <td class="tr_l">Purchase Order-Default</td>
+              <td class="tr_l">PO Approval
+              <button class="btn act_btn bn4 bt_v pull-right" data-toggle="modal" data-target="#exampleModal" title="View">
+                      <i class="fa fa-list-alt"></i>
+                    </button></td>
+              <td>
+                  <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                    <input class="form-control inp_bdr inp_pro1 pa_l1 pa_r1" id="dte_1" type="text"  />
+                    <span class="input-group-addon date1 dt_pro1"><i class="fa fa-calendar"></i></span>
+                  </div>
+                </td>
+                <td>
+                  <div id="datepicker2" class="input-group date" data-date-format="mm-dd-yyyy">
+                    <input class="form-control inp_bdr inp_pro1 pa_l1 pa_r1" id="dte_1" type="text"  />
+                    <span class="input-group-addon date1 dt_pro1"><i class="fa fa-calendar"></i></span>
+                  </div>
+                </td>
+              
+            </tr>            
+           </tbody>
+        </table>
+        </div>
+
+        
+
+
+<!---inner_content_sections area_closed--->
+
+<!---========area_devider==========---->
+    <div class="clearfix"></div>
+    <div class="free_sp"></div>
+<!---========area_devider==========---->
+
+
+<!--Buttons_Area_started--->
+          <div class="sub_cont pull-right">
+            <div class="save_sec">
+              <button type="submit" class="btn sub1">Save</button>
+              <button type="submit" class="btn sub3">Save & Close</button>
+              <button type="submit" class="btn sub2">Clear</button>
+              <button type="submit" class="btn sub4">Cancel</button>
+            </div>
+
+            <div class="edit_sec">
+              <button type="submit" class="btn sub1">Update</button>
+              <button type="submit" class="btn sub3">Update & Close</button>
+              <button type="submit" class="btn sub2">Confirm</button>
+              <button type="submit" class="btn sub4">Cancel</button>
+            </div>
+          </div>
+<!--Buttons_area_closed--->
+
+
+
+<!---frame_border_area_closed---->
+        </div>
+      </div>
+    </div>
+  </div>
+<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+
+<!-------------------footer_section_opened------------------------------------->
+  <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+    <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico.png"></i> Procurement Management</p>
+    <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+    <p class="pull-right tr_c foot_l ">Designed by <span>Volviar</span> Technologies</p>
+  </div>
+<!-------------------footer_section_closed------------------------------------->
+
+</div><!--wrapper_closed-->
+
+
+<!----save_quick_actions_started--->
+  <a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
+    <i class="fa fa-save"></i>
+  </a>
+
+  <div class="mySave1" id="mySave">
+    <div class="save_sec">
+      <button type="submit" class="btn sub1 bt_b">Save</button>
+      <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+      <button type="submit" class="btn sub2 bt_b">Clear</button>
+      <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    </div>
+    <div class="edit_sec">
+      <button type="submit" class="btn sub1 bt_b">Update</button>
+      <button type="submit" class="btn sub3 bt_b">Update & Close</button>
+      <button type="submit" class="btn sub2 bt_b">Confirm</button>
+      <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    </div>
+  </div>
+<!----save_quick_actions_closed--->
+
+<!----modal popup_section for Substitute Employees_opened--->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Employees</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!----modal popup_section for Substitute Employees_closed--->
+
+<!--------script section_started---------->
+
+<!-----table_search------------>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-----table_search_closed------------>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "180px";
+    document.getElementById("main").style.marginright = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginright= "0";
+}
+</script>
+
+<!--app_more button_onclick----->
+<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.height = "200px";
+    document.getElementById("main").style.marginbottom = "Auto";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.height = "0";
+    document.getElementById("main").style.marginbottom= "0";
+}
+</script>
+
+<script>
+function openNav2() {
+    document.getElementByclass("content_sec1").style.width = "250";
+    document.getElementByclass("main").style.marginLeft = "0px";
+}
+
+function closeNav2() {
+    document.getElementById("myNav1").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".slide-toggle").click(function(){
+    $(".content_sec1").animate({
+      width: "18%"
+    });
+  });
+});
+
+</script>
+
+<!--searchbox_list_script_opened------->
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<!----checkbox_started--->
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'fa fa-check-square-o'
+                },
+                off: {
+                    icon: 'fa fa-square-o gly2'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-d')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color)
+                    .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+</script>
+<!--checkbox_closed-->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab2content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker5").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker6").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker7").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker8").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker9").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
+
+<!--------tooltips------------>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip1"]').tooltip();   
+});
+</script>
+
+<!--add new div---->
+<script>
+$(document).ready(function(){
+  $("#btx1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+});
+</script>
+
+<!--button_click_disable --->
+<script>
+function myFunct() {
+    document.getElementById("myinpb").disabled = false;
+    document.getElementById("myinpc").disabled = true;
+    document.getElementById("myinpc1").disabled = true;
+    document.getElementById("myinpc2").disabled = true;
+    document.getElementById("myinpc3").disabled = true;
+}
+</script>
+
+<script>
+function mysave() {
+  var x = document.getElementById("mysav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+function issue_chk() {
+  var x = document.getElementById("is_chk");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "140px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+}
+</script>
+<!--save_pop up_closed-->
+
+<!----hide/Show_section---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c1h").hide();
+  });
+  $("#show").click(function(){
+    $(".c1h").show();
+  });
+});
+</script>
+
+<!----hide/Show_section2---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c2h").hide();
+  });
+  $("#show1").click(function(){
+    $(".c2h").show();
+  });
+});
+</script>
+
+<!-----Enable_disable script--->
+<script>
+$(document).ready(function(){
+  $(".bu1").click(function(){
+    $("#mySe1").toggle();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".bu").click(function(){
+    $("#mySe").toggle();
+  });
+});
+</script>
+<!-----Enable_disable script_closed--->
+
+<!---draggable_div_script_started of myinp---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myinp"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!---draggable_div_script_closed of myinp---->
+
+<!---draggable_div_script_started of myind---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myind"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!---draggable_div_script_closed of myind---->
+
+<!---draggable_div_script_started of myina---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myina"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!---draggable_div_script_closed of myinaS---->
+
+<!---draggable_div_script_started of myinr---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myinr"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!---draggable_div_script_closed of myinr---->
+
+<!---draggable_div_script_started of myina---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myinrb"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+<!---draggable_div_script_closed of myinaS---->
+
+<!---help_pop_over_script--->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+<!---help_pop_over_script_closed--->
+
+<!---select_popup_section_script--->
+<link href="../css/select2.min.css" rel="stylesheet" />
+<script src="../js/select2.min.js"></script>
+
+<script type="text/javascript">
+  $("#e1").select2();
+$("#checkbox").click(function(){
+    if($("#checkbox").is(':checked') ){
+        $("#e1 > option").prop("selected","selected");
+        $("#e1").trigger("change");
+    }else{
+        $("#e1 > option").removeAttr("selected");
+         $("#e1").trigger("change");
+     }
+});
+
+$("#button1").click(function(){
+       alert($("#e1").val());
+});
+</script>
+
+<script type="text/javascript">
+  $("#e2").select2();
+$("#checkbox").click(function(){
+    if($("#checkbox").is(':checked') ){
+        $("#e2 > option").prop("selected","selected");
+        $("#e2").trigger("change");
+    }else{
+        $("#e2 > option").removeAttr("selected");
+         $("#e2").trigger("change");
+     }
+});
+
+$("#button1").click(function(){
+       alert($("#e2").val());
+});
+</script>
+<script type="text/javascript">
+  $("#e3").select2();
+$("#checkbox").click(function(){
+    if($("#checkbox").is(':checked') ){
+        $("#e3 > option").prop("selected","selected");
+        $("#e3").trigger("change");
+    }else{
+        $("#e3 > option").removeAttr("selected");
+         $("#e3").trigger("change");
+     }
+});
+
+$("#button1").click(function(){
+       alert($("#e3").val());
+});
+</script>
+<!---select_popup_section_script_closed--->
+
+<!---Start_date section--->
+<script>
+function dte_m() {
+
+    if (document.getElementById("cbx_dte").checked==true) {
+      document.getElementById("dte_1").disabled = false;
+    }else
+    {
+     document.getElementById("dte_1").disabled = true;
+    }
+    
+}
+</script>
+
+<script>
+function dte_m_1() {
+
+    if (document.getElementById("cbx_dte1").checked==true) {
+      document.getElementById("dte_1_a").disabled = false;
+    }else
+    {
+     document.getElementById("dte_1_a").disabled = true;
+    }
+    
+}
+</script>
+
+<!---closed_date section--->
+
+
+<!----tree_jquery---->
+
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script type="text/javascript">
+    $(function () {
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+    $('.tree li.parent_li > span').on('click', function (e) {
+        var children = $(this).parent('li.parent_li').find(' > ul > li');
+        if (children.is(":visible")) {
+            children.hide('fast');
+            $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+        } else {
+            children.show('fast');
+            $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+        }
+        e.stopPropagation();
+    });
+});
+  </script>
+<!----tree_jquery_closed---->
+
+<!----tab_script_for heirarchy page---->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!----heirarchy_section_script_started--->
+<script>
+$(document).ready(function(){
+  $(".organiser").click(function(){
+    $(".hire").toggle();
+  });
+});
+</script>
+<!----heirarchy_section_script_closed--->
+
+<!-----open new window----------->
+<script type="text/javascript">
+  function openWin() {
+  myWindow = window.open("add_purchase.html", "", "width=1100, height=500");
+}
+</script>
+<!-----open new window_closed----------->
+
+<!-----quick search_section_started---->
+<script>
+function op_qkser() {
+    document.getElementById("qk_bo").style.display = "block";
+}
+
+function cls_qkser() {
+    document.getElementById("qk_bo").style.display = "none";
+}
+</script>
+
+<!----quick_search_section_section_closed---->
+
+
+</body>
+</html>

@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html>
+<title>Compzit Admin Dashboard</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<head>
+
+<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "320px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0px";
+}
+
+</script>
+
+
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "280px";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0px";
+}
+
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.height = "106px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.height = "0";
+}
+</script>
+
+<link rel="shortcut icon" href="../images/com.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/boot.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!---Font_Awesome_section_opened----------->
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.min.css">
+<!---Font_Awesome_section_closed----------->
+
+<!--------css_Included------->
+
+<link rel="stylesheet" type="text/css" href="../css/afsdez.css">
+<!-- 
+<link rel="stylesheet" type="text/css" href="../css/afsdez_org.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_gray.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_red.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/rec.css">
+<link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
+<link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
+
+<link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
+<script type="text/javascript" src="../js/datepick.min.js"></script>
+
+<!--------css_Included_closed------->
+<Style>
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
+
+</Style>
+
+</head>
+<body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+
+ <div class="mySave1" id="mySave">
+  <div class="save_sec">
+    <button type="submit" class="btn sub1 bt_b">Save</button>
+    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
+  </div>
+  <div class="edit_sec">
+    <button type="submit" class="btn sub1 bt_b">Update</button>
+    <button type="submit" class="btn sub3 bt_b">Update & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Confirm</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+</div>
+
+
+<!------------------==============mySidenav4_opned=====================--------------------->
+
+<div id="mySidenav4" class="sidenav4">
+  
+   <div class="menu_strip">
+      <h1><!-- <i class="fa fa-line-chart ft_ico"></i> -->
+      <i class="ft_ico"><img src="../images/ft_ico4.png"></i> Human Capital Management</h1>
+      <a href="#" onclick="closeNav4()">
+        <i class="fa fa-chevron-circle-left fa_arro"></i>
+      </a>
+    </div>
+ 
+  <div class="content_sec1 overlay">
+   
+    <div class="serch_1">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a category" class="mySearch se_1">
+    </div>
+     <div class="menu_item"> 
+      <ul id="myUL" class="menu_ul">
+
+        <li class="dropdown drop2 pin1">
+          <a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/pn.png"></i> Frequently Used <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul pin_ul">
+            <li>
+              <a href="designation_mstr.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Designation
+              <span class="c2"><img src="../images/menu/pn.png" ></span></a>
+            </li>
+            <li>
+              <a href="emply_rol_allow.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Role Allocation
+              <span class="c2"><img src="../images/menu/pn.png" ></span></a>
+            </li>
+            <li>
+              <a href="accomodation_type.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Accomodation Type
+              <span class="c2"><img src="../images/menu/pn.png" ></span></a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li>
+          <a href="employee_transfer.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Employee Transfer
+          </a>
+        </li>
+        <li>
+          <a href="emply_atnd_porting.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Employee Attendance Porting
+          </a>
+        </li>
+        <li>
+          <a href="passport_hnd_ovr_sts.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Passport Handover Status
+          </a>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Section <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="designation_mstr.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Designation
+              </a>
+            </li>
+            <li>
+              <a href="emply_rol_allow.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Role Allocation
+              </a>
+            </li>
+            <li>
+              <a href="accomodation_type.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Accomodation Type
+              </a>
+            </li>
+            <li>
+              <a href="licence_type.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> License Type
+              </a>
+            </li>
+            <li>
+              <a href="team_hier.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Team Definition
+              </a>
+            </li>
+            <li>
+              <a href="job_role.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Job Role
+              </a>
+            </li>
+
+            <li>
+              <a href="emply_registratn.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Master
+              </a>
+            </li>
+            <li>
+              <a href="payroll_strctr.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Payroll Structure
+              </a>
+            </li>
+            <li>
+              <a href="slry_entry_process.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Salary Entry Process
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Recruitment <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            
+            <li>
+              <a href="job_descrptn.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Job Description
+              </a>
+            </li>
+            <li>
+              <a href="manpowr_reqrmnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Manpower Requirement
+              </a>
+            </li>
+            <li>
+              <a href="consultancy.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Consultancy
+              </a>
+            </li>
+
+            <li>
+              <a href="require_allocation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Requirement Allocation
+              </a>
+            </li>
+            <li>
+              <a href="job_notification.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Job Notification
+              </a>
+            </li>
+            <li>
+              <a href="intrvw_catgry.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Interview Category
+              </a>
+            </li>
+            <li>
+              <a href="intrvw_templte.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Interview Template
+              </a>
+            </li>
+            <li>
+              <a href="candidat_selctn.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Candidate Selection
+              </a>
+            </li>
+            <li>
+              <a href="candidat_short.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Candidate Short List
+              </a>
+            </li>
+            <li>
+              <a href="appointmnt_lttr.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Appoinment Letter Parameter
+              </a>
+            </li>
+
+            <li>
+              <a href="intrvw_panel.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Interview Panel
+              </a>
+            </li>
+            <li>
+              <a href="intrvw_procss.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Interview Process
+              </a>
+            </li>
+            <li>
+              <a href="joining_intmtion.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Joining Intimation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Immigration <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="immigrtion_rounds.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Immigration Rounds
+              </a>
+            </li>
+            <li>
+              <a href="immigrtion_asgnmt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Immigration Assignment
+              </a>
+            </li>
+            <li>
+              <a href="immigrtion_task.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Immigration Tasks
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> On Boarding <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="visa_quota.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Visa Quota
+              </a>
+            </li>
+            <li>
+              <a href="onboardng_procss.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Onboarding Process
+              </a>
+            </li>
+            <li>
+              <a href="onboardng_task.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Onboarding Tasks
+              </a>
+            </li>
+            <li>
+              <a href="arrival_confrmtion.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Arrival Confirmation
+              </a>
+            </li>
+            <li>
+              <a href="certfcate_bundl_temp.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Certificate Bundle Template
+              </a>
+            </li>
+            <li>
+              <a href="certfcate_vlidtion.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Certificate Validation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="job_delegation.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Job Deligation
+          </a>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Food & Beverages <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="accomdtion_catgry.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Accommodation Category Master
+              </a>
+            </li>
+            <li>
+              <a href="emply_mess_exceptn.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Mess Exemption
+              </a>
+            </li>
+            <li>
+              <a href="mess_bill_cal.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Mess Bill Calculation
+              </a>
+            </li>
+            <li>
+              <a href="accomodation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Accommodation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Performance Management <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="performance_templ.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Performance Template
+              </a>
+            </li>
+            <li>
+              <a href="performance_form.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Performance Form
+              </a>
+            </li>
+            <li>
+              <a href="performance_evaluation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Performance Evaluation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="clearance_form_apprvl.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Clearance Approval Form
+          </a>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Exit Management <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="notice_period.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Notice Period
+              </a>
+            </li>
+            <li>
+              <a href="resignation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Resignation Form
+              </a>
+            </li>
+            <li>
+              <a href="ext_intrvw_question.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Exit Interview Questions
+              </a>
+            </li>
+            <li>
+              <a href="resignation_apprvl.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Resignation Approval
+              </a>
+            </li>
+            <li>
+              <a href="emply_exit_process.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Exit Process
+              </a>
+            </li>
+            <li>
+              <a href="exit_procedure.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Exit Procedure
+              </a>
+            </li>
+            <li>
+              <a href="exit_partl_process.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Exit Partial Process
+              </a>
+            </li>
+            <li>
+              <a href="exit_intrvw_process.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Exit Interview Process
+              </a>
+            </li>
+            <li>
+              <a href="exprnce_crtfcte_genrtion.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Experience Certificate
+              </a>
+            </li>
+            <li>
+              <a href="notice_period_allocation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Notice Period Allocation
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> HCM Reports <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="rpt_emp_dtl.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Details
+              </a>
+            </li>
+            <li>
+              <a href="rpt_emply_recruit.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Recruitment
+              </a>
+            </li>
+            <li>
+              <a href="rpt_visa_bundle.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Visa Bundle
+              </a>
+            </li>
+            <li>
+              <a href="rpt_man_powr_rqrmnt_sts.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Manpower Requirement Status
+              </a>
+            </li>
+            <li>
+              <a href="rpt_onboarding_status.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Onboarding Status
+              </a>
+            </li>
+            <li>
+              <a href="rpt_expry_notification.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Expiery Notification
+              </a>
+            </li>
+            <li>
+              <a href="rpt_job_cst_smmry.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Job Cost Summary
+              </a>
+            </li>
+            <li>
+              <a href="rpt_imigrtion_task.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Immigration Tasks Report
+              </a>
+            </li>
+            <li>
+              <a href="rpt_intrview_summry.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Interview Summary
+              </a>
+            </li>
+            <li>
+              <a href="rpt_accomodation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Accommodation Report
+              </a>
+            </li>
+            <li>
+              <a href="rpt_manpwr_job_asgnment.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Manpower Job Assignment
+              </a>
+            </li>
+            <li>
+              <a href="rpt_visa_quota_status.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Visa Quota Status
+              </a>
+            </li>
+            <li>
+              <a href="rpt_intrvw_evaltion.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Interview Evaluation
+              </a>
+            </li>
+            <li>
+              <a href="rpt_manpwr_prcess_dtl.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Manpower Process Details
+              </a>
+            </li>
+            <li>
+              <a href="rpt_job_ofr_status.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Job Offer Status
+              </a>
+            </li>
+            <li>
+              <a href="rpt_onbrdng_job_asgnmnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> On Boarding Job Assignment
+              </a>
+            </li>
+            <li>
+              <a href="rpt_leave_mngmnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Management Report
+              </a>
+            </li>
+            <li>
+              <a href="rpt_leave_application.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Application Report
+              </a>
+            </li>
+            <li>
+              <a href="rpt_attendance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Attendance Report
+              </a>
+            </li>
+            <li>
+              <a href="rpt_payroll_process.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Payroll Process Report
+              </a>
+            </li>
+            <li>
+              <a href="rpt_mess_calculation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Mess Calculation
+              </a>
+            </li>
+            <li>
+              <a href="rpt_emply_deduction_dtl.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Deduction Details
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Management <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="leave_request.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Request
+              </a>
+            </li>
+            <li>
+              <a href="leave_allocation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Allocation
+              </a>
+            </li>
+            <li>
+              <a href="leave_approval.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Approval
+              </a>
+            </li>
+            <li>
+              <a href="leave_type.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Type Master
+              </a>
+            </li>
+            <li>
+              <a href="leave_partial.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Partial Process
+              </a>
+            </li>
+            <li>
+              <a href="leave_facility_assgnmnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Fecility Assignment
+              </a>
+            </li>
+            <li>
+              <a href="opening_leave_alloctn.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Opening Leave Allocation
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Payroll <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="end_of_srvce_settlmnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> End of Service Settlement
+              </a>
+            </li>
+            <li>
+              <a href="leave_settlement.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Leave Settlement
+              </a>
+            </li>
+            <li>
+              <a href="emply_deductn.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Payment Deduction
+              </a>
+            </li>
+            <li>
+              <a href="add_monthly_salary_process.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Monthly Salary Process
+              </a>
+            </li>
+            <li>
+              <a href="duty_rejoin.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Duty Rejoin
+              </a>
+            </li>
+            <li>
+              <a href="daily_attendance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Daily Attendance Sheet
+              </a>
+            </li>
+            <li>
+              <a href="add_adictn_dedctn_nrml.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Manual Addition / Deduction Entry
+              </a>
+            </li>
+            <li>
+              <a href="salary_certificate.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Salary Certificate
+              </a>
+            </li>
+            <li>
+              <a href="bulk_labr.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Bulk Labour Card Print
+              </a>
+            </li>
+            <li>
+              <a href="payslip_generation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Payslip Generation
+              </a>
+            </li>
+            <li>
+              <a href="monthly_attendance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Monthly Attendance Sheet
+              </a>
+            </li>
+            <li>
+              <a href="generate_wps.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Generate WPS Sheet
+              </a>
+            </li>
+            <li>
+              <a href="payment_closing.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Payment Closing Process
+              </a>
+            </li>
+            <li>
+              <a href="overtime_category.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Overtime Category Master
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Welfare <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="welfare_service_category.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Welfare Service Category
+              </a>
+            </li>
+            <li>
+              <a href="welfare_service.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Welfare Service
+              </a>
+            </li>
+            <li>
+              <a href="welfare_service_transction.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Welfare Service Transaction
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Conduct Management <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="employee_condct.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Conduct
+              </a>
+            </li>
+            <li>
+              <a href="emplye_cndct_catgry.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Conduct Category
+              </a>
+            </li>
+            <li>
+              <a href="emply_cndct_incidnt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Employee Conduct Incident
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="emply_sponsor.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Employee Sponcer
+          </a>
+        </li>
+        <li>
+          <a href="visa_profession.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Visa Profession
+          </a>
+        </li>
+        <li>
+          <a href="pay_grade.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Pay Grade
+          </a>
+        </li>
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Log In <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="candidate_login_page.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Candidate Log In
+              </a>
+            </li>
+            <li>
+              <a href="candidate_id_generate.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Candidate ID Generation
+              </a>
+            </li>
+          </ul>
+        </li>
+        
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Joining Form <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="joining_staff.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Staff
+              </a>
+            </li>
+            <li>
+              <a href="joining_worker.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Worker
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+
+<!------------------==================mySidenav4_closed======================--------------------->
+
+
+  <div class="wrapper wr2" onmouseover="closesave()">
+
+<div class="menu_fix">
+  <a href="#"  onclick="openNav4()">
+      <i class="fa fa-bars bar"></i>
+    </a>
+</div>
+
+  <a href="#"  onclick="openNav7()">
+    <div class="menu_fix1">
+      <i class="fa fa-tasks bar rot"></i><span class="badge beln cht cht1">4</span>
+      <h5>Task</h5>
+    </div>
+</a>
+
+<!------------------mySidenav7_opened--------------------->
+<div id="mySidenav7" class="sidenav7">
+  <a href="#" onclick="closeNav7()">
+    <i class="fa fa-arrow-circle-right fa_arro1"></i>
+  </a>
+  <h3>TASK MANAGER</h3>
+  <div class="task1 overlay">
+   <ul class="nav nav-tabs">
+    <li class="tab_text1 active"><a data-toggle="tab" href="#home">Tasks</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu1">Add New</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu2">View All</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu3">Settings</a></li>
+  </ul>
+
+  <div class="tab-content tab">
+    <div id="home" class="tab-pane fade in active">
+     <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+      <h3>Add new task</h3>
+      <div class="fo_tsk">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email" class="labl1">Task Name:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="labl1">Details of Task:</label>
+            <textarea type="text" class="form-control" id="pwd" placeholder="Enter your task" name="pwd"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>View All</h3>
+      <p>Under Construction</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Settings</h3>
+      <p>Under Construction</p>
+    </div>
+  </div> 
+
+  </div>
+</div>
+<!------------------mySidenav7_Closed--------------------->
+
+<!------------------mySidenav5_opned--------------------->
+<div id="mySidenav5" class="sidenav5" onclick="closeNav5()">         
+  <div class="head_sec1" style="width: 100%;height:70px;">
+    <a href="#" onclick="openNav5()"></a>
+   
+      <div id="flipper" class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-th fa6"></i>
+          <h5>Apps</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box ap_bx1 bo1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+          <i class="fa fa-sitemap fa6"></i>
+          <h5>Business Unit</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+     
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+  </div>
+  <a href="#">
+    <div class="closed">
+       <i class="fa fa-arrow-circle-up ar_top"></i>
+    </div>    
+  </a>   
+</div>
+<!------------------mySidenav5_closed--------------------->
+
+
+
+<!------------------mySidenav_opned--------------------->
+<div id="mySidenav" class="sidenav">
+  <div class="profile_contain">
+    <div class="pro_cir1">
+      <img src="../images/user.png" class="user_res1">
+    </div>
+
+  <div class="dropdown drop1">
+    <button class="dropdown-toggle bt2" type="button" data-toggle="dropdown"><h5>Ahammed hamood hamdan mubarack</h5>
+    <span class="caret c1"></span>
+    </button>
+    <ul class="dropdown-menu drop_dn ul1">
+      <li><a href="#" class="lia1">HTML</a></li>
+      <li><a href="#" class="lia1">CSS</a></li>
+      <li><a href="#" class="lia1">JavaScript</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times-circle"></i></a>
+  </div>
+  <li>
+    <a href="#"><i class="fa fa-envelope f1 fa1"></i> Message</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-bell f1 fa1"></i> Notification</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-comments f1 fa1"></i> Chat</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-power-off f1 fa1"></i> Logout</a>
+  </li>
+</div>
+<!------------------mySidenav_Closed--------------------->
+
+<!----------------------------------------------header_section_opened---------------------------------------------->
+    <div class="header_container" onclick="closeNav4()">
+      <div class="head_sec2 head_lft">
+        <div class="head_sec2_sub1">
+          <img src="../images/alb_logo.png" class="img_alb1">
+          <h1> <span>JIO AL-BALAGH TRADING & CONTRACTING CO. WLL.</span></h1>
+        </div>
+        <div class="head_sec2_sub2 hd1" onmouseout="">
+          <a href="#"><i class="fa fa-envelope"><span class="badge beln cht">41</span></i></a>
+          <a href="#"><i class="fa fa-bell"><span class="badge beln">4</span></i></a>
+          <i class="fa fa-comments f1"><span class="badge beln cht">4</span></i>
+          <div class="dropdown">
+              <button class="dropdown-toggle bt1" type="button" data-toggle="dropdown"><h6>Ahammed hamood Hamdan Mubarack</h6>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu drop_dn">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+            <div class="pro_cir">
+              <img src="../images/user.png" class="user_res">
+            </div>
+            <div class="power">
+            
+            <i class="fa fa-power-off"></i>
+            </div>
+        </div>
+
+        <div class="menu-tog">
+          <a onmouseover="openNav()"><i class="fa fa-ellipsis-h"></i></a>
+        </div>  
+      </div>
+
+      <div class="head_sec1 head_rgt">
+        <a href="#" onmouseover="openNav5()" onclick="closeNav5()">
+        <div class="left_dot">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        </a>
+      </div>
+
+    </div><!--header_container_closed--->
+<!----------------------------------------------header_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+
+<!---breadcrumb_section_started---->    
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">HCM</a></li>
+      <li><a href="overtime_category.html">Overtime Category</a></li>
+      <li class="active">Add Overtime Category</li>
+    </ol>
+    
+<!---breadcrumb_section_started----> 
+
+  <div class="content_sec2 cont_contr">
+    <div class="content_area_container cont_contr">
+      
+      <div class="content_box1 cont_contr">
+        <h2>Add Overtime Category</h2>
+
+        <div class="form-group fg2 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
+          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Category">
+        </div>
+
+         <div class="form-group fg2 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Rate per Hour:<span class="spn1">*</span></label>
+          <input type="text" class="form-control fg2_inp1 inp_mst tr_r" placeholder="0.00">
+        </div>
+
+        <div class="fg2 sa_2 sa_480">
+          <label for="email" class="fg2_la1 pad_l">Pay Grades:<span class="spn1">*</span></label>
+          <label class="form1 mar_bo">
+            <span class="button-checkbox">
+              <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+              <input type="checkbox" class="hidden" />
+            </span>
+            <p class="pz_s">All</p>
+          </label>
+          <div class="nation_bx">
+            <ul>
+              <li>
+                <label class="form1">
+                  <span class="button-checkbox">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                  <p class="pz_s">Pay Grade 1</p>
+                </label>
+              </li>
+              <li>
+                <label class="form1">
+                  <span class="button-checkbox">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                  <p class="pz_s">Pay Grade 2</p>
+                </label>
+              </li>
+              <li>
+                <label class="form1">
+                  <span class="button-checkbox">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                  <p class="pz_s">Pay Grade 3</p>
+                </label>
+              </li>
+              <li>
+                <label class="form1">
+                  <span class="button-checkbox">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                  <p class="pz_s">Pay Grade 4</p>
+                </label>
+              </li>
+              <li>
+                <label class="form1">
+                  <span class="button-checkbox">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                  <p class="pz_s">Pay Grade 5</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+              
+        <div class="form-group fg5 sa_2 sa_480">
+          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox" >
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="free_sp"></div>
+        <div class="devider"></div>
+
+        <div class="sub_cont pull-right">
+          <div class="save_sec">
+            <button type="submit" class="btn sub1">Save</button>
+            <button type="submit" class="btn sub3">Save & Close</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+            <button type="submit" class="btn sub2">Clear</button>
+          </div>
+
+          <div class="edit_sec">
+            <button type="submit" class="btn sub1">Update</button>
+            <button type="submit" class="btn sub3">Update & Close</button>
+            <button type="submit" class="btn sub2">Confirm</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    </div>
+  </div>
+</div><!--content_container_closed------>
+
+<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
+<i class="fa fa-save"></i>
+</a>
+
+<a href="overtime_category.html" type="button" class="list_b" title="Back to List">
+<i class="fa fa-arrow-circle-left"></i>
+</a>
+
+<a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
+<a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
+<!-------------------footer_section_opened------------------------------------->
+ <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+<!-------------------footer_section_closed------------------------------------->
+
+</div><!--wrapper_closed-->
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+
+
+<!--------script section_started---------->
+
+<!-----table_search------------>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-----table_search_closed------------>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "180px";
+    document.getElementById("main").style.marginright = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginright= "0";
+}
+</script>
+
+<!--app_more button_onclick----->
+<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.height = "200px";
+    document.getElementById("main").style.marginbottom = "Auto";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.height = "0";
+    document.getElementById("main").style.marginbottom= "0";
+}
+</script>
+
+<script>
+function openNav2() {
+    document.getElementByclass("content_sec1").style.width = "250";
+    document.getElementByclass("main").style.marginLeft = "0px";
+}
+
+function closeNav2() {
+    document.getElementById("myNav1").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".slide-toggle").click(function(){
+    $(".content_sec1").animate({
+      width: "18%"
+    });
+  });
+});
+
+</script>
+
+<!--searchbox_list_script_opened------->
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<!----checkbox_started--->
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'fa fa-check-square-o'
+                },
+                off: {
+                    icon: 'fa fa-square-o gly2'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-d')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color)
+                    .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+</script>
+<!--checkbox_closed-->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab2content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
+
+<!--------tooltips------------>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip1"]').tooltip();   
+});
+</script>
+
+<!--add new div---->
+<script>
+$(document).ready(function(){
+  $("#btx1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+});
+</script>
+
+<!--button_click_disable --->
+<script>
+function myFunct() {
+    document.getElementById("myinpb").disabled = false;
+    document.getElementById("myinpc").disabled = true;
+    document.getElementById("myinpc1").disabled = true;
+    document.getElementById("myinpc2").disabled = true;
+    document.getElementById("myinpc3").disabled = true;
+}
+</script>
+
+<script>
+function mysave() {
+  var x = document.getElementById("mysav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+function issue_chk() {
+  var x = document.getElementById("is_chk");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "140px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+}
+</script>
+<!--save_pop up_closed-->
+
+<!----hide/Show_section---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c1h").hide();
+  });
+  $("#show").click(function(){
+    $(".c1h").show();
+  });
+});
+</script>
+
+<!----hide/Show_section2---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c2h").hide();
+  });
+  $("#show1").click(function(){
+    $(".c2h").show();
+  });
+});
+</script>
+
+<!-----Enable_disable script--->
+<script>
+$(document).ready(function(){
+  $(".bu1").click(function(){
+    $("#mySe1").toggle();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".bu").click(function(){
+    $("#mySe").toggle();
+  });
+});
+</script>
+<!-----Enable_disable script_closed--->
+
+<!------hide and visible div--->
+<script>
+function sel1() {
+  var x = document.getElementById('sel');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+</script>
+<!------hide and visible div_closed--->
+
+
+<!-----table_sec_fixed--->
+<script type="text/javascript">
+  // requires jquery library
+jQuery(document).ready(function() {
+   jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');   
+ });
+
+</script>
+
+<!----alert message_script---->
+<script type="text/javascript">
+  function myAlertTop(){
+  $(".myAlert-top").show(100);
+  setTimeout(function(){
+    $(".myAlert-top").hide(400); 
+  }, 1500);
+}
+
+function myAlertBottom(){
+  $(".myAlert-bottom").show(100);
+  setTimeout(function(){
+    $(".myAlert-bottom").hide(400); 
+  }, 1500);
+
+}
+</script>
+
+<script type="text/javascript">
+  $( "#war-btn" ).click(function() {
+  $( "div.war" ).fadeIn( 200 ).delay( 500 ).fadeOut( 400 );
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".imprt_o").click(function(){
+    $(".import_opt").toggle(300);
+  });
+});
+</script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){ 
+    $(".cont_contr").scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $(".cont_contr").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+
+<!----alert_message_script_closed--->
+
+</body>
+</html>

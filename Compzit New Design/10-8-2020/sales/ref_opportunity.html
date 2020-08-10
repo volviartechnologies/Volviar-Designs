@@ -1,0 +1,1850 @@
+<!DOCTYPE html>
+<html>
+<title>Compzit Admin Dashboard</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<head>
+
+<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "320px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0px";
+}
+
+</script>
+
+
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "280px";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0px";
+}
+
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.height = "106px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.height = "0";
+}
+</script>
+
+<link rel="shortcut icon" href="../images/com.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/boot.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!---Font_Awesome_section_opened----------->
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.min.css">
+<!---Font_Awesome_section_closed----------->
+
+<!--------css_Included------->
+
+<link rel="stylesheet" type="text/css" href="../css/afsdez.css">
+<!-- 
+<link rel="stylesheet" type="text/css" href="../css/afsdez_org.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_gray.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_red.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/rec.css">
+<link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
+<link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
+
+<link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
+<script type="text/javascript" src="../js/datepick.min.js"></script>
+
+<!--------css_Included_closed------->
+<Style>
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
+
+</Style>
+
+</head>
+<body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+
+ <div class="mySave1" id="mySave">
+  <div class="save_sec">
+    <button type="submit" class="btn sub1 bt_b">Save</button>
+    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
+  </div>
+  <div class="edit_sec">
+    <button type="submit" class="btn sub1 bt_b">Update</button>
+    <button type="submit" class="btn sub3 bt_b">Update & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Confirm</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+</div>
+
+
+<!------------------mySidenav4_opned--------------------->
+<div id="mySidenav4" class="sidenav4">
+  
+   <div class="menu_strip">
+      <h1><!-- <i class="fa fa-line-chart ft_ico"></i> -->
+      <i class="ft_ico"><img src="../images/ft_ico1.png"></i> Sales Force Automation</h1>
+      <a href="#" onclick="closeNav4()">
+        <i class="fa fa-chevron-circle-left fa_arro"></i>
+      </a>
+    </div>
+ 
+  <div class="content_sec1 overlay">
+   
+    <div class="serch_1">
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a category" class="mySearch se_1">
+   </div>
+     <div class="menu_item"> 
+      <ul id="myUL" class="menu_ul">
+        <li>
+          <a href="dashboard.html"><i class="fa fa-tachometer list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="mail_settings.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Mail Settings
+          </a>
+        </li>
+        <li>
+          <a href="measure_unit.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Unit Of Measure
+          </a>
+        </li>
+        <li>
+          <a href="tax_master.html"><i class="fa fa-scissors list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png">
+            </i> Tax Master
+          </a>
+        </li>
+
+        <li>
+          <a href="product_group.html"><i class="fa fa-newspaper-o list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Product Group
+          </a>
+        </li>
+        <li>
+          <a href="product_brand.html"><i class="fa fa-hand-scissors-o  list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Product Brand
+          </a>
+        </li>
+        <li>
+          <a href="product_category.html"><i class="fa fa-sitemap list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Product Category
+          </a>
+        </li>
+        <li>
+          <a href="product_master.html"><i class="fa fa-shopping-cart list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Product Master
+          </a>
+        </li>
+        <li>
+          <a href="customer_group.html"><i class="fa fa-sitemap list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Customer Group
+          </a>
+        </li>
+        <li>
+          <a href="customer_master.html"><i class="fa fa-line-chart list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Customer Master
+          </a>
+        </li>
+        <li>
+          <a href="product_rate.html"><i class="fa fa-pie-chart list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Product Rate Amendment
+          </a>
+        </li>
+        <li>
+          <a href="opportunity.html" class="active"><i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Opportunity
+          </a>
+        </li>
+        
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Reports <span class="caret c2"></span>
+          </a>
+         <ul class="dropdown-menu dropul">
+           <li><a href="rpt_opportunity.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Opportunity Summary</a></li>
+            <li><a href="rpt_active_opp.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Active Opportunity</a></li>
+            <li><a href="rpt_itemlist.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Item Listing</a></li>
+            <li><a href="rpt_qs.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Quotation Summary</a></li>
+            <li><a href="rpt_daily_dm.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Daily open opportunity<br> report for Division Manager</a></li>
+            <li><a href="rpt_daily_se.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Daily open opportunity<br> report for Sales Executive</a></li>
+            <li><a href="rpt_custom_dm.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Customer Deal Closure<br> for Division Manager</a></li>
+            <li><a href="rpt_custom_se.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Customer Deal Closure<br> for Sales Executive</a></li>
+            <li><a href="rpt_booking_se.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Booking Report For<br>Sales Executive</a></li>
+            <li><a href="rpt_booking_dm.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Booking Report For<br>Division Manager</a></li>
+      </ul>
+    </li>
+    <li><a href="project_master.html"><i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i>Project Master</a></li>
+    <li><a href="template.html"><i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i>Terms Template</a></li>
+    <li><a href="opportunity_rate.html"><i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Opportunity Rating</a></li>
+    </div>
+  </div>
+</div>
+<!------------------mySidenav4_closed--------------------->
+
+
+  <div class="wrapper wr2" onmouseover="closesave()">
+
+<div class="menu_fix">
+  <a href="#"  onclick="openNav4()">
+      <i class="fa fa-bars bar"></i>
+    </a>
+</div>
+
+  <a href="#"  onclick="openNav7()">
+    <div class="menu_fix1">
+      <i class="fa fa-tasks bar rot"></i><span class="badge beln cht cht1">4</span>
+      <h5>Task</h5>
+    </div>
+</a>
+
+<!------------------mySidenav7_opened--------------------->
+<div id="mySidenav7" class="sidenav7">
+  <a href="#" onclick="closeNav7()">
+    <i class="fa fa-arrow-circle-right fa_arro1"></i>
+  </a>
+  <h3>TASK MANAGER</h3>
+  <div class="task1 overlay">
+   <ul class="nav nav-tabs">
+    <li class="tab_text1 active"><a data-toggle="tab" href="#home">Tasks</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu1">Add New</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu2">View All</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu3">Settings</a></li>
+  </ul>
+
+  <div class="tab-content tab">
+    <div id="home" class="tab-pane fade in active">
+     <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+      <h3>Add new task</h3>
+      <div class="fo_tsk">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email" class="labl1">Task Name:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="labl1">Details of Task:</label>
+            <textarea type="text" class="form-control" id="pwd" placeholder="Enter your task" name="pwd"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>View All</h3>
+      <p>Under Construction</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Settings</h3>
+      <p>Under Construction</p>
+    </div>
+  </div> 
+
+  </div>
+</div>
+<!------------------mySidenav7_Closed--------------------->
+
+<!------------------mySidenav5_opned--------------------->
+<div id="mySidenav5" class="sidenav5" onclick="closeNav5()">         
+  <div class="head_sec1" style="width: 100%;height:70px;">
+    <a href="#" onclick="openNav5()"></a>
+   
+      <div id="flipper" class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-th fa6"></i>
+          <h5>Apps</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box ap_bx1 bo1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+          <i class="fa fa-sitemap fa6"></i>
+          <h5>Business Unit</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+     
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+  </div>
+  <a href="#">
+    <div class="closed">
+       <i class="fa fa-arrow-circle-up ar_top"></i>
+    </div>    
+  </a>   
+</div>
+<!------------------mySidenav5_closed--------------------->
+
+
+
+<!------------------mySidenav_opned--------------------->
+<div id="mySidenav" class="sidenav">
+  <div class="profile_contain">
+    <div class="pro_cir1">
+      <img src="../images/user.png" class="user_res1">
+    </div>
+
+  <div class="dropdown drop1">
+    <button class="dropdown-toggle bt2" type="button" data-toggle="dropdown"><h5>Ahammed hamood hamdan mubarack</h5>
+    <span class="caret c1"></span>
+    </button>
+    <ul class="dropdown-menu drop_dn ul1">
+      <li><a href="#" class="lia1">HTML</a></li>
+      <li><a href="#" class="lia1">CSS</a></li>
+      <li><a href="#" class="lia1">JavaScript</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times-circle"></i></a>
+  </div>
+  <li>
+    <a href="#"><i class="fa fa-envelope f1 fa1"></i> Message</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-bell f1 fa1"></i> Notification</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-comments f1 fa1"></i> Chat</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-power-off f1 fa1"></i> Logout</a>
+  </li>
+</div>
+<!------------------mySidenav_Closed--------------------->
+
+<!----------------------------------------------header_section_opened---------------------------------------------->
+    <div class="header_container" onclick="closeNav4()">
+      <div class="head_sec2 head_lft">
+        <div class="head_sec2_sub1">
+          <img src="../images/alb_logo.png" class="img_alb1">
+          <h1> <span>JIO AL-BALAGH TRADING & CONTRACTING CO. WLL.</span></h1>
+        </div>
+        <div class="head_sec2_sub2 hd1" onmouseout="">
+          <a href="#"><i class="fa fa-envelope"><span class="badge beln cht">41</span></i></a>
+          <a href="#"><i class="fa fa-bell"><span class="badge beln">4</span></i></a>
+          <i class="fa fa-comments f1"><span class="badge beln cht">4</span></i>
+          <div class="dropdown">
+              <button class="dropdown-toggle bt1" type="button" data-toggle="dropdown"><h6>Ahammed hamood Hamdan Mubarack</h6>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu drop_dn">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+            <div class="pro_cir">
+              <img src="../images/user.png" class="user_res">
+            </div>
+            <div class="power">
+            
+            <i class="fa fa-power-off"></i>
+            </div>
+        </div>
+
+        <div class="menu-tog">
+          <a onmouseover="openNav()"><i class="fa fa-ellipsis-h"></i></a>
+        </div>  
+      </div>
+
+      <div class="head_sec1 head_rgt">
+        <a href="#" onmouseover="openNav5()" onclick="closeNav5()">
+        <div class="left_dot">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        </a>
+      </div>
+
+    </div><!--header_container_closed--->
+<!----------------------------------------------header_section_closed------------------------------------------------------------->
+
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
+ <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+
+  <ol class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Sales Force Automation</a></li>
+    <li><a href="opportunity.html">Opportunity</a></li>
+    <li class="active">Opportunity Information</li>
+  </ol>
+
+  <div class="content_sec2 cont_contr">
+    <div class="content_area_container cont_contr"> 
+      <div class="content_box1 cont_contr">
+        <h1 class="h1_con">OPPORTUNITY Information
+
+    <button class="btn act_btn bn4 bt_e bt_fx_crqt" title="Customer Requirements" data-toggle="popover" data-placement="right" data-html="true" data-content="<label class='form1 mar_bo'>
+        
+        
+      </label><textarea cols='64' rows='18' placeholder='Regards,
+
+www.albalagh.com
+
+Faiz Abdu Alanjery
+
+Project Consultant  |  IT Solutions Division
+
+T: +974 44667714/15/16 |  F: +974 44660040  | M: +974 33724397
+
+E: faiz.abdu@albalagh.com | P O Box 5777, Doha - Qatar
+
+
+
+Disclaimer:
+
+This email and any attachments to it may be privileged/confidential and are intended solely for the use of the individual or entity to whom they are addressed.  If you are not the intended recipient, or an employee or agent responsible for delivering this message to the intended recipient of this email, you must neither take any action based upon its contents, nor copy or disclose it to anyone.  Please contact the sender if you believe you have received this email in error.
+
+
+
+Computer viruses can be transmitted via email. The recipient should check this email and any attachments for viruses. The company accepts no liability for any loss or damage arising from the use of this e-mail or attachments.  Although the company has taken reasonable measures to ensure no viruses are present in this email, we strongly recommend that you may subject these to your virus checking procedures prior to use.
+
+P  Please Don't print this e-mail unless it's really necessary. Save a tree & Save the world for your future' ></textarea><br><div class='devider'></div><button class='btn btn-danger flt_r pop_o_cls'>Close</button>" data-height="600" data-width="400" ><i class="fa fa-address-card-o"></i></button></h1>
+
+        <div class="clearfix"></div>
+
+          <div class="top_br_container hc_at">
+            <div class="top_br_1 pa_h1">
+              <div class="col-md-3 tx_100 hcm_1_2 ref_box_head">
+                <ul>
+                  <li><span class="flt_l li_100">Customer Name: </span> <span class="fg6 li_100_1">ARABIAN SUPPLIES</span></li>
+                  <li><span class="flt_l li_100">Status: </span> <span class="fg6 li_100_1">Open</span></li>
+                </ul>
+              </div>
+              <div class="col-md-3 tx_100 hcm_1_2 ref_box_head">
+                <ul>
+                  <li><span class="flt_l li_100">Title: </span> <span class="fg6 li_100_1"> TEST ENQUIRY</span></li>
+                  <li><span class="flt_l li_100">Last Updation: </span> <span class="fg6 li_100_1">23/07/2017</span></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 tx_100 hcm_1_2 ref_box_head">
+                <ul>
+                  <li><span class="flt_l li_100">Date: </span> <span class="fg6 li_100_1"> 06-03-2017</span></li>
+                  <li><span class="flt_l li_100">Source: </span> <span class="fg6 li_100_1">Mail</span></li>
+                </ul>
+              </div>
+
+              <div class="col-md-3 tx_100 hcm_1_2 ref_box_head">
+                <ul>
+                  <li><span class="flt_l li_100">Division: </span> <span class="fg6 li_100_1"> IT SOLUTIONS </span></li>
+                  <li><span class="flt_l li_100">Customer Name: </span> <span class="fg6 li_100_1">Faiz Abdu Alanchery (ALB000151)</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        
+
+       
+      <div class="clearfix"></div>
+      <div class="devider"></div> 
+
+      <div class="col-md-6 mar_at flt_lfg6 pa_lft0">  
+      <p class="plc1 pl_rg">Attachments</p>
+      <div class="table_box tb_scr">
+        <div class="r_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-1">Sl#</th>
+                <th class="col-md-7 tr_l">Attachments </th>
+                 <th class="col-md-4">Date and Time</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr class="tr1">
+                <td>12341</td>
+                <td class=" tr_l">Attachment 1</td>
+                <td class=" tr_c">05.12.2019 10:10 </td>
+               </tr>
+                <tr>
+                <td>12341</td>
+                <td class=" tr_l">Attachment 1</td>
+                <td class=" tr_c">05.12.2019 10:10 </td>
+               </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+
+      
+      <div class="col-md-6 mar_at flt_r">
+       <p class="plc1 pl_rg">Notes
+          <button class="btn act_btn bn11 bt_e flt_r" data-toggle="modal" data-target="#myModal_2" title="Add Note">
+            <i class="opp_ico_img"><img src="../images/icons/opp/quot.notes.png"> </i>
+          </button></p>
+      <div class="table_box tb_scr">
+        <div class="r_480 mar_bt_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-1">Sl#</th>
+                <th class="col-md-5 tr_l">Note By</th>
+                <th class="col-md-2 tr_c">Date</th>
+                <th class="col-md-4 tr_c">Through</th>
+                  </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr class="tr1">
+                <td>12341</td>
+                <td class="tr_l">xxxxxxx</td>
+                <td>25/01/2019</td>
+                <td>xxxxxx</td>
+                 </tr>
+               <tr>
+                <td>12341</td>
+                <td class="tr_l">xxxxxxx</td>
+                <td>27/01/2019</td>
+                <td>xxxxxx</td>
+                 </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+      <div class="clearfix"></div>
+      <div class="devider"></div>
+
+      <div class="col-md-12 mar_at flt_r pa_lft0">
+      <p class="plc1 pl_rg">Follow-Up / Task
+          <button class="btn act_btn bn8 bt_e flt_r" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+             <i class="fa fa-book"></i>
+          </button></p>
+      <div class="table_box tb_scr">
+        <div class="r_480 mar_bt_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-1">Sl#</th>
+                <th class="col-md-3 tr_l">Subject</th>
+                <th class="col-md-2 tr_c">From Date & Time</th>
+                <th class="col-md-2 tr_c">Due Date & Time</th>
+                <th class="col-md-2 tr_c">Actions</th>
+                  </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr class="">
+                <td>
+                  <div class="bo_not1 mrl_bon flt_l fol_1_ico" title="Breached task / Follow-Up">
+                    <i class="fa fa-book"></i>
+                  </div>12341
+                </td>
+                <td class="tr_l">xxxxxxx</td>
+                <td>25/01/2019 05.00PM</td>
+                <td>25/01/2019 04.00PM</td>
+                <td>
+                  <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                      <i class="fa fa-check-circle "></i>
+                    </button>
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Open">
+                    <i class="fa fa-folder-open"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Closed">
+                    <i class="fa fa-window-close"></i>
+                  </button>
+                  
+                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+                 </tr>
+               <tr class="tr1">
+                <td>
+                  <div class="bo_not1 mrl_bon flt_l fol_2_ico" title="Closed task / Follow-Up">
+                    <i class="fa fa-book"></i>
+                  </div> 12341
+                </td>
+                <td class="tr_l">xxxxxxx</td>
+                <td>27/01/2019 12.00PM</td>
+                <td>25/01/2019 04.00PM</td>
+                <td>
+                  <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                      <i class="fa fa-times-circle"></i>
+                    </button>
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Open">
+                    <i class="fa fa-folder-open"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Closed">
+                    <i class="fa fa-window-close"></i>
+                  </button>
+                  
+                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+                 </tr>
+                 <tr class="">
+                <td>
+                  <div class="bo_not1 mrl_bon flt_l fol_3_ico" title="Open task / Follow-Up">
+                    <i class="fa fa-book"></i>
+                  </div>12341
+                </td>
+                <td class="tr_l">xxxxxxx</td>
+                <td>27/01/2019 12.00PM</td>
+                <td>25/01/2019 04.00PM</td>
+                <td>
+                  <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                      <i class="fa fa-check-circle "></i>
+                    </button>
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Open">
+                    <i class="fa fa-folder-open"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Closed">
+                    <i class="fa fa-window-close"></i>
+                  </button>
+                  
+                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </td>
+                 </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="clearfix"></div>
+        <div class="devider"></div>
+      </div>
+    </div>
+
+
+      <div class="col-md-12 mar_at flt_l pa_lft0">
+        <p class="plc1 pl_rg">Re-Send Mail</p>
+      <div class="table_box tb_scr">
+        <div class="r_480 mar_bt_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-1">Sl#</th>
+                <th class="col-md-2 tr_l">Ref#</th>
+                <th class="col-md-2 tr_c">From</th>
+                <th class="col-md-2 tr_c">To</th>
+                <th class="col-md-3 tr_c">Send As</th>
+                <th class="col-md-2 tr_c">Actions</th>
+                 
+                  </tr>
+            </thead>
+
+          <tbody id="myTable">
+            <tr class="tr1">
+              <td>1</td>
+              <td class="tr_l">12341</td>
+              <td>25/01/2019</td>
+              <td>25/01/2019</td>
+              <td>xxxxxx</td>
+              <td><button class="btn tab_but1 butn05" data-toggle="modal" data-target="#exampleModal" title="Send mail">
+                    <i class="fa fa-paper-plane"></i></button></td>
+               </tr>
+             <tr>
+              <td>2</td>
+              <td class="tr_l">12341</td>
+              <td>27/01/2019</td>
+              <td>25/01/2019</td>
+              <td>xxxxxx</td>
+              <td><button class="btn tab_but1 butn05" title="Send mail"><i class="fa fa-paper-plane"></i></button></td>
+               </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+        </div>
+
+
+        <div class="clearfix"></div>
+            <div class="devider"></div>
+
+      <div class="col-md-12 mar_at flt_l pa_lft0">
+        <p class="plc1 pl_rg">MAIL</p>
+      <div class="table_box tb_scr">
+        <div class="r_480 mar_bt_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-1">Sl#</th>
+                 <th class="col-md-2 tr_l">FROM</th>
+                 <th class="col-md-2 tr_l">TO</th>
+                 <th class="col-md-3 tr_l">Send / Received By</th>
+                 <th class="col-md-2 tr_c">Date & Time</th>
+                 <th class="col-md-1">In / Out</th>
+                 <th class="col-md-1">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+            <tr class="">
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_2_ico" title="Time-Out Mail">
+                  <i class="fa fa-envelope"></i>
+                </div>12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td class="tr_l">xxxxx</td>
+              <td class="tr_l">xxxxxx</td>
+              <td>20/01/2019 05.00PM</td>
+              <td>xxxxxx</td>
+              <td><li class=" li_s t1_b"><i class="fas fa-mail-bulk"></i></li></td>
+             </tr>
+             <tr>
+              <td>12341</td>
+              <td class="tr_l">xxxxxxx</td>
+              <td class="tr_l">xxxxx</td>
+              <td class="tr_l">xxxxxx</td>
+              <td>22/01/2019 04.30PM</td>
+              <td>xxxxxx</td>
+              <td><li class="li_s t1_b"><a href="#"><i class="fas fa-mail-bulk"></i></a></li></td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+      <div class="clearfix"></div>
+      
+
+
+</div><!--content_container_closed------>
+
+
+</div>
+<a href="opportunity.html" type="button" class="list_b" title="Back to List">
+<i class="fa fa-arrow-circle-left"></i>
+</a>
+
+<a href="add_opportunity.html" type="button" id="myBtn" title="Edit Opportunity Information">
+<i class="fa fa-edit"></i>
+</a>
+
+<a href="#" type="button" onclick="topFunction()" id="myBtn" class="dropdown dd_spl1 dislike " title="Change Opportunity Status">
+<i class="fa fa-th-list"></i>
+</a>
+<div class="stat_sbox">
+  <ul>
+    <a href="#" data-toggle="modal" data-target="#loss_info" title="Win">
+      <li class="">
+        <div class="bo_not1 mrl_bon flt_l" title="Win">
+          <i class="fa fa-square"></i>
+        </div> Win
+      </li>
+    </a>
+    <a href="#" data-toggle="modal" data-target="#loss_info" title="partially win">
+       <li>
+        <div class="bo_not2 mrl_bon flt_l" title="partially win">
+          <i class="fa fa-square"></i>
+        </div> partially win
+  </li>
+    </a>
+    <a href="#" data-toggle="modal" data-target="#loss_info" title="Loss">
+      <li>
+        <div class="bo_not3 mrl_bon flt_l" title="Loss">
+          <i class="fa fa-square"></i>
+        </div> Loss
+      </li>
+    </a>
+</ul>
+</div>
+
+<a href="#" type="button" onclick="topFunction()" id="myBtn" class="dropdown dd_spl1 opp_btz " title="Quotation">
+<i class="fa fa-file-text-o"></i>
+</a>
+<div class="stat_sbox1">
+  <ul>
+      <a href="standard_template.html" title="Standerd Template" class="t1_a">
+        <li>
+          <i class="fa fa-list-alt"></i> Standerd Template
+        </li>
+      </a>
+      <a href="project_template.html" title="Project Template" class="t1_d_grn">
+        <li>
+          <i class="fa fa-list-alt"></i> Project Template
+        </li>
+      </a>
+      <a href="tender_template.html" title="Tender Template" class="t1_c_vio">
+        <li>
+          <i class="fa fa-list-alt"></i> Tender Template
+        </li>
+      </a>
+</ul>
+</div>
+
+<a href="#" type="button" id="myBtn" class="allo_btn" data-toggle="modal" data-target="#allocate_to" title="Allocate">
+<i class="fa fa-calendar-check-o"></i>
+</a>
+
+<a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
+<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Sales Force Automation</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+<!-- Modal1 -->
+<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog flt_r" role="document" style="margin-top: 8%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Note</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="form-group fg6 mar_at flt_l">
+             <label for="email" class="fg2_la1">Through:<span class="spn1">*</span></label>
+               <select class="form-control fg2_inp1 inp_mst">
+                 <option>Fax</option>
+                <option>Mail</option>
+                <option>Other</option>
+               </select>           
+        </div>
+
+        <div class="form-group fg6 mar_at flt_l">
+          <div class="tdte">
+            <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
+            <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr inp_mst" type="text"  />
+              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div>
+        </div>
+
+            
+        <div class="form-group fg12 mar_at flt_l">
+              <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
+              <textarea rows="3" cols="48" class="form-control flt_l  inp_mst not_tx_ar" placeholder="Description"></textarea>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="free_sp"></div>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal3 -->
+<div class="modal fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog flt_r" role="document" style="margin-top:7%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Follow-Up / Task</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mod_bd1_800">
+        
+        <div class="form-group fg4 sa_2">
+             <label for="email" class="fg2_la1">Subject:<span class="spn1">*</span></label>
+               <select class="form-control fg2_inp1  inp_mst">
+                 <option>Client Call</option>
+                <option>Send An Email</option>
+                <option>Customer Meeting</option>
+               </select>           
+        </div>
+        <div class="form-group fg6_5 sa_2 mar_at flt_l">
+                <label for="pwd" class="fg2_la1">Due Week:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1  inp_mst">
+                 <option>1 Week</option>
+                <option>2 Week</option>
+                <option>3 Week</option>
+               </select> 
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="form-group fg12">
+
+          <div class="form-group fg4 sa_2">
+            <div class="tdte">
+              <label for="pwd" class="fg2_la1">Due Date:<span class="spn1">*</span> </label>
+              <div id="datepicker2" class="input-group date" data-date-format="mm-dd-yyyy">
+                <input class="form-control inp_bdr inp_mst" type="text"  />
+                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+          </div>
+                
+                <div class="fg5 sa_2">
+                  <label for="pwd" class="fg2_la1">Due Time:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1  inp_mst">
+                 <option>Hours</option>
+                 <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+               </select> 
+             </div>
+
+             <div class="fg5 sa_2">
+              <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+             <select class="form-control fg2_inp1  inp_mst">
+                <option>Minute</option>
+                <option>00</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+                <option>06</option>
+                <option>07</option>
+                <option>08</option>
+                <option>09</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+                <option>34</option>
+                <option>35</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>45</option>
+                <option>46</option>
+                <option>47</option>
+                <option>48</option>
+                <option>49</option>
+                <option>50</option>
+                <option>51</option>
+                <option>52</option>
+                <option>53</option>
+                <option>54</option>
+                <option>55</option>
+                <option>56</option>
+                <option>57</option>
+                <option>58</option>
+                <option>59</option>
+               </select>
+             </div>
+             <div class="fg7 sa_2">
+              <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+                <select class="form-control fg2_inp1  inp_mst">
+                 <option>AM</option>
+                <option>PM</option>
+               </select> 
+             </div>
+        </div> 
+        <div class="form-group fg12 sa_2 not_tx_ar">
+          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+          <textarea rows="3" cols="48" class="form-control flt_l dt_wdt" placeholder="Description"></textarea>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="free_sp"></div>
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- additional_fil_Modal1 -->
+<div class="modal fade" id="additional_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  ad_sd_mod" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Aditional Files</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        
+      </div>
+      <div class="modal-footer tr_l">
+        <div class="fg6 flt_l"><li class=" li_s t1_e"><i class="fa fa-envelope-o opn_g"></i> Attached with mail</li></div>
+        <div class="fg6"><li class=" li_s t1_e"><i class="fa fa-envelope-o cls_r"></i> Not Attached with mail</li></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Supplier_quotes_Modal1 -->
+<div class="modal fade" id="supplier_quotes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ad_sd_mod" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Supplier Quotes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Allocate_to_Modal1 -->
+<div class="modal fade" id="allocate_to" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ad_sd_mod1 flt_r" role="document" style="width: 40%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Allocate TO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body padng_btm">
+        <div class="form-group fg6 sa_2">
+          <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs1">
+            <option>Employee 1</option>
+            <option>Employee 2</option>
+            <option>Employee 3</option>
+          </select> 
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Loss_info_Modal1 -->
+<div class="modal fade" id="loss_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog los_res_mod" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reason For Loss</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body padng_btm">
+        <div class="fg12 mar_bo1">
+          <label for="email" class="fg2_la1">Reason:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 fg_chs1 inp_mst">
+            <option>Delayed Follow-up</option>
+            <option>Not dealing with product</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="fg12 mar_bo1">
+          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+          <textarea rows="4" cols="48" class="form-control flt_l" placeholder="Write Something Here"></textarea>
+        </div>
+        <div class="fg12 ">
+          <label for="email" class="fg2_la1 pad_l">Send regret mail:<span class="spn1"></span></label>
+          <div class="check1 tr_l">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox" >
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fg12">
+            <span class="span_sm note1">(Please Review E-Mail Settings of-Employee,Division And Customer)</span>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- part_opp_Modal1 -->
+<div class="modal fade" id="part_opp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog part_mod" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Quotation Partial Win</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body padng_btm">
+        <div class="fg2">
+           <label for="email" class="fg2_la1">Total Amount:<span class="spn1"></span></label>
+          <input type="text" class="form-control fg2_inp1" placeholder="Enter Product Group Code" disabled="">
+        </div>
+        <div class="fg2">
+          <label for="email" class="fg2_la1">Product As:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 fg_chs1">
+            <option>T56</option>
+          </select>
+        </div>
+        <div class="fg2"><button class="win_amt"><i class="fa fa-calculator"></i> Calculate Win Amount:</button>
+          <input type="text" class="form-control fg2_inp1" placeholder="">
+        </div>
+        <div class="fg2">
+          <label for="email" class="fg2_la1">&nbsp;</label>
+          <button type="submit" class="btn sub1 win_btn"><i class="fa fa-trophy"></i> WIN</button>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="devider"></div>
+        <table class="table table-bordered">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-3 tr_l">Product</th>
+                <th class="col-md-1 tr_c">Category</th>
+                 <th class="col-md-1 tr_c">Unit</th>
+                <th class="col-md-1 tr_c">Quantity</th>
+                <th class="col-md-1 tr_c">Tax %</th>
+                <th class="col-md-1 tr_r">Tax Amount</th>
+                <th class="col-md-1 tr_r">Cost Price</th>
+                <th class="col-md-1 tr_r">Selling Price</th>
+                <th class="col-md-1 tr_c">Discount</th>
+                <th class="col-md-1 tr_r">Total</th>
+              </tr>
+            </thead>
+
+          <tbody id="myTable">
+             <tr class="tr1">
+                <td class=" tr_l">Product 1</td>
+                <td class=" tr_c">Furniture</td>
+                <td class=" tr_c">21</td>
+                <td class=" tr_c">100</td>
+                <td class=" tr_c">20</td>
+                <td class=" tr_r">1000</td>
+                <td class=" tr_r">20</td>
+                <td class=" tr_r">1000</td>
+                <td class=" tr_c">20</td>
+                <td class=" tr_r">1000</td>
+             </tr>
+          </tbody>
+        </table>
+      </div><!-- 
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+
+  </div><!--wrapper_closed-->
+
+
+<!--------script section_started---------->
+
+
+<!-----table_search------------>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-----table_search_closed------------>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "180px";
+    document.getElementById("main").style.marginright = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginright= "0";
+}
+</script>
+
+<!--app_more button_onclick----->
+<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.height = "200px";
+    document.getElementById("main").style.marginbottom = "Auto";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.height = "0";
+    document.getElementById("main").style.marginbottom= "0";
+}
+</script>
+
+
+
+<script>
+function openNav2() {
+    document.getElementByclass("content_sec1").style.width = "250";
+    document.getElementByclass("main").style.marginLeft = "0px";
+}
+
+function closeNav2() {
+    document.getElementById("myNav1").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".slide-toggle").click(function(){
+    $(".content_sec1").animate({
+      width: "18%"
+    });
+  });
+});
+
+</script>
+
+<!--searchbox_list_script_opened------->
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = [""];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+
+
+<!--searchbox_list_script_closed------->
+
+
+
+<script>
+function myFunction_a() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput_1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable_1");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+<script>
+function myFunction_b() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput_2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable_1");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+
+<!---date_pickers--->
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
+
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'glyphicon glyphicon-check'
+                },
+                off: {
+                    icon: 'glyphicon glyphicon-unchecked gly2'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                .removeClass('btn-d')
+                .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                .removeClass('btn-' + color)
+                .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+</script>
+<!---------------Checkbox_section_closed------------------------->
+
+<!-------backtotop_button_script------>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<!-------backtotop_button_script------>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker1').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker2').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker3').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker4').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+
+
+<!---alocate_section_popup_script_started-->
+<script type="text/javascript">
+  var popup = document.getElementById('popup-wrapper');
+var btn = document.getElementById("popup-btn");
+var span = document.getElementById("close");
+btn.onclick = function() {
+    popup.classList.add('show');
+}
+span.onclick = function() {
+    popup.classList.remove('show');
+}
+
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.classList.remove('show');
+    }
+}
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".imprt_o").click(function(){
+    $(".import_opt").toggle(300);
+  });
+});
+</script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){ 
+    $(".cont_contr").scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn();
+            $('.popover.right').fadeOut();
+            $('.popover.top').fadeOut();   
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $(".cont_contr").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+
+<script>
+$(document).ready(function(e) {
+  $("#countries1").msDropdown({visibleRows:4});
+  $("").msDropdown();
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 9) { 
+   $('.dd .ddChild').hide();
+  } 
+});
+</script> 
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover"]').popover();
+  $('[data-toggle="tooltip"]').tooltip();
+  $('body').popover('disable')
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.popover.top').hide();
+   $('.popover.right').hide();
+  } 
+});
+    $(document).on("click", ".popover .pop_o_cls" , function(){
+        $(this).parents(".popover").popover('hide');
+    });
+</script>
+
+<style type="text/css">
+  .popover-content{max-height: 240px;}
+  .popover.top{max-width:370px;}
+</style>
+
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover0"]').popover();
+  $('[data-toggle="tooltip0"]').tooltip();
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.popover.top').hide();
+  } 
+});
+$(document).ready(function(){
+  $(".pop_o_cls").click(function(){
+    $(".popover.right").hide();
+  });
+</script>
+<style type="text/css">
+  .popover-content0{max-height: 300px;}
+  .popover0.top0{max-width:500px;}
+  .popover.right{min-width:500px;min-height: 400px;}
+  .popover.right .popover-content{min-height:400px;}
+
+</style>
+<script>
+$(document).ready(function(){
+  $(".dislike").click(function(){
+    $(".stat_sbox").toggle();
+    $(".stat_sbox1").hide();
+  });
+  $(".opp_btz").click(function(){
+    $(".stat_sbox1").toggle();
+    $(".stat_sbox").hide();
+  });
+  $(".allo_btn").click(function(){
+    $(".stat_sbox, .stat_sbox1").hide();
+  });
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.stat_sbox').hide();
+   $('.stat_sbox1').hide();
+  } 
+});
+});
+</script>
+</body>
+</html>
