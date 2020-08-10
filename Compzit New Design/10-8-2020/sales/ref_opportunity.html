@@ -466,7 +466,7 @@ function closeNav5() {
     <button class="btn act_btn bn4 bt_e bt_fx_crqt" title="Customer Requirements" data-toggle="popover" data-placement="right" data-html="true" data-content="<label class='form1 mar_bo'>
         
         
-      </label><textarea cols='64' rows='18' placeholder='Regards,
+      </label><textarea cols='64' rows='18' style='width:100%;outline:none!important;border:none;' placeholder='Regards,
 
 www.albalagh.com
 
@@ -804,6 +804,9 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 
 
 </div>
+</div>
+</div>
+
 <a href="opportunity.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a>
@@ -844,7 +847,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 <a href="#" type="button" onclick="topFunction()" id="myBtn" class="dropdown dd_spl1 opp_btz " title="Quotation">
 <i class="fa fa-file-text-o"></i>
 </a>
-<div class="stat_sbox1">
+<div class="stat_sbox1" id="mybox1">
   <ul>
       <a href="standard_template.html" title="Standerd Template" class="t1_a">
         <li>
@@ -868,6 +871,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 <i class="fa fa-calendar-check-o"></i>
 </a>
 
+
 <a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
 
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
@@ -877,6 +881,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     Designed by <span>Volviar</span> Technologies
   </p>
 </div>
+
 
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
@@ -1162,7 +1167,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 </div>
 
  <!-- Loss_info_Modal1 -->
-<div class="modal fade" id="loss_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="loss_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 99999999999;">
   <div class="modal-dialog los_res_mod" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -1786,12 +1791,14 @@ $(document).on('keydown', function(e) {
 
   if (keyCode == 27) { 
    $('.popover.top').hide();
-   $('.popover.right').hide();
+   $('.popover.right').popover('hide');
+   $('.bt_fx_crqt').addClass('new_bs');
   } 
 });
     $(document).on("click", ".popover .pop_o_cls" , function(){
         $(this).parents(".popover").popover('hide');
     });
+
 </script>
 
 <style type="text/css">
@@ -1799,23 +1806,6 @@ $(document).on('keydown', function(e) {
   .popover.top{max-width:370px;}
 </style>
 
-<script type="text/javascript">
-$(function () {
-  $('[data-toggle="popover0"]').popover();
-  $('[data-toggle="tooltip0"]').tooltip();
-});
-$(document).on('keydown', function(e) { 
-  var keyCode = e.keyCode || e.which; 
-
-  if (keyCode == 27) { 
-   $('.popover.top').hide();
-  } 
-});
-$(document).ready(function(){
-  $(".pop_o_cls").click(function(){
-    $(".popover.right").hide();
-  });
-</script>
 <style type="text/css">
   .popover-content0{max-height: 300px;}
   .popover0.top0{max-width:500px;}
@@ -1833,7 +1823,7 @@ $(document).ready(function(){
     $(".stat_sbox1").toggle();
     $(".stat_sbox").hide();
   });
-  $(".allo_btn").click(function(){
+  $(".allo_btn, .btn, .cont_contr").click(function(){
     $(".stat_sbox, .stat_sbox1").hide();
   });
 $(document).on('keydown', function(e) { 
@@ -1846,5 +1836,6 @@ $(document).on('keydown', function(e) {
 });
 });
 </script>
+
 </body>
 </html>
