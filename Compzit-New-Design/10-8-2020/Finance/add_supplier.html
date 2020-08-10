@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html>
+<title>Compzit Admin Dashboard</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<head>
+
+<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "320px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0px";
+}
+
+</script>
+
+
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "280px";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0px";
+}
+
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.height = "106px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.height = "0";
+}
+</script>
+
+<link rel="shortcut icon" href="../images/com.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/boot.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!---Font_Awesome_section_opened----------->
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.min.css">
+<!---Font_Awesome_section_closed----------->
+
+<!--------css_Included------->
+
+<link rel="stylesheet" type="text/css" href="../css/afsdez.css">
+<!-- 
+<link rel="stylesheet" type="text/css" href="../css/afsdez_org.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_gray.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_red.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/rec.css">
+
+<link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
+<script type="text/javascript" src="../js/datepick.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../css/respon.css">
+
+<!--------css_Included_closed------->
+<Style>
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
+
+</Style>
+
+</head>
+<body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+
+ <div class="mySave1" id="mySave">
+  <div class="save_sec">
+    <button type="submit" class="btn sub1 bt_b">Save</button>
+    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+  <div class="edit_sec">
+    <button type="submit" class="btn sub1 bt_b">Update</button>
+    <button type="submit" class="btn sub3 bt_b">Update & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Confirm</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+</div>
+
+
+<!------------------mySidenav4_opned--------------------->
+<div id="mySidenav4" class="sidenav4">
+  
+   <div class="menu_strip">
+      <h1><!-- <i class="fa fa-line-chart ft_ico"></i> -->
+      <i class="ft_ico"><img src="../images/ft_ico.png"></i> Finance management System</h1>
+      <a href="#" onclick="closeNav4()">
+        <i class="fa fa-chevron-circle-left fa_arro"></i>
+      </a>
+    </div>
+ 
+  <div class="content_sec1 overlay">
+   
+    <div class="serch_1">
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a category" class="mySearch se_1">
+   </div>
+     <div class="menu_item"> 
+      <ul id="myUL" class="menu_ul">
+        <li>
+          <a href="dashboard.html"><i class="fa fa-tachometer list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="account_group.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Account Group
+          </a>
+        </li>
+        <li>
+          <a href="receipt.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Receipt
+          </a>
+        </li>
+        <li>
+          <a href="tds.html"><i class="fa fa-scissors list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png">
+            </i> TDS
+          </a>
+        </li>
+        <li>
+          <a href="ledger.html"><i class="fa fa-newspaper-o list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Ledger
+          </a>
+        </li>
+        <li>
+          <a href="tcs.html"><i class="fa fa-hand-scissors-o  list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> TCS
+          </a>
+        </li>
+        <li>
+          <a href="purchase.html"><i class="fa fa-shopping-cart list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Purchase
+          </a>
+        </li>
+        <li>
+          <a href="supplier.html" class="active"><i class="fa fa-sitemap list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Suppliers
+          </a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-sitemap list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Purchase Register
+          </a>
+        </li>
+        <li>
+          <a href="sales.html"><i class="fa fa-line-chart list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Sales
+          </a>
+        </li>
+        <li>
+          <a href="monthly_budgeting.html"><i class="fa fa-pie-chart list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Monthly Budgeting
+          </a>
+        </li>
+        <li>
+          <a href="cheque.html"><i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Cheque Template
+          </a>
+        </li>
+        <li>
+          <a href="journal.html"><i class="fa fa-file-text-o list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Journal
+          </a>
+        </li>
+        <li>
+          <a href="cost_group.html"><i class="fa fa-object-group list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Cost Group
+          </a>
+        </li>
+        <li>
+          <a href="account_closing.html"><i class="fa fa-files-o list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Account Closing
+          </a>
+        </li>
+        <li>
+          <a href="add_account.html"><i class="fa fa-cogs list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Account Settings</a>
+        </li>
+        <li>
+          <a href="credit.html"><i class="fa fa-sticky-note-o list1 men_ico"></i>
+            <i class="men_img"><img src="../images/menu/1.png"></i> Credit Note
+          </a>
+        </li>
+        <li>
+          <a href="cost_centre.html"><i class="fa fa-map-pin list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"> </i> Cost Centre
+          </a>
+        </li>
+        <li>
+          <a href="cost_centre.html"><i class="fa fa-map-pin list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"> </i> Financial Year Change
+          </a>
+        </li>
+        <li>
+          <a href="payment.html"><i class="fa fa-money list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Payment
+          </a>
+        </li>
+        <li>
+          <a href="debit.html"><i class="fa fa-sticky-note-o list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Debit Note
+          </a>
+        </li>
+        <li>
+          <a href="audit_closing.html"><i class="fa fa-file-text-o list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Audit Closing
+          </a>
+        </li>
+        <li>
+          <a href="bank_reconciliation.html"><i class="fa fa-university list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Bank Reconciliation
+          </a>
+        </li>
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> FMS Report <span class="caret c2"></span>
+          </a>
+         <ul class="dropdown-menu dropul">
+            <li>
+              <a href="fms_daybook.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Day Book
+              </a>
+            </li>
+            <li>
+              <a href="fms_sales.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Sales Statement
+              </a>
+            </li>
+            <li>
+              <a href="fms_purchase.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Purchase Statement
+              </a>
+            </li>
+            <li>
+              <a href="fms_ledger.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Ledger Statement
+              </a>
+            </li>
+            <li>
+              <a href="fms_supplier.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Supplier Outstanding
+              </a>
+            </li>
+            <li>
+              <a href="fms_trial.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Trial Balance
+              </a>
+            </li>
+            <li>
+              <a href="fms_customer.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Customer Outstanding
+              </a>
+            </li>
+            <li>
+              <a href="fms_profit.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Profit & Loss
+              </a>
+            </li>
+            <li>
+              <a href="fms_balance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Balance Sheet
+              </a>
+            </li>
+            <li>
+              <a href="fms_balance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Cost Group Performance Analysis
+              </a>
+            </li>
+            <li>
+              <a href="fms_balance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Cost Centre Performance Analysis
+              </a>
+            </li>
+            <li>
+              <a href="fms_balance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Customer Outstanding Aging
+              </a>
+            </li>
+            <li>
+              <a href="fms_balance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Supplier Outstanding Aging
+              </a>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!------------------mySidenav4_closed--------------------->
+
+
+  <div class="wrapper wr2" onmouseover="closesave()">
+
+<div class="menu_fix">
+  <a href="#"  onclick="openNav4()">
+      <i class="fa fa-bars bar"></i>
+    </a>
+</div>
+
+  <a href="#"  onclick="openNav7()">
+    <div class="menu_fix1">
+      <i class="fa fa-tasks bar rot"></i><span class="badge beln cht cht1">4</span>
+      <h5>Task</h5>
+    </div>
+</a>
+
+<!------------------mySidenav7_opened--------------------->
+<div id="mySidenav7" class="sidenav7">
+  <a href="#" onclick="closeNav7()">
+    <i class="fa fa-arrow-circle-right fa_arro1"></i>
+  </a>
+  <h3>TASK MANAGER</h3>
+  <div class="task1 overlay">
+   <ul class="nav nav-tabs">
+    <li class="tab_text1 active"><a data-toggle="tab" href="#home">Tasks</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu1">Add New</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu2">View All</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu3">Settings</a></li>
+  </ul>
+
+  <div class="tab-content tab">
+    <div id="home" class="tab-pane fade in active">
+     <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+      <h3>Add new task</h3>
+      <div class="fo_tsk">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email" class="labl1">Task Name:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="labl1">Details of Task:</label>
+            <textarea type="text" class="form-control" id="pwd" placeholder="Enter your task" name="pwd"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>View All</h3>
+      <p>Under Construction</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Settings</h3>
+      <p>Under Construction</p>
+    </div>
+  </div> 
+
+  </div>
+</div>
+<!------------------mySidenav7_Closed--------------------->
+
+<!------------------mySidenav5_opned--------------------->
+<div id="mySidenav5" class="sidenav5" onclick="closeNav5()">         
+  <div class="head_sec1" style="width: 100%;height:70px;">
+    <a href="#" onclick="openNav5()"></a>
+   
+      <div id="flipper" class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-th fa6"></i>
+          <h5>Apps</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box ap_bx1 bo1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+          <i class="fa fa-sitemap fa6"></i>
+          <h5>Business Unit</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+     
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+  </div>
+  <a href="#">
+    <div class="closed">
+       <i class="fa fa-arrow-circle-up ar_top"></i>
+    </div>    
+  </a>   
+</div>
+<!------------------mySidenav5_closed--------------------->
+
+
+
+<!------------------mySidenav_opned--------------------->
+<div id="mySidenav" class="sidenav">
+  <div class="profile_contain">
+    <div class="pro_cir1">
+      <img src="../images/user.png" class="user_res1">
+    </div>
+
+  <div class="dropdown drop1">
+    <button class="dropdown-toggle bt2" type="button" data-toggle="dropdown"><h5>David John</h5>
+    <span class="caret c1"></span>
+    </button>
+    <ul class="dropdown-menu drop_dn ul1">
+      <li><a href="#" class="lia1">HTML</a></li>
+      <li><a href="#" class="lia1">CSS</a></li>
+      <li><a href="#" class="lia1">JavaScript</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times-circle"></i></a>
+  </div>
+  <li>
+    <a href="#"><i class="fa fa-envelope f1 fa1"></i> Message</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-bell f1 fa1"></i> Notification</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-comments f1 fa1"></i> Chat</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-power-off f1 fa1"></i> Logout</a>
+  </li>
+</div>
+<!------------------mySidenav_Closed--------------------->
+
+<!----------------------------------------------header_section_opened---------------------------------------------->
+    <div class="header_container" onclick="closeNav4()">
+      <div class="head_sec2 head_lft">
+        <div class="head_sec2_sub1">
+          <img src="../images/alb_logo.png" class="img_alb1">
+          <h1> <span>JIO AL-BALAGH TRADING & CONTRACTING CO. WLL.</span></h1>
+        </div>
+        <div class="head_sec2_sub2 hd1" onmouseout="">
+          <a href="#"><i class="fa fa-envelope"><span class="badge beln cht">41</span></i></a>
+          <a href="#"><i class="fa fa-bell"><span class="badge beln">4</span></i></a>
+          <i class="fa fa-comments f1"><span class="badge beln cht">4</span></i>
+          <div class="dropdown">
+              <button class="dropdown-toggle bt1" type="button" data-toggle="dropdown"><h6>David John</h6>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu drop_dn">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+            <div class="pro_cir">
+              <img src="../images/user.png" class="user_res">
+            </div>
+            <div class="power">
+            
+            <i class="fa fa-power-off"></i>
+            </div>
+        </div>
+
+        <div class="menu-tog">
+          <a onmouseover="openNav()"><i class="fa fa-ellipsis-h"></i></a>
+        </div>  
+      </div>
+
+      <div class="head_sec1 head_rgt">
+        <a href="#" onmouseover="openNav5()" onclick="closeNav5()">
+        <div class="left_dot">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        </a>
+      </div>
+
+    </div><!--header_container_closed--->
+<!----------------------------------------------header_section_closed------------------------------------------------------------->
+
+
+<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+ <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+
+  <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Finance Management System</a></li>
+        <li><a href="supplier.html">Supplier</a></li>
+         <li class="active">Add Supplier</li>
+  </ol>
+
+  <div class="content_sec2 cont_contr">
+    <div class="content_area_container cont_contr">
+      
+      <div class="content_box1 cont_contr">
+        <h2>Add Supplier</h2>
+
+      <div class="table_box tb_scr">
+        <div class="add_sec">
+          <div class="">
+            <form class="form-inline" action="#">
+              
+              <div class="col-md-12 clm">
+              <div class="form-group fg2">
+                <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
+                <input type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Enter Supplier Name" name="email" required="">
+              </div>
+
+              <div class="fg2">
+                <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1 fg_chs1 inp_mst">
+                  <option>Category 1</option>
+                  <option>Category 2</option>
+                  <option>Category 3</option>
+                </select>
+              </div>
+
+              <div class="form-group fg2">
+                <label for="email" class="fg2_la1">Address 1:<span class="spn1">*</span></label>
+                <input type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Enter Address 1" name="email">
+              </div>
+              <div class="form-group fg2">
+                <label for="email" class="fg2_la1">Address 2:<span class="spn1">&nbsp;</span></label>
+                <input type="text" class="form-control fg2_inp1" id="email" placeholder="Enter Address 2" name="email">
+              </div>
+
+               <div class="form-group fg2">
+                <label for="email" class="fg2_la1">Address 3:<span class="spn1">&nbsp;</span></label>
+                <input type="text" class="form-control fg2_inp1" id="email" placeholder="Enter Address 3" name="email">
+              </div>
+
+              <div class="form-group fg2">
+                <label for="email" class="fg2_la1">Contact#:<span class="spn1">&nbsp;</span></label>
+                <input type="text" class="form-control fg2_inp1" id="email" placeholder="Enter Contact#" name="email">
+              </div>
+
+              <div class="fg8">
+                <label for="email" class="fg2_la1">Rating:<span class="spn1"></span></label>
+                <div class="input-group number-spinner grp_splr">
+                  <span class="input-group-btn data-dwn">
+                    <button class="btn btn-default btn-info blu_spn bt_splr" data-dir="dwn"><span class="fa fa-minus"></span></button>
+                  </span>
+                  <input type="text" class="form-control text-center in_splr" value="1" min="-10" max="40">
+                  <span class="input-group-btn data-up">
+                    <button class="btn btn-default btn-info blu_spn bt_splr" data-dir="up"><span class="fa fa-plus"></span></button>
+                  </span>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+              <div class="devider divid"></div>
+
+              <div class="form-group fg2">
+                <label for="email" class="fg2_la1">Credit Period (Days):<span class="spn1">&nbsp;</span></label>
+                <input id="myinpc2" type="text" class="form-control fg2_inp1" id="email" placeholder="Enter Credit Period (Days)" name="email">
+              </div>
+
+               <div class="form-group fg2">
+                <label for="email" class="fg2_la1">Credit Limit:<span class="spn1">&nbsp;</span></label>
+                <input id="myinpc3" type="text" class="form-control fg2_inp1" id="email" placeholder="Enter Credit Limit" name="email">
+              </div>
+
+            <div class="code_box">
+              <div class="form-group fg2">
+               <label for="email" class="fg2_la1 pad_l">Consider as ledger:<span class="spn1">*</span></label>
+                <div class="check1 mar_btm1" >
+                  <div class="">
+                    <label class="switch" onclick="consider()">
+                      <input type="checkbox" id="cbx_ldgr">
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group fg2">
+                <label for="email" class="fg2_la1">Account Group:<span class="spn1">&nbsp;</span></label>
+                  <select id="in_ld5"  class="form-control fg2_inp1" disabled="">
+                    <option>Account Group 1</option>
+                    <option>Account Group 2</option>
+                    <option>Account Group 3</option>
+                    <option>Account Group 4</option>
+                  </select>  
+                </div>
+              </div>
+
+            <div class="clearfix"></div>
+
+              <div class="form-group fg2 fg2_mr">
+               <label for="email" class="fg2_la1 pad_l">Consider as cost centre:<span class="spn1"></span></label>
+                <div class="check1 mar_btm1" >
+                  <div class="">
+                    <label class="switch" onclick="con_cc()">
+                      <input type="checkbox" id="in_ld1" disabled>
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group fg2 fg2_mr">
+                <label for="email" class="fg2_la1">Cost Group:<span class="spn1">&nbsp;</span></label>
+                <select class="form-control fg2_inp1" id="in_cc1" disabled="">
+                  <option>Cost Group 1</option>
+                  <option>Cost Group 2</option>
+                  <option>Cost Group 3</option>
+                  <option>Cost Group 4</option>
+                </select>  
+              </div>
+
+              <div class="form-group fg2 fg2_mr sa_fg3 sa_480">
+        <label for="email" class="fg2_la1 pad_l">Sub Ledger:<span class="spn1">&nbsp;</span></label>
+        <div class="check1">
+          <div class="">
+            <label class="switch">
+              <input type="checkbox" id="cbx_hhh" onclick="mydis()" >
+              <span class="slider_tog round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group fg2 fg2_mr sa_fg3 sa_480">
+        <label for="email" class="fg2_la1">Account Head:<span class="spn1">*</span></label>
+        <select class="form-control fg2_inp1 fg_chs2 inp_mst" id="dis1" disabled>
+          <option>Account Head1</option>
+          <option>Account Head2</option>
+          <option>Account Head3</option>
+        </select>
+      </div>
+
+              <div class="clearfix"></div>
+              <div class="free_sp"></div>
+              <div class="devider divid"></div>
+
+              <div class="form-group fg5 fg2_mr">
+               <label for="email" class="fg2_la1 pad_l">TDS Applicable:<span class="spn1">*</span></label>
+                <div class="check1 mar_btm1" >
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" class="bu" onclick="enable()" id="in_ld2" disabled >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+                <select class="form-control fg2_inp1 inp_mst" id="mySe">
+                  <option>TDS 1</option>
+                  <option>TDS 2</option>
+                  <option>TDS 3</option>
+                  <option>TDS 4</option>
+                </select> 
+              </div>
+
+              <div class="form-group fg5 fg2_mr">
+                <label for="email" class="fg2_la1 pad_l">TCS Applicable:<span class="spn1">*</span></label>
+                <div class="check1 mar_btm1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" class="bu1" onclick="enable1()" id="in_ld3" disabled >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+                <select class="form-control fg2_inp1 inp_mst" id="mySe1">
+                  <option>TCS 1</option>
+                  <option>TCS 2</option>
+                  <option>TCS 3</option>
+                  <option>TCS 4</option>
+                </select>
+              </div>
+
+          
+              <div class="form-group fg5 fg2_mr">
+                <label for="email" class="fg2_la1">Ledger Code :<span class="spn1">&nbsp;</span></label>
+                <input id="in_ld6" type="text" class="form-control fg2_inp1" placeholder="Enter Ledger Code Here" disabled="">
+              </div>
+
+              <div class="form-group fg5 fg2_mr">
+                <label for="email" class="fg2_la1">Cost Centre Code :<span class="spn1">&nbsp;</span></label>
+                <input id="in_cc2" type="text" class="form-control fg2_inp1" placeholder="Enter Centre Code Here" disabled="">
+              </div>
+
+              <div class="form-group fg5 fg2_mr">
+                <label for="email" class="fg2_la1">Supplier Code:<span class="spn1">&nbsp;</span></label>
+                <input id="in_cc2" type="text" class="form-control fg2_inp1" placeholder="Enter Supplier Code Here" disabled="">
+                
+              </div>
+    <div class="clearfix"></div>
+    <div class="free_sp"></div>
+    <div class="devider divid"></div>
+
+    <div class="form-group fg5 fg2_mr">
+      <label class="fg2_la1">Opening Balance:<span class="spn1">&nbsp;</span></label>
+      <input id="in_ld4" type="text" class="form-control fg2_inp1 tr_r" placeholder="0.00" disabled="">
+    </div>
+
+    <div class="form-group fg5 fg2_mr">
+      <div class="row">
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios2"  value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Debit
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios2"  value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Credit
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="form-group fg5 fg2_mr">
+    <label for="email" class="fg2_la1">Cost Centre Nature:<span class="spn1">&nbsp;</span></label>
+    <div class="row">
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">Income</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios1"  value="option2">
+          <label class="form-check-label" for="gridRadios2">Expense</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group fg5 fg2_mr">
+    <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+    <div class="check1">
+      <div class="">
+        <label class="switch">
+          <input type="checkbox" >
+          <span class="slider_tog round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+  <div class="clearfix"></div>
+  <div class="free_sp"></div>
+  <div class="devider divid"></div>
+
+
+  <!--table_section_started-->
+  <table class="table table-bordered">
+    <thead class="thead1">
+      <tr>
+        <th class="th_b11 t_l">Name</th>
+        <th class="th_b11 tr_l">Address</th>
+        <th class="th_b6 tr_l">Mobile#</th>
+        <th class="th_b6 tr_l">Phone#</th>
+        <th class="th_b4 tr_l">Website</th>
+        <th class="th_b2 tr_l">Mail ID</th>
+        <th class="th_b6 tr_c">Actions</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td><input class="fg2_inp2 brd_r" placeholder="Name" disabled=""></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Address" disabled=""></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Mobile#" disabled=""></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Phone#" disabled=""></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Website" disabled=""></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Mail ID" disabled=""></td>
+        <td>
+          <div class="btn_stl1">
+            <button class="btn act_btn bn1" title="Edit"><i class="fa fa-edit"></i></button>
+            <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
+          </div>
+          <div class="btn_stl2">
+            <button class="btn act_btn bn1"><i class="fa fa-edit"></i> Edit</button>
+            <button class="btn act_btn bn3"><i class="fa fa-trash"></i> Delete</button>
+          </div>
+          <div class="btn_stl3">
+            <button class="btn act_btn bn1"> Edit</button>
+            <button class="btn act_btn bn3"> Delete</button>
+          </div>
+        </td>
+      </tr>
+       <tr>
+        <td><input class="fg2_inp2 brd_r" placeholder="Name"></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Address"></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Mobile#"></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Phone#"></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Website"></td>
+        <td><input class="fg2_inp2 brd_r" placeholder="Mail ID"></td>
+        <td>
+          <div class="btn_stl1">
+            <button class="btn act_btn bn2" title="Add New"><i class="fa fa-plus-circle"></i></button>
+            <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
+          </div>
+          <div class="btn_stl2">
+            <button class="btn act_btn bn2"><i class="fa fa-plus-circle"></i> Add</button>
+            <button class="btn act_btn bn3"><i class="fa fa-trash"></i> Delete</button>
+          </div>
+          <div class="btn_stl3">
+            <button class="btn act_btn bn2"> Add</button>
+            <button class="btn act_btn bn3"> Delete</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="clearfix"></div>
+  <div class="free_sp"></div>
+
+   <!--Buttons_Area_started--->
+ <div class="sub_cont pull-right">
+  <div class="save_sec">
+    <button type="submit" class="btn sub1">Save</button>
+    <button type="submit" class="btn sub3">Save & Close</button>
+    <button type="submit" class="btn sub2">Clear</button>
+    <button type="submit" class="btn sub4">Cancel</button>
+  </div>
+
+  <div class="edit_sec">
+    <button type="submit" class="btn sub1">Update</button>
+    <button type="submit" class="btn sub3">Update & Close</button>
+    <button type="submit" class="btn sub2">Confirm</button>
+    <button type="submit" class="btn sub4">Cancel</button>
+  </div>
+</div>
+<!--buttons_area_closed--->
+
+</form>
+   </div>
+        </div>
+      </div>
+    </div>
+   </div>
+    </div>
+     </div>
+        </div><!--content_container_closed------>
+
+
+
+<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
+<i class="fa fa-save"></i>
+</a>
+
+<a href="supplier.html" type="button" class="list_b" title="Back to List">
+<i class="fa fa-arrow-circle-left"></i>
+</a>
+
+<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico.png"></i> FINANCE MANAGEMENT System</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Department</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div><!--wrapper_closed-->
+
+<!--------script_section_started-------->
+
+  <!-- jQuery library -->
+  <script src="../js/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="../js/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+
+<!---menubar_dispaly or hide_started-->
+<script>
+$(document).ready(function(){
+  $(".menubr").click(function(){
+    $(".me_h").toggle(600);
+  });
+});
+</script>
+<!---menubar_dispaly or hide_closed-->
+
+<!---menubar height auto on click_opened-->
+<script>
+$(document).ready(function(){
+  $(".nxt").click(function(){
+    $(".men_hgt").toggle(100);
+  });
+});
+</script>
+<!---menubar height auto on click_closed-->
+
+<!---Search visible_opened-->
+<script>
+$(document).ready(function(){
+  $(".ser").click(function(){
+    $(".ser_inp").toggle(100);
+  });
+});
+</script>
+<!---Search visible_closed-->
+
+<!--search input_script_started-->
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("mymenu");
+  tr = table.getElementsByTagName("a");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("li")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+<!--search input_script_closed-->
+
+<!--dropdown_script_started-->
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+<!----checkbox_started--->
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'fa fa-check-square-o'
+                },
+                off: {
+                    icon: 'fa fa-square-o gly2'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-d')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color)
+                    .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+</script>
+<!--checkbox_closed-->
+
+<!---date_pickers--->
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
+
+
+<!----hide/Show_section---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c1h").hide();
+  });
+  $("#show").click(function(){
+    $(".c1h").show();
+  });
+});
+</script>
+
+<!----hide/Show_section2---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c2h").hide();
+  });
+  $("#show1").click(function(){
+    $(".c2h").show();
+  });
+});
+</script>
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "120px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+}
+</script>
+<!--save_pop up_closed-->
+
+<!---draggable_div_script_started of myinp---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myinp"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!---draggable_div_script_closed of myinp---->
+
+<!---draggable_div_script_started of myind---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myind"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!---draggable_div_script_closed of myind---->
+
+<!---draggable_div_script_started of myina---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myina"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!---draggable_div_script_closed of myinaS---->
+
+<!---draggable_div_script_started of myinr---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myinr"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+<!---draggable_div_script_closed of myinr---->
+
+<!---draggable_div_script_started of myina---->
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("myinrb"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "1")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "1").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+<!---draggable_div_script_closed of myinaS---->
+
+
+<!-----Enable_disable script--->
+<script>
+$(document).ready(function(){
+  $(".bu1").click(function(){
+    $("#mySe1").toggle();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".bu").click(function(){
+    $("#mySe").toggle();
+  });
+});
+</script>
+<!-----Enable_disable script_closed--->
+
+<!---tab_script_started--->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab2content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<!---tab_script_closed--->
+
+<!---Existing_supplier script_section_opened--->
+<script>
+function consider() {
+
+    if (document.getElementById("cbx_ldgr").checked==true) {
+      document.getElementById("in_ld1").disabled = false;
+      document.getElementById("in_ld2").disabled = false;
+      document.getElementById("in_ld3").disabled = false;
+      document.getElementById("in_ld4").disabled = false;
+      document.getElementById("in_ld5").disabled = false;
+      document.getElementById("in_ld6").disabled = false;
+    }else
+    {
+     document.getElementById("in_ld1").disabled = true;
+      document.getElementById("in_ld2").disabled = true;
+      document.getElementById("in_ld3").disabled = true;
+      document.getElementById("in_ld4").disabled = true;
+      document.getElementById("in_ld5").disabled = true;
+      document.getElementById("in_ld6").disabled = true;
+    }
+    
+}
+</script>
+<!---Existing_supplier script_section_closed--->
+
+
+<!---Consider as cost centre script_section_opened--->
+<script>
+function con_cc() {
+
+    if (document.getElementById("in_ld1").checked==true) {
+      document.getElementById("in_cc1").disabled = false;
+      document.getElementById("in_cc2").disabled = false;
+    }else
+    {
+     document.getElementById("in_cc1").disabled = true;
+      document.getElementById("in_cc2").disabled = true;
+    }
+    
+}
+</script>
+<!---Consider as cost centre script_section_closed--->
+
+
+
+<!----spinner_script----started---->
+<script type="text/javascript">
+ $(function() {
+    var action;
+    $(".number-spinner button").mousedown(function () {
+        btn = $(this);
+        input = btn.closest('.number-spinner').find('input');
+        btn.closest('.number-spinner').find('button').prop("disabled", false);
+
+      if (btn.attr('data-dir') == 'up') {
+            action = setInterval(function(){
+                if ( input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max')) ) {
+                    input.val(parseInt(input.val())+1);
+                }else{
+                    btn.prop("disabled", true);
+                    clearInterval(action);
+                }
+            }, 50);
+      } else {
+            action = setInterval(function(){
+                if ( input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min')) ) {
+                    input.val(parseInt(input.val())-1);
+                }else{
+                    btn.prop("disabled", true);
+                    clearInterval(action);
+                }
+            }, 50);
+      }
+    }).mouseup(function(){
+        clearInterval(action);
+    });
+});
+</script>
+<!----spinner_script----closed---->
+
+</body>
+</html>

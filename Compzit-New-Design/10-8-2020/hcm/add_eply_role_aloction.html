@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html>
+<title>Compzit Admin Dashboard</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<head>
+
+<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "320px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0px";
+}
+
+</script>
+
+
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "280px";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0px";
+}
+
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.height = "106px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.height = "0";
+}
+</script>
+
+<link rel="shortcut icon" href="../images/com.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/boot.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+
+
+<!--------css_Included------->
+
+<link rel="stylesheet" type="text/css" href="../css/afsdez.css">
+<!-- 
+<link rel="stylesheet" type="text/css" href="../css/afsdez_org.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_gray.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_red.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/rec.css">
+<link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
+<link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
+
+<link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
+<script type="text/javascript" src="../js/datepick.min.js"></script>
+
+<!--------css_Included_closed------->
+<Style>
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
+
+</Style>
+
+</head>
+<body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+
+ <div class="mySave1" id="mySave">
+  <div class="save_sec">
+    <button type="submit" class="btn sub1 bt_b">Save</button>
+    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
+  </div>
+
+  <div class="edit_sec">
+    <button type="submit" class="btn sub1 bt_b">Update</button>
+    <button type="submit" class="btn sub3 bt_b">Update & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Confirm</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+</div>
+
+
+<!------------------mySidenav4_opned--------------------->
+<div id="mySidenav4" class="sidenav4">
+  
+   <div class="menu_strip">
+      <h1><!-- <i class="fa fa-line-chart ft_ico"></i> -->
+      <i class="ft_ico"><img src="../images/ft_ico4.png"></i> Human Capital Management</h1>
+      <a href="#" onclick="closeNav4()">
+        <i class="fa fa-chevron-circle-left fa_arro"></i>
+      </a>
+    </div>
+ 
+  <div class="content_sec1 overlay">
+   
+    <div class="serch_1">
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a category" class="mySearch se_1">
+   </div>
+     <div class="menu_item"> 
+      <ul id="myUL" class="menu_ul">
+        <li>
+          <a href="adictn_dedctn.html" class="active"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/small/adtn_ddtn_sml.png"></i> Manual Update Addition Deduction
+          </a>
+        </li>
+        
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Demo <span class="caret c2"></span>
+          </a>
+          <ul class="dropdown-menu dropul">
+            <li>
+              <a href="#"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Demo1
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!------------------mySidenav4_closed--------------------->
+
+
+  <div class="wrapper wr2" onmouseover="closesave()">
+
+<div class="menu_fix">
+  <a href="#"  onclick="openNav4()">
+      <i class="fa fa-bars bar"></i>
+    </a>
+</div>
+
+  <a href="#"  onclick="openNav7()">
+    <div class="menu_fix1">
+      <i class="fa fa-tasks bar rot"></i><span class="badge beln cht cht1">4</span>
+      <h5>Task</h5>
+    </div>
+</a>
+
+<!------------------mySidenav7_opened--------------------->
+<div id="mySidenav7" class="sidenav7">
+  <a href="#" onclick="closeNav7()">
+    <i class="fa fa-arrow-circle-right fa_arro1"></i>
+  </a>
+  <h3>TASK MANAGER</h3>
+  <div class="task1 overlay">
+   <ul class="nav nav-tabs">
+    <li class="tab_text1 active"><a data-toggle="tab" href="#home">Tasks</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu1">Add New</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu2">View All</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu3">Settings</a></li>
+  </ul>
+
+  <div class="tab-content tab">
+    <div id="home" class="tab-pane fade in active">
+     <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+      <h3>Add new task</h3>
+      <div class="fo_tsk">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email" class="labl1">Task Name:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="labl1">Details of Task:</label>
+            <textarea type="text" class="form-control" id="pwd" placeholder="Enter your task" name="pwd"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>View All</h3>
+      <p>Under Construction</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Settings</h3>
+      <p>Under Construction</p>
+    </div>
+  </div> 
+
+  </div>
+</div>
+<!------------------mySidenav7_Closed--------------------->
+
+<!------------------mySidenav5_opned--------------------->
+<div id="mySidenav5" class="sidenav5" onclick="closeNav5()">         
+  <div class="head_sec1" style="width: 100%;height:70px;">
+    <a href="#" onclick="openNav5()"></a>
+   
+      <div id="flipper" class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-th fa6"></i>
+          <h5>Apps</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box ap_bx1 bo1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+          <i class="fa fa-sitemap fa6"></i>
+          <h5>Business Unit</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+     
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+  </div>
+  <a href="#">
+    <div class="closed">
+       <i class="fa fa-arrow-circle-up ar_top"></i>
+    </div>    
+  </a>   
+</div>
+<!------------------mySidenav5_closed--------------------->
+
+
+
+<!------------------mySidenav_opned--------------------->
+<div id="mySidenav" class="sidenav">
+  <div class="profile_contain">
+    <div class="pro_cir1">
+      <img src="../images/user.png" class="user_res1">
+    </div>
+
+  <div class="dropdown drop1">
+    <button class="dropdown-toggle bt2" type="button" data-toggle="dropdown"><h5>David John</h5>
+    <span class="caret c1"></span>
+    </button>
+    <ul class="dropdown-menu drop_dn ul1">
+      <li><a href="#" class="lia1">HTML</a></li>
+      <li><a href="#" class="lia1">CSS</a></li>
+      <li><a href="#" class="lia1">JavaScript</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times-circle"></i></a>
+  </div>
+  <li>
+    <a href="#"><i class="fa fa-envelope f1 fa1"></i> Message</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-bell f1 fa1"></i> Notification</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-comments f1 fa1"></i> Chat</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-power-off f1 fa1"></i> Logout</a>
+  </li>
+</div>
+<!------------------mySidenav_Closed--------------------->
+
+<!----------------------------------------------header_section_opened---------------------------------------------->
+    <div class="header_container" onclick="closeNav4()">
+      <div class="head_sec2 head_lft">
+        <div class="head_sec2_sub1">
+          <img src="../images/alb_logo.png" class="img_alb1">
+          <h1> <span>JIO AL-BALAGH TRADING & CONTRACTING CO. WLL.</span></h1>
+        </div>
+        <div class="head_sec2_sub2 hd1" onmouseout="">
+          <a href="#"><i class="fa fa-envelope"><span class="badge beln cht">41</span></i></a>
+          <a href="#"><i class="fa fa-bell"><span class="badge beln">4</span></i></a>
+          <i class="fa fa-comments f1"><span class="badge beln cht">4</span></i>
+          <div class="dropdown">
+              <button class="dropdown-toggle bt1" type="button" data-toggle="dropdown"><h6>David John</h6>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu drop_dn">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+            <div class="pro_cir">
+              <img src="../images/user.png" class="user_res">
+            </div>
+            <div class="power">
+            
+            <i class="fa fa-power-off"></i>
+            </div>
+        </div>
+
+        <div class="menu-tog">
+          <a onmouseover="openNav()"><i class="fa fa-ellipsis-h"></i></a>
+        </div>  
+      </div>
+
+      <div class="head_sec1 head_rgt">
+        <a href="#" onmouseover="openNav5()" onclick="closeNav5()">
+        <div class="left_dot">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        </a>
+      </div>
+
+    </div><!--header_container_closed--->
+<!----------------------------------------------header_section_closed------------------------------------------------------------->
+
+
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
+ <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+
+  <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">HCM</a></li>
+        <li><a href="emply_rol_allow.html">Employee Role Allocation</a></li>
+         <li class="active">Add Employee Role Allocation</li>
+  </ol>
+
+  <div class="content_sec2 cont_contr">
+    <div class="content_area_container cont_contr">
+      
+      <div class="content_box1 cont_contr">
+        <h2>Add Employee Role Allocation</h2>
+
+        <div class="form-group fg2 sa_fg4 sa_640_i">
+          <label for="email" class="fg2_la1">Designation:<span class="spn1">*</span></label>
+          <select type="text" class="form-control fg2_inp1 inp_mst">
+            <option>Designation 1</option>
+            <option>Designation 2</option>
+            <option>Designation 3</option>
+          </select>
+        </div>
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Job Role:<span class="spn1">*</span></label>
+          <select type="text" class="form-control fg2_inp1 inp_mst">
+            <option>Job Role 1</option>
+            <option>Job Role 2</option>
+            <option>Job Role 3</option>
+          </select>
+        </div>
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
+          <select type="text" class="form-control fg2_inp1 inp_mst">
+            <option>Employee 1</option>
+            <option>Employee 2</option>
+            <option>Employee 3</option>
+          </select>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="devider"></div>
+
+          <h3>Products</h3>  
+        
+
+        <div class="clearfix"></div>
+        
+      <div class="col-md-12">
+        <div class="col-md-2">
+          <div class="prod_sect">
+            <button class="prod_ic k1 btn_app"><img src="..\images\des_ico\app_7.png" title="App Administration"></button>
+            <button class="prod_ic k2 btn_sls"><img src="..\images\des_ico\sls7.png" title="Sales Force Automation"></button>
+            <button class="prod_ic k3 btn_aws"><img src="..\images\des_ico\aws7.png" title="Auto Workshop Management System"></button>
+            <button class="prod_ic k4 btn_guar"><img src="..\images\des_ico\guaran_7.png" title="Guarantee Management System"></button>
+            <button class="prod_ic k5 btn_hcm"><img src="..\images\des_ico\hcm7.png" title="Human Capital Management"></button>
+            <button class="prod_ic k6 btn_fin"><img src="..\images\des_ico\fin7.png" title="Finance Management System"></button>
+            <button class="prod_ic k7 btn_pro"><img src="..\images\des_ico\pro7.png" title="Procurement Management System"></button>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <div class="col-md-4">
+            <div class="prod_sel">
+              <button class="prod_sel2 btn_app1 prod_ic btn_app1 tablinks hei_adbtn" style="display:none;">
+                <img src="..\images\app_7.png"> App Administration<span class="spn1"></span></button>
+            </div>
+            <div class="prod_sel">
+              <button class="prod_sel2 btn_sls1 prod_ic btn_app2 tablinks hei_adbtn" style="display:none;">
+                <img src="..\images\sls7.png"> Sales Force Automation<span class="spn1"></span></button>
+              </div>
+            <div class="prod_sel">
+              <button class="prod_sel2 btn_aws1 prod_ic btn_app3 tablinks hei_adbtn" style="display:none;">
+                <img src="..\images\aws7.png"> Auto Workshop Management System<span class="spn1"></span></button>
+              </div>
+            <div class="prod_sel">
+              <button class="prod_sel2 btn_guar1 prod_ic btn_app4 tablinks hei_adbtn" style="display:none;">
+                <img src="..\images\guaran_7.png"> Guarantee Management System<span class="spn1"></span></button>
+              </div>
+            <div class="prod_sel">
+              <button class="prod_sel2 btn_hcm1 prod_ic btn_app5 tablinks hei_adbtn" style="display:none;">
+                <img src="..\images\hcm7.png"> Human Capital Management<span class="spn1"></span></button>
+              </div>
+            <div class="prod_sel">
+              <button class="prod_sel2 btn_fin1 prod_ic btn_app6 tablinks hei_adbtn" style="display:none;">
+                <img src="..\images\fin7.png"> Finance Management System<span class="spn1"></span></button>
+              </div>
+            <div class="prod_sel">
+              <button class="prod_sel2 btn_pro1 prod_ic btn_app7 tablinks hei_adbtn" style="display:none;">
+                <img src="..\images\pro7.png"> Procurement Management System<span class="spn1"></span></button>
+              </div>
+          </div>
+          <div class="col-md-8">
+          <div class="prod_tree">
+
+      <!---heirarchy_section_started-->
+
+      <div class="">
+        <!------tree_section_started-->
+        <div class="box_pro_7 pro_pa">
+          <div class="tree7">
+            <div class="tree7 wi_tre_1">
+            <ul id="myTab1" class="sc_hei btn_app1_a" style="display: none;">
+              <h3 class="mar_bo1">App Administration</h3>
+
+                <li>
+                    <ul>
+                      <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Location Settings</span>
+                      <ul class="uilist">
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Country</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Approval Assignment</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </li>
+                    <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>App Settings</span>
+                     <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                    </li>
+                    
+                    </ul>
+                  </li>
+                </ul>
+
+
+<!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei btn_sls1_a" style="display: none;">
+              <h3>Sales Force Automation</h3>
+                <li>
+                      <ul class="uilist">
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Mail Box</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Units of Measure</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Units of Measure</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Mail Settings</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </li>
+                  </ul>
+<!------tree_section_closed----->
+
+<!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei btn_aws1_a" style="display: none;">
+              <h3>Auto Workshop Management System</h3>
+                <li>
+                    <ul>
+                      <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Vehicle Management</span>
+                      <ul class="uilist">
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Vehicle</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Vehicle Renawal</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </li>
+                    <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Vehicle Allotement</span>
+                     
+                    </li>
+                    
+                    </ul>
+                  </li>
+                </ul>
+<!------tree_section_closed----->
+
+<!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei btn_guar1_a" style="display: none;">
+              <h3>Guarantee Management System</h3>
+                <li>
+                    <ul>
+                      <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Requist for Guarantee</span>
+                      <ul class="uilist">
+                        <li>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Insurance Type</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </li>
+                    <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Policy</span>
+                    </li>
+                    </ul>
+                  </li>
+                  </ul>
+                </li>
+              </ul>
+<!------tree_section_closed----->
+
+<!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei btn_hcm1_a" style="display: none;">
+              <h3>Human Capital Management</h3>
+                <li>
+                    <ul>
+                      <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Employee Transfer</span>
+                      <ul class="uilist">
+                        <li>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Employee Section</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </li>
+                    <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Immigration</span>
+                    </li>
+                    </ul>
+                  </li>
+                </ul>
+<!------tree_section_closed----->
+
+<!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei btn_fin1_a" style="display: none;">
+              <h3>Finance Management System</h3>
+                <li>
+                    <ul>
+                      <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Account Receivable</span>
+                      <ul class="uilist">
+                        <li>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Receipt</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </li>
+                    <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Sales Statement</span>
+                    </li>
+                    </ul>
+                  </li>
+                </ul>
+<!------tree_section_closed----->
+
+<!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei btn_pro1_a" style="display: none;">
+              <h3>Procurement Management System</h3>
+                <li>
+                    <ul>
+                      <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Vendor Category</span>
+                      <ul class="uilist">
+                        <li>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Warehouse</span>
+                          <ul class="uilist">
+                            <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Add</span>
+                        </li>
+                        <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Modify</span>
+                        </li>
+                         <li>
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          <span>Cancel</span>
+                        </li>
+                          </ul>
+                        </li>
+                       </ul>
+                    </li>
+                    <li>
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
+                      <span>Change Heads</span>
+                    </li>
+                    </ul>
+                  </li>
+                </ul>
+             </div>
+           </div>
+           </div>
+           </div>
+
+<!------tree_section_closed----->
+
+
+            </div>
+        </div>
+      </div>
+         <div class="sub_cont pull-right">
+          <div class="save_sec">
+            <button type="submit" class="btn sub1">Save</button>
+            <button type="submit" class="btn sub3">Save & Close</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+            <button type="submit" class="btn sub2">Clear</button>
+          </div>
+
+          <div class="edit_sec">
+            <button type="submit" class="btn sub1">Update</button>
+            <button type="submit" class="btn sub3">Update & Close</button>
+            <button type="submit" class="btn sub2">Confirm</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    </div>
+  </div>
+</div><!--content_container_closed------>
+   
+    
+        
+      </div>
+    </div>
+    </div>
+  </div>
+</div><!--content_container_closed------>
+
+<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
+<i class="fa fa-save"></i>
+</a>
+
+<a href="emply_rol_allow.html" type="button" class="list_b" title="Back to List">
+<i class="fa fa-arrow-circle-left"></i>
+</a>
+
+<!-------------------footer_section_opened------------------------------------->
+  <a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
+<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico4.png"></i> Humen Capital Management</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+<!-------------------footer_section_closed------------------------------------->
+
+</div><!--wrapper_closed-->
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+
+
+<!--------script section_started---------->
+
+<!-----table_search------------>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-----table_search_closed------------>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "180px";
+    document.getElementById("main").style.marginright = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginright= "0";
+}
+</script>
+
+<!--app_more button_onclick----->
+<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.height = "200px";
+    document.getElementById("main").style.marginbottom = "Auto";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.height = "0";
+    document.getElementById("main").style.marginbottom= "0";
+}
+</script>
+
+<script>
+function openNav2() {
+    document.getElementByclass("content_sec1").style.width = "250";
+    document.getElementByclass("main").style.marginLeft = "0px";
+}
+
+function closeNav2() {
+    document.getElementById("myNav1").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".slide-toggle").click(function(){
+    $(".content_sec1").animate({
+      width: "18%"
+    });
+  });
+});
+
+</script>
+
+<!--searchbox_list_script_opened------->
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<!----checkbox_started--->
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'fa fa-check-square-o'
+                },
+                off: {
+                    icon: 'fa fa-square-o gly2'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-d')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color)
+                    .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+</script>
+<!--checkbox_closed-->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab2content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
+
+<!--------tooltips------------>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip1"]').tooltip();   
+});
+</script>
+
+<!--add new div---->
+<script>
+$(document).ready(function(){
+  $("#btx1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+});
+</script>
+
+<!--button_click_disable --->
+<script>
+function myFunct() {
+    document.getElementById("myinpb").disabled = false;
+    document.getElementById("myinpc").disabled = true;
+    document.getElementById("myinpc1").disabled = true;
+    document.getElementById("myinpc2").disabled = true;
+    document.getElementById("myinpc3").disabled = true;
+}
+</script>
+
+<script>
+function mysave() {
+  var x = document.getElementById("mysav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+function issue_chk() {
+  var x = document.getElementById("is_chk");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "140px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+}
+</script>
+<!--save_pop up_closed-->
+
+<!----hide/Show_section---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c1h").hide();
+  });
+  $("#show").click(function(){
+    $(".c1h").show();
+  });
+});
+</script>
+
+<!----hide/Show_section2---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c2h").hide();
+  });
+  $("#show1").click(function(){
+    $(".c2h").show();
+  });
+});
+</script>
+
+<!-----Enable_disable script--->
+<script>
+$(document).ready(function(){
+  $(".bu1").click(function(){
+    $("#mySe1").toggle();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".bu").click(function(){
+    $("#mySe").toggle();
+  });
+});
+</script>
+<!-----Enable_disable script_closed--->
+
+<!------hide and visible div--->
+<script>
+function sel1() {
+  var x = document.getElementById('sel');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+</script>
+<!------hide and visible div_closed--->
+
+
+<!-----table_sec_fixed--->
+<script type="text/javascript">
+  // requires jquery library
+jQuery(document).ready(function() {
+   jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');   
+ });
+
+</script>
+
+
+<!---accodition section_script_opened--->
+<script>
+var acc = document.getElementsByClassName("accordion_role");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel_role = this.nextElementSibling;
+    if (panel_role.style.maxHeight) {
+      panel_role.style.maxHeight = null;
+    } else {
+      panel_role.style.maxHeight = panel_role.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<!---accodition section_script_closed--->
+
+<!----tree_jquery---->
+
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script type="text/javascript">
+    $(function () {
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this');
+    $('.tree li.parent_li > span').on('click', function (e) {
+        var children = $(this).parent('li.parent_li').find(' > ul > li');
+        if (children.is(":visible")) {
+            children.hide('fast');
+        } else {
+            children.show('fast');
+        }
+        e.stopPropagation();
+    });
+});
+  </script>
+<!----tree_jquery_closed---->
+
+
+<!----module section_details_started---->
+<script>
+$(document).ready(function(){
+  $(".module1").click(function(){
+    $(".modle_detl1").toggle(100);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".module2").click(function(){
+    $(".modle_detl2").toggle(100);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".module3").click(function(){
+    $(".modle_detl3").toggle(100);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".module4").click(function(){
+    $(".modle_detl4").toggle(100);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".module5").click(function(){
+    $(".modle_detl5").toggle(100);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".module6").click(function(){
+    $(".modle_detl6").toggle(100);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".module7").click(function(){
+    $(".modle_detl7").toggle(100);
+  });
+});
+</script>
+
+<!----module section_details_closed---->
+
+<script type="text/javascript">
+  $( "#war-btn" ).click(function() {
+  $( "div.war" ).fadeIn( 200 ).delay( 500 ).fadeOut( 400 );
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".imprt_o").click(function(){
+    $(".import_opt").toggle(300);
+  });
+});
+</script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){ 
+    $(".cont_contr").scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $(".cont_contr").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+
+<!----prodct selected script_section started--->
+<script>
+$(document).ready(function(){
+  $(".k1").click(function(){
+    $(".k1").toggleClass("selected7");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".k2").click(function(){
+    $(".k2").toggleClass("selected7");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".k3").click(function(){
+    $(".k3").toggleClass("selected7");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".k4").click(function(){
+    $(".k4").toggleClass("selected7");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".k5").click(function(){
+    $(".k5").toggleClass("selected7");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".k6").click(function(){
+    $(".k6").toggleClass("selected7");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".k7").click(function(){
+    $(".k7").toggleClass("selected7");
+  });
+});
+</script>
+<!----prodct selected script_section closed-->
+
+<!----tree_jquery---->
+
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script type="text/javascript">
+    $(function () {
+    $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
+    $('.tree li.parent_li > span').on('click', function (e) {
+        var children = $(this).parent('li.parent_li').find(' > ul > li');
+        if (children.is(":visible")) {
+            children.hide('fast');
+            $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+        } else {
+            children.show('fast');
+            $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+        }
+        e.stopPropagation();
+    });
+});
+  </script>
+<!----tree_jquery_closed---->
+
+<!----tab_script_for heirarchy page---->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!----heirarchy_section_script_started--->
+<script>
+$(document).ready(function(){
+  $(".organiser").click(function(){
+    $(".hire").toggle();
+  });
+});
+</script>
+<!----heirarchy_section_script_closed-->
+
+<script>
+function ck_tog() {
+    if (document.getElementById("ck_toz").checked==true) {
+      document.getElementById("ck_toz1").checked = false;
+    }else
+    {
+     document.getElementById("ck_toz1").checked = true;
+    }  
+}
+function ck_tog1() {
+    if (document.getElementById("ck_toz1").checked==true) {
+      document.getElementById("ck_toz").checked = false;
+    }else
+    {
+     document.getElementById("ck_toz").checked = true;
+    }  
+}
+</script>
+
+<script>
+onload = function() {
+
+  // create the tree
+  var theTree = new wijmo.nav.TreeView('#theTree', {
+    itemsSource: getData(),
+    displayMemberPath: 'header',
+    childItemsPath: 'items'
+  });
+  theTree.selectedItem = theTree.itemsSource[0];
+
+  // handle buttons
+  document.getElementById('btnFirst').addEventListener('click', function () {
+    var newItem = { header: document.getElementById('theInput').value },
+        node = theTree.selectedNode;
+    if (node) {
+        theTree.selectedNode = node.addChildNode(0, newItem);
+    } else {
+        theTree.selectedNode = theTree.addChildNode(0, newItem);
+    }
+  });
+  document.getElementById('btnLast').addEventListener('click', function () {
+    var newItem = { header: document.getElementById('theInput').value },
+        node = theTree.selectedNode;
+    if (node) {
+      var index = node.nodes ? node.nodes.length : 0;
+      theTree.selectedNode = node.addChildNode(index, newItem);
+    } else {
+      var index = theTree.nodes ? theTree.nodes.length : 0;
+      theTree.selectedNode = theTree.addChildNode(index, newItem);
+    }
+  });
+  document.getElementById('btnNoSel').addEventListener('click', function () {
+    theTree.selectedNode = null;
+  });
+
+  // create some data
+  function getData() {
+    return [
+      { header: 'Parent 1', items: [
+        { header: 'Child 1.1' },
+        { header: 'Child 1.2' },
+        { header: 'Child 1.3' }]
+      },
+      { header: 'Parent 2', items: [
+        { header: 'Child 2.1' },
+        { header: 'Child 2.2' }]
+      },
+      { header: 'Parent 3', items: [
+        { header: 'Child 3.1' }]
+      }
+    ];
+  }
+}
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".hei_adbtn").click(function(){
+    $("#add_hei").fadeIn();
+    $(".sc_hei1").hide();
+    $(".sc_hei").show();
+    $("#ceo, #sal, #man").fadeOut(100);
+    $(".man, .ceo, .sal").removeClass("act_hie");
+  });
+  $(".ceo_btn").click(function(){
+    $("#ceo").fadeIn();
+    $("#add_hei, #sal, #man").fadeOut(100);
+    $(".ceo").addClass("act_hie");
+    $(".add_hei, .sal, .man").removeClass("act_hie");
+  });
+  $(".sal_btn").click(function(){
+    $("#sal").fadeIn();
+    $("#add_hei, #ceo, #man").fadeOut(100);
+    $(".sal").addClass("act_hie");
+    $(".man, .ceo").removeClass("act_hie");
+  });
+  $(".man_btn").click(function(){
+    $("#man").fadeIn();
+    $("#add_hei, #ceo, #sal").fadeOut(100);
+    $(".man").addClass("act_hie");
+    $(".ceo, .sal").removeClass("act_hie");
+  });
+});
+</script>
+
+<!---new_script-->
+
+  <script>
+$(document).ready(function(){
+  $(".btn_app").click(function(){
+    $(".btn_app1").toggle(100);
+  });
+  $(".btn_sls").click(function(){
+    $(".btn_sls1").toggle(100);
+  });
+  $(".btn_aws").click(function(){
+    $(".btn_aws1").toggle(100);
+  });
+  $(".btn_guar").click(function(){
+    $(".btn_guar1").toggle(100);
+  });
+  $(".btn_hcm").click(function(){
+    $(".btn_hcm1").toggle(100);
+  });
+  $(".btn_fin").click(function(){
+    $(".btn_fin1").toggle(100);
+  });
+  $(".btn_pro").click(function(){
+    $(".btn_pro1").toggle(100);
+  });
+
+  $(".btn_app1").click(function(){
+    $(".btn_app1").addClass("selected7");
+    $(".btn_sls1, .btn_aws1, .btn_guar1, .btn_hcm1, .btn_fin1, .btn_pro1").removeClass("selected7");
+    $(".btn_app1_a").fadeIn(600);
+    $(".btn_sls1_a, .btn_aws1_a, .btn_guar1_a, .btn_hcm1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+  });
+  $(".btn_sls1").click(function(){
+    $(".btn_sls1").addClass("selected7");
+    $(".btn_app1, .btn_aws1, .btn_guar1, .btn_hcm1, .btn_fin1, .btn_pro1").removeClass("selected7");
+    $(".btn_sls1_a").fadeIn(600);
+    $(".btn_app1_a, .btn_aws1_a, .btn_guar1_a, .btn_hcm1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+  });
+  $(".btn_aws1").click(function(){
+    $(".btn_aws1").addClass("selected7");
+    $(".btn_sls1, .btn_app1, .btn_guar1, .btn_hcm1, .btn_fin1, .btn_pro1").removeClass("selected7");
+    $(".btn_aws1_a").fadeIn(600);
+    $(".btn_sls1_a, .btn_app1_a, .btn_guar1_a, .btn_hcm1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+  });
+  $(".btn_guar1").click(function(){
+    $(".btn_guar1").addClass("selected7");
+    $(".btn_sls1, .btn_aws1, .btn_app1, .btn_hcm1, .btn_fin1, .btn_pro1").removeClass("selected7");
+    $(".btn_guar1_a").fadeIn(600);
+    $(".btn_sls1_a, .btn_aws1_a, .btn_app1_a, .btn_hcm1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+  });
+  $(".btn_hcm1").click(function(){
+    $(".btn_hcm1").addClass("selected7");
+    $(".btn_sls1, .btn_aws1, .btn_guar1, .btn_app1, .btn_fin1, .btn_pro1").removeClass("selected7");
+    $(".btn_hcm1_a").fadeIn(600);
+    $(".btn_sls1_a, .btn_aws1_a, .btn_guar1_a, .btn_app1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+  });
+  $(".btn_fin1").click(function(){
+    $(".btn_fin1").addClass("selected7");
+    $(".btn_sls1, .btn_aws1, .btn_guar1, .btn_hcm1, .btn_app1, .btn_pro1").removeClass("selected7");
+    $(".btn_fin1_a").fadeIn(600);
+    $(".btn_sls1_a, .btn_aws1_a, .btn_guar1_a, .btn_hcm1_a, .btn_app1_a, .btn_pro1_a").fadeOut(200);
+  });
+  $(".btn_pro1").click(function(){
+    $(".btn_pro1").addClass("selected7");
+    $(".btn_sls1, .btn_aws1, .btn_guar1, .btn_hcm1, .btn_fin1, .btn_app1").removeClass("selected7");
+    $(".btn_pro1_a").fadeIn(600);
+    $(".btn_sls1_a, .btn_aws1_a, .btn_guar1_a, .btn_hcm1_a, .btn_fin1_a, .btn_app1_a").fadeOut(200);
+  });
+});
+</script>
+
+<!---accodition section_script_opened--->
+<script>
+var acc = document.getElementsByClassName("accordion_role");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel_role = this.nextElementSibling;
+    if (panel_role.style.maxHeight) {
+      panel_role.style.maxHeight = null;
+    } else {
+      panel_role.style.maxHeight = panel_role.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<!---accodition section_script_closed--->
+
+<!----tree_jquery---->
+
+<!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+  <script type="text/javascript">
+    $(function () {
+    $('.tree7 li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this');
+    $('.tree7 li.parent_li > span').on('click', function (e) {
+        var children = $(this).parent('li.parent_li').find(' > ul > li');
+        if (children.is(":visible")) {
+            children.hide('fast');
+        } else {
+            children.show('fast');
+        }
+        e.stopPropagation();
+    });
+});
+  </script>
+<!----tree_jquery_closed---->
+
+</body>
+</html>
