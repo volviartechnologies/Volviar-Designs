@@ -504,7 +504,7 @@ This email and any attachments to it may be privileged/confidential and are inte
 
 Computer viruses can be transmitted via email. The recipient should check this email and any attachments for viruses. The company accepts no liability for any loss or damage arising from the use of this e-mail or attachments.  Although the company has taken reasonable measures to ensure no viruses are present in this email, we strongly recommend that you may subject these to your virus checking procedures prior to use.
 
-P  Please Don't print this e-mail unless it's really necessary. Save a tree & Save the world for your future' ></textarea><br><div class='devider'></div><button class='btn btn-danger flt_r pop_o_cls'>Close</button>" data-height="600" data-width="400" ><i class="fa fa-address-card-o"></i></button></h2>
+P  Please Don't print this e-mail unless it's really necessary. Save a tree & Save the world for your future' ></textarea><br><div class='devider'></div><button class='btn btn-danger flt_r pop_o_cls' data-dismiss='popover.right'>Close</button>" data-height="600" data-width="400" ><i class="fa fa-address-card-o"></i></button></h2>
 
         <div class="clearfix"></div>
 
@@ -545,6 +545,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 
    <p class="plc1 pl_rg">PRODUCT / SERVICE DETAILS<button class="btn tab_but1 butn5 cpy_hi" data-toggle="modal" data-target="#myModal_3" title="Copy From Previous"><i class="fa fa-files-o"></i></button></p>
 
+<div class="clone_sec0">
   <div class="spl_hcm wid_100_1 hei_102 bg_ne_1" style="margin-bottom: 10px;">
     <div class="fg2">
         Quotation For:<input type="text" class="form-control fg2_inp1 tr_l" id="myInput_2" placeholder="Quotation For" title="Type in a name">
@@ -579,7 +580,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
             </td>
             <td style="text-align: left; display: none;" class="dis_td2" colspan="11">
               <button class="btn act_btn bn3 flt_l bt_cat_g2" title="Remove Category"><i class="fa fa-close"></i></button>
-                <input type="text" class="form-control fg2_inp2 tr_l" placeholder="Category Name" style="width: 30%!important;margin-left: 10px;height: 34px!important;">
+                <input type="text" class="form-control fg2_inp2 tr_l" placeholder="Category Name" autofocus="" style="width: 30%!important;margin-left: 10px;height: 34px!important;">
             </td>
           </tr>
             <tr class="">
@@ -779,8 +780,10 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
         </div>
     </div>
   </div>
+</div>
 
   <div class="clone_sec"></div>
+  <div class="clone_sec1"></div>
 
   <div class="clearfix"></div>
    <div class="devider"></div>
@@ -1068,29 +1071,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 
 <!-- Modal2 -->
 <div class="modal fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog ad_sd_mod02 flt_r icon_2 closs1" style="display:none;" role="document">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Quotation Details</h5>
-        <button type="button" class="close closs" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-      <div class="modal-body" style="height: 161px!important;">
-        123/586/4253
-      </div>
-
-      <div class="modal-footer">
-       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Close</button>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="modal-dialog ad_sd_mod01 flt_r" role="document">
+  <div class="modal-dialog ad_sd_mod01 flt_l" role="document">
     <div class="modal-content">
 
       <div class="modal-header">
@@ -1140,6 +1121,27 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
        <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Close</button>
       </div>
     
+    </div>
+  </div>
+
+
+  <div class="modal-dialog ad_sd_mod02 flt_l icon_2 closs1" style="display:none;" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Quotation Details</h5>
+        <button type="button" class="close closs" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body" style="height: 161px!important;">
+        123/586/4253
+      </div>
+
+      <div class="modal-footer">
+       <button type="submit" class="btn sub4 closs" aria-label="Close">Close</button>
+      </div>
     </div>
   </div>
 </div>
@@ -1649,9 +1651,6 @@ $(document).on('keydown', function(e) {
    $('.popover.right').hide();
   } 
 });
-    $(document).on("click", ".popover .pop_o_cls" , function(){
-        $(this).parents(".popover").popover('hide');
-    });
 </script>
 
 <style type="text/css">
@@ -1713,13 +1712,21 @@ $(".closs").click(function(){
 
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <script>
-$('.wrapper').on('click', '.remove', function() {
-  $('.remove').closest('.wrapper').find('.spl_hcm').not(':first').last().remove();
+$('.wrapper').on('click', '.clone_sec0 .remove', function() {
+  $('.clone_sec0 .remove').closest('.wrapper').find('.spl_hcm').not(':first').last().remove();
   $(".clone_sec  .bg_ne_1").removeClass("bg_ne_2");
 });
-$('.wrapper').on('click', '.clone', function() {
-  $('.clone').closest('.wrapper').find('.spl_hcm').first().clone().appendTo('.clone_sec');
+$('.wrapper').on('click', '.clone_sec0 .clone', function() {
+  $('.clone_sec0 .clone').closest('.wrapper').find('.spl_hcm').first().clone().appendTo('.clone_sec');
   $(".clone_sec .bg_ne_1").addClass("bg_ne_2");
+});
+$('.wrapper').on('click', '.clone_sec .remove', function() {
+  $('.clone_sec .remove').closest('.wrapper').find('.spl_hcm').not(':first').last().remove();
+  $(".clone_sec1 .bg_ne_1").addClass("bg_ne_2");
+});
+$('.wrapper').on('click', '.clone_sec .clone', function() {
+  $('.clone_sec .clone').closest('.wrapper').find('.spl_hcm').first().clone().appendTo('.clone_sec1');
+  $(".clone_sec1 .bg_ne_1").removeClass("bg_ne_2");
 });
 </script>
 

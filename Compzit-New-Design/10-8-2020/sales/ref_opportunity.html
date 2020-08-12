@@ -633,8 +633,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                   <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                     <i class="fa fa-trash"></i>
                   </button>
-                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal_st" title="Open">
-                    <i class="fa fa-folder-open"></i>
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
+                    <i class="fa fa-tasks"></i>
                   </button>
                 </td>
                  </tr>
@@ -649,16 +649,16 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 <td>25/01/2019 04.00PM</td>
                 <td>
                   <button class="btn tab_but1 butn1 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-check-circle "></i>
-                    </button>
-                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                    <i class="fa fa-edit"></i>
+                    <i class="fa fa-times-circle"></i>
+                  </button>
+                  <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal_st" title="View">
+                    <i class="fa fa-list-alt"></i>
                   </button>
                   <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                     <i class="fa fa-trash"></i>
                   </button>
-                  <button class="btn act_btn bn7" data-toggle="modal" data-target="#exampleModal_st" title="Close">
-                    <i class="fa fa-folder"></i>
+                  <button class="btn act_btn bn1" title="Close this task" disabled="">
+                    <i class="fa fa-tasks"></i>
                   </button>
                 </td>
                  </tr>
@@ -681,8 +681,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                   <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                     <i class="fa fa-trash"></i>
                   </button>
-                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal_st" title="Open">
-                    <i class="fa fa-folder-open"></i>
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
+                    <i class="fa fa-tasks"></i>
                   </button>
                 </td>
                  </tr>
@@ -759,7 +759,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
             <tbody id="myTable">
             <tr class="">
               <td>
-                <div class="bo_not1 mrl_bon flt_l fol_2_ico" title="Time-Out Mail">
+                <div class="bo_not1 mrl_bon flt_l fol_2_ico fx_width" title="Time-Out Mail">
                   <i class="fa fa-envelope"></i>
                 </div>12341
               </td>
@@ -771,7 +771,11 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
               <td><li class=" li_s t1_b"><i class="fas fa-mail-bulk"></i></li></td>
              </tr>
              <tr>
-              <td>12341</td>
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_2_ico fx_width" title="Time-Out Mail">
+                  <i class="fa fa-envelope" style="visibility: hidden;">&nbsp;</i>
+                </div>12341
+              </td>
               <td class="tr_l">xxxxxxx</td>
               <td class="tr_l">xxxxx</td>
               <td class="tr_l">xxxxxx</td>
@@ -1083,7 +1087,231 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     </div>
   </div>
 </div>
+<!-- Modal3 -->
+<div class="modal fade" id="myModal_3_cls" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog flt_r" role="document" style="margin-top:7%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Close Follow-Up / Task</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mod_bd1_800">
+        
+        <div class="form-group fg6 sa_2">
+          <label for="email" class="fg2_la1">Added Date:<span class="spn1"></span></label>
+          <input class="form-control fg2_inp1" placeholder="12/08/2020" disabled="">           
+        </div>
+        
 
+        <div class="form-group fg6">
+          <label for="pwd" class="fg2_la1">Added Time:<span class="spn1">*</span></label>
+          <div class="fg4 sa_2">
+            <select class="form-control fg2_inp1  inp_mst" disabled="">
+              <option>Hours</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select> 
+         </div>
+
+         <div class="fg4 sa_2">
+          <select class="form-control fg2_inp1  inp_mst" disabled="">
+            <option>Min</option>
+            <option>00</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+            <option>32</option>
+            <option>33</option>
+            <option>34</option>
+            <option>35</option>
+            <option>36</option>
+            <option>37</option>
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+            <option>46</option>
+            <option>47</option>
+            <option>48</option>
+            <option>49</option>
+            <option>50</option>
+            <option>51</option>
+            <option>52</option>
+            <option>53</option>
+            <option>54</option>
+            <option>55</option>
+            <option>56</option>
+            <option>57</option>
+            <option>58</option>
+            <option>59</option>
+           </select>
+         </div>
+         <div class="fg4 sa_2">
+            <select class="form-control fg2_inp1  inp_mst" disabled="">
+             <option>AM</option>
+            <option>PM</option>
+           </select> 
+         </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="free_sp"></div>
+        <div class="devider"></div>
+
+        <div class="form-group fg6 sa_2">
+          <div class="tdte">
+            <label for="pwd" class="fg2_la1">Completed Date:<span class="spn1">*</span> </label>
+            <div id="datepicker5" class="input-group date" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr inp_mst" type="text"  />
+              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group fg6">
+          <label for="pwd" class="fg2_la1">Completed Time:<span class="spn1">*</span></label>
+          <div class="fg4 sa_2">
+            <select class="form-control fg2_inp1  inp_mst">
+              <option>Hours</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select> 
+         </div>
+
+         <div class="fg4 sa_2">
+          <select class="form-control fg2_inp1  inp_mst">
+            <option>Minute</option>
+            <option>00</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+            <option>32</option>
+            <option>33</option>
+            <option>34</option>
+            <option>35</option>
+            <option>36</option>
+            <option>37</option>
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+            <option>46</option>
+            <option>47</option>
+            <option>48</option>
+            <option>49</option>
+            <option>50</option>
+            <option>51</option>
+            <option>52</option>
+            <option>53</option>
+            <option>54</option>
+            <option>55</option>
+            <option>56</option>
+            <option>57</option>
+            <option>58</option>
+            <option>59</option>
+           </select>
+         </div>
+         <div class="fg4 sa_2">
+            <select class="form-control fg2_inp1  inp_mst">
+             <option>AM</option>
+            <option>PM</option>
+           </select> 
+         </div>
+        </div> 
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- additional_fil_Modal1 -->
 <div class="modal fade" id="additional_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog  ad_sd_mod" role="document">
@@ -1102,6 +1330,28 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
       <div class="modal-footer tr_l">
         <div class="fg6 flt_l"><li class=" li_s t1_e"><i class="fa fa-envelope-o opn_g"></i> Attached with mail</li></div>
         <div class="fg6"><li class=" li_s t1_e"><i class="fa fa-envelope-o cls_r"></i> Not Attached with mail</li></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
       </div>
     </div>
   </div>
@@ -1566,6 +1816,14 @@ function myFunction_b() {
 <script type="text/javascript">
   $(function () {
   $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker5").datepicker({ 
         autoclose: true, 
         todayHighlight: true
   }).datepicker('update', new Date());
