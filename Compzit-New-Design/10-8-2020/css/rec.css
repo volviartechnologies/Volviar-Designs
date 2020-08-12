@@ -3158,39 +3158,11 @@ body{position: fixed;left: 0;right: 0;}
 }
 .cke_bottom{display: none!important;}
 #cke_1_contents{height: 180px!important;}
+#cke_1_top{display:none!important;}
 .fx_width{width: 20px;height: auto;margin:auto;float: left;}
 
-
-.too_btnh{
-  position: relative;
-}
-
-.too_btnh .tooltiptext1 {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.too_btnh .tooltiptext1::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
-}
-
-.too_btnh:hover .tooltiptext1 {
-  visibility: visible;
-}
+.tooltip .tooltip-inner {background-color:#48acf2;}
+.tooltip.top .tooltip-arrow { border-top-color:#48acf2; }
+.tooltip.right .tooltip-arrow { border-right-color:#48acf2; }
+.tooltip.bottom .tooltip-arrow { border-bottom-color:#48acf2; }
+.tooltip.left .tooltip-arrow { border-left-color:#48acf2; }

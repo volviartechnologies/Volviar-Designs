@@ -475,11 +475,9 @@ function closeNav5() {
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
-        <h2>Quotation (Standard Template) <!-- <button class="btn act_btn bn4 bt_e bt_fx_crqt" data-toggle="popover0" data-placement="top0" data-target="#custmer_req" title="View Customer Requirement">
-    <i class="fa fa-address-card-o"></i>
-  </button> -->
+        <h2>Quotation (Standard Template) 
 
-    <button class="btn act_btn bn4 bt_e bt_fx_crqt" title="Customer Requirements" data-toggle="popover" data-placement="right" data-html="true" data-content="<label class='form1 mar_bo'>
+    <button class="btn act_btn bn4 bt_e bt_fx_crqt" id="bulk_actions_btn" data-toggle="popover" title="Customer Requirements" data-placement="right" data-html="true" data-content="<label class='form1 mar_bo'>
         
         
       </label><textarea cols='64' rows='18' style='width:100%;outline:none!important;border:none;background-color:#fff;' disabled='' placeholder='Regards,
@@ -552,7 +550,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     </div>
     <div class="fg2 flt_r tr_r">
       <button class="btn act_btn bn11 clone" title="Add New">
-                <i class="opp_ico_img_ptp"><img src="../images/icons/opp/copy_sec.png"></i></button>
+        <i class="opp_ico_img_ptp"><img src="../images/icons/opp/copy_sec.png"></i></button>
       <button class="btn act_btn bn3 remove" title="Delete"><i class="fa fa-trash"></i></button>
     </div>
     <div class="table_box tb_scr r_1024">
@@ -565,7 +563,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
             <th class="th_b7 tr_r">COST PRICE</th>
             <th class="th_b7">Margin%</th>
             <th class="th_b6 tr_c">Selling<br> Price</th>
-            <th class="th_b2 tr_c">Tax Amount</th>
+            <th class="th_b4 tr_l">Tax</th>
+            <th class="th_b8 tr_c">Tax Amount</th>
             <th class="th_b7 tr_c">Discount<br> Amount</th>
             <th class="th_b6 tr_r">Total</th>
             <th class="th_b4">ACTIONS</th>
@@ -613,12 +612,15 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
               <td>
                 <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
               </td>
+              <td> 
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" disabled="">
+                  <option>Tax 1</option>
+                  <option>Tax 2</option>
+                  <option>Tax 3</option>
+                </select>
+              </td>
               <td>
-                <div class="input-group ing1">
-                  <input id="email" type="text" class="form-control fg2_inp2 tr_r inp1_pro" name="email" placeholder="100" disabled="">
-                  <span class="input-group-addon cur1 spn1_pro pur_pe">%</span>
-                </div>
-                <div class="input-group ing2">
+                <div class="input-group">
                   <input id="email" type="text" class="form-control fg2_inp2 tr_r inp1_pro" name="email" placeholder="1000.00" disabled="">
                   <span class="input-group-addon cur1 spn1_pro pur_at">QAR</span>
                 </div>
@@ -650,6 +652,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
             </tr>
             
              <tr class="tr1">
+            <tr class="">
               <td> 
                 <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
                   <option>Product 1</option>
@@ -659,7 +662,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 </select>
               </td>
               <td>
-                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" disabled="">
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
                   <option>Unit 1</option>
                   <option>Unit 2</option>
                   <option>Unit 3</option>
@@ -670,30 +673,33 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 <input type="text" class="form-control fg2_inp2 tr_c" placeholder="0">
               </td>
               <td>
-                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
+                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
               </td>
              <td>
-                 <input type="text" class="form-control fg2_inp2 tr_r" placeholder="00">
+                 <input type="text" class="form-control fg2_inp2 tr_r" placeholder="00" disabled="">
               </td>
 
               <td>
-                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
+                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
+              </td>
+              <td> 
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
+                  <option>Tax 1</option>
+                  <option>Tax 2</option>
+                  <option>Tax 3</option>
+                </select>
               </td>
               <td>
-                <div class="input-group ing1">
-                  <input id="email" type="text" class="form-control fg2_inp2 tr_r inp1_pro" name="email" placeholder="100" disabled="">
-                  <span class="input-group-addon cur1 spn1_pro pur_pe">%</span>
-                </div>
-                <div class="input-group ing2">
+                <div class="input-group">
                   <input id="email" type="text" class="form-control fg2_inp2 tr_r inp1_pro" name="email" placeholder="1000.00" disabled="">
                   <span class="input-group-addon cur1 spn1_pro pur_at">QAR</span>
                 </div>
               </td>
               <td>
-                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
+                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
               </td>
                <td>
-                  <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
+                  <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
                </td>
                <td class="td1"> 
                 <div class="btn_stl1">
@@ -719,6 +725,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
              <th class="tr_r"></th>
              <th class="tr_r"></th>
              <th class="tr_r"></th>
+             <th class="tr_r"></th>
              <th class="tr_r" style="font-weight: 600;">0.00</th>
              <th class="tr_r" style="font-weight: 600;">0.00</th>
              <th class="tr_r" style="font-weight: 600;">0.00</th>
@@ -727,6 +734,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
            </tbody>
            <tfoot class="bg1" style="background-color:#eceff1!important;">
              <th colspan="3" class="tr_l txt_rd">Total</th>
+             <th class="tr_r txt_rd"></th>
              <th class="tr_r txt_rd"></th>
              <th class="tr_r txt_rd"></th>
              <th class="tr_r txt_rd"></th>
@@ -1006,66 +1014,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
   </p>
 </div>
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed----------------------------------------------------------->
 
-
-
-<!-- Modal3 -->
-<!-- <div class="modal fade" id="myModal_31" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog ad_sd_mod flt_r" role="document">
-    <div class="modal-content">
-
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Quotation List</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <div class="form-group fg4">
-          <label for="email" class="fg2_la1">Customer Name:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1">
-            <option>Oman Trading</option>
-            <option>Kulco Trading</option>
-          </select>           
-        </div>
-
-        <div class="fg2">
-          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-          <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>  
-        </div>
-      <div class="clearfix"></div>
-
-        <div class="table_box tb_scr">
-          <table class="table table-bordered">
-            <thead class="thead1">
-              <tr>
-                <th class="col-md-4 tr_l">Ref#</th> 
-                <th class="col-md-5 tr_l">Customer Name</th>
-                <th class="col-md-3 tr_c">Copy</th>
-              </tr>
-            </thead>
-            <tbody id="myTable">
-              <tr class="tr1">
-                <td class="tr_l">1</td>
-                <td class="tr_l">David</td>
-                <td class=" tr_c">
-                  <button class="btn tab_but1 butn5 cpy_hi" title="Copy"><i class="fa fa-files-o"></i></button>
-                </td>
-              </tr>
-            </tbody>
-        </table>
-      </div>
-    </div>
-
-      <div class="modal-footer">
-       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
-      </div>
-    
-  </div>
-</div>
-</div> -->
 
 <!-- Modal3_closed-->
 
@@ -1638,11 +1588,28 @@ $(document).on('keydown', function(e) {
 });
 </script> 
 <script type="text/javascript">
-$(function () {
-  $('[data-toggle="popover"]').popover();
-  $('[data-toggle="tooltip"]').tooltip();
-  $('body').popover('disable')
+// $(function () {
+//   $('[data-target="popover"]').popover();
+//   $('[data-toggle="tooltip"]').tooltip();
+//   $('body').popover('disable')
+// });
+$(document).on('click', '#bulk_actions_btn', function (event) {
+    //
+    // If popover is visible: do nothing
+    //
+    if ($(this).prop('.popover.right') == undefined) {
+       $(this).prop('.popover.right', true).popover('show');
+    }
 });
+
+// $(function () {
+//     $('#bulk_actions_btn').on('hide.bs.popover', function (e) {
+//         //
+//         // on hiding popover stop action
+//         //
+//         e.preventDefault();
+//     });
+// });
 $(document).on('keydown', function(e) { 
   var keyCode = e.keyCode || e.which; 
 
@@ -1651,6 +1618,9 @@ $(document).on('keydown', function(e) {
    $('.popover.right').hide();
   } 
 });
+    $(document).on("click", ".popover .btn-danger" , function(){
+        $(this).parents(".popover").popover('hide');
+    });
 </script>
 
 <style type="text/css">
