@@ -463,10 +463,14 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h1 class="h1_con">OPPORTUNITY Information
 
-    <button class="btn act_btn bn4 bt_e bt_fx_crqt" title="Customer Requirements" data-toggle="popover" data-placement="right" data-html="true" data-content="<label class='form1 mar_bo'>
-        
-        
-      </label><textarea cols='64' rows='18' style='width:100%;outline:none!important;border:none;background-color:#fff;' disabled='' placeholder='Regards,
+    <button class="btn act_btn bn4 bt_e bt_fx_crqt" id="popoverOpener" data-height="600" data-width="400" title="Customer Requirements" ><i class="fa fa-address-card-o"></i></button></h2>
+
+        <div id="popoverWrapper">
+          <div class="popover" role="tooltip">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Customer Requirements</h3>
+            <div class="popover-content">
+              <textarea cols="64" rows="18" style="width:100%;outline:none!important;border:none;background-color:#fff;" disabled="" placeholder="Regards,
 
 www.albalagh.com
 
@@ -488,7 +492,14 @@ This email and any attachments to it may be privileged/confidential and are inte
 
 Computer viruses can be transmitted via email. The recipient should check this email and any attachments for viruses. The company accepts no liability for any loss or damage arising from the use of this e-mail or attachments.  Although the company has taken reasonable measures to ensure no viruses are present in this email, we strongly recommend that you may subject these to your virus checking procedures prior to use.
 
-P  Please Don't print this e-mail unless it's really necessary. Save a tree & Save the world for your future' ></textarea><br><div class='devider'></div><button class='btn btn-danger flt_r pop_o_cls'>Close</button>" data-height="600" data-width="400" ><i class="fa fa-address-card-o"></i></button></h1>
+P  Please Don't print this e-mail unless it's really necessary. Save a tree & Save the world for your future" ></textarea><br>
+<div class="clearfix"></div>
+<div class="devider"></div>
+              <button class="btn btn-danger btn-dz flt_r" style="margin-left:4px;"">Close</button>
+              <button class="btn btn-success flt_r">Submit</button>
+            </div>
+          </div>
+        </div>
 
         <div class="clearfix"></div>
 
@@ -606,89 +617,89 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
           <table class="table table-bordered tbl_480">
             <thead class="thead1">
               <tr>
-                 <th class="col-md-1">Sl#</th>
-                <th class="col-md-3 tr_l">Subject</th>
-                <th class="col-md-2 tr_c">From Date & Time</th>
-                <th class="col-md-2 tr_c">Due Date & Time</th>
-                <th class="col-md-2 tr_c">Actions</th>
-                  </tr>
-            </thead>
-            <tbody id="myTable">
-              <tr class="">
-                <td>
-                  <div class="bo_not1 mrl_bon flt_l fol_1_ico" title="Breached task / Follow-Up">
-                    <i class="fa fa-book"></i>
-                  </div>12341
-                </td>
-                <td class="tr_l">xxxxxxx</td>
-                <td>25/01/2019 05.00PM</td>
-                <td>25/01/2019 04.00PM</td>
-                <td>
-                  <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-check-circle "></i>
-                    </button>
-                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                    <i class="fa fa-edit"></i>
-                  </button>
-                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                    <i class="fa fa-trash"></i>
-                  </button>
-                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
-                    <i class="fa fa-tasks"></i>
-                  </button>
-                </td>
-                 </tr>
-               <tr class="tr1">
-                <td>
-                  <div class="bo_not1 mrl_bon flt_l fol_2_ico" title="Closed task / Follow-Up">
-                    <i class="fa fa-book"></i>
-                  </div> 12341
-                </td>
-                <td class="tr_l">xxxxxxx</td>
-                <td>27/01/2019 12.00PM</td>
-                <td>25/01/2019 04.00PM</td>
-                <td>
-                  <button class="btn tab_but1 butn1 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                    <i class="fa fa-times-circle"></i>
-                  </button>
-                  <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal_st" title="View">
-                    <i class="fa fa-list-alt"></i>
-                  </button>
-                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                    <i class="fa fa-trash"></i>
-                  </button>
-                  <button class="btn act_btn bn1" title="Close this task" disabled="">
-                    <i class="fa fa-tasks"></i>
-                  </button>
-                </td>
-                 </tr>
-                 <tr class="">
-                <td>
-                  <div class="bo_not1 mrl_bon flt_l fol_3_ico" title="Open task / Follow-Up">
-                    <i class="fa fa-book"></i>
-                  </div>12341
-                </td>
-                <td class="tr_l">xxxxxxx</td>
-                <td>27/01/2019 12.00PM</td>
-                <td>25/01/2019 04.00PM</td>
-                <td>
-                  <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-check-circle "></i>
-                    </button>
-                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                    <i class="fa fa-edit"></i>
-                  </button>
-                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                    <i class="fa fa-trash"></i>
-                  </button>
-                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
-                    <i class="fa fa-tasks"></i>
-                  </button>
-                </td>
-                 </tr>
-            </tbody>
-          </table>
-        </div>
+               <th class="col-md-1">Sl#</th>
+               <th class="col-md-3 tr_l">Subject</th>
+               <th class="col-md-2 tr_c">From Date & Time</th>
+               <th class="col-md-2 tr_c">Due Date & Time</th>
+               <th class="col-md-2 tr_c">Actions</th>
+             </tr>
+           </thead>
+           <tbody id="myTable">
+            <tr class="">
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_1_ico" title="Breached task / Follow-Up">
+                  <i class="fa fa-book"></i>
+                </div>12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td>25/01/2019 05.00PM</td>
+              <td>25/01/2019 04.00PM</td>
+              <td>
+                <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                  <i class="fa fa-check-circle "></i>
+                </button>
+                <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
+                  <i class="fa fa-edit"></i>
+                </button>
+                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                  <i class="fa fa-trash"></i>
+                </button>
+                <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
+                  <i class="fa fa-tasks"></i>
+                </button>
+              </td>
+            </tr>
+            <tr class="tr1">
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_2_ico" title="Closed task / Follow-Up">
+                  <i class="fa fa-book"></i>
+                </div> 12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td>27/01/2019 12.00PM</td>
+              <td>25/01/2019 04.00PM</td>
+              <td>
+                <button class="btn tab_but1 butn1 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                  <i class="fa fa-times-circle"></i>
+                </button>
+                <button class="btn act_btn bn4" data-toggle="modal" data-target="#view_follow" title="View">
+                  <i class="fa fa-list-alt"></i>
+                </button>
+                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                  <i class="fa fa-trash"></i>
+                </button>
+                <button class="btn act_btn bn1" title="Close this task" disabled="">
+                  <i class="fa fa-tasks"></i>
+                </button>
+              </td>
+            </tr>
+            <tr class="">
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_3_ico" title="Open task / Follow-Up">
+                  <i class="fa fa-book"></i>
+                </div>12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td>27/01/2019 12.00PM</td>
+              <td>25/01/2019 04.00PM</td>
+              <td>
+                <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                  <i class="fa fa-check-circle "></i>
+                </button>
+                <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
+                  <i class="fa fa-edit"></i>
+                </button>
+                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                  <i class="fa fa-trash"></i>
+                </button>
+                <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
+                  <i class="fa fa-tasks"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
         <div class="clearfix"></div>
         <div class="devider"></div>
       </div>
@@ -768,7 +779,11 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
               <td class="tr_l">xxxxxx</td>
               <td>20/01/2019 05.00PM</td>
               <td>xxxxxx</td>
-              <td><li class=" li_s t1_b"><i class="fas fa-mail-bulk"></i></li></td>
+              <td>
+                <button class="btn act_btn bn4" data-toggle="modal" data-target="#send_mail" title="View">
+                  <i class="fa fa-list-alt"></i>
+                </button>
+              </td>
              </tr>
              <tr>
               <td>
@@ -781,7 +796,11 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
               <td class="tr_l">xxxxxx</td>
               <td>22/01/2019 04.30PM</td>
               <td>xxxxxx</td>
-              <td><li class="li_s t1_b"><a href="#"><i class="fas fa-mail-bulk"></i></a></li></td>
+              <td>
+                <button class="btn act_btn bn4" data-toggle="modal" data-target="#send_mail" title="View">
+                  <i class="fa fa-list-alt"></i>
+                </button>
+              </td>
              </tr>
           </tbody>
         </table>
@@ -813,14 +832,14 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 </a>
 <div class="stat_sbox">
   <ul>
-    <a href="#" data-toggle="modal" data-target="#loss_info" title="Win">
+    <a href="#" data-toggle="modal" data-target="#win_box" title="Win">
       <li class="">
         <div class="bo_not1 mrl_bon flt_l" title="Win">
           <i class="fa fa-square"></i>
         </div> Win
       </li>
     </a>
-    <a href="#" data-toggle="modal" data-target="#loss_info" title="partially win">
+    <a href="#" data-toggle="modal" data-target="#par_win_box" title="partially win">
        <li>
         <div class="bo_not2 mrl_bon flt_l" title="partially win">
           <i class="fa fa-square"></i>
@@ -878,63 +897,137 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
-
-<!-- Modal1 -->
-<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog flt_r" role="document" style="margin-top: 8%;">
+<!-- Modal_status -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Note</h5>
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        
-        <div class="form-group fg6 mar_at flt_l">
-             <label for="email" class="fg2_la1">Through:<span class="spn1">*</span></label>
-               <select class="form-control fg2_inp1 inp_mst" id="not_op1">
-                 <option>Fax</option>
-                <option>Mail</option>
-                <option>Other</option>
-               </select>           
-        </div>
-
-        <div class="form-group fg6 mar_at flt_l">
-          <div class="tdte">
-            <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
-            <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
-              <input class="form-control inp_bdr inp_mst" type="text"  />
-              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-            </div>
-          </div>
-        </div>
-
-            
-        <div class="form-group fg12 mar_at flt_l">
-              <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
-              <textarea rows="3" cols="48" class="form-control flt_l  inp_mst not_tx_ar" placeholder="Description"></textarea>
-        </div>
-
-        <div class="clearfix"></div>
-        <div class="free_sp"></div>
-
-
-
-
+       ...
       </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn sub1">Save</button>
-       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
       </div>
     </div>
   </div>
 </div>
 
+<!-- Modal_follow -->
+<div class="modal fade" id="follow_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog snd_box_rgt" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Follow-up / Tasks
+          <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+           <i class="fa fa-book"></i>
+         </button></h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="r_480 mar_bt_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+               <th class="col-md-1">Sl#</th>
+               <th class="col-md-3 tr_l">Subject</th>
+               <th class="col-md-2 tr_c">From Date & Time</th>
+               <th class="col-md-2 tr_c">Due Date & Time</th>
+               <th class="col-md-2 tr_c">Actions</th>
+             </tr>
+           </thead>
+           <tbody id="myTable">
+            <tr class="">
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_1_ico" title="Breached task / Follow-Up">
+                  <i class="fa fa-book"></i>
+                </div>12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td>25/01/2019 05.00PM</td>
+              <td>25/01/2019 04.00PM</td>
+              <td>
+                <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                  <i class="fa fa-check-circle "></i>
+                </button>
+                <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
+                  <i class="fa fa-edit"></i>
+                </button>
+                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                  <i class="fa fa-trash"></i>
+                </button>
+                <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
+                  <i class="fa fa-tasks"></i>
+                </button>
+              </td>
+            </tr>
+            <tr class="tr1">
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_2_ico" title="Closed task / Follow-Up">
+                  <i class="fa fa-book"></i>
+                </div> 12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td>27/01/2019 12.00PM</td>
+              <td>25/01/2019 04.00PM</td>
+              <td>
+                <button class="btn tab_but1 butn1 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                  <i class="fa fa-times-circle"></i>
+                </button>
+                <button class="btn act_btn bn4" data-toggle="modal" data-target="#view_follow" title="View">
+                  <i class="fa fa-list-alt"></i>
+                </button>
+                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                  <i class="fa fa-trash"></i>
+                </button>
+                <button class="btn act_btn bn1" title="Close this task" disabled="">
+                  <i class="fa fa-tasks"></i>
+                </button>
+              </td>
+            </tr>
+            <tr class="">
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_3_ico" title="Open task / Follow-Up">
+                  <i class="fa fa-book"></i>
+                </div>12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td>27/01/2019 12.00PM</td>
+              <td>25/01/2019 04.00PM</td>
+              <td>
+                <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                  <i class="fa fa-check-circle "></i>
+                </button>
+                <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
+                  <i class="fa fa-edit"></i>
+                </button>
+                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                  <i class="fa fa-trash"></i>
+                </button>
+                <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
+                  <i class="fa fa-tasks"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-<!-- Modal3 -->
+
+<!-- Modal3_add follow -->
 <div class="modal fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog flt_l" role="document" style="margin-top:7%;">
+  <div class="modal-dialog flt_r" role="document" style="margin-top:7%;">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Add Follow-Up / Task</h5>
@@ -943,142 +1036,137 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
         </button>
       </div>
       <div class="modal-body mod_bd1_800">
-        
         <div class="form-group fg4 sa_2">
-             <label for="email" class="fg2_la1">Subject:<span class="spn1">*</span></label>
-               <select class="form-control fg2_inp1  inp_mst" id="fol_op1">
-                 <option>Client Call</option>
-                <option>Send An Email</option>
-                <option>Customer Meeting</option>
-               </select>           
+         <label for="email" class="fg2_la1">Subject:<span class="spn1"></span></label>
+         <select class="form-control fg2_inp1" id="fol_op1">
+           <option>Client Call</option>
+          <option>Send An Email</option>
+          <option>Customer Meeting</option>
+         </select>           
         </div>
-        <div class="form-group fg6_5 sa_2 mar_at flt_l">
-                <label for="pwd" class="fg2_la1">Due Week:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1  inp_mst">
-                 <option>1 Week</option>
-                <option>2 Week</option>
-                <option>3 Week</option>
-               </select> 
+        <div class="form-group fg6_510 sa_2 mar_at flt_l">
+          <label for="pwd" class="fg2_la1">Due Week:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 inp_wd_100">
+           <option>1 Week</option>
+          <option>2 Week</option>
+          <option>3 Week</option>
+         </select> 
         </div>
-
         <div class="clearfix"></div>
-
         <div class="form-group fg12">
-
           <div class="form-group fg4 sa_2">
             <div class="tdte">
-              <label for="pwd" class="fg2_la1">Due Date:<span class="spn1">*</span> </label>
-              <div id="datepicker2" class="input-group date" data-date-format="mm-dd-yyyy">
-                <input class="form-control inp_bdr inp_mst" type="text"  />
-                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-              </div>
+              <label for="pwd" class="fg2_la1">Due Date:<span class="spn1"></span> </label>
+              <input class="form-control fg2_inp1 inp_wd_100" placeholder="14/08/2020">
+            </div>
+          </div>  
+          <div class="fg2 sa_2">
+            <label for="pwd" class="fg2_la1">Due Time:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1">
+              <option>Hours</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select> 
+          </div>
+          <div class="fg2 sa_2">
+            <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1">
+              <option>Min</option>
+              <option>00</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+              <option>32</option>
+              <option>33</option>
+              <option>34</option>
+              <option>35</option>
+              <option>36</option>
+              <option>37</option>
+              <option>38</option>
+              <option>39</option>
+              <option>40</option>
+              <option>41</option>
+              <option>42</option>
+              <option>43</option>
+              <option>44</option>
+              <option>45</option>
+              <option>46</option>
+              <option>47</option>
+              <option>48</option>
+              <option>49</option>
+              <option>50</option>
+              <option>51</option>
+              <option>52</option>
+              <option>53</option>
+              <option>54</option>
+              <option>55</option>
+              <option>56</option>
+              <option>57</option>
+              <option>58</option>
+              <option>59</option>
+             </select>
+            </div>
+            <div class="time_bx sa_2">
+              <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+              <select class="form-control fg2_inp1">
+                <option>AM</option>
+                <option>PM</option>
+              </select> 
+            </div>
+        </div> 
+        <div class="form-group fg12 sa_2">
+          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+          <textarea rows="3" cols="48" class="form-control flt_l inp_wd_100" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group fg2 fg2_mr sa_fg1">
+          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1"></span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider_tog round"></span>
+              </label>
             </div>
           </div>
-                
-                <div class="fg5 sa_2">
-                  <label for="pwd" class="fg2_la1">Due Time:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1  inp_mst">
-                 <option>Hours</option>
-                 <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-               </select> 
-             </div>
-
-             <div class="fg5 sa_2">
-              <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-             <select class="form-control fg2_inp1  inp_mst">
-                <option>Minute</option>
-                <option>00</option>
-                <option>01</option>
-                <option>02</option>
-                <option>03</option>
-                <option>04</option>
-                <option>05</option>
-                <option>06</option>
-                <option>07</option>
-                <option>08</option>
-                <option>09</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-                <option>21</option>
-                <option>22</option>
-                <option>23</option>
-                <option>24</option>
-                <option>25</option>
-                <option>26</option>
-                <option>27</option>
-                <option>28</option>
-                <option>29</option>
-                <option>30</option>
-                <option>31</option>
-                <option>32</option>
-                <option>33</option>
-                <option>34</option>
-                <option>35</option>
-                <option>36</option>
-                <option>37</option>
-                <option>38</option>
-                <option>39</option>
-                <option>40</option>
-                <option>41</option>
-                <option>42</option>
-                <option>43</option>
-                <option>44</option>
-                <option>45</option>
-                <option>46</option>
-                <option>47</option>
-                <option>48</option>
-                <option>49</option>
-                <option>50</option>
-                <option>51</option>
-                <option>52</option>
-                <option>53</option>
-                <option>54</option>
-                <option>55</option>
-                <option>56</option>
-                <option>57</option>
-                <option>58</option>
-                <option>59</option>
-               </select>
-             </div>
-             <div class="fg7 sa_2">
-              <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-                <select class="form-control fg2_inp1  inp_mst">
-                 <option>AM</option>
-                <option>PM</option>
-               </select> 
-             </div>
-        </div> 
-        <div class="form-group fg12 sa_2 not_tx_ar">
-          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-          <textarea rows="3" cols="48" class="form-control flt_l dt_wdt" placeholder="Description"></textarea>
         </div>
-
-        <div class="clearfix"></div>
-        <div class="free_sp"></div>
-
-
-
-
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn sub1">Save</button>
@@ -1087,7 +1175,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     </div>
   </div>
 </div>
-<!-- Modal3 -->
+
+<!-- Modal3_close_followup -->
 <div class="modal fade" id="myModal_3_cls" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog flt_r" role="document" style="margin-top:7%;">
     <div class="modal-content">
@@ -1205,7 +1294,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
         <div class="form-group fg6 sa_2">
           <div class="tdte">
             <label for="pwd" class="fg2_la1">Completed Date:<span class="spn1">*</span> </label>
-            <div id="datepicker5" class="input-group date" data-date-format="mm-dd-yyyy">
+            <div id="datepicker6" class="input-group date" data-date-format="mm-dd-yyyy">
               <input class="form-control inp_bdr inp_mst cls_in1" type="text"  />
               <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
             </div>
@@ -1312,65 +1401,773 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     </div>
   </div>
 </div>
-  <!-- additional_fil_Modal1 -->
-<div class="modal fade" id="additional_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog  ad_sd_mod" role="document">
+
+<!-- Modal3_View follow -->
+<div class="modal fade" id="view_follow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog flt_r" role="document" style="margin-top:7%;">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Aditional Files</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Follow-Up / Task</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body mod_bd1_800">
+        <div class="form-group fg4 sa_2">
+         <label for="email" class="fg2_la1">Subject:<span class="spn1"></span></label>
+         <select class="form-control fg2_inp1" id="fol_op1" disabled="">
+           <option>Client Call</option>
+          <option>Send An Email</option>
+          <option>Customer Meeting</option>
+         </select>           
+        </div>
+        <div class="form-group fg6_510 sa_2 mar_at flt_l">
+          <label for="pwd" class="fg2_la1">Due Week:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 inp_wd_100" disabled="">
+           <option>1 Week</option>
+          <option>2 Week</option>
+          <option>3 Week</option>
+         </select> 
+        </div>
+        <div class="clearfix"></div>
+        <div class="form-group fg12">
+          <div class="form-group fg4 sa_2">
+            <div class="tdte">
+              <label for="pwd" class="fg2_la1">Due Date:<span class="spn1"></span> </label>
+              <input class="form-control fg2_inp1 inp_wd_100" disabled="" placeholder="14/08/2020">
+            </div>
+          </div>  
+          <div class="fg2 sa_2">
+            <label for="pwd" class="fg2_la1">Due Time:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1" disabled="">
+              <option>Hours</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select> 
+          </div>
+          <div class="fg2 sa_2">
+            <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1" disabled="">
+              <option>Min</option>
+              <option>00</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+              <option>32</option>
+              <option>33</option>
+              <option>34</option>
+              <option>35</option>
+              <option>36</option>
+              <option>37</option>
+              <option>38</option>
+              <option>39</option>
+              <option>40</option>
+              <option>41</option>
+              <option>42</option>
+              <option>43</option>
+              <option>44</option>
+              <option>45</option>
+              <option>46</option>
+              <option>47</option>
+              <option>48</option>
+              <option>49</option>
+              <option>50</option>
+              <option>51</option>
+              <option>52</option>
+              <option>53</option>
+              <option>54</option>
+              <option>55</option>
+              <option>56</option>
+              <option>57</option>
+              <option>58</option>
+              <option>59</option>
+             </select>
+            </div>
+            <div class="time_bx sa_2">
+              <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+              <select class="form-control fg2_inp1" disabled="">
+                <option>AM</option>
+                <option>PM</option>
+              </select> 
+            </div>
+        </div> 
 
-       <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-        
-      </div>
-      <div class="modal-footer tr_l">
-        <div class="fg6 flt_l"><li class=" li_s t1_e"><i class="fa fa-envelope-o opn_g"></i> Attached with mail</li></div>
-        <div class="fg6"><li class=" li_s t1_e"><i class="fa fa-envelope-o cls_r"></i> Not Attached with mail</li></div>
+        <div class="form-group fg12">
+          <div class="form-group fg4 sa_2">
+            <div class="tdte">
+              <label for="pwd" class="fg2_la1">Closed Date:<span class="spn1"></span> </label>
+              <input class="form-control fg2_inp1 inp_wd_100" disabled="" placeholder="14/08/2020">
+            </div>
+          </div>  
+          <div class="fg2 sa_2">
+            <label for="pwd" class="fg2_la1">Closed Time:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1" disabled="">
+              <option>Hours</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select> 
+          </div>
+          <div class="fg2 sa_2">
+            <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1" disabled="">
+              <option>Min</option>
+              <option>00</option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+              <option>32</option>
+              <option>33</option>
+              <option>34</option>
+              <option>35</option>
+              <option>36</option>
+              <option>37</option>
+              <option>38</option>
+              <option>39</option>
+              <option>40</option>
+              <option>41</option>
+              <option>42</option>
+              <option>43</option>
+              <option>44</option>
+              <option>45</option>
+              <option>46</option>
+              <option>47</option>
+              <option>48</option>
+              <option>49</option>
+              <option>50</option>
+              <option>51</option>
+              <option>52</option>
+              <option>53</option>
+              <option>54</option>
+              <option>55</option>
+              <option>56</option>
+              <option>57</option>
+              <option>58</option>
+              <option>59</option>
+             </select>
+            </div>
+            <div class="time_bx sa_2">
+              <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+              <select class="form-control fg2_inp1" disabled="">
+                <option>AM</option>
+                <option>PM</option>
+              </select> 
+            </div>
+        </div> 
+        <div class="form-group fg12 sa_2">
+          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+          <textarea rows="3" cols="48" class="form-control flt_l inp_wd_100" placeholder="Description" disabled=""></textarea>
+        </div>
+        <div class="form-group fg2 fg2_mr sa_fg1">
+          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1"></span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox" disabled="" checked="">
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<!-- Modal_attach -->
+<div class="modal fade" id="attachview_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog snd_box_rgt" role="document">
     <div class="modal-content">
-      <div class="modal-header mo_hd1">
-        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">View Attachments
+       <!--  <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="View Attachments">
+           <i class="opp_ico_img"><img src="../images/icons/opp/view_mail.png"></i>
+         </button> --></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-       ...
-      </div>
-      <div class="modal-footer mo_ft1">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-        
+        <div class="r_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                <th class="col-md-1">Sl#</th>
+                <th class="col-md-7 tr_l">Attachments </th>
+                <th class="col-md-4">Date and Time</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr class="tr1">
+                <td>12341</td>
+                <td class=" tr_l">Attachment 1</td>
+                <td class=" tr_c">05.12.2019 10:10 </td>
+              </tr>
+              <tr>
+                <td>12341</td>
+                <td class=" tr_l">Attachment 1</td>
+                <td class=" tr_c">05.12.2019 10:10 </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>      
       </div>
     </div>
   </div>
 </div>
 
- <!-- Supplier_quotes_Modal1 -->
-<div class="modal fade" id="supplier_quotes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog ad_sd_mod" role="document">
+<!-- Modal_note -->
+<div class="modal fade" id="note_qoute_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog snd_box_rgt" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Supplier Quotes</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Notes 
+        <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_2" title="Qoutation Notes">
+           <i class="opp_ico_img"><img src="../images/icons/opp/quot.notes.png"></i>
+         </button></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
+        <div class="r_480 mar_bt_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-1">Sl#</th>
+                <th class="col-md-5 tr_l">Note By</th>
+                <th class="col-md-2 tr_c">Date</th>
+                <th class="col-md-4 tr_c">Through</th>
+                  </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr class="tr1">
+                <td>12341</td>
+                <td class="tr_l">xxxxxxx</td>
+                <td>25/01/2019</td>
+                <td>xxxxxx</td>
+                 </tr>
+               <tr>
+                <td>12341</td>
+                <td class="tr_l">xxxxxxx</td>
+                <td>27/01/2019</td>
+                <td>xxxxxx</td>
+                 </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-        
+<!-- Modal1_add note -->
+<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog flt_r" role="document" style="margin-top: 8%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Note</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group fg6 mar_at flt_l">
+          <label for="email" class="fg2_la1">Through:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 inp_mst" id="not_op1">
+             <option>Fax</option>
+            <option>Mail</option>
+            <option>Other</option>
+          </select>           
+        </div>
+        <div class="form-group fg6 mar_at flt_l">
+          <div class="tdte">
+            <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
+            <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr inp_mst" type="text"  />
+              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group fg12 mar_at flt_l">
+          <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
+          <textarea rows="3" cols="48" class="form-control flt_l  inp_mst not_tx_ar" placeholder="Description"></textarea>
+        </div>
+        <div class="clearfix"></div>
+        <div class="free_sp"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal_win -->
+<div class="modal fade" id="win_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog los_res_mod" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="fg12">
+            <span class="span_sm note1 tr_l">The Project You entered is not saved.Please provide RFQ Reference Number to save the entry.</span>
+        </div><br><br>
+        <div class="form-group fg12">
+          <label for="email" class="fg2_la1">Tender / RFQ:<span class="spn1"></span></label>
+          <input class="form-control fg2_inp1 win_op1" placeholder="Tender / RFQ">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Submit</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- Loss_info_Modal1 -->
+<div class="modal fade" id="loss_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 99999999999;">
+  <div class="modal-dialog los_res_mod" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reason For Loss</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body padng_btm">
+        <div class="fg12 mar_bo1">
+          <label for="email" class="fg2_la1">Reason:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 fg_chs1 inp_mst loss_op1">
+            <option>Delayed Follow-up</option>
+            <option>Not dealing with product</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="fg12 mar_bo1">
+          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+          <textarea rows="4" cols="48" class="form-control flt_l dt_wdt" placeholder="Write Something Here"></textarea>
+        </div>
+        <div class="fg12 ">
+          <label for="email" class="fg2_la1 pad_l">Send regret mail:<span class="spn1"></span></label>
+          <div class="check1 tr_l">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox" >
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="fg12">
+            <span class="span_sm note1">(Please Review E-Mail Settings of-Employee,Division And Customer)</span>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Submit</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_reopen -->
+<div class="modal fade" id="reopen_qoute_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog los_res_mod" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reopen Reason</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group fg12 mar_at flt_l">
+          <label for="email" class="fg2_la1">Reason:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 inp_mst reop_op1">
+             <option>Negotiation</option>
+             <option>Negotiation 1</option>
+             <option>Negotiation 2</option>
+          </select>           
+        </div>
+        <div class="form-group fg12 mar_at flt_l">
+          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+          <textarea rows="3" cols="48" class="form-control flt_l not_tx_ar dt_wdt" placeholder="Description"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Submit</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modal_view mail -->
+<div class="modal fade" id="view_mail_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog snd_box_rgt" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">View Emails </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="r_480 mar_bt_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-1">Sl#</th>
+                 <th class="col-md-2 tr_l">FROM</th>
+                 <th class="col-md-2 tr_l">TO</th>
+                 <th class="col-md-3 tr_l">Send / Received By</th>
+                 <th class="col-md-2 tr_c">Date & Time</th>
+                 <th class="col-md-1">In / Out</th>
+                 <th class="col-md-1">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+            <tr class="">
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_2_ico fx_width" title="Time-Out Mail">
+                  <i class="fa fa-envelope"></i>
+                </div>12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td class="tr_l">xxxxx</td>
+              <td class="tr_l">xxxxxx</td>
+              <td>20/01/2019 05.00PM</td>
+              <td>xxxxxx</td>
+              <td>
+                <button class="btn act_btn bn4" data-toggle="modal" data-target="#send_mail" title="View">
+                  <i class="fa fa-list-alt"></i>
+                </button>
+              </td>
+             </tr>
+             <tr>
+              <td>
+                <div class="bo_not1 mrl_bon flt_l fol_2_ico fx_width" title="Time-Out Mail">
+                  <i class="fa fa-envelope" style="visibility: hidden;">&nbsp;</i>
+                </div>12341
+              </td>
+              <td class="tr_l">xxxxxxx</td>
+              <td class="tr_l">xxxxx</td>
+              <td class="tr_l">xxxxxx</td>
+              <td>22/01/2019 04.30PM</td>
+              <td>xxxxxx</td>
+              <td>
+                <button class="btn act_btn bn4" data-toggle="modal" data-target="#send_mail" title="View">
+                  <i class="fa fa-list-alt"></i>
+                </button>
+              </td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal_resend -->
+<div class="modal fade" id="send_mail_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog snd_box_rgt" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Resend Mails </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="table_box tb_scr">
+        <div class="r_480 mar_bt_480">
+          <table class="table table-bordered tbl_480">
+            <thead class="thead1">
+              <tr>
+                 <th class="col-md-1">Sl#</th>
+                <th class="col-md-2 tr_l">Ref#</th>
+                <th class="col-md-2 tr_c">From</th>
+                <th class="col-md-2 tr_c">To</th>
+                <th class="col-md-3 tr_c">Send As</th>
+                <th class="col-md-2 tr_c">Actions</th>
+                 
+                  </tr>
+            </thead>
+
+          <tbody id="myTable">
+            <tr class="tr1">
+              <td>1</td>
+              <td class="tr_l">12341</td>
+              <td>25/01/2019</td>
+              <td>25/01/2019</td>
+              <td>xxxxxx</td>
+              <td><button class="btn tab_but1 butn05" data-toggle="modal" data-target="#exampleModal" title="Send mail">
+                    <i class="fa fa-paper-plane"></i></button></td>
+               </tr>
+             <tr>
+              <td>2</td>
+              <td class="tr_l">12341</td>
+              <td>27/01/2019</td>
+              <td>25/01/2019</td>
+              <td>xxxxxx</td>
+              <td><button class="btn tab_but1 butn05" title="Send mail"><i class="fa fa-paper-plane"></i></button></td>
+               </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_send-->
+<div class="modal fade" id="send_mail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod1_70 flt_r" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Send Mail</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group fg6 sa_fg4 sa_640">
+            <label class="fg2_la1">From:</label>
+            <input id="myinpc3" type="text" class="form-control inp_wd_100" placeholder="user1@compzit.com" disabled="">
+          </div>
+          <div class="form-group fg6 sa_fg4 sa_640">
+            <label class="fg2_la1">To:</label>
+            <input id="myinpc3" type="text" class="form-control inp_wd_100" placeholder="user@compzit.com" disabled="">
+          </div>
+          <div class="form-group fg12 sa_fg4 sa_640">
+            <label class="fg2_la1">Subject:</label>
+            <input id="myinpc3" type="text" class="form-control fg12 inp_wd_95" placeholder="Subject 1" disabled="">
+          </div>
+          <div class="form-group fg12 inp_wd_95">
+            <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+            <textarea name="" id="editor" cols="30" rows="2" placeholder="Regards, " disabled="">Regards, this is demo text</textarea>
+            <script type="text/javascript">
+              CKEDITOR.replace('editor', {
+              skin: 'moono',
+              enterMode: CKEDITOR.ENTER_BR,
+              shiftEnterMode:CKEDITOR.ENTER_P,
+              toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
+                         { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+                         { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
+                         { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+                         { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
+                         { name: 'links', items: [ 'Link', 'Unlink' ] },
+                         { name: 'insert', items: [ 'Image'] },
+                         { name: 'spell', items: [ 'jQuerySpellChecker' ] },
+                         { name: 'table', items: [ 'Table' ] }
+                         ],
+            });
+            </script>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Resend</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_send-->
+<div class="modal fade" id="par_win_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod1_100 flt_r" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Quotation Partial Win</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group fg2 mar_at flt_l">
+          <label for="email" class="fg2_la1">Total Amount:<span class="spn1"></span></label>
+          <input class="form-control fg2_inp1 tr_r" placeholder="0.00" disabled="">         
+        </div>
+        <div class="form-group fg2 mar_at flt_l">
+          <label for="email" class="fg2_la1">Product As:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 pro_ip1">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+           </select>        
+        </div>
+        <div class="form-group fg5 mar_at flt_l">
+          <div class="form-group">
+            <label for="email" class="fg2_la1">Calculate Amount:<span class="spn1"></span></label>
+            <input class="form-control inp_bdr tr_r" type="text" placeholder="0" disabled="">
+          </div>
+        </div>
+        <div class="form-group fg2 mar_at flt_r">
+          <div class=" fg6 cal_wid26">
+            <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+            <button type="submit" class="btn sub3"><i class="fa fa-calculator"></i> Calculate</button>
+          </div>
+          <div class="fg4">
+            <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+            <button type="submit" class="btn sub1">Win</button>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="spl_hcm wid_100_1 hei_102 bg_ne_1" style="margin-bottom: 10px;">
+          <div class="table_box tb_scr r_1024">
+            <table id="example1" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b2 tr_l">PRODUCT / Service</th>
+                  <th class="th_b6 tr_c">Category</th>
+                  <th class="th_b6 tr_c">UNIT</th>
+                  <th class="th_b1 tr_c">QTY</th>
+                  <th class="th_b7 tr_r">COST PRICE</th>
+                  <th class="th_b6 tr_c">Selling<br> Price</th>
+                  <th class="th_b7 tr_l">Tax %</th>
+                  <th class="th_b6 tr_c">Tax Amount</th>
+                  <th class="th_b7 tr_c">Discount<br> Amount</th>
+                  <th class="th_b6 tr_r">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_l">Product 1</td>
+                  <td class="tr_l">Category 1</td>
+                  <td>Meter</td>
+                  <td>100</td>
+                  <td class="tr_r">1000.00</td>
+                  <td class="tr_r">1000.00</td>
+                  <td>20</td>
+                  <td class="tr_r">100.00</td>
+                  <td class="tr_r">100.00</td>
+                  <td class="tr_r">1000.00</td>
+                </tr>
+                <tr>
+                  <td class="tr_l">Product 1</td>
+                  <td class="tr_l">Category 1</td>
+                  <td>Meter</td>
+                  <td>100</td>
+                  <td class="tr_r">1000.00</td>
+                  <td class="tr_r">1000.00</td>
+                  <td>20</td>
+                  <td class="tr_r">100.00</td>
+                  <td class="tr_r">100.00</td>
+                  <td class="tr_r">1000.00</td>
+                </tr>
+                <tr>
+                  <td class="tr_l">Product 1</td>
+                  <td class="tr_l">Category 1</td>
+                  <td>Meter</td>
+                  <td>100</td>
+                  <td class="tr_r">1000.00</td>
+                  <td class="tr_r">1000.00</td>
+                  <td>20</td>
+                  <td class="tr_r">100.00</td>
+                  <td class="tr_r">100.00</td>
+                  <td class="tr_r">1000.00</td>
+                </tr>
+                <tr>
+                  <td class="tr_l">Product 1</td>
+                  <td class="tr_l">Category 1</td>
+                  <td>Meter</td>
+                  <td>100</td>
+                  <td class="tr_r">1000.00</td>
+                  <td class="tr_r">1000.00</td>
+                  <td>20</td>
+                  <td class="tr_r">100.00</td>
+                  <td class="tr_r">100.00</td>
+                  <td class="tr_r">1000.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -1404,126 +2201,6 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     </div>
   </div>
 </div>
-
- <!-- Loss_info_Modal1 -->
-<div class="modal fade" id="loss_info" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 99999999999;">
-  <div class="modal-dialog los_res_mod" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Reason For Loss</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body padng_btm">
-        <div class="fg12 mar_bo1">
-          <label for="email" class="fg2_la1">Reason:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs1 inp_mst">
-            <option>Delayed Follow-up</option>
-            <option>Not dealing with product</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="fg12 mar_bo1">
-          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-          <textarea rows="4" cols="48" class="form-control flt_l" placeholder="Write Something Here"></textarea>
-        </div>
-        <div class="fg12 ">
-          <label for="email" class="fg2_la1 pad_l">Send regret mail:<span class="spn1"></span></label>
-          <div class="check1 tr_l">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="fg12">
-            <span class="span_sm note1">(Please Review E-Mail Settings of-Employee,Division And Customer)</span>
-        </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn sub1">Save</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
- <!-- part_opp_Modal1 -->
-<div class="modal fade" id="part_opp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog part_mod" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Quotation Partial Win</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body padng_btm">
-        <div class="fg2">
-           <label for="email" class="fg2_la1">Total Amount:<span class="spn1"></span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="Enter Product Group Code" disabled="">
-        </div>
-        <div class="fg2">
-          <label for="email" class="fg2_la1">Product As:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs1">
-            <option>T56</option>
-          </select>
-        </div>
-        <div class="fg2"><button class="win_amt"><i class="fa fa-calculator"></i> Calculate Win Amount:</button>
-          <input type="text" class="form-control fg2_inp1" placeholder="">
-        </div>
-        <div class="fg2">
-          <label for="email" class="fg2_la1">&nbsp;</label>
-          <button type="submit" class="btn sub1 win_btn"><i class="fa fa-trophy"></i> WIN</button>
-        </div>
-
-        <div class="clearfix"></div>
-        <div class="devider"></div>
-        <table class="table table-bordered">
-            <thead class="thead1">
-              <tr>
-                 <th class="col-md-3 tr_l">Product</th>
-                <th class="col-md-1 tr_c">Category</th>
-                 <th class="col-md-1 tr_c">Unit</th>
-                <th class="col-md-1 tr_c">Quantity</th>
-                <th class="col-md-1 tr_c">Tax %</th>
-                <th class="col-md-1 tr_r">Tax Amount</th>
-                <th class="col-md-1 tr_r">Cost Price</th>
-                <th class="col-md-1 tr_r">Selling Price</th>
-                <th class="col-md-1 tr_c">Discount</th>
-                <th class="col-md-1 tr_r">Total</th>
-              </tr>
-            </thead>
-
-          <tbody id="myTable">
-             <tr class="tr1">
-                <td class=" tr_l">Product 1</td>
-                <td class=" tr_c">Furniture</td>
-                <td class=" tr_c">21</td>
-                <td class=" tr_c">100</td>
-                <td class=" tr_c">20</td>
-                <td class=" tr_r">1000</td>
-                <td class=" tr_r">20</td>
-                <td class=" tr_r">1000</td>
-                <td class=" tr_c">20</td>
-                <td class=" tr_r">1000</td>
-             </tr>
-          </tbody>
-        </table>
-      </div><!-- 
-      <div class="modal-footer">
-        <button type="submit" class="btn sub1">Save</button>
-      </div> -->
-    </div>
-  </div>
-</div>
-
-
 
   </div><!--wrapper_closed-->
 
@@ -2068,6 +2745,9 @@ $(document).on('keydown', function(e) {
 });
 });
 </script>
+
+
+
 <script type="text/javascript">
   $(document).ready(function(){
     $("#myModal_2").on('shown.bs.modal', function(){
@@ -2082,7 +2762,147 @@ $(document).on('keydown', function(e) {
     $("#allocate_to").on('shown.bs.modal', function(){
         $(this).find('#all_op1').focus();
     });
+    $("#win_box").on('shown.bs.modal', function(){
+        $(this).find('.win_op1').focus();
+    });
+    $("#reopen_qoute_box").on('shown.bs.modal', function(){
+        $(this).find('.reop_op1').focus();
+    });
+    $("#loss_info").on('shown.bs.modal', function(){
+        $(this).find('.loss_op1').focus();
+    });
+    $("#par_win_box").on('shown.bs.modal', function(){
+        $(this).find('.pro_ip1').focus();
+    });
 });
+</script>
+
+<script type="text/javascript">
+ 'use strict';
+class Popover {
+  constructor(element, trigger, options) {
+    this.options = { // defaults
+      position: Popover.LEFT
+    };
+    this.element = element;
+    this.trigger = trigger;
+    this._isOpen = false;
+    Object.assign(this.options, options);
+    this.events();
+    this.initialPosition();
+  }
+
+  events() {
+    this.trigger.addEventListener('click', this.toggle.bind(this));
+  }
+
+  initialPosition() {
+    let triggerRect = this.trigger.getBoundingClientRect();
+    this.element.style.top = ~~triggerRect.top + 'px';
+    this.element.style.left = ~~triggerRect.left + 'px';
+  }
+
+  toggle(e) {
+    e.stopPropagation();
+    if (this._isOpen) {
+      this.close(e);
+    } else {
+      this.element.style.display = 'block';
+      this._isOpen = true;
+      this.outsideClick();
+      this.position();
+    }
+  }
+
+  targetIsInsideElement(e) {
+    let target = e.target;
+    if (target) {
+      do {
+        if (target === this.element) {
+          return true;
+        }
+      } while (target = target.parentNode);
+    }
+    return false;
+  }
+
+  close(e) {
+    if (!this.targetIsInsideElement(e)) {
+      this.element.style.display = 'block';
+      this._isOpen = false;
+      this.killOutSideClick();
+    }
+  }
+
+  position(overridePosition) {
+    let triggerRect = this.trigger.getBoundingClientRect(),
+      elementRect = this.element.getBoundingClientRect(),
+      position = overridePosition || this.options.position;
+    this.element.classList.remove(Popover.TOP, Popover.BOTTOM, Popover.LEFT, Popover.RIGHT); // remove all possible values
+    this.element.classList.add(position);
+    if (position.indexOf(Popover.BOTTOM) !== -1) {
+      this.element.style.left = ~~triggerRect.left + ~~((triggerRect.width / 2) - ~~(elementRect.width / 2)) + 'px';
+      this.element.style.top = ~~triggerRect.bottom + 'px';
+    } else if (position.indexOf(Popover.TOP) !== -1) {
+      this.element.style.left = ~~triggerRect.left + ~~((triggerRect.width / 2) - ~~(elementRect.width / 2)) + 'px';
+      this.element.style.top = ~~(triggerRect.top - elementRect.height) + 'px';
+    } else if (position.indexOf(Popover.LEFT) !== -1) {
+      this.element.style.top = ~~((triggerRect.top + triggerRect.height / 2) - ~~(elementRect.height / 2)) + 'px';
+      this.element.style.left = ~~(triggerRect.left - elementRect.width) + 'px';
+    } else {
+      this.element.style.top = ~~((triggerRect.top + triggerRect.height / 2) - ~~(elementRect.height / 2)) + 'px';
+      this.element.style.left = ~~triggerRect.right + 'px';
+      this.element.classList.add(position);
+    }
+  }
+
+  outsideClick() {
+    document.addEventListener('', this.close.bind(this));
+  }
+
+  // killOutSideClick() {
+  //   document.removeEventListener('click', this.close.bind(this));
+  // }
+
+  isOpen() {
+    return this._isOpen;
+  }
+}
+
+Popover.TOP = 'top';
+Popover.RIGHT = 'right';
+Popover.BOTTOM = 'bottom';
+Popover.LEFT = 'left';
+
+document.addEventListener('DOMContentLoaded', function() {
+  let btn = document.querySelector('#popoverOpener'),
+    template = document.querySelector('.popover'),
+    pop = new Popover(template, btn, {
+      position: Popover.RIGHT
+    }),
+    links = template.querySelectorAll('.popover-content a');
+  for (let i = 0, len = links.length; i < len; ++i) {
+    let link = links[i];
+    console.log(link);
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      pop.position(this.className);
+      this.blur();
+      return true;
+    });
+  }
+});
+
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.popover.right').hide("");
+  } 
+});
+    $(document).on("click", ".popover.right .btn-dz" , function(){
+   $('.popover.right').hide("");
+    });
 </script>
 
 </body>
