@@ -216,7 +216,7 @@ label{font-weight: 400;}
 
 .mar_bo1{margin-bottom: 20px;}
 
-#myBtn {position: fixed;top: 220px;right:10px;z-index: 99;font-size: 20px;border: none;outline: none;background-color: #48acf2;
+#myBtn{position: fixed;top: 220px;right:10px;z-index: 99;font-size: 20px;border: none;outline: none;background-color: #48acf2;
     color: #fff;cursor: pointer;padding: 0px;border-radius: 4px;border-radius: 37px;width:46px;height:28px;text-align: center;
     transition-delay: 0.1s;padding-top: 0px;}
 
@@ -3171,3 +3171,26 @@ body{position: fixed;left: 0;right: 0;}
 .popover.right .popover-content{overflow-y: hidden;}
 .popover.right {min-width: 550px; top: 90px!important;}
 .popover.right>.arrow {top: 7%;}
+
+.page-item .page-link{float: left;margin:0px;}
+.opp_ico_img .fa{color:#7cb8e3; }
+
+#cphMain_myBtn {
+    position: fixed;
+    /* top: 220px!important; */
+    right: 10px!important;
+    z-index: 99!important;
+    font-size: 20px!important;
+    border: none;
+    outline: none;
+    background-color: #48acf2;
+    color: #fff;
+    cursor: pointer;
+    padding: 0px!important;
+    border-radius: 4px;
+    border-radius: 37px;
+    width: 46px!important;
+    height: 28px!important;
+    text-align: center;
+    transition-delay: 0.1s;
+    padding-top: 0px!important;}
