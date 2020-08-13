@@ -112,14 +112,14 @@ function closeNav5() {
 
  <div class="mySave1" id="mySave">
   <div class="save_sec" style="padding-top: 10px;">
-    <button type="submit" class="btn sub1">Update</button>
-    <button type="submit" class="btn sub3">Confirm</button>
-    <button type="submit" class="btn sub1">Reopen</button>
-    <button type="submit" class="btn sub3">Delivered</button>
-    <button type="submit" class="btn sub2" title="Return Without Approval">Return</button>
-    <button type="submit" class="btn sub1" title="Save & Approval">Approve</button>
-    <button type="submit" class="btn sub3">Preview PDF</button>
-    <button type="submit" class="btn sub4">Close</button>
+    <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_st">Update</button>
+    <button type="submit" class="btn sub3" data-toggle="modal" data-target="#exampleModal_st">Confirm</button>
+    <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_st">Reopen</button>
+    <button type="submit" class="btn sub3" data-toggle="modal" data-target="#exampleModal_st">Delivered</button>
+    <button type="submit" class="btn sub2" data-toggle="modal" data-target="#exampleModal_st" title="Return Without Approval">Return</button>
+    <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_st" title="Save & Approval">Approve</button>
+    <button type="submit" class="btn sub3" data-toggle="modal" data-target="#exampleModal_st">Preview PDF</button>
+    <button type="submit" class="btn sub4" data-toggle="modal" data-target="#exampleModal_st">Close</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -477,10 +477,14 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Quotation (Standard Template) 
 
-    <button class="btn act_btn bn4 bt_e bt_fx_crqt" id="bulk_actions_btn" data-toggle="popover" title="Customer Requirements" data-placement="right" data-html="true" data-content="<label class='form1 mar_bo'>
-        
-        
-      </label><textarea cols='64' rows='18' style='width:100%;outline:none!important;border:none;background-color:#fff;' disabled='' placeholder='Regards,
+    <button class="btn act_btn bn4 bt_e bt_fx_crqt" id="popoverOpener" data-height="600" data-width="400" title="Customer Requirements" ><i class="fa fa-address-card-o"></i></button></h2>
+
+        <div id="popoverWrapper">
+          <div class="popover" role="tooltip">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Customer Requirements</h3>
+            <div class="popover-content">
+              <textarea cols="64" rows="18" style="width:100%;outline:none!important;border:none;background-color:#fff;" disabled="" placeholder="Regards,
 
 www.albalagh.com
 
@@ -502,7 +506,14 @@ This email and any attachments to it may be privileged/confidential and are inte
 
 Computer viruses can be transmitted via email. The recipient should check this email and any attachments for viruses. The company accepts no liability for any loss or damage arising from the use of this e-mail or attachments.  Although the company has taken reasonable measures to ensure no viruses are present in this email, we strongly recommend that you may subject these to your virus checking procedures prior to use.
 
-P  Please Don't print this e-mail unless it's really necessary. Save a tree & Save the world for your future' ></textarea><br><div class='devider'></div><button class='btn btn-danger flt_r pop_o_cls' data-dismiss='popover.right'>Close</button>" data-height="600" data-width="400" ><i class="fa fa-address-card-o"></i></button></h2>
+P  Please Don't print this e-mail unless it's really necessary. Save a tree & Save the world for your future" ></textarea><br>
+<div class="clearfix"></div>
+<div class="devider"></div>
+              <button class="btn btn-danger btn-dz flt_r" style="margin-left:4px;"">Close</button>
+              <button class="btn btn-success flt_r">Submit</button>
+            </div>
+          </div>
+        </div>
 
         <div class="clearfix"></div>
 
@@ -676,11 +687,11 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
               </td>
              <td>
-                 <input type="text" class="form-control fg2_inp2 tr_r" placeholder="00" disabled="">
+                 <input type="text" class="form-control fg2_inp2 tr_r" placeholder="00">
               </td>
 
               <td>
-                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
+                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
               </td>
               <td> 
                 <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
@@ -696,10 +707,10 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 </div>
               </td>
               <td>
-                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
+                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
               </td>
                <td>
-                  <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
+                  <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" disabled="">
                </td>
                <td class="td1"> 
                 <div class="btn_stl1">
@@ -941,17 +952,17 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
   <div class="free_sp"></div>
   <div class="devider"></div>
 
-        <div class="sub_cont pull-right">
+  <div class="sub_cont pull-right">
     <div class="save_sec">
-      <button type="submit" class="btn sub1">Update</button>
-      <button type="submit" class="btn sub3">Confirm</button>
-      <button type="submit" class="btn sub1">Reopen</button>
-      <button type="submit" class="btn sub3">Delivered</button>
-      <button type="submit" class="btn sub2" title="Return Without Approval">Return</button>
-      <button type="submit" class="btn sub1" title="Save & Approval">Approve</button>
-      <button type="submit" class="btn sub3">Preview PDF</button>
-      <button type="submit" class="btn sub4">Close</button>
-      </div>
+      <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_st">Update</button>
+      <button type="submit" class="btn sub3" data-toggle="modal" data-target="#exampleModal_st">Confirm</button>
+      <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_st">Reopen</button>
+      <button type="submit" class="btn sub3" data-toggle="modal" data-target="#exampleModal_st">Delivered</button>
+      <button type="submit" class="btn sub2" data-toggle="modal" data-target="#exampleModal_st" title="Return Without Approval">Return</button>
+      <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_st" title="Save & Approval">Approve</button>
+      <button type="submit" class="btn sub3" data-toggle="modal" data-target="#exampleModal_st">Preview PDF</button>
+      <button type="submit" class="btn sub4" data-toggle="modal" data-target="#exampleModal_st">Close</button>
+    </div>
     <div class="edit_sec">
       <button type="submit" class="btn sub1">Update</button>
       <button type="submit" class="btn sub3">Update & Close</button>
@@ -986,17 +997,17 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 </a>
 <div class="stat_sbox">
   <ul>
-    <a href="#" data-toggle="modal" data-target="#" title="Under Negotiation">
+    <a href="#" data-toggle="modal" data-target="#exampleModal_st" title="Under Negotiation">
       <li class="">
         <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i> Negotiation
       </li>
     </a>
-    <a href="#" data-toggle="modal" data-target="#" title="Project On Hold">
+    <a href="#" data-toggle="modal" data-target="#exampleModal_st" title="Project On Hold">
        <li>
         <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i> On Hold
   </li>
     </a>
-    <a href="#" data-toggle="modal" data-target="#" title="Project Cancelled">
+    <a href="#" data-toggle="modal" data-target="#exampleModal_st" title="Project Cancelled">
       <li>
         <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i>Cancelled
       </li>
@@ -1033,7 +1044,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
       <div class="modal-body">
         <div class="form-group fg6">
           <label for="email" class="fg2_la1">Customer Name:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1">
+          <select class="form-control fg2_inp1 qou_op1">
             <option>Oman Trading</option>
             <option>Kulco Trading</option>
           </select>           
@@ -1141,14 +1152,14 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
       <div class="modal-body">
         <div class="modal-body">
           <div class="form-group fg_container sa_fg4 sa_640">
-          <label for="email" class="fg2_la1">To:</label>
-          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="" name="email">
+          <label class="fg2_la1">To:</label>
+          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst sen_op1" placeholder="" name="email">
 
-          <label for="email" class="fg2_la1">Cc:</label>
-          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="" name="email">
+          <label class="fg2_la1">Cc:</label>
+          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" placeholder="" name="email">
 
-          <label for="email" class="fg2_la1">Bcc:</label>
-          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="" name="email">
+          <label class="fg2_la1">Bcc:</label>
+          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" placeholder="" name="email">
         </div>
       </div>
         </div>
@@ -1161,7 +1172,27 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     </div>
 
 <!-- Modal3_closed-->
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog ad_sd_mod01 flt_r" role="document">
@@ -1588,19 +1619,28 @@ $(document).on('keydown', function(e) {
 });
 </script> 
 <script type="text/javascript">
+
+  $("[data-toggle=popover]").popover({
+        html : true,
+        trigger: 'focus',
+        content: function() {
+            var content = $(this).attr("data-popover-content");
+            return $(content).children("btn-danger").html();
+        }
+    });
 // $(function () {
 //   $('[data-target="popover"]').popover();
 //   $('[data-toggle="tooltip"]').tooltip();
 //   $('body').popover('disable')
 // });
-$(document).on('click', '#bulk_actions_btn', function (event) {
-    //
-    // If popover is visible: do nothing
-    //
-    if ($(this).prop('.popover.right') == undefined) {
-       $(this).prop('.popover.right', true).popover('show');
-    }
-});
+// $(document).on('click', '#bulk_actions_btn', function (e) {
+//     //
+//     // If popover is visible: do nothing
+//     //
+//     if ($(this).prop('.popover.right') == undefined) {
+//        $(this).prop('.popover.right', true).popover('show');
+//     }
+// });
 
 // $(function () {
 //     $('#bulk_actions_btn').on('hide.bs.popover', function (e) {
@@ -1740,6 +1780,147 @@ $(document).on('keydown', function(e) {
 });
 });
 </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#myModal_3").on('shown.bs.modal', function(){
+        $(this).find('.qou_op1').focus();
+    });
+    $("#exampleModal1").on('shown.bs.modal', function(){
+        $(this).find('.sen_op1').focus();
+    });
+});
+</script>
+
+
+<script type="text/javascript">
+ 'use strict';
+class Popover {
+  constructor(element, trigger, options) {
+    this.options = { // defaults
+      position: Popover.LEFT
+    };
+    this.element = element;
+    this.trigger = trigger;
+    this._isOpen = false;
+    Object.assign(this.options, options);
+    this.events();
+    this.initialPosition();
+  }
+
+  events() {
+    this.trigger.addEventListener('click', this.toggle.bind(this));
+  }
+
+  initialPosition() {
+    let triggerRect = this.trigger.getBoundingClientRect();
+    this.element.style.top = ~~triggerRect.top + 'px';
+    this.element.style.left = ~~triggerRect.left + 'px';
+  }
+
+  toggle(e) {
+    e.stopPropagation();
+    if (this._isOpen) {
+      this.close(e);
+    } else {
+      this.element.style.display = 'block';
+      this._isOpen = true;
+      this.outsideClick();
+      this.position();
+    }
+  }
+
+  targetIsInsideElement(e) {
+    let target = e.target;
+    if (target) {
+      do {
+        if (target === this.element) {
+          return true;
+        }
+      } while (target = target.parentNode);
+    }
+    return false;
+  }
+
+  close(e) {
+    if (!this.targetIsInsideElement(e)) {
+      this.element.style.display = 'block';
+      this._isOpen = false;
+      this.killOutSideClick();
+    }
+  }
+
+  position(overridePosition) {
+    let triggerRect = this.trigger.getBoundingClientRect(),
+      elementRect = this.element.getBoundingClientRect(),
+      position = overridePosition || this.options.position;
+    this.element.classList.remove(Popover.TOP, Popover.BOTTOM, Popover.LEFT, Popover.RIGHT); // remove all possible values
+    this.element.classList.add(position);
+    if (position.indexOf(Popover.BOTTOM) !== -1) {
+      this.element.style.left = ~~triggerRect.left + ~~((triggerRect.width / 2) - ~~(elementRect.width / 2)) + 'px';
+      this.element.style.top = ~~triggerRect.bottom + 'px';
+    } else if (position.indexOf(Popover.TOP) !== -1) {
+      this.element.style.left = ~~triggerRect.left + ~~((triggerRect.width / 2) - ~~(elementRect.width / 2)) + 'px';
+      this.element.style.top = ~~(triggerRect.top - elementRect.height) + 'px';
+    } else if (position.indexOf(Popover.LEFT) !== -1) {
+      this.element.style.top = ~~((triggerRect.top + triggerRect.height / 2) - ~~(elementRect.height / 2)) + 'px';
+      this.element.style.left = ~~(triggerRect.left - elementRect.width) + 'px';
+    } else {
+      this.element.style.top = ~~((triggerRect.top + triggerRect.height / 2) - ~~(elementRect.height / 2)) + 'px';
+      this.element.style.left = ~~triggerRect.right + 'px';
+      this.element.classList.add(position);
+    }
+  }
+
+  outsideClick() {
+    document.addEventListener('', this.close.bind(this));
+  }
+
+  // killOutSideClick() {
+  //   document.removeEventListener('click', this.close.bind(this));
+  // }
+
+  isOpen() {
+    return this._isOpen;
+  }
+}
+
+Popover.TOP = 'top';
+Popover.RIGHT = 'right';
+Popover.BOTTOM = 'bottom';
+Popover.LEFT = 'left';
+
+document.addEventListener('DOMContentLoaded', function() {
+  let btn = document.querySelector('#popoverOpener'),
+    template = document.querySelector('.popover'),
+    pop = new Popover(template, btn, {
+      position: Popover.RIGHT
+    }),
+    links = template.querySelectorAll('.popover-content a');
+  for (let i = 0, len = links.length; i < len; ++i) {
+    let link = links[i];
+    console.log(link);
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      pop.position(this.className);
+      this.blur();
+      return true;
+    });
+  }
+});
+
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.popover.right').hide("");
+  } 
+});
+    $(document).on("click", ".popover.right .btn-dz" , function(){
+   $('.popover.right').hide("");
+    });
+</script>
+
+
 
 </body>
 </html>

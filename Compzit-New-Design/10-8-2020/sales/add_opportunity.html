@@ -113,10 +113,10 @@ function closeNav5() {
 
  <div class="mySave1" id="mySave">
   <div class="save_sec">
-    <button type="submit" class="btn sub1 bt_b">Save</button>
-    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
-    <button type="submit" class="btn sub4 bt_b">Cancel</button>
-    <button type="submit" class="btn sub2 bt_b">Clear</button>
+    <button type="submit" class="btn sub1 bt_b" data-toggle="modal" data-target="#exampleModal_st">Save</button>
+    <button type="submit" class="btn sub3 bt_b" data-toggle="modal" data-target="#exampleModal_st">Save & Close</button>
+    <button type="submit" class="btn sub4 bt_b" data-toggle="modal" data-target="#exampleModal_st">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b" data-toggle="modal" data-target="#exampleModal_st">Clear</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -483,7 +483,7 @@ function closeNav5() {
           </select> 
         </div>
         <div class="form-group fg2 sa_o_fg1">
-          <label for="pwd" class="fg2_la1">Date:<span class="spn1"></span></label>
+          <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span></label>
           <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr inp_mst" type="text"  />
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -491,42 +491,11 @@ function closeNav5() {
         </div>
         <div class="form-group fg2 sa_o_fg1">
           <label for="pwd" class="fg2_la1">Rating & Scoring:<span class="spn1">*</span>
-          <select class="form-control selectpicker">
-            <option data-content="<i class='fa fa-address-book-o' aria-hidden='true'></i>Option1"></option>
-            <option data-content="<i class='fa fa-calculator' aria-hidden='true'></i>Option2"></option>
-            <option data-content="<i class='fa fa-heart' aria-hidden='true'></i>Option3"></option>
+          <select class="form-control inp_mst">
+            <option value="1">Cool</option>
+            <option value="2" selected>Hot</option>
+            <option value="3">Warm</option>
           </select>
-
-        </div>
-        <div class="form-group fg2 sa_fg4 sa_480" style=" padding-bottom: 2px;">
-          <label for="pwd" class="fg2_la1">Rating & Scoring:<span class="spn1">*</span></label>
-                  
-          <span class="dropdown dd_spl1">
-            <button class="btn act_btn bn11 bt_e dropdown-toggle wid_110 cz_btn_he" type="button" data-toggle="dropdown" title="Rating & Scoring">
-              <i class="opp_ico_img_io rat_ic1" title="Cool"><i class="opp_ico_img ble opp_acs csz1"><i class="">C</i></i> Cool</i>
-              <i class="opp_ico_img_io rat_ic2" title="Hot" style="display:none;">
-                  <i class="opp_ico_img ble opp_acs csz2"><i class="">H</i></i> Hot</i>
-              <i class="opp_ico_img_io rat_ic3" title="Warm" style="display:none;">
-                  <i class="opp_ico_img ble opp_acs csz"><i class="">W</i></i> Warm</i>
-            </button>
-            <ul class="dropdown-menu drop_dn spn_drp_tbl spn_drp_tbl_1 chw_ulb">
-              <li class="li1_cz">
-                <a href="#" title="Cool" class="rat_1 selected_ra">
-                  <i class="opp_ico_img ble opp_acs csz1"><i class="">C</i> </i>Cool
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Hot" class="rat_2">
-                  <i class="opp_ico_img ble opp_acs csz2"><i class="">H</i> </i> Hot
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Warm" class="rat_3">
-                  <i class="opp_ico_img ble opp_acs csz"><i class="">W</i> </i> Warm
-                </a>
-              </li>
-            </ul>
-          </span>
         </div>
           <div class="clearfix"></div>
           <div class=" divid"></div>
@@ -534,53 +503,6 @@ function closeNav5() {
 
     <div class="form-group fg12">
       <label for="email" class="fg2_la1">Customer Requirements:<span class="spn1">&nbsp;</span></label><br>
-<!--<div class="wra1">
-     <div class="options">
-    <button onClick="transform('bold', null)">
-      <i class="fa fa-bold"></i>
-    </button>
-    <button onClick="transform('italic', null)">
-      <i class="fa fa-italic"></i>
-    </button>
-    <button onClick="transform('strikeThrough', null)">
-      <i class="fa fa-strikethrough"></i>
-    </button>
-    <button onClick="transform('underline', null)">
-      <i class="fa fa-underline"></i>
-    </button>
-    <div class="seperator"></div>
-    <button onClick="transform('justifyLeft', null)">
-      <i class="fa fa-align-left"></i>
-    </button>
-    <button onClick="transform('justifyCenter', null)">
-      <i class="fa fa-align-center"></i>
-    </button>
-    <button onClick="transform('justifyRight', null)">
-      <i class="fa fa-align-right"></i>
-    </button>
-    <div class="seperator"></div>
-    <button onClick="transform('insertOrderedList', null)">
-      <i class="fa fa-list-ol"></i>
-    </button>
-    <button onClick="transform('insertUnorderedList', null)">
-      <i class="fa fa-list-ul"></i>
-    </button>
-    <div class="seperator"></div>
-    <select onChange="transform('fontName', this.value)">
-      <option>Font</option>
-      <option disabled default value="Arial">Arial</option>
-      <option value="Times New Roman">Times</option>
-      <option value="Courier New">Courier New</option>
-      <option value="Tahoma">Tahoma</option>
-      <option value="Verdana">Verdana</option>
-    </select>
-    <div class="seperator"></div>
-    <input type="number" onChange="transform('fontSize', this.value)" value="3" max="7" min="1">
-  </div>
-  <iframe name="editor" id="editor"></iframe>
-</div>
-    </div>
- -->
 <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
 <textarea name="" id="editor" cols="30" rows="4">
 </textarea>
@@ -691,29 +613,39 @@ function closeNav5() {
               </div>
 
 
-       <button class="btn act_btn bn11_chk pull-right" title="Social Media" data-toggle="popover" data-placement="left" data-html="true" data-content="
-       <table class='table table-bordered tbl_480'>
-                  <tbody>
-                    <tr>
-                      <td class='col-md-4 tr_l'>Skype</td>
-                      <td class='col-md-8 tr_l'><input type='text' class='form-control fg2_inp2 tr_l' placeholder='Skype Id'></td>
-                    </tr>
-                    <tr>
-                      <td class='col-md-4 tr_l'>Facebook</td>
-                      <td class='col-md-8 tr_l'><input type='text' class='form-control fg2_inp2 tr_l' placeholder='Facebook Id'></td>
-                    </tr>
-                    <tr>
-                      <td class='col-md-4 tr_l'>Twitter</td>
-                      <td class='col-md-8 tr_l'><input type='text' class='form-control fg2_inp2 tr_l' placeholder='Twitter Id'></td>
-                    </tr>
-                    <tr>
-                      <td class='col-md-4 tr_l'>Gmail</td>
-                      <td class='col-md-8 tr_l'><input type='text' class='form-control fg2_inp2 tr_l' placeholder='Gmail Id'></td>
-                    </tr>
-                  </tbody>
-                </table><br><div class='clearfix'></div><div class='devider'></div><button class='btn btn-danger flt_r' data-dismiss='popover' style='margin-left:4px;'>Close</button><button class='btn btn-success flt_r'>Submit</button>" data-height="400" data-width="600">
-                        <i class="opp_ico_img_ptp1"><img src="../images/icons/opp/social.png"></i>
-        </button>
+       <button class="btn act_btn bn11_chk pull-right" title="Social Media" id="popoverOpener" data-height="400" data-width="600">
+          <i class="opp_ico_img_ptp1"><img src="../images/icons/opp/social.png"></i>
+        </button>    
+
+        <div id="popoverWrapper">
+          <div class="popover" role="tooltip">
+            <div class="arrow"></div>
+            <h3 class="popover-title">Social Media</h3>
+            <div class="popover-content">
+              <table class="table table-bordered tbl_480">
+                <tbody>
+                  <tr>
+                    <td class="col-md-4 tr_l">Skype</td>
+                    <td class="col-md-8 tr_l"><input type="text" class="form-control fg2_inp2 tr_l skp_id" placeholder="Skype Id" autofocus=""></td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4 tr_l">Facebook</td>
+                    <td class="col-md-8 tr_l"><input type="text" class="form-control fg2_inp2 tr_l" placeholder="Facebook Id"></td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4 tr_l">Twitter</td>
+                    <td class="col-md-8 tr_l"><input type="text" class="form-control fg2_inp2 tr_l" placeholder="Twitter Id"></td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4 tr_l">Gmail</td>
+                    <td class="col-md-8 tr_l"><input type="text" class="form-control fg2_inp2 tr_l" placeholder="Gmail Id"></td>
+                  </tr>
+                </tbody>
+              </table><br><div class="clearfix"></div><div class="devider"></div>
+              <button class="btn btn-danger btn-dz flt_r" style="margin-left:4px;"">Close</button><button class="btn btn-success flt_r">Submit</button>
+            </div>
+          </div>
+        </div>
 
               <div class="clearfix"></div>
               <div class="devider"></div>
@@ -973,10 +905,10 @@ function closeNav5() {
 
       <div class="sub_cont pull-right">
         <div class="save_sec">
-          <button type="submit" class="btn sub1">Save</button>
-          <button type="submit" class="btn sub3">Save & Close</button>
-          <button type="submit" class="btn sub4">Cancel</button>
-          <button type="submit" class="btn sub2">Clear</button>
+          <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_st">Save</button>
+          <button type="submit" class="btn sub3" data-toggle="modal" data-target="#exampleModal_st">Save & Close</button>
+          <button type="submit" class="btn sub4" data-toggle="modal" data-target="#exampleModal_st">Cancel</button>
+          <button type="submit" class="btn sub2" data-toggle="modal" data-target="#exampleModal_st">Clear</button>
         </div>
 
         <div class="edit_sec">
@@ -1069,6 +1001,28 @@ function closeNav5() {
   </div>
 </div>
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal1 -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1757,23 +1711,6 @@ $(document).on('keydown', function(e) {
   </div>
 </div>
 
-
-<script type="text/javascript">
-$(function () {
-  $('[data-toggle="popover"]').popover();
-  $('[data-toggle="tooltip"]').tooltip();
-});
-$(document).on('keydown', function(e) { 
-  var keyCode = e.keyCode || e.which; 
-
-  if (keyCode == 27) { 
-   $('.popover.right').hide();
-  } 
-});
-    $(document).on("click", ".popover .btn-danger" , function(){
-        $(this).parents(".popover").popover('hide');
-    });
-</script>
 <script>
 $(document).ready(function(){
   $(".rat_1").click(function(){
@@ -1810,7 +1747,9 @@ $(document).ready(function(){
         if ($(this).scrollTop() > 100) { 
             $('#scroll').fadeIn();
             $('.popover.right').fadeOut();
-            $('.popover.top').fadeOut();    
+            $('.popover.top').fadeOut();
+            // $('.popover.left ').fadeOut();
+               
         } else { 
             $('#scroll').fadeOut(); 
         } 
@@ -1864,28 +1803,142 @@ angular
   .module('gaigDemo', ['gaigUiBootstrap'])
   .controller('DemoCtrl', DemoCtrl);
 </script>
-
 <script type="text/javascript">
-  $('.bn11_chk').each(function() {
-  $(this).popover({    
-    content : $(this).attr("popover-content"),
-    title : $(this).attr("popover-title")         
-  })     
-  $(this).tooltip({    
-    placement : 'bottom',  
-    title : $(this).attr("tooltip-title")         
-  })  
-function myOutFunction() {
-  document.getElementById("demo3").innerHTML = y+=1;
-}     
-})
-</script>
-
-<script type="text/javascript">
-  $(function () {
-    $('select').selectpicker();
+  $(document).ready(function(){
+    $(".popover.left").style('display:block', function(){
+        $(this).find('.skp_id').focus();
+    });
 });
 </script>
+
+<script type="text/javascript">
+ 'use strict';
+class Popover {
+  constructor(element, trigger, options) {
+    this.options = { // defaults
+      position: Popover.LEFT
+    };
+    this.element = element;
+    this.trigger = trigger;
+    this._isOpen = false;
+    Object.assign(this.options, options);
+    this.events();
+    this.initialPosition();
+  }
+
+  events() {
+    this.trigger.addEventListener('click', this.toggle.bind(this));
+  }
+
+  initialPosition() {
+    let triggerRect = this.trigger.getBoundingClientRect();
+    this.element.style.top = ~~triggerRect.top + 'px';
+    this.element.style.left = ~~triggerRect.left + 'px';
+  }
+
+  toggle(e) {
+    e.stopPropagation();
+    if (this._isOpen) {
+      this.close(e);
+    } else {
+      this.element.style.display = 'block';
+      this._isOpen = true;
+      this.outsideClick();
+      this.position();
+    }
+  }
+
+  targetIsInsideElement(e) {
+    let target = e.target;
+    if (target) {
+      do {
+        if (target === this.element) {
+          return true;
+        }
+      } while (target = target.parentNode);
+    }
+    return false;
+  }
+
+  close(e) {
+    if (!this.targetIsInsideElement(e)) {
+      this.element.style.display = 'block';
+      this._isOpen = false;
+      this.killOutSideClick();
+    }
+  }
+
+  position(overridePosition) {
+    let triggerRect = this.trigger.getBoundingClientRect(),
+      elementRect = this.element.getBoundingClientRect(),
+      position = overridePosition || this.options.position;
+    this.element.classList.remove(Popover.TOP, Popover.BOTTOM, Popover.LEFT, Popover.RIGHT); // remove all possible values
+    this.element.classList.add(position);
+    if (position.indexOf(Popover.BOTTOM) !== -1) {
+      this.element.style.left = ~~triggerRect.left + ~~((triggerRect.width / 2) - ~~(elementRect.width / 2)) + 'px';
+      this.element.style.top = ~~triggerRect.bottom + 'px';
+    } else if (position.indexOf(Popover.TOP) !== -1) {
+      this.element.style.left = ~~triggerRect.left + ~~((triggerRect.width / 2) - ~~(elementRect.width / 2)) + 'px';
+      this.element.style.top = ~~(triggerRect.top - elementRect.height) + 'px';
+    } else if (position.indexOf(Popover.LEFT) !== -1) {
+      this.element.style.top = ~~((triggerRect.top + triggerRect.height / 2) - ~~(elementRect.height / 2)) + 'px';
+      this.element.style.left = ~~(triggerRect.left - elementRect.width) + 'px';
+    } else {
+      this.element.style.top = ~~((triggerRect.top + triggerRect.height / 2) - ~~(elementRect.height / 2)) + 'px';
+      this.element.style.left = ~~triggerRect.right + 'px';
+      this.element.classList.add(position);
+    }
+  }
+
+  outsideClick() {
+    document.addEventListener('', this.close.bind(this));
+  }
+
+  // killOutSideClick() {
+  //   document.removeEventListener('click', this.close.bind(this));
+  // }
+
+  isOpen() {
+    return this._isOpen;
+  }
+}
+
+Popover.TOP = 'top';
+Popover.RIGHT = 'right';
+Popover.BOTTOM = 'bottom';
+Popover.LEFT = 'left';
+
+document.addEventListener('DOMContentLoaded', function() {
+  let btn = document.querySelector('#popoverOpener'),
+    template = document.querySelector('.popover'),
+    pop = new Popover(template, btn, {
+      position: Popover.LEFT
+    }),
+    links = template.querySelectorAll('.popover-content a');
+  for (let i = 0, len = links.length; i < len; ++i) {
+    let link = links[i];
+    console.log(link);
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      pop.position(this.className);
+      this.blur();
+      return true;
+    });
+  }
+});
+
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.popover.left').hide("");
+  } 
+});
+    $(document).on("click", ".popover.left .btn-dz" , function(){
+   $('.popover.left').hide("");
+    });
+</script>
+
 
 
 </body>

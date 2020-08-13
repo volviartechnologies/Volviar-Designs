@@ -893,7 +893,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
         
         <div class="form-group fg6 mar_at flt_l">
              <label for="email" class="fg2_la1">Through:<span class="spn1">*</span></label>
-               <select class="form-control fg2_inp1 inp_mst">
+               <select class="form-control fg2_inp1 inp_mst" id="not_op1">
                  <option>Fax</option>
                 <option>Mail</option>
                 <option>Other</option>
@@ -946,7 +946,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
         
         <div class="form-group fg4 sa_2">
              <label for="email" class="fg2_la1">Subject:<span class="spn1">*</span></label>
-               <select class="form-control fg2_inp1  inp_mst">
+               <select class="form-control fg2_inp1  inp_mst" id="fol_op1">
                  <option>Client Call</option>
                 <option>Send An Email</option>
                 <option>Customer Meeting</option>
@@ -1108,7 +1108,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
         <div class="form-group fg6">
           <label for="pwd" class="fg2_la1">Added Time:<span class="spn1">*</span></label>
           <div class="fg4 sa_2">
-            <select class="form-control fg2_inp1  inp_mst" disabled="">
+            <select class="form-control fg2_inp1" disabled="">
               <option>Hours</option>
               <option>1</option>
               <option>2</option>
@@ -1126,7 +1126,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
          </div>
 
          <div class="fg4 sa_2">
-          <select class="form-control fg2_inp1  inp_mst" disabled="">
+          <select class="form-control fg2_inp1" disabled="">
             <option>Min</option>
             <option>00</option>
             <option>01</option>
@@ -1191,7 +1191,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
            </select>
          </div>
          <div class="fg4 sa_2">
-            <select class="form-control fg2_inp1  inp_mst" disabled="">
+            <select class="form-control fg2_inp1" disabled="">
              <option>AM</option>
             <option>PM</option>
            </select> 
@@ -1206,7 +1206,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
           <div class="tdte">
             <label for="pwd" class="fg2_la1">Completed Date:<span class="spn1">*</span> </label>
             <div id="datepicker5" class="input-group date" data-date-format="mm-dd-yyyy">
-              <input class="form-control inp_bdr inp_mst" type="text"  />
+              <input class="form-control inp_bdr inp_mst cls_in1" type="text"  />
               <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
             </div>
           </div>
@@ -1389,7 +1389,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
       <div class="modal-body padng_btm">
         <div class="form-group fg6 sa_2">
           <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs1">
+          <select class="form-control fg2_inp1 fg_chs1" id="all_op1">
             <option>Employee 1</option>
             <option>Employee 2</option>
             <option>Employee 3</option>
@@ -2081,6 +2081,22 @@ $(document).on('keydown', function(e) {
    $('.stat_sbox1').hide();
   } 
 });
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#myModal_2").on('shown.bs.modal', function(){
+        $(this).find('#not_op1').focus();
+    });
+    $("#myModal_3").on('shown.bs.modal', function(){
+        $(this).find('#fol_op1').focus();
+    });
+    $("#myModal_3_cls").on('shown.bs.modal', function(){
+        $(this).find('.cls_in1').focus();
+    });
+    $("#allocate_to").on('shown.bs.modal', function(){
+        $(this).find('#all_op1').focus();
+    });
 });
 </script>
 
