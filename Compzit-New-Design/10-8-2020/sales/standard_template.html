@@ -1680,7 +1680,7 @@ $(document).on('keydown', function(e) {
 <script type="text/javascript">
 $(function () {
   $('[data-toggle="popover0"]').popover();
-  $('[data-toggle="tooltip0"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
 });
 $(document).on('keydown', function(e) { 
   var keyCode = e.keyCode || e.which; 
@@ -1928,8 +1928,11 @@ $(document).on('keydown', function(e) {
    $('.popover.right').hide("");
     });
 </script>
-
-
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 
 </body>
 </html>
