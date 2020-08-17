@@ -524,6 +524,7 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 <ul>
                   <li><span class="fg6_22 li_100">Customer Name:</span> <span class="fg6_78 li_100_1"> Arabian Suppliers</span></li>
                   <li><span class="fg6_22 li_100">Division:</span> <span class="fg6_78 li_100_1"> IT Solutions</span></li>
+                  <li><span class="fg6_22 li_100">Re-opened For:</span> <span class="fg6_78 li_100_1"> Negotiation</span></li>
                 </ul>
               </div>
               <div class="col-md-4 tx_100 hcm_1_2 ref_box_head">
@@ -540,6 +541,9 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 </ul>
               </div>
             </div>
+            <!-- <div class="fg12">
+              <li class="li_st_rev"><span class="li_100">Quotation Re-opened For:</span> <span class="li_100_1"> Negotiation</span></li>
+            </div> -->
           </div>
 
         <!--   <div class="sub_cont pull-right">
@@ -811,7 +815,11 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
     <p class="plc1 pl_rg"> TERMS & CONDITIONS</p>
     </div> -->
 
-     <p class="plc1 pl_rg">TERMS & CONDITIONS <!-- <button class="terms_btn" data-toggle="modal" data-target="#myModal_3" title="Terms & Conditions"><img src="..\images\t&c.png"></button> --></p>
+    <p class="plc1 pl_rg">TERMS & CONDITIONS 
+      <button class="btn act_btn bn11 bt_e" data-toggle="modal" data-target="#revised_pop" title="View Revised Quotation">
+          <i class="opp_ico_img"><img src="../images/icons/opp/view_quot.png"> </i>
+      </button>
+    </p>
 
 
     <div class="form-group fg2 fg2_mr sa_480">
@@ -1110,8 +1118,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 <!-- Modal2_closed-->
 
 <!-- Modal4 -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog ad_sd_mod01 flt_r" role="document">
+<div class="modal fade" id="revised_pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ad_sd_mod01 flt_l" role="document">
     <div class="modal-content">
 
       <div class="modal-header">
@@ -1124,7 +1132,8 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
       <div class="modal-body">
         <div class="modal-body">
           <div class="form-group fg_container">
-        <input type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="889/QT/UCD45/100/002" name="email" required="">
+            <a href="#">
+              <li class="li_st_rev">889/QT/UCD45/100/002</li></a>
       </div>
       </div>
         </div>

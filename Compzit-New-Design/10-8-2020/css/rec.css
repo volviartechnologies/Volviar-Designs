@@ -3203,3 +3203,6 @@ body{position: fixed;left: 0;right: 0;}
 .cal_wid26{width: 60%;}
 .fg6_510{width: 66%;}
 .time_bx{padding-right: 0px;width: 16%;margin:auto;float: left;}
+
+.box_r{margin: auto;float: left;text-align: center;background-color: #eaeaea;height: auto;}
+.li_st_rev{margin: auto;float: left;list-style: none;    width: 100%;text-align:left;background-color:#eff5f9;padding: 2px;}
