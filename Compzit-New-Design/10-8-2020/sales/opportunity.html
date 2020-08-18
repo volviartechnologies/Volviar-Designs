@@ -590,6 +590,9 @@ function closeNav5() {
                     <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
+                      <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+                       <i class="fa fa-external-link"></i>
+                     </button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
@@ -728,6 +731,9 @@ function closeNav5() {
                     <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
+                      <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+                       <i class="fa fa-external-link"></i>
+                     </button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
@@ -866,6 +872,9 @@ function closeNav5() {
                     <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
+                    <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+                     <i class="fa fa-external-link"></i>
+                   </button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
@@ -2264,7 +2273,7 @@ function closeNav5() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr class="row_1">
                   <td class="tr_l">Product 1</td>
                   <td class="tr_l">Category 1</td>
                   <td>Meter</td>
@@ -2276,7 +2285,7 @@ function closeNav5() {
                   <td class="tr_r">100.00</td>
                   <td class="tr_r">1000.00</td>
                 </tr>
-                <tr>
+                <tr class="row_2">
                   <td class="tr_l">Product 1</td>
                   <td class="tr_l">Category 1</td>
                   <td>Meter</td>
@@ -2288,7 +2297,7 @@ function closeNav5() {
                   <td class="tr_r">100.00</td>
                   <td class="tr_r">1000.00</td>
                 </tr>
-                <tr>
+                <tr class="row_3">
                   <td class="tr_l">Product 1</td>
                   <td class="tr_l">Category 1</td>
                   <td>Meter</td>
@@ -2300,7 +2309,7 @@ function closeNav5() {
                   <td class="tr_r">100.00</td>
                   <td class="tr_r">1000.00</td>
                 </tr>
-                <tr>
+                <tr class="row_4">
                   <td class="tr_l">Product 1</td>
                   <td class="tr_l">Category 1</td>
                   <td>Meter</td>
@@ -2720,6 +2729,22 @@ function chk_awd1() {
 });
 </script>
 
+<script>
+$(document).ready(function(){
+  $(".row_1").click(function(){
+    $(".row_1").toggleClass("sel_row");
+  });
+  $(".row_2").click(function(){
+    $(".row_2").toggleClass("sel_row");
+  });
+  $(".row_3").click(function(){
+    $(".row_3").toggleClass("sel_row");
+  });
+  $(".row_4").click(function(){
+    $(".row_4").toggleClass("sel_row");
+  });
+});
+</script>
 
 </body>
 </html>

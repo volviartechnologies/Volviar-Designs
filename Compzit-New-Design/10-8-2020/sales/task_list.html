@@ -455,21 +455,20 @@ function closeNav5() {
   <ol class="breadcrumb">
     <li><a href="#">Home</a></li>
     <li><a href="#">Sales Force Automation</a></li>
-        <li class="active">Task List</li>
+        <li class="active">Tasks</li>
       </ol>
 
 	<div class="content_sec2 cont_contr">
 		<div class="content_area_container cont_contr">	
       <div class="content_box1 cont_contr">
-        <h1 class="h1_con">Task List</h1>
-        <h3>Listing Open Follow-Up / Task</h3>
+        <h1 class="h1_con">Tasks</h1>
+        <!-- <h3>Listing Open Follow-Up / Task</h3> -->
 
             
         <div class="r_640">  
         <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
           <thead class="thead1">
             <tr>
-              <th class="col-md-1">Sl#</th>
               <th class="col-md-4 tr_l">Customer</th>
               <th class="col-md-3 tr_l">Subject</th>
               <th class="col-md-2 tr_c">Due Date & Time</th>
@@ -478,17 +477,16 @@ function closeNav5() {
          </thead>
           <tbody>
             <tr class="">
-              <td>
+              <td class="tr_l">
                 <div class="bo_not1 mrl_bon flt_l fol_1_ico" title="Breached task / Follow-Up">
                   <i class="fa fa-book"></i>
-                </div>12341
+                </div><a href="ref_opportunity.html">Customer 1</a>
               </td>
-              <td class="tr_l"><a href="ref_opportunity.html">Customer 1</a></td>
               <td class="tr_l">xxxxxxx</td>
               <td>25/01/2019 04.00PM</td>
               <td>
-                <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
-                  <i class="fa fa-edit"></i>
+                <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+                  <i class="fa fa-book"></i>
                 </button>
                 <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
                   <i class="fa fa-tasks"></i>
@@ -496,37 +494,35 @@ function closeNav5() {
               </td>
             </tr>
             <tr class="">
-              <td>
-                <div class="bo_not1 mrl_bon flt_l fol_2_ico" title="Closed task / Follow-Up">
+              <td class="tr_l">
+                <div class="bo_not1 mrl_bon flt_l fol_1_ico" title="Breached task / Follow-Up">
                   <i class="fa fa-book"></i>
-                </div> 12341
+                </div><a href="ref_opportunity.html">Customer 1</a>
               </td>
-              <td class="tr_l"><a href="ref_opportunity.html">Customer 2</a></td>
               <td class="tr_l">xxxxxxx</td>
               <td>25/01/2019 04.00PM</td>
               <td>
-                <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
-                  <i class="fa fa-edit"></i>
+                <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+                  <i class="fa fa-book"></i>
                 </button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
+                <button class="btn act_btn bn1" data-toggle="modal" data-target="#cls_confrm_st" title="Close this task">
                   <i class="fa fa-tasks"></i>
                 </button>
               </td>
             </tr>
             <tr class="">
-              <td>
-                <div class="bo_not1 mrl_bon flt_l fol_3_ico" title="Open task / Follow-Up">
+              <td class="tr_l">
+                <div class="bo_not1 mrl_bon flt_l fol_1_ico" title="Breached task / Follow-Up">
                   <i class="fa fa-book"></i>
-                </div>12341
+                </div><a href="ref_opportunity.html">Customer 1</a>
               </td>
-              <td class="tr_l"><a href="ref_opportunity.html">Customer 3</a></td>
               <td class="tr_l">xxxxxxx</td>
               <td>25/01/2019 04.00PM</td>
               <td>
-                <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
-                  <i class="fa fa-edit"></i>
+                <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+                  <i class="fa fa-book"></i>
                 </button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#myModal_3_cls" title="Close this task">
+                <button class="btn act_btn bn1" data-toggle="modal" data-target="#cls_confrm_st" title="Close this task">
                   <i class="fa fa-tasks"></i>
                 </button>
               </td>
@@ -552,11 +548,6 @@ function closeNav5() {
 </a>
 <!---print_button_closed--->
 
-<!--add_new_button--->
-<a href="add_tax_master.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
-  <i class="fa fa-plus-circle"></i>
-</a>
-<!---add_new_button_closed-->
 
 <!---alert_message_section---->
 <div class="myAlert-top alert alert-success">
@@ -621,7 +612,7 @@ function closeNav5() {
               </div>
             </div>
           </div>  
-          <div class="fg2 sa_2">
+          <div class="fg2 sa_2 time_w">
             <label for="pwd" class="fg2_la1">Due Time:<span class="spn1"></span></label>
             <select class="form-control fg2_inp1">
               <option>Hours</option>
@@ -639,10 +630,10 @@ function closeNav5() {
               <option>12</option>
             </select> 
           </div>
-          <div class="fg2 sa_2">
+          <div class="fg2 sa_2 time_w">
             <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
             <select class="form-control fg2_inp1">
-              <option>Min</option>
+              <option>Minutes</option>
               <option>00</option>
               <option>01</option>
               <option>02</option>
@@ -731,7 +722,30 @@ function closeNav5() {
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn sub1">Save</button>
-       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" data-toggle="modal" data-target="#confrm_st">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="cls_confrm_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are You Sure</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#myModal_3_cls">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
       </div>
     </div>
   </div>
@@ -758,7 +772,7 @@ function closeNav5() {
 
         <div class="form-group fg6">
           <label for="pwd" class="fg2_la1">Added Time:<span class="spn1">*</span></label>
-          <div class="fg4 sa_2">
+          <div class="fg4 sa_2 time_w">
             <select class="form-control fg2_inp1" disabled="">
               <option>Hours</option>
               <option>1</option>
@@ -776,9 +790,9 @@ function closeNav5() {
             </select> 
          </div>
 
-         <div class="fg4 sa_2">
+         <div class="fg4 sa_2 time_w">
           <select class="form-control fg2_inp1" disabled="">
-            <option>Min</option>
+            <option>Minute</option>
             <option>00</option>
             <option>01</option>
             <option>02</option>
@@ -865,7 +879,7 @@ function closeNav5() {
 
         <div class="form-group fg6">
           <label for="pwd" class="fg2_la1">Completed Time:<span class="spn1">*</span></label>
-          <div class="fg4 sa_2">
+          <div class="fg4 sa_2 time_w">
             <select class="form-control fg2_inp1  inp_mst">
               <option>Hours</option>
               <option>1</option>
@@ -883,7 +897,7 @@ function closeNav5() {
             </select> 
          </div>
 
-         <div class="fg4 sa_2">
+         <div class="fg4 sa_2 time_w">
           <select class="form-control fg2_inp1  inp_mst">
             <option>Minute</option>
             <option>00</option>
@@ -958,7 +972,7 @@ function closeNav5() {
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn sub1">Save</button>
-       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" data-toggle="modal" data-target="#confrm_st">Cancel</button>
       </div>
     </div>
   </div>
@@ -985,7 +999,27 @@ function closeNav5() {
     </div>
   </div>
 </div>
-
+<!-- Modal -->
+<div class="modal fade" id="confrm_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are You Sure</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Modal2 -->
 <div class="modal fade mod2_c" id="exampleModal2">
   <div class="modal-dialog mod2" role="document">
