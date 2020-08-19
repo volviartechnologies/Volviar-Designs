@@ -3283,6 +3283,7 @@ body{position: fixed;left: 0;right: 0;}
 .spn_bdge .cnt_to, .spn_bdge .cnt_from{ overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width:200px;margin:auto;float: right;}
 .dtl_msgbox{width: 100%;height: auto;margin:auto;float: left;margin-top: 2px;}
 .dtl_msgbox #cke_1_contents, .dtl_msgbox .cke_contents{height: 360px!important;overflow-y: auto;}
+ #example .cke_contents{height: 306px!important;}
 .dtl_msgbox .cke_top{display:none!important;}
 .mod_mail_mrtp{margin-top:16%;}
 .attach_doc{width: 30px;height:30px;margin:auto;float: right;border-radius: 50px;background-color:#90b5c5;color: #fff;bottom: 0;position: relative;border:none;
