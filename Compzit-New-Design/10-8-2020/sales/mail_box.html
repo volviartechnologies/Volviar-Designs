@@ -556,14 +556,189 @@ function closeNav5() {
           </div>
           <div class="area_msg_bx">
             <div class="r_480 dt_tblz sp_msg1">
-              <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div>
-
+              <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i></span>
+              <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
+              <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="th_b1">
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
+                    </th>
+                    <th class="col-md-3 tr_l">Subject </th>
+                    <th class="col-md-2 tr_l">From</th>
+                    <th class="col-md-2 tr_l">Division</th>
+                     <th class="col-md-1">Date and Time</th>
+                     <th class="col-md-1">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  <tr class="frst_row">
+                    <th>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
+                    </th> 
+                    <td class=" tr_l">Attachment 1
+                    </td>
+                    <td class=" tr_l">ajayxavier@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Fordwarded</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <th>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
+                    </th> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                   
+                  <tr class="trd_row">
+                    <th>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
+                    </th> 
+                    <td class=" tr_l">Attachment 3</td>
+                    <td class=" tr_l">user2@compzit.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Lead</td>
+                   </tr>
+                  <tr class="fou_row">
+                    <td>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
+                    <td class=" tr_l">Attachment 4</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="fiv_row">
+                    <td>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
+                    <td class=" tr_l">Attachment 5</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="six_row">
+                    <td>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
+                    <td class=" tr_l">Attachment 6</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="sev_row">
+                    <td>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
+                    <td class=" tr_l">Attachment 7</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="eig_row">
+                    <td>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
+                    <td class=" tr_l">Attachment 8</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="nin_row">
+                    <td>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
+                    <td class=" tr_l">Attachment 9</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="ten_row">
+                    <td>
+                      <span class="button-checkbox flt_l">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
+                    <td class=" tr_l">Attachment 10</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="r_480 dt_tblz sp_msg2" style="display:none;">
+              <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i></span>
               <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
               <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
                     <th class="th_b5">
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
@@ -578,7 +753,7 @@ function closeNav5() {
                 <tbody id="myTable">
                   <tr class="frst_row">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
@@ -592,7 +767,7 @@ function closeNav5() {
                    </tr>
                   <tr class=" scnd_row">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
@@ -607,7 +782,7 @@ function closeNav5() {
                    
                   <tr class="trd_row">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
@@ -620,106 +795,420 @@ function closeNav5() {
                    </tr>
                   <tr class="">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                     </td> 
-                    <td class=" tr_l">Attachment 2
-                    </td>
+                    <td class=" tr_l">Attachment 4</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
-                  <tr class=" scnd_row">
+                  <tr class="">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                     </td> 
-                    <td class=" tr_l">Attachment 2
-                    </td>
+                    <td class=" tr_l">Attachment 5</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
-                  <tr class=" scnd_row">
+                  <tr class="">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                     </td> 
-                    <td class=" tr_l">Attachment 2
-                    </td>
+                    <td class=" tr_l">Attachment 6</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
-                  <tr class=" scnd_row">
+                  <tr class="">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                     </td> 
-                    <td class=" tr_l">Attachment 2
-                    </td>
+                    <td class=" tr_l">Attachment 7</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
-                  <tr class=" scnd_row">
+                  <tr class="">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                     </td> 
-                    <td class=" tr_l">Attachment 2
-                    </td>
+                    <td class=" tr_l">Attachment 8</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
-                  <tr class=" scnd_row">
+                  <tr class="">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                     </td> 
-                    <td class=" tr_l">Attachment 2
-                    </td>
+                    <td class=" tr_l">Attachment 9</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
-                  <tr class=" scnd_row">
+                  <tr class="">
                     <td>
-                      <span class="button-checkbox lbr_chk flt_n">
+                      <span class="button-checkbox flt_n">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                     </td> 
-                    <td class=" tr_l">Attachment 2
-                    </td>
+                    <td class=" tr_l">Attachment 10</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
                 </tbody>
-                <tbody>
-                  <tr class="show_dtl1" style="display: none;">
-                     <td colspan="5">
+              </table>
+              </div>
+            <div class="r_480 dt_tblz sp_msg3" style="display:none;">
+              <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i></span>
+              <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
+              <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="th_b5">
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </th>
+                    <th class="col-md-3 tr_l">Subject </th>
+                    <th class="col-md-2 tr_l">From</th>
+                    <th class="col-md-2 tr_l">Division</th>
+                     <th class="col-md-1">Date and Time</th>
+                     <th class="col-md-1">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  <tr class="frst_row">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 1
+                    </td>
+                    <td class=" tr_l">ajayxavier@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Fordwarded</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                   
+                  <tr class="trd_row">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 3</td>
+                    <td class=" tr_l">user2@compzit.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Lead</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 4</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 5</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 6</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 7</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 8</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 9</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 10</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                </tbody>
+              </table>
+              </div>
+            <div class="r_480 dt_tblz sp_msg4" style="display:none;">
+              <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
+              <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i></span>
+              <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
+              <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="th_b5">
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </th>
+                    <th class="col-md-3 tr_l">Subject </th>
+                    <th class="col-md-2 tr_l">From</th>
+                    <th class="col-md-2 tr_l">Division</th>
+                     <th class="col-md-1">Date and Time</th>
+                     <th class="col-md-1">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  <tr class="frst_row">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 1
+                    </td>
+                    <td class=" tr_l">ajayxavier@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Fordwarded</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                   
+                  <tr class="trd_row">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 3</td>
+                    <td class=" tr_l">user2@compzit.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Lead</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 4</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 5</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 6</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 7</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 8</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 9</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 10</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                </tbody>
+              </table>
+              </div>
+
+              <div class="msg_dtl_box1">
+                  <div class="show_dtl1" style="display: none;">
+                     <span>
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
                            <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
@@ -776,10 +1265,10 @@ function closeNav5() {
                           </div>
                          </div>
                        </span>
-                     </td>
-                   </tr>
-                   <tr class="show_dtl2" style="display: none;">
-                     <td colspan="5">
+                     </span>
+                   </div>
+                   <div class="show_dtl2" style="display: none;">
+                     <span>
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
                            <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
@@ -833,10 +1322,10 @@ function closeNav5() {
                           </div>
                          </div>
                        </span>
-                     </td>
-                   </tr>
-                   <tr class="show_dtl3" style="display: none;">
-                     <td colspan="5">
+                     </span>
+                   </div>
+                   <div class="show_dtl3" style="display: none;">
+                     <span>
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
                            <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
@@ -891,654 +1380,9 @@ function closeNav5() {
                           </div>
                          </div>
                        </span>
-                     </td>
-                   </tr>
-                </tbody>
-              </table>
-              <div class="msg_dtl_box1"></div>
-            </div>
-            <div class="r_480 dt_tblz sp_msg2" style="display:none;">
-              <table id="example1" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-                <thead class="thead1">
-                  <tr>
-                    <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-3 tr_l">From</th>
-                    <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-2">Date and Time</th>
-                     <th class="col-md-1">Status</th>
-                  </tr>
-                </thead>
-                <tbody id="myTable">
-                  <tr class="frst_row">
-                    <td class=" tr_l">Attachment 1</td>
-                    <td class=" tr_l">ajayxavier@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Fordwarded</td>
-                   </tr>
-                  <tr class=" scnd_row">
-                    <td class=" tr_l">Attachment 2</td>
-                    <td class=" tr_l">user1@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Allocated</td>
-                   </tr>
-                   
-                  <tr class="trd_row">
-                    <td class=" tr_l">Attachment 3</td>
-                    <td class=" tr_l">user2@compzit.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Lead</td>
-                   </tr>
-                </tbody>
-                <tbody>
-                  <tr class="show_dtl1" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
-                          <textarea name="" id="editor_a" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_a', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                   <tr class="show_dtl2" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox"><!-- 
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
-                          <textarea name="" id="editor_a1" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_a1', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                   <tr class="show_dtl3" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <textarea name="" id="editor_a2" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_a2', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="r_480 dt_tblz sp_msg3" style="display:none;">
-              <table id="example2" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-                <thead class="thead1">
-                  <tr>
-                    <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-3 tr_l">From</th>
-                    <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-2">Date and Time</th>
-                     <th class="col-md-1">Status</th>
-                  </tr>
-                </thead>
-                <tbody id="myTable">
-                  <tr class="frst_row">
-                    <td class=" tr_l">Attachment 1</td>
-                    <td class=" tr_l">ajayxavier@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Fordwarded</td>
-                   </tr>
-                  <tr class=" scnd_row">
-                    <td class=" tr_l">Attachment 2</td>
-                    <td class=" tr_l">user1@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Allocated</td>
-                   </tr>
-                   
-                  <tr class="trd_row">
-                    <td class=" tr_l">Attachment 3</td>
-                    <td class=" tr_l">user2@compzit.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Lead</td>
-                   </tr>
-                </tbody>
-                <tbody>
-                  <tr class="show_dtl1" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
-                          <textarea name="" id="editor_b1" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_b1', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                   <tr class="show_dtl2" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox"><!-- 
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
-                          <textarea name="" id="editor_b2" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_b2', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                   <tr class="show_dtl3" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <textarea name="" id="editor_b3" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_b3', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="r_480 dt_tblz sp_msg4" style="display:none;">
-              <table id="example4" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-                <thead class="thead1">
-                  <tr>
-                    <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-3 tr_l">From</th>
-                    <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-2">Date and Time</th>
-                     <th class="col-md-1">Status</th>
-                  </tr>
-                </thead>
-                <tbody id="myTable">
-                  <tr class="frst_row">
-                    <td class=" tr_l">Attachment 1</td>
-                    <td class=" tr_l">ajayxavier@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Fordwarded</td>
-                   </tr>
-                  <tr class=" scnd_row">
-                    <td class=" tr_l">Attachment 2</td>
-                    <td class=" tr_l">user1@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Allocated</td>
-                   </tr>
-                   
-                  <tr class="trd_row">
-                    <td class=" tr_l">Attachment 3</td>
-                    <td class=" tr_l">user2@compzit.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Lead</td>
-                   </tr>
-                </tbody>
-                <tbody>
-                  <tr class="show_dtl1" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
-                          <textarea name="" id="editor_b4" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_b4', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                   <tr class="show_dtl2" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox"><!-- 
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
-                          <textarea name="" id="editor_b5" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_b5', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                   <tr class="show_dtl3" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <textarea name="" id="editor_b6" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_b6', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                </tbody>
-              </table>
-            </div>
+                     </span>
+                   </div>
+                </div>
 
           </div>
         </div>
@@ -2496,32 +2340,44 @@ $(document).ready(function(){
 </script>
 <script>
 $(document).ready(function(){
-  $(".frst_row").click(function(){
-    $(".show_dtl1").fadeToggle("slow");
+  $(".frst_row td").click(function(){
+    $(".show_dtl1").fadeIn("slow");
+    $(".frst_row").addClass("sel_ms_rw");
+    $(".dt_tblz").addClass("dtl_hei_move");
+    $(".scnd_row, .trd_row").removeClass("sel_ms_rw");
     $(".show_dtl3,.show_dtl2").hide(200);
-    $(".scnd_row, .trd_row").toggle(200);
+    $(".new_msg_op").hide(200);
   });
-  $(".scnd_row").click(function(){
-    $(".show_dtl2").fadeToggle("slow");
+  $(".scnd_row td").click(function(){
+    $(".show_dtl2").fadeIn("slow");
+    $(".scnd_row").addClass("sel_ms_rw");
+    $(".frst_row, .trd_row").removeClass("sel_ms_rw");
     $(".show_dtl1,.show_dtl3").hide(200);
-    $(".frst_row, .trd_row").toggle(200);
+    $(".dt_tblz").addClass("dtl_hei_move");
+    $(".new_msg_op").hide(200);
   });
-  $(".trd_row").click(function(){
-    $(".show_dtl3").fadeToggle("slow");
+  $(".trd_row td").click(function(){
+    $(".show_dtl3").fadeIn("slow");
+    $(".trd_row").addClass("sel_ms_rw");
+    $(".frst_row, .scnd_row").removeClass("sel_ms_rw");
     $(".show_dtl1,.show_dtl2").hide(200);
-    $(".scnd_row, .frst_row").toggle(200);
+    $(".dt_tblz").addClass("dtl_hei_move");
+    $(".new_msg_op").hide(200);
   });
   $(".hid_dtl1").click(function(){
     $(".show_dtl1").fadeOut("slow");
     $(".scnd_row, .trd_row").fadeIn("slow");
+    $(".dt_tblz").removeClass("dtl_hei_move");
   });
   $(".hid_dtl2").click(function(){
     $(".show_dtl2").fadeOut("slow");
     $(".frst_row, .trd_row").fadeIn("slow");
+    $(".dt_tblz").removeClass("dtl_hei_move");
   });
   $(".hid_dtl3").click(function(){
     $(".show_dtl3").fadeOut("slow");
     $(".scnd_row, .frst_row").fadeIn("slow");
+    $(".dt_tblz").removeClass("dtl_hei_move");
   });
 });
 </script>
