@@ -527,11 +527,13 @@ function closeNav5() {
           <h2 class="tr_c">Compzit Mail</h2> -->
           <div class="fix_mail_head">
             <div class="mb_head_70">
-              <h3>Compzit Mail - <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
+              <h3>Compzit Mail<!--  - <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
                 <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
                 <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
-                <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i> </span>
+                <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i> </span> -->
               </h3>
+
+            <span class="opp_ico_img_ptp1 btm_info mar_mb" data-placement="right" data-toggle="tooltip" title="You can use Ctrl key to select multiple mails." tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span>
             </div>
             <div class="mb_head_30">
               <div class="dropdown btn_chse_sec1">
@@ -553,26 +555,170 @@ function closeNav5() {
             </div>
           </div>
           <div class="area_msg_bx">
-            <div class="r_480 sp_msg1">
+            <div class="r_480 dt_tblz sp_msg1">
+              <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div>
+
+              <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
               <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
+                    <th class="th_b5">
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </th>
                     <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-3 tr_l">From</th>
+                    <th class="col-md-2 tr_l">From</th>
                     <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-2">Date and Time</th>
+                     <th class="col-md-1">Date and Time</th>
                      <th class="col-md-1">Status</th>
                   </tr>
                 </thead>
                 <tbody id="myTable">
                   <tr class="frst_row">
-                    <td class=" tr_l">Attachment 1</td>
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 1
+                    </td>
                     <td class=" tr_l">ajayxavier@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Fordwarded</td>
                    </tr>
-                   <tr class="show_dtl1" style="display: none;">
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                   
+                  <tr class="trd_row">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 3</td>
+                    <td class=" tr_l">user2@compzit.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Lead</td>
+                   </tr>
+                  <tr class="">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td>
+                      <span class="button-checkbox lbr_chk flt_n">
+                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </span>
+                    </td> 
+                    <td class=" tr_l">Attachment 2
+                    </td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                </tbody>
+                <tbody>
+                  <tr class="show_dtl1" style="display: none;">
                      <td colspan="5">
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
@@ -585,7 +731,6 @@ function closeNav5() {
                               <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
                               <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
                               <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
                             </div>
                          </div>
                          <div class="dtl_msgbox">
@@ -615,6 +760,7 @@ function closeNav5() {
 
                           </script>
                          <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -632,13 +778,6 @@ function closeNav5() {
                        </span>
                      </td>
                    </tr>
-                  <tr class="tr1 scnd_row">
-                    <td class=" tr_l">Attachment 2</td>
-                    <td class=" tr_l">user1@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Allocated</td>
-                   </tr>
                    <tr class="show_dtl2" style="display: none;">
                      <td colspan="5">
                        <span class="heig_msg1">
@@ -652,7 +791,6 @@ function closeNav5() {
                               <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
                               <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
                               <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
                             </div>
                          </div>
                          <div class="dtl_msgbox"><!-- 
@@ -682,6 +820,7 @@ function closeNav5() {
 
                           </script>
                          <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -696,13 +835,6 @@ function closeNav5() {
                        </span>
                      </td>
                    </tr>
-                  <tr class="trd_row">
-                    <td class=" tr_l">Attachment 3</td>
-                    <td class=" tr_l">user2@compzit.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Lead</td>
-                   </tr>
                    <tr class="show_dtl3" style="display: none;">
                      <td colspan="5">
                        <span class="heig_msg1">
@@ -716,18 +848,17 @@ function closeNav5() {
                               <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
                               <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
                               <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
                             </div>
                          </div>
                          <div class="dtl_msgbox">
-                          <textarea name="" id="editor3" cols="30" rows="4" disabled="">
+                          <textarea name="" id="editor2" cols="30" rows="4" disabled="">
                             [OracleException (0x80004005): ORA-12541: TNS:no listener]
    Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
    Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
    Oracle.DataAccess.Client.OracleConnection.Open() +4794
                           </textarea>
                           <script type="text/javascript">
-                            CKEDITOR.replace('editor3', {
+                            CKEDITOR.replace('editor2', {
                             skin: 'moono',
                             enterMode: CKEDITOR.ENTER_BR,
                             shiftEnterMode:CKEDITOR.ENTER_P,
@@ -745,6 +876,222 @@ function closeNav5() {
 
                           </script>
                          <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                          <div id="popoverWrapper">
+                            <div class="popover" role="tooltip">
+                              <div class="arrow"></div>
+                              <h3 class="popover-title">Attachment</h3>
+                              <div class="popover-content">
+                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
+                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
+                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
+                            </div>
+                          </div>
+                         </div>
+                       </span>
+                     </td>
+                   </tr>
+                </tbody>
+              </table>
+              <div class="msg_dtl_box1"></div>
+            </div>
+            <div class="r_480 dt_tblz sp_msg2" style="display:none;">
+              <table id="example1" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="col-md-3 tr_l">Subject </th>
+                    <th class="col-md-3 tr_l">From</th>
+                    <th class="col-md-2 tr_l">Division</th>
+                     <th class="col-md-2">Date and Time</th>
+                     <th class="col-md-1">Status</th>
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                  <tr class="frst_row">
+                    <td class=" tr_l">Attachment 1</td>
+                    <td class=" tr_l">ajayxavier@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Fordwarded</td>
+                   </tr>
+                  <tr class=" scnd_row">
+                    <td class=" tr_l">Attachment 2</td>
+                    <td class=" tr_l">user1@volviar.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Allocated</td>
+                   </tr>
+                   
+                  <tr class="trd_row">
+                    <td class=" tr_l">Attachment 3</td>
+                    <td class=" tr_l">user2@compzit.com</td>
+                    <td class=" tr_l">Division 1</td>
+                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td>Lead</td>
+                   </tr>
+                </tbody>
+                <tbody>
+                  <tr class="show_dtl1" style="display: none;">
+                     <td colspan="5">
+                       <span class="heig_msg1">
+                         <div class="dtl_heaz">
+                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
+                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
+                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
+                           <div class="msg_1_hdr_rgt flt_r">
+                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                            </div>
+                         </div>
+                         <div class="dtl_msgbox">
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                          <textarea name="" id="editor_a" cols="30" rows="4" disabled="">
+                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
+   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
+   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
+   Oracle.DataAccess.Client.OracleConnection.Open() +4794
+                          </textarea>
+                          <script type="text/javascript">
+                            CKEDITOR.replace('editor_a', {
+                            skin: 'moono',
+                            enterMode: CKEDITOR.ENTER_BR,
+                            shiftEnterMode:CKEDITOR.ENTER_P,
+                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
+                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
+                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
+                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
+                                       { name: 'insert', items: [ 'Image'] },
+                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
+                                       { name: 'table', items: [ 'Table' ] }
+                                       ],
+                          });
+
+                          </script>
+                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                          <div id="popoverWrapper">
+                            <div class="popover" role="tooltip">
+                              <div class="arrow"></div>
+                              <h3 class="popover-title">Attachment</h3>
+                              <div class="popover-content">
+                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
+                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
+                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
+                            </div>
+                          </div>
+                         </div>
+                       </span>
+                     </td>
+                   </tr>
+                   <tr class="show_dtl2" style="display: none;">
+                     <td colspan="5">
+                       <span class="heig_msg1">
+                         <div class="dtl_heaz">
+                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
+                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
+                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
+                           <div class="msg_1_hdr_rgt flt_r">
+                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                            </div>
+                         </div>
+                         <div class="dtl_msgbox"><!-- 
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
+                          <textarea name="" id="editor_a1" cols="30" rows="4" disabled="">
+                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
+   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
+   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
+   Oracle.DataAccess.Client.OracleConnection.Open() +4794
+                          </textarea>
+                          <script type="text/javascript">
+                            CKEDITOR.replace('editor_a1', {
+                            skin: 'moono',
+                            enterMode: CKEDITOR.ENTER_BR,
+                            shiftEnterMode:CKEDITOR.ENTER_P,
+                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
+                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
+                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
+                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
+                                       { name: 'insert', items: [ 'Image'] },
+                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
+                                       { name: 'table', items: [ 'Table' ] }
+                                       ],
+                          });
+
+                          </script>
+                         <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                          <div id="popoverWrapper">
+                            <div class="popover" role="tooltip">
+                              <div class="arrow"></div>
+                              <h3 class="popover-title">Attachment</h3>
+                              <div class="popover-content">
+                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
+                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
+                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
+                            </div>
+                          </div>
+                         </div>
+                       </span>
+                     </td>
+                   </tr>
+                   <tr class="show_dtl3" style="display: none;">
+                     <td colspan="5">
+                       <span class="heig_msg1">
+                         <div class="dtl_heaz">
+                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
+                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
+                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
+                           <div class="msg_1_hdr_rgt flt_r">
+                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                            </div>
+                         </div>
+                         <div class="dtl_msgbox">
+                          <textarea name="" id="editor_a2" cols="30" rows="4" disabled="">
+                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
+   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
+   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
+   Oracle.DataAccess.Client.OracleConnection.Open() +4794
+                          </textarea>
+                          <script type="text/javascript">
+                            CKEDITOR.replace('editor_a2', {
+                            skin: 'moono',
+                            enterMode: CKEDITOR.ENTER_BR,
+                            shiftEnterMode:CKEDITOR.ENTER_P,
+                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
+                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
+                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
+                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
+                                       { name: 'insert', items: [ 'Image'] },
+                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
+                                       { name: 'table', items: [ 'Table' ] }
+                                       ],
+                          });
+
+                          </script>
+                         <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -764,8 +1111,8 @@ function closeNav5() {
                 </tbody>
               </table>
             </div>
-            <div class="r_480 sp_msg2" style="display:none;">
-              <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+            <div class="r_480 dt_tblz sp_msg3" style="display:none;">
+              <table id="example2" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
                     <th class="col-md-3 tr_l">Subject </th>
@@ -783,137 +1130,14 @@ function closeNav5() {
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Fordwarded</td>
                    </tr>
-                   <tr class="show_dtl1" style="display: none;">
-                     <td colspan="5" rowspan="">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
-                          <textarea name="" id="editor_b" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_b', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener3" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                  <tr class="tr1 scnd_row">
+                  <tr class=" scnd_row">
                     <td class=" tr_l">Attachment 2</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
-                   <tr class="show_dtl2" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox"><!-- 
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
-                          <textarea name="" id="editor1_b" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor1_b', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener4" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
+                   
                   <tr class="trd_row">
                     <td class=" tr_l">Attachment 3</td>
                     <td class=" tr_l">user2@compzit.com</td>
@@ -921,7 +1145,9 @@ function closeNav5() {
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Lead</td>
                    </tr>
-                   <tr class="show_dtl3" style="display: none;">
+                </tbody>
+                <tbody>
+                  <tr class="show_dtl1" style="display: none;">
                      <td colspan="5">
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
@@ -933,19 +1159,19 @@ function closeNav5() {
                               <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
                               <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
                               <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
                             </div>
                          </div>
                          <div class="dtl_msgbox">
-                          <textarea name="" id="editor3_b" cols="30" rows="4" disabled="">
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+                          <textarea name="" id="editor_b1" cols="30" rows="4" disabled="">
                             [OracleException (0x80004005): ORA-12541: TNS:no listener]
    Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
    Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
    Oracle.DataAccess.Client.OracleConnection.Open() +4794
                           </textarea>
                           <script type="text/javascript">
-                            CKEDITOR.replace('editor3_b', {
+                            CKEDITOR.replace('editor_b1', {
                             skin: 'moono',
                             enterMode: CKEDITOR.ENTER_BR,
                             shiftEnterMode:CKEDITOR.ENTER_P,
@@ -963,6 +1189,7 @@ function closeNav5() {
 
                           </script>
                          <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -972,8 +1199,121 @@ function closeNav5() {
                                 <li class="list_m_atch"><a href="#">Attachment 2</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 3</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 4</a></li>
+                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
+                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
+                            </div>
+                          </div>
+                         </div>
+                       </span>
+                     </td>
+                   </tr>
+                   <tr class="show_dtl2" style="display: none;">
+                     <td colspan="5">
+                       <span class="heig_msg1">
+                         <div class="dtl_heaz">
+                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
+                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
+                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
+                           <div class="msg_1_hdr_rgt flt_r">
+                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                            </div>
+                         </div>
+                         <div class="dtl_msgbox"><!-- 
+                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
+                          <textarea name="" id="editor_b2" cols="30" rows="4" disabled="">
+                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
+   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
+   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
+   Oracle.DataAccess.Client.OracleConnection.Open() +4794
+                          </textarea>
+                          <script type="text/javascript">
+                            CKEDITOR.replace('editor_b2', {
+                            skin: 'moono',
+                            enterMode: CKEDITOR.ENTER_BR,
+                            shiftEnterMode:CKEDITOR.ENTER_P,
+                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
+                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
+                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
+                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
+                                       { name: 'insert', items: [ 'Image'] },
+                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
+                                       { name: 'table', items: [ 'Table' ] }
+                                       ],
+                          });
+
+                          </script>
+                         <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                          <div id="popoverWrapper">
+                            <div class="popover" role="tooltip">
+                              <div class="arrow"></div>
+                              <h3 class="popover-title">Attachment</h3>
+                              <div class="popover-content">
+                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
+                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
+                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
+                            </div>
+                          </div>
+                         </div>
+                       </span>
+                     </td>
+                   </tr>
+                   <tr class="show_dtl3" style="display: none;">
+                     <td colspan="5">
+                       <span class="heig_msg1">
+                         <div class="dtl_heaz">
+                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
+                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
+                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
+                           <div class="msg_1_hdr_rgt flt_r">
+                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                            </div>
+                         </div>
+                         <div class="dtl_msgbox">
+                          <textarea name="" id="editor_b3" cols="30" rows="4" disabled="">
+                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
+   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
+   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
+   Oracle.DataAccess.Client.OracleConnection.Open() +4794
+                          </textarea>
+                          <script type="text/javascript">
+                            CKEDITOR.replace('editor_b3', {
+                            skin: 'moono',
+                            enterMode: CKEDITOR.ENTER_BR,
+                            shiftEnterMode:CKEDITOR.ENTER_P,
+                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
+                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
+                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
+                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
+                                       { name: 'insert', items: [ 'Image'] },
+                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
+                                       { name: 'table', items: [ 'Table' ] }
+                                       ],
+                          });
+
+                          </script>
+                         <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                          <div id="popoverWrapper">
+                            <div class="popover" role="tooltip">
+                              <div class="arrow"></div>
+                              <h3 class="popover-title">Attachment</h3>
+                              <div class="popover-content">
+                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
                               </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
                                 <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
                             </div>
@@ -985,8 +1325,8 @@ function closeNav5() {
                 </tbody>
               </table>
             </div>
-            <div class="r_480 sp_msg3" style="display:none;">
-              <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+            <div class="r_480 dt_tblz sp_msg4" style="display:none;">
+              <table id="example4" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
                     <th class="col-md-3 tr_l">Subject </th>
@@ -1004,228 +1344,24 @@ function closeNav5() {
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Fordwarded</td>
                    </tr>
-                   <tr class="show_dtl1" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
-                          <textarea name="" id="editor_c" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor_c', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
-                  <tr class="tr1 scnd_row">
+                  <tr class=" scnd_row">
                     <td class=" tr_l">Attachment 2</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
                    </tr>
-                   <tr class="show_dtl2" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox"><!-- 
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
-                          <textarea name="" id="editor1_c" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor1_c', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
-                   </tr>
+                   
                   <tr class="trd_row">
                     <td class=" tr_l">Attachment 3</td>
                     <td class=" tr_l">user2@compzit.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Lead</td>
-                   </tr>
-                   <tr class="show_dtl3" style="display: none;">
-                     <td colspan="5">
-                       <span class="heig_msg1">
-                         <div class="dtl_heaz">
-                           <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
-                           <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
-                           <div class="msg_1_hdr_rgt flt_r">
-                              <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
-                              <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
-                              <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
-                              <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
-                            </div>
-                         </div>
-                         <div class="dtl_msgbox">
-                          <textarea name="" id="editor3_c" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor3_c', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <div id="popoverWrapper">
-                            <div class="popover" role="tooltip">
-                              <div class="arrow"></div>
-                              <h3 class="popover-title">Attachment</h3>
-                              <div class="popover-content">
-                                <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                              </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
-                                <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
-                            </div>
-                          </div>
-                         </div>
-                       </span>
-                     </td>
                    </tr>
                 </tbody>
-              </table>
-            </div>
-            <div class="r_480 sp_msg4" style="display:none;">
-              <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-                <thead class="thead1">
-                  <tr>
-                    <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-3 tr_l">From</th>
-                    <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-2">Date and Time</th>
-                     <th class="col-md-1">Status</th>
-                  </tr>
-                </thead>
-                <tbody id="myTable">
-                  <tr class="frst_row">
-                    <td class=" tr_l">Attachment 1</td>
-                    <td class=" tr_l">ajayxavier@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Fordwarded</td>
-                   </tr>
-                   <tr class="show_dtl1" style="display: none;">
+                <tbody>
+                  <tr class="show_dtl1" style="display: none;">
                      <td colspan="5">
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
@@ -1237,20 +1373,19 @@ function closeNav5() {
                               <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
                               <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
                               <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
                             </div>
                          </div>
                          <div class="dtl_msgbox">
                           <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
-                          <textarea name="" id="editor_d" cols="30" rows="4" disabled="">
+                          <textarea name="" id="editor_b4" cols="30" rows="4" disabled="">
                             [OracleException (0x80004005): ORA-12541: TNS:no listener]
    Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
    Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
    Oracle.DataAccess.Client.OracleConnection.Open() +4794
                           </textarea>
                           <script type="text/javascript">
-                            CKEDITOR.replace('editor_d', {
+                            CKEDITOR.replace('editor_b4', {
                             skin: 'moono',
                             enterMode: CKEDITOR.ENTER_BR,
                             shiftEnterMode:CKEDITOR.ENTER_P,
@@ -1268,6 +1403,7 @@ function closeNav5() {
 
                           </script>
                          <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -1277,8 +1413,6 @@ function closeNav5() {
                                 <li class="list_m_atch"><a href="#">Attachment 2</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 3</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
                               </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
                                 <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
                             </div>
@@ -1286,13 +1420,6 @@ function closeNav5() {
                          </div>
                        </span>
                      </td>
-                   </tr>
-                  <tr class="tr1 scnd_row">
-                    <td class=" tr_l">Attachment 2</td>
-                    <td class=" tr_l">user1@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Allocated</td>
                    </tr>
                    <tr class="show_dtl2" style="display: none;">
                      <td colspan="5">
@@ -1306,20 +1433,19 @@ function closeNav5() {
                               <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
                               <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
                               <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
                             </div>
                          </div>
                          <div class="dtl_msgbox"><!-- 
                           <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
-                          <textarea name="" id="editor1_d" cols="30" rows="4" disabled="">
+                          <textarea name="" id="editor_b5" cols="30" rows="4" disabled="">
                             [OracleException (0x80004005): ORA-12541: TNS:no listener]
    Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
    Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
    Oracle.DataAccess.Client.OracleConnection.Open() +4794
                           </textarea>
                           <script type="text/javascript">
-                            CKEDITOR.replace('editor1_d', {
+                            CKEDITOR.replace('editor_b5', {
                             skin: 'moono',
                             enterMode: CKEDITOR.ENTER_BR,
                             shiftEnterMode:CKEDITOR.ENTER_P,
@@ -1336,18 +1462,14 @@ function closeNav5() {
                           });
 
                           </script>
-                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
+                         <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
                               <h3 class="popover-title">Attachment</h3>
                               <div class="popover-content">
                                 <li class="list_m_atch"><a href="#">Attachment 1</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
                               </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
                                 <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
                             </div>
@@ -1355,13 +1477,6 @@ function closeNav5() {
                          </div>
                        </span>
                      </td>
-                   </tr>
-                  <tr class="trd_row">
-                    <td class=" tr_l">Attachment 3</td>
-                    <td class=" tr_l">user2@compzit.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
-                    <td>Lead</td>
                    </tr>
                    <tr class="show_dtl3" style="display: none;">
                      <td colspan="5">
@@ -1375,19 +1490,18 @@ function closeNav5() {
                               <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
                               <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
                               <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
-                              <button class="btn btn_mail_bz mb_rejct" title="Reject"><i class="fa fa-times"></i></button>
-                              <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                              <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
                             </div>
                          </div>
                          <div class="dtl_msgbox">
-                          <textarea name="" id="editor3_d" cols="30" rows="4" disabled="">
+                          <textarea name="" id="editor_b6" cols="30" rows="4" disabled="">
                             [OracleException (0x80004005): ORA-12541: TNS:no listener]
    Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
    Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
    Oracle.DataAccess.Client.OracleConnection.Open() +4794
                           </textarea>
                           <script type="text/javascript">
-                            CKEDITOR.replace('editor3_d', {
+                            CKEDITOR.replace('editor_b6', {
                             skin: 'moono',
                             enterMode: CKEDITOR.ENTER_BR,
                             shiftEnterMode:CKEDITOR.ENTER_P,
@@ -1404,7 +1518,8 @@ function closeNav5() {
                           });
 
                           </script>
-                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
+                         <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -1413,9 +1528,6 @@ function closeNav5() {
                                 <li class="list_m_atch"><a href="#">Attachment 1</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 2</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
-                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
                               </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
                                 <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
                             </div>
@@ -2262,6 +2374,29 @@ $(document).ready(function() {
 } );
     $(document).ready(function() {
     // Setup - add a text input to each footer cell
+    $('#example1 tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example1').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
     $('#example2 tfoot th').each( function () {
         var title = $(this).text();
         $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
@@ -2386,7 +2521,7 @@ $(document).ready(function(){
   });
   $(".hid_dtl3").click(function(){
     $(".show_dtl3").fadeOut("slow");
-    $(".scnd_row, .trd_row").fadeIn("slow");
+    $(".scnd_row, .frst_row").fadeIn("slow");
   });
 });
 </script>
@@ -2518,6 +2653,15 @@ $(document).on('keydown', function(e) {
    $('.popover.top').hide("");
     });
 </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(".content_container").click(function(){
+    $(".popover.top").hide(200);
+  });
+</script>
+<style type="text/css">
+  .content_container{overflow-y: hidden;}
+</style>
 
 </body>
 </html>
