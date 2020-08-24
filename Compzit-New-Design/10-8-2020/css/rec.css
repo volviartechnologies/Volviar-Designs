@@ -3330,3 +3330,15 @@ body{position: fixed;left: 0;right: 0;}
 .dt_tblz .btn-p.active, .dt_tblz .btn-p:active, .dt_tblz .open>.dropdown-toggle.btn-p, .dt_tblz .btn-d.active, .dt_tblz .btn-d:active, .dt_tblz .open>.dropdown-toggle.btn-d{
         margin-right: 5px!important;
 }
+
+
+/*=======latest mdification in mailbox=======*/
+
+.msg_dtz_mb2{width: 100%;position: absolute; right: 0px;background-color: transparent;box-shadow: none;border-radius: 0px;border-top: 0px;    top: 0px;
+              background-color: rgba(0, 0, 0, .2);height: 100%;display: none;padding-top: 10%;}
+.dx_mb1:before, .dx_mb2:before, .dx_mb3:before{content: "";position: absolute;height: 0;width: 0;border: 13px solid transparent;margin-left: -39px;
+                    border-right: 16px solid #e0f2ff;z-index: 999999999999;margin-top: 60px;}
+.dx_mb2:before{margin-top:90px;}
+.dx_mb3:before{margin-top: 120px;}
+.dx_mb1, .dx_mb2, .dx_mb3{width:84%;margin:auto;float: right;background-color: #fff;padding: 10px;border: 1px solid #e0f2ff;padding-top: 0;border-radius: 8px 0px 0px 8px;
+                          box-shadow:0px 8px 30px #ccc;}
