@@ -883,6 +883,9 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 <i class="fa fa-calendar-check-o"></i>
 </a>
 
+<a href="#" type="button" class="add_op_atch_btn" data-toggle="modal" data-target="#add_files" title="Add Files">
+<i class="fa fa-paperclip"></i>
+</a>
 
 <a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
 
@@ -2196,11 +2199,370 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
 
       <div class="modal-footer">
         <button type="submit" class="btn sub1">Save</button>
-       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+        <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Modal_send-->
+<div class="modal fade" id="add_files" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog wid_100_1_mod" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Files</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-4">
+          <h5>Aditional Files
+            <div class="icn_upl flt_r">
+              <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Attach Selected With Mail">
+                <i class="fa fa-paperclip"></i>
+              </button>
+              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete Selected">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </h5>
+          <div class="r_1024">
+            <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="col-md-2">
+                    <span class="button-checkbox lbr_chk flt_l">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                  </th>
+                  <th class="col-md-8 tr_l">Attachments</th>
+                  <th class="col-md-2">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="button-checkbox flt_l">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                    <span class="bo_not3 bo_mxr mrl_bon ma_tp_04 flt_l" data-toggle="tooltip" title="Not Attached With Mail">
+                      <i class="fa fa-square"></i>
+                    </span>
+                  </td>
+                  <td class="tr_l"><a href="#">File.pdf</a></td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="button-checkbox flt_l">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                    <span class="bo_not1 bo_mxr mrl_bon ma_tp_04 flt_l" data-toggle="tooltip" title="Attached With Mail">
+                      <i class="fa fa-square"></i>
+                    </span>
+                  </td>
+                  <td class="tr_l"><a href="#">File.pdf</a></td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class=" tr_l" colspan="2">
+                    <input type="file" id="file-upload" multiple="" required="">
+                    <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+                    <div id="file-upload-filename" class="file_n"></div>
+                  </td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                        <i class="fa fa-plus-circle"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Supplier Qoutes
+            <div class="icn_upl flt_r">
+              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete Selected">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </h5>
+          <div class="r_1024">
+            <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="col-md-1">
+                    <span class="button-checkbox lbr_chk flt_n mr_rgt_chk">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                  </th>
+                  <th class="col-md-9 tr_l">Attachments</th>
+                  <th class="col-md-2">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="button-checkbox flt_n mr_rgt_chk">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                  </td>
+                  <td class="tr_l"><a href="#">File.pdf</a></td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="button-checkbox flt_n mr_rgt_chk">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                  </td>
+                  <td class="tr_l"><a href="#">File.pdf</a></td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class=" tr_l" colspan="2">
+                    <input type="file" id="file-upload" multiple="" required="">
+                    <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+                    <div id="file-upload-filename" class="file_n"></div>
+                  </td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                        <i class="fa fa-plus-circle"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5>Tender Files
+            <div class="icn_upl flt_r">
+              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete Selected">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </h5>
+          <div class="r_1024">
+            <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="col-md-1">
+                    <span class="button-checkbox lbr_chk flt_n mr_rgt_chk">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                  </th>
+                  <th class="col-md-9 tr_l">Attachments</th>
+                  <th class="col-md-2">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="button-checkbox flt_n mr_rgt_chk">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                  </td>
+                  <td class="tr_l"><a href="#">File.pdf</a></td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="button-checkbox flt_n mr_rgt_chk">
+                      <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                      <input type="checkbox" class="hidden">
+                    </span>
+                  </td>
+                  <td class="tr_l"><a href="#">File.pdf</a></td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class=" tr_l" colspan="2">
+                    <input type="file" id="file-upload" multiple="" required="">
+                    <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+                    <div id="file-upload-filename" class="file_n"></div>
+                  </td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                        <i class="fa fa-plus-circle"></i>
+                      </button>
+                    </div>
+                    <div class="btn_stl2"> 
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                        <i class="fa fa-list-alt"></i> View
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-trash"></i> Delete
+                      </button>
+                    </div>
+                    <div class="btn_stl3">
+                      <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+        <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
   </div><!--wrapper_closed-->
 

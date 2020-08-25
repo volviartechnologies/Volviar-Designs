@@ -479,38 +479,40 @@ function closeNav5() {
 
     <button class="btn act_btn bn4 bt_e bt_fx_crqt" id="popoverOpener" data-height="600" data-width="400" title="Customer Requirements" ><i class="fa fa-address-card-o"></i></button></h2>
 
-        <div id="popoverWrapper">
+        <div id="popoverWrapper" class="stmp_tmpl">
           <div class="popover" role="tooltip">
             <div class="arrow"></div>
             <h3 class="popover-title">Customer Requirements</h3>
-            <div class="popover-content">
-              <textarea cols="64" rows="18" style="width:100%;outline:none!important;border:none;background-color:#fff;" disabled="" placeholder="Regards,
+            <div class="popover-content"><div class="form-group fg12">
+<script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script>
+<textarea name="" id="editor" cols="30" rows="7" disabled="">
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</textarea>
+<script type="text/javascript">
+  CKEDITOR.replace('editor', {
+  skin: 'moono',
+  enterMode: CKEDITOR.ENTER_BR,
+  shiftEnterMode:CKEDITOR.ENTER_P,
+  toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
+             { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
+             { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
+             { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
+             { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
+             { name: 'links', items: [ 'Link', 'Unlink' ] },
+             { name: 'insert', items: [ 'Image'] },
+             { name: 'spell', items: [ 'jQuerySpellChecker' ] },
+             { name: 'table', items: [ 'Table' ] }
+             ],
+});
 
-www.albalagh.com
-
-Faiz Abdu Alanjery
-
-Project Consultant  |  IT Solutions Division
-
-T: +974 44667714/15/16 |  F: +974 44660040  | M: +974 33724397
-
-E: faiz.abdu@albalagh.com | P O Box 5777, Doha - Qatar
-
-
-
-Disclaimer:
-
-This email and any attachments to it may be privileged/confidential and are intended solely for the use of the individual or entity to whom they are addressed.  If you are not the intended recipient, or an employee or agent responsible for delivering this message to the intended recipient of this email, you must neither take any action based upon its contents, nor copy or disclose it to anyone.  Please contact the sender if you believe you have received this email in error.
-
-
-
-Computer viruses can be transmitted via email. The recipient should check this email and any attachments for viruses. The company accepts no liability for any loss or damage arising from the use of this e-mail or attachments.  Although the company has taken reasonable measures to ensure no viruses are present in this email, we strongly recommend that you may subject these to your virus checking procedures prior to use.
-
-P  Please Don't print this e-mail unless it's really necessary. Save a tree & Save the world for your future" ></textarea><br>
+</script>
+</div>
 <div class="clearfix"></div>
 <div class="devider"></div>
               <button class="btn btn-danger btn-dz flt_r" style="margin-left:4px;"">Close</button>
-              <button class="btn btn-success flt_r">Submit</button>
             </div>
           </div>
         </div>
@@ -650,7 +652,14 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 <div class="btn_stl1">
                   <button class="btn act_btn bn4" title="Additional Information" data-toggle="popover" data-placement="top" data-html="true" data-content="<label class='form1 mar_bo'>
         <p>616294-TEST</p>
-      </label><br><label>Additional Information</label><textarea cols='46' rows='4' placeholder='Description'></textarea><br><label>Stock Avaliablity:</label><br><select><option>Ex-stock</option><option>In Stock</option><option>1 Week</option></select><br><div class='clearfix'></div><div class='devider mar_top6'></div><button class='btn btn-success flt_r'>Save</button>" data-height="400" data-width="400" ><i class="fa fa-sticky-note-o "></i></button>
+      </label><label>Additional Information
+              </label><div class='check1 flt_r' style='width:auto;float:right;margin:auto;text-align:right;margin-right:8px;'>
+            <div>
+              <label class='switch tr_r flt_r' title='Include Additional Information in PDF'>
+                <input type='checkbox'>
+                <span class='slider_tog round'></span>
+            </div>
+          </div><textarea cols='46' rows='3' placeholder='Description'></textarea><br><label>Stock Avaliablity:</label><br><select><option>Ex-stock</option><option>In Stock</option><option>1 Week</option></select><br><div class='clearfix'></div><div class='devider mar_top6'></div><button class='btn btn-success flt_r'>Save</button>" data-height="400" data-width="400" ><i class="fa fa-sticky-note-o "></i></button>
                   <button class="btn act_btn bn1" title="Edit"><i class="fa fa-edit"></i></button>
                   <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
                 </div>
@@ -720,7 +729,14 @@ P  Please Don't print this e-mail unless it's really necessary. Save a tree & S
                 <div class="btn_stl1">
                   <button class="btn act_btn bn4" title="Additional Information" data-toggle="popover" data-placement="top" data-html="true" data-content="<label class='form1 mar_bo'>
         <p>616294-TEST</p>
-      </label><br><label>Additional Information</label><textarea cols='46' rows='4' placeholder='Description'></textarea><br><label>Stock Avaliablity:</label><br><select><option>Ex-stock</option><option>In Stock</option><option>1 Week</option></select><br><div class='clearfix'></div><div class='devider mar_top6'></div><button class='btn btn-success flt_r'>Save</button>" data-height="400" data-width="400" ><i class="fa fa-sticky-note-o "></i></button>
+      </label><label>Additional Information
+              </label><div class='check1 flt_r' style='width:auto;float:right;margin:auto;text-align:right;margin-right:8px;'>
+            <div>
+              <label class='switch tr_r flt_r' title='Include Additional Information in PDF'>
+                <input type='checkbox'>
+                <span class='slider_tog round'></span>
+            </div>
+          </div><textarea cols='46' rows='3' placeholder='Description'></textarea><br><label>Stock Avaliablity:</label><br><select><option>Ex-stock</option><option>In Stock</option><option>1 Week</option></select><br><div class='clearfix'></div><div class='devider mar_top6'></div><button class='btn btn-success flt_r'>Save</button>" data-height="400" data-width="400" ><i class="fa fa-sticky-note-o "></i></button>
                   <button class="btn act_btn bn2" title="Add New"><i class="fa fa-plus-circle"></i></button>
                   <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
                 </div>

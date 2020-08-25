@@ -527,13 +527,7 @@ function closeNav5() {
           <h2 class="tr_c">Compzit Mail</h2> -->
           <div class="fix_mail_head">
             <div class="mb_head_70">
-              <h3>Compzit Mail<!--  - <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
-                <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
-                <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
-                <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i> </span> -->
-              </h3>
-
-            <span class="opp_ico_img_ptp1 btm_info mar_mb" data-placement="right" data-toggle="tooltip" title="You can use Ctrl key to select multiple mails." tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span>
+              <h3>Compzit Mail</h3>
             </div>
             <div class="mb_head_30">
               <div class="dropdown btn_chse_sec1">
@@ -564,7 +558,7 @@ function closeNav5() {
               <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
-                    <th class="th_b1">
+                    <th class="th_b1_4">
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
@@ -572,11 +566,12 @@ function closeNav5() {
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
                     </th>
-                    <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-2 tr_l">From</th>
-                    <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-1">Date and Time</th>
-                     <th class="col-md-1">Status</th>
+                    <th class="th_b2 tr_l">Subject </th>
+                    <th class="th_b4 tr_l">From</th>
+                    <th class="th_b6 tr_l">Division</th>
+                     <th class="th_b7">Date and Time</th>
+                     <th class="th_b1">Status</th>
+                     <th class="th_b4">Actions</th>
                   </tr>
                 </thead>
                 <tbody id="myTable">
@@ -595,6 +590,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Fordwarded</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class=" scnd_row">
                     <th>
@@ -610,6 +612,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                    
                   <tr class="trd_row">
@@ -626,6 +635,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Lead</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class="fou_row">
                     <td>
@@ -640,6 +656,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class="fiv_row">
                     <td>
@@ -654,6 +677,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class="six_row">
                     <td>
@@ -668,6 +698,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class="sev_row">
                     <td>
@@ -682,6 +719,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class="eig_row">
                     <td>
@@ -696,6 +740,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class="nin_row">
                     <td>
@@ -710,6 +761,13 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class="ten_row">
                     <td>
@@ -724,36 +782,41 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                 </tbody>
               </table>
             </div>
             <div class="r_480 dt_tblz sp_msg2" style="display:none;">
-              <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i></span>
+              <span class="sel_msg_sec">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
               <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
               <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
-                    <th class="th_b1">
+                    <th class="th_b1_4">
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </th>
-                    <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-2 tr_l">From</th>
-                    <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-1">Date and Time</th>
-                     <th class="col-md-1">Status</th>
+                    <th class="th_b2 tr_l">Subject </th>
+                    <th class="th_b4 tr_l">From</th>
+                    <th class="th_b6 tr_l">Division</th>
+                     <th class="th_b7">Date and Time</th>
+                     <th class="th_b1">Status</th>
+                     <th class="th_b4">Actions</th>
                   </tr>
                 </thead>
                 <tbody id="myTable">
                   <tr class="frst_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
@@ -766,468 +829,679 @@ function closeNav5() {
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Fordwarded</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class=" scnd_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </th> 
                     <td class=" tr_l">Attachment 2
                     </td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                    
                   <tr class="trd_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </th> 
                     <td class=" tr_l">Attachment 3</td>
                     <td class=" tr_l">user2@compzit.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Lead</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="fou_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                    </th>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
                     <td class=" tr_l">Attachment 4</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="fiv_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                    </th>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </td> 
                     <td class=" tr_l">Attachment 5</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="six_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 6</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="sev_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 7</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="eig_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 8</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="nin_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 9</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="ten_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 10</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                 </tbody>
               </table>
               </div>
             <div class="r_480 dt_tblz sp_msg3" style="display:none;">
-              <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i></span>
+              <span class="sel_msg_sec">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
               <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
               <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
-                    <th class="th_b1">
+                    <th class="th_b1_4">
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
                     </th>
-                    <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-2 tr_l">From</th>
-                    <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-1">Date and Time</th>
-                     <th class="col-md-1">Status</th>
+                    <th class="th_b2 tr_l">Subject </th>
+                    <th class="th_b4 tr_l">From</th>
+                    <th class="th_b6 tr_l">Division</th>
+                     <th class="th_b7">Date and Time</th>
+                     <th class="th_b1">Status</th>
+                     <th class="th_b4">Actions</th>
                   </tr>
                 </thead>
                 <tbody id="myTable">
                   <tr class="frst_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
+                    </th> 
                     <td class=" tr_l">Attachment 1
                     </td>
                     <td class=" tr_l">ajayxavier@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Fordwarded</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class=" scnd_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
+                    </th> 
                     <td class=" tr_l">Attachment 2
                     </td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                    
                   <tr class="trd_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                    </th>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
+                    </th> 
                     <td class=" tr_l">Attachment 3</td>
                     <td class=" tr_l">user2@compzit.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Lead</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="fou_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 4</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="fiv_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 5</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="six_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 6</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="sev_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 7</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
+                  <tr class="eig_row">
                     <td>
-                      <span class="button-checkbox flt_n">
+                      <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
                     <td class=" tr_l">Attachment 8</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="nin_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 9</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="ten_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 10</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                 </tbody>
               </table>
               </div>
             <div class="r_480 dt_tblz sp_msg4" style="display:none;">
-              <span class="sel_msg_sec sp_msg1">Inbox <i class="fa fa-inbox fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg2" style="display: none;">Draft <i class="fa fa-hdd-o fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg3" style="display: none;">Trash <i class="fa fa-trash-o fa_stf"></i> </span>
-              <span class="sel_msg_sec sp_msg4" style="display: none;">Send <i class="fa fa-paper-plane fa_stf"></i></span>
+              <span class="sel_msg_sec">Send <i class="fa fa-paper-plane fa_stf"></i></span>
               <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
               <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
-                    <th class="th_b1">
+                    <th class="th_b1_4">
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </th>
-                    <th class="col-md-3 tr_l">Subject </th>
-                    <th class="col-md-2 tr_l">From</th>
-                    <th class="col-md-2 tr_l">Division</th>
-                     <th class="col-md-1">Date and Time</th>
-                     <th class="col-md-1">Status</th>
+                    <th class="th_b2 tr_l">Subject </th>
+                    <th class="th_b4 tr_l">From</th>
+                    <th class="th_b6 tr_l">Division</th>
+                     <th class="th_b7">Date and Time</th>
+                     <th class="th_b1">Status</th>
+                     <th class="th_b4">Actions</th>
                   </tr>
                 </thead>
                 <tbody id="myTable">
                   <tr class="frst_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </th> 
                     <td class=" tr_l">Attachment 1
                     </td>
                     <td class=" tr_l">ajayxavier@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Fordwarded</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                   <tr class=" scnd_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </th> 
                     <td class=" tr_l">Attachment 2
                     </td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                    
                   <tr class="trd_row">
-                    <th class="th_b1">
+                    <th>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                    </th>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                    </th> 
                     <td class=" tr_l">Attachment 3</td>
                     <td class=" tr_l">user2@compzit.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Lead</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="fou_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 4</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="fiv_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
-                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 5</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="six_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 6</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="sev_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 7</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
+                  <tr class="eig_row">
                     <td>
-                      <span class="button-checkbox flt_n">
+                      <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
+                      <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
                     <td class=" tr_l">Attachment 8</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="nin_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 9</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
-                  <tr class="">
-                    <th class="th_b1">
+                  <tr class="ten_row">
+                    <td>
                       <span class="button-checkbox flt_l">
                         <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </th>
+                    </td> 
                     <td class=" tr_l">Attachment 10</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
                     <td class=" tr_c">05.12.2019 10:10 </td>
                     <td>Allocated</td>
+                    <th>
+                      <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
+                      <button class="btn btn_mail_bz mb_aloct" title="Allocate" data-toggle="modal" data-target="#allocate_to"><i class="fa fa-calendar-check-o"></i></button>
+                      <button class="btn btn_mail_bz mb_merge" title="Merge" data-toggle="modal" data-target="#merge_to"><i class="fa fa-compress"></i></button>
+                      <button class="btn btn_mail_bz mb_lead" title="New Lead"><i class="fa fa-file-text-o"></i></button>
+                      <button class="btn btn_mail_bz mb_rejct" title="Reject" data-toggle="modal" data-target="#exampleModal_st"><i class="fa fa-times"></i></button>
+                    </th>
                    </tr>
                 </tbody>
               </table>
@@ -1276,7 +1550,7 @@ function closeNav5() {
 
                           </script>
                          <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1 cls_msg_dtl" title="Close Details"><i class="fa fa-close"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -1336,7 +1610,7 @@ function closeNav5() {
 
                           </script>
                          <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl2" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1 cls_msg_dtl" title="Close Details"><i class="fa fa-close"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -1392,7 +1666,7 @@ function closeNav5() {
 
                           </script>
                          <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
-                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl3" title="Close Details"><i class="fa fa-angle-up"></i></button>
+                          <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1 cls_msg_dtl" title="Close Details"><i class="fa fa-close"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
                               <div class="arrow"></div>
@@ -1539,8 +1813,8 @@ function closeNav5() {
           <table class="table table-bordered tbl_480">
             <thead class="thead1">
               <tr>
-                 <th class="col-md-1">Ref#</th>
-                <th class="col-md-1 tr_l">Date </th>
+                 <th class="col-md-1 tr_l">Ref#</th>
+                <th class="col-md-1">Date </th>
                 <th class="col-md-4 tr_l">Customer Name</th>
                  <th class="col-md-3">Employee</th>
                  <th class="col-md-2">Status</th>
@@ -2394,24 +2668,30 @@ $(document).ready(function(){
     $(".new_msg_op").hide(200);
     $(".msg_dtz_mb2").show(200);
   });
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
 
-  $(".msg_dtz_mb2").click(function(){
-    $(".msg_dtz_mb2").hide();
-  });
+  if (keyCode == 27) { 
+   $('.msg_dtz_mb2').hide("");
+  } 
+});
   $(".hid_dtl1").click(function(){
     $(".show_dtl1").fadeOut("slow");
     $(".scnd_row, .trd_row").fadeIn("slow");
     $(".dt_tblz").removeClass("dtl_hei_move");
+   $('.msg_dtz_mb2').hide("");
   });
   $(".hid_dtl2").click(function(){
     $(".show_dtl2").fadeOut("slow");
     $(".frst_row, .trd_row").fadeIn("slow");
     $(".dt_tblz").removeClass("dtl_hei_move");
+   $('.msg_dtz_mb2').hide("");
   });
   $(".hid_dtl3").click(function(){
     $(".show_dtl3").fadeOut("slow");
     $(".scnd_row, .frst_row").fadeIn("slow");
     $(".dt_tblz").removeClass("dtl_hei_move");
+   $('.msg_dtz_mb2').hide("");
   });
 });
 </script>
@@ -2517,7 +2797,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let btn = document.querySelector('#popoverOpener, #popoverOpener1, #popoverOpener3, #popoverOpener4'),
     template = document.querySelector('.popover'),
     pop = new Popover(template, btn, {
-      position: Popover.TOP
+      position: Popover.LEFT
     }),
     links = template.querySelectorAll('.popover-content a');
   for (let i = 0, len = links.length; i < len; ++i) {
@@ -2536,17 +2816,17 @@ $(document).on('keydown', function(e) {
   var keyCode = e.keyCode || e.which; 
 
   if (keyCode == 27) { 
-   $('.popover.top').hide("");
+   $('.popover.left').hide("");
   } 
 });
-    $(document).on("click", ".popover.top .btn-dz" , function(){
-   $('.popover.top').hide("");
+    $(document).on("click", ".popover.left .btn-dz" , function(){
+   $('.popover.left').hide("");
     });
 </script>
 <script type="text/javascript">
   $(document).ready(function(){
-  $(".content_container").click(function(){
-    $(".popover.top").hide(200);
+  $(".msg_dtz_mb2").click(function(e){
+    $(".popover.left").hide(200);
   });
 </script>
 <style type="text/css">
