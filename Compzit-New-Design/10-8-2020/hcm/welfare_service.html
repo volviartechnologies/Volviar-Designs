@@ -958,34 +958,24 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
+<!---inner_content_sections area_started-->
           <h1 class="h1_con">Welfare Service</h1>
 
           <div class="form-group fg2 sa_o_fg4">
-                <label for="pwd" class="fg2_la1">From:<span class="spn1"></span> </label>
-                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                <label for="pwd" class="fg2_la1">From Date:<span class="spn1"></span> </label>
+                <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
                   <input class="form-control inp_bdr" type="text"  />
                   <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
                 </div>
               </div>
 
               <div class="form-group fg2 sa_o_fg4">
-                <label for="pwd" class="fg2_la1">To:<span class="spn1"></span></label>
-                <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                <label for="pwd" class="fg2_la1">To Date:<span class="spn1"></span></label>
+                <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
                   <input class="form-control inp_bdr" type="text"  />
                   <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
                 </div>
               </div>
-
-              <div class="fg2 fg2_hc4 frm_50 sa_o_fg4">
-          <label class="form1 mar_bo mar_tp">
-            <span class="button-checkbox">
-              <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-              <input type="checkbox" class="hidden"/>
-            </span>
-            <p class="pz_s">Show Deleted Entries</p>
-          </label>
-        </div>
 
         <div class="form-group fg2 frm_50 sa_o_fg4">
           <label for="email" class="fg2_la1">Designation<span class="spn1"></span>:</label>
@@ -999,10 +989,20 @@ function closeNav5() {
           <div class="form-group fg2 frm_50 sa_o_fg4">
           <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>All</option>
             <option>Active</option>
-            <option>Pending</option>
+            <option>Inactive</option>
+            <option>All</option>
           </select> 
+        </div>
+
+        <div class="fg2 fg2_hc4 frm_50 sa_o_fg4">
+          <label class="form1 mar_bo mar_tp">
+            <span class="button-checkbox">
+              <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+              <input type="checkbox" class="hidden"/>
+            </span>
+            <p class="pz_s">Show Deleted Entries</p>
+          </label>
         </div>
         
         <div class="fg2 fg2_blk">
@@ -1013,130 +1013,170 @@ function closeNav5() {
 <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
 
-        <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
+            <div class="r_640">  
+              <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="col-md-5 tr_l">Service Name
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in" placeholder="Service Name" onkeydown="return DisableEnter(event)">
+                    </th>
+                    <th class="col-md-5 tr_l">Category Name
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in" placeholder="Category Name" onkeydown="return DisableEnter(event)">
+                    </th>
+                    <th class="col-md-2">Actions
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tr_l">Service 1</td>
+                    <td class="tr_l">Category 1</td>
+                    <td> 
+                      <div class="btn_stl1">
+                        <div class="btn_stl1">
+                          <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                            <i class="fa fa-times-circle"></i>
+                          </button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                          <i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
 
-          <div class="r_800">
-          <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
-            <thead class="thead1">
-              <tr>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Service Name">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Category Name">
-                </th>
-                <th rowspan="2" class="col-md-1">Status</th>
-                <th rowspan="2" class="col-md-2">Actions</th>
-              </tr>
-              <tr>
-                <th class="col-md-4 tr_l"> Service Name</th>
+                      <div class="btn_stl2"> 
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                          <i class="fa fa-list-alt"></i> View
+                        </button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-edit"></i> Edit
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-trash"></i> Delete
+                        </button>
+                      </div>
 
-                <th class="col-md-4 tr_l"> Category Name</th>
-              </tr>
-             
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tr_l">Welfare 1</td>
-                <td class="tr_l">Women and child welfare</td>
-                <td><button class="btn tab_but1 butn1">Active</button></td>
-                <td>
-                  <div class="btn_stl1">
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                  <i class="fa fa-list-alt"></i>
-                </button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                  <i class="fa fa-edit"></i>
-                </button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
+                      <div class="btn_stl3">
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tr_l">Service 2</td>
+                    <td class="tr_l">Category 2</td>
+                    <td> 
+                      <div class="btn_stl1">
+                        <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status" disabled="">
+                            <i class="fa fa-check-circle "></i>
+                          </button>
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                          <i class="fa fa-list-alt"></i>
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
 
-              <div class="btn_stl2"> 
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                    <i class="fa fa-list-alt"></i> View
-                </button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit
-                </button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                
-              </div>
+                      <div class="btn_stl2"> 
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                          <i class="fa fa-list-alt"></i> View
+                        </button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-edit"></i> Edit
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-trash"></i> Delete
+                        </button>
+                      </div>
 
-              <div class="btn_stl3">
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-               
-              </div>
-            </td>
-              </tr>
-              <tr>
-                <td class="tr_l">Welfare 2</td>
-                <td class="tr_l">Workers health Service</td>
-                <td><button class="btn tab_but1 butn1">Active</button></td>
-                <td>
-                  <div class="btn_stl1">
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                  <i class="fa fa-list-alt"></i>
-                </button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                  <i class="fa fa-edit"></i>
-                </button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
+                      <div class="btn_stl3">
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tr_l">Service 3</td>
+                    <td class="tr_l">Category 3</td>
+                    <td> 
+                      <div class="btn_stl1">
+                          <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status" disabled="">
+                            <i class="fa fa-times-circle"></i>
+                          </button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                          <i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete" disabled="">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
 
-              <div class="btn_stl2"> 
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                    <i class="fa fa-list-alt"></i> View
-                </button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit
-                </button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                
-              </div>
+                      <div class="btn_stl2"> 
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                          <i class="fa fa-list-alt"></i> View
+                        </button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-edit"></i> Edit
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-trash"></i> Delete
+                        </button>
+                      </div>
 
-              <div class="btn_stl3">
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-               
-              </div>
-            </td>
-              </tr>
-             
-            </tbody>
-          </table>
-        </div>
+                      <div class="btn_stl3">
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tr_l">Service 4</td>
+                    <td class="tr_l">Category 4</td>
+                    <td> 
+                      <div class="btn_stl1">
+                        <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                            <i class="fa fa-check-circle "></i>
+                          </button>
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                          <i class="fa fa-list-alt"></i>
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
 
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
+                      <div class="btn_stl2"> 
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                          <i class="fa fa-list-alt"></i> View
+                        </button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-edit"></i> Edit
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-trash"></i> Delete
+                        </button>
+                      </div>
 
-        </div>
+                      <div class="btn_stl3">
+                        <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                        <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
 
 <!---inner_content_sections area_closed--->
@@ -1267,6 +1307,29 @@ function closeNav5() {
       <div class="modal-footer mbo_tp">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button><!-- 
         <button type="button" class="btn btn-primary">Proceed</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
       </div>
     </div>
   </div>
@@ -1515,6 +1578,49 @@ $(function () {
 </script>
 <!---------------Checkbox_section_closed------------------------->
 
+
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+<!--   <link rel="stylesheet" type="text/css" href=../table/table.css">->
+
+
+  <!---data_table_script for search-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+  <!---Data_table_script for search_closed--->
 
 <!----alert message_script---->
 <script type="text/javascript">

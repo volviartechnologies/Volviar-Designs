@@ -1017,23 +1017,25 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .img_pro_per img:hover, .img_pro_per img:focus{background-color:#172643;border:1px solid  #172643;}
 /*.pro_per{background-color: #fff;max-height:274px;overflow-y: auto;min-height: 274px;margin-bottom: 10px;}*/
 .pro_per_bt h3{margin-top: 0px;}
-.proper_data h3{margin-top: 0px;margin-bottom: 0px;}
+.proper_data h3{margin-top: 0px;margin-bottom: 0px;margin-left: 27px;}
 .proper_data .prod_tree{background-color: transparent;margin-top: -8px;}
 .prod_ic{height: 32px;}
 .pro_per .btn_app1_a{padding-left:0px;}
 .pro_per .wi_tre_1{padding-left:0px;padding-top:0px;}
-.pro_per .tree7 li{padding-left: 13px;padding-top:5px;}
+.pro_per .tree7 li{padding-left:40px;padding-top:5px;}
 .pro_per .tree7 li ul{padding-left: 7px;padding-top: 0px;}
 .proper_data .button-checkbox{margin-top: -3px;margin-left: -10px;}
 /*.proper_data .button-checkbox button{margin-top:10px;margin-left: 10px;}*/
 .boc_pro_per{border: 1px solid #ccc;border-bottom: none;margin-bottom: 10px;padding: 10px;padding-right: 0;}
 .proper_data{border:1px solid #efeded;margin-bottom: 10px;padding:10px;padding-right: 0px;box-shadow: 1px 1px 8px #ccc;background-color: #fff;max-height: 274px;
-            overflow-y: auto;min-height: 274px;margin-bottom: 10px;padding-top: 4px;}
-.proper_data h4{padding-top: 120px;color: #d6d3d3;font-weight: 300;width: 100%;text-align: center;}
-.tree7 li::after {border-top: 1px solid #999; height: 20px;top: 13px;width: 19px;}
+            overflow-y: auto;min-height: 278px;margin-bottom: 10px;padding-top: 4px;}
+.proper_data h4{padding-top: 120px;color:#9e9e9e;font-weight: 300;width: 100%;text-align: center;}
+.tree7 li::after {border-top: 1px solid #999; height: 20px;top: 13px;width:48px;}
 .prod_ic{margin-bottom: 20px;}
 .prod_ic img {width: 20px;height: 20px;margin-bottom: -10px;}
 .prod_ic { width: 50px;height:50px;margin-right: 15px;margin-bottom:20px;}
 .li_lft_pdn{padding-left: 10px;}
 .img_pro_per img{margin-top: 27px;}
 .wi_tre_1 li.parent_li>span{margin-top: 0px;}
+.mr_sel_rle{margin-top: -10px;margin-bottom: 6px;}
+.mar_lft_zz{margin-left:-40px;}
