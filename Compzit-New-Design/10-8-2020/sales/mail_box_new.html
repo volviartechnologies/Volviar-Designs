@@ -530,6 +530,7 @@ function closeNav5() {
               <h3>Compzit Mail</h3>
             </div>
             <div class="mb_head_30">
+              <button class="btn btn_chse_sec push_btn" title="Push to Trash" style="display: none;" data-toggle="modal" data-target="#reason_trash"><i class="fa fa-trash fa_stf"></i></button>
               <div class="dropdown btn_chse_sec1">
                 <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
                   <span class="sp_msg1"><i class="fa fa-inbox fa_stf"></i> <span>Inbox</span> <i class="fa fa-sort"></i></span>
@@ -1876,6 +1877,41 @@ function closeNav5() {
   </div>
 </div>
 
+ <!-- Forward_to_Modal1 -->
+<div class="modal fade" id="reason_trash" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ad_sd_mod1 flt_r mod_mail_mrtp" role="document" style="width: 40%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reason For Push To Trash</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body padng_btm">
+        <div class="form-group fg12 sa_2">
+          <label for="email" class="fg2_la1">Reason:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 fg_chs1 inp_mst mod_inp100" id="all_op1">
+            <option>Reason 1</option>
+            <option>Reason 2</option>
+            <option>Reason 3</option>
+          </select> 
+        </div>
+        <div class="fg12 sa_o_fg1">
+          <div class="">
+            <label for="email" class="fg2_la1">Description: <span class="spn1">&nbsp;</span></label>
+            <textarea rows="3" cols="40" class="form-control flt_l txt_01 dt_wdt mod_inp100" placeholder="Description"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!--------script section_started---------->
 
@@ -2692,6 +2728,12 @@ $(document).ready(function(){
     $(".scnd_row, .frst_row").fadeIn("slow");
     $(".dt_tblz").removeClass("dtl_hei_move");
    $('.msg_dtz_mb2').hide("");
+  });
+  $(".dt_tblz .btn-d").click(function(){
+    $(".push_btn").show();
+  });
+  $(".dt_tblz .btn-p").click(function(){
+    $(".push_btn").hide();
   });
 });
 </script>

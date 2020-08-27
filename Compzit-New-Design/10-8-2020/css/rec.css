@@ -211,7 +211,9 @@ label{font-weight: 400;}
 .fg7{width:15%;margin:auto;float: left;padding-right: 10px;}
 .fg7_5{width:16.5%;margin:auto;float: left;padding-right: 10px;}
 .fg7_4{width:16%;margin:auto;float: left;padding-right: 10px;}
+.fg7_3{width:13%;margin:auto;float: left;padding-right: 10px;}
 .fg8{width:10%;margin:auto;float: left;padding-right: 10px;}
+.fg8_5{width:6%;margin:auto;float: left;padding-right: 10px;}
 .fg9{width:5%;margin:auto;float: left;padding-right: 10px;}
 
 .mar_bo1{margin-bottom: 20px;}
@@ -3168,7 +3170,7 @@ body{position: fixed;left: 0;right: 0;}
     color:white;
 }
 .cke_bottom{display: none!important;}
-#cke_1_contents{height: 180px!important;}
+#cke_1_contents{height:270px!important;}
 #cke_1_top{display:none!important;}
 .fx_width{width: 20px;height: auto;margin:auto;float: left;}
 
@@ -3267,7 +3269,7 @@ body{position: fixed;left: 0;right: 0;}
 .mb_head_30{margin: auto;height: auto;float:right;text-align: right;padding-right:6px;}
 .mb_head_70 h3{margin: 11px 10px;font-size: 18px;width: auto;float: left;}
 .btn_chse_sec{padding:9px 8px;border-radius: 0px;background-color:#5095c5;}
-.btn_chse_sec1{border-radius: 0px;background-color:transparent;color:#333;margin-right:4px;}
+.btn_chse_sec1{border-radius: 0px;background-color:transparent;color:#333;margin-right:4px;margin-left: 6px;}
 .btn_chse_sec1 button{background-color:#f9f9f9;color:#333;border:none;padding: 10px 8px;}
 .btn_chse_sec1 button:hover, .btn_chse_sec1 button:focus{background-color:#d8edfc;}
 .btn_chse_sec:hover, .btn_chse_sec:focus{background-color:#48acf2;}
@@ -3312,6 +3314,7 @@ body{position: fixed;left: 0;right: 0;}
 .dt_tblz table.dataTable.order-column.stripe tbody tr.odd:hover .sorting_1{background-color:#fff!important;}
 .btn_chse_sec1.open button{background-color:#eaf6ff;}
 .mail_drop{background-color:#eaf6ff;}
+.dt_tblz{width: 100%;margin:auto;float: left;}
 .dt_tblz .thead1{background-color:#e0f2ff;color: #585858;padding:3px;}
 .dt_tblz tbody>tr>td, .dt_tblz tbody>tr>th, .dt_tblz tfoot>tr>td, .dt_tblz tfoot>tr>th, 
 .dt_tblz thead>tr>td, .dt_tblz thead>tr>th{padding:6px!important;border: 0px!important;border-right:0px solid #eaeaea!important;
@@ -3329,7 +3332,7 @@ body{position: fixed;left: 0;right: 0;}
 
 .mai_hei_rds{max-height: 300px;}
 .sel_ms_rw{background-color:rgba(100, 229, 255, 0.2)!important;box-shadow:6px 1px 6px #a5a5a5!important;}
-.dt_tblz{max-height: 350px; overflow-y: auto;margin: auto;float: left;margin-bottom: 10px;padding-top: 4px;}
+.dt_tblz{max-height:420px; overflow-y: auto;margin: auto;float: left;margin-bottom: 10px;padding-top: 4px;}
 .dtl_hei_move{max-height:140px;}
 .spn_atc_ml{width: 20px;height: auto;margin: auto;float: left;padding-top: 4px;margin-right: 4px;}
 .spn_atc_ml .fa-envelope{font-size: 12px;margin: auto;float: left; margin-top: 3px;margin-left: 4px;color: #46a6ea;}
@@ -3356,3 +3359,10 @@ body{position: fixed;left: 0;right: 0;}
 .mr_rgt_chk button{margin-right: 0px!important;}
 .cls_msg_dtl{border: 1px solid #efa7a7;color: #ff7070;background-color: #fff;}
 .cls_msg_dtl:hover{background-color:#cc1212;color: #fff;border: 1px solid #efa7a7;}
+.dt_tblz .button-checkbox{height:28px;overflow: hidden;}
+.push_btn{background-color: #f94848;float: left;}
+.push_btn:hover, .push_btn:focus{background-color:#f10000!important;}
+#cphMain_myBtn{top: 220px!important;}
+.welfar_area h3{margin-top:-10px;margin-bottom: 4px;}
+.trsh_reasn{margin-top: 10%;}
+.mod_inp100{width: 100%!important;}

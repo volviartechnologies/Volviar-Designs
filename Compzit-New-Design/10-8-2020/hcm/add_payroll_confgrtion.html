@@ -961,40 +961,31 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
+<!---inner_content_sections area_started-->
           <h1 class="h1_con">Payroll Configuration</h1>
 
-          <div class="top_br_container">
-            <div class="top_br_1 br_1_et">
+          <h3>Add Payroll Structure</h3>
 
-          <h2 class="h1_con h2_con">Add Payroll</h2>
+          <div class="form-group fg5 sa_640 sa_1">
+            <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
+            <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Name" name="email">
+          </div>
 
-          <div class="form-group fg2 sa_640 sa_1">
-              <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
-              <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Name" name="email">
-            </div>
+          <div class="form-group fg5 sa_640 sa_1">
+            <label for="email" class="fg2_la1">Code:</label>
+            <input id="myinpc3" type="text" class="form-control fg2_inp1" id="email" placeholder="Code" name="email">
+          </div>
 
-            <div class="form-group fg2 sa_640 sa_1">
-              <label for="email" class="fg2_la1">Code:</label>
-              <input id="myinpc3" type="text" class="form-control fg2_inp1" id="email" placeholder="Code" name="email">
-            </div>
-
-              <div class="form-group fg2 sa_640 sa_1">
-                <label for="email" class="fg2_la1">Mode:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 inp_mst" required="">
-                  <option>Addition</option>
-                  <option>Deduction</option>
-                </select>
+        <div class="form-group fg5 fg2_blk fg2_blk1 sa_1">
+          <label for="email" class="fg2_la1">Mode:<span class="spn1">*</span></label>
+          <div class="row rl_prt">
+            <div class="prtd_rat">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios11" id="gridRadios3" value="option1" checked="">
+                <label class="form-check-label" for="gridRadios3">Addition</label>
+                <input class="form-check-input" type="radio" name="gridRadios11" id="gridRadios4" value="option2">
+                <label class="form-check-label" for="gridRadios4">Deduction</label>
               </div>
-
-              <div class="form-group fg8 fg2_mr sa_fg4">
-          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
             </div>
           </div>
         </div>
@@ -1011,21 +1002,26 @@ function closeNav5() {
           </div>
         </div>
 
-              <div class="clearfix"></div>
-              <div class="free_sp"></div>
+        <div class="form-group fg5 fg2_blk fg2_blk1 sa_1">
+          <label for="email" class="fg2_la1">Type:<span class="spn1"></span></label>
+          <div class="row rl_prt">
+            <div class="prtd_rat">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
+                <label class="form-check-label" for="gridRadios1">
+                    <i class="fa fa-first-order clr_ff"></i> Fixed</label>
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                    <i class="fa fa-snowflake-o clr_fv"></i> Variable</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
 
-              <!-- <div class="fg4 fg2_hc4 sa_1">
-          <label class="form1 mar_bo mar_tp">
-            <span class="button-checkbox">
-              <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-              <input type="checkbox" class="hidden" />
-            </span>
-            <p class="pz_s">Available in manually updating module for addition/ deduction</p>
-          </label>
-        </div> -->
-        <div class="form-group fg2 fg2_mr sa_fg4">
-          <label for="email" class="fg2_la1 pad_l">Visible in manual entry:<span class="spn1"></span></label>
-          <div class="check1">
+        <div class="form-group fg5 fg2_mr sa_fg4">
+          <label for="email" class="fg2_la1 pad_l">Manual updating:<span class="spn1"></span></label>
+          <div class="check1" title="Available in manually updating module for addition/ deduction">
             <div class="">
               <label class="switch">
                 <input type="checkbox" >
@@ -1035,16 +1031,14 @@ function closeNav5() {
           </div>
         </div>
 
-        <div class="form-group fg5 fg2_blk fg2_blk1 sa_1">
-          <label for="email" class="fg2_la1">Type:<span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Fixed</label>
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Variable</label>
-              </div>
+        <div class="form-group fg8_5 fg2_mr sa_fg4">
+          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1"></span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox" >
+                <span class="slider_tog round"></span>
+              </label>
             </div>
           </div>
         </div>
@@ -1069,9 +1063,6 @@ function closeNav5() {
           </div>
         </div>
         
-        
-      </div>
-    </div>
     </div>
   </div>
 </div><!--content_container_closed------>

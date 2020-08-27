@@ -479,8 +479,8 @@ function closeNav5() {
             </button>
           </div>
         </div>
-        <div class="col-md-10">
-          <h5 class="mr_sel_rle">Allocate Selected Roles to Existing Users<span class="spn1">*</span></h5>
+        <div class="col-md-7">
+          <h5 class="mr_sel_rle">Select the User role<span class="spn1">*</span></h5>
           <div class="col-md-12 proper_data">
             <h4>Product Permission</h4>
 
@@ -643,7 +643,7 @@ function closeNav5() {
               </ul>
 
 
-<!------tree_section_started-->
+            <!------tree_section_started-->
             <ul id="myTab1" class="sc_hei btn_sls1_a mar_lft_zz" style="display: none;">
               <li>
                 <ul class="uilist">
@@ -770,9 +770,9 @@ function closeNav5() {
                  </ul>
               </li>
             </ul>
-<!------tree_section_closed----->
+        <!------tree_section_closed----->
 
-<!------tree_section_started-->
+        <!------tree_section_started-->
             <ul id="myTab1" class="sc_hei btn_aws1_a mar_lft_zz" style="display: none;">
               <li>
                 <ul>
@@ -857,9 +857,9 @@ function closeNav5() {
                 </ul>
               </li>
             </ul>
-<!------tree_section_closed----->
+        <!------tree_section_closed----->
 
-<!------tree_section_started-->
+        <!------tree_section_started-->
             <ul id="myTab1" class="sc_hei btn_guar1_a mar_lft_zz" style="display: none;">
               <li>
                 <ul>
@@ -939,9 +939,9 @@ function closeNav5() {
               </ul>
               </li>
             </ul>
-<!------tree_section_closed----->
+        <!------tree_section_closed----->
 
-<!------tree_section_started-->
+        <!------tree_section_started-->
             <ul id="myTab1" class="sc_hei btn_hcm1_a mar_lft_zz" style="display: none;">
               <li>
                 <ul>
@@ -1019,9 +1019,9 @@ function closeNav5() {
                 </ul>
               </li>
             </ul>
-<!------tree_section_closed----->
+        <!------tree_section_closed----->
 
-<!------tree_section_started-->
+        <!------tree_section_started-->
             <ul id="myTab1" class="sc_hei btn_fin1_a mar_lft_zz" style="display: none;">
               <li>
                 <ul>
@@ -1099,9 +1099,9 @@ function closeNav5() {
                 </ul>
               </li>
             </ul>
-<!------tree_section_closed----->
+        <!------tree_section_closed----->
 
-<!------tree_section_started-->
+        <!------tree_section_started-->
             <ul id="myTab1" class="sc_hei btn_pro1_a mar_lft_zz" style="display: none;">
               <li>
                 <ul>
@@ -1190,6 +1190,19 @@ function closeNav5() {
             </div>
         </div>
       </div>
+
+      <div class="col-md-3 welfar_area">
+        <h3>Welfare Services</h3>
+
+          <div class="wid_100 flt_n">
+            <ul class="wel_li">
+              <li> <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-arrow-circle-right"></i> Welfare 1</a></li>
+              <li> <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-arrow-circle-right"></i> Welfare 2</a></li>
+              <li> <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-arrow-circle-right"></i> Welfare 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       
       <div class="clearfix"></div>
       <div class="devider"></div>
@@ -1244,7 +1257,70 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Welfare 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body md_bd">
+         <table class="table table-bordered">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b5 tr_l">
+                  <span class="button-checkbox lbr_chk flt_n" style="float: none;">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                </th>
+                <th class="col-md-2">From</th>
+                <th class="col-md-2">To</th>
+                <th class="col-md-3">Frequency</th>
+                <th class="col-md-2 tr_c">Limit</th>
+                <th class="col-md-3">Unit</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr>
+                 <td>
+                    <span class="button-checkbox ">
+                      <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                      <input type="checkbox" class="hidden" />
+                    </span>
+                </td>
+                <td class="tr_c">10/06/2020</td>
+                <td class="tr_c">10/06/2020</td>
+                <td class="tr_c">1 Month</td>
+                <td class="tr_r">
+                  <input type="text" class="form-control fg2_inp2 tr_r flt_r" placeholder="0">
+                </td>
+                <td class="td1">Meter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <div class="modal-footer">
 
+        <div class="sub_cont pull-right">
+        <div class="save_sec">
+          <button type="submit" class="btn sub1">Save</button>
+          <button type="submit" class="btn sub4" data-dismiss="modal">Close</button>
+        </div>
+        <div class="edit_sec">
+          <button type="submit" class="btn sub1">Update</button>
+          <button type="submit" class="btn sub3">Update & Close</button>
+          <button type="submit" class="btn sub2">Confirm</button>
+          <button type="submit" class="btn sub4">Cancel</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--------script section_started---------->
 
