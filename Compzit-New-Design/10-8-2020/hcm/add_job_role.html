@@ -443,99 +443,70 @@ function closeNav5() {
         <div class="col-md-2 pa_lft_0">
           <div class="prod_sect pro_per_bt">
             <h3>Products</h3>  
-            <button class="prod_ic k1 btn_app1"><img src="..\images\des_ico\app_7.png" title="App Administration">
-              <i class="img_pro_per"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></i> 
-            </button>
-            <button class="prod_ic k2 btn_sls1"><img src="..\images\des_ico\sls7.png" title="Sales Force Automation">
-              <i class="img_pro_per"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></i> 
-            </button>
-            <button class="prod_ic k3 btn_aws1"><img src="..\images\des_ico\aws7.png" title="Auto Workshop Management System">
-              <i class="img_pro_per"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></i> 
-            </button>
-            <button class="prod_ic k4 btn_guar1"><img src="..\images\des_ico\guaran_7.png" title="Guarantee Management System">
-              <i class="img_pro_per"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></i> 
-            </button>
-            <button class="prod_ic k5 btn_hcm1"><img src="..\images\des_ico\hcm7.png" title="Human Capital Management">
-              <i class="img_pro_per"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></i> 
-            </button>
-            <button class="prod_ic k6 btn_fin1"><img src="..\images\des_ico\fin7.png" title="Finance Management System">
-              <i class="img_pro_per"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></i> 
-            </button>
-            <button class="prod_ic k7 btn_pro1"><img src="..\images\des_ico\pro7.png" title="Procurement Management System">
-              <i class="img_pro_per"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></i> 
-            </button>
+            <div class="prod_ic">
+              <button class="btn_zp btn_app1 k1"><img src="..\images\des_ico\app_7.png" title="App Administration"></button>
+              <button class="img_pro_per ap_1op"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></button> 
+            </div>  
+            <div class="prod_ic">
+              <button class="btn_zp btn_sls1 k2"><img src="..\images\des_ico\sls7.png" title="Sales Force Automation"></button>
+              <button class="img_pro_per sa_1op"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></button> 
+            </div>  
+            <div class="prod_ic">
+              <button class="btn_zp btn_aws1 k3"><img src="..\images\des_ico\aws7.png" title="Auto Workshop Management System"></button>
+              <button class="img_pro_per aws_1op"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></button> 
+            </div>  
+            <div class="prod_ic">
+              <button class="btn_zp btn_guar1 k4"><img src="..\images\des_ico\guaran_7.png" title="Guarantee Management System"></button>
+              <button class="img_pro_per guar_1op"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></button> 
+            </div>  
+            <div class="prod_ic">
+              <button class="btn_zp btn_hcm1 k5"><img src="..\images\des_ico\hcm7.png" title="Human Capital Management"></button>
+              <button class="img_pro_per hcm_1op"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></button> 
+            </div>  
+            <div class="prod_ic">
+              <button class="btn_zp btn_fin1 k6"><img src="..\images\des_ico\fin7.png" title="Finance Management System"></button>
+              <button class="img_pro_per fin_1op"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></button> 
+            </div>
+            <div class="prod_ic">
+              <button class="btn_zp btn_pro1 k7"><img src="..\images\des_ico\guaran_7.png" title="Procurement Management System"></button>
+              <button class="img_pro_per pro_1op"><img src="..\images\icons\opp/c2.png"  data-toggle="tooltip" data-placement="bottom" title="product permission"></button> 
+            </div>  
           </div>
 
-          <div class="form-group fg12 fg2_mr sa_fg4">
-            <label for="email" class="fg2_la1 pad_l">Allocate Selected Roles to Existing Users:<span class="spn1">*</span></label>
-            <div class="check1">
-              <div class="">
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
+        <div class="form-group fg12 sa_2 sa_480">
+          <label for="email" class="fg2_la1 pad_l" title="Allocate Selected Roles to Existing Users">Allocate:<span class="spn1"></span></label>
+          <div class="check1" title="Allocate Selected Roles to Existing Users">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider_tog round"></span>
+              </label>
             </div>
           </div>
+        </div>
+
         </div>
         <div class="col-md-7">
           <h5 class="mr_sel_rle">Select the User role<span class="spn1">*</span></h5>
           <div class="col-md-12 proper_data">
             <h4>Product Permission</h4>
 
-            <h3 class="btn_app1_a " style="display: none;">
-              <i class="button-checkbox">
-                <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                <input type="checkbox" class="hidden">
-              </i>App Administration
-            </h3>
-            <h3 class="btn_sls1_a " style="display: none;">
-              <i class="button-checkbox">
-                <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                <input type="checkbox" class="hidden">
-              </i>SALES FORCE AUTOMATION
-            </h3>
-            <h3 class="btn_aws1_a " style="display: none;">
-              <i class="button-checkbox">
-                <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                <input type="checkbox" class="hidden">
-              </i>Auto Workshop Management System
-            </h3>
-            <h3 class="btn_guar1_a " style="display: none;">
-              <i class="button-checkbox">
-                <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                <input type="checkbox" class="hidden">
-              </i>Guarantee Management System
-            </h3>
-            <h3 class="btn_hcm1_a " style="display: none;">
-              <i class="button-checkbox">
-                <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                <input type="checkbox" class="hidden">
-              </i>Human Capital Management
-            </h3>
-            <h3 class="btn_fin1_a " style="display: none;">
-              <i class="button-checkbox">
-                <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                <input type="checkbox" class="hidden">
-              </i>Finance Management System
-            </h3>
-            <h3 class="btn_pro1_a " style="display: none;">
-              <i class="button-checkbox">
-                <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                <input type="checkbox" class="hidden">
-              </i>Procurement Management System
-            </h3>
-
           <div class="prod_tree">
 
       <!---heirarchy_section_started-->
 
-      <div class="">
+      <div class="tree_alz btn_app1_a" style="display:none;">
         <!------tree_section_started-->
-        <div class="box_pro_7 pro_pa pro_per">
+        <h3 class=" btn_app_tree1">
+          <i class="button-checkbox">
+            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+            <input type="checkbox" class="hidden">
+          </i><span class="sp_z_1">App Administration</span>
+        </h3>
+        <div class="box_pro_7 pro_pa pro_per app_tree1" style="display: none;">
           <div class="tree7">
             <div class="tree7 wi_tre_1">
-            <ul id="myTab1" class="sc_hei btn_app1_a" style="display: none;">
+            <ul id="myTab1" class="sc_hei ul_btn_all">
               <li>
                 <ul>
                   <li>
@@ -640,10 +611,25 @@ function closeNav5() {
                   </ul>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div> 
 
 
+      <div class="tree_alz btn_sls1_a" style="display:none;">
+        <!------tree_section_started-->
+        <h3 class=" btn_sls_tree1">
+          <i class="button-checkbox">
+            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+            <input type="checkbox" class="hidden">
+          </i><span class="sp_z_1">SALES FORCE AUTOMATION</span>
+        </h3>
+        <div class="box_pro_7 pro_pa pro_per sls_tree1" style="display: none;">
+          <div class="tree7">
+            <div class="tree7 wi_tre_1">
             <!------tree_section_started-->
-            <ul id="myTab1" class="sc_hei btn_sls1_a mar_lft_zz" style="display: none;">
+            <ul id="myTab1" class="sc_hei ul_btn_all">
               <li>
                 <ul class="uilist">
                   <li>
@@ -769,10 +755,25 @@ function closeNav5() {
                  </ul>
               </li>
             </ul>
-        <!------tree_section_closed----->
+            </div>
+          </div>
+        </div> 
+      </div> <!------tree_section_closed---->
 
-        <!------tree_section_started-->
-            <ul id="myTab1" class="sc_hei btn_aws1_a mar_lft_zz" style="display: none;">
+
+      <div class="tree_alz btn_aws1_a" style="display:none;">
+        <!--tree_section_started-->
+        <h3 class=" btn_aws_tree1">
+          <i class="button-checkbox">
+            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+            <input type="checkbox" class="hidden">
+          </i><span class="sp_z_1">Auto Workshop Management System</span>
+        </h3>
+        <div class="box_pro_7 pro_pa pro_per aws_tree1" style="display: none;">
+          <div class="tree7">
+            <div class="tree7 wi_tre_1">
+            <!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei ul_btn_all">
               <li>
                 <ul>
                   <li>
@@ -856,10 +857,25 @@ function closeNav5() {
                 </ul>
               </li>
             </ul>
-        <!------tree_section_closed----->
+            </div>
+          </div>
+        </div> 
+      </div> <!------tree_section_closed---->
 
-        <!------tree_section_started-->
-            <ul id="myTab1" class="sc_hei btn_guar1_a mar_lft_zz" style="display: none;">
+
+      <div class="tree_alz btn_guar1_a" style="display:none;">
+        <!--tree_section_started-->
+        <h3 class=" btn_guar_tree1">
+          <i class="button-checkbox">
+            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+            <input type="checkbox" class="hidden">
+          </i><span class="sp_z_1">Guarantee Management System</span>
+        </h3>
+        <div class="box_pro_7 pro_pa pro_per guar_tree1" style="display: none;">
+          <div class="tree7">
+            <div class="tree7 wi_tre_1">
+            <!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei ul_btn_all">
               <li>
                 <ul>
                   <li>
@@ -935,13 +951,26 @@ function closeNav5() {
                 </li>
                 </ul>
               </li>
-              </ul>
-              </li>
             </ul>
-        <!------tree_section_closed----->
+            </div>
+          </div>
+        </div> 
+      </div> <!------tree_section_closed---->
 
-        <!------tree_section_started-->
-            <ul id="myTab1" class="sc_hei btn_hcm1_a mar_lft_zz" style="display: none;">
+
+      <div class="tree_alz btn_hcm1_a" style="display:none;">
+        <!--tree_section_started-->
+        <h3 class=" btn_hcm_tree1">
+          <i class="button-checkbox">
+            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+            <input type="checkbox" class="hidden">
+          </i><span class="sp_z_1">Human Capital Management</span>
+        </h3>
+        <div class="box_pro_7 pro_pa pro_per hcm_tree1" style="display: none;">
+          <div class="tree7">
+            <div class="tree7 wi_tre_1">
+            <!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei ul_btn_all">
               <li>
                 <ul>
                   <li>
@@ -1018,10 +1047,25 @@ function closeNav5() {
                 </ul>
               </li>
             </ul>
-        <!------tree_section_closed----->
+            </div>
+          </div>
+        </div> 
+      </div> <!------tree_section_closed---->
 
-        <!------tree_section_started-->
-            <ul id="myTab1" class="sc_hei btn_fin1_a mar_lft_zz" style="display: none;">
+
+      <div class="tree_alz btn_fin1_a" style="display:none;">
+        <!--tree_section_started-->
+        <h3 class=" btn_fin_tree1">
+          <i class="button-checkbox">
+            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+            <input type="checkbox" class="hidden">
+          </i><span class="sp_z_1">Finance Management System</span>
+        </h3>
+        <div class="box_pro_7 pro_pa pro_per fin_tree1" style="display: none;">
+          <div class="tree7">
+            <div class="tree7 wi_tre_1">
+            <!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei ul_btn_all">
               <li>
                 <ul>
                   <li>
@@ -1098,10 +1142,25 @@ function closeNav5() {
                 </ul>
               </li>
             </ul>
-        <!------tree_section_closed----->
+            </div>
+          </div>
+        </div> 
+      </div> <!------tree_section_closed---->
 
-        <!------tree_section_started-->
-            <ul id="myTab1" class="sc_hei btn_pro1_a mar_lft_zz" style="display: none;">
+
+      <div class="tree_alz btn_pro1_a" style="display:none;">
+        <!--tree_section_started-->
+        <h3 class=" btn_pro_tree1">
+          <i class="button-checkbox">
+            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+            <input type="checkbox" class="hidden">
+          </i><span class="sp_z_1">Procurement Management System</span>
+        </h3>
+        <div class="box_pro_7 pro_pa pro_per pro_tree1" style="display: none;">
+          <div class="tree7">
+            <div class="tree7 wi_tre_1">
+            <!------tree_section_started-->
+            <ul id="myTab1" class="sc_hei ul_btn_all">
               <li>
                 <ul>
                   <li>
@@ -1178,18 +1237,14 @@ function closeNav5() {
                 </ul>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!------tree_section_closed---->
-
-
             </div>
-        </div>
-      </div>
+          </div>
+        </div> 
+      </div> <!------tree_section_closed---->
 
+    </div>
+  </div>
+</div>
 
       
       <div class="clearfix"></div>
@@ -1797,7 +1852,7 @@ $(document).ready(function(){
 });
 </script>
 
-<!----prodct selected script_section started--->
+<!----prodct selected script_section started-->
 <script>
 $(document).ready(function(){
   $(".k1").click(function(){
@@ -2006,79 +2061,92 @@ $(document).ready(function(){
 
   <script>
 $(document).ready(function(){
-  // $(".btn_app").click(function(){
-  //   $(".btn_app1").toggle(100);
-  // });
-  // $(".btn_sls").click(function(){
-  //   $(".btn_sls1").toggle(100);
-  // });
-  // $(".btn_aws").click(function(){
-  //   $(".btn_aws1").toggle(100);
-  // });
-  // $(".btn_guar").click(function(){
-  //   $(".btn_guar1").toggle(100);
-  // });
-  // $(".btn_hcm").click(function(){
-  //   $(".btn_hcm1").toggle(100);
-  // });
-  // $(".btn_fin").click(function(){
-  //   $(".btn_fin1").toggle(100);
-  // });
-  // $(".btn_pro").click(function(){
-  //   $(".btn_pro1").toggle(100);
-  // });
-
   $(".btn_app1").click(function(){
-    $(".btn_app1").addClass("selected7");
-    $(".btn_sls1, .btn_aws1, .btn_guar1, .btn_hcm1, .btn_fin1, .btn_pro1").removeClass("selected7");
-    $(".btn_app1_a").fadeIn(600);
-    $(".proper_data h4").fadeOut(100);
-    $(".btn_sls1_a, .btn_aws1_a, .btn_guar1_a, .btn_hcm1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+    $(".btn_app1").toggleClass(".selected7");
   });
+    $(".ap_1op").click(function(){
+    $(".btn_app1_a").toggle(100);
+    $(".proper_data h4").fadeOut(100);
+    $(".ap_1op img").toggleClass("opn_grn");
+  });
+  $(".btn_app_tree1 .sp_z_1").click(function(){
+    $(".app_tree1").toggle();
+  });
+
   $(".btn_sls1").click(function(){
-    $(".btn_sls1").addClass("selected7");
-    $(".btn_app1, .btn_aws1, .btn_guar1, .btn_hcm1, .btn_fin1, .btn_pro1").removeClass("selected7");
-    $(".btn_sls1_a").fadeIn(600);
-    $(".proper_data h4").fadeOut(100);
-    $(".btn_app1_a, .btn_aws1_a, .btn_guar1_a, .btn_hcm1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+    $(".btn_sls1").toggleClass(".selected7");
   });
+    $(".sa_1op").click(function(){
+    $(".btn_sls1_a").toggle(100);
+    $(".proper_data h4").fadeOut(100);
+    $(".sa_1op img").toggleClass("opn_grn");
+  });
+  $(".btn_sls_tree1 .sp_z_1").click(function(){
+    $(".sls_tree1").toggle();
+  });
+
   $(".btn_aws1").click(function(){
-    $(".btn_aws1").addClass("selected7");
-    $(".btn_sls1, .btn_app1, .btn_guar1, .btn_hcm1, .btn_fin1, .btn_pro1").removeClass("selected7");
-    $(".btn_aws1_a").fadeIn(600);
-    $(".proper_data h4").fadeOut(100);
-    $(".btn_sls1_a, .btn_app1_a, .btn_guar1_a, .btn_hcm1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+    $(".btn_aws1").toggleClass(".selected7");
   });
+    $(".aws_1op").click(function(){
+    $(".btn_aws1_a").toggle(100);
+    $(".proper_data h4").fadeOut(100);
+    $(".aws_1op img").toggleClass("opn_grn");
+  });
+  $(".btn_aws_tree1 .sp_z_1").click(function(){
+    $(".aws_tree1").toggle();
+  });
+
   $(".btn_guar1").click(function(){
-    $(".btn_guar1").addClass("selected7");
-    $(".btn_sls1, .btn_aws1, .btn_app1, .btn_hcm1, .btn_fin1, .btn_pro1").removeClass("selected7");
-    $(".btn_guar1_a").fadeIn(600);
-    $(".proper_data h4").fadeOut(100);
-    $(".btn_sls1_a, .btn_aws1_a, .btn_app1_a, .btn_hcm1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+    $(".btn_guar1").toggleClass(".selected7");
   });
+    $(".guar_1op").click(function(){
+    $(".btn_guar1_a").toggle(100);
+    $(".proper_data h4").fadeOut(100);
+    $(".guar_1op img").toggleClass("opn_grn");
+  });
+  $(".btn_guar_tree1 .sp_z_1").click(function(){
+    $(".guar_tree1").toggle();
+  });
+
   $(".btn_hcm1").click(function(){
-    $(".btn_hcm1").addClass("selected7");
-    $(".btn_sls1, .btn_aws1, .btn_guar1, .btn_app1, .btn_fin1, .btn_pro1").removeClass("selected7");
-    $(".btn_hcm1_a").fadeIn(600);
-    $(".proper_data h4").fadeOut(100);
-    $(".btn_sls1_a, .btn_aws1_a, .btn_guar1_a, .btn_app1_a, .btn_fin1_a, .btn_pro1_a").fadeOut(200);
+    $(".btn_hcm1").toggleClass(".selected7");
   });
+    $(".hcm_1op").click(function(){
+    $(".btn_hcm1_a").toggle(100);
+    $(".proper_data h4").fadeOut(100);
+    $(".hcm_1op img").toggleClass("opn_grn");
+  });
+  $(".btn_hcm_tree1 .sp_z_1").click(function(){
+    $(".hcm_tree1").toggle();
+  });
+
   $(".btn_fin1").click(function(){
-    $(".btn_fin1").addClass("selected7");
-    $(".btn_sls1, .btn_aws1, .btn_guar1, .btn_hcm1, .btn_app1, .btn_pro1").removeClass("selected7");
-    $(".btn_fin1_a").fadeIn(600);
-    $(".proper_data h4").fadeOut(100);
-    $(".btn_sls1_a, .btn_aws1_a, .btn_guar1_a, .btn_hcm1_a, .btn_app1_a, .btn_pro1_a").fadeOut(200);
+    $(".btn_fin1").toggleClass(".selected7");
   });
-  $(".btn_pro1").click(function(){
-    $(".btn_pro1").addClass("selected7");
-    $(".btn_sls1, .btn_aws1, .btn_guar1, .btn_hcm1, .btn_fin1, .btn_app1").removeClass("selected7");
-    $(".btn_pro1_a").fadeIn(600);
+    $(".fin_1op").click(function(){
+    $(".btn_fin1_a").toggle(100);
     $(".proper_data h4").fadeOut(100);
-    $(".btn_sls1_a, .btn_aws1_a, .btn_guar1_a, .btn_hcm1_a, .btn_fin1_a, .btn_app1_a").fadeOut(200);
+    $(".fin_1op img").toggleClass("opn_grn");
+  });
+  $(".btn_fin_tree1 .sp_z_1").click(function(){
+    $(".fin_tree1").toggle();
+  });
+
+  $(".btn_pro1").click(function(){
+    $(".btn_pro1").toggleClass(".selected7");
+  });
+    $(".pro_1op").click(function(){
+    $(".btn_pro1_a").toggle(100);
+    $(".proper_data h4").fadeOut(100);
+    $(".pro_1op img").toggleClass("opn_grn");
+  });
+  $(".btn_pro_tree1 .sp_z_1").click(function(){
+    $(".pro_tree1").toggle();
   });
 });
 </script>
+
 
 <!---accodition section_script_opened--->
 <script>
