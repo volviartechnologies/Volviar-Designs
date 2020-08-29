@@ -946,7 +946,7 @@ function closeNav5() {
 <!----------------------------------------------header_section_closed------------------------------------------------------------->
 
 
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
 
   <ol class="breadcrumb">
@@ -992,28 +992,35 @@ function closeNav5() {
           
             
             <div class="clearfix"></div>
-            <!-- 
-            <div class="devider"></div> -->
         
-            <div class="fg12 wid_1_sel per_fo">
-              <div class="subject-info-box-1 wid_per1 pl_lft">
-                <form action="/action_page.php">
-                  <select type="text" id="myprsel" name="search" class="form-control ser_set">
-                    <option selected="">Division 1</option>
-                    <option>Division 1</option>
-                    <option>Division 1</option>
-                    <option>Division 1</option>
-                  </select>
-                </form>
-                <h3>Employee List</h3>
-                <select multiple="multiple" id='lstBox1' class="sub_1 grp_hei">
-                  <option value="employee 1">employee 1</option>
-                  <option value="employee 2">employee 2</option>
-                  <option value="employee 3">employee 3</option>
-                  <option value="employee 4">employee 4</option>
-                  <option value="employee 5">employee 5</option>
-                  <option value="employee 6">employee 6</option>
-                </select>
+
+
+            <div class="col-md-5 pa_lft0">
+              <select type="text" id="myprsel" name="search" class="form-control ser_set">
+                <option selected="">Division 1</option>
+                <option>Division 1</option>
+                <option>Division 1</option>
+                <option>Division 1</option>
+              </select>
+            </div>   
+            <div class="clearfix"></div>       
+            <div class="col-md-5 pa_lft0 list_1_lft">
+                <h3>Employees List</h3><div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
+                <ul class="dq_ul">
+                  <li class="dq">
+                    <img src="..\images\user.png"><span id='lstBox2'> Username</span>
+                  </li>
+                  <li class="dq img">
+                    <img src="..\images\user.png"><span> Username</span>
+                  </li>
+                  <li class="dq img">
+                    <img src="..\images\user.png"><span> Username</span>
+                  </li>
+                  <li class="dq img">
+                    <img src="..\images\user.png"><span> Username</span>
+                  </li>
+                  
+                </ul>
               </div>
 
               <div class="col-md-2 sec_ad_re1">
@@ -1023,29 +1030,37 @@ function closeNav5() {
                 </div>
               </div>
 
-              <div class="subject-info-box-2 wid_per1" style="margin-top: 35px;">
-                <h3>Team Members</h3>
-                <ul class="dq_ul">
-                  <li class="dq active">
+              <div class="col-md-5 list_2_rgt">
+                <h3>Team Members</h3><div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
+                <ul class="dq_ul "><li class="dq active">
+                  <span class="button-checkbox">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                  </span>
                     <img src="..\images\user.png"><span id='lstBox2'> Username</span>
                     <button class="btn act_btn bn3 flt_r" style="margin-top: 2px;" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </li>
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </li>
                   <li class="dq img">
                     <img src="..\images\user.png"><span> Username</span>
                     <button class="btn act_btn bn3 flt_r" style="margin-top: 2px;" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </li>
+                      <i class="fa fa-trash"></i>
+                    </button>
+                    </li>
                   <li class="dq img">
                     <img src="..\images\user.png"><span> Username</span>
                     <button class="btn act_btn bn3 flt_r" style="margin-top: 2px;" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </li>
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </li>
                   <li class="dq img">
                     <img src="..\images\user.png"><span> Username</span>
                     <button class="btn act_btn bn3 flt_r" style="margin-top: 2px;" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </li>
+                    <i class="fa fa-trash"></i>
+                  </button>
+                  </li>
                 </ul>
               </div>
             

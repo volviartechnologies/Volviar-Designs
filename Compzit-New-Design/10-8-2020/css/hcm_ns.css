@@ -1048,11 +1048,14 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .fr_dv2 input[type=radio]:checked{margin-left: 5px;margin-right:7px;}
 
 .prod_ic .btn_zp{background-color: transparent;border:none;width: 100%;margin:auto;float: left;height: 49px;}
-.img_pro_per{width: auto;float: right; margin: auto;margin-top:-16px;background-color: transparent;border: none;}
+.img_pro_per{width: auto;float: right; margin: auto;margin-top:-16px;background-color: transparent;border: none;outline: none;}
 .img_pro_per img{margin-top: 0px!important;}
 .prod_ic{padding-left: 0px;padding-top: 0px;}
 .prod_ic img{margin-bottom:0px!important;}
 .opn_grn{background-color:#8aff8f!important;}
-.sp_z_1{width: auto;margin:auto;float: left;background-color:#48acf2;color: #fff;font-size: 13px;padding: 1px 8px;border-radius: 10px;cursor: pointer;height: auto;}
+.sp_z_1{width: auto;margin:auto;float: left;background-color:#0aa7bb;color: #fff;font-size: 13px;padding: 1px 8px;border-radius: 10px;cursor: pointer;height: auto;}
 .ul_btn_all{margin-left: -40px;margin-top: -8px;}
 .tree_alz{width: 100%;float: left;}
+.wid_18ps{width: 18%;}
+.list_1_lft h3{margin: auto;float: left;margin-top: 4px;}
+.list_2_rgt h3{margin:auto;float: left;margin-top: 4px;}
