@@ -3295,8 +3295,8 @@ body{position: fixed;left: 0;right: 0;}
 .dtl_heaz{width: 100%;margin:auto;float: left;height:30px;background-color: #f7f7f7;}
 .spn_bdge{width: auto;height: auto;padding: 2px 10px;text-align: left;background-color: #d5ebf3;margin: auto;float: left;border-radius: 8px;font-size: 12px;
           margin-top: 4px;margin-left: 2px;}
-.spn_bdge .cnt_msg{ overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width: 350px;}
-.spn_bdge .cnt_to, .spn_bdge .cnt_from{ overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width:200px;margin:auto;float: right;}
+.spn_bdge .cnt_msg{ overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width: 300px; margin: auto;float: right;}
+.spn_bdge .cnt_to, .spn_bdge .cnt_from{ overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width:190px;margin:auto;float: right;}
 .dtl_msgbox{width: 100%;height: auto;margin:auto;float: left;margin-top: 2px;}
 .dtl_msgbox #cke_1_contents, .dtl_msgbox .cke_contents{height:274px!important;overflow-y: auto;}
 .dt_tblz .cke_contents{height:298px!important;}
@@ -3373,3 +3373,6 @@ body{position: fixed;left: 0;right: 0;}
 .heig_msg1{min-height: auto;}
 .msg_dtz_mb2{z-index: 99999999999;}
 
+.modal-open .modal{z-index: 999999999999999999;}
+#exampleModal_st{z-index: 9999999999999999999;}
+#cphMain_myBtn:focus{background-color:#4a6ba9;}
