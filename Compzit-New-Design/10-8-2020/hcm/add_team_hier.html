@@ -1006,64 +1006,45 @@ function closeNav5() {
             <div class="clearfix"></div>       
             <div class="col-md-5 pa_lft0 list_1_lft">
                 <h3>Employees List</h3><div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
-                <ul class="dq_ul">
-                  <li class="dq">
-                    <img src="..\images\user.png"><span id='lstBox2'> Username</span>
+                <ul class="dq_ul opt_box1">
+                  <li class="dq use1"> 
+                    <img src="..\images\user.png"><span id='lstBox2'> Username 1</span>
                   </li>
-                  <li class="dq img">
-                    <img src="..\images\user.png"><span> Username</span>
+                  <li class="dq use2"> 
+                    <img src="..\images\user.png"><span id='lstBox2'> Username 2</span>
                   </li>
-                  <li class="dq img">
-                    <img src="..\images\user.png"><span> Username</span>
+                  <li class="dq use3"> 
+                    <img src="..\images\user.png"><span id='lstBox2'> Username 3</span>
                   </li>
-                  <li class="dq img">
-                    <img src="..\images\user.png"><span> Username</span>
+                  <li class="dq use4"> 
+                    <img src="..\images\user.png"><span id='lstBox2'> Username 4</span>
+                  </li>
+                  <li class="dq use5"> 
+                    <img src="..\images\user.png"><span id='lstBox2'> Username 5</span>
+                  </li>
+                  <li class="dq use6"> 
+                    <img src="..\images\user.png"><span id='lstBox2'> Username 6</span>
                   </li>
                   
                 </ul>
               </div>
 
               <div class="col-md-2 sec_ad_re1">
-                <div class="subject-info-arrows text-center arrows sa_2 md_grp_1 mr_add">
-                  <input type='button' id='btnRight' value='Select Members' class="btn btn-success bt_ad" /><br />
-                  <input type='button' id='btnLeft' value='Remove' class="btn btn-danger bt_ad" /><br />
+                <div class="text-center arrows sa_2 md_grp_1 mr_add">
+                  <button class="btn btn-success bt_ad" onclick="move();">Select Members</button><br />
+                  <button class="btn btn-danger bt_ad" onclick="rmove();">Remove</button>
                 </div>
               </div>
 
               <div class="col-md-5 list_2_rgt">
                 <h3>Team Members</h3><div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
-                <ul class="dq_ul "><li class="dq active">
-                  <span class="button-checkbox">
-                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                    <input type="checkbox" class="hidden" />
-                  </span>
-                  </span>
-                    <img src="..\images\user.png"><span id='lstBox2'> Username</span>
-                    <button class="btn act_btn bn3 flt_r" style="margin-top: 2px;" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </li>
-                  <li class="dq img">
-                    <img src="..\images\user.png"><span> Username</span>
-                    <button class="btn act_btn bn3 flt_r" style="margin-top: 2px;" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                    </li>
-                  <li class="dq img">
-                    <img src="..\images\user.png"><span> Username</span>
-                    <button class="btn act_btn bn3 flt_r" style="margin-top: 2px;" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </li>
-                  <li class="dq img">
-                    <img src="..\images\user.png"><span> Username</span>
-                    <button class="btn act_btn bn3 flt_r" style="margin-top: 2px;" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                    <i class="fa fa-trash"></i>
-                  </button>
-                  </li>
+                <ul class="dq_ul opt_box2">
+                  <p>No Team Members Avaliable</p>
                 </ul>
               </div>
             
+            <div class="clearfix"></div>
+            <div class="devider"></div>
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
@@ -1611,7 +1592,7 @@ console.clear();
 
 
 
-<!-----table_sec_fixed--->
+<!-----table_sec_fixed-->
 <script type="text/javascript">
   // requires jquery library
 jQuery(document).ready(function() {
@@ -1643,6 +1624,43 @@ $(document).ready(function(){
     }); 
 });
 </script>
-
+<script>
+$(document).ready(function(){
+  $(".use1").click(function(){
+    $(".use1").toggleClass("sel7");
+  }); 
+  $(".use2").click(function(){
+    $(".use2").toggleClass("sel7");
+  }); 
+  $(".use3").click(function(){
+    $(".use3").toggleClass("sel7");
+  }); 
+  $(".use4").click(function(){
+    $(".use4").toggleClass("sel7");
+  }); 
+  $(".use5").click(function(){
+    $(".use5").toggleClass("sel7");
+  }); 
+  $(".use6").click(function(){
+    $(".use6").toggleClass("sel7");
+  }); 
+});
+function move() {
+ jQuery(".opt_box1 .sel7")
+   .detach()
+   .appendTo('.opt_box2');
+    $(".opt_box2 p").hide();
+    $(".opt_box2 .use1, .opt_box2 .use2, .opt_box2 .use3, .opt_box2 .use4, .opt_box2 .use5, .opt_box2 .use6").removeClass("sel7");
+}
+</script>
+<script type="text/javascript">
+function rmove() {
+ jQuery(".opt_box2 .sel7")
+   .detach()
+   .appendTo('.opt_box1');
+    $(".opt_box2 p").hide();
+    $(".opt_box1  .use1, .opt_box1 .use2, .opt_box1 .use3, .opt_box1 .use4, .opt_box1 .use5, .opt_box1 .use6").removeClass("sel7");
+}
+</script>
 </body>
 </html>

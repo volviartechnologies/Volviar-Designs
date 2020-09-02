@@ -1059,3 +1059,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .wid_18ps{width: 18%;}
 .list_1_lft h3{margin: auto;float: left;margin-top: 4px;}
 .list_2_rgt h3{margin:auto;float: left;margin-top: 4px;}
+.mr_bxq{margin-top:2px;}
+.opt_box1, .opt_box2{min-height: 100px;max-height:196px;overflow-y: auto;margin-bottom:10px;}
+.opt_box1 p, .opt_box2 p{text-align: center;padding-top:40px;}
+.sel7{background-color:#e1f6ff;}
