@@ -560,9 +560,9 @@ function closeNav5() {
                 <thead class="thead1">
                   <tr>
                     <th class="th_b1_4">
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck" id="chk_al"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
@@ -578,18 +578,18 @@ function closeNav5() {
                 <tbody id="myTable">
                   <tr class="frst_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk" id="chk1">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor1"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act1" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
                     </th> 
-                    <td class=" tr_l">Attachment 1
-                    </td>
-                    <td class=" tr_l">ajayxavier@volviar.com</td>
-                    <td class=" tr_l">Division 1</td>
-                    <td class=" tr_c">05.12.2019 10:10 </td>
+                    <td class="tr_l">Attachment 1 </td>
+                    <td class="tr_l">ajayxavier@volviar.com</td>
+                    <td class="tr_l">Division 1</td>
+                    <td class="tr_c">05.12.2019 10:10 </td>
                     <td>Fordwarded</td>
                     <th>
                       <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
@@ -602,9 +602,10 @@ function closeNav5() {
                    </tr>
                   <tr class=" scnd_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk" id="chk2">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor2"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act2" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
                     </th> 
@@ -626,9 +627,10 @@ function closeNav5() {
                    
                   <tr class="trd_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk" id="chk3">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor3"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act3" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
@@ -648,13 +650,14 @@ function closeNav5() {
                     </th>
                    </tr>
                   <tr class="fou_row">
-                    <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                    <th>
+                      <span class="flt_l butn-chk" id="chk4">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor4"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act4" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </td> 
+                    </th> 
                     <td class=" tr_l">Attachment 4</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
@@ -670,13 +673,14 @@ function closeNav5() {
                     </th>
                    </tr>
                   <tr class="fiv_row">
-                    <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                    <th>
+                      <span class="flt_l butn-chk" id="chk5">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor5"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act5" style="display: none;"></i>&nbsp;
+                        </button>
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </td> 
+                    </th> 
                     <td class=" tr_l">Attachment 5</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
@@ -692,13 +696,14 @@ function closeNav5() {
                     </th>
                    </tr>
                   <tr class="six_row">
-                    <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                    <th>
+                      <span class="flt_l butn-chk" id="chk6">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor6"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act6" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </td> 
+                    </th>  
                     <td class=" tr_l">Attachment 6</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
@@ -714,13 +719,14 @@ function closeNav5() {
                     </th>
                    </tr>
                   <tr class="sev_row">
-                    <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                    <th>
+                      <span class="flt_l butn-chk" id="chk7">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor7"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act7" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </td> 
+                    </th> 
                     <td class=" tr_l">Attachment 7</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
@@ -736,13 +742,14 @@ function closeNav5() {
                     </th>
                    </tr>
                   <tr class="eig_row">
-                    <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                    <th>
+                      <span class="flt_l butn-chk" id="chk8">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor8"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act8" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </td> 
+                    </th> 
                     <td class=" tr_l">Attachment 8</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
@@ -758,13 +765,14 @@ function closeNav5() {
                     </th>
                    </tr>
                   <tr class="nin_row">
-                    <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
+                    <th>
+                      <span class="flt_l butn-chk" id="chk9">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor9"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act9" style="display: none;"></i>&nbsp;</button>
                         <input type="checkbox" class="hidden">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </td> 
+                    </th> 
                     <td class=" tr_l">Attachment 9</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
@@ -780,13 +788,14 @@ function closeNav5() {
                     </th>
                    </tr>
                   <tr class="ten_row">
-                    <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                    <th>
+                      <span class="flt_l butn-chk" id="chk10">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o" id="nor10"></i>
+                          <i class="act_fa state-icon fa fa-check-square-o" id="act10" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
-                    </td> 
+                    </th> 
                     <td class=" tr_l">Attachment 10</td>
                     <td class=" tr_l">user1@volviar.com</td>
                     <td class=" tr_l">Division 1</td>
@@ -811,26 +820,27 @@ function closeNav5() {
                 <thead class="thead1">
                   <tr>
                     <th class="th_b1_4">
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck" id="chk_al"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
+                      <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
                     </th>
                     <th class="th_b2 tr_l">Subject </th>
                     <th class="th_b4 tr_l">From</th>
-                    <th class="th_b6 tr_l">Division</th>
+                    <th class="th_b7 tr_l">Division</th>
                      <th class="th_b7">Date and Time</th>
                      <th class="th_b1">Status</th>
-                     <th class="th_b4">Actions</th>
+                     <th class="th_b2">Actions</th>
                   </tr>
                 </thead>
                 <tbody id="myTable">
                   <tr class="frst_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </th> 
@@ -851,9 +861,9 @@ function closeNav5() {
                    </tr>
                   <tr class=" scnd_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                     </th> 
                     <td class=" tr_l">Attachment 2
@@ -874,9 +884,9 @@ function closeNav5() {
                    
                   <tr class="trd_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </th> 
@@ -896,9 +906,9 @@ function closeNav5() {
                    </tr>
                   <tr class="fou_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -918,9 +928,9 @@ function closeNav5() {
                    </tr>
                   <tr class="fiv_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -940,9 +950,9 @@ function closeNav5() {
                    </tr>
                   <tr class="six_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -962,9 +972,9 @@ function closeNav5() {
                    </tr>
                   <tr class="sev_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -984,9 +994,9 @@ function closeNav5() {
                    </tr>
                   <tr class="eig_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1006,9 +1016,9 @@ function closeNav5() {
                    </tr>
                   <tr class="nin_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1028,9 +1038,9 @@ function closeNav5() {
                    </tr>
                   <tr class="ten_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1058,9 +1068,9 @@ function closeNav5() {
                 <thead class="thead1">
                   <tr>
                     <th class="th_b1_4">
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
@@ -1076,9 +1086,9 @@ function closeNav5() {
                 <tbody id="myTable">
                   <tr class="frst_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
@@ -1099,9 +1109,9 @@ function closeNav5() {
                    </tr>
                   <tr class=" scnd_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
                     </th> 
@@ -1122,9 +1132,9 @@ function closeNav5() {
                    
                   <tr class="trd_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                       <span class="spn_atc_ml flt_r" title="New Mail" data-placement="top" data-toggle="tooltip"><i class="fa fa-envelope"></i></span>
@@ -1144,9 +1154,9 @@ function closeNav5() {
                    </tr>
                   <tr class="fou_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1165,9 +1175,9 @@ function closeNav5() {
                    </tr>
                   <tr class="fiv_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1186,9 +1196,9 @@ function closeNav5() {
                    </tr>
                   <tr class="six_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1207,9 +1217,9 @@ function closeNav5() {
                    </tr>
                   <tr class="sev_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1228,9 +1238,9 @@ function closeNav5() {
                    </tr>
                   <tr class="eig_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1249,9 +1259,9 @@ function closeNav5() {
                    </tr>
                   <tr class="nin_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1270,9 +1280,9 @@ function closeNav5() {
                    </tr>
                   <tr class="ten_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1298,27 +1308,28 @@ function closeNav5() {
               <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
+                  <tr>
                     <th class="th_b1_4">
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck" id="chk_al"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </th>
                     <th class="th_b2 tr_l">Subject </th>
                     <th class="th_b4 tr_l">From</th>
-                    <th class="th_b6 tr_l">Division</th>
+                    <th class="th_b7 tr_l">Division</th>
                      <th class="th_b7">Date and Time</th>
                      <th class="th_b1">Status</th>
-                     <th class="th_b4">Actions</th>
+                     <th class="th_b2">Actions</th>
                   </tr>
                 </thead>
                 <tbody id="myTable">
                   <tr class="frst_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </th> 
@@ -1339,9 +1350,9 @@ function closeNav5() {
                    </tr>
                   <tr class=" scnd_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                     </th> 
                     <td class=" tr_l">Attachment 2
@@ -1362,9 +1373,9 @@ function closeNav5() {
                    
                   <tr class="trd_row">
                     <th>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </th> 
@@ -1384,9 +1395,9 @@ function closeNav5() {
                    </tr>
                   <tr class="fou_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                     </td> 
                     <td class=" tr_l">Attachment 4</td>
@@ -1405,9 +1416,9 @@ function closeNav5() {
                    </tr>
                   <tr class="fiv_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                     </td> 
                     <td class=" tr_l">Attachment 5</td>
@@ -1426,9 +1437,9 @@ function closeNav5() {
                    </tr>
                   <tr class="six_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1448,9 +1459,9 @@ function closeNav5() {
                    </tr>
                   <tr class="sev_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1470,9 +1481,9 @@ function closeNav5() {
                    </tr>
                   <tr class="eig_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1492,9 +1503,9 @@ function closeNav5() {
                    </tr>
                   <tr class="nin_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1514,9 +1525,9 @@ function closeNav5() {
                    </tr>
                   <tr class="ten_row">
                     <td>
-                      <span class="button-checkbox flt_l">
-                        <button type="button" class="active btn-p" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-check-square-o"></i>Â&nbsp;</button>
-                        <input type="checkbox" class="hidden">
+                      <span class="flt_l butn-chk">
+                        <button type="button" class="act_btck"><i class="nor_fa state-icon fa fa-square-o"></i><i class="act_fa state-icon fa fa-check-square-o" style="display: none;"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidew" style="display:none;">
                       </span>
                       <span class="spn_atc_ml" title="Attachment" data-placement="top" data-toggle="tooltip"><i class="fa fa-paperclip"></i></span>
                     </td> 
@@ -1544,7 +1555,7 @@ function closeNav5() {
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
                            <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
+                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.comsdfsdfsdffzdsfsdfgsd</span></div>
                            <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
                            <div class="msg_1_hdr_rgt flt_r">
                               <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
@@ -1583,7 +1594,7 @@ function closeNav5() {
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
                            <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
+                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.comdsfsdfsdfsdf</span></div>
                            <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
                            <div class="msg_1_hdr_rgt flt_r">
                               <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
@@ -1594,33 +1605,11 @@ function closeNav5() {
                               <button class="btn btn_mail_bz mb_trash" title="Push to Trash" data-toggle="modal" data-target="#reason_trash"><i class="fa fa-trash"></i></button>
                             </div>
                          </div>
-                         <div class="dtl_msgbox"><!-- 
-                          <script src="https://cdn.ckeditor.com/4.8.0/full-all/ckeditor.js"></script> -->
-                          <textarea name="" id="editor1" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor1', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener1" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">1</span></button>
+                         <div class="dtl_msgbox">
+                          <div class="dtl_bx_ar">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+                          </div>
+                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
                           <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1 cls_msg_dtl" title="Close Details"><i class="fa fa-close"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
@@ -1628,6 +1617,9 @@ function closeNav5() {
                               <h3 class="popover-title">Attachment</h3>
                               <div class="popover-content">
                                 <li class="list_m_atch"><a href="#">Attachment 1</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 2</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 3</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
                               </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
                                 <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
                             </div>
@@ -1641,7 +1633,7 @@ function closeNav5() {
                        <span class="heig_msg1">
                          <div class="dtl_heaz">
                            <div class="spn_bdge">From: <span class="cnt_from" title="Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com">Faiz@compzit.comFaiz@compzit.comFaiz@compzit.comFaiz@compzit.com</span></div>
-                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.com</span></div>
+                           <div class="spn_bdge">To: <span class="cnt_to" title="test@compzit.com">test@compzit.comdfdsfsdfsd</span></div>
                            <div class="spn_bdge">Subject: <span class="cnt_msg" title="Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj">Test Message thjkens sdjskd fdjskdjs sdjskdj sds; dsdjskjdskdj</span></div>
                            <div class="msg_1_hdr_rgt flt_r">
                               <button class="btn btn_mail_bz mb_forward" title="Forward" data-toggle="modal" data-target="#forward_to"><i class="fa fa-share"></i></button>
@@ -1653,31 +1645,10 @@ function closeNav5() {
                             </div>
                          </div>
                          <div class="dtl_msgbox">
-                          <textarea name="" id="editor2" cols="30" rows="4" disabled="">
-                            [OracleException (0x80004005): ORA-12541: TNS:no listener]
-   Oracle.DataAccess.Client.OracleException.HandleErrorHelper(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, OpoSqlValCtx* pOpoSqlValCtx, Object src, String procedure, Boolean bCheck) +1477
-   Oracle.DataAccess.Client.OracleException.HandleError(Int32 errCode, OracleConnection conn, IntPtr opsErrCtx, Object src) +49
-   Oracle.DataAccess.Client.OracleConnection.Open() +4794
-                          </textarea>
-                          <script type="text/javascript">
-                            CKEDITOR.replace('editor2', {
-                            skin: 'moono',
-                            enterMode: CKEDITOR.ENTER_BR,
-                            shiftEnterMode:CKEDITOR.ENTER_P,
-                            toolbar: [{ name: 'basicstyles', groups: [ 'basicstyles' ], items: [ 'Bold', 'Italic', 'Underline', "-", 'TextColor', 'BGColor' ] },
-                                       { name: 'styles', items: [ 'Format', 'Font', 'FontSize' ] },
-                                       { name: 'scripts', items: [ 'Subscript', 'Superscript' ] },
-                                       { name: 'justify', groups: [ 'blocks', 'align' ], items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock' ] },
-                                       { name: 'paragraph', groups: [ 'list', 'indent' ], items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'] },
-                                       { name: 'links', items: [ 'Link', 'Unlink' ] },
-                                       { name: 'insert', items: [ 'Image'] },
-                                       { name: 'spell', items: [ 'jQuerySpellChecker' ] },
-                                       { name: 'table', items: [ 'Table' ] }
-                                       ],
-                          });
-
-                          </script>
-                         <button class="attach_doc" id="popoverOpener2" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">3</span></button>
+                          <div class="dtl_bx_ar">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+                          </div>
+                         <button class="attach_doc" id="popoverOpener" data-height="400" data-width="600"><i class="fa fa-paperclip"></i> <span class="badge cht1 badge-success bdg_attch">4</span></button>
                           <button class="btn act_btn bn1 flt_r hide_msg_lst hid_dtl1 cls_msg_dtl" title="Close Details"><i class="fa fa-close"></i></button>
                           <div id="popoverWrapper">
                             <div class="popover" role="tooltip">
@@ -1687,6 +1658,7 @@ function closeNav5() {
                                 <li class="list_m_atch"><a href="#">Attachment 1</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 2</a></li>
                                 <li class="list_m_atch"><a href="#">Attachment 3</a></li>
+                                <li class="list_m_atch"><a href="#">Attachment 4</a></li>
                               </div><div class="clearfix"></div><div class="devider mb_bmsg"></div>
                                 <button class="btn btn-danger btn-dz flt_r bt_clz_atch"><i class="fa fa-close"></i></button>
                             </div>
@@ -1828,7 +1800,7 @@ function closeNav5() {
                  <th class="col-md-1 tr_l">Ref#</th>
                 <th class="col-md-1">Date </th>
                 <th class="col-md-4 tr_l">Customer Name</th>
-                 <th class="col-md-3">Employee</th>
+                 <th class="col-md-3 tr_l">Employee</th>
                  <th class="col-md-2">Status</th>
                  <th class="col-md-1">Actions</th>
               </tr>
@@ -2017,77 +1989,6 @@ function myFunction() {
     }
 }
 </script>
-
-<!----checkbox_started-->
-<script type="text/javascript">
-$(function () {
-    $('.button-checkbox').each(function () {
-
-        // Settings
-        var $widget = $(this),
-            $button = $widget.find('button'),
-            $checkbox = $widget.find('input:checkbox'),
-            color = $button.data('color'),
-            settings = {
-                on: {
-                    icon: 'fa fa-check-square-o'
-                },
-                off: {
-                    icon: 'fa fa-square-o gly2'
-                }
-            };
-
-        // Event Handlers
-        $button.on('click', function () {
-            $checkbox.prop('checked', !$checkbox.is(':checked'));
-            $checkbox.triggerHandler('change');
-            updateDisplay();
-        });
-        $checkbox.on('change', function () {
-            updateDisplay();
-        });
-
-        // Actions
-        function updateDisplay() {
-            var isChecked = $checkbox.is(':checked');
-
-            // Set the button's state
-            $button.data('state', (isChecked) ? "on" : "off");
-
-            // Set the button's icon
-            $button.find('.state-icon')
-                .removeClass()
-                .addClass('state-icon ' + settings[$button.data('state')].icon);
-
-            // Update the button's color
-            if (isChecked) {
-                $button
-                    .removeClass('btn-d')
-                    .addClass('btn-' + color + ' active');
-            }
-            else {
-                $button
-                    .removeClass('btn-' + color)
-                    .addClass('btn-d' + ' active');
-            }
-        }
-
-        // Initialization
-        function init() {
-
-            updateDisplay();
-
-            // Inject the icon if applicable
-            if ($button.find('.state-icon').length == 0) {
-                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
-            }
-        }
-        init();
-    });
-});
-
-</script>
-<!--checkbox_closed-->
 
 <script>
 function openCity(evt, cityName) {
@@ -2885,6 +2786,123 @@ $(document).on('keydown', function(e) {
 <style type="text/css">
   .content_container{overflow-y: hidden;}
 </style>
+
+<!----checkbox_started-->
+<script>
+$(document).ready(function(){
+  $("#chk_al .nor_fa").click(function(){
+    $(".act_fa").fadeIn(100);
+    $(".nor_fa").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+  $("#chk_al .act_fa").click(function(){
+    $(".act_fa").fadeOut(100);
+    $(".nor_fa").fadeIn(100);
+$('.hidew').prop('checked',false);
+  });
+    $("#chk1 #nor1").click(function(){
+    $("#act1").fadeIn(100);
+    $("#nor1").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk1 #act1").click(function(){
+    $("#act1").fadeOut(100);
+    $("#nor1").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk2 #nor2").click(function(){
+    $("#act2").fadeIn(100);
+    $("#nor2").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk2 #act2").click(function(){
+    $("#act2").fadeOut(100);
+    $("#nor2").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk3 #nor3").click(function(){
+    $("#act3").fadeIn(100);
+    $("#nor3").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk3 #act3").click(function(){
+    $("#act3").fadeOut(100);
+    $("#nor3").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk4 #nor4").click(function(){
+    $("#act4").fadeIn(100);
+    $("#nor4").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk4 #act4").click(function(){
+    $("#act4").fadeOut(100);
+    $("#nor4").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk5 #nor5").click(function(){
+    $("#act5").fadeIn(100);
+    $("#nor5").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk5 #act5").click(function(){
+    $("#act5").fadeOut(100);
+    $("#nor5").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk6 #nor6").click(function(){
+    $("#act6").fadeIn(100);
+    $("#nor6").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk6 #act6").click(function(){
+    $("#act6").fadeOut(100);
+    $("#nor6").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk7 #nor7").click(function(){
+    $("#act7").fadeIn(100);
+    $("#nor7").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk7 #act7").click(function(){
+    $("#act7").fadeOut(100);
+    $("#nor7").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk8 #nor8").click(function(){
+    $("#act8").fadeIn(100);
+    $("#nor8").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk8 #act8").click(function(){
+    $("#act8").fadeOut(100);
+    $("#nor8").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk9 #nor9").click(function(){
+    $("#act9").fadeIn(100);
+    $("#nor9").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk9 #act9").click(function(){
+    $("#act9").fadeOut(100);
+    $("#nor9").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk10 #nor10").click(function(){
+    $("#act10").fadeIn(100);
+    $("#nor10").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+    $("#chk10 #act10").click(function(){
+    $("#act10").fadeOut(100);
+    $("#nor10").fadeIn(100);
+$('.hidew').prop('checked',true);
+  });
+});
+</script>
+<!--checkbox_closed-->
 
 </body>
 </html>

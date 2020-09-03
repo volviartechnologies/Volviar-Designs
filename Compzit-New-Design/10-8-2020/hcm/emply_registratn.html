@@ -95,6 +95,12 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
+<!---multiple selection css-->
+ <script type="text/javascript" src="../m_select/mock.js"></script>  
+  <link rel="stylesheet" type="text/css" href="../m_select/jquery.dropdown.css">
+  <script src="../m_select/jquery.dropdown.js"></script>
+<!---multiple selection css closed--->
+
 <!--------css_Included_closed------->
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
@@ -959,10 +965,26 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
+<!---inner_content_sections area_started-->
           <h1 class="h1_con">Employee Registration</h1>
 
-            <div class="form-group fg2">
+
+        <div class="form-group fg5 sa_o_fg1">
+          <label for="pwd" class="fg2_la1">Last Resumed Date:<span class="spn1"></span></label>
+          <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr" type="text" autofocus="" />
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg5 sa_o_fg1">
+          <label for="pwd" class="fg2_la1">EOS Settlement Date:<span class="spn1"></span></label>
+          <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr" type="text" />
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+
+            <div class="form-group fg5">
               <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
               <select class="form-control fg2_inp1 inp_mst">
                 <option>Active</option>
@@ -971,7 +993,7 @@ function closeNav5() {
               </select>           
             </div>
 
-            <div class="fg7_5 sa_fg2">
+            <div class="fg7 sa_fg2">
               <label class="form1 mar_bo mar_tp lb_wa">
                 <span class="button-checkbox">
                   <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
@@ -981,15 +1003,15 @@ function closeNav5() {
               </label>
             </div>
 
-            <div class="fg2">
+            <div class="fg8">
               <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
               <button class="submit_ser"></button>
               <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
             </div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
         
         
         <div class="r_640">  
@@ -1183,9 +1205,9 @@ function closeNav5() {
       </div>
     </div>
   </div>
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened----------------------------------------------------------->
 
-<!-------------------footer_section_opened------------------------------------->
+<!-------------------footer_section_opened------------------------------------>
   <a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
 
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
@@ -1200,23 +1222,24 @@ function closeNav5() {
 </div><!--wrapper_closed-->
 
 
-<!---print_button--->
+<!---print_button-->
 <a href="#" type="button" class="print_o" title="Print page">
   <i class="fa fa-print"></i>
 </a>
-<!---print_button_closed--->
+<!---print_button_closed-->
 
-<!---add_button--->
+<!---add_button-->
 <a href="add_employee.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
 <i class="fa fa-plus-circle"></i>
 </a>
-<!---add_button_closed--->
+<!---add_button_closed-->
 
 
-<div class="import_opt">
-  <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
-  <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
-</div>
+<!---import_button_section-->
+<a href="#" type="button" class="imprt_o" title="Export Employee Details" data-toggle="modal" data-target="#exprt_emply">
+  <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+</a>
+
 <!---import_button_section_closed--->
 
 
@@ -1260,7 +1283,6 @@ function closeNav5() {
       <div class="modal-footer mo_ft1">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-        
       </div>
     </div>
   </div>
@@ -1308,6 +1330,89 @@ function closeNav5() {
       <div class="modal-footer mbo_tp">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button><!-- 
         <button type="button" class="btn btn-primary">Proceed</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal_Export_emply -->
+<div class="modal fade" id="exprt_emply" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog flt_r" role="document" style="width: 70%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Export Employee Details</h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="max-height:250px;overflow:auto;">
+        <div class="fg6 sa_2 sa_640_i">
+          <label class="l_b">Business Units:<span class="spn1"></span></label><br>
+          <div class="dropdown-mul-1" style="margin-right: 10px!important;">
+            <select style="display:none;width: 96%;" multiple placeholder="Select"> </select>
+          </div>
+        </div>
+
+        <div class="fg6 sa_2 sa_640_i">
+          <label class="l_b">Department:<span class="spn1"></span></label><br>
+          <div class="dropdown-mul-1" style="margin-right: 10px!important;">
+            <select style="display:none;width: 96%;" multiple placeholder="Select" disabled=""> </select>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="form-group fg6">
+          <label for="email" class="fg2_la1">Employee Type:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1">
+            <option>Staff</option>
+            <option>Worker</option>
+            <option>All</option>
+          </select>           
+        </div>
+
+        <div class="form-group fg6">
+          <label for="email" class="fg2_la1">Status:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1">
+            <option>Active</option>
+            <option>Inactive</option>
+            <option>On Leave</option>
+            <option>Resign</option>
+            <option>Termination</option>
+            <option>Retirement</option>
+            <option>Abscond</option>
+            <option>Death</option>
+            <option>Resume</option>
+            <option>Under Police Custody</option>
+            <option>Other</option>
+            <option>All</option>
+          </select>           
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-success">Export</button>
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- Modal_status -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
       </div>
     </div>
   </div>
@@ -1567,30 +1672,85 @@ function myFunction_b() {
 </script>
 
 
-
+<!---date_pickers--->
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
 
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker1').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
-
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker2').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker5").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker6").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker7").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker8").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+<!---date_picker_closed-->
 
 
 
@@ -1758,7 +1918,63 @@ $(document).ready(function(){
 </script>
 
 <!----alert_message_script_closed--->
+<!-- 
+<link href="../css/select2.min.css" rel="stylesheet" /> -->
+<script src="../js/select2.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
 
+<!---multiple selection new_script-->
+  <script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(false)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+
+    $('.dropdown-mul-2').dropdown({
+      limitCount: 5,
+      searchable: false
+    });
+
+    $('.dropdown-sin-1').dropdown({
+      readOnly: true,
+      input: '<input type="text" maxLength="20" placeholder="" disabled="">'
+    });
+
+    $('.dropdown-sin-2').dropdown({
+      data: json2.data,
+      input: '<input type="text" maxLength="20" placeholder="">'
+    });
+  </script>
+
+<style type="text/css">
+  .dropdown-display-label{padding:3px 25px 5px 0!important;}
+  .l_b{margin-bottom:0px!important;    font-size: 13px;}
+  .dropdown-multiple-label{max-width: 90%!important;margin-bottom:0px!important;}
+  .dropdown-main ul{max-height: 150px;}
+  .dropdown-main{position:relative;}
+</style>
 
 </body>
 </html>

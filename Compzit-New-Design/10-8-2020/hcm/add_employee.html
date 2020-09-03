@@ -996,7 +996,7 @@ function MM_swapImage() { //v3.0
               <h3>Personal Details</h3>
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">First Name:<span class="spn1">*</span></label>
-                <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="First Name">
+                <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="First Name" autofocus="">
               </div>
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Middle Name:<span class="spn1"></span></label>
@@ -1006,6 +1006,38 @@ function MM_swapImage() { //v3.0
                 <label for="email" class="fg2_la1">Last Name:<span class="spn1">*</span></label>
                 <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Last Name">
               </div>
+              <div class="form-group fg4 sa_2 sa_640_i sa_480">
+                <label for="email" class="fg2_la1">Gender:<span class="spn1">*</span></label>
+                <div class="row rl_prt">
+                  <div class="prtd_rat">
+                    <div class="form-check fg4">
+                      <input class="form-check-input tem_tnsr" type="radio" name="Gender_opt1" id="gridRadios_1" value="option_1" checked="">
+                      <label class="form-check-label" for="gridRadios_1">Male</label>
+                    </div>
+                    <div class="form-check fg4">
+                      <input class="form-check-input per_tnsr" type="radio" name="Gender_opt1" id="gridRadios_2" value="option_2">
+                      <label class="form-check-label" for="gridRadios_2">Female</label>
+                    </div>
+                    <div class="form-check fg4">
+                      <input class="form-check-input per_tnsr" type="radio" name="Gender_opt1" id="gridRadios_3" value="option_3">
+                      <label class="form-check-label" for="gridRadios_3">Other</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group fg4 sa_2 sa_640_i sa_480">
+                <label for="email" class="fg2_la1">Nationality:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                  <option>Indian</option>
+                  <option>Europian</option>
+                  <option>American</option>
+                </select> 
+              </div>
+              <div class="form-group fg4 sa_2 sa_640_i sa_480">
+                <label for="email" class="fg2_la1">National ID#:<span class="spn1"></span></label>
+                <input type="text" class="form-control fg2_inp1" placeholder="National ID#">
+              </div> 
+
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Designation:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 fg_chs2 inp_mst des_1">
@@ -1023,10 +1055,6 @@ function MM_swapImage() { //v3.0
                 </select> 
               </div>
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">National ID#:<span class="spn1"></span></label>
-                <input type="text" class="form-control fg2_inp1" placeholder="National ID#">
-              </div>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Employment Type:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 fg_chs2 inp_mst">
                   <option>Permanent</option>
@@ -1037,33 +1065,6 @@ function MM_swapImage() { //v3.0
                 <label for="email" class="fg2_la1">Mobile#:<span class="spn1"></span></label>
                 <input type="text" class="form-control fg2_inp1" placeholder="Mobile#">
               </div>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Nationality:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-                  <option>Indian</option>
-                  <option>Europian</option>
-                  <option>American</option>
-                </select> 
-              </div>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Gender:<span class="spn1">*</span></label>
-                <div class="row rl_prt">
-                  <div class="prtd_rat">
-                    <div class="form-check fg4">
-                      <input class="form-check-input tem_tnsr" type="radio" name="Gender_opt" id="gridRadios_1" value="option_1" checked="">
-                      <label class="form-check-label" for="gridRadios1">Male</label>
-                    </div>
-                    <div class="form-check fg4">
-                      <input class="form-check-input per_tnsr" type="radio" name="Gender_opt" id="gridRadios_1" value="option_1">
-                      <label class="form-check-label" for="gridRadios2">Female</label>
-                    </div>
-                    <div class="form-check fg4">
-                      <input class="form-check-input per_tnsr" type="radio" name="Gender_opt" id="gridRadios_1" value="option_1">
-                      <label class="form-check-label" for="gridRadios2">Other</label>
-                    </div>
-                  </div>
-                </div>
-              </div> 
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Employee Type:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 fg_chs2 inp_mst">

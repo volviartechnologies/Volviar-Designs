@@ -104,7 +104,7 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
-<!--------css_Included_closed------->
+<!--------css_Included_closed------>
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
 
@@ -112,6 +112,7 @@ function closeNav5() {
 
 </head>
 <body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+  <div id="loader"></div>
 
  <div class="mySave1" id="mySave">
   <div class="save_sec">
@@ -222,7 +223,7 @@ function closeNav5() {
     </div>
   </div>
 </div>
-<!------------------mySidenav4_closed--------------------->
+<!------------------mySidenav4_closed-------------------->
 
 
   <div class="wrapper wr2" onmouseover="closesave()">
@@ -240,7 +241,7 @@ function closeNav5() {
     </div>
 </a>
 
-<!------------------mySidenav7_opened--------------------->
+<!------------------mySidenav7_opened-------------------->
 <div id="mySidenav7" class="sidenav7">
   <a href="#" onclick="closeNav7()">
     <i class="fa fa-arrow-circle-right fa_arro1"></i>
@@ -587,8 +588,8 @@ function closeNav5() {
                 <td>12345</td>
                 <td>
                   <div class="btn_stl1 opp_icoz">
-                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
+                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                      <i class="fa fa-edit" data-placement="top" data-toggle="tooltip" data-original-title="New Mail"></i>
                     </button>
                       <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
                        <i class="fa fa-external-link"></i>
@@ -679,7 +680,7 @@ function closeNav5() {
                       </ul>
                     </span>
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn6 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
+                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
                         <i class="fa fa-indent"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
@@ -710,6 +711,9 @@ function closeNav5() {
                         </li>
                       </ul>
                     </span>
+                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Quotation Print">
+                      <i class="fa fa-print"></i>
+                    </button>
 
                   </div>
                 </td>
@@ -820,7 +824,7 @@ function closeNav5() {
                       </ul>
                     </span>
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn6 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
+                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
                         <i class="fa fa-indent"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
@@ -961,7 +965,7 @@ function closeNav5() {
                       </ul>
                     </span>
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn6 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
+                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
                         <i class="fa fa-indent"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
@@ -1960,7 +1964,7 @@ function closeNav5() {
         </div>
         <div class="fg12 mar_bo1">
           <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-          <textarea rows="4" cols="48" class="form-control flt_l dt_wdt" placeholder="Write Something Here"></textarea>
+          <textarea rows="4" cols="48" class="form-control flt_l dt_wdt" placeholder="Description"></textarea>
         </div>
         <div class="fg12 ">
           <label for="email" class="fg2_la1 pad_l">Send regret mail:<span class="spn1"></span></label>
@@ -2364,7 +2368,7 @@ function closeNav() {
 }
 </script>
 
-app_more button_onclick----->
+
 <script>
 function openNav1() {
     document.getElementById("mySidenav1").style.height = "200px";
@@ -2745,6 +2749,13 @@ $(document).ready(function(){
   });
 });
 </script>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+
 
 </body>
 </html>
