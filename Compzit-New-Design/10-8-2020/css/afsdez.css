@@ -1183,7 +1183,7 @@ input:checked + .slider_tog {
 }
 
 input:focus + .slider_tog {
-  box-shadow: 0 0 4px #2196F3;
+  box-shadow: 0px 0px 12px #0092f9;
 }
 
 input:checked + .slider_tog:before {

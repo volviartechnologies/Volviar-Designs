@@ -588,56 +588,58 @@ function closeNav5() {
                 <td>12345</td>
                 <td>
                   <div class="btn_stl1 opp_icoz">
-                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
-                      <i class="fa fa-edit" data-placement="top" data-toggle="tooltip" data-original-title="New Mail"></i>
+                      <a >
+                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="top" title="Edit">
+                        <i class="fa fa-edit"></i>
                     </button>
-                      <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+                      </a>
+                      <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" data-tt="tooltip" data-placement="top" title="Add Followup / Task">
                        <i class="fa fa-external-link"></i>
                      </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="top" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
                     
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn7 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Quotation">
+                      <button class="btn act_btn bn7 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Quotation">
                         <i class="fa fa-file-text-o"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
-                          <a href="standard_template.html" title="Standerd Template" class="t1_a">
+                          <a href="standard_template.html" data-toggle="tooltip" data-placement="bottom" title="Standerd Template" class="t1_a">
                               <i class="fa fa-list-alt"></i> Standerd Template
                           </a>
                         </li>
                         <li>
-                          <a href="project_template.html" title="Project Template" class="t1_d_grn">
+                          <a href="project_template.html" data-toggle="tooltip" data-placement="bottom" title="Project Template" class="t1_d_grn">
                               <i class="fa fa-list-alt"></i> Project Template
                           </a>
                         </li>
                         <li>
-                          <a href="tender_template.html" title="Tender Template" class="t1_c_vio">
+                          <a href="tender_template.html" data-toggle="tooltip" data-placement="bottom" title="Tender Template" class="t1_c_vio">
                               <i class="fa fa-list-alt"></i> Tender Template
                           </a>
                         </li>
                       </ul>
                     </span>
 
-                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm Quotation">
+                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm Quotation" data-tt="tooltip" data-placement="top">
                       <i class="fa fa-check"></i>
                     </button>
 
-                    <button class="btn act_btn bn4 bt_e" type="button" data-toggle="modal" data-target="#" title="Quotation Delivery">
+                    <button class="btn act_btn bn4 bt_e" type="button" data-toggle="modal" data-target="#" data-tt="tooltip" data-placement="top" title="Quotation Delivery">
                       <i class="fa fa-calendar-check-o"></i>
                     </button>
 
-                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#reopen_qoute_box" title="Quotation Reopen">
+                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#reopen_qoute_box" data-tt="tooltip" data-placement="top" title="Quotation Reopen">
                       <i class="fa fa-repeat"></i>
                     </button>
 
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn1 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Change Quotation Status">
+                      <button class="btn act_btn bn1 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Change Quotation Status">
                       <i class="fa fa-window-restore"></i>
                     </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
                           <a href="#" data-toggle="modal" data-target="#exampleModal_st" title="Approved">
                             <i class="opp_ico_img ble opp_acs csz"><i class="">A</i> </i> Approved
@@ -652,10 +654,10 @@ function closeNav5() {
                     </span>
 
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn4 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Change Opportunity Status">
+                      <button class="btn act_btn bn4 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Change Opportunity Status">
                       <i class="fa fa-th-list"></i>
                     </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
                           <a href="#" data-toggle="modal" data-target="#win_box" title="Win">
                               <div class="bo_not1 mrl_bon flt_l">
@@ -680,38 +682,38 @@ function closeNav5() {
                       </ul>
                     </span>
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
+                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Activities">
                         <i class="fa fa-indent"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
-                          <a href="#" data-toggle="modal" data-target="#attachview_box" title="View Attachments">
+                          <a href="#" data-toggle="modal" data-target="#attachview_box" data-tt="tooltip" data-placement="bottom" title="View Attachments">
                             <i class="opp_ico_img"><img src="../images/icons/opp/view_attach.png"> </i> View Attachments
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#view_mail_box" title="View Emails">
+                          <a href="#" data-toggle="modal" data-target="#view_mail_box" data-tt="tooltip" data-placement="bottom" title="View Emails">
                             <i class="opp_ico_img"><img src="../images/icons/opp/view_mail.png"> </i> View Emails
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#note_qoute_box" title="Notes">
+                          <a href="#" data-toggle="modal" data-target="#note_qoute_box" data-tt="tooltip" data-placement="bottom" title="Notes">
                             <i class="opp_ico_img"><img src="../images/icons/opp/quot.notes.png"> </i> Notes
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#follow_box" title="Follow up / Tasks">
+                          <a href="#" data-toggle="modal" data-target="#follow_box" data-tt="tooltip" data-placement="bottom" title="Follow up / Tasks">
                             <i class="opp_ico_img"><i class="fa fa-book"></i> </i> Follow-up / Tasks
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#send_mail_box" title="Resend Emails">
+                          <a href="#" data-toggle="modal" data-target="#send_mail_box" data-tt="tooltip" data-placement="bottom" title="Resend Emails">
                             <i class="opp_ico_img"><img src="../images/icons/opp/snd_mail.png"> </i> Resend Emails
                           </a>
                         </li>
                       </ul>
                     </span>
-                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Quotation Print">
+                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="top" title="Quotation Print">
                       <i class="fa fa-print"></i>
                     </button>
 
@@ -732,56 +734,58 @@ function closeNav5() {
                 <td>12345</td>
                 <td>
                   <div class="btn_stl1 opp_icoz">
-                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
+                      <a >
+                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="bottom" title="Edit">
+                        <i class="fa fa-edit"></i>
                     </button>
-                      <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
+                      </a>
+                      <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" data-tt="tooltip" data-placement="bottom" title="Add Followup / Task">
                        <i class="fa fa-external-link"></i>
                      </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="bottom" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
                     
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn7 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Quotation">
+                      <button class="btn act_btn bn7 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="bottom" title="Quotation">
                         <i class="fa fa-file-text-o"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
-                          <a href="standard_template.html" title="Standerd Template" class="t1_a">
+                          <a href="standard_template.html" data-toggle="tooltip" data-placement="bottom" title="Standerd Template" class="t1_a">
                               <i class="fa fa-list-alt"></i> Standerd Template
                           </a>
                         </li>
                         <li>
-                          <a href="project_template.html" title="Project Template" class="t1_d_grn">
+                          <a href="project_template.html" data-toggle="tooltip" data-placement="bottom" title="Project Template" class="t1_d_grn">
                               <i class="fa fa-list-alt"></i> Project Template
                           </a>
                         </li>
                         <li>
-                          <a href="tender_template.html" title="Tender Template" class="t1_c_vio">
+                          <a href="tender_template.html" data-toggle="tooltip" data-placement="bottom" title="Tender Template" class="t1_c_vio">
                               <i class="fa fa-list-alt"></i> Tender Template
                           </a>
                         </li>
                       </ul>
                     </span>
 
-                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm Quotation">
+                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm Quotation" data-tt="tooltip" data-placement="bottom">
                       <i class="fa fa-check"></i>
                     </button>
 
-                    <button class="btn act_btn bn4 bt_e" type="button" data-toggle="modal" data-target="#" title="Quotation Delivery">
+                    <button class="btn act_btn bn4 bt_e" type="button" data-toggle="modal" data-target="#" data-tt="tooltip" data-placement="bottom" title="Quotation Delivery">
                       <i class="fa fa-calendar-check-o"></i>
                     </button>
 
-                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#reopen_qoute_box" title="Quotation Reopen">
+                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#reopen_qoute_box" data-tt="tooltip" data-placement="bottom" title="Quotation Reopen">
                       <i class="fa fa-repeat"></i>
                     </button>
 
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn1 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Change Quotation Status">
+                      <button class="btn act_btn bn1 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Change Quotation Status">
                       <i class="fa fa-window-restore"></i>
                     </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
                           <a href="#" data-toggle="modal" data-target="#exampleModal_st" title="Approved">
                             <i class="opp_ico_img ble opp_acs csz"><i class="">A</i> </i> Approved
@@ -796,10 +800,10 @@ function closeNav5() {
                     </span>
 
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn4 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Change Opportunity Status">
+                      <button class="btn act_btn bn4 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Change Opportunity Status">
                       <i class="fa fa-th-list"></i>
                     </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
                           <a href="#" data-toggle="modal" data-target="#win_box" title="Win">
                               <div class="bo_not1 mrl_bon flt_l">
@@ -824,37 +828,40 @@ function closeNav5() {
                       </ul>
                     </span>
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
+                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Activities">
                         <i class="fa fa-indent"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
-                          <a href="#" data-toggle="modal" data-target="#attachview_box" title="View Attachments">
+                          <a href="#" data-toggle="modal" data-target="#attachview_box" data-tt="tooltip" data-placement="bottom" title="View Attachments">
                             <i class="opp_ico_img"><img src="../images/icons/opp/view_attach.png"> </i> View Attachments
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#view_mail_box" title="View Emails">
+                          <a href="#" data-toggle="modal" data-target="#view_mail_box" data-tt="tooltip" data-placement="bottom" title="View Emails">
                             <i class="opp_ico_img"><img src="../images/icons/opp/view_mail.png"> </i> View Emails
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#note_qoute_box" title="Notes">
+                          <a href="#" data-toggle="modal" data-target="#note_qoute_box" data-tt="tooltip" data-placement="bottom" title="Notes">
                             <i class="opp_ico_img"><img src="../images/icons/opp/quot.notes.png"> </i> Notes
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#follow_box" title="Follow up / Tasks">
+                          <a href="#" data-toggle="modal" data-target="#follow_box" data-tt="tooltip" data-placement="bottom" title="Follow up / Tasks">
                             <i class="opp_ico_img"><i class="fa fa-book"></i> </i> Follow-up / Tasks
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#send_mail_box" title="Resend Emails">
+                          <a href="#" data-toggle="modal" data-target="#send_mail_box" data-tt="tooltip" data-placement="bottom" title="Resend Emails">
                             <i class="opp_ico_img"><img src="../images/icons/opp/snd_mail.png"> </i> Resend Emails
                           </a>
                         </li>
                       </ul>
                     </span>
+                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="bottom" title="Quotation Print">
+                      <i class="fa fa-print"></i>
+                    </button>
 
                   </div>
                 </td>
@@ -873,56 +880,58 @@ function closeNav5() {
                 <td>12345</td>
                 <td>
                   <div class="btn_stl1 opp_icoz">
-                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
+                      <a >
+                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="bottom" title="Edit">
+                        <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" title="Add Followup / Task">
-                     <i class="fa fa-external-link"></i>
-                   </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                      </a>
+                      <button class="btn act_btn bn8 bt_e" data-toggle="modal" data-target="#myModal_3" data-tt="tooltip" data-placement="bottom" title="Add Followup / Task">
+                       <i class="fa fa-external-link"></i>
+                     </button>
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="bottom" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
                     
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn7 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Quotation">
+                      <button class="btn act_btn bn7 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="bottom" title="Quotation">
                         <i class="fa fa-file-text-o"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
-                          <a href="standard_template.html" title="Standerd Template" class="t1_a">
+                          <a href="standard_template.html" data-toggle="tooltip" data-placement="bottom" title="Standerd Template" class="t1_a">
                               <i class="fa fa-list-alt"></i> Standerd Template
                           </a>
                         </li>
                         <li>
-                          <a href="project_template.html" title="Project Template" class="t1_d_grn">
+                          <a href="project_template.html" data-toggle="tooltip" data-placement="bottom" title="Project Template" class="t1_d_grn">
                               <i class="fa fa-list-alt"></i> Project Template
                           </a>
                         </li>
                         <li>
-                          <a href="tender_template.html" title="Tender Template" class="t1_c_vio">
+                          <a href="tender_template.html" data-toggle="tooltip" data-placement="bottom" title="Tender Template" class="t1_c_vio">
                               <i class="fa fa-list-alt"></i> Tender Template
                           </a>
                         </li>
                       </ul>
                     </span>
 
-                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm Quotation">
+                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm Quotation" data-tt="tooltip" data-placement="bottom">
                       <i class="fa fa-check"></i>
                     </button>
 
-                    <button class="btn act_btn bn4 bt_e" type="button" data-toggle="modal" data-target="#" title="Quotation Delivery">
+                    <button class="btn act_btn bn4 bt_e" type="button" data-toggle="modal" data-target="#" data-tt="tooltip" data-placement="bottom" title="Quotation Delivery">
                       <i class="fa fa-calendar-check-o"></i>
                     </button>
 
-                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#reopen_qoute_box" title="Quotation Reopen">
+                    <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#reopen_qoute_box" data-tt="tooltip" data-placement="bottom" title="Quotation Reopen">
                       <i class="fa fa-repeat"></i>
                     </button>
 
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn1 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Change Quotation Status">
+                      <button class="btn act_btn bn1 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Change Quotation Status">
                       <i class="fa fa-window-restore"></i>
                     </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
                           <a href="#" data-toggle="modal" data-target="#exampleModal_st" title="Approved">
                             <i class="opp_ico_img ble opp_acs csz"><i class="">A</i> </i> Approved
@@ -937,10 +946,10 @@ function closeNav5() {
                     </span>
 
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn4 bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Change Opportunity Status">
+                      <button class="btn act_btn bn4 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Change Opportunity Status">
                       <i class="fa fa-th-list"></i>
                     </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
                           <a href="#" data-toggle="modal" data-target="#win_box" title="Win">
                               <div class="bo_not1 mrl_bon flt_l">
@@ -965,37 +974,40 @@ function closeNav5() {
                       </ul>
                     </span>
                     <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" title="Activities">
+                      <button class="btn act_btn bn1 bt_e bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Activities">
                         <i class="fa fa-indent"></i>
                       </button>
                       <ul class="dropdown-menu drop_dn spn_drp_tbl" role="dialog" aria-haspopup="true" aria-expanded="false">
                         <li class="li1_cz">
-                          <a href="#" data-toggle="modal" data-target="#attachview_box" title="View Attachments">
+                          <a href="#" data-toggle="modal" data-target="#attachview_box" data-tt="tooltip" data-placement="bottom" title="View Attachments">
                             <i class="opp_ico_img"><img src="../images/icons/opp/view_attach.png"> </i> View Attachments
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#view_mail_box" title="View Emails">
+                          <a href="#" data-toggle="modal" data-target="#view_mail_box" data-tt="tooltip" data-placement="bottom" title="View Emails">
                             <i class="opp_ico_img"><img src="../images/icons/opp/view_mail.png"> </i> View Emails
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#note_qoute_box" title="Notes">
+                          <a href="#" data-toggle="modal" data-target="#note_qoute_box" data-tt="tooltip" data-placement="bottom" title="Notes">
                             <i class="opp_ico_img"><img src="../images/icons/opp/quot.notes.png"> </i> Notes
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#follow_box" title="Follow up / Tasks">
+                          <a href="#" data-toggle="modal" data-target="#follow_box" data-tt="tooltip" data-placement="bottom" title="Follow up / Tasks">
                             <i class="opp_ico_img"><i class="fa fa-book"></i> </i> Follow-up / Tasks
                           </a>
                         </li>
                         <li>
-                          <a href="#" data-toggle="modal" data-target="#send_mail_box" title="Resend Emails">
+                          <a href="#" data-toggle="modal" data-target="#send_mail_box" data-tt="tooltip" data-placement="bottom" title="Resend Emails">
                             <i class="opp_ico_img"><img src="../images/icons/opp/snd_mail.png"> </i> Resend Emails
                           </a>
                         </li>
                       </ul>
                     </span>
+                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" data-tt="tooltip" data-placement="bottom" title="Quotation Print">
+                      <i class="fa fa-print"></i>
+                    </button>
 
                   </div>
                 </td>
@@ -1055,6 +1067,7 @@ function closeNav5() {
   </div>
 </div>
 
+
 <!-- Modal_follow -->
 <div class="modal fade" id="follow_box" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog snd_box_rgt" role="document">
@@ -1091,7 +1104,7 @@ function closeNav5() {
               <td>25/01/2019 05.00PM</td>
               <td>25/01/2019 04.00PM</td>
               <td>
-                <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st1" title="Change Status">
                   <i class="fa fa-check-circle "></i>
                 </button>
                 <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
@@ -1115,7 +1128,7 @@ function closeNav5() {
               <td>27/01/2019 12.00PM</td>
               <td>25/01/2019 04.00PM</td>
               <td>
-                <button class="btn tab_but1 butn1 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                <button class="btn tab_but1 butn1 btn_sti" data-toggle="modal" data-target="#exampleModal_st1" title="Change Status">
                   <i class="fa fa-times-circle"></i>
                 </button>
                 <button class="btn act_btn bn4" data-toggle="modal" data-target="#view_follow" title="View">
@@ -1139,7 +1152,7 @@ function closeNav5() {
               <td>27/01/2019 12.00PM</td>
               <td>25/01/2019 04.00PM</td>
               <td>
-                <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st1" title="Change Status">
                   <i class="fa fa-check-circle "></i>
                 </button>
                 <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#myModal_3" title="Edit">
@@ -1161,6 +1174,26 @@ function closeNav5() {
 </div>
 </div>
 
+<!-- Modal_status -->
+<div class="modal fade" id="exampleModal_st1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog flt_r" role="document" style="margin-top:10%;">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal3_add follow -->
 <div class="modal fade" id="myModal_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -2751,9 +2784,10 @@ $(document).ready(function(){
 </script>
 
 <script>
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip(); 
-});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  $("[data-tt=tooltip]").tooltip();
+})
 </script>
 
 
