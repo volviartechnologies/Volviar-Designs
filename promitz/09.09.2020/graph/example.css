@@ -1,0 +1,22 @@
+
+.example-box {
+    width: 90%;
+    max-width: 1200px;
+    margin:0px auto;
+    background:rgba(166, 190, 236, 0.14);
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.example__headline {
+    text-align: center;
+}
+
+/*h1 {
+    margin-bottom: 50px;
+}*/
+.chart--horizontal .bar__container{margin-bottom:10px;}
+.chart__label-y{height: 31px;padding: 0 20px 6px 0;}
+.chart--horizontal .bar__container:after{padding-left: 27px;top: 77%;}
+.chart__container:not(.labels-above-bars) .label-y__name{color: #00aeef;font-weight: 400;font-size: 12px;}
+.chart--horizontal .bar__container:after{}
