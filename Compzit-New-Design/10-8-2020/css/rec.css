@@ -3383,3 +3383,15 @@ body{position: fixed;left: 0;right: 0;}
 .bt_cat_g1 .opp_ico_img_ptp img{margin-top:-5px;}
 .dp_qtn_n1{left: -160px;right: 27px;}
 .dp_qtn_n1:before{left: 166px;}
+.max_heiz{max-height: 120px;height: }
+.imp_70{width:77%!important;}
+.mr_bmt{margin: auto;float: left; margin-bottom:16px;}
+
+@media screen and (max-width:768px) {
+.imp_70{width:64%!important;}
+}
+@media screen and (max-width:480px) {
+.dt_wdt{width: 100%!important;}
+.inp_st {width: 70%!important;}
+
+}
