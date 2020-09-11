@@ -88,7 +88,15 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
 <link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
 
+<!---contrychoose_option-->
+<!-- <msdropdown> -->
+<link rel="stylesheet" type="text/css" href="../dr1/css/msdropdown/dd.css" />
+<script src="../dr1/js/msdropdown/jquery.dd.js"></script>
+<!-- </msdropdown> -->
+<link rel="stylesheet" type="text/css" href="../dr1/css/msdropdown/flags.css" />
+
 <link rel="stylesheet" type="text/css" href="../css/rec.css">
+<link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
 <link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
 
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
@@ -325,17 +333,13 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
+<!---inner_content_sections area_started-->
           <h1 class="h1_con h1_po">Add Purchase Order</h1>
-
-
-          <button class="btn btn-primary pull-right btn_po" onclick="openWin1()"><i class="fa fa-files-o"></i> Copy from existing PO</button>
           <div class="clearfix"></div>
-          <div class="free_sp"></div>
 
           <div class="form-group fg2 fg2_wf">
             <label for="email" class="fg2_la1">Purchase Order Type:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs1">
+            <select class="form-control fg2_inp1 fg_chs1 inp_mst" autofocus="">
               <option>Products</option>
               <option>Air Ticket</option>
               <option>Car Rental</option>
@@ -344,15 +348,15 @@ function closeNav5() {
           </div>
 
           <div class="form-group fg2 fg2_wf">
-            <label for="email" class="fg2_la1">Purchase Order ref#:<span class="spn1">*</span></label>
-            <input class="form-control fg2_inp1 fg_chs1" placeholder="123123" disabled="">           
+            <label for="email" class="fg2_la1">Purchase Order Ref#:<span class="spn1">*</span></label>
+            <input class="form-control fg2_inp1 fg_chs1 inp_mst" placeholder="123123" disabled="">           
           </div>
 
           <div class="form-group fg2 fg2_wf">
             <div class="tdte">
               <label for="pwd" class="fg2_la1">Purchase Order Date:<span class="spn1">*</span> </label>
               <div id="datepicker2" class="input-group date" data-date-format="mm-dd-yyyy">
-                <input class="form-control inp_bdr" id="dte_1" type="text"  />
+                <input class="form-control inp_bdr inp_mst" id="dte_1" type="text"  />
                 <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
               </div>
             </div> 
@@ -375,13 +379,13 @@ function closeNav5() {
 
           <div class="form-group fg2 fg2_wf1">
             <label for="email" class="fg2_la1 pad_l">Project:<span class="spn1">&nbsp;</span></label>
-            <select class="form-control fg2_inp1" name="browser" id="sly1">
+            <select class="form-control fg2_inp1 inp_projct" name="browser" id="sly1">
               <option>Project 1</option>
               <option>Project 2</option>
               <option>Project 3</option>
               <option>Project 4</option>
             </select>
-            <a href="javascript:;" onclick="openWin()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a>
+            <a href="javascript:;" data-toggle="modal" data-target="#popup_window1" title="Add New Project"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a>
           </div>
 
           <div class="form-group fg2 fg2_wf">
@@ -390,14 +394,14 @@ function closeNav5() {
           </div>
 
           <div class="form-group fg2 fg2_wf">
-            <label for="email" class="fg2_la1">End-customer Name:<span class="spn1"></span></label>
-            <input class="form-control fg2_inp1 fg_chs1" placeholder="End-customer Name">           
+            <label for="email" class="fg2_la1">End - customer Name:<span class="spn1"></span></label>
+            <input class="form-control fg2_inp1 fg_chs1" placeholder="End - customer Name">           
           </div>
           <div class="clearfix fx_c_h"></div>
 
           <div class="form-group fg2 fg2_wf">
             <label for="email" class="fg2_la1">Mode of Supply:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs1">
+            <select class="form-control fg2_inp1 fg_chs1 inp_mst">
               <option>Supply 1</option>
               <option>Supply 2</option>
               <option>Supply 3</option>
@@ -405,16 +409,16 @@ function closeNav5() {
           </div>
 
            <div class="form-group fg2 fg2_wf">
-            <label for="email" class="fg2_la1">Deliver To:<span class="spn1">*</span></label>
+            <label for="email" class="fg2_la1">Delivery Location to:<span class="spn1">*</span></label>
             <div class="mar_a flt_l fg2_wf1">
               <div class="form-group">
                 <label for="radio" class="fg2_la1 pa_tp0">
-                  <input type='radio' name="gender" />Warehouse
+                  <input type='radio' name="gender" checked="" />Warehouse
                 </label>
               </div>
               <div class="form-group">
                 <label for="radio" class="fg2_la1">
-                  <input type='radio' name="gender"/>Project Location
+                  <input type='radio' name="gender"/>Project site
                 </label>
               </div>
             </div>      
@@ -431,74 +435,41 @@ function closeNav5() {
             </select>      
           </div>
           <div class="form-group fg2 fg2_wf">
-            <label for="email" class="fg2_la1">Delivery Location:<span class="spn1"></span></label>
-            <textarea class="form-control fg2_inp1 fg_chs1" rows="4" placeholder="Delivery Location"></textarea>       
+            <label for="email" class="fg2_la1">Delivery Location Address:<span class="spn1"></span></label>
+            <textarea class="form-control fg2_inp1 fg_chs1" rows="3" placeholder="Delivery Location Address"></textarea>       
           </div>
         </div>
 
         <div class="ware_2">
           <div class="form-group fg6 fg2_wf">
-            <label for="email" class="fg2_la1">Delivery Location:<span class="spn1"></span></label>
-            <textarea class="form-control fg2_inp1 fg_chs1" rows="4" placeholder="Delivery Location"></textarea>       
+            <label for="email" class="fg2_la1">Delivery Location Address:<span class="spn1"></span></label>
+            <textarea class="form-control fg2_inp1 fg_chs1" rows="3" placeholder="Delivery Location Address"></textarea>       
           </div>
         </div>
 
-<!---=================section_devider============--->
-        <div class="clearfix"></div>
-        <div class="free_sp"></div>
-<!---=================section_devider============--->
-
-        <div class="form-group fg2 fg2_wf">
-          <label for="email" class="fg2_la1">Quotation Ref#:<span class="spn1"></span></label>
-          <input class="form-control fg2_inp1 fg_chs1" placeholder="Quotation Ref#">           
-        </div>
-
-        <div class="form-group fg2 fg2_wf">
-          <label for="email" class="fg2_la1">Quotation Date:<span class="spn1"></span></label>
-          <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr" id="dte_1" type="text"  />
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>          
-        </div>
-
-        <div class="form-group fg2 fg2_wf">
-          <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs1 inp_mst">
-            <option>QAR</option>
-            <option>INR</option>
-            <option>USD</option>
-          </select>          
-        </div>
-
-        <div class="form-group fg2 fg2_wf">
-          <label for="email" class="fg2_la1">Exchange Rate:<span class="spn1">*</span></label>
-          <input class="form-control fg2_inp1 fg_chs1 inp_mst tr_r" placeholder="0.00">           
-        </div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
     <div class="clearfix"></div>
-    <div class="free_sp"></div>
     <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
           <h3 class="h1_con">Vendor Details</h3>
 
           <div class="form-group fg2 fg2_wf">
-            <label for="email" class="fg2_la1 pad_l">Vendor Name:<span class="spn1">&nbsp;</span></label>
-            <select class="form-control fg2_inp1" name="browser" id="sly1" disabled="">
+            <label for="email" class="fg2_la1 pad_l">Vendor Name:<span class="spn1">&nbsp;</span>
+              <div class="rat_ven" title="Vendor Rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star-half-o checked"></span>
+                <span class="fa fa-star-o"></span>
+              </div>
+            </label>
+            <select class="form-control fg2_inp1 inp_projct" name="browser" id="sly1" disabled="">
               <option>Vendor 1</option>
               <option>Vendor 2</option>
               <option>Vendor 3</option>
               <option>Vendor 4</option>
             </select>
             <a href="javascript:;" onclick="openWin()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a>
-            <br>
-            <label class="fg2_la1 pad_l">Vendor Rating:</label>
-            <div class="rat_ven">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star-half-o checked"></span>
-              <span class="fa fa-star-o"></span>
-            </div>
           </div>
 
           <div class="form-group fg2 fg2_wf">
@@ -506,27 +477,31 @@ function closeNav5() {
             <input class="form-control fg2_inp1 fg_chs1" placeholder="Vendor Ref#">           
           </div>
 
-          <div class="form-group fg6 fg2_wf">
-            <label for="email" class="fg2_la1">Address:<span class="spn1"></span></label>
-            <textarea class="form-control fg2_inp1 fg_chs1" rows="4" placeholder="Address"></textarea>       
+         <div class="form-group fg2 fg2_wf">
+            <label for="email" class="fg2_la1">Vendor Contact Person:<span class="spn1">*</span></label>
+            <select class="form-control fg2_inp1 fg_chs1 inp_mst">
+              <option>Contact Person 1</option>
+              <option>Contact Person 2</option>
+              <option>Contact Person 3</option>
+            </select>      
           </div>
 
-      <!---=================section_devider============--->
+          <div class="form-group fg2 fg2_wf">
+            <label for="email" class="fg2_la1">Address:<span class="spn1"></span></label>
+            <input class="form-control fg2_inp1 fg_chs1" placeholder="Address">      
+          </div>
+
+      <!---=================section_devider============-->
                   <div class="clearfix"></div>
       <!---=================section_devider============-->
 
          <div class="form-group fg2 fg2_wf">
-            <label for="email" class="fg2_la1">Vendor Contact person:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs1 inp_mst">
-              <option>Contact person 1</option>
-              <option>Contact person 2</option>
-              <option>Contact person 3</option>
-            </select>      
-          </div>
-
-         <div class="form-group fg2 fg2_wf">
             <label for="email" class="fg2_la1">Mobile#:<span class="spn1"></span></label>
             <input class="form-control fg2_inp1 fg_chs1" placeholder="Mobile#">           
+          </div>
+          <div class="form-group fg2 fg2_wf">
+            <label for="email" class="fg2_la1">Email ID:<span class="spn1"></span></label>
+            <input class="form-control fg2_inp1 fg_chs1" placeholder="Email ID">           
           </div>
 
           <div class="form-group fg2 fg2_wf">
@@ -538,7 +513,35 @@ function closeNav5() {
             <label for="email" class="fg2_la1">Fax#:<span class="spn1"></span></label>
             <input class="form-control fg2_inp1 fg_chs1" placeholder="Fax#">           
           </div>
-          <div class="form-group fg6 po_chk fg2_wf1">
+
+          <div class="form-group fg2 fg2_wf">
+            <label for="email" class="fg2_la1">Quotation Ref#:<span class="spn1"></span></label>
+            <input class="form-control fg2_inp1 fg_chs1" placeholder="Quotation Ref#">           
+          </div>
+
+          <div class="form-group fg2 fg2_wf">
+            <label for="email" class="fg2_la1">Quotation Date:<span class="spn1"></span></label>
+            <div id="datepicker3" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr" id="dte_1" type="text"  />
+              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+            </div>          
+          </div>
+
+          <div class="form-group fg2 fg2_wf">
+            <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
+            <select name="countries" id="countries" class="form-control fg2_inp1 inp_mst" >
+              <option value='ad' data-image="..\images\icons\opp\inr.png" data-imagecss="flag ad" data-title="QAR" selected="">QAR</option>
+              <option value='ae' data-image="..\images\icons\opp\inr.png" data-imagecss="flag ae" data-title="INR">INR</option>
+              <option value='af' data-image="..\images\icons\opp\inr.png" data-imagecss="flag af" data-title="AED">AED</option>
+            </select> 
+          </div>
+
+          <div class="form-group fg2 fg2_wf">
+            <label for="email" class="fg2_la1">Exchange Rate:<span class="spn1">*</span></label>
+            <input class="form-control fg2_inp1 fg_chs1 inp_mst tr_r" placeholder="0.00">           
+          </div>
+          <div class="form-group fg2 po_chk fg2_wf1">
+            <label for="email" class="fg2_la1">Primary Contact:<span class="spn1"></span></label>
             <div class="check1">
               <div class="">
                 <label class="switch">
@@ -547,21 +550,14 @@ function closeNav5() {
                 </label>
               </div>
             </div>
-            <p>Use these contact details as default information in future PO's
-          </p>
-        </div>
-        <div class="form-group fg2 fg2_wf">
-          <label for="email" class="fg2_la1">Email ID:<span class="spn1"></span></label>
-          <input class="form-control fg2_inp1 fg_chs1" placeholder="Email ID">           
         </div>
         <div class="form-group fg2 fg2_wf">
           <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
             <textarea class="form-control fg2_inp1 fg_chs1" rows="2" placeholder="Comments"></textarea>           
         </div>
           
-<!---=================section_devider============--->
+<!---=================section_devider============-->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
       <div class="devider"></div>
 <!---=================section_devider============-->
 
@@ -586,7 +582,7 @@ function closeNav5() {
 
         <div class="form-group fg2 fg2_wf">
           <label for="email" class="fg2_la1">Date of Requirement:<span class="spn1"></span></label>
-          <div id="datepicker4" class="input-group date" data-date-format="mm-dd-yyyy">
+          <div id="datepicker4" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr" id="dte_1" type="text"  />
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>          
@@ -603,9 +599,9 @@ function closeNav5() {
             </div>
           </div>
 
-<!---=================clear============--->
+<!---=================clear============-->
       <div class="clearfix"></div>
-<!---=================Clear============--->
+<!---=================Clear============-->
         
         <div class="form-group fg2 fg2_wf">
           <label for="email" class="fg2_la1">Requisition#:<span class="spn1"></span></label>
@@ -613,7 +609,7 @@ function closeNav5() {
         </div>
         <div class="form-group fg2 fg2_wf">
           <label for="email" class="fg2_la1">Requisition Date:<span class="spn1"></span></label>
-          <div id="datepicker5" class="input-group date" data-date-format="mm-dd-yyyy">
+          <div id="datepicker5" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr" id="dte_1" type="text"  />
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>          
@@ -634,7 +630,7 @@ function closeNav5() {
 
         <div class="form-group fg2 fg2_wf">
           <label for="email" class="fg2_la1">Approval Date:<span class="spn1"></span></label>
-          <div id="datepicker6" class="input-group date" data-date-format="mm-dd-yyyy">
+          <div id="datepicker6" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr" id="dte_1" type="text"  />
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>          
@@ -651,11 +647,10 @@ function closeNav5() {
           <textarea class="form-control fg2_inp1 fg_chs1" rows="2" placeholder="Job Description"></textarea>          
         </div>
  
-<!---=================section_devider============--->
+<!---=================section_devider============-->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
 
         
         <div class="blk_btn pull-right">
@@ -822,7 +817,7 @@ function closeNav5() {
                 <th class="th_b2 tr_l">Username</th>
                 <th class="th_b8">Employee ID</th>
                 <th class="th_b8 tr_l">Division</th>
-                <th class="th_b5">NOS</th>
+                <th class="th_b1">NOS</th>
                 <th class="th_b6 tr_r">Rate</th>
                 <th class="th_b6 tr_r">Amount</th>
                 <th class="th_b4">ACTIONS</th>
@@ -974,12 +969,12 @@ function closeNav5() {
               <tr>
                 <th class="th_b5">SL#</th>
                 <th class="th_b11 tr_l">PNR#</th>
-                <th class="th_b2 tr_c">Sector</th>
+                <th class="th_b4 tr_c">Sector</th>
                 <th class="th_b8 tr_c">Date of Travel</th>
                 <th class="th_b2 tr_l">Passenger Name</th>
-                <th class="th_b6">Employee ID</th>
+                <th class="th_b8">Employee ID</th>
                 <th class="th_b8 tr_l">Division</th>
-                <th class="th_b5">NOS</th>
+                <th class="th_b1">NOS</th>
                 <th class="th_b7 tr_r">Rate</th>
                 <th class="th_b6 tr_r">Amount</th>
                 <th class="th_b4">ACTIONS</th>
@@ -1123,7 +1118,7 @@ function closeNav5() {
         </div>
 
         <div class="text_area_container po_txt">
-          <p>Aditional charges for PO, if any:</p>
+          <p>Additional changes for PO, if any:</p>
           <div class="col-md-8 ma_at_fl">
             <table class="table table-bordered">
               <thead class="thead1">
@@ -1236,74 +1231,111 @@ function closeNav5() {
     <div class="clearfix"></div>
     <div class="free_sp"></div>
 <!---========area_devider==========---->
+    
+    <div class="fg12 pa_n">
+      <div class="col-md-4 mar_at flt_l pa_lft0">
+        <div class="form-group">
+          <label for="email" class="fg2_la1">Payment Terms: <span class="spn1">&nbsp;</span></label>
+          <textarea rows="3" cols="50" class="form-control" placeholder="Payment Terms"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4 mar_at flt_l pa_lft0">
+        <div class="form-group">
+          <label for="email" class="fg2_la1">General Terms & Conditions: <span class="spn1">&nbsp;</span></label>
+          <textarea rows="3" cols="50" class="form-control" placeholder="General Terms & Conditions"></textarea>
+        </div>
+      </div>
+      <div class="col-md-4 mar_at flt_l pa_lft0">
+        <div class="form-group">
+          <label for="email" class="fg2_la1">Freight Terms: <span class="spn1">&nbsp;</span></label>
+          <textarea rows="3" cols="50" class="form-control" placeholder="Freight Terms"></textarea>
+        </div>
+      </div>
+    </div>
 
-
-        <div class="">
-          <div class="col-md-12">
-            <label for="email" class="fg2_la1 pad_l">Attaching related documents, if any:<span class="spn1">*</span></label>
-            <div class="check1 mar_btm1">
-              <div class="">
-                <label class="switch">
-                  <input type="checkbox" class="bu1" onclick="enable1()" >
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-            <div class="" id="mySe1">
-              <div class="col-md-6 fg2_wf1 po_flt po_mar_bt">
-                <input type="file" id="file-upload" multiple required />
+    <div class="fg6">
+      <h3 class="h1_con mar_tp0">File attachments</h3>
+      <div class="r_1024 tbl_fx_hi">
+        <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+          <thead class="thead1">
+            <tr>
+              <th class="col-md-5 tr_l">Attachments</th>
+              <th class="col-md-5 tr_l">Description</th>
+              <th class="col-md-2">Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tr_l"><a href="#">File.pdf</a></td>
+              <td class="tr_l">Description shows here</td>
+              <td> 
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                    <i class="fa fa-plus-circle"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+                <div class="btn_stl2"> 
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                    <i class="fa fa-list-alt"></i> View
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-trash"></i> Delete
+                  </button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class=" tr_l">
+                <input type="file" id="file-upload" multiple="" required="">
                 <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
                 <div id="file-upload-filename" class="file_n"></div>
-              </div>
-              <div class="col-md-4 fg2_wf1 po_flt po_mar_bt">
-                <textarea rows="1" cols="50" class="form-control" placeholder="Description"></textarea>
-              </div>
-              <div class="col-md-2 fg2_wf1 po_flt po_mar_bt">
-                <button class="btn act_btn bn2" title="Add New"><i class="fa fa-plus-circle"></i></button>
-                <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
-              </div>
-            </div>
-
-<!---========area_devider==========---->
-    <div class="clearfix"></div>
-    <div class="free_sp"></div>
-<!---========area_devider==========---->
-
-              <div class="col-md-12 pa_n">
-                <div class="col-md-4 ma_at_fl">
-                  <div class="form-group">
-                    <label for="email" class="fg2_la1">Payment Terms: <span class="spn1">&nbsp;</span></label>
-                    <textarea rows="4" cols="50" class="form-control" placeholder="Payment Terms"></textarea>
-                  </div>
+              </td>
+              <td class=" tr_l"><input type="text" class="form-control fg2_inp2" placeholder="Description" name=""></td>
+              <td> 
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                    <i class="fa fa-plus-circle"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
                 </div>
-                <div class="col-md-4 ma_at_fl">
-                  <div class="form-group">
-                    <label for="email" class="fg2_la1">General Terms & Conditions: <span class="spn1">&nbsp;</span></label>
-                    <textarea rows="4" cols="50" class="form-control" placeholder="General Terms & Conditions"></textarea>
-                  </div>
+                <div class="btn_stl2"> 
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                    <i class="fa fa-list-alt"></i> View
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-trash"></i> Delete
+                  </button>
                 </div>
-                <div class="col-md-4 ma_at_fl">
-                  <div class="form-group">
-                    <label for="email" class="fg2_la1">Freight Terms: <span class="spn1">&nbsp;</span></label>
-                    <textarea rows="4" cols="50" class="form-control" placeholder="Freight Terms"></textarea>
-                  </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
                 </div>
-              </div>
-
-            
-          </div>
-        </div>
-
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
 <!---inner_content_sections area_closed--->
 
 <!---========area_devider==========---->
     <div class="clearfix"></div>
     <div class="free_sp"></div>
+    <div class="devider"></div>
 <!---========area_devider==========---->
 
 
-<!--Buttons_Area_started--->
+<!--Buttons_Area_started-->
           <div class="sub_cont pull-right">
             <div class="save_sec">
               <button type="submit" class="btn sub1">Save</button>
@@ -1319,7 +1351,7 @@ function closeNav5() {
               <button type="submit" class="btn sub4">Cancel</button>
             </div>
           </div>
-<!--Buttons_area_closed--->
+<!--Buttons_area_closed-->
 
 
 
@@ -1328,29 +1360,32 @@ function closeNav5() {
       </div>
     </div>
   </div>
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
 
-<!-------------------footer_section_opened------------------------------------->
+<!-------------------footer_section_opened------------------------------------>
   <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
     <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico.png"></i> Procurement Management</p>
     <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
     <p class="pull-right tr_c foot_l ">Designed by <span>Volviar</span> Technologies</p>
   </div>
-<!-------------------footer_section_closed------------------------------------->
+<!-------------------footer_section_closed------------------------------------>
 
 </div><!--wrapper_closed-->
 
 
 
-<!---back_button_fixed_section--->
+<!---back_button_fixed_section-->
   <a href="prchse_ordr.html" type="button" class="list_b" title="Back to List">
     <i class="fa fa-arrow-circle-left"></i>
   </a>
 <!---back_button_fixed_section--->
 
-<!----save_quick_actions_started--->
+<!----save_quick_actions_started-->
   <a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
     <i class="fa fa-save"></i>
+  </a>
+  <a href="#" type="button" id="" class="copy_exst" data-toggle="modal" data-target="#popup_window" title="Copy From Existing PO">
+    <i class="fa fa-files-o"></i>
   </a>
 
   <div class="mySave1" id="mySave">
@@ -2499,7 +2534,65 @@ function myser1() {
   myWindow = window.open("prchse_ordr.html", "", "width=1200, height=500");
 }
 </script>
-<!-----open new window_of purchase order list_closed----------->
+<!-----open new window_of purchase order list_closed---------->
+
+<!-- Modal -->
+<div class="modal fade" id="popup_window" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod_add"" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Copy From Existing PO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="div_mod" class="modal-body mod_add_bd mod_ln_ifr">
+        <object type="text/html" data="prchse_ordr.html" width="800px" height="600" style="overflow:auto;">
+    </object>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="popup_window1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod_add"" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Project</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="div_mod" class="modal-body mod_add_bd mod_ln_ifr">
+        <object type="text/html" data="../sales/add_project_master.html" width="800px" height="600" style="overflow:auto;">
+    </object>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function() {
+$("#countries").msDropdown({roundedBorder:false});
+// $("#countries").prop("disabled", true);
+})
+</script>
+
+<script>
+$(document).ready(function(e) {
+  $("#countries").msDropdown({visibleRows:4});
+  $("").msDropdown();
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 9) { 
+   $('.dd .ddChild').hide();
+  } 
+});
+</script> 
 
 </body>
 </html>
