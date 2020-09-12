@@ -92,7 +92,7 @@ label{font-size: 13px;margin: auto;padding-left: 2px;}
 
 .sidenav {width: 100%;height: 0;position: fixed;top: 0;left: 0;overflow-x: hidden;transition: 0.5s; /*   padding-top: 46px;*/ z-index:99999;}
 
-.breadcrumb{padding: 0px 10px;margin:5px 0px;background-color: #46c4df;height: 20px;float: left;margin-left: 12px;}
+.breadcrumb{padding: 0px 10px;margin:5px 0px;background-color: #46c4df;float: left;margin-left: 12px;}
 .breadcrumb-item{line-height: 17px!important;list-style: none;flex: none;}
 .breadcrumb-item a{font-size: 13px;color:#dae4e6;text-decoration: none;}
 .breadcrumb-item.active, .breadcrumb-item a:hover{color:#fff;font-size: 13px;}
@@ -293,7 +293,7 @@ input[type='radio']:checked:after{background-color: #28829a;}
 .print_o {top:110px!important;right:4px!important;font-size:16px!important;background-color:#1692ad!important;
           width:30px!important;height:30px!important;line-height: 30px;color:#eaeaea!important;}
 
-#myBtn, #cphMain_myBtn {top:80px!important;right:4px!important;font-size:16px!important;background-color:#34c461!important;
+#myBtn, #cphMain_myBtn {top:90px!important;right:4px!important;font-size:16px!important;background-color:#34c461!important;
         color:#eaeaea!important;border-radius: 37px;width:30px!important;height:30px!important;line-height: 30px;}
 #myBtn:hover, .print_o:hover, #cphMain_myBtn:hover{color:#fff!important;}
 
@@ -447,7 +447,7 @@ table.dataTable.order-column.stripe tbody tr.odd>.sorting_1 {background-color:#f
 
 /*===========Updations_in_13.08.2020=============*/
 select.form-control{padding: 0 6px;}
-.dd .ddTitle .ddTitleText {padding: 1px 20px 2px 4px;}
+.dd .ddTitle .ddTitleText {padding: 1px 20px 2px 4px!important;}
 .dd.ddcommon.borderRadius{border-radius: 20px;}
 .menu_fix{display: none;}
 .sidenav4{background-color: #28829a;}
@@ -494,3 +494,14 @@ select.form-control{padding: 0 6px;}
 .dp_qtn_n {left: -88px;right: 30px;}
 .dp_qtn_n:before{top: -12px!important;left: 92px;}
 .menu_item li a {padding: 8px 8px;}
+.menu_strip h1 label{width: 83%;}
+.menu_strip h1 .ft_ico{margin:auto;float: left;}
+.imprt_o {top: 170px;right: 4px;font-size: 16px;border-radius: 50px;width: 30px;height: 30px;padding-top: 0px;}
+.chec_bx{width: 19%!important;height: 25px;}
+.c_flt_n {margin-top: -2px;}
+.dt_wdt .inp_chec{width: 80%!important;border-right: 1px solid #ccc;border-radius: 0px 10px 10px 0px!important;}
+.ss_ch1, .ss_ch{height: 24px; padding: 0px 4px;}
+.dys_wdt .ui-autocomplete-input{width: 91%!important;border-radius:8px 0px 0px 8px!important;}
+.select2-container .select2-selection--multiple{min-height: 25px!important;border-radius:12px!important;}
+.select2-container .select2-search--inline .select2-search__field{margin-top:1px!important;}
+.select2-container{width: 92%!important;}
