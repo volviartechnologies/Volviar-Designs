@@ -3397,3 +3397,7 @@ body{position: fixed;left: 0;right: 0;}
 .inp_st {width: 70%!important;}
 
 }
+.fg_3_1{width: 66.66%!important;margin: auto;float: left;}
+@media screen and (max-width:768px) {
+  .fg_3_1{width:100%!important;margin: auto;float: left;}
+}
