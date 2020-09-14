@@ -302,7 +302,7 @@ input[type='radio']:checked:after{background-color: #28829a;}
 .list_b:hover{color:#fff!important;}
 .mySave1{box-shadow: 1px 4px 8px #b0b6b7;top: 88px;}
 
-.save_b{top:110px!important;right:4px!important;font-size:16px!important;background-color:#34c461!important;text-align: center;
+.save_b{top:92px!important;right:4px!important;font-size:16px!important;background-color:#34c461!important;text-align: center;
         color:#eaeaea!important;border-radius: 37px;width:30px!important;height:30px!important;line-height: 30px;}
     
 
@@ -511,3 +511,4 @@ select.form-control{padding: 0 6px;}
 .dp_qtn_n1{min-width: 174px!important;left: -152px!important;}
 .dp_qtn_n1:before{left: 164px!important;}
 .spn_drp_tbl{padding-bottom: 0px!important;}
+.act_aprvl_btn{width: 28px;height: 28px;padding:0px;padding-top:2px;font-size: 17px;top: 54px;right: 6px;}
