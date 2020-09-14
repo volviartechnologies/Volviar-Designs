@@ -1071,5 +1071,6 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .wid_ful95{width: 95%!important;}
 .tb1_qlf{min-height: auto;margin-bottom: 10px;}
 .tab_qlf button{padding:6px;}
-.btn_app_tree1 .act_btck{margin-top: -3px;}
+.chk_algn .act_btck{margin-top: -3px;margin-left: -6px;}
 .tree7 li .butn-chk{background-color: transparent;border:none;padding:0;}
+.modal-open .modal{z-index: 3999!important;}
