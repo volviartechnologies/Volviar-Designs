@@ -1069,3 +1069,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .chk_login{width: auto;margin-right: 9px;margin-top: -4px;}
 .login_dtls_bx{width: 100%;margin: auto;float: left;height:auto;background-color:#f2faff;padding:10px;}
 .wid_ful95{width: 95%!important;}
+.tb1_qlf{min-height: auto;margin-bottom: 10px;}
+.tab_qlf button{padding:6px;}
+.btn_app_tree1 .act_btck{margin-top: -3px;}
+.tree7 li .butn-chk{background-color: transparent;border:none;padding:0;}
