@@ -3395,9 +3395,10 @@ body{position: fixed;left: 0;right: 0;}
 @media screen and (max-width:480px) {
 .dt_wdt{width: 100%!important;}
 .inp_st {width: 70%!important;}
-
 }
 .fg_3_1{width: 66.66%!important;margin: auto;float: left;}
+.tax_box{display: block;visibility: visible;width: 100%;height:100%;position: fixed;background-color:rgba(0, 0, 0, .6);top: 0px;z-index: 999;}
+.tax_box .modal{display: block;}
 @media screen and (max-width:768px) {
   .fg_3_1{width:100%!important;margin: auto;float: left;}
 }

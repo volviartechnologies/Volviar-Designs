@@ -1461,6 +1461,89 @@ function closeNav5() {
 
   </div><!--wrapper_closed-->
 
+<!-- Modal1 -->
+<div class="tax_box">
+<div class="modal">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Ledger head allocation for taxes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered tbl_480">
+          <thead class="thead1">
+            <tr>
+              <th class="col-md-6 tr_l">Tax Name</th>
+              <th class="col-md-6 tr_l">Ledger Head</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>
+                <input type="text" class="form-control fg2_inp2 tr_l" placeholder="Tax Name 1" disabled="">
+              </td>
+              <td>
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
+                  <option>Ledger Head 1</option>
+                  <option>Ledger Head 2</option>
+                  <option>Ledger Head 3</option>
+                  <option>Ledger Head 4</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="form-control fg2_inp2 tr_l" placeholder="Tax Name 1" disabled="">
+              </td>
+              <td>
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
+                  <option>Ledger Head 1</option>
+                  <option>Ledger Head 2</option>
+                  <option>Ledger Head 3</option>
+                  <option>Ledger Head 4</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="form-control fg2_inp2 tr_l" placeholder="Tax Name 1" disabled="">
+              </td>
+              <td>
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
+                  <option>Ledger Head 1</option>
+                  <option>Ledger Head 2</option>
+                  <option>Ledger Head 3</option>
+                  <option>Ledger Head 4</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" class="form-control fg2_inp2 tr_l" placeholder="Tax Name 1" disabled="">
+              </td>
+              <td>
+                <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
+                  <option>Ledger Head 1</option>
+                  <option>Ledger Head 2</option>
+                  <option>Ledger Head 3</option>
+                  <option>Ledger Head 4</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <span class="opp_ico_img_ptp1 btm_info flt_l"  data-toggle="tooltip" title="" tooltip-title="Tooltip title #1" data-original-title="Ledger head is to be allocated for each tax, before starting sales." data-placement="right"><img src="../images/icons/opp/hint.png"></span>
+        <button type="button" class="btn btn-success sav_btz">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="tax_box">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--------script section_started---------->
 
@@ -1890,6 +1973,18 @@ $( document ).on( 'keydown', function ( e ) {
 
 <!---date_picker_closed-->
 
-<!----alert_message_script_closed--->
+<!----alert_message_script_closed-->
+<script>
+$(document).ready(function(){
+  $(".sav_btz").click(function(){
+    $(".tax_box").fadeOut(200);
+  });
+});
+</script>
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 </body>
 </html>
