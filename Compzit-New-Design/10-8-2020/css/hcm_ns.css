@@ -1010,7 +1010,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 /*=====================hcm latest modified css--from 17/08/2020===============*/
 .pa_lft_0{padding-left:0px;}
 .prod_sect{background-color: transparent;padding-left:0px;padding-top:0px;margin-top: -10px;}
-.selected7 {background-color:#e7fdce!important;border: 1px solid #3258a0;}
+.selected7 {background-color:#defbff!important;border: 1px solid #3258a0;}
 .fg8_1{width:13%;margin:auto;float: left;padding-right: 10px;}
 .img_pro_per img{width: 20px;height: 20px;margin: auto;float: right;margin-top: 10px;background-color:#fff;border-radius: 50px;padding: 2px;margin-right: -12px;
                     border:1px solid #d6d6d6;}
@@ -1052,7 +1052,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .img_pro_per img{margin-top: 0px!important;}
 .prod_ic{padding-left: 0px;padding-top: 0px;}
 .prod_ic img{margin-bottom:0px!important;}
-.opn_grn{background-color: #e7fdce!important;border: 2px solid #fff!important;}
+.opn_grn{background-color:#d0ff99!important;border: 2px solid #fff!important;}
 .sp_z_1{width: auto;margin:auto;float: left;background-color:#0aa7bb;color: #fff;font-size: 13px;padding: 1px 8px;border-radius: 10px;cursor: pointer;height: auto;}
 .ul_btn_all{margin-left: -40px;margin-top: -8px;}
 .tree_alz{width: 100%;float: left;}
@@ -1225,12 +1225,17 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
     cursor: pointer;
   }
 }
-#file-drag img{width:70px;height:70px;overflow: hidden;margin:auto;float: left;}
+#file-drag img{width:70px;height:70px;overflow: hidden;margin:auto;float: left;border-radius: 50px;}
 #response{margin: auto;float: left;}
 
-#start{width: 100px;height: 100px;border-radius:8px;overflow: hidden;background-color:#fbfbfb;text-align: center;padding-top: 20px;color: #969696;cursor: pointer;}
-#start .fa{font-size: 40px;}
-#file-drag{border-radius:8px;overflow: hidden;background-color:#fbfbfb;text-align: center;color: #969696;cursor: pointer;}
+#start{width:100%;height:40px;border-radius:50px;overflow: hidden;background-color:transparent;text-align: center;padding-top:10px;color:#677184;cursor: pointer;}
+#start .fa{font-size:16px;}
+#file-drag{border-radius:8px;overflow: hidden;background-color:transparent;text-align: center;color: #969696;cursor: pointer;padding:0px 10px;min-width: 90%;
+          border:1px solid #ccc;}
 #messages{margin-top: 26px;margin-left: 6px;}
 .uploader{margin-top: 14px;cursor: pointer;}
 .uploader #start:focus{background-color: #000;}
+#start .img_upl{width: 20px;height: 20px;float: none;}
+#file-upload-form:hover label, #file-upload-form label:focus{box-shadow: 0px 0px 5px #0096ce;}
+.tree7 li span{cursor: pointer;}
+/*.pro_per .tree7 li ul{display: none;}*/
