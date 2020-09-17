@@ -3411,3 +3411,5 @@ body{position: fixed;left: 0;right: 0;}
 .popover-content .table-bordered{margin-bottom:0px;}
 .bt_taxbx_cls{border-radius: 20px;}
 /*.pop_wrap{width: 100%;height: 600px;margin:auto;position: absolute;top:0;background-color:#ccc;visibility: hidden;}*/
+.sub_ca_tx{background-color:#e4e2ff;font-weight: 600;text-align: left!important;color: #000;}
+.tot_tax{background-color: #eceff1!important;color:#e41010;font-weight: 600;}
