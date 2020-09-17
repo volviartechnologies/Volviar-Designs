@@ -1009,27 +1009,57 @@ function MM_swapImage() { //v3.0
             <!-----Personal Details section_started---->
             <div id="dtl_prsl" class="tabcontent_stf emply_ad_1">
               <h3>Personal Details</h3>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">First Name:<span class="spn1">*</span></label>
-                <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="First Name" autofocus="">
+              <div class="fg_3_1">
+                <div class="form-group fg6 sa_2 sa_640_i sa_480">
+                  <label for="email" class="fg2_la1">First Name:<span class="spn1">*</span></label>
+                  <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="First Name" autofocus="">
+                </div>
+                <div class="form-group fg6 sa_2 sa_640_i sa_480">
+                  <label for="email" class="fg2_la1">Middle Name:<span class="spn1"></span></label>
+                  <input type="text" class="form-control fg2_inp1" placeholder="Middle Name">
+                </div>
+                <div class="form-group fg6 sa_2 sa_640_i sa_480">
+                  <label for="email" class="fg2_la1">Last Name:<span class="spn1">*</span></label>
+                  <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Last Name">
+                </div>
+                <div class="form-group fg2 sa_fg4 sa_480">
+                 <label for="email" class="fg2_la1">Gender:<span class="spn1">*</span></label>
+                  <select name="countries" id="countries" class="form-control fg2_inp1" >
+                    <option value='ad' data-image="..\images\icons\opp\gen1.png" data-imagecss="flag ad" data-title="Male" selected="">Male</option>
+                    <option value='ae' data-image="..\images\icons\opp\gen2.png" data-imagecss="flag ae" data-title="Female">Female</option>
+                    <option value='af' data-image="..\images\icons\opp\oth_b.png" data-imagecss="flag af" data-title="Others">Others</option>
+                  </select> 
+                </div>
+                <div class="fg2">
+                  <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+                  <div class="check1">
+                    <div class="">
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Middle Name:<span class="spn1"></span></label>
-                <input type="text" class="form-control fg2_inp1" placeholder="Middle Name">
-              </div>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Last Name:<span class="spn1">*</span></label>
-                <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Last Name">
-              </div>
+              <div class="fg2">
+                <form id="file-upload-form" class="uploader">
+                  <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
 
-              <div class="form-group fg4 sa_fg4 fg_m_10 sa_480">
-               <label for="email" class="fg2_la1">Gender:<span class="spn1">*</span></label>
-                <select name="countries" id="countries" class="form-control fg2_inp1" >
-                  <option value='ad' data-image="..\images\icons\opp\gen1.png" data-imagecss="flag ad" data-title="Male" selected="">Male</option>
-                  <option value='ae' data-image="..\images\icons\opp\gen2.png" data-imagecss="flag ae" data-title="Female">Female</option>
-                  <option value='af' data-image="..\images\icons\opp\oth_b.png" data-imagecss="flag af" data-title="Others">Others</option>
-                </select> 
+                  <label for="file-upload" id="file-drag">
+                    <img id="file-image" src="#" alt="Preview" class="hidden">
+                    <div id="start">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                      <div>Upload Photo</div>
+                      <div id="notimage" class="hidden">Please select an image</div>
+                    </div>
+                    <div id="response" class="hidden">
+                      <div id="messages"></div>
+                    </div>
+                  </label>
+                </form>           
               </div>
+              <div class="clearfix"></div>
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Nationality:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 fg_chs2 inp_mst">
@@ -1041,8 +1071,33 @@ function MM_swapImage() { //v3.0
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">National ID#:<span class="spn1"></span></label>
                 <input type="text" class="form-control fg2_inp1" placeholder="National ID#">
+              </div>
+              <div class="form-group fg4 sa_2 sa_640_i sa_480">
+                <label for="email" class="fg2_la1">Mobile#:<span class="spn1"></span></label>
+                <input type="text" class="form-control fg2_inp1" placeholder="Mobile#">
+              </div>
+              <div class="form-group fg4 sa_fg4 fg_m_10 sa_480">
+                <label for="email" class="fg2_la1">Email:<span class="spn1"></span>
+                  <div class="ch_ab mail_ch1">
+                    <button class="bid1 mail_1" data-toggle="tooltip" data-original-title="Use this email as From mail while sending" data-placement="top" id="ba_box1"><i class="fa fa-location-arrow"></i> </button>
+                    <button class="awd1 mail_2" data-toggle="tooltip" data-original-title="Read Mail From This Mail" data-placement="top" id="ba_box2"><i class="fa fa-envelope-open-o"></i> </button>
+                  </div>
+                </label>
+                <input id="myinpc3" type="text" class="form-control fg2_inp1" id="email" placeholder="Email" autofocus="">
+              </div>
+              <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
+                <label for="email" class="fg2_la1">Official Email:<span class="spn1"></span></label>
+                <input type="text" class="form-control fg2_inp1" placeholder="Official Email">
               </div> 
+              <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
+                <label for="email" class="fg2_la1">Reporting To:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                  <option>Employee 1</option>
+                  <option>Employee 2</option>
+                </select> 
+              </div>  
               <div class="clearfix"></div>
+              <div class="devider"></div>
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Designation:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 fg_chs2 inp_mst des_1">
@@ -1052,7 +1107,7 @@ function MM_swapImage() { //v3.0
                 </select> 
               </div>
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Role:<span class="spn1">*</span></label>
+                <label for="email" class="fg2_la1">Job Role:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 fg_chs2 inp_mst">
                   <option>Role 1</option>
                   <option>Role 2</option>
@@ -1077,32 +1132,6 @@ function MM_swapImage() { //v3.0
                 <label for="email" class="fg2_la1">Employee ID:<span class="spn1">*</span></label>
                 <input class="form-control fg2_inp1 fg_chs2 inp_mst" placeholder="Employee ID">
               </div>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Mobile#:<span class="spn1"></span></label>
-                <input type="text" class="form-control fg2_inp1" placeholder="Mobile#">
-              </div>
-
-              <div class="form-group fg4 sa_fg4 fg_m_10 sa_480">
-                <label for="email" class="fg2_la1">Email:<span class="spn1"></span>
-                  <div class="ch_ab mail_ch1">
-                    <button class="bid1 mail_1" data-toggle="tooltip" data-original-title="Use this email as From mail while sending" data-placement="top" id="ba_box1"><i class="fa fa-location-arrow"></i> </button>
-                    <button class="awd1 mail_2" data-toggle="tooltip" data-original-title="Read Mail From This Mail" data-placement="top" id="ba_box2"><i class="fa fa-envelope-open-o"></i> </button>
-                  </div>
-                </label>
-                <input id="myinpc3" type="text" class="form-control fg2_inp1" id="email" placeholder="Email" autofocus="">
-              </div>
-              <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Official Email:<span class="spn1"></span></label>
-                <input type="text" class="form-control fg2_inp1" placeholder="Official Email">
-              </div> 
-              <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Reporting To:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-                  <option>Employee 1</option>
-                  <option>Employee 2</option>
-                </select> 
-              </div> 
-              <div class="clearfix"></div>
               <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 fg_chs2 inp_mst">
@@ -1110,31 +1139,6 @@ function MM_swapImage() { //v3.0
                   <option>Business Unit 2</option>
                 </select> 
               </div>
-              <div class="form-group fg4 fg2_mr sa_o_fg5 sa_640_i">
-                <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-                <div class="check1">
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox">
-                      <span class="slider_tog round"></span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640_i ma_bo10 sa_480">
-                <label for="email" class="fg2_la1 pad_l">Upload Photo: <span class="spn1">*</span></label>
-                <input type="file" id="file-upload" multiple="" required="">
-                <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-                <div id="file-upload-filename" class="file_n"></div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="fg4 sa_o_fg5 sa_2 sa_640_i des_1_opn" style="display: none;">
-                <label for="email" class="fg2_la1 pad_l">Corporate Department:<span class="spn1">*</span></label><br>
-                <div class="dropdown-mul-1 imp_se" style="margin-right: 10px!important;width: 90%;">
-                  <select style="display:none;width: 96%;" multiple placeholder="Select"> </select>
-                </div>
-              </div>
-
               <div class="fg4 sa_o_fg5 sa_2 sa_640_i des_1_opn" style="display: none;">
                 <label for="email" class="fg2_la1 pad_l">Sub Business Units:<span class="spn1"></span></label><br>
                 <div class="dropdown-mul-1 imp_se" style="margin-right: 10px!important;width: 90%;">
@@ -1147,8 +1151,13 @@ function MM_swapImage() { //v3.0
                   <select style="display:none;width: 96%;" multiple placeholder="Select"> </select>
                 </div>
               </div>
+              <div class="fg4 sa_o_fg5 sa_2 sa_640_i des_1_opn" style="display: none;">
+                <label for="email" class="fg2_la1 pad_l">Corporate Department:<span class="spn1">*</span></label><br>
+                <div class="dropdown-mul-1 imp_se" style="margin-right: 10px!important;width: 90%;">
+                  <select style="display:none;width: 96%;" multiple placeholder="Select"> </select>
+                </div>
+              </div>
               <div class="clearfix"></div>
-              <div class="free_sp"></div>
               <div class="devider"></div>
 
         
@@ -1323,7 +1332,7 @@ function MM_swapImage() { //v3.0
         <!------tree_section_started-->
         <h3 class=" btn_sls_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx1"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">SALES FORCE AUTOMATION</span>
@@ -1468,7 +1477,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_aws_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx2"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Auto Workshop Management System</span>
@@ -1571,7 +1580,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_guar_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx3"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Guarantee Management System</span>
@@ -1667,7 +1676,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_hcm_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx4"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Human Capital Management</span>
@@ -1763,7 +1772,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_fin_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx5"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Finance Management System</span>
@@ -1859,7 +1868,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_pro_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx6"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Procurement Management System</span>
@@ -1956,13 +1965,19 @@ function MM_swapImage() { //v3.0
     <div class="col-md-3">
       <div class="fg12 sa_o_fg5 sa_2 sa_640_i des_1_opn" style="display: none;">
         <label for="email" class="fg2_la1 pad_l">Welfare Services:<span class="spn1"></span></label>
-        <div class="nation_bx ad_emp1 lis_1 mr_lf0-w90 max_heiz">
-          <ul>
+        <div class="">
+          <ul class="wel_li mar_at flt_l">
             <li>
-              <a href="#">Welfare 1</a>
+              <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-arrow-circle-right"></i> Welfare 1</a>
             </li>
             <li>
-              <a href="#">Welfare 2</a>
+              <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-arrow-circle-right"></i> Welfare 1</a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-arrow-circle-right"></i> Welfare 1</a>
+            </li>
+            <li>
+              <a href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-arrow-circle-right"></i> Welfare 1</a>
             </li>
           </ul>
         </div>
@@ -1983,7 +1998,7 @@ function MM_swapImage() { //v3.0
       </div>
     </div> Login Details:<span class="spn1"></span></h5>
   </div>
-    <div class="login_dtls_bx" id="login_dtls_bx" style="display: none;">
+    <div class="" id="login_dtls_bx" style="display: none;">
       <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
         <label for="email" class="fg2_la1">Login Name:<span class="spn1">*</span>
           <div class="ch_ab mail_ch1">
@@ -4090,7 +4105,70 @@ function MM_swapImage() { //v3.0
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Welfare 1</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body md_bd">
+         <table class="table table-bordered">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b5 tr_l">
+                  <span class="button-checkbox lbr_chk flt_n" style="float: none;">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                </th>
+                <th class="col-md-2">From</th>
+                <th class="col-md-2">To</th>
+                <th class="col-md-2">Frequency</th>
+                <th class="col-md-3 tr_c">Limit</th>
+                <th class="col-md-3">Unit</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr>
+                 <td>
+                    <span class="button-checkbox ">
+                      <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                      <input type="checkbox" class="hidden" />
+                    </span>
+                </td>
+                <td class="tr_c">10/06/2020</td>
+                <td class="tr_c">10/06/2020</td>
+                <td class="tr_c">1 Month</td>
+                <td class="tr_r">
+                  <input type="text" class="form-control fg2_inp2 tr_r flt_r mar_at">
+                </td>
+                <td class="td1">Meter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      <div class="modal-footer">
 
+        <div class="sub_cont pull-right">
+        <div class="save_sec">
+          <button type="submit" class="btn sub1">Save</button>
+          <button type="submit" class="btn sub4" data-dismiss="modal">Close</button>
+        </div>
+        <div class="edit_sec">
+          <button type="submit" class="btn sub1">Update</button>
+          <button type="submit" class="btn sub3">Update & Close</button>
+          <button type="submit" class="btn sub2">Confirm</button>
+          <button type="submit" class="btn sub4">Cancel</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--------script section_started---------->
 
@@ -5508,138 +5586,268 @@ $('.hidew').prop('checked',true);
     $(".country3 .ic2").fadeOut(100);
 $('.hidew').prop('checked',false);
   });
-    $(".btn_uc1 .ic1").click(function(){
-    $(".btn_uc1 .ic2").fadeIn(100);
-    $(".btn_uc1 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc1 .ic2").click(function(){
-    $(".btn_uc1 .ic2").fadeOut(100);
-    $(".btn_uc1 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc2 .ic1").click(function(){
-    $(".btn_uc2 .ic2").fadeIn(100);
-    $(".btn_uc2 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc2 .ic2").click(function(){
-    $(".btn_uc2 .ic2").fadeOut(100);
-    $(".btn_uc2 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc3 .ic1").click(function(){
-    $(".btn_uc3 .ic2").fadeIn(100);
-    $(".btn_uc3 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc3 .ic2").click(function(){
-    $(".btn_uc3 .ic2").fadeOut(100);
-    $(".btn_uc3 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc4 .ic1").click(function(){
-    $(".btn_uc4 .ic2").fadeIn(100);
-    $(".btn_uc4 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc4 .ic2").click(function(){
-    $(".btn_uc4 .ic2").fadeOut(100);
-    $(".btn_uc4 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc5 .ic1").click(function(){
-    $(".btn_uc5 .ic2").fadeIn(100);
-    $(".btn_uc5 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc5 .ic2").click(function(){
-    $(".btn_uc5 .ic2").fadeOut(100);
-    $(".btn_uc5 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc6 .ic1").click(function(){
-    $(".btn_uc6 .ic2").fadeIn(100);
-    $(".btn_uc6 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc6 .ic2").click(function(){
-    $(".btn_uc6 .ic2").fadeOut(100);
-    $(".btn_uc6 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc7 .ic1").click(function(){
-    $(".btn_uc7 .ic2").fadeIn(100);
-    $(".btn_uc7 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc7 .ic2").click(function(){
-    $(".btn_uc7 .ic2").fadeOut(100);
-    $(".btn_uc7 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc8 .ic1").click(function(){
-    $(".btn_uc8 .ic2").fadeIn(100);
-    $(".btn_uc8 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc8 .ic2").click(function(){
-    $(".btn_uc8 .ic2").fadeOut(100);
-    $(".btn_uc8 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc9 .ic1").click(function(){
-    $(".btn_uc9 .ic2").fadeIn(100);
-    $(".btn_uc9 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc9 .ic2").click(function(){
-    $(".btn_uc9 .ic2").fadeOut(100);
-    $(".btn_uc9 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc10 .ic1").click(function(){
-    $(".btn_uc10 .ic2").fadeIn(100);
-    $(".btn_uc10 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc10 .ic2").click(function(){
-    $(".btn_uc10 .ic2").fadeOut(100);
-    $(".btn_uc10 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc11 .ic1").click(function(){
-    $(".btn_uc11 .ic2").fadeIn(100);
-    $(".btn_uc11 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc11 .ic2").click(function(){
-    $(".btn_uc11 .ic2").fadeOut(100);
-    $(".btn_uc11 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc12 .ic1").click(function(){
-    $(".btn_uc12 .ic2").fadeIn(100);
-    $(".btn_uc12 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc12 .ic2").click(function(){
-    $(".btn_uc12 .ic2").fadeOut(100);
-    $(".btn_uc12 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc13 .ic1").click(function(){
-    $(".btn_uc13 .ic2").fadeIn(100);
-    $(".btn_uc13 .ic1").fadeOut(100);
-$('.hidew').prop('checked',true);
-  });
-    $(".btn_uc13 .ic2").click(function(){
-    $(".btn_uc13 .ic2").fadeOut(100);
-    $(".btn_uc13 .ic1").fadeIn(100);
-$('.hidew').prop('checked',true);
-  });
+//     $(".btn_uc1 .ic1").click(function(){
+//     $(".btn_uc1 .ic2").fadeIn(100);
+//     $(".btn_uc1 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc1 .ic2").click(function(){
+//     $(".btn_uc1 .ic2").fadeOut(100);
+//     $(".btn_uc1 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc2 .ic1").click(function(){
+//     $(".btn_uc2 .ic2").fadeIn(100);
+//     $(".btn_uc2 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc2 .ic2").click(function(){
+//     $(".btn_uc2 .ic2").fadeOut(100);
+//     $(".btn_uc2 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc3 .ic1").click(function(){
+//     $(".btn_uc3 .ic2").fadeIn(100);
+//     $(".btn_uc3 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc3 .ic2").click(function(){
+//     $(".btn_uc3 .ic2").fadeOut(100);
+//     $(".btn_uc3 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc4 .ic1").click(function(){
+//     $(".btn_uc4 .ic2").fadeIn(100);
+//     $(".btn_uc4 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc4 .ic2").click(function(){
+//     $(".btn_uc4 .ic2").fadeOut(100);
+//     $(".btn_uc4 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc5 .ic1").click(function(){
+//     $(".btn_uc5 .ic2").fadeIn(100);
+//     $(".btn_uc5 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc5 .ic2").click(function(){
+//     $(".btn_uc5 .ic2").fadeOut(100);
+//     $(".btn_uc5 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc6 .ic1").click(function(){
+//     $(".btn_uc6 .ic2").fadeIn(100);
+//     $(".btn_uc6 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc6 .ic2").click(function(){
+//     $(".btn_uc6 .ic2").fadeOut(100);
+//     $(".btn_uc6 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc7 .ic1").click(function(){
+//     $(".btn_uc7 .ic2").fadeIn(100);
+//     $(".btn_uc7 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc7 .ic2").click(function(){
+//     $(".btn_uc7 .ic2").fadeOut(100);
+//     $(".btn_uc7 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc8 .ic1").click(function(){
+//     $(".btn_uc8 .ic2").fadeIn(100);
+//     $(".btn_uc8 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc8 .ic2").click(function(){
+//     $(".btn_uc8 .ic2").fadeOut(100);
+//     $(".btn_uc8 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc9 .ic1").click(function(){
+//     $(".btn_uc9 .ic2").fadeIn(100);
+//     $(".btn_uc9 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc9 .ic2").click(function(){
+//     $(".btn_uc9 .ic2").fadeOut(100);
+//     $(".btn_uc9 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc10 .ic1").click(function(){
+//     $(".btn_uc10 .ic2").fadeIn(100);
+//     $(".btn_uc10 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc10 .ic2").click(function(){
+//     $(".btn_uc10 .ic2").fadeOut(100);
+//     $(".btn_uc10 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc11 .ic1").click(function(){
+//     $(".btn_uc11 .ic2").fadeIn(100);
+//     $(".btn_uc11 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc11 .ic2").click(function(){
+//     $(".btn_uc11 .ic2").fadeOut(100);
+//     $(".btn_uc11 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc12 .ic1").click(function(){
+//     $(".btn_uc12 .ic2").fadeIn(100);
+//     $(".btn_uc12 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc12 .ic2").click(function(){
+//     $(".btn_uc12 .ic2").fadeOut(100);
+//     $(".btn_uc12 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc13 .ic1").click(function(){
+//     $(".btn_uc13 .ic2").fadeIn(100);
+//     $(".btn_uc13 .ic1").fadeOut(100);
+// $('.hidew').prop('checked',true);
+//   });
+//     $(".btn_uc13 .ic2").click(function(){
+//     $(".btn_uc13 .ic2").fadeOut(100);
+//     $(".btn_uc13 .ic1").fadeIn(100);
+// $('.hidew').prop('checked',true);
+//   });
 });
 </script>
 <!--checkbox_closed-->
+
+<!----file_uploader-->
+<script>
+// File Upload
+// 
+function ekUpload(){
+  function Init() {
+
+    console.log("Upload Initialised");
+
+    var fileSelect    = document.getElementById('file-upload'),
+        fileDrag      = document.getElementById('file-drag'),
+        submitButton  = document.getElementById('submit-button');
+
+    fileSelect.addEventListener('change', fileSelectHandler, false);
+
+    // Is XHR2 available?
+    var xhr = new XMLHttpRequest();
+    if (xhr.upload) {
+      // File Drop
+      fileDrag.addEventListener('dragover', fileDragHover, false);
+      fileDrag.addEventListener('dragleave', fileDragHover, false);
+      fileDrag.addEventListener('drop', fileSelectHandler, false);
+    }
+  }
+
+  function fileDragHover(e) {
+    var fileDrag = document.getElementById('file-drag');
+
+    e.stopPropagation();
+    e.preventDefault();
+
+    fileDrag.className = (e.type === 'dragover' ? 'hover' : 'modal-body file-upload');
+  }
+
+  function fileSelectHandler(e) {
+    // Fetch FileList object
+    var files = e.target.files || e.dataTransfer.files;
+
+    // Cancel event and hover styling
+    fileDragHover(e);
+
+    // Process all File objects
+    for (var i = 0, f; f = files[i]; i++) {
+      parseFile(f);
+      uploadFile(f);
+    }
+  }
+
+  // Output
+  function output(msg) {
+    // Response
+    var m = document.getElementById('messages');
+    m.innerHTML = msg;
+  }
+
+  function parseFile(file) {
+
+    console.log(file.name);
+    output(
+      '<span>' + encodeURI(file.name) + '</span>'
+    );
+    
+    // var fileType = file.type;
+    // console.log(fileType);
+    var imageName = file.name;
+
+    var isGood = (/\.(?=gif|jpg|png|jpeg)/gi).test(imageName);
+    if (isGood) {
+      document.getElementById('start').classList.add("hidden");
+      document.getElementById('response').classList.remove("hidden");
+      document.getElementById('notimage').classList.add("hidden");
+      // Thumbnail Preview
+      document.getElementById('file-image').classList.remove("hidden");
+      document.getElementById('file-image').src = URL.createObjectURL(file);
+    }
+    else {
+      document.getElementById('file-image').classList.add("hidden");
+      document.getElementById('notimage').classList.remove("hidden");
+      document.getElementById('start').classList.remove("hidden");
+      document.getElementById('response').classList.add("hidden");
+      document.getElementById("file-upload-form").reset();
+    }
+  }
+
+  function uploadFile(file) {
+
+    var xhr = new XMLHttpRequest(),
+      fileInput = document.getElementById('class-roster-file'),
+      pBar = document.getElementById('file-progress'),
+      fileSizeLimit = 1024; // In MB
+    if (xhr.upload) {
+      // Check if file is less than x MB
+      if (file.size <= fileSizeLimit * 1024 * 1024) {
+        // Progress bar
+        pBar.style.display = 'inline';
+        xhr.upload.addEventListener('loadstart', setProgressMaxValue, false);
+        xhr.upload.addEventListener('progress', updateFileProgress, false);
+
+        // File received / failed
+        xhr.onreadystatechange = function(e) {
+          if (xhr.readyState == 4) {
+            // Everything is good!
+
+            // progress.className = (xhr.status == 200 ? "success" : "failure");
+            // document.location.reload(true);
+          }
+        };
+
+        // Start upload
+        xhr.open('POST', document.getElementById('file-upload-form').action, true);
+        xhr.setRequestHeader('X-File-Name', file.name);
+        xhr.setRequestHeader('X-File-Size', file.size);
+        xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+        xhr.send(file);
+      } else {
+        output('Please upload a smaller file (< ' + fileSizeLimit + ' MB).');
+      }
+    }
+  }
+
+  // Check for the various File API support.
+  if (window.File && window.FileList && window.FileReader) {
+    Init();
+  } else {
+    document.getElementById('file-drag').style.display = 'none';
+  }
+}
+ekUpload();
+</script>
 </body>
 </html>
