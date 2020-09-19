@@ -1043,22 +1043,22 @@ function MM_swapImage() { //v3.0
                 </div>
               </div>
               <div class="fg4">
-                <form id="file-upload-form" class="uploader">
-                  <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+                <div class="row">
+                  <div class="mar_at flt_l mar_lft_8">
+                    <div class="circle">
+                       <!-- User Profile Image -->
+                      <img class="profile-pic" src="..\images\icons\opp\user1.png">
 
-                  <label for="file-upload" id="file-drag">
-                    <img id="file-image" src="#" alt="Preview" class="hidden">
-                    <div id="start">
-                      <div>
-                        <i class="fa fa-upload" aria-hidden="true"> </i>
-                      Upload Photo</div>
-                      <div id="notimage" class="hidden">Please select an image</div>
+                       <!-- Default Image -->
+                       <!-- <i class="fa fa-user fa-5x"></i> -->
                     </div>
-                    <div id="response" class="hidden">
-                      <div id="messages"></div>
+                    <div class="p-image">
+                      <label for="file_up" class="lable_upld">
+                      <i class="fa fa-plus-circle upload-button"></i></label>
+                      <input class="file-upload" type="file" accept="image/*" id="file_up" />
                     </div>
-                  </label>
-                </form>           
+                  </div>
+                </div> 
               </div>
               <div class="clearfix"></div>
               <div class="form-group fg4 sa_2 sa_640_i sa_480">
@@ -1198,7 +1198,7 @@ function MM_swapImage() { //v3.0
 
         </div>
         <div class="col-md-7">
-          <h5 class="mr_sel_rle">Select the User role<span class="spn1">*</span></h5>
+          <h5 class="mr_sel_rle">User Permission<span class="spn1">*</span></h5>
           <div class="col-md-12 proper_data">
             <h4>Product Permission</h4>
 
@@ -1221,7 +1221,7 @@ function MM_swapImage() { //v3.0
             <ul id="myTab1" class="sc_hei ul_btn_all">
               <li>
                 <ul>
-                  <li>
+                  <li style="padding-left:2px;">
                     <i class="flt_l butn-chk">
                       <button type="button" class="act_btck btn_uc1 locat1"><i class="state-icon fa fa-square-o ic1"></i><i class="fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
                       <input type="checkbox" class="hidden">
@@ -1333,7 +1333,7 @@ function MM_swapImage() { //v3.0
         <!------tree_section_started-->
         <h3 class=" btn_sls_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx1"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx1"><i class="state-icon fa fa-square-o s_ic1"></i><i class="state-icon fa fa-check-square-o s_ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">SALES FORCE AUTOMATION</span>
@@ -1478,7 +1478,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_aws_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx2"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx2"><i class="state-icon fa fa-square-o aw_ic1"></i><i class="state-icon fa fa-check-square-o aw_ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Auto Workshop Management System</span>
@@ -1581,7 +1581,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_guar_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx3"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx3"><i class="state-icon fa fa-square-o gm_ic1"></i><i class="state-icon fa fa-check-square-o gm_ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Guarantee Management System</span>
@@ -1677,7 +1677,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_hcm_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx4"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx4"><i class="state-icon fa fa-square-o hc_ic1"></i><i class="state-icon fa fa-check-square-o hc_ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Human Capital Management</span>
@@ -1773,7 +1773,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_fin_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx5"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx5"><i class="state-icon fa fa-square-o fm_ic1"></i><i class="state-icon fa fa-check-square-o fm_ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Finance Management System</span>
@@ -1869,7 +1869,7 @@ function MM_swapImage() { //v3.0
         <!--tree_section_started-->
         <h3 class=" btn_pro_tree1">
           <i class="flt_l butn-chk">
-            <button type="button" class="act_btck chk_allbx6"><i class="state-icon fa fa-square-o ic1"></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+            <button type="button" class="act_btck chk_allbx6"><i class="state-icon fa fa-square-o pm_ic1"></i><i class="state-icon fa fa-check-square-o pm_ic2" style="display: none;"></i>&nbsp;</button>
             <input type="checkbox" class="hidew" style="display:none;">
           </i>
           <span class="sp_z_1">Procurement Management System</span>
@@ -2029,8 +2029,79 @@ function MM_swapImage() { //v3.0
           </div>
         </div>
       </div>
+
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
+      <div class="devider"></div>
+
+       <div class="form-group fg12 sa_2 sa_480">
+          <h5>
+          <div class="check1 chk_login">
+            <div class="">
+              <label class="switch" onclick="chk_login1()">
+                <input type="checkbox" id="opn_logn1">
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>Auto workshop related informations:<span class="spn1"></span></h5>
+        </div>
+        <div class="" id="login_dtls_bx1" style="display: none;">
+          <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
+            <label for="email" class="fg2_la1">Driving License#:<span class="spn1">*</span>
+            </label>
+            <input type="email" class="form-control fg2_inp1 inp_mst" placeholder="Driving Licence# " required="">
+          </div>
+          <div class="form-group fg4 hcm_2_1 sa_480">
+            <label for="pwd" class="fg2_la1">License Expiry Date:<span class="spn1">*</span> </label>
+            <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr inp_mst" type="text">
+              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div>
+          <div class="form-group fg4 sa_2 sa_480">
+            <label for="email" class="fg2_la1 pad_l">Allow Duty Roster:<span class="spn1">*</span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="form-group fg4 sa_fg1">
+            <label for="email" class="fg2_la1 pad_l">License Type:<span class="spn1">*</span></label>
+            <div class="box_veh bx_1_2">
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('vhl1','','../images/car_wt.png',1)">
+                <button class="vhl_1 vh_ic vh1 lt1" data-toggle="tooltip" data-original-title="Four Wheeler" data-placement="bottom">
+                  <img src="../images/car_bl.png" width="50" height="30" id="vhl1"><!--content_container_closed------>
+                </button>
+              </a>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('vhl2','','../images/bus_wt.png',1)">
+                <button class="vhl_1 vh_ic vh2 lt2" data-toggle="tooltip" data-original-title="Six Wheeler" data-placement="bottom">
+                  <img src="../images/bus_bl.png" width="50" height="30" id="vhl2"><!--content_container_closed------>
+                </button>
+              </a>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('vhl3','','../images/crai_wt.png',1)">
+                <button class="vhl_1 vh_ic  vh3 lt3" data-toggle="tooltip" data-original-title="sixteen Wheeler" data-placement="bottom">
+                  <img src="../images/crai_bl.png" width="50" height="30" id="vhl3">
+                </button>
+              </a><!--content_container_closed------>
+              <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('vhl4','','../images/truck_wt.png',1)">
+                <button data-toggle="tooltip" data-original-title="Two Wheeler" data-placement="bottom"  class="vhl_1 vh_ic  vh4 lt4">
+                <img src="../images/truck_bl.png" width="50" height="30" id="vhl4"></button>
+              </a><!--content_container_closed------>
+            </div>
+          </div>
+          <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
+            <label for="email" class="fg2_la1 pad_l">License Copy:<span class="spn1">*</span></label>
+            <input type="file" id="file-upload" multiple="" required="">
+            <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+            <div id="file-upload-filename" class="file_n"></div>
+          </div>
+        </div>
+
+      <div class="clearfix"></div>
       <div class="devider"></div>
       <div class="sub_cont pull-right">
         <div class="save_sec">
@@ -4874,6 +4945,13 @@ function chk_login() {
     {
      document.getElementById("login_dtls_bx").style.display = "none";
     } 
+}function chk_login1() {
+    if (document.getElementById("opn_logn1").checked==true) {
+     document.getElementById("login_dtls_bx1").style.display = "block";
+    }else
+    {
+     document.getElementById("login_dtls_bx1").style.display = "none";
+    } 
 }
 </script>
 <script>
@@ -5659,133 +5737,51 @@ $('.hidew').prop('checked',true);
 <!--checkbox_closed-->
 
 <!----file_uploader-->
-<script>
-// File Upload
-// 
-function ekUpload(){
-  function Init() {
+<!-- 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+<script type="text/javascript">
+  $(document).ready(function() {
 
-    console.log("Upload Initialised");
-
-    var fileSelect    = document.getElementById('file-upload'),
-        fileDrag      = document.getElementById('file-drag'),
-        submitButton  = document.getElementById('submit-button');
-
-    fileSelect.addEventListener('change', fileSelectHandler, false);
-
-    // Is XHR2 available?
-    var xhr = new XMLHttpRequest();
-    if (xhr.upload) {
-      // File Drop
-      fileDrag.addEventListener('dragover', fileDragHover, false);
-      fileDrag.addEventListener('dragleave', fileDragHover, false);
-      fileDrag.addEventListener('drop', fileSelectHandler, false);
-    }
-  }
-
-  function fileDragHover(e) {
-    var fileDrag = document.getElementById('file-drag');
-
-    e.stopPropagation();
-    e.preventDefault();
-
-    fileDrag.className = (e.type === 'dragover' ? 'hover' : 'modal-body file-upload');
-  }
-
-  function fileSelectHandler(e) {
-    // Fetch FileList object
-    var files = e.target.files || e.dataTransfer.files;
-
-    // Cancel event and hover styling
-    fileDragHover(e);
-
-    // Process all File objects
-    for (var i = 0, f; f = files[i]; i++) {
-      parseFile(f);
-      uploadFile(f);
-    }
-  }
-
-  // Output
-  function output(msg) {
-    // Response
-    var m = document.getElementById('messages');
-    m.innerHTML = msg;
-  }
-
-  function parseFile(file) {
-
-    console.log(file.name);
-    output(
-      '<span>' + encodeURI(file.name) + '</span>'
-    );
     
-    // var fileType = file.type;
-    // console.log(fileType);
-    var imageName = file.name;
+    var readURL = function(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
-    var isGood = (/\.(?=gif|jpg|png|jpeg)/gi).test(imageName);
-    if (isGood) {
-      document.getElementById('start').classList.add("hidden");
-      document.getElementById('response').classList.remove("hidden");
-      document.getElementById('notimage').classList.add("hidden");
-      // Thumbnail Preview
-      document.getElementById('file-image').classList.remove("hidden");
-      document.getElementById('file-image').src = URL.createObjectURL(file);
+            reader.onload = function (e) {
+                $('.profile-pic').attr('src', e.target.result);
+            }
+    
+            reader.readAsDataURL(input.files[0]);
+        }
     }
-    else {
-      document.getElementById('file-image').classList.add("hidden");
-      document.getElementById('notimage').classList.remove("hidden");
-      document.getElementById('start').classList.remove("hidden");
-      document.getElementById('response').classList.add("hidden");
-      document.getElementById("file-upload-form").reset();
-    }
-  }
+    
 
-  function uploadFile(file) {
-
-    var xhr = new XMLHttpRequest(),
-      fileInput = document.getElementById('class-roster-file'),
-      pBar = document.getElementById('file-progress'),
-      fileSizeLimit = 1024; // In MB
-    if (xhr.upload) {
-      // Check if file is less than x MB
-      if (file.size <= fileSizeLimit * 1024 * 1024) {
-        // Progress bar
-        pBar.style.display = 'inline';
-        xhr.upload.addEventListener('loadstart', setProgressMaxValue, false);
-        xhr.upload.addEventListener('progress', updateFileProgress, false);
-
-        // File received / failed
-        xhr.onreadystatechange = function(e) {
-          if (xhr.readyState == 4) {
-            // Everything is good!
-
-            // progress.className = (xhr.status == 200 ? "success" : "failure");
-            // document.location.reload(true);
-          }
-        };
-
-        // Start upload
-        xhr.open('POST', document.getElementById('file-upload-form').action, true);
-        xhr.setRequestHeader('X-File-Name', file.name);
-        xhr.setRequestHeader('X-File-Size', file.size);
-        xhr.setRequestHeader('Content-Type', 'multipart/form-data');
-        xhr.send(file);
-      } else {
-        output('Please upload a smaller file (< ' + fileSizeLimit + ' MB).');
-      }
-    }
-  }
-
-  // Check for the various File API support.
-  if (window.File && window.FileList && window.FileReader) {
-    Init();
-  } else {
-    document.getElementById('file-drag').style.display = 'none';
-  }
-}
-ekUpload();
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+    
+    $(".upload-button").on('click', function() {
+       $(".file-upload").click();
+    });
+});
 </script>
+
+  <script>
+$(document).ready(function(){
+  $(".vh1").click(function(){
+    $(".vh1").toggleClass("lt_selected");
+  });
+  $(".vh2").click(function(){
+    $(".vh2").toggleClass("lt_selected");
+  });
+  $(".vh3").click(function(){
+    $(".vh3").toggleClass("lt_selected");
+  });
+  $(".vh4").click(function(){
+    $(".vh4").toggleClass("lt_selected");
+  });
+});
+</script>
+
 </body>
 </html>
