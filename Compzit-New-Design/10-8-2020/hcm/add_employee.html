@@ -1053,8 +1053,9 @@ function MM_swapImage() { //v3.0
                        <!-- <i class="fa fa-user fa-5x"></i> -->
                     </div>
                     <div class="p-image">
+                      <i class="clear_1 fa fa-times" title=""></i></label>
                       <label for="file_up" class="lable_upld">
-                      <i class="fa fa-plus-circle upload-button"></i></label>
+                      <i class="fa fa-plus-circle upload-button" title=""></i>
                       <input class="file-upload" type="file" accept="image/*" id="file_up" />
                     </div>
                   </div>
@@ -1135,10 +1136,14 @@ function MM_swapImage() { //v3.0
               </div>
               <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="display: none;">
                   <option>Business Unit 1</option>
                   <option>Business Unit 2</option>
                 </select> 
+
+                <div class="dropdown-mul-1 imp_se sel_opt1" style="margin-right: 10px!important;width: 90%;margin-bottom:6px!important;">
+                  <select style="display:none;width: 96%;" multiple placeholder="Select"> </select>
+                </div>
               </div>
               <div class="fg4 sa_o_fg5 sa_2 sa_640_i des_1_opn" style="display: none;">
                 <label for="email" class="fg2_la1 pad_l">Sub Business Units:<span class="spn1"></span></label><br>
@@ -1154,6 +1159,13 @@ function MM_swapImage() { //v3.0
               </div>
               <div class="fg4 sa_o_fg5 sa_2 sa_640_i des_1_opn" style="display: none;">
                 <label for="email" class="fg2_la1 pad_l">Corporate Department:<span class="spn1">*</span></label><br>
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                  <option>Corporate Department 1</option>
+                  <option>Corporate Department 2</option>
+                </select> 
+              </div>
+              <div class="fg4 sa_o_fg5 sa_2 sa_640_i des_1_opn" style="display: none;">
+                <label for="email" class="fg2_la1 pad_l">Accessible Division:<span class="spn1">*</span></label><br>
                 <div class="dropdown-mul-1 imp_se" style="margin-right: 10px!important;width: 90%;">
                   <select style="display:none;width: 96%;" multiple placeholder="Select"> </select>
                 </div>
@@ -2896,11 +2908,11 @@ function MM_swapImage() { //v3.0
           </div>
         </div>
         <div class="amnt_1_d">
-          <div class="form-group fg4 sa_2 sa_480">
+          <div class="form-group fg2 sa_2 sa_480">
             <label for="email" class="fg2_la1">Salary Addition:<span class="spn1">*</span></label>
             <input type="text" class="form-control fg2_inp1 fg_chs2 inp_mst tr_r" placeholder="0.00"> 
           </div>
-          <div class="form-group fg4 sa_2 sa_480">
+          <div class="form-group fg2 sa_2 sa_480">
             <label for="email" class="fg2_la1">Amount Range:<span class="spn1"></span></label>
             <span class="spn1"><b>3000 - 10000 QAR</b></span>
           </div>
@@ -2949,7 +2961,7 @@ function MM_swapImage() { //v3.0
               <thead class="thead1">
                 <tr>
                   <th class="col-md-6 tr_l">Deduction</th>
-                  <th class="col-md-3 tr_r">Percentage/Amount</th>
+                  <th class="col-md-3 tr_r">Percentage / Amount</th>
                   <th class="col-md-3">Action</th>
                 </tr>
               </thead>
@@ -2999,7 +3011,7 @@ function MM_swapImage() { //v3.0
       <div class="top_br_1 pa_h1 to_1">
         <div class="col-md-6 tx_100 hcm_1_2">
           <h5>Salary Summary</h5>
-          <ul class="pl_lft0">
+          <ul class="pl_lft0 slary_sum">
             <li><span class="fg6 li_100">Basic Pay:</span> <span class="fg6 li_100_1"> 20000 QAR</span></li>
             <li><span class="fg6 li_100">Addition:</span> <span class="fg6 li_100_1"> 100 QAR</span></li>
             <li><span class="fg6 li_100">Deduction:</span> <span class="fg6 li_100_1"> 20 QAR</span></li>
@@ -4744,12 +4756,12 @@ function per_adrs() {
 <script>
 $(document).ready(function(){
   $(".per_sel").click(function(){
-    $(".amnt_1").hide(100);
-    $(".percn_1_a").show(100);
+    $(".amnt_1").hide();
+    $(".percn_1_a").fadeIn(1000);
   });
   $(".amt_sel").click(function(){
-    $(".amnt_1").show(100);
-    $(".percn_1_a").hide(100);
+    $(".percn_1_a").hide();
+    $(".amnt_1").fadeIn(1000);
   });
 });
 </script>
@@ -4757,12 +4769,12 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $(".per_sel_d").click(function(){
-    $(".amnt_1_d").hide(100);
-    $(".percn_1_d").show(100);
+    $(".amnt_1_d").hide();
+    $(".percn_1_d").fadeIn(1000);
   });
   $(".amt_sel_d").click(function(){
-    $(".amnt_1_d").show(100);
-    $(".percn_1_d").hide(100);
+    $(".amnt_1_d").fadeIn(1000);
+    $(".percn_1_d").hide();
   });
 });
 </script>
