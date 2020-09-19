@@ -2127,7 +2127,7 @@ function MM_swapImage() { //v3.0
   <div id="dtl_cntct" class="tabcontent_stf emply_ad_1">
     <h3>Contact Details</h3>
     <div class="fg6">
-      <div class="fg6" style="margin-bottom: 22px;">
+      <div class="fg12">
       <h5>Permanent Address</h5>
     </div>
       <div class="form-group fg12 sa_1 sa_480">
@@ -2142,9 +2142,9 @@ function MM_swapImage() { //v3.0
         <label for="email" class="fg2_la1">Address 3:<span class="spn1"></span></label>
         <input class="form-control fg2_inp1 fg_chs2 wid_ful95" placeholder="Address 3">
       </div>
-      <div class="form-group fg12 sa_1 sa_480">
+      <div class="form-group fg6 sa_1 sa_480">
         <label for="email" class="fg2_la1">Country:<span class="spn1">*</span></label>
-        <select class="form-control fg2_inp1 fg_chs2 inp_mst wid_ful95">
+        <select class="form-control fg2_inp1 fg_chs2 inp_mst">
           <option>Qatar</option>
           <option>India</option>
           <option>United Arab Emirates</option>
@@ -2188,22 +2188,17 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
     <div class="fg6">
-      <div class="fg6">
-      <h5>Address For Communication</h5>
-      </div>
-      <div class="fg6" style="margin-bottom: 0px;">
-      <div class="form-group fg12 sa_1 sa_480">
-        <label for="email" class="fg2_la1 pad_l">Same As Permanent Address:<span class="spn1"></span></label>
-        <div class="check1">
+      <div class="fg12">
+      <h5>
+        <div class="check1 wi_at" data-toggle="tooltip" data-original-title="Same As Permanent Address" data-placement="top">
           <div class="">
             <label class="switch" onclick="per_adrs()">
               <input type="checkbox" id="per_adrs">
               <span class="slider_tog round"></span>
             </label>
           </div>
-        </div>
+        </div>Address For Communication</h5>
       </div>
-    </div>
       <div class="form-group fg12 sa_1 sa_480">
         <label for="email" class="fg2_la1">Address 1:<span class="spn1">*</span></label>
         <input class="form-control fg2_inp1 fg_chs2 inp_mst wid_ful95" id="per_adrs_dsb" placeholder="Address 1">
@@ -2216,9 +2211,9 @@ function MM_swapImage() { //v3.0
         <label for="email" class="fg2_la1">Address 3:<span class="spn1"></span></label>
         <input class="form-control fg2_inp1 fg_chs2 wid_ful95" id="per_adrs_dsb2" placeholder="Address 3">
       </div>
-      <div class="form-group fg12 sa_1 sa_480">
+      <div class="form-group fg6 sa_1 sa_480">
         <label for="email" class="fg2_la1">Country:<span class="spn1">*</span></label>
-        <select class="form-control fg2_inp1 fg_chs2 inp_mst wid_ful95" id="per_adrs_dsb3">
+        <select class="form-control fg2_inp1 fg_chs2 inp_mst" id="per_adrs_dsb3">
           <option>Qatar</option>
           <option>India</option>
           <option>United Arab Emirates</option>
@@ -2262,10 +2257,9 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="free_sp"></div>
     <div class="devider"></div>
 
-    <a href="#" class="ad_emrgy"><h5><i class="fa fa-plus-circle"></i> Add Emergency Contact</h5></a>
+    <a href="#" class="ad_emrgy"><h5>Add Emergency Contact <i class="fa fa-caret-down"></i></h5></a>
     <div class="emrgcy_cntct" style="display: none;">
       <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
@@ -2301,7 +2295,6 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="free_sp"></div>
     <div class="devider"></div>
 
     <div class="sub_cont pull-right">
@@ -2366,7 +2359,6 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="free_sp"></div>
     <div class="devider"></div>
     <div class="sub_cont pull-right">
       <div class="save_sec">
@@ -2473,15 +2465,14 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="free_sp"></div>
     <div class="psprt_sec">
       <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Passport#:<span class="spn1"></span></label>
-        <input type="text" class="form-control fg2_inp1" placeholder="Passport#">
+        <label for="email" class="fg2_la1">Passport#:<span class="spn1">*</span></label>
+        <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Passport#">
       </div>
       <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Issued By:<span class="spn1">*</span></label>
-        <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+        <label for="email" class="fg2_la1">Issued By:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
           <option>India</option>
           <option>Qatar</option>
           <option>America</option>
@@ -2623,7 +2614,6 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="free_sp"></div>
     <div class="devider"></div>
     <div class="sub_cont pull-right">
       <div class="save_sec">
@@ -2752,7 +2742,7 @@ function MM_swapImage() { //v3.0
     </div>
     <div class="top_br_container hc_at">
       <div class="top_br_1 pa_h1">
-        <h5>Allowance/Benefits</h5>
+        <h5>Allowance / Benefits</h5>
         <div class="form-group fg2 sa_2 sa_480">
           <label for="email" class="fg2_la1">Salary Addition:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
@@ -2788,12 +2778,12 @@ function MM_swapImage() { //v3.0
             <span class="spn1"><b>3000 - 10000 QAR</b></span>
           </div>
         </div>
-        <div class="percn_1 percn_1_a" style="display: none;">
-          <div class="form-group fg4 sa_2 sa_480">
+        <div class="fg4 percn_1_a" style="display: none;width: 50%;">
+          <div class="form-group fg6 sa_2 sa_480">
             <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
-            <input type="text" class="form-control fg2_inp1 fg_chs2 inp_mst tr_r" placeholder="0"> 
+            <input type="text" class="form-control fg2_inp1 inp_mst tr_r wid_86p" placeholder="0"> 
           </div>
-          <div class="fg4">
+          <div class="fg17">
             <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1">&nbsp;</span></label>
             <div class="check1">
               <div class="">
@@ -2804,13 +2794,12 @@ function MM_swapImage() { //v3.0
               </div>
             </div>
           </div>
-          <div class="form-group fg4 sa_2 sa_480">
+          <div class="form-group fg32 sa_2 sa_480">
             <label for="email" class="fg2_la1">Percentage Range:<span class="spn1"></span></label>
             <span class="spn1"><b>30% - 90%</b></span>
           </div>
         </div>
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
         <div class="devider"></div>
         <div class="sub_cont pull-right">
           <div class="save_sec">
@@ -2831,9 +2820,9 @@ function MM_swapImage() { //v3.0
             <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
               <thead class="thead1">
                 <tr>
-                  <th class="col-md-2 tr_l">Addition</th>
-                  <th class="col-md-2 tr_r">Amount</th>
-                  <th class="col-md-2">Action</th>
+                  <th class="col-md-6 tr_l">Addition</th>
+                  <th class="col-md-3 tr_r">Amount</th>
+                  <th class="col-md-3">Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -2881,7 +2870,7 @@ function MM_swapImage() { //v3.0
     <div class="top_br_container hc_at">
       <div class="top_br_1 pa_h1">
         <h5>Deduction</h5>
-        <div class="form-group fg4 sa_2 sa_480">
+        <div class="form-group fg2 sa_2 sa_480">
           <label for="email" class="fg2_la1">Salary Deduction:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
             <option>Deduction 1</option>
@@ -2893,14 +2882,14 @@ function MM_swapImage() { //v3.0
           <label for="email" class="fg2_la1">Payroll Type:<span class="spn1"></span></label>
           <span><b>Variable</b></span>
         </div> -->
-        <div class="form-group fg4 sa_2 sa_640 sa_480 pa_lr">
+        <div class="form-group fg5 sa_2 sa_640 sa_480 pa_lr">
           <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
           <div class="row rl_prt">
             <div class="prtd_rat">
               <div class="form-check">
-                <input class="form-check-input amt_sel_d" type="radio" name="pay_type" id="gridRadios2" value="option2">
+                <input class="form-check-input amt_sel_d" type="radio" name="pay_type" id="gridRadios2" value="option2" checked="">
                 <label class="form-check-label" for="gridRadios2">Amount</label>
-                <input class="form-check-input per_sel_d" type="radio" name="pay_type" id="gridRadios1" value="option1" checked="">
+                <input class="form-check-input per_sel_d" type="radio" name="pay_type" id="gridRadios1" value="option1">
                 <label class="form-check-label" for="gridRadios1">Percentage</label>
               </div>
             </div>
@@ -2916,12 +2905,12 @@ function MM_swapImage() { //v3.0
             <span class="spn1"><b>3000 - 10000 QAR</b></span>
           </div>
         </div>
-        <div class="percn_1 percn_1_d">
-          <div class="form-group fg4 sa_2 sa_480">
+        <div class="mar_at flt_l percn_1_d" style=" display:none;width: 50%;">
+          <div class="form-group fg6 sa_2 sa_480">
             <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
-            <input type="text" class="form-control fg2_inp1 fg_chs2 inp_mst tr_r" placeholder="0"> 
+            <input type="text" class="form-control fg2_inp1 inp_mst tr_r wid_86p" placeholder="0"> 
           </div>
-          <div class="fg4">
+          <div class="fg17">
             <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1">&nbsp;</span></label>
             <div class="check1">
               <div class="">
@@ -2932,7 +2921,7 @@ function MM_swapImage() { //v3.0
               </div>
             </div>
           </div>
-          <div class="form-group fg4 sa_2 sa_480">
+          <div class="form-group fg32 sa_2 sa_480">
             <label for="email" class="fg2_la1">Percentage Range:<span class="spn1"></span></label>
             <span class="spn1"><b>30% - 90%</b></span>
           </div>
@@ -2959,9 +2948,9 @@ function MM_swapImage() { //v3.0
             <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
               <thead class="thead1">
                 <tr>
-                  <th class="col-md-2 tr_l">Deduction</th>
-                  <th class="col-md-2 tr_r">Percentage/Amount</th>
-                  <th class="col-md-2">Action</th>
+                  <th class="col-md-6 tr_l">Deduction</th>
+                  <th class="col-md-3 tr_r">Percentage/Amount</th>
+                  <th class="col-md-3">Action</th>
                 </tr>
               </thead>
               <tbody>
@@ -3010,7 +2999,7 @@ function MM_swapImage() { //v3.0
       <div class="top_br_1 pa_h1 to_1">
         <div class="col-md-6 tx_100 hcm_1_2">
           <h5>Salary Summary</h5>
-          <ul>
+          <ul class="pl_lft0">
             <li><span class="fg6 li_100">Basic Pay:</span> <span class="fg6 li_100_1"> 20000 QAR</span></li>
             <li><span class="fg6 li_100">Addition:</span> <span class="fg6 li_100_1"> 100 QAR</span></li>
             <li><span class="fg6 li_100">Deduction:</span> <span class="fg6 li_100_1"> 20 QAR</span></li>
@@ -3617,63 +3606,6 @@ function MM_swapImage() { //v3.0
             </tbody>
           </table>
         </div>
-        <!-- <div class="hcm_res r_800 cert1">
-          <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
-            <thead class="thead1">
-              <tr>
-                <th class="col-md-6 tr_l">Skill</th>
-                <th class="col-md-3">Year of Experience</th>
-                <th class="col-md-3">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tr_l">Accounting</td>
-                <td>4</td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </div>
-                  <div class="btn_stl2">
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                  </div>
-                  <div class="btn_stl3">
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="tr_l">Accounting</td>
-                <td>4</td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </div>
-                  <div class="btn_stl2">
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                  </div>
-                  <div class="btn_stl3">
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div> -->
       </div>
     </div>
   </div>
@@ -3682,24 +3614,24 @@ function MM_swapImage() { //v3.0
   <!---job_details_section-->
   <div id="dtl_job" class="tabcontent_stf emply_ad_1">
     <h5>Employment Commencement</h5>
-    <div class="form-group fg4 sa_o_fg5 sa_1hrd1">
+    <div class="form-group fg4 sa_o_fg5">
       <label for="pwd" class="fg2_la1">Date Of Joining:<span class="spn1">*</span> </label>
-      <div id="datepicker16" class="input-group date wi_d1" data-date-format="mm-dd-yyyy">
+      <div id="datepicker16" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
         <input class="form-control inp_bdr inp_mst" type="text">
         <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
       </div>
     </div>
     <div class="form-group fg4 sa_o_fg5 sa_1 hrd1 sa_480">
       <label for="pwd" class="fg2_la1">Probation End Date:<span class="spn1"></span> </label>
-      <div class="fg6 sa_480">
-        <select class="form-control fg2_inp1 fg_chs2">
+      <div class="fg4 sa_480">
+        <select class="form-control fg2_inp1 fg_chs2 wid100">
           <option>1 Month</option>
           <option>3 Month</option>
           <option>6 Month</option>
         </select>
       </div>
-      <div class="fg6 sa_480 mr_re_1">
-        <div id="datepicker17" class="input-group date wi_d1" data-date-format="mm-dd-yyyy">
+      <div class="fg_3_1 sa_480">
+        <div id="datepicker17" class="input-group date wid_86p" data-date-format="mm-dd-yyyy">
           <input class="form-control inp_bdr" type="text">
           <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
         </div>
@@ -3709,15 +3641,16 @@ function MM_swapImage() { //v3.0
       <label for="email" class="fg2_la1">Probation Period:<span class="spn1"></span></label>
       <input type="text" class="form-control fg2_inp1 tr_r" placeholder="0" disabled="">
     </div>
+    <div class="clearfix"></div>
     <div class="form-group fg4 sa_o_fg5 sa_480 mr_re_1">
       <label for="pwd" class="fg2_la1">Date Of Permanency:<span class="spn1"></span> </label>
-      <div id="datepicker18" class="input-group date wi_d1" data-date-format="mm-dd-yyyy">
+      <div id="datepicker18" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
         <input class="form-control inp_bdr" type="text">
         <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
       </div>
     </div>
     <div class="clearfix"></div>
-    <div class="free_sp"></div>
+    <div class="devider"></div>
     <h5>Job Details</h5>
     <div class="form-group fg4 sa_2 sa_480">
       <label for="email" class="fg2_la1">Sponsor:<span class="spn1"></span></label>
@@ -3756,7 +3689,6 @@ function MM_swapImage() { //v3.0
       <input type="text" class="form-control fg2_inp1" placeholder="Job Description">
     </div>
     <div class="clearfix"></div>
-    <div class="free_sp"></div>
     <div class="devider"></div>
     <div class="sub_cont pull-right">
       <div class="save_sec">
@@ -3786,14 +3718,14 @@ function MM_swapImage() { //v3.0
         </div>
         <div class="form-group fg4 sa_2 sa_480">
           <label for="pwd" class="fg2_la1">Project Start Date:<span class="spn1">*</span> </label>
-          <div id="datepicker19" class="input-group date wi_d1" data-date-format="mm-dd-yyyy">
+          <div id="datepicker19" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
            <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
         </div>
         <div class="form-group fg4 sa_2 sa_480">
           <label for="pwd" class="fg2_la1">Project End Date:<span class="spn1">*</span> </label>
-          <div id="datepicker20" class="input-group date wi_d1" data-date-format="mm-dd-yyyy">
+          <div id="datepicker20" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
            <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
@@ -3803,7 +3735,6 @@ function MM_swapImage() { //v3.0
           <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
         </div>
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
         <div class="devider"></div>
         <div class="sub_cont pull-right">
           <div class="save_sec">
@@ -3822,23 +3753,13 @@ function MM_swapImage() { //v3.0
         <div class="clearfix"></div>
         <div class="free_sp"></div>
         <div class="">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div>
           <div class="hcm_res r_800">
             <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
               <thead class="thead1">
                 <tr>
-                  <th class="col-md-4 tr_l">Project</th>
-                  <th class="col-md-3">Start Date</th>
-                  <th class="col-md-3">End Date</th>
+                  <th class="col-md-6 tr_l">Project</th>
+                  <th class="col-md-2">Start Date</th>
+                  <th class="col-md-2">End Date</th>
                   <th class="col-md-2">Action</th>
                 </tr>
               </thead>
@@ -4766,7 +4687,7 @@ document.getElementById("defaultOpen1").click();
 <script>
   $(document).ready(function(){
     $(".ad_emrgy").click(function(){
-      $(".emrgcy_cntct").toggle();
+      $(".emrgcy_cntct").fadeToggle(1000);
     });
   });
 </script>

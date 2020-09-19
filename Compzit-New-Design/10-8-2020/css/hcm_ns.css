@@ -1074,7 +1074,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .chk_algn .act_btck{margin-top: -3px;margin-left: -6px;}
 .tree7 li .butn-chk{background-color: transparent;border:none;padding:0;}
 .modal-open .modal{z-index: 3999!important;}
-.tabcontent_stf .fg4, .tabcontent_stf .fg6{margin-bottom:10px;}
+.tabcontent_stf .fg4, .tabcontent_stf .fg6, .tabcontent_stf .fg12{margin:auto;float:left;margin-bottom:6px;}
 .mail_ch1{margin-right: 36px;}
 .mail_ch1 button{border-bottom: none;border-radius: 4px 4px 0px 0px;}
 
@@ -1104,3 +1104,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .ul_btn_all{margin-left: -7px;}
 .pro_per .tree7 li{padding-left:11px;}
 .prod_ic, .prod_ic .btn_zp{border-radius: 50px;}
+.wi_at{width: auto;margin-right: 14px;margin-top:-4px;}
+.wid100{width: 100%!important;}
+.wid_86p{width: 86%!important;}
+.pl_lft0{padding-left:0px;}
