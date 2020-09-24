@@ -2449,16 +2449,16 @@ function MM_swapImage() { //v3.0
   <div id="dtl_imgtn" class="tabcontent_stf emply_ad_1 emp_stf">
     <div class="tab_stf tb1_qlf tab_qlf">
       <button class="tablinks1" onclick="open_box_qlf(event, 'qlf1')" id="defaultOpen1">
-        <i class="fa fa-suitcase fa_stf" title="Passport"></i> <span>Passport</span>
+        <i class="fa_stf" title="Passport"><img src="../images/icons/hcm/tab_ic1.png" class="tb_ic_wid"></i> <span>Passport</span>
       </button>
       <button class="tablinks1" onclick="open_box_qlf(event, 'qlf2')">
-        <i class="fa fa-graduation-cap fa_stf" title="Visa"></i> <span>Visa</span>
+        <i class="fa_stf" title="Visa"><img src="../images/icons/hcm/tab_ic2.png" class="tb_ic_wid"></i> <span>Visa</span>
       </button>
       <button class="tablinks1" onclick="open_box_qlf(event, 'qlf3')">
-        <i class="fa fa-id-card-o fa_stf" title="Residence Permit"></i> <span>Residence Permit</span>
+        <i class="fa_stf" title="Residency Permit"><img src="../images/icons/hcm/tab_ic3.png" class="tb_ic_wid"></i> <span>Residency Permit</span>
       </button>
       <button class="tablinks1" onclick="open_box_qlf(event, 'qlf4')">
-        <i class="fa fa-language fa_stf" title="Health Card"></i><span>Health Card</span>
+        <i class="fa_stf" title="Health Card"><img src="../images/icons/hcm/tab_ic4.png" class="tb_ic_wid"></i><span>Health Card</span>
       </button>
     </div>
     <div id="qlf1" class="tabcontent_qlf box_wid">
@@ -2553,7 +2553,7 @@ function MM_swapImage() { //v3.0
     </div>
     <div id="qlf3" class="tabcontent_qlf box_wid">
       <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Residence Permit#:<span class="spn1"></span></label>
+        <label for="email" class="fg2_la1">Residency Permit#:<span class="spn1"></span></label>
         <input type="text" class="form-control fg2_inp1" placeholder="Residence Permit#">
       </div>
       <div class="form-group fg4 sa_2 sa_480">
@@ -3008,7 +3008,7 @@ function MM_swapImage() { //v3.0
   <!-----Salary details section_Closed---->
 
   <!-----Qualification details section_started---->
-  <div id="dtl_qlfctn" class="tabcontent_stf emp_stf">
+<!--   <div id="dtl_qlfctn" class="tabcontent_stf emp_stf">
     <div class="tab_stf tb1_qlf tab_qlf">
       <button class="tablinks1" onclick="open_box_qlf(event, 'qlf2')">
         <i class="fa fa-suitcase fa_stf" title="Work Experience"></i> <span>Work Experience</span>
@@ -3224,16 +3224,6 @@ function MM_swapImage() { //v3.0
       <div class="clearfix"></div>
       <h3>Work Experience List</h3>
       <div class="">
-        <div class="col-md-12">
-          <p><span class="tbl_srt1">Showing </span> 
-            <select class="form-control tbl_srt">
-              <option>10</option>
-              <option>25</option>
-              <option>50</option>
-              <option>100</option>
-            </select> Entries
-          </p>
-        </div>
         <div class="hcm_res r_800">
           <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
             <thead class="thead1">
@@ -3604,106 +3594,114 @@ function MM_swapImage() { //v3.0
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-----Qualification details section_Closed---->
 
   <!---job_details_section-->
   <div id="dtl_job" class="tabcontent_stf emply_ad_1">
-    <h5>Employment Commencement</h5>
-    <div class="form-group fg4 sa_o_fg5">
-      <label for="pwd" class="fg2_la1">Date Of Joining:<span class="spn1">*</span> </label>
-      <div id="datepicker16" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-        <input class="form-control inp_bdr inp_mst" type="text">
-        <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-      </div>
+    <div class="tab_stf tb1_qlf tab_qlf">
+      <button class="jobtb_1 selected_bx">
+        <i class="fa fa-suitcase fa_stf" title="Work Experience"></i> <span>Empolyment Commencement</span>
+      </button>
+      <button class="jobtb_2">
+        <i class="fa fa-file-text-o fa_stf" title="Academic"></i> <span>Project Assignment</span>
+      </button>
     </div>
-    <div class="form-group fg4 sa_o_fg5 sa_1 hrd1 sa_480">
-      <label for="pwd" class="fg2_la1">Probation End Date:<span class="spn1"></span> </label>
-      <div class="fg4 sa_480">
-        <select class="form-control fg2_inp1 fg_chs2 wid100">
-          <option>1 Month</option>
-          <option>3 Month</option>
-          <option>6 Month</option>
-        </select>
+    <div class="jb_bx1">
+      <div class="form-group fg4 sa_o_fg5">
+        <label for="pwd" class="fg2_la1">Date Of Joining:<span class="spn1">*</span> </label>
+        <div id="datepicker16" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+          <input class="form-control inp_bdr inp_mst" type="text">
+          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+        </div>
       </div>
-      <div class="fg_3_1 sa_480">
-        <div id="datepicker17" class="input-group date wid_86p" data-date-format="mm-dd-yyyy">
+      <div class="form-group fg4 sa_o_fg5 sa_1 hrd1 sa_480">
+        <label for="pwd" class="fg2_la1">Probation End Date:<span class="spn1"></span> </label>
+        <div class="fg4 sa_480">
+          <select class="form-control fg2_inp1 fg_chs2 wid100">
+            <option>1 Month</option>
+            <option>3 Month</option>
+            <option>6 Month</option>
+          </select>
+        </div>
+        <div class="fg_3_1 sa_480">
+          <div id="datepicker17" class="input-group date wid_86p" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="form-group fg4 sa_o_fg5 sa_480">
+        <label for="email" class="fg2_la1">Probation Period:<span class="spn1"></span></label>
+        <input type="text" class="form-control fg2_inp1 tr_r" placeholder="0" disabled="">
+      </div>
+      <div class="clearfix"></div>
+      <div class="form-group fg4 sa_o_fg5 sa_480 mr_re_1">
+        <label for="pwd" class="fg2_la1">Date Of Permanency:<span class="spn1"></span> </label>
+        <div id="datepicker18" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
           <input class="form-control inp_bdr" type="text">
           <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
         </div>
       </div>
-    </div>
-    <div class="form-group fg4 sa_o_fg5 sa_480">
-      <label for="email" class="fg2_la1">Probation Period:<span class="spn1"></span></label>
-      <input type="text" class="form-control fg2_inp1 tr_r" placeholder="0" disabled="">
-    </div>
-    <div class="clearfix"></div>
-    <div class="form-group fg4 sa_o_fg5 sa_480 mr_re_1">
-      <label for="pwd" class="fg2_la1">Date Of Permanency:<span class="spn1"></span> </label>
-      <div id="datepicker18" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-        <input class="form-control inp_bdr" type="text">
-        <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+      <div class="clearfix"></div>
+      <div class="devider"></div>
+      <h5>Job Details</h5>
+      <div class="form-group fg4 sa_2 sa_480">
+        <label for="email" class="fg2_la1">Sponsor:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
+          <option>Sponsor 1</option>
+          <option>Sponsor 2</option>
+          <option>Sponsor 3</option>
+        </select>
+      </div>
+      <div class="form-group fg4 sa_2 sa_480">
+        <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
+          <option>Division 1</option>
+          <option>Division 2</option>
+          <option>Division 3</option>
+        </select>
+      </div>
+      <div class="form-group fg4 sa_2 sa_480">
+        <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
+          <option>Project 1</option>
+          <option>Project 2</option>
+          <option>Project 3</option>
+        </select>
+      </div>
+      <div class="form-group fg4 sa_2 sa_480">
+        <label for="email" class="fg2_la1">Project Location:<span class="spn1"></span></label>
+        <input type="text" class="form-control fg2_inp1" placeholder="Project Location">
+      </div>
+      <div class="form-group fg4 sa_2 sa_480">
+        <label for="email" class="fg2_la1">Job Title:<span class="spn1"></span></label>
+        <input type="text" class="form-control fg2_inp1" placeholder="Job Title">
+      </div>
+      <div class="form-group fg4 sa_2 sa_480">
+        <label for="email" class="fg2_la1">Job Description:<span class="spn1"></span></label>
+        <input type="text" class="form-control fg2_inp1" placeholder="Job Description">
+      </div>
+      <div class="clearfix"></div>
+      <div class="devider"></div>
+      <div class="sub_cont pull-right">
+        <div class="save_sec">
+          <button type="submit" class="btn sub1">Save</button>
+          <button type="submit" class="btn sub3">Save &amp; Close</button>
+          <button type="submit" class="btn sub4">Cancel</button>
+          <button type="submit" class="btn sub2">Clear</button>
+        </div>
+        <div class="edit_sec">
+          <button type="submit" class="btn sub1">Update</button>
+          <button type="submit" class="btn sub3">Update &amp; Close</button>
+          <button type="submit" class="btn sub2">Confirm</button>
+          <button type="submit" class="btn sub4">Cancel</button>
+        </div>
       </div>
     </div>
-    <div class="clearfix"></div>
-    <div class="devider"></div>
-    <h5>Job Details</h5>
-    <div class="form-group fg4 sa_2 sa_480">
-      <label for="email" class="fg2_la1">Sponsor:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2">
-        <option>Sponsor 1</option>
-        <option>Sponsor 2</option>
-        <option>Sponsor 3</option>
-      </select>
-    </div>
-    <div class="form-group fg4 sa_2 sa_480">
-      <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2">
-        <option>Division 1</option>
-        <option>Division 2</option>
-        <option>Division 3</option>
-      </select>
-    </div>
-    <div class="form-group fg4 sa_2 sa_480">
-      <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2">
-        <option>Project 1</option>
-        <option>Project 2</option>
-        <option>Project 3</option>
-      </select>
-    </div>
-    <div class="form-group fg4 sa_2 sa_480">
-      <label for="email" class="fg2_la1">Project Location:<span class="spn1"></span></label>
-      <input type="text" class="form-control fg2_inp1" placeholder="Project Location">
-    </div>
-    <div class="form-group fg4 sa_2 sa_480">
-      <label for="email" class="fg2_la1">Job Title:<span class="spn1"></span></label>
-      <input type="text" class="form-control fg2_inp1" placeholder="Job Title">
-    </div>
-    <div class="form-group fg4 sa_2 sa_480">
-      <label for="email" class="fg2_la1">Job Description:<span class="spn1"></span></label>
-      <input type="text" class="form-control fg2_inp1" placeholder="Job Description">
-    </div>
-    <div class="clearfix"></div>
-    <div class="devider"></div>
-    <div class="sub_cont pull-right">
-      <div class="save_sec">
-        <button type="submit" class="btn sub1">Save</button>
-        <button type="submit" class="btn sub3">Save &amp; Close</button>
-        <button type="submit" class="btn sub4">Cancel</button>
-        <button type="submit" class="btn sub2">Clear</button>
-      </div>
-      <div class="edit_sec">
-        <button type="submit" class="btn sub1">Update</button>
-        <button type="submit" class="btn sub3">Update &amp; Close</button>
-        <button type="submit" class="btn sub2">Confirm</button>
-        <button type="submit" class="btn sub4">Cancel</button>
-      </div>
-    </div>
-
-    <div class="top_br_container hc_at">
-      <div class="top_br_1 pa_h1">
-        <h5>Project Assign</h5>
+    
+    <div class="jb_bx2" style="display: none;">
+      <div class="">
         <div class="form-group fg4 sa_2 sa_480">
           <label for="email" class="fg2_la1">Project:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
@@ -3713,14 +3711,14 @@ function MM_swapImage() { //v3.0
           </select>
         </div>
         <div class="form-group fg4 sa_2 sa_480">
-          <label for="pwd" class="fg2_la1">Project Start Date:<span class="spn1">*</span> </label>
+          <label for="pwd" class="fg2_la1">Start Date:<span class="spn1">*</span> </label>
           <div id="datepicker19" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
            <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
         </div>
         <div class="form-group fg4 sa_2 sa_480">
-          <label for="pwd" class="fg2_la1">Project End Date:<span class="spn1">*</span> </label>
+          <label for="pwd" class="fg2_la1">End Date:<span class="spn1">*</span> </label>
           <div id="datepicker20" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
            <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -3756,7 +3754,7 @@ function MM_swapImage() { //v3.0
                   <th class="col-md-6 tr_l">Project</th>
                   <th class="col-md-2">Start Date</th>
                   <th class="col-md-2">End Date</th>
-                  <th class="col-md-2">Action</th>
+                  <th class="col-md-2">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -4591,7 +4589,7 @@ document.getElementById("defaultOpen").click();
 
 </script>
 
-<!-----=====================================================================================================--->
+<!-----=====================================================================================================-->
 <script>
   function open_box_St(evt, cityName) {
     var i, tabcontent, tablinks;
@@ -4611,7 +4609,7 @@ document.getElementById("defaultOpen").click();
 document.getElementById("defaultOpen").click();
 </script>
 
-<!-----=====================================================================================================--->
+<!-----=====================================================================================================-->
 
 <script>
   function open_box_qlf(evt, cityName) {
@@ -4631,8 +4629,26 @@ document.getElementById("defaultOpen").click();
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen1").click();
 </script>
+<script>
+  function open_box_qlf1(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent_qlf");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks2");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
 
-<!----file_uploader_script_started--->
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen1").click();
+</script>
+
+<!----file_uploader_script_started-->
 <script type="text/javascript">
   var input = document.getElementById( 'file-upload' );
   var infoArea = document.getElementById( 'file-upload-filename' );
@@ -5690,6 +5706,23 @@ $(document).ready(function(){
   });
   $(".vh4").click(function(){
     $(".vh4").toggleClass("lt_selected");
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".jobtb_1").click(function(){
+    $(".jobtb_1").addClass("selected_bx");
+    $(".jobtb_2").removeClass("selected_bx");
+    $(".jb_bx1").fadeIn(1000);
+    $(".jb_bx2").hide(100);
+  });
+  $(".jobtb_2").click(function(){
+    $(".jobtb_2").addClass("selected_bx");
+    $(".jobtb_1").removeClass("selected_bx");
+    $(".jb_bx2").fadeIn(1000);
+    $(".jb_bx1").hide(100);
   });
 });
 </script>
