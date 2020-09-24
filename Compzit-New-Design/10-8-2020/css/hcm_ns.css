@@ -1115,3 +1115,5 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
  .clear_1:hover{-ms-transform: scale(1.1);-webkit-transform: scale(1.1); transform: scale(1.1);transition-delay: .3s;}       
  .sel_opt1{margin:auto;float: left;margin-bottom: 10px;}      
  .box_wid{margin: auto;float: left;padding:0px;}  
+ .selected_bx{background-color: #0096ce!important;}
+ .tb_ic_wid{width: 25px;height: 15px;}
