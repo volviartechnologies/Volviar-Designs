@@ -1010,11 +1010,11 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 /*=====================hcm latest modified css--from 17/08/2020===============*/
 .pa_lft_0{padding-left:0px;}
 .prod_sect{background-color: transparent;padding-left:0px;padding-top:0px;margin-top: -10px;}
-.selected7 {background-color:#defbff!important;border: 1px solid #3258a0;}
+.selected7 {background-color:#defbff!important;border: 1px solid #5393ab!important;;}
 .fg8_1{width:13%;margin:auto;float: left;padding-right: 10px;}
 .img_pro_per img{width: 20px;height: 20px;margin: auto;float: right;margin-top: 10px;background-color:#fff;border-radius: 50px;padding: 2px;margin-right: -12px;
                     border:1px solid #d6d6d6;}
-.img_pro_per img:hover, .img_pro_per img:focus{background-color: #e7fdce!important; border: 2px solid #fff!important;}
+.img_pro_per img:hover, .img_pro_per img:focus{background-color:#57a200!important; border: 2px solid #fff!important;}
 /*.pro_per{background-color: #fff;max-height:274px;overflow-y: auto;min-height: 274px;margin-bottom: 10px;}*/
 .pro_per_bt h3{margin-top: 0px;}
 .proper_data h3{margin-top: 0px;margin-bottom: 0px;margin-left: 27px;}
@@ -1052,7 +1052,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .img_pro_per img{margin-top: 0px!important;}
 .prod_ic{padding-left: 0px;padding-top: 0px;}
 .prod_ic img{margin-bottom:0px!important;}
-.opn_grn{background-color:#d0ff99!important;border: 2px solid #fff!important;}
+.opn_grn{background-color:#57a200!important;border: 2px solid #fff!important;}
 .sp_z_1{width: auto;margin:auto;float: left;background-color:#0aa7bb;color: #fff;font-size: 13px;padding: 1px 8px;border-radius: 10px;cursor: pointer;height: auto;}
 .ul_btn_all{margin-left: -40px;margin-top: -8px;}
 .tree_alz{width: 100%;float: left;}
