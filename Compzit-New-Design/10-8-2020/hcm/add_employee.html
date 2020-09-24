@@ -976,8 +976,6 @@ function MM_swapImage() { //v3.0
 
           <div class="content_box1 cont_contr">
             <h2>Add Employee Registration</h2>
-
-
             <div class="tab_stf">
               <button class="tablinks" onclick="open_box_St(event, 'dtl_prsl')" id="defaultOpen">
                 <i class="fa fa-user fa_stf" title="Personal Details"></i> <span>Personal Details</span>
@@ -1001,7 +999,7 @@ function MM_swapImage() { //v3.0
                 <i class="fa fa-money fa_stf" title="Salary"></i><span>Salary</span>
               </button>
               <button class="tablinks" onclick="open_box_St(event, 'dtl_qlfctn')">
-                <i class="fa fa-certificate fa_stf" title="Qualification"></i><span>Qualification</span>
+                <i class="fa fa-certificate fa_stf" title="Qualification"></i><span>Education Related</span>
               </button>
             </div>
 
@@ -2199,11 +2197,11 @@ function MM_swapImage() { //v3.0
       <div class="devider"></div>
       <div class="fg12">
       <h5>
-        <div class="check1 wi_at" data-toggle="tooltip" data-original-title="Same As Permanent Address" data-placement="top">
+        <div class="check1 wi_at">
           <div class="">
             <label class="switch" onclick="per_adrs()">
               <input type="checkbox" id="per_adrs">
-              <span class="slider_tog round"></span>
+              <span class="slider_tog round" data-toggle="tooltip" data-original-title="Same As Permanent Address" data-placement="top"></span>
             </label>
           </div>
         </div>Address For Communication</h5>
@@ -2245,7 +2243,7 @@ function MM_swapImage() { //v3.0
         </select> 
       </div>
       <div class="form-group fg4 sa_1 sa_480">
-        <label for="email" class="fg2_la1">Zip/Postal Code:<span class="spn1"></span></label>
+        <label for="email" class="fg2_la1">Zip / Postal Code:<span class="spn1"></span></label>
         <input class="form-control fg2_inp1 fg_chs2" placeholder="Zip/Postal Code" id="per_adrs_dsb6">
       </div>
       <div class="form-group fg4 sa_1 sa_480">
@@ -2267,7 +2265,7 @@ function MM_swapImage() { //v3.0
     <div class="clearfix"></div>
     <div class="devider"></div>
 
-    <a href="#"><h5>Emergency Contact <i class="fa fa-caret-down"></i></h5></a>
+    <a href="#"><h5>Emergency Contact</h5></a>
     <div class="emrgcy_cntct">
       <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
@@ -2461,154 +2459,155 @@ function MM_swapImage() { //v3.0
         <i class="fa_stf" title="Health Card"><img src="../images/icons/hcm/tab_ic4.png" class="tb_ic_wid"></i><span>Health Card</span>
       </button>
     </div>
-    <div id="qlf1" class="tabcontent_qlf box_wid">
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Passport#:<span class="spn1">*</span></label>
-        <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Passport#">
-      </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Issued By:<span class="spn1"></span></label>
-        <select class="form-control fg2_inp1 fg_chs2">
-          <option>India</option>
-          <option>Qatar</option>
-          <option>America</option>
-        </select> 
-      </div>
-      <div class="form-group fg4 hcm_2_1 sa_480">
-        <label for="pwd" class="fg2_la1">Date of Issue:<span class="spn1"></span> </label>
-        <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-          <input class="form-control inp_bdr" type="text">
-          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+    <div class="box_fix1">
+      <div id="qlf1" class="tabcontent_qlf box_wid">
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Passport#:<span class="spn1">*</span></label>
+          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Passport#">
+        </div>
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Issued By:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2">
+            <option>India</option>
+            <option>Qatar</option>
+            <option>America</option>
+          </select> 
+        </div>
+        <div class="form-group fg4 hcm_2_1 sa_480">
+          <label for="pwd" class="fg2_la1">Date of Issue:<span class="spn1"></span> </label>
+          <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg4 hcm_2_1 sa_480">
+          <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span> </label>
+          <div id="datepicker14" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
+          <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
+        </div>
+        <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
+          <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
+          <input type="file" id="file-upload" multiple="" required="">
+          <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+          <div id="file-upload-filename" class="file_n"></div>
+          <button class="btn act_btn bn3 flt_r" title="Remove Selected File">
+            <i class="fa fa-trash"></i>
+          </button>
         </div>
       </div>
-      <div class="form-group fg4 hcm_2_1 sa_480">
-        <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span> </label>
-        <div id="datepicker14" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-          <input class="form-control inp_bdr inp_mst" type="text">
-          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+      <div id="qlf2" class="tabcontent_qlf box_wid">
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Visa Type:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+            <option>Visa 1</option>
+            <option>Visa 2</option>
+            <option>Visa 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Visa#:<span class="spn1">*</span></label>
+          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Visa#">
+        </div>
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Issued By:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+            <option>India</option>
+            <option>Qatar</option>
+            <option>America</option>
+          </select> 
+        </div>
+        <div class="form-group fg4 hcm_2_1 sa_480">
+          <label for="pwd" class="fg2_la1">Date of Issue:<span class="spn1"></span> </label>
+          <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg4 hcm_2_1 sa_480">
+          <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span> </label>
+          <div id="datepicker13" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
+          <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
+        </div>
+        <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
+          <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
+          <input type="file" id="file-upload" multiple="" required="">
+          <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+          <div id="file-upload-filename" class="file_n"></div>
+          <button class="btn act_btn bn3 flt_r" title="Remove Selected File">
+            <i class="fa fa-trash"></i>
+          </button>
         </div>
       </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
-        <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
-      </div>
-      <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
-        <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
-        <input type="file" id="file-upload" multiple="" required="">
-        <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-        <div id="file-upload-filename" class="file_n"></div>
-        <button class="btn act_btn bn3 flt_r" title="Remove Selected File">
-          <i class="fa fa-trash"></i>
-        </button>
-      </div>
-    </div>
-    <div id="qlf2" class="tabcontent_qlf box_wid">
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Visa Type:<span class="spn1">*</span></label>
-        <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-          <option>Visa 1</option>
-          <option>Visa 2</option>
-          <option>Visa 3</option>
-        </select> 
-      </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Visa#:<span class="spn1">*</span></label>
-        <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Visa#">
-      </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Issued By:<span class="spn1">*</span></label>
-        <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-          <option>India</option>
-          <option>Qatar</option>
-          <option>America</option>
-        </select> 
-      </div>
-      <div class="form-group fg4 hcm_2_1 sa_480">
-        <label for="pwd" class="fg2_la1">Date of Issue:<span class="spn1"></span> </label>
-        <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-          <input class="form-control inp_bdr" type="text">
-          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+      <div id="qlf3" class="tabcontent_qlf box_wid">
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Residency Permit#:<span class="spn1"></span></label>
+          <input type="text" class="form-control fg2_inp1" placeholder="Residence Permit#">
+        </div>
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Issued By:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+            <option>India</option>
+            <option>Qatar</option>
+            <option>America</option>
+          </select>
+        </div>
+        <div class="form-group fg4 hcm_2_1 sa_480">
+          <label for="pwd" class="fg2_la1">Date of Issue:<span class="spn1"></span> </label>
+          <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg4 hcm_2_1 sa_480">
+          <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span> </label>
+          <div id="datepicker14" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
+          <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
+        </div>
+        <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
+          <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
+          <input type="file" id="file-upload" multiple="" required="">
+          <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+          <div id="file-upload-filename" class="file_n"></div>
+          <button class="btn act_btn bn3 flt_r" title="Remove Selected File">
+            <i class="fa fa-trash"></i>
+          </button>
         </div>
       </div>
-      <div class="form-group fg4 hcm_2_1 sa_480">
-        <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span> </label>
-        <div id="datepicker13" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-          <input class="form-control inp_bdr inp_mst" type="text">
-          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+      <div id="qlf4" class="tabcontent_qlf box_wid">
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Center#:<span class="spn1"></span></label>
+          <input type="text" class="form-control fg2_inp1" placeholder="Center#">
+        </div>
+        <div class="form-group fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Card#:<span class="spn1">*</span></label>
+          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Card#">
+        </div>
+        <div class="form-group fg4 hcm_2_1 sa_480">
+          <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span> </label>
+          <div id="datepicker15" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
         </div>
       </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
-        <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
-      </div>
-      <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
-        <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
-        <input type="file" id="file-upload" multiple="" required="">
-        <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-        <div id="file-upload-filename" class="file_n"></div>
-        <button class="btn act_btn bn3 flt_r" title="Remove Selected File">
-          <i class="fa fa-trash"></i>
-        </button>
-      </div>
-    </div>
-    <div id="qlf3" class="tabcontent_qlf box_wid">
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Residency Permit#:<span class="spn1"></span></label>
-        <input type="text" class="form-control fg2_inp1" placeholder="Residence Permit#">
-      </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Issued By:<span class="spn1">*</span></label>
-        <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-          <option>India</option>
-          <option>Qatar</option>
-          <option>America</option>
-        </select>
-      </div>
-      <div class="form-group fg4 hcm_2_1 sa_480">
-        <label for="pwd" class="fg2_la1">Date of Issue:<span class="spn1"></span> </label>
-        <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-          <input class="form-control inp_bdr" type="text">
-          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-        </div>
-      </div>
-      <div class="form-group fg4 hcm_2_1 sa_480">
-        <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span> </label>
-        <div id="datepicker14" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-          <input class="form-control inp_bdr inp_mst" type="text">
-          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-        </div>
-      </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
-        <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
-      </div>
-      <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
-        <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
-        <input type="file" id="file-upload" multiple="" required="">
-        <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-        <div id="file-upload-filename" class="file_n"></div>
-        <button class="btn act_btn bn3 flt_r" title="Remove Selected File">
-          <i class="fa fa-trash"></i>
-        </button>
-      </div>
-    </div>
-    <div id="qlf4" class="tabcontent_qlf box_wid">
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Center#:<span class="spn1"></span></label>
-        <input type="text" class="form-control fg2_inp1" placeholder="Center#">
-      </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Card#:<span class="spn1">*</span></label>
-        <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Card#">
-      </div>
-      <div class="form-group fg4 hcm_2_1 sa_480">
-        <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span> </label>
-        <div id="datepicker15" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-          <input class="form-control inp_bdr inp_mst" type="text">
-          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-        </div>
-      </div>
-    </div>
     <div class="clearfix"></div>
     <div class="devider"></div>
     <div class="sub_cont pull-right">
@@ -2687,11 +2686,157 @@ function MM_swapImage() { //v3.0
                 </div>
               </td>
             </tr>
+            <tr>
+              <td class="tr_l">Visa 1</td>
+              <td class="tr_l">0120120124</td>
+              <td>19/10/2019</td>
+              <td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Visa 1</td>
+              <td class="tr_l">0120120124</td>
+              <td>19/10/2019</td>
+              <td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Visa 1</td>
+              <td class="tr_l">0120120124</td>
+              <td>19/10/2019</td>
+              <td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Visa 1</td>
+              <td class="tr_l">0120120124</td>
+              <td>19/10/2019</td>
+              <td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Visa 1</td>
+              <td class="tr_l">0120120124</td>
+              <td>19/10/2019</td>
+              <td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Visa 1</td>
+              <td class="tr_l">0120120124</td>
+              <td>19/10/2019</td>
+              <td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+
+                <div class="btn_stl2">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
     </div>
   </div>
+
+</div>
   <!-----Immigration details section_Closed---->
   <!-----Salary details section_started---->
   <div id="dtl_slry" class="tabcontent_stf emply_ad_1">
@@ -2985,21 +3130,21 @@ function MM_swapImage() { //v3.0
   <!-----Qualification details section_started---->
   <div id="dtl_qlfctn" class="tabcontent_stf emp_stf">
     <div class="tab_stf tb1_qlf tab_qlf">
-      <button class="tablinks1 bt_op1 selected_bx">
-        <i class="fa fa-suitcase fa_stf" title="Work Experience"></i> <span>Work Experience</span>
-      </button>
-      <button class="tablinks1 bt_op2">
+      <button class="tablinks1 bt_op2 selected_bx">
         <i class="fa fa-graduation-cap fa_stf" title="Academic"></i> <span>Education</span>
       </button>
+      <button class="tablinks1 bt_op1">
+        <i class="fa fa-suitcase fa_stf" title="Work Experience"></i> <span>Work Experience</span>
+      </button>
       <button class="tablinks1 bt_op3">
-        <i class="fa fa-id-card-o fa_stf" title="Skills & Certifications"></i> <span>Skills & Certifications</span>
+        <i class="fa fa-id-card-o fa_stf" title="Skills & Certifications"></i> <span>Skills / Certifications</span>
       </button>
       <button class="tablinks1 bt_op4">
         <i class="fa fa-language fa_stf" title="Language"></i><span>Language</span>
       </button>
     </div>
 
-    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op2" style="display:none;">
+    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op2 pa_rgt10">
       <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">Level:<span class="spn1">*</span></label>
         <select class="form-control fg2_inp1 fg_chs2 inp_mst">
@@ -3009,16 +3154,8 @@ function MM_swapImage() { //v3.0
         </select> 
       </div>
       <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Institute:<span class="spn1"></span></label>
-        <input type="text" class="form-control fg2_inp1" placeholder="Institute">
-      </div>
-      <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">Major / Specialization:<span class="spn1"></span></label>
         <input type="text" class="form-control fg2_inp1" placeholder="Major / Specialization">
-      </div>
-      <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Institution Name & Place:<span class="spn1"></span></label>
-        <input type="text" class="form-control fg2_inp1" placeholder="Institution Name & Place">
       </div>
       <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">Year:<span class="spn1"></span></label>
@@ -3027,6 +3164,10 @@ function MM_swapImage() { //v3.0
       <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">GPA / Score:<span class="spn1"></span></label>
         <input type="text" class="form-control fg2_inp1" placeholder="GPA / Score">
+      </div>
+      <div class="form-group fg4 sa_2 sa_480">
+        <label for="email" class="fg2_la1">Institution Name & Place:<span class="spn1"></span></label>
+        <input type="text" class="form-control fg2_inp1" placeholder="Institution Name & Place">
       </div>
       <div class="form-group fg4 hcm_2_1 sa_480">
         <label for="pwd" class="fg2_la1">Start Date:<span class="spn1"></span> </label>
@@ -3076,7 +3217,7 @@ function MM_swapImage() { //v3.0
             <thead class="thead1">
               <tr>
                 <th class="th_b6 tr_l">Level</th>
-                <th class="th_b8 tr_l">Institute</th>
+                <th class="th_b8 tr_l">Institution</th>
                 <th class="th_b7">GPA / Score</th>
                 <th class="th_b7">From Date</th>
                 <th class="th_b7">To Date</th>
@@ -3115,7 +3256,7 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
 
-    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op1" style="display:block;">
+    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op1 pa_rgt10" style="display:none;">
       <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">Company:<span class="spn1">*</span></label>
         <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Company">
@@ -3139,8 +3280,8 @@ function MM_swapImage() { //v3.0
         </div>
       </div>
       <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Comment:<span class="spn1"></span></label>
-        <textarea type="text" class="form-control fg2_inp1" placeholder="Comment"></textarea>
+        <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
+        <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
       </div>
       <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
         <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
@@ -3155,7 +3296,7 @@ function MM_swapImage() { //v3.0
       <div class="devider"></div>
       <div class="">
         <div class="fg4 sa_480 pa_lft10">
-          <label for="email" class="fg2_la1 pad_l">Reference Check Verified:<span class="spn1">&nbsp;</span></label>
+          <label for="email" class="fg2_la1 pad_l">Reference:<span class="spn1">&nbsp;</span></label>
           <div class="check1">
             <div class="">
               <label class="switch" onclick="chk_verf()">
@@ -3262,7 +3403,7 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
 
-    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op4" style="display: none;">
+    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op4 pa_rgt10" style="display: none;">
       <div class="form-group fg2 sa_2 sa_480">
         <label for="email" class="fg2_la1">Language:<span class="spn1">*</span></label>
         <div class="fg12">
@@ -3319,8 +3460,8 @@ function MM_swapImage() { //v3.0
         </div>
       </div>
       <div class="form-group fg4 sa_2 sa_640_i sa_480">
-        <label for="email" class="fg2_la1">Comment:<span class="spn1"></span></label>
-        <textarea type="text" class="form-control fg2_inp1" placeholder="Comment"></textarea>
+        <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
+        <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
       </div>
       <div class="clearfix"></div>
       <div class="free_sp"></div>
@@ -3402,21 +3543,10 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
 
-    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op3" style="display: none;">
-      <div class="form-group fg4 sa_o_fg5 sa_1hrd1 sa_640_i1 sa_480">
-        <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-        <div class="row rl_prt">
-          <div class="prtd_rat mar_lft0">
-            <div class="form-check col-md-3">
-              <input class="form-check-input tem_tnsr" type="radio" name="gender" id="gridRadios1" value="option1" checked="">
-              <label class="form-check-label" for="gridRadios1">Skill</label>
-            </div>
-            <div class="form-check col-md-6">
-              <input class="form-check-input per_tnsr" type="radio" name="gender" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">Certificate</label>
-            </div>
-          </div>
-        </div>
+    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op3 pa_rgt10" style="display: none;">
+      <div class="tab_boxz">
+        <button class="btn btn_sk_cer tem_tnsr sk_cer1 selct_sklcer">Skill</button>
+        <button class="btn btn_sk_cer per_tnsr sk_cer2">Certificate</button>
       </div>
       <div class="clearfix"></div>
       <div class="form-group fg4 sa_2 sa_480 skl1">
@@ -3441,11 +3571,11 @@ function MM_swapImage() { //v3.0
       </div>
       <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">Years Of Experience:<span class="spn1"></span></label>
-        <input type="text" class="form-control fg2_inp1" placeholder="Years Of Experience">
+        <input type="number" class="form-control fg2_inp1" placeholder="Years Of Experience">
       </div>
       <div class="form-group fg4 sa_2 sa_480">
-        <label for="email" class="fg2_la1">Comment:<span class="spn1"></span></label>
-        <textarea type="text" class="form-control fg2_inp1" placeholder="Comment"></textarea>
+        <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
+        <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
       </div>
       <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
         <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
@@ -3474,14 +3604,14 @@ function MM_swapImage() { //v3.0
         </div>
       </div>
       <div class="clearfix"></div>
-      <h3>Skills & Certifications List</h3>
+      <h3>Skills / Certifications List</h3>
       <div class="">
         <div class="hcm_res r_800 skl1">
           <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="col-md-6 tr_l">Skill</th>
-                <th class="col-md-3">Year of Experience</th>
+                <th class="col-md-6 tr_l">Skills</th>
+                <th class="col-md-3">Years of Experience</th>
                 <th class="col-md-3">Actions</th>
               </tr>
             </thead>
@@ -3533,12 +3663,12 @@ function MM_swapImage() { //v3.0
             </tbody>
           </table>
         </div>
-        <div class="hcm_res r_800 cert1">
+        <div class="hcm_res r_800 cert1" style="display: none;">
           <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="col-md-6 tr_l">Certificate</th>
-                <th class="col-md-3">Year of Experience</th>
+                <th class="col-md-6 tr_l">Certificates</th>
+                <th class="col-md-3">Years of Experience</th>
                 <th class="col-md-3">Actions</th>
               </tr>
             </thead>
@@ -4804,6 +4934,7 @@ $(document).ready(function(){
     $(".cont_contr").scroll(function(){ 
         if ($(this).scrollTop() > 100) { 
             $('#scroll').fadeIn(); 
+            $('tooltip').fadeOut();
         } else { 
             $('#scroll').fadeOut(); 
         } 
@@ -5819,18 +5950,7 @@ $(document).ready(function(){
   });
 });
 </script>
-<script>
-$(document).ready(function(){
-  $(".tem_tnsr").click(function(){
-    $(".skl1").show();
-    $(".cert1").hide();
-  });
-  $(".per_tnsr").click(function(){
-    $(".skl1").hide();
-    $(".cert1").show();
-  });
-});
-</script>
+
 
 <script>
 function chk_verf() {
@@ -5846,5 +5966,24 @@ function chk_verf() {
     
 }
 </script>
+
+
+  <script>
+$(document).ready(function(){
+  $(".sk_cer1").click(function(){
+    $(".skl1").show();
+    $(".cert1").hide();
+    $(".sk_cer1").addClass("selct_sklcer");
+    $(".sk_cer2").removeClass("selct_sklcer");
+  });
+  $(".sk_cer2").click(function(){
+    $(".skl1").hide();
+    $(".cert1").show();
+    $(".sk_cer2").addClass("selct_sklcer");
+    $(".sk_cer1").removeClass("selct_sklcer");
+  });
+});
+</script>
+
 </body>
 </html>
