@@ -3416,3 +3416,23 @@ body{position: fixed;left: 0;right: 0;}
 .fg17{width: 17%;margin: auto;float: left;}
 .fg32{width: 32%;margin: auto;float: left;}
 .form-check-label{font-size: 13px;}
+
+/*===========safari browser================*/
+
+/*select.iOSselect {
+    -webkit-appearance: none;
+    background-color: white;
+    background-image: url('../images/ca_dwn.png');
+    background-position : right center;
+    background-repeat: no-repeat;
+    padding-right: 1.5em;
+}*/
+.iOSselect {
+    -webkit-appearance:none;
+    background-color: white;
+    background-image: url('../images/ar2.png');;
+    background-position : right center;
+    background-repeat: no-repeat;
+    padding-right: 1.5em;
+}
+.tab_qlf button{height:40px;}

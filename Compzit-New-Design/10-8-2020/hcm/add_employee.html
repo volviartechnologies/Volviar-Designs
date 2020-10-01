@@ -962,7 +962,7 @@ function MM_swapImage() { //v3.0
 
 
     <!----------------------------------------------Content_section_opened------------------------------------------------------------>
-    <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+    <div class="content_container cont_contr" id="content_co" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
 
       <ol class="breadcrumb">
         <li><a href="#">Home</a></li>
@@ -1006,6 +1006,7 @@ function MM_swapImage() { //v3.0
 
             <!-----Personal Details section_started---->
             <div id="dtl_prsl" class="tabcontent_stf emply_ad_1">
+
               <div class="fg_3_1">
                 <div class="form-group fg6 sa_2 sa_640_i sa_480">
                   <label for="email" class="fg2_la1">First Name:<span class="spn1">*</span></label>
@@ -1082,7 +1083,7 @@ function MM_swapImage() { //v3.0
                     <button class="awd1 mail_2" data-toggle="tooltip" data-original-title="Read Mail From This Mail" data-placement="top" id="ba_box2"><i class="fa fa-envelope-open-o"></i> </button>
                   </div>
                 </label>
-                <input id="myinpc3" type="text" class="form-control fg2_inp1" id="email" placeholder="Email" autofocus="">
+                <input id="myinpc3" type="text" class="form-control fg2_inp1" id="email" placeholder="Email">
               </div>
               <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
                 <label for="email" class="fg2_la1">Official Email:<span class="spn1"></span></label>
@@ -3128,7 +3129,7 @@ function MM_swapImage() { //v3.0
   <!-----Salary details section_Closed---->
 
   <!-----Qualification details section_started---->
-  <div id="dtl_qlfctn" class="tabcontent_stf emp_stf">
+  <div id="dtl_qlfctn" class="tabcontent_stf emp_stf ">
     <div class="tab_stf tb1_qlf tab_qlf">
       <button class="tablinks1 bt_op2 selected_bx">
         <i class="fa fa-graduation-cap fa_stf" title="Academic"></i> <span>Education</span>
@@ -3144,7 +3145,7 @@ function MM_swapImage() { //v3.0
       </button>
     </div>
 
-    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op2 pa_rgt10">
+    <div class="emply_ad_2 wdtz100 mar_at flt_l tab_op2 pa_rgt10 ">
       <div class="form-group fg4 sa_2 sa_480">
         <label for="email" class="fg2_la1">Level:<span class="spn1">*</span></label>
         <select class="form-control fg2_inp1 fg_chs2 inp_mst">
@@ -6023,6 +6024,25 @@ $(document).ready(function(){
   });
 });
 </script>
+
+<script type="text/javascript">
+  jQuery(function ($) {
+    if (navigator.userAgent.match('iPad|iPhone|iPod') != -1 ) {
+        $('select').addClass('iOSselect'); // provide a class for iOS select box
+    }
+});
+
+  /**
+ * iOS mutliple select fix.
+ */
+if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
+    $('select[multiple]').each(function() {
+        $(this).prepend('<option disabled></option>');
+        $(this).append('<optgroup disabled></optgroup>');
+    });
+}
+</script>
+
 
 </body>
 </html>
