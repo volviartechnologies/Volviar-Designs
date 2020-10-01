@@ -1138,3 +1138,6 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .selct_sklcer, .btn_sk_cer:hover, .btn_sk_cer:focus{background-color: #0096ce!important;color: #fff;}
 .box_fix1{margin:auto;float: left;width: auto;max-height: 394px;overflow:auto;padding-right: 10px;}
 .pa_rgt10{padding-right:10px;}
+.wid_at0{width:90%;margin:auto;float: left;}
+.btn_rnw{background-color: transparent;border:1px solid #4CAF50;color:#4CAF50;padding:1px 11px;float: right;border-bottom: 0px;}
+.btn_rnw:hover, .btn_rnw:focus{background-color:#4CAF50;color: #fff; }
