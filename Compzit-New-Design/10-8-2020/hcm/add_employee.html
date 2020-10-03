@@ -999,7 +999,10 @@ function MM_swapImage() { //v3.0
                 <i class="fa fa-money fa_stf" title="Salary"></i><span>Salary</span>
               </button>
               <button class="tablinks" onclick="open_box_St(event, 'dtl_qlfctn')">
-                <i class="fa fa-certificate fa_stf" title="Qualification"></i><span>Education Related</span>
+                <i class="fa fa-certificate fa_stf" title="Education Related"></i><span>Education Related</span>
+              </button>
+              <button class="tablinks" onclick="open_box_St(event, 'dtl_resign')">
+                <i class="fa fa-certificate fa_stf" title="Resignation"></i><span>Resignation</span>
               </button>
             </div>
 
@@ -4190,6 +4193,51 @@ function MM_swapImage() { //v3.0
     </div>
   </div>
   <!-----Other Details section_Closed---->
+  <!---resignation details-->
+
+  <div id="dtl_resign" class="tabcontent_stf emply_ad_1">
+    <div class="form-group fg4 sa_o_fg5 sa_480 mr_re_1">
+      <label for="pwd" class="fg2_la1">Leaving Date:<span class="spn1"></span> </label>
+      <div id="datepicker23" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+        <input class="form-control inp_bdr inp_mst" type="text">
+        <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+      </div>
+    </div>
+    <div class="form-group fg4 sa_2 sa_480">
+      <label for="email" class="fg2_la1">Status:<span class="spn1"></span></label>
+      <select class="form-control fg2_inp1 fg_chs2">
+        <option>Resign</option>
+        <option>Retirement</option>
+        <option>Termination</option>
+        <option>Abscond</option>
+        <option>Death</option>
+        <option>Rejoin</option>
+        <option>Under Police Custody</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group fg4 sa_2 sa_480">
+      <label for="email" class="fg2_la1">Reason:<span class="spn1"></span></label>
+      <textarea class="form-control fg2_inp1 fg_chs2" placeholder="Reason"></textarea>
+    </div>
+    <div class="clearfix"></div>
+    <div class="devider"></div>
+    <div class="sub_cont pull-right">
+      <div class="save_sec">
+        <button type="submit" class="btn sub1">Save</button>
+        <button type="submit" class="btn sub3">Save &amp; Close</button>
+        <button type="submit" class="btn sub4">Cancel</button>
+        <button type="submit" class="btn sub2">Clear</button>
+      </div>
+      <div class="edit_sec">
+        <button type="submit" class="btn sub1">Update</button>
+        <button type="submit" class="btn sub3">Update &amp; Close</button>
+        <button type="submit" class="btn sub2">Confirm</button>
+        <button type="submit" class="btn sub4">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <!---resignation details-->
         </div>
       </div>
             </div>
@@ -4613,6 +4661,14 @@ document.getElementById("defaultOpen").click();
 <script type="text/javascript">
   $(function () {
     $("#datepicker23").datepicker({ 
+      autoclose: true, 
+      todayHighlight: true
+    }).datepicker('update', new Date());
+  });
+</script>
+<script type="text/javascript">
+  $(function () {
+    $("#datepicker24").datepicker({ 
       autoclose: true, 
       todayHighlight: true
     }).datepicker('update', new Date());
