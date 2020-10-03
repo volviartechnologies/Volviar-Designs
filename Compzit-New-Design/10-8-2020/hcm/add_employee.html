@@ -4316,10 +4316,10 @@ function MM_swapImage() { //v3.0
             <thead class="thead1">
               <tr>
                 <th class="th_b5 tr_l">
-                  <span class="button-checkbox lbr_chk flt_n" style="float: none;">
-                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                    <input type="checkbox" class="hidden" />
-                  </span>
+                  <i class="button-checkbox lbr_chk chk_allbx">
+                    <button type="button" class="act_btck btn_uc2 contr1"><i class="fa fa-square-o gly2 ic1"></i><i class="fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                    <input type="checkbox" class="hidden">
+                  </i>
                 </th>
                 <th class="col-md-2">From</th>
                 <th class="col-md-2">To</th>
@@ -4331,10 +4331,10 @@ function MM_swapImage() { //v3.0
             <tbody id="myTable">
               <tr>
                  <td>
-                    <span class="button-checkbox ">
-                      <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                      <input type="checkbox" class="hidden" />
-                    </span>
+                  <i class="button-checkbox">
+                    <button type="button" class="act_btck btn_uc7 contr2_1"><i class="state-icon fa fa-square-o gly2 ic1"></i><i class="fa fa-check-square-o ic2" style=" style="display: none;""></i>&nbsp;</button>
+                    <input type="checkbox" class="hidden">
+                  </i>
                 </td>
                 <td class="tr_c">10/06/2020</td>
                 <td class="tr_c">10/06/2020</td>
@@ -6098,7 +6098,19 @@ if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
     });
 }
 </script>
-
+<script>
+$(document).ready(function(){
+  $(".lbr_chk.chk_allbx .ic1").click(function(){
+    $(".ic2").fadeIn(100);
+    $(".ic1").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+  $(".lbr_chk.chk_allbx .ic2").click(function(){
+    $(".ic2").fadeOut(100);
+    $(".ic1").fadeIn(100);
+$('.hidew').prop('checked',false);
+  });
+</script>
 
 </body>
 </html>

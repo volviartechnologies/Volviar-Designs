@@ -1,0 +1,90 @@
+body{width:100%;height:100%;margin:auto;top:0;bottom:0;left:0;right:0;background-color: #fff;font-family: 'Open Sans', sans-serif;}
+.wraper_reg{width: 100%;margin:auto;float: left;height: auto;}
+.right_box{width: 40%;height:100%;position: fixed;left: 0;background-color: #fff;}
+.reg_bg{width: 100%;height: auto;margin: auto;bottom: 0;position: absolute;left:0;}
+.form_box{width: 60%;height: 100%;position: fixed;overflow-y: auto;right: 0;padding:20px;background-color: #fbfbfb;padding-right:0px;}
+.form_box h3{text-transform: uppercase;width: 100%;text-align:left;font-weight: 300;font-size: 24px;}
+.form_box h3 span{color:#337ab7;font-weight: 500; }
+.form_box h5{text-transform: uppercase;font-weight: 500;}
+.mar_at{margin: auto;}
+.flt_l{float: left!important;}
+.form_box label{font-weight: 300;font-size: 13px;margin-bottom: 0px;}
+.form_box .form-control{font-size: 13px;}
+.spn1{color: #ffc1c1;}
+.inp_mst{border:1px solid #ffc1c1;}
+.wid_30{width:22%;margin:auto;float:right;margin-left: 20px;}
+.tr_r{text-align: right;}
+.pre_box{background-color:#1092b9;border:1px solid #1092b9;}
+.right_box h2{text-align:left;width: 100%;text-transform: uppercase;color: #333;margin: auto;margin-top: 40px;font-weight: 300;}
+.cont{width: 80%;margin:auto;height: auto;}
+.right_box h2 span{color:#337ab7;font-weight: 500; }
+.right_box p{font-size: 13px;color: #333;width:100%;margin: auto;padding-top:0px;margin:auto;float: left;}
+.right_box hr{width: 20%;height: 2px;background-color:#337ab7;border:none;margin: auto;float: left;margin:20px 0px;}
+.fg12{width: 100%;margin:auto;float: left;}
+.btn_know{margin:auto;float: left;margin-top: 20px;background-color: #1092b9;border:1px solid #1092b9; }
+
+.form_box hr{width: 20%;height: 4px;background-color:#337ab7;border:none;margin: auto;float: left;margin:20px 0px;}
+.log_cntr{width: 100%;height:auto;margin: auto;float: left;text-align: center;padding-top:20px;}
+.box_blu{background-color: #1092b9;border-radius: 25px 0 0 25px;margin:20px 0;}
+.box_blu h5{color:#fff;}
+/*============switch button toggle======*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height:24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.frm_fl{width: 100%;margin:auto;float: left;}
