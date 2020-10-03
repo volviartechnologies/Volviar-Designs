@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html>
+<title>Compzit Admin Dashboard</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<head>
+<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "320px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0px";
+}
+</script>
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "280px";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0px";
+}
+
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.height = "106px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.height = "0";
+}
+</script>
+
+<link rel="shortcut icon" href="../images/com.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/boot.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!---Font_Awesome_section_opened----------->
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.min.css">
+<!---Font_Awesome_section_closed----------->
+
+<!--------css_Included------->
+
+<link rel="stylesheet" type="text/css" href="../css/afsdez.css">
+<!-- 
+<link rel="stylesheet" type="text/css" href="../css/afsdez_org.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_gray.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_red.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/rec.css">
+<link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
+<link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
+<link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
+<script type="text/javascript" src="../js/datepick.min.js"></script>
+
+<!--------css_Included_closed------->
+<Style>
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
+
+</Style>
+
+</head>
+<body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+
+ <div class="mySave1" id="mySave">
+  <div class="save_sec">
+    <button type="submit" class="btn sub1 bt_b">Save</button>
+    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+  <div class="edit_sec">
+    <button type="submit" class="btn sub1 bt_b">Update</button>
+    <button type="submit" class="btn sub3 bt_b">Update & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Confirm</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+</div>
+
+
+<!------------------mySidenav4_opned--------------------->
+<div id="mySidenav4" class="sidenav4">
+  
+   <div class="menu_strip">
+      <h1><!-- <i class="fa fa-line-chart ft_ico"></i> -->
+      <i class="ft_ico"><img src="../images/ft_ico4.png"></i> App Administration</h1>
+      <a href="#" onclick="closeNav4()">
+        <i class="fa fa-chevron-circle-left fa_arro"></i>
+      </a>
+    </div>
+ 
+  <div class="content_sec1 overlay">
+   
+    <div class="serch_1">
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a category" class="mySearch se_1">
+   </div>
+     <div class="menu_item"> 
+      <ul id="myUL" class="menu_ul">
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle  active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Location Settings <span class="caret c2"></span>
+          </a>
+         <ul class="dropdown-menu dropul">
+            <li>
+              <a href="country.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Country
+              </a>
+            </li>
+            <li>
+              <a href="state.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> State
+              </a>
+            </li>
+            <li>
+              <a href="city.html" class="active"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> City
+              </a>
+            </li>
+      </ul>
+
+      <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Corporate Section <span class="caret c2"></span>
+          </a>
+         <ul class="dropdown-menu dropul">
+            <li>
+              <a href="business_unit.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Business Unit
+              </a>
+            </li>
+            <li>
+              <a href="corp_department.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Corporate Department
+              </a>
+            </li>
+            <li>
+              <a href="premise.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Premise
+              </a>
+            </li>
+            <li>
+              <a href="corp_partner.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Corporate Partner
+              </a>
+            </li>
+            <li>
+              <a href="premise_area.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Premise Area
+              </a>
+            </li>
+            <li>
+              <a href="workstation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Workstation
+              </a>
+            </li>
+            <li>
+              <a href="corp_division.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Corporate Division
+              </a>
+            </li>
+      </ul>
+
+      <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Admin Tools <span class="caret c2"></span>
+          </a>
+         <ul class="dropdown-menu dropul">
+            <li>
+              <a href="password.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Reset Password
+              </a>
+            </li>
+         </ul>
+
+        <li>
+          <a href="aprved_hie_tmp.html"><i class="fa fa-tachometer list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Approval Hierarchy Template
+          </a>
+        </li>
+        <li>
+          <a href="dcmt_work.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Document Workflow
+          </a>
+        </li>
+        <li>
+          <a href="insurance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Insurance Provider
+          </a>
+        </li>
+        <li>
+          <a href="bank.html"><i class="fa fa-newspaper-o list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Bank
+          </a>
+        </li>
+        <li>
+          <a href="complaint.html"><i class="fa fa-hand-scissors-o  list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Complaint Master
+          </a>
+        </li>
+        <li>
+          <a href="time_slot.html"><i class="fa fa-shopping-cart list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Time slot
+          </a>
+        </li>
+        
+        </ul>
+    </div>
+  </div>
+</div>
+<!------------------mySidenav4_closed--------------------->
+
+
+  <div class="wrapper wr2" onmouseover="closesave()">
+
+<div class="menu_fix">
+  <a href="#"  onclick="openNav4()">
+      <i class="fa fa-bars bar"></i>
+    </a>
+</div>
+
+  <a href="#"  onclick="openNav7()">
+    <div class="menu_fix1">
+      <i class="fa fa-tasks bar rot"></i><span class="badge beln cht cht1">4</span>
+      <h5>Task</h5>
+    </div>
+</a>
+
+<!------------------mySidenav7_opened--------------------->
+<div id="mySidenav7" class="sidenav7">
+  <a href="#" onclick="closeNav7()">
+    <i class="fa fa-arrow-circle-right fa_arro1"></i>
+  </a>
+  <h3>TASK MANAGER</h3>
+  <div class="task1 overlay">
+   <ul class="nav nav-tabs">
+    <li class="tab_text1 active"><a data-toggle="tab" href="#home">Tasks</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu1">Add New</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu2">View All</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu3">Settings</a></li>
+  </ul>
+
+  <div class="tab-content tab">
+    <div id="home" class="tab-pane fade in active">
+     <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+      <h3>Add new task</h3>
+      <div class="fo_tsk">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email" class="labl1">Task Name:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="labl1">Details of Task:</label>
+            <textarea type="text" class="form-control" id="pwd" placeholder="Enter your task" name="pwd"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>View All</h3>
+      <p>Under Construction</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Settings</h3>
+      <p>Under Construction</p>
+    </div>
+  </div> 
+
+  </div>
+</div>
+<!------------------mySidenav7_Closed--------------------->
+
+<!------------------mySidenav5_opned--------------------->
+<div id="mySidenav5" class="sidenav5" onclick="closeNav5()">         
+  <div class="head_sec1" style="width: 100%;height:70px;">
+    <a href="#" onclick="openNav5()"></a>
+   
+      <div id="flipper" class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-th fa6"></i>
+          <h5>Apps</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box ap_bx1 bo1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+          <i class="fa fa-sitemap fa6"></i>
+          <h5>Business Unit</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+     
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+  </div>
+  <a href="#">
+    <div class="closed">
+       <i class="fa fa-arrow-circle-up ar_top"></i>
+    </div>    
+  </a>   
+</div>
+<!------------------mySidenav5_closed--------------------->
+
+
+
+<!------------------mySidenav_opned--------------------->
+<div id="mySidenav" class="sidenav">
+  <div class="profile_contain">
+    <div class="pro_cir1">
+      <img src="../images/user.png" class="user_res1">
+    </div>
+
+  <div class="dropdown drop1">
+    <button class="dropdown-toggle bt2" type="button" data-toggle="dropdown"><h5>Ahammed hamood hamdan mubarack</h5>
+    <span class="caret c1"></span>
+    </button>
+    <ul class="dropdown-menu drop_dn ul1">
+      <li><a href="#" class="lia1">HTML</a></li>
+      <li><a href="#" class="lia1">CSS</a></li>
+      <li><a href="#" class="lia1">JavaScript</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times-circle"></i></a>
+  </div>
+  <li>
+    <a href="#"><i class="fa fa-envelope f1 fa1"></i> Message</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-bell f1 fa1"></i> Notification</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-comments f1 fa1"></i> Chat</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-power-off f1 fa1"></i> Logout</a>
+  </li>
+</div>
+<!------------------mySidenav_Closed--------------------->
+
+<!----------------------------------------------header_section_opened---------------------------------------------->
+    <div class="header_container" onclick="closeNav4()">
+      <div class="head_sec2 head_lft">
+        <div class="head_sec2_sub1">
+          <img src="../images/alb_logo.png" class="img_alb1">
+          <h1> <span>JIO AL-BALAGH TRADING & CONTRACTING CO. WLL.</span></h1>
+        </div>
+        <div class="head_sec2_sub2 hd1" onmouseout="">
+          <a href="#"><i class="fa fa-envelope"><span class="badge beln cht">41</span></i></a>
+          <a href="#"><i class="fa fa-bell"><span class="badge beln">4</span></i></a>
+          <i class="fa fa-comments f1"><span class="badge beln cht">4</span></i>
+          <div class="dropdown">
+              <button class="dropdown-toggle bt1" type="button" data-toggle="dropdown"><h6>Ahammed hamood Hamdan Mubarack</h6>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu drop_dn">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+            <div class="pro_cir">
+              <img src="../images/user.png" class="user_res">
+            </div>
+            <div class="power">
+            
+            <i class="fa fa-power-off"></i>
+            </div>
+        </div>
+
+        <div class="menu-tog">
+          <a onmouseover="openNav()"><i class="fa fa-ellipsis-h"></i></a>
+        </div>  
+      </div>
+
+      <div class="head_sec1 head_rgt">
+        <a href="#" onmouseover="openNav5()" onclick="closeNav5()">
+        <div class="left_dot">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        </a>
+      </div>
+
+    </div><!--header_container_closed--->
+<!----------------------------------------------header_section_closed------------------------------------------------------------->
+
+
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
+ <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+
+	<ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">App Administration</a></li>
+        <li class="active">Organization Approval</li>
+        
+      </ol>
+
+	<div class="content_sec2 cont_contr">
+		<div class="content_area_container cont_contr">	
+      <div class="content_box1 cont_contr">
+        <h1 class="h1_con">Organization Approval</h1>
+
+        <div class="clearfix"></div>
+        <div class="devider"></div>
+
+         <div class="r_800">
+          <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="col-md-2 tr_c">Registration Date
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Registration Date" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="col-md-4 tr_l">Organization Name
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in" placeholder="Organization Name" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="col-md-4 tr_l">Country Name
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in" placeholder="Country Name" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="col-md-2">Actions
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
+                </th>
+              </tr>
+            </thead>  
+            <tbody>
+            <tr>
+              <td class=" tr_c">07/10/2020</td>
+              <td class=" tr_l">Mark</td>
+              <td class=" tr_l">Mark</td>
+              <td> 
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Approve">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Reject">
+                      <i class="fa fa-times"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                    <i class="fa fa-list-alt"></i>
+                  </button>
+                </div>
+
+                <div class="btn_stl2"> 
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                    <i class="fa fa-list-alt"></i> View
+                  </button>
+                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-edit"></i> Edit
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-trash"></i> Delete
+                  </button>
+                </div>
+
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+        
+        </div>
+       
+        </div>
+
+      </div>
+      
+		</div>	
+	</div>
+
+</div><!--content_container_closed------>
+
+<!---print_button-->
+<a href="#" type="button" class="print_o" title="Print page">
+  <i class="fa fa-print"></i>
+</a>
+<!---print_button_closed-->
+
+<!-- <a href="add_org_type.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
+<i class="fa fa-plus-circle"></i>
+</a> -->
+
+<a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
+<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico4.png"></i>App Administration</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Department</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	</div><!--wrapper_closed-->
+
+
+<!--------script section_started---------->
+
+
+<!-----table_search------------>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-----table_search_closed------------>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "180px";
+    document.getElementById("main").style.marginright = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginright= "0";
+}
+</script>
+
+<!--app_more button_onclick----->
+<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.height = "200px";
+    document.getElementById("main").style.marginbottom = "Auto";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.height = "0";
+    document.getElementById("main").style.marginbottom= "0";
+}
+</script>
+
+
+
+<script>
+function openNav2() {
+    document.getElementByclass("content_sec1").style.width = "250";
+    document.getElementByclass("main").style.marginLeft = "0px";
+}
+
+function closeNav2() {
+    document.getElementById("myNav1").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".slide-toggle").click(function(){
+    $(".content_sec1").animate({
+      width: "18%"
+    });
+  });
+});
+
+</script>
+
+<!--searchbox_list_script_opened------->
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = [""];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+
+
+<!--searchbox_list_script_closed------->
+
+
+
+<script>
+function myFunction_a() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput_1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable_1");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+<script>
+function myFunction_b() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput_2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable_1");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker1').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker2').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+
+
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'fa fa-check-square-o'
+                },
+                off: {
+                    icon: 'fa fa-square-o gly2'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                .removeClass('btn-d')
+                .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                .removeClass('btn-' + color)
+                .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+</script>
+<!---------------Checkbox_section_closed------------------------->
+
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <!-- <link rel="stylesheet" type="text/css" href="../table/table.css"> -->
+
+
+  <!---data_table_script for search-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+  <!---Data_table_script for search_closed-->
+
+
+<script type="text/javascript">
+  $(document).ready(function(){ 
+    $(".cont_contr").scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $(".cont_contr").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+
+
+</body>
+</html>

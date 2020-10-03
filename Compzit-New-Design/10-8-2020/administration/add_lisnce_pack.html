@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+<title>Compzit Admin Dashboard</title>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<head>
+<script>
+function openNav7() {
+    document.getElementById("mySidenav7").style.width = "320px";
+}
+
+function closeNav7() {
+    document.getElementById("mySidenav7").style.width = "0px";
+}
+
+</script>
+<script>
+function openNav4() {
+    document.getElementById("mySidenav4").style.width = "280px";
+}
+
+function closeNav4() {
+    document.getElementById("mySidenav4").style.width = "0px";
+}
+
+</script>
+
+<script>
+function openNav5() {
+    document.getElementById("mySidenav5").style.height = "106px";
+}
+
+function closeNav5() {
+    document.getElementById("mySidenav5").style.height = "0";
+}
+</script>
+<link rel="shortcut icon" href="../images/com.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<script type="text/javascript" src="../js/ajax.js"></script>
+<script type="text/javascript" src="../js/boot.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!---Font_Awesome_section_opened----------->
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="font_awe/css/font-awesome.min.css">
+<!---Font_Awesome_section_closed----------->
+
+<!--------css_Included------->
+
+<link rel="stylesheet" type="text/css" href="../css/afsdez.css">
+<!-- 
+<link rel="stylesheet" type="text/css" href="../css/afsdez_org.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_gray.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_red.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
+<link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
+
+<link rel="stylesheet" type="text/css" href="../css/rec.css">
+
+<link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
+<script type="text/javascript" src="../js/datepick.min.js"></script>
+
+<!--------css_Included_closed------->
+<Style>
+  .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
+
+</Style>
+
+</head>
+<body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
+
+ <div class="mySave1" id="mySave">
+  <div class="save_sec">
+    <button type="submit" class="btn sub1 bt_b">Save</button>
+    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
+  </div>
+  <div class="edit_sec">
+    <button type="submit" class="btn sub1 bt_b">Update</button>
+    <button type="submit" class="btn sub3 bt_b">Update & Close</button>
+    <button type="submit" class="btn sub2 bt_b">Confirm</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+  </div>
+</div>
+
+<!------------------mySidenav4_opned--------------------->
+<div id="mySidenav4" class="sidenav4">
+  
+   <div class="menu_strip">
+      <h1><!-- <i class="fa fa-line-chart ft_ico"></i> -->
+      <i class="ft_ico"><img src="../images/ft_ico4.png"></i> App Administration</h1>
+      <a href="#" onclick="closeNav4()">
+        <i class="fa fa-chevron-circle-left fa_arro"></i>
+      </a>
+    </div>
+ 
+  <div class="content_sec1 overlay">
+   
+    <div class="serch_1">
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a category" class="mySearch se_1">
+   </div>
+     <div class="menu_item"> 
+      <ul id="myUL" class="menu_ul">
+
+        <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle  active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Location Settings <span class="caret c2"></span>
+          </a>
+         <ul class="dropdown-menu dropul">
+            <li>
+              <a href="country.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Country
+              </a>
+            </li>
+            <li>
+              <a href="state.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> State
+              </a>
+            </li>
+            <li>
+              <a href="city.html" class="active"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> City
+              </a>
+            </li>
+      </ul>
+
+      <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Corporate Section <span class="caret c2"></span>
+          </a>
+         <ul class="dropdown-menu dropul">
+            <li>
+              <a href="business_unit.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Business Unit
+              </a>
+            </li>
+            <li>
+              <a href="corp_department.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Corporate Department
+              </a>
+            </li>
+            <li>
+              <a href="premise.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Premise
+              </a>
+            </li>
+            <li>
+              <a href="corp_partner.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Corporate Partner
+              </a>
+            </li>
+            <li>
+              <a href="premise_area.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Premise Area
+              </a>
+            </li>
+            <li>
+              <a href="workstation.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Workstation
+              </a>
+            </li>
+            <li>
+              <a href="corp_division.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Corporate Division
+              </a>
+            </li>
+      </ul>
+
+      <li class="dropdown drop2">
+          <a href="#"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-book list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Admin Tools <span class="caret c2"></span>
+          </a>
+         <ul class="dropdown-menu dropul">
+            <li>
+              <a href="password.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Reset Password
+              </a>
+            </li>
+         </ul>
+
+        <li>
+          <a href="aprved_hie_tmp.html"><i class="fa fa-tachometer list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Approval Hierarchy Template
+          </a>
+        </li>
+        <li>
+          <a href="dcmt_work.html"><i class="fa fa-users list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Document Workflow
+          </a>
+        </li>
+        <li>
+          <a href="insurance.html"><i class="fa fa-list-alt list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Insurance Provider
+          </a>
+        </li>
+        <li>
+          <a href="bank.html"><i class="fa fa-newspaper-o list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Bank
+          </a>
+        </li>
+        <li>
+          <a href="complaint.html"><i class="fa fa-hand-scissors-o  list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Complaint Master
+          </a>
+        </li>
+        <li>
+          <a href="time_slot.html"><i class="fa fa-shopping-cart list1 men_ico"></i><i class="men_img"><img src="../images/menu/1.png"></i> Time slot
+          </a>
+        </li>
+        
+        </ul>
+    </div>
+  </div>
+</div>
+<!------------------mySidenav4_closed--------------------->
+
+
+  <div class="wrapper wr2" onmouseover="closesave()">
+
+<div class="menu_fix">
+  <a href="#"  onclick="openNav4()">
+      <i class="fa fa-bars bar"></i>
+    </a>
+</div>
+
+  <a href="#"  onclick="openNav7()">
+    <div class="menu_fix1">
+      <i class="fa fa-tasks bar rot"></i><span class="badge beln cht cht1">4</span>
+      <h5>Task</h5>
+    </div>
+</a>
+
+<!------------------mySidenav7_opened--------------------->
+<div id="mySidenav7" class="sidenav7">
+  <a href="#" onclick="closeNav7()">
+    <i class="fa fa-arrow-circle-right fa_arro1"></i>
+  </a>
+  <h3>TASK MANAGER</h3>
+  <div class="task1 overlay">
+   <ul class="nav nav-tabs">
+    <li class="tab_text1 active"><a data-toggle="tab" href="#home">Tasks</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu1">Add New</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu2">View All</a></li>
+    <li class="tab_text1"><a data-toggle="tab" href="#menu3">Settings</a></li>
+  </ul>
+
+  <div class="tab-content tab">
+    <div id="home" class="tab-pane fade in active">
+     <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+      <a href="#">
+        <div class="notify">
+          <i class="fa fa-sticky-note sty"></i>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </a>
+    </div>
+
+    <div id="menu1" class="tab-pane fade">
+      <h3>Add new task</h3>
+      <div class="fo_tsk">
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="email" class="labl1">Task Name:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="labl1">Details of Task:</label>
+            <textarea type="text" class="form-control" id="pwd" placeholder="Enter your task" name="pwd"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="menu2" class="tab-pane fade">
+      <h3>View All</h3>
+      <p>Under Construction</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Settings</h3>
+      <p>Under Construction</p>
+    </div>
+  </div> 
+
+  </div>
+</div>
+<!------------------mySidenav7_Closed--------------------->
+
+<!------------------mySidenav5_opned--------------------->
+<div id="mySidenav5" class="sidenav5" onclick="closeNav5()">         
+  <div class="head_sec1" style="width: 100%;height:70px;">
+    <a href="#" onclick="openNav5()"></a>
+   
+      <div id="flipper" class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-th fa6"></i>
+          <h5>Apps</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box ap_bx1 bo1">
+        <a href="#" data-toggle="modal" data-target="#exampleModal2">
+          <i class="fa fa-sitemap fa6"></i>
+          <h5>Business Unit</h5>
+        </a>
+      </div>
+    
+    
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+     
+      <div class="app_box bo1">
+        <a href="#">
+          <i class="fa fa-tasks fa6"></i>
+          <h5>Tasks</h5>
+        </a>
+      </div>
+    
+  </div>
+  <a href="#">
+    <div class="closed">
+       <i class="fa fa-arrow-circle-up ar_top"></i>
+    </div>    
+  </a>   
+</div>
+<!------------------mySidenav5_closed--------------------->
+
+
+
+<!------------------mySidenav_opned--------------------->
+<div id="mySidenav" class="sidenav">
+  <div class="profile_contain">
+    <div class="pro_cir1">
+      <img src="../images/user.png" class="user_res1">
+    </div>
+
+  <div class="dropdown drop1">
+    <button class="dropdown-toggle bt2" type="button" data-toggle="dropdown"><h5>Ahammed hamood hamdan mubarack</h5>
+    <span class="caret c1"></span>
+    </button>
+    <ul class="dropdown-menu drop_dn ul1">
+      <li><a href="#" class="lia1">HTML</a></li>
+      <li><a href="#" class="lia1">CSS</a></li>
+      <li><a href="#" class="lia1">JavaScript</a></li>
+    </ul>
+  </div>
+  <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-times-circle"></i></a>
+  </div>
+  <li>
+    <a href="#"><i class="fa fa-envelope f1 fa1"></i> Message</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-bell f1 fa1"></i> Notification</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-comments f1 fa1"></i> Chat</a>
+  </li>
+  <li>
+    <a href="#"><i class="fa fa-power-off f1 fa1"></i> Logout</a>
+  </li>
+</div>
+<!------------------mySidenav_Closed--------------------->
+
+<!----------------------------------------------header_section_opened---------------------------------------------->
+    <div class="header_container" onclick="closeNav4()">
+      <div class="head_sec2 head_lft">
+        <div class="head_sec2_sub1">
+          <img src="../images/alb_logo.png" class="img_alb1">
+          <h1> <span>JIO AL-BALAGH TRADING & CONTRACTING CO. WLL.</span></h1>
+        </div>
+        <div class="head_sec2_sub2 hd1" onmouseout="">
+          <a href="#"><i class="fa fa-envelope"><span class="badge beln cht">41</span></i></a>
+          <a href="#"><i class="fa fa-bell"><span class="badge beln">4</span></i></a>
+          <i class="fa fa-comments f1"><span class="badge beln cht">4</span></i>
+          <div class="dropdown">
+              <button class="dropdown-toggle bt1" type="button" data-toggle="dropdown"><h6>Ahammed hamood Hamdan Mubarack</h6>
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu drop_dn">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+              </ul>
+            </div>
+            <div class="pro_cir">
+              <img src="../images/user.png" class="user_res">
+            </div>
+            <div class="power">
+            
+            <i class="fa fa-power-off"></i>
+            </div>
+        </div>
+
+        <div class="menu-tog">
+          <a onmouseover="openNav()"><i class="fa fa-ellipsis-h"></i></a>
+        </div>  
+      </div>
+
+      <div class="head_sec1 head_rgt">
+        <a href="#" onmouseover="openNav5()" onclick="closeNav5()">
+        <div class="left_dot">
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+        </a>
+      </div>
+    </div><!--header_container_closed-->
+<!----------------------------------------------header_section_closed------------->
+
+
+<!----------------------------------------------Content_section_opened-------------->
+ <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
+
+  <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">App Administration</a></li>
+        <li><a href="lisnce_pack.html">License Pack</a></li>
+        <li class="active">Add License Pack</li>
+      </ol>
+
+  <div class="content_sec2 cont_contr">
+    <div class="content_area_container cont_contr">
+      
+      <div class="content_box1 cont_contr">
+        <h2>Add License Pack</h2>
+
+        <div class="form-group fg2 sa_o_fg6 sa_fg1">
+          <label for="email" class="fg2_la1">License Pack Name:<span class="spn1">*</span></label>
+          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="License Pack Name" name="">
+        </div>
+              
+       <div class="form-group fg2 sa_o_fg6 sa_fg1">
+          <label for="email" class="fg2_la1">Maximum Users:<span class="spn1">*</span></label>
+          <input id="myinpc3" type="Number" class="form-control fg2_inp1 inp_mst tr_r" id="email" placeholder="0" name="">
+        </div>
+              
+        <div class="form-group fg2 fg2_mr sa_o_fg6 sa_fg1">
+          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox" >
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="devider"></div>
+             
+        <div class="sub_cont pull-right">
+          <div class="save_sec">
+            <button type="submit" class="btn sub1">Save</button>
+            <button type="submit" class="btn sub3">Save & Close</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+            <button type="submit" class="btn sub2">Clear</button>
+          </div>
+
+          <div class="edit_sec">
+            <button type="submit" class="btn sub1">Update</button>
+            <button type="submit" class="btn sub3">Update & Close</button>
+            <button type="submit" class="btn sub2">Confirm</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+          </div>
+        </div>
+
+
+         </div>
+        </div>
+       </div>
+      </div>
+
+<!-- <div class="content_sec3"></div> -->
+
+</div><!--content_container_closed------>
+
+<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
+<i class="fa fa-save"></i>
+</a>
+
+<a href="lisnce_pack.html" type="button" class="list_b" title="Back to List">
+<i class="fa fa-arrow-circle-left"></i>
+</a>
+
+<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico4.png"></i>App Administration</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title mod1" id="exampleModalLabel"><i class="fas fa-business-time"></i> Purchase</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body md_bd1">
+        <span class="spn_head">Bank</span>
+        <div class="col-md-12">
+        <div class="col-md-4">
+         <!--  <label for="email" class="fg2_la1">Order#<span class="spn1"></span>:</label> -->
+          <h2>PL-123456</h2>
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="email" class="fg2_la1">Date<span class="spn1"></span>:</label> -->
+           <h3 class="h3_dt">17/12/2018</h3>
+        </div>
+        
+        <div class="col-md-4 bt_mrg1">
+          <div class="input-group">
+            <span class="input-group-addon cur1">QAR</span>
+            <input id="email" type="text" class="form-control fg2_inp1" name="email" placeholder="1000.00">
+          </div>
+        </div>
+      </div><!--col-md-12_closed-->
+      <div class="clearfix"></div>
+      <div class="devider"></div>
+
+      <div class="col-md-12 col_mar">
+        <div class="col-md-6">
+          <h1 class="h1_pr">Ledger Amount</h1>
+        </div>
+        <div class="col-md-6">
+          <span class="spn_amt">
+            10000.00
+          </span>
+        </div>
+      </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title mod1" id="exampleModalLabel"><i class="fas fa-funnel-dollar"></i> Cost Centre</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body md_bd">
+        <div class="col-md-12">
+        <div class="col-md-4">
+          <label for="email" class="fg2_la1">Cost Center<span class="spn1"></span>:</label>
+            <input list="browsers" class="form-control fg2_inp1" name="browser" placeholder="Select Account">
+              <datalist id="browsers">
+                <option value="IDBI">
+                <option value="HDFC">
+                <option value="SBT">
+                <option value="CANARA">
+                <option value="SIB">
+              </datalist>
+        </div>
+        <div class="col-md-4">
+          <label for="email" class="fg2_la1">Amount<span class="spn1"></span>:</label>
+           <div class="input-group">
+                  <span class="input-group-addon cur1">QAR</span>
+                  <input id="email" type="text" class="form-control fg2_inp1" name="email" placeholder="1000.00">
+                </div>
+        </div>
+        <div class="col-md-2 bt_mrg">
+          <button class="btn act_btn bn2"><i class="fas fa-plus-circle"></i> Add</button>
+        </div>
+        <div class="col-md-2 bt_mrg">
+          <button class="btn act_btn bn3"><i class="fas fa-trash-alt"></i> Delete</button>
+        </div>
+      </div><!--col-md-12_closed-->
+
+      <div class="col-md-12">
+        <div class="col-md-4">
+          <label for="email" class="fg2_la1">Cost Center<span class="spn1"></span>:</label>
+            <input list="browsers" class="form-control fg2_inp1" name="browser" placeholder="Select Account">
+              <datalist id="browsers">
+                <option value="IDBI">
+                <option value="HDFC">
+                <option value="SBT">
+                <option value="CANARA">
+                <option value="SIB">
+              </datalist>
+        </div>
+        <div class="col-md-4">
+          <label for="email" class="fg2_la1">Amount<span class="spn1"></span>:</label>
+           <div class="input-group">
+                  <span class="input-group-addon cur1">QAR</span>
+                  <input id="email" type="text" class="form-control fg2_inp1" name="email" placeholder="1000.00">
+                </div>
+        </div>
+        <div class="col-md-2 bt_mrg">
+          <button class="btn act_btn bn2" disabled=""><i class="fas fa-plus-circle"></i> Add</button>
+        </div>
+        <div class="col-md-2 bt_mrg">
+          <button class="btn act_btn bn3"><i class="fas fa-trash-alt"></i> Delete</button>
+        </div>
+      </div><!--col-md-12_closed-->
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Save changes</button>
+      </div>
+    </div>
+   </div>
+ </div>
+</div><!--wrapper_closed-->
+
+
+<!--------script section_started---------->
+
+
+<!-----table_search------------>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<!-----table_search_closed------------>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "180px";
+    document.getElementById("main").style.marginright = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginright= "0";
+}
+</script>
+
+<!--app_more button_onclick----->
+<script>
+function openNav1() {
+    document.getElementById("mySidenav1").style.height = "200px";
+    document.getElementById("main").style.marginbottom = "Auto";
+}
+
+function closeNav1() {
+    document.getElementById("mySidenav1").style.height = "0";
+    document.getElementById("main").style.marginbottom= "0";
+}
+</script>
+
+
+
+<script>
+function openNav2() {
+    document.getElementByclass("content_sec1").style.width = "250";
+    document.getElementByclass("main").style.marginLeft = "0px";
+}
+
+function closeNav2() {
+    document.getElementById("myNav1").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".slide-toggle").click(function(){
+    $(".content_sec1").animate({
+      width: "18%"
+    });
+  });
+});
+
+</script>
+
+<!--searchbox_list_script_opened------->
+
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+
+<!---------------Checkbox_section_started------------------------->
+
+
+<script type="text/javascript">
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'glyphicon glyphicon-check'
+                },
+                off: {
+                    icon: 'glyphicon glyphicon-unchecked'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                    .removeClass('btn-d')
+                    .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                    .removeClass('btn-' + color)
+                    .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
+
+</script>
+<!---------------Checkbox_section_started------------------------->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab2content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker1').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker2').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker3').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker4').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker5').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+<!--------tooltips------------>
+<script>
+$(document).ready(function(){
+    $('[mouseover="tooltip"]').tooltip();   
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[mouseover="tooltip1"]').tooltip();   
+});
+</script>
+
+<!----hide/Show_section---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c1h").hide();
+  });
+  $("#show").click(function(){
+    $(".c1h").show();
+  });
+});
+</script>
+
+<!----hide/Show_section2---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c2h").hide();
+  });
+  $("#show1").click(function(){
+    $(".c2h").show();
+  });
+});
+</script>
+
+<script>
+function mysave() {
+  var x = document.getElementById("mysav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+function issue_chk() {
+  var x = document.getElementById("is_chk");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "140px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+}
+</script>
+<!--save_pop up_closed-->
+
+
+</body>
+</html>
