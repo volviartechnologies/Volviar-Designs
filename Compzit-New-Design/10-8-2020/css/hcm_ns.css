@@ -1150,3 +1150,15 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .img_pro_per img{width: 20px;height: 20px;margin: auto;float:left;margin-top:2px!important;background-color:#fff;border-radius: 50px;padding: 2px;margin-right:8px;
                     border:1px solid #d6d6d6;}
 .lbr_chk .ic2{color: #afcbe4;}
+.show_emply{width: 90%;height:auto;margin: auto;float: left;background-color: #ffffff;border-radius: 7px;box-shadow: 0px 1px 15px #ccc;padding: 20px;margin-top: 20px;}
+.emply_pik{margin-top: 2px;margin-left: 2px;}
+.detlz{width:80%;margin:auto;float:left;height:auto;}
+.detlz ul{padding-left:10px;}
+.detlz li{list-style: none;line-height: 20px;}
+.detlz li .lv_dyz, .detlz li .lv_cnt{width: 30px;margin: auto;float: right;text-align: right;font-weight: 600;}
+.detlz li .lv_cnt{color:#ec0707;}
+.detlz li .lv_dyz{color:#3bb10c;}
+.sect_n11 .dt_wdt{width:101%!important;}
+.wi_se100{width:81%!important;}
+.fg6{padding-bottom: 6px!important;}
+.fg2_30{width: 30%!important;margin: auto;float: left;}
