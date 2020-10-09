@@ -979,7 +979,7 @@ function closeNav5() {
               <div class="rqst_img_box1">
                 <img src="../images/hcm/btn_ico3.png" class="">
               </div>
-              <h3>Family Members accompanied if any</h3>
+              <h3>Family Members accompanied, if Any</h3>
             </button>
             <button class="rqst_box1_btn ar_b4">
               <div class="rqst_img_box1">
@@ -1004,22 +1004,24 @@ function closeNav5() {
                 </select>
               </div>
               <div class="clearfix"></div>
-              <div class="form-group fg6 sa_640">
-                <label for="pwd" class="fg2_la1">From Date:<span class="spn1">*</span> </label>
-                <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-                  <input class="form-control inp_bdr inp_mst" type="text"  />
-                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+              <div class="from_sectn">
+                <div class="form-group fg6 sa_640">
+                  <label for="pwd" class="fg2_la1">From Date:<span class="spn1">*</span> </label>
+                  <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                    <input class="form-control inp_bdr inp_mst" type="text"  />
+                    <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                  </div>
                 </div>
+                <div class="form-group fg6 sa_640">
+                  <label for="pwd" class="fg2_la1">Session:<span class="spn1">*</span> </label>
+                  <button class="session_1 sesn_btn1 sel_section"><i class="fa fa-sun-o"></i> <span>First</span></button>
+                  <button class="session_1 sesn_btn2"><i class="fa fa-sun-o"></i> <span>Second</span></button>
+                  <button class="session_1 sesn_btn3"><i class="fa fa-sun-o"></i> <span>Fullday</span></button>
+                </div>
+                <div class="clearfix"></div>
               </div>
-              <div class="form-group fg6 sa_640">
-                <label for="pwd" class="fg2_la1">Session:<span class="spn1">*</span> </label>
-                <button class="session_1 sesn_btn1 sel_section"><i class="fa fa-sun-o"></i> <span>First</span></button>
-                <button class="session_1 sesn_btn2"><i class="fa fa-sun-o"></i> <span>Second</span></button>
-                <button class="session_1 sesn_btn3"><i class="fa fa-sun-o"></i> <span>Fullday</span></button>
-              </div>
-              <div class="clearfix"></div>
 
-              <div class="multp_dyz" style="display: none;">
+              <div class="multp_dyz from_sectn" style="display: none;">
                 <div class="form-group fg6 sa_640">
                   <label for="pwd" class="fg2_la1">To Date:<span class="spn1">*</span> </label>
                   <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
@@ -1034,10 +1036,6 @@ function closeNav5() {
                   <button class="session_1 sesn_btn3_a"><i class="fa fa-sun-o"></i> <span>Fullday</span></button>
                 </div>
                 <div class="clearfix"></div>
-              </div>
-              <div class="form-group fg6 sa_640">
-                <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-                <textarea rows="3" cols="30" class="form-control flt_l tb_in" placeholder="Description"></textarea>
               </div>
               <div class="form-group fg6 sa_640">
                 <div class="form-group fg6 fg2_mr sa_fg4 sa_2 sa_640_i">
@@ -1059,95 +1057,109 @@ function closeNav5() {
                   </div>
                 </div>
               </div>
+              <div class="form-group fg6 sa_640">
+                <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+                <textarea rows="3" cols="30" class="form-control flt_l tb_in" placeholder="Description"></textarea>
+              </div>
             </div>
           </div>
           <!---sec_1_closed-->
-          <div class="trvl_sec" style="display:none;">
-            <div class="rqst_box2_cnt">
-              <div class="form-group fg6 sa_640">
-                <label for="pwd" class="fg2_la1">Travel Date:<span class="spn1">*</span> </label>
-                <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-                  <input class="form-control inp_bdr inp_mst" type="text"  />
-                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          <div class="trvl_sec bdr_top_rgt" style="display:none;">
+            <div class="rqst_box2_cnt pdng_rgt0">
+              <div class="fg6 sa_640">
+                <div class="fg12 sa_640">
+                  <label for="pwd" class="fg2_la1">Travel Date:<span class="spn1">*</span> </label>
+                  <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                    <input class="form-control inp_bdr inp_mst" type="text"  />
+                    <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group fg6 sa_640">
-                <label for="email" class="fg2_la1">Sector / Destination:<span class="spn1"></span></label>
-                <input type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Sector / Destination" name="email">
-              </div>
-
-              <div class="form-group fg6 sa_640">
-                <label for="pwd" class="fg2_la1">Return Date:<span class="spn1">*</span> </label>
-                <div id="datepicker3" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-                  <input class="form-control inp_bdr inp_mst" type="text"  />
-                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                <div class="fg12 sa_640">
+                  <label for="pwd" class="fg2_la1">Return Date:<span class="spn1">*</span> </label>
+                  <div id="datepicker3" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                    <input class="form-control inp_bdr inp_mst" type="text"  />
+                    <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                  </div>
                 </div>
-              </div>
-              <div class="form-group fg6 sa_640">
-                <label for="email" class="fg2_la1">Air Line Preferred:<span class="spn1"></span></label>
-                <input type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Air Line Preferred" name="email">
+                <div class="form-group fg12 sa_640">
+                  <label for="email" class="fg2_la1">Sector / Destination:<span class="spn1"></span></label>
+                  <input type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Sector / Destination" name="email">
+                </div>
+                <div class="form-group fg12 sa_640">
+                  <label for="email" class="fg2_la1">Air Line Preferred:<span class="spn1"></span></label>
+                  <input type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Air Line Preferred" name="email">
+                </div>
+            </div>
+              <div class="one_side">
               </div>
             </div>
           </div><!--trvl_sec_closed-->
           <!--famly_sec-->
-          <div class="fmly_sec" style="display: none;">
-            <div class="box_1_fmly">
-              <h4>Username 1</h4>
-              <div class="check_bxr">
-                <div class="">
-                  <label class="switch" title="Yes">
-                    <input type="checkbox" >
-                    <span class="slider_tog round"></span>
-                  </label>
+          <div class="fmly_sec bdr_top_rgt" style="display: none;">
+
+            <div class="rqst_box2_cnt pdng_rgt0">
+              <div class="fg6 sa_640">
+                <div class="box_1_fmly">
+                  <h4>Username 1</h4>
+                  <div class="check_bxr">
+                    <div class="">
+                      <label class="switch" title="Yes">
+                        <input type="checkbox" >
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <br>
+                  <span>Mother</span>
+                </div>
+                <div class="box_1_fmly">
+                  <h4>Username 1</h4>
+                  <div class="check_bxr">
+                    <div class="">
+                      <label class="switch" title="Yes">
+                        <input type="checkbox" >
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <br>
+                  <span>Mother</span>
+                </div>
+                <div class="box_1_fmly">
+                  <h4>Username 1</h4>
+                  <div class="check_bxr">
+                    <div class="">
+                      <label class="switch" title="Yes">
+                        <input type="checkbox" >
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <br>
+                  <span>Mother</span>
+                </div>
+                <div class="box_1_fmly">
+                  <h4>Username 1</h4>
+                  <div class="check_bxr">
+                    <div class="">
+                      <label class="switch" title="Yes">
+                        <input type="checkbox" >
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <br>
+                  <span>Mother</span>
                 </div>
               </div>
-              <br>
-              <span>Mother</span>
-            </div>
-            <div class="box_1_fmly">
-              <h4>Username 1</h4>
-              <div class="check_bxr">
-                <div class="">
-                  <label class="switch" title="Yes">
-                    <input type="checkbox" >
-                    <span class="slider_tog round"></span>
-                  </label>
-                </div>
+              <div class="one_side">
               </div>
-              <br>
-              <span>Mother</span>
-            </div>
-            <div class="box_1_fmly">
-              <h4>Username 1</h4>
-              <div class="check_bxr">
-                <div class="">
-                  <label class="switch" title="Yes">
-                    <input type="checkbox" >
-                    <span class="slider_tog round"></span>
-                  </label>
-                </div>
-              </div>
-              <br>
-              <span>Mother</span>
-            </div>
-            <div class="box_1_fmly">
-              <h4>Username 1</h4>
-              <div class="check_bxr">
-                <div class="">
-                  <label class="switch" title="Yes">
-                    <input type="checkbox" >
-                    <span class="slider_tog round"></span>
-                  </label>
-                </div>
-              </div>
-              <br>
-              <span>Mother</span>
             </div>
           </div>
           <!--contact_sec-->
-          <div class="cont_sec" style="display:none;">
-            <div class="rqst_box2_cnt">
-              <div class="fg6">
+          <div class="cont_sec  bdr_top_rgt" style="display:none;">
+            <div class="rqst_box2_cnt pdng_rgt0">
+              <div class="fg6 sa_640">
                 <div class="form-group fg12 sa_640">
                   <label for="email" class="fg2_la1">Contact# (Including Country Code):<span class="spn1">*</span></label>
                   <input type="text" class="form-control fg2_inp1 tr_l inp_mst" id="email" placeholder="Contact# (Including Country Code)" name="email">
@@ -1160,20 +1172,21 @@ function closeNav5() {
                   <label for="email" class="fg2_la1">Email ID:<span class="spn1"></span></label>
                   <input type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Email ID" name="email">
                 </div>
-              </div>
-              <div class="form-group fg6 sa_640">
-                <label for="email" class="fg2_la1">Address:<span class="spn1"></span></label>
-                <textarea rows="7" cols="30" class="form-control flt_l tb_in" placeholder="Address"></textarea>
-              </div>
+                <div class="form-group fg12 sa_640">
+                  <label for="email" class="fg2_la1">Address:<span class="spn1"></span></label>
+                  <textarea rows="3" cols="30" class="form-control flt_l tb_in" placeholder="Address"></textarea>
+                </div>
               <div class="clearfix"></div>
               <div class="form-group fg12 sa_640">
-                <label for="email" class="fg2_la1">Comment / Remark:<span class="spn1"></span></label>
-                <textarea rows="3" cols="30" class="form-control flt_l tb_in wid_95p" placeholder="Comment / Remark"></textarea>
+                <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
+                <textarea rows="3" cols="30" class="form-control flt_l tb_in" placeholder="Comments"></textarea>
               </div>
             </div>
+            <div class="one_side">
+            </div>
           </div>
-
         </div>
+      </div>
           <div class="rqst_box3">
             <div class="sts_bx_cntr">
               <div class="aprvl_sts">
@@ -1202,7 +1215,6 @@ function closeNav5() {
               <h5>Balance Leave Count</h5>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -1692,13 +1704,13 @@ $(document).ready(function(){
   $(".op_tab1").click(function(){
     $(".op_tab1").addClass("sel_tabz");
     $(".op_tab2").removeClass("sel_tabz");
-    $(".multp_dyz").hide();
+    $(".multp_dyz").fadeOut(600);
 
   });
   $(".op_tab2").click(function(){
     $(".op_tab2").addClass("sel_tabz");
     $(".op_tab1").removeClass("sel_tabz");
-    $(".multp_dyz").show();
+    $(".multp_dyz").fadeIn(600);
   });
 });
 </script>
