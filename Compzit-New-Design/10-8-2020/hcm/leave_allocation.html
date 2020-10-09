@@ -959,10 +959,10 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
+<!---inner_content_sections area_started-->
           <h1 class="h1_con">Leave Allocation</h1>
 
-          <div class="form-group fg2 frm_50 sa_2 sa_o_fg6">
+          <div class="form-group fg5 sa_2 sa_o_fg6 sa_480">
           <label for="email" class="fg2_la1">Leave Category<span class="spn1"></span>:</label>
           <select class="form-control fg2_inp1 fg_chs2">
             <option>Leave Allocation1</option>
@@ -971,7 +971,7 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="form-group fg2 frm_50 sa_2 sa_o_fg6">
+        <div class="form-group fg7 sa_2 sa_o_fg6 sa_480">
           <label for="email" class="fg2_la1">Year:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
             <option>2019</option>
@@ -980,17 +980,7 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="fg7_5 sa_fg2">
-              <label class="form1 mar_bo mar_tp lb_wa">
-                <span class="button-checkbox">
-                  <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                  <input type="checkbox" class="hidden" />
-                </span>
-                <p class="pz_s">Show Deleted Entries</p>
-              </label>
-            </div>
-
-        <div class="form-group fg2 frm_50 sa_2 sa_o_fg6">
+        <div class="form-group fg5 sa_2 sa_o_fg6 sa_480">
           <label for="email" class="fg2_la1">Employee<span class="spn1"></span>:</label>
           <select class="form-control fg2_inp1 fg_chs2">
             <option>Employee1</option>
@@ -999,17 +989,27 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="form-group fg2 frm_50 sa_2 sa_o_fg6">
+        <div class="form-group fg7 sa_2 sa_o_fg6 sa_480">
           <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Active</option>
-            <option>Reject</option>
-            <option>Pending</option>
+            <option>Confirmed</option>
+            <option>Not Confirmed</option>
+            <option>All</option>
           </select> 
         </div>
 
+        <div class="fg7_5 sa_fg2 sa_480">
+          <label class="form1 mar_bo mar_tp lb_wa">
+            <span class="button-checkbox">
+              <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+              <input type="checkbox" class="hidden" />
+            </span>
+            <p class="pz_s">Show Deleted Entries</p>
+          </label>
+        </div>
+
         
-        <div class="fg2">
+        <div class="fg8 sa_480">
               <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
               <button class="submit_ser"></button>
               <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
@@ -1017,9 +1017,8 @@ function closeNav5() {
 <!---=================section_devider============--->
 
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
 
         
 
@@ -1059,14 +1058,14 @@ function closeNav5() {
                 <td>05/09/2019</td>
                 <td> 
                 <div class="btn_stl1">
-                  <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-times-circle"></i>
-                    </button>
-                    <button class="btn act_btn bn8" data-toggle="modal" data-target="#exampleModal" title="Reopen">
-                  <i class="fa fa-folder-open"></i>
-                </button>
                   <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
                     <i class="fa fa-edit"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal_st" title="Reopen">
+                    <i class="fa fa-unlock"></i>
                   </button>
                   <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                     <i class="fa fa-trash"></i>
@@ -1100,14 +1099,14 @@ function closeNav5() {
                 <td>05/09/2019</td>
                 <td> 
                 <div class="btn_stl1">
-                  <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="" disabled="">
-                      <i class="fa fa-check-circle "></i>
-                    </button>
-                    <button class="btn act_btn bn8" data-toggle="modal" data-target="#exampleModal" title="Reopen">
-                  <i class="fa fa-folder-open"></i>
-                </button>
                   <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
                     <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal_st" title="Reopen">
+                    <i class="fa fa-unlock"></i>
                   </button>
                   <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                     <i class="fa fa-trash"></i>
@@ -1142,16 +1141,16 @@ function closeNav5() {
                 <td>05/09/2019</td>
                 <td> 
                 <div class="btn_stl1">
-                  <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="" disabled="">
-                      <i class="fa fa-times-circle"></i>
-                    </button>
-                    <button class="btn act_btn bn8" data-toggle="modal" data-target="#exampleModal" title="Reopen">
-                  <i class="fa fa-folder-open"></i>
-                </button>
-                  <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                    <i class="fa fa-edit"></i>
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                    <i class="fa fa-list-alt"></i>
                   </button>
-                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete" disabled="">
+                  <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal_st" title="Reopen">
+                    <i class="fa fa-unlock"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                     <i class="fa fa-trash"></i>
                   </button>
                 </div>
@@ -1184,14 +1183,14 @@ function closeNav5() {
                 <td>05/09/2019</td>
                 <td> 
                 <div class="btn_stl1">
-                  <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-check-circle "></i>
-                    </button>
-                    <button class="btn act_btn bn8" data-toggle="modal" data-target="#exampleModal" title="Reopen">
-                  <i class="fa fa-folder-open"></i>
-                </button>
                   <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
                     <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Confirm">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal_st" title="Reopen">
+                    <i class="fa fa-unlock"></i>
                   </button>
                   <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                     <i class="fa fa-trash"></i>
@@ -1289,6 +1288,30 @@ function closeNav5() {
 </div>
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
