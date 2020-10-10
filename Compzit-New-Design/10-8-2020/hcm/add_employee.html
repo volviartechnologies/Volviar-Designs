@@ -1167,7 +1167,7 @@ function MM_swapImage() { //v3.0
               </div>
               <div class="fg4 sa_o_fg5 sa_2 sa_640_i des_1_opn" style="display: none;">
                 <label for="email" class="fg2_la1 pad_l">Accessible Division:<span class="spn1">*</span></label><br>
-                <div class="dropdown-mul-1 imp_se" style="margin-right: 10px!important;width: 90%;">
+                <div class="dropdown-mul-1 imp_se new_access" style="margin-right: 10px!important;width: 90%;">
                   <select style="display:none;width: 96%;" multiple placeholder="Select"> </select>
                 </div>
               </div>
@@ -2111,6 +2111,14 @@ function MM_swapImage() { //v3.0
             <input type="file" id="file-upload" multiple="" required="">
             <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
             <div id="file-upload-filename" class="file_n"></div>
+            <div class=" flt_r">
+              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#view_copy" title="View">
+                <i class="fa fa-list-alt"></i>
+              </button>
+              <button class="btn act_btn bn3" title="Remove Selected File">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -4301,6 +4309,32 @@ function MM_swapImage() { //v3.0
       </div>
     </div>
   </div>
+  
+<!-- Modal -->
+<div class="modal fade" id="view_copy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">License Copy</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body md_bd lc_copy">
+        <img src="../images/bg1.jpg">
+        </div>
+        <div class="modal-footer">
+          <div class="sub_cont pull-right">
+            <div class="save_sec">
+              <button type="submit" class="btn sub1">Save</button>
+              <button type="submit" class="btn sub4" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog mod1" role="document">
@@ -6111,6 +6145,12 @@ $('.hidew').prop('checked',true);
 $('.hidew').prop('checked',false);
   });
 </script>
-
+<script>
+$(document).ready(function(){
+  $(".new_access .dropdown-selected").click(function(){
+    $(".new_access .dropdown-selected").addClass("sel_zap");
+  });
+});
+</script>
 </body>
 </html>

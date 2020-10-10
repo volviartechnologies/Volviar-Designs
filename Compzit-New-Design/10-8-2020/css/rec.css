@@ -3440,3 +3440,7 @@ body{position: fixed;left: 0;right: 0;}
   .sa_2{margin-bottom: 6px;}
   .fg7{padding-right: 0px;}
 }
+.pro_cir{overflow:hidden!important;}
+.pro_cir img{width:100%;height: auto;}
+.lc_copy img{width: 100%;height: auto;}
+.save_sec .btn{width: auto;margin:2px;float: left;}
