@@ -1266,7 +1266,11 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .sts_dots .sel_stats .fa{color:#8bc34a;}
 .sts_dots .sel_stats{background-color:#8bc34a;}
 .aprvl_mn h3{width: 100%;margin:auto;float: left;text-align: center;text-transform: capitalize;color: #000;font-weight:500;line-height: 20px; margin: 16px 0;}
-
+.sts_dots .rejct_sts{background-color:#ef5e5e;}
+.sts_dots .rejct_sts .fa{color:#ef5e5e;}
 .sts_dots1_2 li{width:50%;}
 .sts_dots1_3 li{width:33.3%;}
 .sts_dots1_4 li{width:25%;}
+.sts_dots1_5 li{width:20%;}
+.trvl_sec .fg12{margin-bottom:4px;width: 100%;height: auto; float: left;}
+.ovr_users{max-width:100%;float: right;/*padding: 10px; background-color: #fff;box-shadow: 1px 1px 15px #ccc;border-radius: 20px 0px 0px 20px;*/}

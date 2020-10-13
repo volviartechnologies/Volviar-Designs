@@ -979,7 +979,7 @@ function closeNav5() {
               <div class="rqst_img_box1">
                 <img src="../images/hcm/btn_ico3.png" class="">
               </div>
-              <h3>Family Members Accompanied, if Any</h3>
+              <h3>Accompanying Family Members</h3>
             </button>
             <button class="rqst_box1_btn ar_b4">
               <div class="rqst_img_box1">
@@ -1038,10 +1038,6 @@ function closeNav5() {
                 <div class="clearfix"></div>
               </div>
               <div class="form-group fg6 sa_640">
-                <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-                <textarea rows="3" cols="30" class="form-control flt_l tb_in" placeholder="Description"></textarea>
-              </div>
-              <div class="form-group fg6 sa_640">
                 <div class="form-group fg6 fg2_mr sa_fg4 sa_2 sa_640_i">
                   <label for="email" class="fg2_la1 pad_l">Include in Settlement:</label>
                   <div class="">
@@ -1060,15 +1056,10 @@ function closeNav5() {
                     </label>
                   </div>
                 </div>
-                <div class="form-group fg6 fg2_mr sa_fg4 sa_2 sa_640_i">
-                  <label for="email" class="fg2_la1 pad_l">Travel Ticket Needed:</label>
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox" >
-                      <span class="slider_tog round"></span>
-                    </label>
-                  </div>
-                </div>
+              </div>
+              <div class="form-group fg6 sa_640">
+                <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+                <textarea rows="3" cols="30" class="form-control flt_l" placeholder="Description"></textarea>
               </div>
             </div>
           </div>
@@ -1097,6 +1088,15 @@ function closeNav5() {
                 <div class="form-group fg12 sa_640">
                   <label for="email" class="fg2_la1">Airline Preferred:<span class="spn1"></span></label>
                   <input type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Airline Preferred" name="email">
+                </div>
+                <div class="form-group fg12 fg2_mr sa_fg4 sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Travel Ticket Needed:</label>
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
                 </div>
             </div>
               <div class="one_side bg_tvl">
@@ -1268,28 +1268,40 @@ function closeNav5() {
           <div class="rqst_box3">
             <div class="sts_bx_cntr">
               <div class="aprvl_sts">
-                <ul class="sts_dots">
+                <ul class="sts_dots sts_dots1_5">
                   <li class="aprvl1 sel_stats"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="Leave Requested"></i></li>
-                  <li class="aprvl2"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="Reporting Officer Approval"></i></li>
+                  <li class="aprvl2 sel_stats rejct_sts"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="Reporting Officer Approval"></i></li>
                   <li class=" aprvl3"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="Division Manager Approval"></i></li>
                   <li class=" aprvl4"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="General Manager Approval"></i></li>
                   <li class=" aprvl5"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="HR Approval"></i></li>
                 </ul>
               </div>
-              <div class="aprvl_mn aprvl1">
-                <h3>Reporting Officer Approval Pending</h3>
+              <div class="aprvl_mn aprvl1" style="display: none;">
+                <h3>Reporting Officer Approval <span class="aprvl_sts">Pending</span></h3>
               </div>
               <div class="aprvl_mn aprvl2" style="display: none;">
-                <h3>Division Manager Approval Pending</h3>
+                <h3>
+                  <span class="aprvl_stsq1" style="display: block;">Division Manager Approval Pending</span> 
+                  <span class="rejct_stsq1" style="display:none;">Reporting Officer Approval Rejected</span>
+                </h3>
               </div>
-              <div class="aprvl_mn aprvl3" style="display: none;">
-                <h3>General Manager Approval Pending</h3>
+              <div class="aprvl_mn aprvl3" style="display:block;">
+                <h3> 
+                  <span class="aprvl_stsq2" style="display:none;">General Manager Approval Pending</span> 
+                  <span class="rejct_stsq2" style="display: block;">Division Manager Approval Rejected</span>
+                </h3>
               </div>
               <div class="aprvl_mn aprvl4" style="display: none;">
-                <h3>HR Approval Pending</h3>
+                <h3> 
+                  <span class="aprvl_stsq3" style="display: block;">HR Approval Pending</span>
+                 <span class="rejct_stsq3" style="display: none;">General Manager Approval Rejected</span>
+               </h3>
               </div>
               <div class="aprvl_mn aprvl5" style="display: none;">
-                <h3>Leave Approved Successfully</h3>
+                <h3>
+                  <span class="aprvl_stsq4" style="display: block;">Leave Approved Successfully </span> 
+                  <span class="rejct_stsq4" style="display: none;">HR Approval Rejected</span>
+                </h3>
               </div>
             </div>
             <div class="rqst_box3_circl_contnr">
