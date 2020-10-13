@@ -1286,8 +1286,8 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .box_emply_dtls .li_1001{width: 66%;margin: auto;float: left;}
 .box_ofcl_dtls{width:68%;margin: auto;float: left;background-color: #fff;box-shadow: 1px 1px 15px #ccc;height:136px;margin-left: 2%;overflow: hidden;
                 border-radius: 8px;}
-.box_ofcl_dtls h3{margin: auto;font-size: 16px;}
-.box_ofcl_dtls .sec_lex{width: 30%;margin:auto;float: left;height: 194px;background-color:#fbfbfb;text-align: center;padding-top:90px;}
+.box_ofcl_dtls h3{margin: auto;font-size: 16px;color: #fff;}
+.box_ofcl_dtls .sec_lex{width: 30%;margin:auto;float: left;height: 194px;background-color:#48abf1;text-align: center;padding-top:60px;}
 .box_ofcl_dtls .sec_lex1{width:70%;margin:auto;float: left;height: 194px;padding: 10px;}
 .box_items li{list-style: none;}
 .box_items li .li_100{width: 100%;margin:auto;float: left;}
