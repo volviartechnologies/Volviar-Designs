@@ -1282,28 +1282,43 @@ function closeNav5() {
               <div class="aprvl_mn aprvl2" style="display: none;">
                 <h3>
                   <span class="aprvl_stsq1" style="display: block;">Division Manager Approval Pending</span> 
-                  <span class="rejct_stsq1" style="display:none;">Reporting Officer Approval Rejected</span>
+                  <span class="rejct_stsq1" style="display:none;">Reporting Officer Approval Rejected
+                    <a href="#" class="rej_ic rejct_stsq1">
+                      <i class="fa fa-commenting-o" title="Reason" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></i></a>
+                  </span>
                 </h3>
               </div>
               <div class="aprvl_mn aprvl3" style="display:block;">
                 <h3> 
                   <span class="aprvl_stsq2" style="display:none;">General Manager Approval Pending</span> 
-                  <span class="rejct_stsq2" style="display: block;">Division Manager Approval Rejected</span>
+                  <span class="rejct_stsq2" style="display: block;">Division Manager Approval Rejected
+                    <a href="#" class="rej_ic rejct_stsq2">
+                      <i class="fa fa-commenting-o song-status-link" title="Reason"></i></a>
+                  </span>
+                  <div id="song-status-popover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos in sapiente obcaecati, deserunt odit! Amet beatae voluptatibus commodi a, quia enim sint quidem voluptas ullam perspiciatis doloribus reprehenderit? Provident, asperiores.</div>
                 </h3>
               </div>
               <div class="aprvl_mn aprvl4" style="display: none;">
                 <h3> 
                   <span class="aprvl_stsq3" style="display: block;">HR Approval Pending</span>
-                 <span class="rejct_stsq3" style="display: none;">General Manager Approval Rejected</span>
+                 <span class="rejct_stsq3" style="display: none;">General Manager Approval Rejected
+                    <a href="#" class="rej_ic rejct_stsq3">
+                    <i class="fa fa-commenting-o" title="Reason" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></i></a>
+                  </span>
                </h3>
               </div>
               <div class="aprvl_mn aprvl5" style="display: none;">
                 <h3>
                   <span class="aprvl_stsq4" style="display: block;">Leave Approved Successfully </span> 
-                  <span class="rejct_stsq4" style="display: none;">HR Approval Rejected</span>
+                  <span class="rejct_stsq4" style="display: none;">HR Approval Rejected
+                    <a href="#" class="rej_ic rejct_stsq4">
+                    <i class="fa fa-commenting-o" title="Reason" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."></i>
+                  </a></span>
+                  </span>
                 </h3>
               </div>
             </div>
+
             <div class="rqst_box3_circl_contnr">
               <div class="cir_bx">
                 <h4>20</h4>
@@ -1318,7 +1333,7 @@ function closeNav5() {
             </div>
             <div class="cncl_clear">
               <button class="btn act_btn bn3" type="button" data-toggle="modal" data-target="#exampleModal_st" title="" data-tt="tooltip" data-placement="top" data-original-title="Cancel Leave Request"><i class="fa fa-calendar-times-o "></i></button>
-              <a href="#">
+              <a href="add_clearance_form_staff.html">
                 <button class="btn act_btn bn1" data-toggle="tooltip" data-original-title="Go To Clearance Form"><i class="fa fa-address-card-o"></i></button>
               </a>
 
@@ -1402,7 +1417,7 @@ function closeNav() {
 }
 </script>
 
-<!--app_more button_onclick----->
+<!--app_more button_onclick---->
 <script>
 function openNav1() {
     document.getElementById("mySidenav1").style.height = "200px";
@@ -1873,14 +1888,32 @@ $(document).ready(function(){
   });
 });
   </script>
-
+<!---help_pop_over_script-->
 <script>
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip();
-  $("[data-tt=tooltip]").tooltip();
-})
-</script>
+$(".song-status-link").popover({
+            html: true,
+            placement: 'left',
+            content: function () {
+                return $("#song-status-popover").html();
+            }
+});
+$('html').on('click', function (e) {
+if(!$(e.target).is('.song-status-link') && $(e.target).closest('.popover').length == 0) {
+$(".song-status-link").popover('hide');
+}
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
 
+  if (keyCode == 27) { 
+   $('.popover.left').hide("");
+  } 
+});
+    $(document).on("click", ".popover.left .btn-dz" , function(){
+   $('.popover.left').hide("");
+    });
+</script>
+<!---help_pop_over_script_closed-->
 
 </body>
 </html>
