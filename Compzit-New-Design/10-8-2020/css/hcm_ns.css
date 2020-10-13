@@ -1274,3 +1274,26 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .sts_dots1_5 li{width:20%;}
 .trvl_sec .fg12{margin-bottom:4px;width: 100%;height: auto; float: left;}
 .ovr_users{max-width:100%;float: right;/*padding: 10px; background-color: #fff;box-shadow: 1px 1px 15px #ccc;border-radius: 20px 0px 0px 20px;*/}
+.rej_ic{width: 100%;margin: auto;float: left;color:#00a8ec;}
+.aprvl_mn .popover-title{margin: auto;text-align: left;color:#fff;}
+#song-status-popover {display: none;}
+
+/*===clearance form section design css===*/
+.box_emply_dtls{width: 30%;margin:auto;float: left;height:186px;box-shadow: 1px 1px 15px #ccc;padding:10px;border-radius: 8px;}
+.box_emply_dtls ul{padding-left: 0px;width: 100%:height:auto;margin: auto;float: left;}
+.box_emply_dtls li{list-style: none;width: 100%;margin: auto;height: auto;float: left;padding:6px;background-color: #f9f9f9;margin-bottom: 4px;border-radius: 4px;}
+.box_emply_dtls .li_100{width: 34%;margin: auto;float: left;}
+.box_emply_dtls .li_1001{width: 66%;margin: auto;float: left;}
+.box_ofcl_dtls{width:68%;margin: auto;float: left;background-color: #fff;box-shadow: 1px 1px 15px #ccc;height:136px;margin-left: 2%;overflow: hidden;
+                border-radius: 8px;}
+.box_ofcl_dtls h3{margin: auto;font-size: 16px;}
+.box_ofcl_dtls .sec_lex{width: 30%;margin:auto;float: left;height: 194px;background-color:#fbfbfb;text-align: center;padding-top:90px;}
+.box_ofcl_dtls .sec_lex1{width:70%;margin:auto;float: left;height: 194px;padding: 10px;}
+.box_items li{list-style: none;}
+.box_items li .li_100{width: 100%;margin:auto;float: left;}
+.box_items li .li_100_1{padding-left: 0px;margin-left: 0px;}
+.row_bg1{background-color: #e6e6e6;}
+.box_ofcl_dtls.hgt_at{height: 41px;padding: 10px; margin-bottom: 10px;background-color: #fff;}
+.box_ofcl_dtls.hgt_at li{list-style: none;width:auto;margin:auto;float: left;margin-right: 30px;}
+.boxed_div{width: 100%;margin:auto;float: left;margin-bottom:10px;}
+.amr_dwn10{margin-bottom:10px;}
