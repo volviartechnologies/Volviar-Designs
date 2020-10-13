@@ -1038,6 +1038,10 @@ function closeNav5() {
                 <div class="clearfix"></div>
               </div>
               <div class="form-group fg6 sa_640">
+                <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+                <textarea rows="3" cols="30" class="form-control flt_l tb_in" placeholder="Description"></textarea>
+              </div>
+              <div class="form-group fg6 sa_640">
                 <div class="form-group fg6 fg2_mr sa_fg4 sa_2 sa_640_i">
                   <label for="email" class="fg2_la1 pad_l">Include in Settlement:</label>
                   <div class="">
@@ -1056,10 +1060,15 @@ function closeNav5() {
                     </label>
                   </div>
                 </div>
-              </div>
-              <div class="form-group fg6 sa_640">
-                <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-                <textarea rows="3" cols="30" class="form-control flt_l" placeholder="Description"></textarea>
+                <div class="form-group fg6 fg2_mr sa_fg4 sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Travel Ticket Needed:</label>
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1259,16 +1268,28 @@ function closeNav5() {
           <div class="rqst_box3">
             <div class="sts_bx_cntr">
               <div class="aprvl_sts">
-                <!---pendg_sec-->
-                <span class="pndg">
-                  <span class="dot"></span>
-                </span>
-                <h5 class="pndg_text">Approval Pending</h5>
-                <!---approved-->
-                <span class="aprvd" style="display: none;">
-                  <span class="dot"></span>
-                </span>
-                <h5 class="aprvd_text" style="display: none;">Approved</h5>
+                <ul class="sts_dots">
+                  <li class="aprvl1 sel_stats"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="Leave Requested"></i></li>
+                  <li class="aprvl2"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="Reporting Officer Approval"></i></li>
+                  <li class=" aprvl3"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="Division Manager Approval"></i></li>
+                  <li class=" aprvl4"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="General Manager Approval"></i></li>
+                  <li class=" aprvl5"><i class="fa fa-circle" data-tt="tooltip" data-placement="top" data-original-title="HR Approval"></i></li>
+                </ul>
+              </div>
+              <div class="aprvl_mn aprvl1">
+                <h3>Reporting Officer Approval Pending</h3>
+              </div>
+              <div class="aprvl_mn aprvl2" style="display: none;">
+                <h3>Division Manager Approval Pending</h3>
+              </div>
+              <div class="aprvl_mn aprvl3" style="display: none;">
+                <h3>General Manager Approval Pending</h3>
+              </div>
+              <div class="aprvl_mn aprvl4" style="display: none;">
+                <h3>HR Approval Pending</h3>
+              </div>
+              <div class="aprvl_mn aprvl5" style="display: none;">
+                <h3>Leave Approved Successfully</h3>
               </div>
             </div>
             <div class="rqst_box3_circl_contnr">
@@ -1282,6 +1303,13 @@ function closeNav5() {
                 <h4>20</h4>
               </div>
               <h5>Balance Leave Count</h5>
+            </div>
+            <div class="cncl_clear">
+              <button class="btn act_btn bn3" type="button" data-toggle="modal" data-target="#exampleModal_st" title="" data-tt="tooltip" data-placement="top" data-original-title="Cancel Leave Request"><i class="fa fa-calendar-times-o "></i></button>
+              <a href="#">
+                <button class="btn act_btn bn1" data-toggle="tooltip" data-original-title="Go To Clearance Form"><i class="fa fa-address-card-o"></i></button>
+              </a>
+
             </div>
           </div>
         </div>
@@ -1311,6 +1339,28 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are You Sure?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--------script section_started---------->
@@ -1811,6 +1861,14 @@ $(document).ready(function(){
   });
 });
   </script>
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+  $("[data-tt=tooltip]").tooltip();
+})
+</script>
+
 
 </body>
 </html>
