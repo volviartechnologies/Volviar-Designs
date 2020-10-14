@@ -3465,7 +3465,7 @@ body{position: fixed;left: 0;right: 0;}
 .btn_get:hover, .btn_get:focus, .btn_verify:hover, .btn_verify:focus{color: #fff;background-color:#0dacbf; }
 .mail_vrfy_rgt_inrbx .fg12 .fg2_inp1.col_1_6::placeholder, .mail_vrfy_rgt_inrbx .fg12 .fg2_inp1::placeholder{color:#ccc;/*font-weight: 600;*/font-size: 16px;}
 .spn_form_ico{width: auto;margin: auto;float: left;margin-top: 10px;border-bottom: 1px solid #ccc;padding:1.5px;color:#14b3c6;}
-.wid_ss{width:93%;height: auto;margin: auto;float: left;margin-bottom: 40px;}
+.wid_ss{width:92%;height: auto;margin: auto;float: left;margin-bottom: 40px;}
 .wid_ss1{width:100%;height: auto;margin: auto;float: left;margin-bottom: 40px;}
 .wid_ss .spn_form_ico{color: #db502f;}
 
@@ -3503,3 +3503,5 @@ body{position: fixed;left: 0;right: 0;}
   .wid_ss1{margin-bottom: 20px;}
   .mail_vrfy_rgt_inrbx h2{text-align: center;}
 }
+.rejct_ss img{width:17px;height:17px;margin-top: -1px;}
+.rejct_s:hover, .rejct_s:focus{background-color:#f3b7b7;}
