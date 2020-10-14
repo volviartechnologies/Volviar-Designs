@@ -3505,3 +3505,25 @@ body{position: fixed;left: 0;right: 0;}
 }
 .rejct_ss img{width:17px;height:17px;margin-top: -1px;}
 .rejct_s:hover, .rejct_s:focus{background-color:#f3b7b7;}
+
+/*=======Tria balance page design=======*/
+.h1_con_new{width: auto!important;margin: auto;float: left;}
+.button_box_rgt{width: 30%;margin: auto;float:right;height: auto;margin-top:8px;}
+.btn_ab1{width: 50%;height: auto;margin: auto;background-color: transparent;border:none; border-bottom:1px solid #ccc;float: left;padding: 3px;}
+.sel_btn_ab1{background-color:#419cdb;color: #fff;}
+.based_1{width:46%!important;margin: auto;float: left;}
+.based_2{width:46%!important;margin: auto;float: left;}
+.based_3{width:46%!important;margin: auto;float: left;}
+.based_4{width:46%!important;margin: auto;float: left;}
+.new_date_sec .form-control{border-radius: 0px;border: none;box-shadow: none!important;border-bottom: 1px solid #ccc;}
+.new_date_sec .date1{background-color: transparent;color:#419cdb;border-radius: 0px;border: none;border-bottom: 1px solid #ccc;}
+.new_date_sec .form-control.inp_mst, .new_date_sec .date1.inp_mst{border-bottom:1px solid #ffbcbc!important;}
+.swt_mt10{margin-top: 10px;}
+.box_divd{background-color:#b9ddf7!important;width:.1%!important;}
+.table-bordered > tbody > tr > td.box_divd, .table-bordered > thead > tr > th.box_divd{border:none!important;}
+.foot_back{background-color:#eceff1!important;color: #e41010;}
+.dt_tblz tbody>tr>td, .dt_tblz tbody>tr>th, .dt_tblz tfoot>tr>td, .dt_tblz.tz_tbl tfoot>tr>th, .dt_tblz.tz_tbl thead>tr>td, .dt_tblz.tz_tbl thead>tr>th{
+      border-right: 1px solid #aeddff!important;}
+.cur_1{font-size: 9px;background-color: #419cdb;text-transform: uppercase;font-weight: 300;color: #fff;padding: 2px 6px;border-radius: 8px;}
+.foot_defer{background-color:#eceff1!important;color: #000;font-weight: 300!important;}
+.foot_defer th{font-weight: 600!important;}

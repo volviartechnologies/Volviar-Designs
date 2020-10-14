@@ -89,6 +89,7 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
 
 <link rel="stylesheet" type="text/css" href="../css/rec.css">
+<link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
 
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
@@ -528,7 +529,7 @@ function closeNav5() {
     </div><!--header_container_closed--->
 <!----------------------------------------------header_section_closed------------------------------------------------------------->
 
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened---------------------------------------------------------->
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
 
 	<ol class="breadcrumb">
@@ -540,164 +541,215 @@ function closeNav5() {
 	<div class="content_sec2 cont_contr">
 		<div class="content_area_container cont_contr">	
       <div class="content_box1 cont_contr">
-        <h1 class="h1_con">TRIAL BALANCE</h1>
+        <h1 class="h1_con_new">TRIAL BALANCE</h1>
+       <!--  <div class="button_box_rgt">
+          <button class="btn_ab1 opt_ab1 sel_btn_ab1">Date Based</button>
+          <button class="btn_ab1 opt_ab2">Periodical</button>
+        </div>
+        <div class="clearfix"></div>
 
-               <div class="form-group fg2">
-                <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
-                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                  <input class="form-control inp_bdr inp_mst" type="text"  />
-                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-                </div>
-              </div>
+        <div class="form-group fg5 sa_640 dt_bsd">
+          <label for="pwd" class="fg2_la1">Based On:<span class="spn1"></span> </label>
+          <button class="session_1 sesn_btn3 based_1 sel_section"><span>Account Group</span></button>
+          <button class="session_1 sesn_btn1 based_2"><span>Ledger</span></button>
+        </div>
 
-              <div class="form-group fg2">
-              <label for="email" class="fg2_la1">Mode:<span class="spn1">*</span></label>
-              <select class="form-control fg2_inp1 fg_chs1 inp_mst">
-                <option>Consolidated Account Group</option>
-                <option>Ledger</option>
-                <option>Detailed Accound Group</option>
-              </select>           
-            </div>
+        <div class="form-group fg7 sa_640 dt_bsd1" style="display:block;">
+          <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span> </label>
+          <button class="session_1 sesn_btn3 based_3 sel_section"><span>Consolidated</span></button>
+          <button class="session_1 sesn_btn1 based_4"><span>Detailed</span></button>
+        </div>
 
-            <div class="form-group fg5">
-              <label class="form1 mar_bo mar_tp">
-                <span class="button-checkbox">
-                  <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                  <input type="checkbox" class="hidden" />
-                </span>
-                <p class="pz_s">Show zero balance</p>
-              </label>
-             </div>
-         
-          <div class="fg2">
-            <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-            <button class="submit_ser"></button>
-            <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
+        <div class="form-group fg7 db_o1">
+          <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
+          <div id="datepicker" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text"  />
+            <span class="input-group-addon date1 inp_mst"><i class="fa fa-calendar"></i></span>
           </div>
+        </div>
+
+        <div class="form-group fg7 prid_1" style="display: none;">
+          <label for="pwd" class="fg2_la1">From Date:<span class="spn1">*</span> </label>
+          <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text"  />
+            <span class="input-group-addon date1 inp_mst"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+
+        <div class="form-group fg7 prid_1" style="display: none;">
+          <label for="pwd" class="fg2_la1">To Date:<span class="spn1">*</span> </label>
+          <div id="datepicker2" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text"  />
+            <span class="input-group-addon date1 inp_mst"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg7">
+          <label for="email" class="fg2_la1 pad_l">Show zero balance:<span class="spn1">*</span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch swt_mt10">
+                <input type="checkbox">
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+         
+        <div class="form-group fg8">
+          <label for="email" class="fg2_la1 pad_l">Show Sub Total:<span class="spn1"></span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch swt_mt10">
+                <input type="checkbox">
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="fg8">
+          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
+          <button class="submit_ser"></button>
+        </div> -->
                
         <div class="clearfix"></div>
+        <h5>Headline</h5>
         <div class="devider"></div>
 
-    <div class="table_box tb_scr">
-      <!-- <table id="example" class="display table-bordered" cellspacing="0" width="100%">
+      
+    <!----Detailed account Group-->
+      <table id="" class="display table-bordered dt_tblz tz_tbl" cellspacing="0" width="100%">
         <thead class="thead1">
           <tr>
-            <th class="col-md-1 td1">Sl#</th>
-            <th class="col-md-7 tr_l">Particulars
+            <th class="th_b1" rowspan="2">Code
               <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
-              <input type="text" class="tb_inp_1 tb_in" placeholder="Particulars" onkeydown="return DisableEnter(event)">
+              <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Code" onkeydown="return DisableEnter(event)">
             </th>
-            <th class="col-md-2 tr_r">Debit
-              <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-              <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Debit" onkeydown="return DisableEnter(event)">
+            <th class="th_b4 tr_l" rowspan="2">Account Head
+              <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+              <input type="text" class="tb_inp_1 tb_in" placeholder="Account Head" onkeydown="return DisableEnter(event)">
             </th>
-            <th class="col-md-2 tr_r">Credit
-              <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-              <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Credit" onkeydown="return DisableEnter(event)">
+            <th class="th_b6 tr_c" colspan="3">Opening Balance <span class="shw_dte">01/Jan/19</span> 
+            </th>
+            <th class="th_b4 tr_c" colspan="3">Period Balance <span class="per_frm">01/Jan/19</span> - <span class="per_to">31/Dec/19</span>
+            </th>
+            <th class="th_b6 tr_c" colspan="2">Current Balance <span class="crnt_bal">31/Dec/19</span>
+            </th>
+          </tr>
+          <tr>
+            <th class="th_b1 tr_r">Debit <span class="cur_1">INR</span>
+            </th>
+            <th class="th_b1 tr_r">Credit <span class="cur_1">INR</span>
+            </th>
+            <th class="box_divd"></th>
+            <th class="th_b1 tr_r">Debit <span class="cur_1">INR</span>
+            </th>
+            <th class="th_b1 tr_r">Credit <span class="cur_1">INR</span>
+            </th>
+            <th class="box_divd"></th>
+            <th class="th_b1 tr_r">Debit <span class="cur_1">INR</span>
+            </th>
+            <th class="th_b1 tr_r">Credit <span class="cur_1">INR</span>
             </th>
           </tr>
         </thead>
               
         <tbody>
           <tr>
-            <td>1</td>
-            <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial">11020-BUSINESS UNITS</a></td>
-            <td class="tr_r">1000.00</td>
-            <td class="tr_r">10000</td>
+            <td>111000</td>
+            <td class="tr_l">11020-BUSINESS UNITS</td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
           </tr>
           <tr>
-            <td>2</td>
-            <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial">INVESTMENT</a></td>
-            <td class="tr_r">10000.00</td>
-            <td class="tr_r">10000</td>
+            <td>111000</td>
+            <td class="tr_l">11020-BUSINESS UNITS</td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+          </tr>
+          <tr class="bg1" style="background-color:#b9ddf7!important;font-weight: 600;">
+            <td class="tr_l" colspan="2">Sub Total</td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
           </tr>
           <tr>
-            <th class="tr_c" colspan="2">Balance</th>
-            <th></th>
-            <th class="tr_r">1300000.00</th>
+            <td>111000</td>
+            <td class="tr_l">11020-BUSINESS UNITS</td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
           </tr>
           <tr>
-            <th class="tr_c" colspan="2">Total</th>
-            <th></th>
-            <th class="tr_r">1300000.00</th>
+            <td>111000</td>
+            <td class="tr_l">11020-BUSINESS UNITS</td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+          </tr>
+          <tr class="bg1" style="background-color:#b9ddf7!important;font-weight: 600;">
+            <td class="tr_l" colspan="2">Sub Total</td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+            <td class="box_divd"></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
           </tr>
         </tbody> 
-      </table> -->
-
-
-    <!----Detailed account Group--->
-      <table id="example" class="display table-bordered" cellspacing="0" width="100%">
-        <thead class="thead1">
-          <tr>
-            <th class="col-md-1 td1"></th>
-            <th class="col-md-7 tr_l">Particulars
-              <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
-              <input type="text" class="tb_inp_1 tb_in" placeholder="Particulars" onkeydown="return DisableEnter(event)">
-            </th>
-            <th class="col-md-2 tr_r">Debit
-              <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-              <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Debit" onkeydown="return DisableEnter(event)">
-            </th>
-            <th class="col-md-2 tr_r">Credit
-              <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-              <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Credit" onkeydown="return DisableEnter(event)">
-            </th>
+        <tfoot>
+          <tr class="foot_defer">
+            <th colspan="2" class="tr_l">Difference</th>
+            <th class="tr_r">1,000.00</th>
+            <th class="tr_r">10,000.00</th>
+            <th class="box_divd"></th>
+            <th class="tr_r">1,000.00</th>
+            <th class="tr_r">10,000.00</th>
+            <th class="box_divd"></th>
+            <th class="tr_r">1,000.00</th>
+            <th class="tr_r">10,000.00</th>
           </tr>
-        </thead>
-              
-        <tbody>
-          <tr>
-            <td></td>
-            <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial">11020-BUSINESS UNITS</a></td>
-            <td class="tr_r">1000.00</td>
-            <td class="tr_r">10000</td>
+          <tr class="foot_back">
+            <th colspan="2" class="tr_l">Total</th>
+            <th class="tr_r">1,000.00</th>
+            <th class="tr_r">10,000.00</th>
+            <th class="box_divd"></th>
+            <th class="tr_r">1,000.00</th>
+            <th class="tr_r">10,000.00</th>
+            <th class="box_divd"></th>
+            <th class="tr_r">1,000.00</th>
+            <th class="tr_r">10,000.00</th>
           </tr>
-          <tr>
-            <td></td>
-            <td class="tr_l" style="padding-left:30px!important;background-color: #f5f5f5;"><a href="#" data-toggle="modal" data-target="#Modal_trial">INVESTMENT</a></td>
-            <td class="tr_r">10000.00</td>
-            <td class="tr_r">10000</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="tr_l" style="padding-left:60px!important;background-color: #eaeaea;">
-              <a href="#" data-toggle="modal" data-target="#Modal_trial">INVESTMENT</a>
-            </td>
-            <td class="tr_r">10000.00</td>
-            <td class="tr_r">10000</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial">11020-BUSINESS UNITS</a></td>
-            <td class="tr_r">1000.00</td>
-            <td class="tr_r">10000</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial">11020-BUSINESS UNITS</a></td>
-            <td class="tr_r">1000.00</td>
-            <td class="tr_r">10000</td>
-          </tr>
-            <td></td>
-            <td class="tr_l" style="padding-left:30px!important;background-color: #f5f5f5;"><a href="#" data-toggle="modal" data-target="#Modal_trial">INVESTMENT</a></td>
-            <td class="tr_r">10000.00</td>
-            <td class="tr_r">10000</td>
-          </tr>
-          <tr>
-            <th class="tr_c" colspan="2">Balance</th>
-            <th></th>
-            <th class="tr_r">1300000.00</th>
-          </tr>
-          <tr>
-            <th class="tr_c" colspan="2">Total</th>
-            <th></th>
-            <th class="tr_r">1300000.00</th>
-          </tr>
-        </tbody> 
+        </tfoot>
       </table>
-
-
-    </div>
         
       </div>
     </div>	
@@ -733,7 +785,7 @@ function closeNav5() {
       <div class="modal-body">
         <div class="customer"><h3><a href="#">11020-BUSINESS UNITS</a></h3>
         </div>
-        <!-- <table id="example1" class=" table-bordered" cellspacing="0" width="100%" style="display:none;">
+        <!-- <table id="" class=" table-bordered" cellspacing="0" width="100%" style="display:none;">
           <thead class="thead1">
             <tr>
               <th class="col-md-6 tr_l">PURTICULAR
@@ -757,7 +809,7 @@ function closeNav5() {
         </table> -->
 
         <!----innner_table_2--->
-        <table id="example1" class="display table-bordered" cellspacing="0" width="100%">
+        <table id="" class="display table-bordered" cellspacing="0" width="100%">
           <thead class="thead1">
             <tr>
               <th class="col-md-2 tr_l">Date
@@ -1090,6 +1142,14 @@ function myFunction_b() {
   }).datepicker('update', new Date());
 });
 </script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
 <!--date_picker--->
 
 <link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
@@ -1268,12 +1328,54 @@ $(document).ready(function() {
     $('#example2').DataTable();
 } );
 </script>
-<!---datatable_in popup_closed--->
+<!---datatable_in popup_closed-->
 
 <script>
 $(document).ready(function(){
   $(".m1").click(function(){
     $(".dropul").toggle(600);
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opt_ab1").click(function(){
+    $(".opt_ab1").addClass("sel_btn_ab1");
+    $(".opt_ab2").removeClass("sel_btn_ab1");
+    $(".db_o1").show();
+    $(".prid_1").hide();
+  });
+  $(".opt_ab2").click(function(){
+    $(".opt_ab2").addClass("sel_btn_ab1");
+    $(".opt_ab1").removeClass("sel_btn_ab1");
+    $(".db_o1").hide();
+    $(".prid_1").show();
+  });
+});
+  </script>
+
+<script>
+$(document).ready(function(){
+  $(".based_1").click(function(){
+    $(".based_1").addClass("sel_section");
+    $(".based_2").removeClass("sel_section");
+    $(".dt_bsd1").show();
+  });
+  $(".based_2").click(function(){
+    $(".based_2").addClass("sel_section");
+    $(".based_1").removeClass("sel_section");
+    $(".dt_bsd1").hide();
+  });
+});
+$(document).ready(function(){
+  $(".based_3").click(function(){
+    $(".based_3").addClass("sel_section");
+    $(".based_4").removeClass("sel_section");
+  });
+  $(".based_4").click(function(){
+    $(".based_4").addClass("sel_section");
+    $(".based_3").removeClass("sel_section");
   });
 });
 </script>
