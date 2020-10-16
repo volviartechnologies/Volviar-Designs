@@ -530,7 +530,7 @@ function closeNav5() {
 <!----------------------------------------------header_section_closed------------------------------------------------------------>
 
 
-<button class="btn_fltr"><i class="fa fa-sliders"></i></button>
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-sliders"></i></button>
 
 <!----------------------------------------------Content_section_opened---------------------------------------------------------->
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
@@ -545,74 +545,6 @@ function closeNav5() {
 		<div class="content_area_container cont_contr">	
       <div class="content_box1 cont_contr">
         <h1 class="h1_con_new">TRIAL BALANCE</h1>
-       <!--  <div class="button_box_rgt">
-          <button class="btn_ab1 opt_ab1 sel_btn_ab1">Date Based</button>
-          <button class="btn_ab1 opt_ab2">Periodical</button>
-        </div>
-        <div class="clearfix"></div>
-
-        <div class="form-group fg5 sa_640 dt_bsd">
-          <label for="pwd" class="fg2_la1">Based On:<span class="spn1"></span> </label>
-          <button class="session_1 sesn_btn3 based_1 sel_section"><span>Account Group</span></button>
-          <button class="session_1 sesn_btn1 based_2"><span>Ledger</span></button>
-        </div>
-
-        <div class="form-group fg7 sa_640 dt_bsd1" style="display:block;">
-          <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span> </label>
-          <button class="session_1 sesn_btn3 based_3 sel_section"><span>Consolidated</span></button>
-          <button class="session_1 sesn_btn1 based_4"><span>Detailed</span></button>
-        </div>
-
-        <div class="form-group fg7 db_o1">
-          <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
-          <div id="datepicker" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr inp_mst" type="text"  />
-            <span class="input-group-addon date1 inp_mst"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-
-        <div class="form-group fg7 prid_1" style="display: none;">
-          <label for="pwd" class="fg2_la1">From Date:<span class="spn1">*</span> </label>
-          <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr inp_mst" type="text"  />
-            <span class="input-group-addon date1 inp_mst"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-
-        <div class="form-group fg7 prid_1" style="display: none;">
-          <label for="pwd" class="fg2_la1">To Date:<span class="spn1">*</span> </label>
-          <div id="datepicker2" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr inp_mst" type="text"  />
-            <span class="input-group-addon date1 inp_mst"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-        <div class="form-group fg7">
-          <label for="email" class="fg2_la1 pad_l">Show zero balance:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch swt_mt10">
-                <input type="checkbox">
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-         
-        <div class="form-group fg8">
-          <label for="email" class="fg2_la1 pad_l">Show Sub Total:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch swt_mt10">
-                <input type="checkbox">
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="fg8">
-          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-          <button class="submit_ser"></button>
-        </div> -->
                
         <div class="clearfix"></div>
         <h3 class="h3_mar_top0">Headline</h3>
@@ -777,22 +709,23 @@ function closeNav5() {
 
 <div class="filtr_sec">
   <div class="rqst_box2_head1">
-    <button class="fltr_cls"><i class="fa fa-times-circle"></i></button>
     <button class="tab_btn opt_ab1 op_tab1 sel_tabz">Date Based</button>
     <button class="tab_btn opt_ab2 op_tab2">Periodical</button>
+    <button class="fltr_cls"><i class="fa fa-align-left"></i></button>
   </div>
   <div class="filtr_sec_cnt">
     <div class="form-group fg12 sa_640 dt_bsd">
       <label for="pwd" class="fg2_la1">Based On:<span class="spn1"></span> </label>
-      <button class="session_1 sesn_btn3 based_1 sel_section"><span>Account Group</span></button>
-      <button class="session_1 sesn_btn1 based_2"><span>Ledger</span></button>
+      <button class="session_1 sesn_btn3 based_1 sel_section"><i class="icon_1_grp"><img src="../images/hcm/icon_1.png""></i><span> Account Group</span></button>
+      <button class="session_1 sesn_btn1 based_2"><i class="icon_1_grp"><img src="../images/hcm/icon_2.png""></i><span> Ledger</span></button>
     </div>
     <div class="form-group fg12 sa_640 dt_bsd1" style="display:block;">
       <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span> </label>
-      <button class="tb_buton1 tb_buton_sel"><span>Consolidated</span></button>
-      <button class="tb_buton2"><span>Detailed</span></button>
+      <button class="tb_buton1 tb_buton_sel"><i class="icon_1_grp"><img src="../images/hcm/icon_4.png"></i><span> Consolidated</span></button>
+      <button class="tb_buton2"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Detailed</span></button>
     </div>
 
+      <div class="box_flwdt">
         <div class="form-group fg12 db_o1 top_mar1">
           <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
           <div id="datepicker" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
@@ -816,31 +749,12 @@ function closeNav5() {
             <span class="input-group-addon date1 inp_mst"><i class="fa fa-calendar"></i></span>
           </div>
         </div>
-        <div class="fg_mar_top">
-          <div class="form-group fg6">
-            <label for="email" class="fg2_la1 pad_l">Show zero balance:<span class="spn1">*</span></label>
-            <div class="check1">
-              <div class="">
-                <label class="switch swt_mt10">
-                  <input type="checkbox">
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-           
-          <div class="form-group fg6">
-            <label for="email" class="fg2_la1 pad_l">Show Sub Total:<span class="spn1"></span></label>
-            <div class="check1">
-              <div class="">
-                <label class="switch swt_mt10">
-                  <input type="checkbox">
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-          </div>
+        <div class="but_100">
+          <label for="pwd" class="fg2_la1">Show:<span class="spn1">*</span> </label>
+          <button class="btn_z1"><i class=" fa fa-check btn_tick" style="display: none;"></i> zero balance</button>
+          <button class="btn_z2"><i class=" fa fa-check btn_tick1" style="display: none;"></i> Sub Total</button>
         </div>
+      </div>
         <button class="btn_serbox"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
   </div>
 </div>
@@ -1418,15 +1332,21 @@ $(document).ready(function(){
     $(".tb_buton2").addClass("tb_buton_sel");
     $(".tb_buton1").removeClass("tb_buton_sel");
   });
+  $(".btn_z1").click(function(){
+    $(".btn_tick").toggle();
+  });
+  $(".btn_z2").click(function(){
+    $(".btn_tick1").toggle();
+  });
 });
 </script>
 
 <script type="text/javascript">
   $('.btn_fltr').click(function() {
-  $('.filtr_sec').addClass('filtr_sec_mar');
+  $('.filtr_sec').show(300);
 });
   $('.fltr_cls, .content_container').click(function() {
-  $('.filtr_sec').removeClass('filtr_sec_mar');
+  $('.filtr_sec').hide(300);
 });
   $('.btn_serbox').click(function() {
   $('.on_show').hide();
