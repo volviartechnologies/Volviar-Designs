@@ -3511,10 +3511,10 @@ body{position: fixed;left: 0;right: 0;}
 .button_box_rgt{width: 30%;margin: auto;float:right;height: auto;margin-top:8px;}
 .btn_ab1{width: 50%;height: auto;margin: auto;background-color: transparent;border:none; border-bottom:1px solid #ccc;float: left;padding: 3px;}
 .sel_btn_ab1{background-color:#419cdb;color: #fff;}
-.based_1{width:46%!important;margin: auto;float: left;}
-.based_2{width:46%!important;margin: auto;float: left;}
-.based_3{width:46%!important;margin: auto;float: left;}
-.based_4{width:46%!important;margin: auto;float: left;}
+.based_1{width:50%!important;margin: auto;float: left;}
+.based_2{width:50%!important;margin: auto;float: left;}
+.based_3{width:50%!important;margin: auto;float: left;}
+.based_4{width:50%!important;margin: auto;float: left;}
 .new_date_sec .form-control{border-radius: 0px;border: none;box-shadow: none!important;border-bottom: 1px solid #ccc;}
 .new_date_sec .date1{background-color: transparent;color:#419cdb;border-radius: 0px;border: none;border-bottom: 1px solid #ccc;}
 .new_date_sec .form-control.inp_mst, .new_date_sec .date1.inp_mst{border-bottom:1px solid #ffbcbc!important;}
@@ -3527,3 +3527,23 @@ body{position: fixed;left: 0;right: 0;}
 .cur_1{font-size: 9px;background-color: #419cdb;text-transform: uppercase;font-weight: 300;color: #fff;padding: 2px 6px;border-radius: 8px;}
 .foot_defer{background-color:#eceff1!important;color: #000;font-weight: 300!important;}
 .foot_defer th{font-weight: 600!important;}
+.filtr_sec{width: 300px;height:514px;margin: auto;float:right;position: fixed;top:92px;background-color: #fff;right: 0px;z-index: 9999;box-shadow: -2px 1px 15px #ccc;
+          margin-right: -300px;transition: width 2s;}
+.filtr_sec_cnt{width: 100%;height: auto;margin: auto;float: left;padding:10px;}
+.h3_mar_top0{margin-top: 0px;}
+.top_mar1{padding-top: 20px;margin:auto;float: left;}
+.tb_buton1{background-color: transparent;border:none;border-bottom: 1px solid #ccc;width: 50%!important;color: #333;margin: auto;float: left;padding:6px 2px;}
+.tb_buton2{background-color: transparent;border:none;border-bottom: 1px solid #ccc;width: 50%!important;color: #333;margin: auto;float: left;padding:6px 2px;}
+.tb_buton_sel{border:1px solid #ccc;border-bottom: none;color: #00a8ec;}
+.btn_serbox{width: 100%;height:auto;background-color: transparent;color:#00a8ec;border:1px solid #00a8ec;padding:6px;margin-top: 40px;}
+.btn_serbox:hover{background-color:#00a8ec;color: #fff; }
+.btn_fltr{width: auto;margin:auto;height: auto;float: right;background-color: transparent;border:none;border-radius: 20px;color:#44a2e4;font-size: 22px;position: fixed;top: 100px;right: 80px;}
+.filtr_sec_mar{margin-right: 0px;transition: width 2s;}
+.filtr_sec .tab_btn{width: 45%;}
+.fltr_cls{width: 10%;height: auto;margin:auto;float: left;text-align: center;background-color: transparent;border:none;}
+.fltr_cls .fa-times-circle{color:#ffacac;margin-top: 6px;margin-right: 0px;}
+.fltr_cls:hover .fa-times-circle{color:#ff3939;}
+.frm_Secz{width: 100%;height: auto;margin:auto;float: left;margin-top: 20px;}
+.fg_mar_top{margin-top: 20px;width: 100%;height: auto;float: left;}
+.in_show, .in_hide{margin-right: 10px;}
+.dt_bsd1, .dt_bsd{margin: auto;float: left;margin-top: 20px;}
