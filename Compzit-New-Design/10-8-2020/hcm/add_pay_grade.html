@@ -952,8 +952,8 @@ function closeNav5() {
   <ol class="breadcrumb">
     <li><a href="#">Home</a></li>
     <li><a href="#">HCM</a></li>
-    <li><a href="leave_request.html">Leave Request</a></li>
-    <li class="active">Add Leave Request</li>
+    <li><a href="pay_grade.html">Pay Grade</a></li>
+    <li class="active">Add Pay Grade</li>
   </ol>
 
   <div class="content_sec2 cont_contr">
@@ -966,19 +966,19 @@ function closeNav5() {
           <div class="rqst_box1">
             <button class="rqst_box1_btn ar_b1 sel_btq" autofocus="">
               <div class="rqst_img_box1">
-                <img src="../images/hcm/btn_ico1.png" class="">
+                <img src="../images/hcm/pay3.png" class="">
               </div>
               <h3>Pay Grade</h3>
             </button>
             <button class="rqst_box1_btn ar_b2">
               <div class="rqst_img_box1">
-                <img src="../images/hcm/btn_ico2.png" class="">
+                <img src="../images/hcm/pay1.png" class="">
               </div>
               <h3>Allowance / Benefits</h3>
             </button>
             <button class="rqst_box1_btn ar_b3">
               <div class="rqst_img_box1">
-                <img src="../images/hcm/btn_ico3.png" class="">
+                <img src="../images/hcm/pay2.png" class="">
               </div>
               <h3>Deductions</h3>
             </button>
@@ -1062,8 +1062,8 @@ function closeNav5() {
               </div>
               <div class="form-group fg6 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
                 <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-                <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/cal.png"></i><span> Amount</span></button>
-                <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Percentage</span></button>  
+                <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/per2.png"></i><span> Amount</span></button>
+                <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/per1.png"></i><span> Percentage</span></button>  
               </div>
               <div class="clearfix"></div>
               <div class="amnt_rge1" style="display:none;">
@@ -1110,7 +1110,7 @@ function closeNav5() {
                   </div>
                 </div>
               </div>
-              <div class="form-group fg8 fg2_mr sa_2 sa_640_i">
+              <div class="form-group fg7 fg2_mr sa_2 sa_640_i">
                 <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
                 <div class="check1">
                   <div class="">
@@ -1229,8 +1229,8 @@ function closeNav5() {
               </div>
               <div class="form-group fg6 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
                 <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-                <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/cal.png"></i><span> Amount</span></button>
-                <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Percentage</span></button>  
+                <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/per2.png"></i><span> Amount</span></button>
+                <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/per1.png"></i><span> Percentage</span></button>  
               </div>
               <div class="clearfix"></div>
               <div class="amnt_rge1" style="display:none;">
@@ -1254,25 +1254,27 @@ function closeNav5() {
                     <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
                   </div>
                 </div>
-                <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-                  <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1"></span></label>
-                  <div class="check1">
-                    <div class="">
-                      <label class="switch">
-                        <input type="checkbox" checked="">
-                        <span class="slider_tog round"></span>
-                      </label>
+                <div class="fg6 from_sectn">
+                  <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                    <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1"></span></label>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox" id="chk_bsk" checked="" onclick="chk_bsk()">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-                  <label for="email" class="fg2_la1 pad_l">Total Amount:<span class="spn1"></span></label>
-                  <div class="check1">
-                    <div class="">
-                      <label class="switch">
-                        <input type="checkbox" checked="">
-                        <span class="slider_tog round"></span>
-                      </label>
+                  <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                    <label for="email" class="fg2_la1 pad_l">Total Amount:<span class="spn1"></span></label>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox" id="chk_bsk1" onclick="chk_bsk1()">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1415,7 +1417,7 @@ function closeNav5() {
 <i class="fa fa-save"></i>
 </a>
 
-<a href="leave_request.html" type="button" class="list_b" title="Back to List">
+<a href="pay_grade.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a>
 
@@ -1991,6 +1993,25 @@ $(document).on('keydown', function(e) {
     });
 </script>
 <!---help_pop_over_script_closed-->
+<script>
+function chk_bsk() {
+    if (document.getElementById("chk_bsk").checked==true) {
+      $('#chk_bsk1').prop('checked',false);
+    }else
+    {
+     $('#chk_bsk1').prop('checked',true);
+    }  
+}
+function chk_bsk1() {
+    if (document.getElementById("chk_bsk1").checked==true) {
+      $('#chk_bsk').prop('checked',false);
+    }else
+    {
+     $('#chk_bsk').prop('checked',true);
+    }  
+}
+</script>
+
 
 </body>
 </html>
