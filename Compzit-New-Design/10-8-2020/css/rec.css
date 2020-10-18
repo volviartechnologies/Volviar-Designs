@@ -3573,6 +3573,9 @@ body{position: fixed;left: 0;right: 0;}
 .tb_buton_sel span, .tb_buton1:hover span, .tb_buton1:focus span, .tb_buton2:hover span, .tb_buton2:focus span{color:#000;background-color:#e0f2ff;}
 .tb_buton_sel .icon_1_grp img{border:1px solid #00a8ec;}
 .mr_400{margin-right: 0px!important;}
+.pnt_mod{margin-right: 10px;font-size: 18px;height: auto;width: auto;}
+.tbl_purlr tbody tr:hover{box-shadow: none!important;cursor:default;}
+.tbl_purlr{padding-top: 0px;padding-right: 0px;border-right: 0px;}
 @media screen and (max-width: 800px){
   .licnce_pck{height: auto;margin-top: 20px;width:48%;margin-right: 2%;} 
   .licnce_pck .fg_3_1{width:66.66%!important;}

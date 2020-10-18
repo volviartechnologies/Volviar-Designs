@@ -552,7 +552,7 @@ function closeNav5() {
 
       
     <!----Detailed account Group-->
-      <table id="" class="display table-bordered dt_tblz tz_tbl" cellspacing="0" width="100%">
+      <table id="" class="display table-bordered dt_tblz tz_tbl tbl_purlr" cellspacing="0" width="100%" style="display:none;">
         <thead class="thead1">
           <tr>
             <th class="th_b1" rowspan="2">Code
@@ -685,6 +685,58 @@ function closeNav5() {
           </tr>
         </tfoot>
       </table>
+
+      <table id="" class="display table-bordered dt_tblz tz_tbl tbl_purlr" cellspacing="0" width="100%" style="display:block;">
+        <thead class="thead1">
+          <tr>
+            <th class="th_b6 tr_l">Code
+              <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+              <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Code" onkeydown="return DisableEnter(event)">
+            </th>
+            <th class="th_b2 tr_l">Account Head
+              <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+              <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Account Head" onkeydown="return DisableEnter(event)">
+            </th>
+            <th class="th_b1 tr_r">Debit <span class="cur_1">INR</span>
+            </th>
+            <th class="th_b1 tr_r">Credit <span class="cur_1">INR</span>
+            </th>
+          </tr>
+        </thead>
+              
+        <tbody>
+          <tr>
+            <td class="tr_l">124578</td>
+            <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial"> 11020-BUSINESS UNITS</a></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+          </tr>
+          <tr>
+            <td class="tr_l">124578</td>
+            <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial"> 11020-BUSINESS UNITS</a></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+          </tr>
+          <tr>
+            <td class="tr_l">124578</td>
+            <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial"> 11020-BUSINESS UNITS</a></td>
+            <td class="tr_r">1,000.00</td>
+            <td class="tr_r">10,000.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="foot_defer">
+            <th class="tr_l" colspan="2">Difference</th>
+            <th class="tr_r">1,000.00</th>
+            <th class="tr_r">10,000.00</th>
+          </tr>
+          <tr class="foot_back">
+            <th class="tr_l" colspan="2">Total</th>
+            <th class="tr_r">1,000.00</th>
+            <th class="tr_r">10,000.00</th>
+          </tr>
+        </tfoot>
+      </table>
         
       </div>
     </div>	
@@ -769,44 +821,46 @@ function closeNav5() {
         </button>
       </div>
       <div class="modal-body">
-        <div class="customer"><h3><a href="#">11020-BUSINESS UNITS</a></h3>
+        <div class="customer"><h3>11020-BUSINESS UNITS</h3>
         </div>
 
         <!----innner_table_2-->
-        <table id="" class="display table-bordered" cellspacing="0" width="100%">
+        <table id="" class="display table-bordered dt_tblz tz_tbl" cellspacing="0" width="100%">
           <thead class="thead1">
             <tr>
-              <th class="col-md-2 tr_l">Date
+              <th class="col-md-2 tr_c">Date
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
               </th>
-              <th class="col-md-3 tr_r">Transaction Type
+              <th class="col-md-3 tr_l">Transaction Type
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
               </th>
-              <th class="col-md-3 tr_r">Ref#
+              <th class="col-md-3 tr_l">Ref#
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
               </th>
-              <th class="col-md-2 tr_r">Debit
+              <th class="col-md-2 tr_r">Debit <span class="cur_1">INR</span>
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
               </th>
-              <th class="col-md-2 tr_r">Credit
+              <th class="col-md-2 tr_r">Credit <span class="cur_1">INR</span>
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
               </th>
             </tr>
           </thead> 
           <tbody>
             <tr>
-              <td>09/05/2019</td>
-              <td class="tr_l"><a href="#" data-toggle="modal" data-target="#Modal_trial1">Purchase</a></td>
-              <td class="tr_r">1010</td>
+              <td class="tr_c">09/05/2019</td>
+              <td class="tr_l">Purchase</td>
+              <td class="tr_l">1010</td>
               <td class="tr_r">1000.00</td>
               <td class="tr_r">0.00</td>
             </tr>
-            <tr>
-              <td class="tr_c ft_bld" colspan="3">Grand Total</td>
-              <td class="tr_r ft_bld">1000.00</td>
-              <td class="tr_r ft_bld">0.00</td>
-            </tr>
           </tbody>
+          <tfoot>
+            <tr class="foot_back">
+              <th class="tr_l ft_bld" colspan="3">Grand Total</th>
+              <th class="tr_r ft_bld">1000.00</th>
+              <th class="tr_r ft_bld">0.00</th>
+            </tr>
+          </tfoot>
         </table>
 
       </div>
@@ -814,6 +868,7 @@ function closeNav5() {
         <a href="#" type="button" class="pnt_mod" title="Print page">
           <i class="fa fa-print"></i>
         </a>
+        <button id="ButtnDrlldownClickCSV" onclick="return PrintClickDrillDwn('csv');" title="CSV" class="pnt_mod" style="background-color: #2a57ab;"><i class="fa fa-file-excel-o"></i></button>
       </div>
     </div>
   </div>
