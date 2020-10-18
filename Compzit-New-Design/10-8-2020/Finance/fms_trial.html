@@ -530,7 +530,7 @@ function closeNav5() {
 <!----------------------------------------------header_section_closed------------------------------------------------------------>
 
 
-<button class="btn_fltr" title="Show Filter"><i class="fa fa-sliders"></i></button>
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
 
 <!----------------------------------------------Content_section_opened---------------------------------------------------------->
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
@@ -711,7 +711,7 @@ function closeNav5() {
   <div class="rqst_box2_head1">
     <button class="tab_btn opt_ab1 op_tab1 sel_tabz">Date Based</button>
     <button class="tab_btn opt_ab2 op_tab2">Periodical</button>
-    <button class="fltr_cls"><i class="fa fa-align-left"></i></button>
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
   </div>
   <div class="filtr_sec_cnt">
     <div class="form-group fg12 sa_640 dt_bsd">
@@ -720,7 +720,7 @@ function closeNav5() {
       <button class="session_1 sesn_btn1 based_2"><i class="icon_1_grp"><img src="../images/hcm/icon_2.png""></i><span> Ledger</span></button>
     </div>
     <div class="form-group fg12 sa_640 dt_bsd1" style="display:block;">
-      <label for="pwd" class="fg2_la1">&nbsp;<span class="spn1"></span> </label>
+      <label for="pwd" class="fg2_la1">Data Population:</label>
       <button class="tb_buton1 tb_buton_sel"><i class="icon_1_grp"><img src="../images/hcm/icon_4.png"></i><span> Consolidated</span></button>
       <button class="tb_buton2"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Detailed</span></button>
     </div>
@@ -750,8 +750,8 @@ function closeNav5() {
           </div>
         </div>
         <div class="but_100">
-          <label for="pwd" class="fg2_la1">Show:<span class="spn1">*</span> </label>
-          <button class="btn_z1"><i class=" fa fa-check btn_tick" style="display: none;"></i> zero balance</button>
+          <label for="pwd" class="fg2_la1">Display:<span class="spn1"></span> </label>
+          <button class="btn_z1"><i class=" fa fa-check btn_tick" style="display: none;"></i> Zero Balance</button>
           <button class="btn_z2"><i class=" fa fa-check btn_tick1" style="display: none;"></i> Sub Total</button>
         </div>
       </div>
@@ -1301,11 +1301,13 @@ $(document).ready(function(){
     $(".based_1").addClass("sel_section");
     $(".based_2").removeClass("sel_section");
     $(".dt_bsd1").show();
+    $(".btn_z2").show();
   });
   $(".based_2").click(function(){
     $(".based_2").addClass("sel_section");
     $(".based_1").removeClass("sel_section");
     $(".dt_bsd1").hide();
+    $(".btn_z2").hide();
   });
 });
 </script>
@@ -1343,10 +1345,10 @@ $(document).ready(function(){
 
 <script type="text/javascript">
   $('.btn_fltr').click(function() {
-  $('.filtr_sec').show(300);
+  $('.filtr_sec').addClass("mr_400");
 });
   $('.fltr_cls, .content_container').click(function() {
-  $('.filtr_sec').hide(300);
+  $('.filtr_sec').removeClass("mr_400");
 });
   $('.btn_serbox').click(function() {
   $('.on_show').hide();
