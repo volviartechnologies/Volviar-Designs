@@ -965,11 +965,11 @@ function closeNav5() {
     <div class="content_area_container cont_contr">
       <div class="content_box1 cont_contr">
 
-        <div class="fg_3_1">
+        <div class="fg_3_1 lve_typ">
         <h2>Add Leave Type</h2>
           <div class="form-group fg4 sa_o_fg7 sa_2 sa_480">
-            <label for="email" class="fg2_la1">Type Name:<span class="spn1">*</span></label>
-            <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Type Name" name="email">
+            <label for="email" class="fg2_la1">Leave Type:<span class="spn1">*</span></label>
+            <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Leave Type" name="email">
           </div>
 
           <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo20 sa_480">
@@ -985,10 +985,7 @@ function closeNav5() {
           <div class="clearfix"></div>
           <div class="fg12 box_trvl_earn">
             <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480">
-              <div class="img_tvl">
-                <img src="../images/hcm/trvl.png">
-              </div>
-              <div class="togl_tvl">
+              <div class="togl_tvl fg6">
                 <label for="email" class="fg2_la1 pad_l">Travel Needed:<span class="spn1"></span></label>
                 <div class="check1">
                   <div class="">
@@ -999,13 +996,8 @@ function closeNav5() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480">
-              <div class="img_tvl">
-                <img src="../images/hcm/earn.png">
-              </div>
-              <div class="togl_tvl">
-                <label for="email" class="fg2_la1 pad_l">Earned Leaves:<span class="spn1"></span></label>
+              <div class="togl_tvl fg6">
+                <label for="email" class="fg2_la1 pad_l">Earned Leave:<span class="spn1"></span></label>
                 <div class="check1">
                   <div class="">
                     <label class="switch" onclick="chk_ern()">
@@ -1015,11 +1007,10 @@ function closeNav5() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div><!-- 
+            <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480">
+            </div> -->
             <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480 duty_re" style="display:block;">
-              <div class="img_tvl">
-                <img src="../images/hcm/duty.png">
-              </div>
               <div class="togl_tvl">
                 <label for="email" class="fg2_la1 pad_l">Include in Duty Rejoin:<span class="spn1"></span></label>
                 <div class="check1">
@@ -1033,9 +1024,6 @@ function closeNav5() {
               </div>
             </div>
             <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480 duty_re1" style="display:none;">
-              <div class="img_tvl">
-                <img src="../images/hcm/set.png">
-              </div>
               <div class="togl_tvl">
                 <label for="email" class="fg2_la1 pad_l">Include in Settlement:<span class="spn1"></span></label>
                 <div class="check1">
@@ -1048,13 +1036,24 @@ function closeNav5() {
                 </div>
               </div>
             </div>
+            <div class="form-group fg4 sa_o_fg7 sa_2 sa_480">
+              <label for="email" class="fg2_la1 pad_l">Leave On Absence:<span class="spn1"></span></label>
+              <div class="check1">
+                <div class="">
+                  <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
 
-        <div class="fg4 btw_wid" style="display: none;">  
+        <div class="fg4 btw_wid">  
           <div class="but_100">
-            <label for="pwd" class="fg2_la1">Between Leave:<span class="spn1"></span> </label>
-            <button class="btn_z1"><i class=" fa fa-check btn_tick" style="display: none;"></i> Holiday Paid</button>
-            <button class="btn_z2"><i class=" fa fa-check btn_tick1" style="display: none;"></i> Off Day Paid</button>
+            <label for="pwd" class="fg2_la1">Between Leaves:<span class="spn1"></span> </label>
+            <button class="btn_z1" disabled="">Holiday Paid <i class=" fa fa-check btn_tick" style="display: none;"></i></button>
+            <button class="btn_z2" disabled="">Off Day Paid <i class=" fa fa-check btn_tick1" style="display: none;"></i></button>
           </div>
         </div>
         <div class="form-group fg4 sa_o_fg7 sa_2 sa_480">
@@ -1075,9 +1074,9 @@ function closeNav5() {
       </div>
         <div class="fg4">
           <div class="box_aplc">
-            <h3>Applicable For</h3>
+            <h3>Applicable Factors</h3>
             <div class="form-group fg12 sa_o_fg7 sa_2 ma_bo10 sa_480">
-              <label for="email" class="fg2_la1 pad_l">None Applicable:<span class="spn1"></span></label>
+              <label for="email" class="fg2_la1 pad_l lb_notapbl">Not Applicable:<span class="spn1"></span></label>
               <div class="check1">
                 <div class="">
                   <label class="switch">
@@ -1089,14 +1088,7 @@ function closeNav5() {
             </div>
             <div class="fg12 sa_o_fg4 ma_bo20 sa_480">
               <label class="lb_2">Designation:<span class="spn1">*</span>
-                <div class="check1 pull-right aplc_tog">
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox" >
-                      <span class="slider_tog round"></span>
-                    </label>
-                  </div>
-                </div>
+                <button class="des_all des1"><i class="fa fa-list-ul"></i></button>
               </label><br>
               <div class="dropdown-mul-1 dropdown-multiple-label txr">
                 <select style="display:none" name="" multiple="" placeholder="Select"></select>
@@ -1104,14 +1096,7 @@ function closeNav5() {
             </div>
             <div class="fg12 sa_o_fg4 ma_bo20 sa_480">
               <label class="lb_2">Pay Grade:<span class="spn1">*</span>
-                <div class="check1 pull-right aplc_tog">
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox" >
-                      <span class="slider_tog round"></span>
-                    </label>
-                  </div>
-                </div>
+                <button class="des_all des2"><i class="fa fa-list-ul"></i></button>
               </label><br>
               <div class="dropdown-mul-1 dropdown-multiple-label txr">
                 <select style="display:none" name="" multiple="" placeholder="Select" class="inp_mst"></select>
@@ -1119,14 +1104,7 @@ function closeNav5() {
             </div>
             <div class="fg12 sa_o_fg4 ma_bo20 sa_480">
               <label class="lb_2">Experience:<span class="spn1">*</span>
-                <div class="check1 pull-right aplc_tog">
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox" >
-                      <span class="slider_tog round"></span>
-                    </label>
-                  </div>
-                </div>
+                <button class="des_all des3"><i class="fa fa-list-ul"></i></button>
               </label><br>
               <div class="dropdown-mul-1 dropdown-multiple-label txr">
                 <select style="display:none" name="" multiple="" placeholder="Select"></select>
@@ -1134,19 +1112,19 @@ function closeNav5() {
             </div>
 
             <div class="form-group fg6 sa_o_fg7 sa_2 sa_480">
-              <label for="email" class="fg2_la1">Gender:<span class="spn1">*</span></label>
-              <div class="gendr1">
-                <button class="btn_gndr gen_m sel_gen"><i class="gen_m"><img src="../images/hcm/gen1.png"></i></button>
-                <button class="btn_gndr gen_f"><i class="gen_m"><img src="../images/hcm/gen2.png"></i></button>
-                <button class="btn_gndr gen_a"><i class="gen_m"><img src="../images/hcm/gen3.png"></i></button>
+              <div class="but_100 btn_mac">
+                <label for="email" class="fg2_la1">For Gender:<span class="spn1">*</span></label>
+                <button class="btn_mac1">Male<i class="spc_n1" style="display:none;">&nbsp;</i> <i class=" fa fa-check btn_mar1" style="display:block;"></i> </button>
+                <button class="btn_mac2">Female<i class="spc_n2">&nbsp;</i> <i class=" fa fa-check btn_mar2" style="display: none;"></i> </button>
+                <button class="btn_mac3">All<i class="spc_n3">&nbsp;</i> <i class=" fa fa-check btn_mar3" style="display: none;"></i> </button>
               </div>
             </div>
-            <div class="fg6 btw_wid" style="display: block;">  
+            <div class="fg6" style="display: block;">  
               <div class="but_100 btn_mac">
-                <label for="pwd" class="fg2_la1">Marital Status:<span class="spn1"></span> </label>
-                <button class="btn_mac1"><i class=" fa fa-check btn_mar1" style="display:block;"></i> Single</button>
-                <button class="btn_mac2"><i class=" fa fa-check btn_mar2" style="display: none;"></i> Married</button>
-                <button class="btn_mac3"><i class=" fa fa-check btn_mar3" style="display: none;"></i> All</button>
+                <label for="pwd" class="fg2_la1">For Marital Status:<span class="spn1"></span> </label>
+                <button class="btn_mac4">Single<i class="spc_n4" style="display:none;">&nbsp;</i> <i class=" fa fa-check btn_mar4" style="display:block;"></i></button>
+                <button class="btn_mac5">Married<i class="spc_n5">&nbsp;</i> <i class=" fa fa-check btn_mar5" style="display: none;"></i></button>
+                <button class="btn_mac6">All<i class="spc_n6">&nbsp;</i> <i class=" fa fa-check btn_mar6" style="display: none;"></i></button>
               </div>
             </div>
           </div>
@@ -1607,12 +1585,13 @@ $(document).ready(function(){
     $(".tb_buton1").click(function(){
     $(".tb_buton1").addClass("tb_buton_sel");
     $(".tb_buton2").removeClass("tb_buton_sel");
-    $(".btw_wid").hide();
+    $(".btn_z1, .btn_z2").prop('disabled', true); 
   });
   $(".tb_buton2").click(function(){
     $(".tb_buton2").addClass("tb_buton_sel");
     $(".tb_buton1").removeClass("tb_buton_sel");
-    $(".btw_wid").show();
+    $(".btn_z1, .btn_z2").prop('disabled', false);
+    
   });
   $(".btn_z1").click(function(){
     $(".btn_tick").toggle();
@@ -1620,29 +1599,51 @@ $(document).ready(function(){
   $(".btn_z2").click(function(){
     $(".btn_tick1").toggle();
   });
-  $(".gen_m").click(function(){
-    $(".gen_m").addClass("sel_gen");
-    $(".gen_f, .gen_a").removeClass("sel_gen");
-  });
-  $(".gen_f").click(function(){
-    $(".gen_f").addClass("sel_gen");
-    $(".gen_a, .gen_m").removeClass("sel_gen");
-  });
-  $(".gen_a").click(function(){
-    $(".gen_a").addClass("sel_gen");
-    $(".gen_f, .gen_m").removeClass("sel_gen");
-  });
+
   $(".btn_mac1").click(function(){
     $(".btn_mar1").show();
+    $(".spc_n1").hide();
+    $(".spc_n2, .spc_n3").show();
     $(".btn_mar2, .btn_mar3").hide();
   });
   $(".btn_mac2").click(function(){
     $(".btn_mar2").show();
+    $(".spc_n2").hide();
+    $(".spc_n1, .spc_n3").show();
     $(".btn_mar1, .btn_mar3").hide();
   });
   $(".btn_mac3").click(function(){
     $(".btn_mar3").show();
+    $(".spc_n3").hide();
+    $(".spc_n2, .spc_n1").show();
     $(".btn_mar2, .btn_mar1").hide();
+  }); 
+  $(".btn_mac4").click(function(){
+    $(".btn_mar4").show();
+    $(".spc_n4").hide();
+    $(".spc_n5, .spc_n6").show();
+    $(".btn_mar5, .btn_mar6").hide();
+  });
+  $(".btn_mac5").click(function(){
+    $(".btn_mar5").show();
+    $(".spc_n5").hide();
+    $(".spc_n4, .spc_n6").show();
+    $(".btn_mar4, .btn_mar6").hide();
+  });
+  $(".btn_mac6").click(function(){
+    $(".btn_mar6").show();
+    $(".spc_n6").hide();
+    $(".spc_n4, .spc_n5").show();
+    $(".btn_mar4, .btn_mar5").hide();
+  });
+  $(".des1").click(function(){
+    $(".des1").toggleClass("sel_des");
+  });
+  $(".des2").click(function(){
+    $(".des2").toggleClass("sel_des");
+  });
+  $(".des3").click(function(){
+    $(".des3").toggleClass("sel_des");
   });
 });
 </script>

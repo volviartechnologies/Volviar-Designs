@@ -1306,14 +1306,21 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .box_aplc .dropdown-multiple-label{max-width: 100%!important;}
 .db_ma0{margin-top: 0px;outline:none;}
 .img_tvl img{width: 60px;height:60px;margin: auto;float: left;margin-right: 6px;}
-.togl_tvl{width: 70%;height: auto;margin: auto;float: left;margin-top: 10px;}
-.box_trvl_earn{width: 100%;height: auto; margin: auto;float: left;background-color: #f1f9ff;margin: 10px 0;border-radius: 8px 0px 0px 8px;}
-.btw_wid .but_100 .btn_z1, .btw_wid .but_100 .btn_z2{width:44%;}
+.togl_tvl{width:50%;height: auto;margin: auto;float: left;margin-top:0px;}
+.box_trvl_earn{width: 100%;height: auto; margin: auto;float: left;background-color: #f1f9ff;margin:5px 0;border-radius: 8px 0px 0px 8px;padding:6px;}
+.btw_wid .but_100 .btn_z1, .btw_wid .but_100 .btn_z2{width:44%;font-size: 13px;text-align:left;}
 .btw_wid .but_100{margin-top: 0px;}
 .btn_gndr{width: 30%;margin: auto;float: left;}
 .gen_m img{width: 40px;height: 40px;}
 .btn_gndr{background-color: transparent;border:1px solid #ccc;}
 .gendr1{width: 96%;}
 .sel_gen{background-color:#d1ecff;}
-.btn_mac button{background-color: transparent;color: #000;margin:auto;float: left;height: 44px;border: 1px solid #ccc;width:33.33%;}
+.btn_mac button{background-color: transparent;color: #000;margin:auto;float: left;height: 44px;border: 1px solid #ccc;width:30%;font-size: 13px;}
 .btn_mac .fa-check{color:#5acc2d;}
+.lb_notapbl{width: auto;margin: auto;margin-right: 10px;}
+.but_100.btn_mac{margin-top: 0px;}
+.btn_mac button i{width: 100%;margin:auto;float: left;height: 16px;}
+.des_all{background-color: transparent;color:#ea7915;margin:auto;float: right;margin-right: 18px;margin-top: -4px;border:1px solid #ccc;border-radius: 4px 4px 0px 0px;}
+.sel_des{background-color: #b8e9ff;}
+.lve_typ .fg4{margin-bottom: 10px;}
+.box_trvl_earn .fg4, .box_trvl_earn .fg6{margin-bottom: 0px;padding-bottom:0px!important;}
