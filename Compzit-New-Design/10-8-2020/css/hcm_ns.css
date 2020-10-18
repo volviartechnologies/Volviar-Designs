@@ -1297,3 +1297,23 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .box_ofcl_dtls.hgt_at li{list-style: none;width:auto;margin:auto;float: left;margin-right: 30px;}
 .boxed_div{width: 100%;margin:auto;float: left;margin-bottom:10px;}
 .amr_dwn10{margin-bottom:10px;}
+.basq1{width: 48%!important;padding:0px;}
+.basq1 span{color: #000;padding:2px 6px;}
+.box_aplc{width: 100%;height:380px;margin: auto;float: left;background-color: #fff;box-shadow: 1px 1px 15px #ccc;padding:10px;border-radius: 10px;margin-top: 16px;
+          overflow-y: auto;}
+.box_aplc h3{margin-top: 0px;}
+.aplc_tog{width:15%!important;float: right!important;}
+.box_aplc .dropdown-multiple-label{max-width: 100%!important;}
+.db_ma0{margin-top: 0px;outline:none;}
+.img_tvl img{width: 60px;height:60px;margin: auto;float: left;margin-right: 6px;}
+.togl_tvl{width: 70%;height: auto;margin: auto;float: left;margin-top: 10px;}
+.box_trvl_earn{width: 100%;height: auto; margin: auto;float: left;background-color: #f1f9ff;margin: 10px 0;border-radius: 8px 0px 0px 8px;}
+.btw_wid .but_100 .btn_z1, .btw_wid .but_100 .btn_z2{width:44%;}
+.btw_wid .but_100{margin-top: 0px;}
+.btn_gndr{width: 30%;margin: auto;float: left;}
+.gen_m img{width: 40px;height: 40px;}
+.btn_gndr{background-color: transparent;border:1px solid #ccc;}
+.gendr1{width: 96%;}
+.sel_gen{background-color:#d1ecff;}
+.btn_mac button{background-color: transparent;color: #000;margin:auto;float: left;height: 44px;border: 1px solid #ccc;width:33.33%;}
+.btn_mac .fa-check{color:#5acc2d;}

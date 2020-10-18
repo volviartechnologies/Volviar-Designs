@@ -963,84 +963,105 @@ function closeNav5() {
 
   <div class="content_sec2 cont_contr">
     <div class="content_area_container cont_contr">
-      
       <div class="content_box1 cont_contr">
+
+        <div class="fg_3_1">
         <h2>Add Leave Type</h2>
+          <div class="form-group fg4 sa_o_fg7 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Type Name:<span class="spn1">*</span></label>
+            <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Type Name" name="email">
+          </div>
 
-        <div class="form-group fg2 sa_o_fg7 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Type Name:<span class="spn1">*</span></label>
-          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Type Name" name="email">
-        </div>
+          <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo20 sa_480">
+            <label for="email" class="fg2_la1">Days (Yearly):<span class="spn1">*</span></label>
+            <input id="myinpc3" type="number" class="form-control fg2_inp1 inp_mst tr_r" id="email" placeholder="0" name="email">
+          </div>
 
-        <div class="form-group fg2 sa_o_fg7 sa_2 ma_bo20 sa_480">
-          <label for="email" class="fg2_la1">Days# Per Year:<span class="spn1">*</span></label>
-          <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst tr_r" id="email" placeholder="Days# Per Year" name="email">
-        </div>
-
-         <div class="form-group fg2 sa_o_fg7 sa_2 sa_480"><!-- 
-            <label for="email" class="fg2_la1">Mode:<span class="spn1">*</span></label> -->
-            <div class="row rl_prt">
-              <div class="prtd_rat">
-                <label>&nbsp;</label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                  <label class="form-check-label" for="gridRadios1">Calender</label>
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                  <label class="form-check-label" for="gridRadios2">Working Day Between Leave</label>
+          <div class="form-group fg4 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
+            <label for="email" class="fg2_la1">As Per:<span class="spn1"></span></label>
+            <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/cal.png"></i><span> Calender Days</span></button>
+            <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Working Days</span></button>  
+          </div>
+          <div class="clearfix"></div>
+          <div class="fg12 box_trvl_earn">
+            <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480">
+              <div class="img_tvl">
+                <img src="../images/hcm/trvl.png">
+              </div>
+              <div class="togl_tvl">
+                <label for="email" class="fg2_la1 pad_l">Travel Needed:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480">
+              <div class="img_tvl">
+                <img src="../images/hcm/earn.png">
+              </div>
+              <div class="togl_tvl">
+                <label for="email" class="fg2_la1 pad_l">Earned Leaves:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch" onclick="chk_ern()">
+                      <input type="checkbox" id="check_earn" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480 duty_re" style="display:block;">
+              <div class="img_tvl">
+                <img src="../images/hcm/duty.png">
+              </div>
+              <div class="togl_tvl">
+                <label for="email" class="fg2_la1 pad_l">Include in Duty Rejoin:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group fg4 sa_o_fg7 sa_2 ma_bo10 sa_480 duty_re1" style="display:none;">
+              <div class="img_tvl">
+                <img src="../images/hcm/set.png">
+              </div>
+              <div class="togl_tvl">
+                <label for="email" class="fg2_la1 pad_l">Include in Settlement:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-        <div class="form-group fg2 sa_o_fg7 sa_2 sa_480">
+        <div class="fg4 btw_wid" style="display: none;">  
+          <div class="but_100">
+            <label for="pwd" class="fg2_la1">Between Leave:<span class="spn1"></span> </label>
+            <button class="btn_z1"><i class=" fa fa-check btn_tick" style="display: none;"></i> Holiday Paid</button>
+            <button class="btn_z2"><i class=" fa fa-check btn_tick1" style="display: none;"></i> Off Day Paid</button>
+          </div>
+        </div>
+        <div class="form-group fg4 sa_o_fg7 sa_2 sa_480">
           <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
           <textarea id="myinpc3" rows="2" class="form-control fg2_inp1" placeholder="Description"></textarea>
         </div>
-
-
-        <div class="clearfix"></div>
-
-        <div class="fg2">
-          <div class="form-group fg6 sa_o_fg7 sa_2 ma_bo10 sa_480">
-            <label for="email" class="fg2_la1 pad_l">Travel Needed:<span class="spn1"></span></label>
-            <div class="check1">
-              <div class="">
-                <label class="switch">
-                  <input type="checkbox" >
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-          
-          <div class="form-group fg6 sa_o_fg7 sa_2 sa_480">
-            <label for="email" class="fg2_la1 pad_l">Earned Leaves:<span class="spn1"></span></label>
-            <div class="check1">
-              <div class="">
-                <label class="switch">
-                  <input type="checkbox" >
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="fg2">
-        <div class="form-group fg6 sa_o_fg7 sa_2 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Include In Duty Rejoin:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group fg6 sa_o_fg7 sa_2 sa_480">
+        <div class="form-group fg4 sa_o_fg7 sa_2 sa_480">
           <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
           <div class="check1">
             <div class="">
@@ -1052,117 +1073,81 @@ function closeNav5() {
           </div>
         </div>
       </div>
-
-       <div class="clearfix"></div>
-        <div class="free_sp"></div>
-        <div class="devider"></div>
-
-        <h3>Applicable For</h3>
-
-        <div class="fg2 sa_o_fg4 ma_bo20 sa_480">
-          <label class="lb_2">Designation:<span class="spn1">*</span>
-            <div class="check1 pull-right ck27">
-              <div class="">
-                <label>All</label>
-                <label class="switch">
-                  <input type="checkbox" >
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-          </label><br>
-          <div class="dropdown-mul-1 dropdown-multiple-label txr">
-            <select style="display:none" name="" multiple="" placeholder="Select"></select>
-          </div>
-        </div>
-
-        <div class="fg2 sa_o_fg4 ma_bo20 sa_480">
-          <label class="lb_2">Pay Grade:<span class="spn1">*</span>
-            <div class="check1 pull-right ck27">
-              <div class="">
-                <label>All</label>
-                <label class="switch">
-                  <input type="checkbox" >
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-          </label><br>
-          <div class="dropdown-mul-1 dropdown-multiple-label txr">
-            <select style="display:none" name="" multiple="" placeholder="Select" class="inp_mst"></select>
-          </div>
-        </div>
-        <div class="fg2 sa_o_fg4 ma_bo20 sa_480">
-          <label class="lb_2">Experience:<span class="spn1">*</span>
-            <div class="check1 pull-right ck27">
-              <div class="">
-                <label>All</label>
-                <label class="switch">
-                  <input type="checkbox" >
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-          </label><br>
-          <div class="dropdown-mul-1 dropdown-multiple-label txr">
-            <select style="display:none" name="" multiple="" placeholder="Select"></select>
-          </div>
-        </div>
-
-        <div class="form-group fg2 sa_o_fg7 sa_2 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Non Applicable:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="form-group fg2 sa_o_fg7 sa_2 sa_480">
-            <label for="email" class="fg2_la1">Sex:<span class="spn1">*</span></label>
-            <div class="row rl_prt">
-              <div class="prtd_rat">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option1" checked="">
-                  <label class="form-check-label" for="gridRadios1">All</label>
-                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios1" value="option1">
-                  <label class="form-check-label" for="gridRadios1">Male</label>
-                  <input class="form-check-input" type="radio" name="gridRadios1" id="gridRadios2" value="option2">
-                  <label class="form-check-label" for="gridRadios2">Female</label>
+        <div class="fg4">
+          <div class="box_aplc">
+            <h3>Applicable For</h3>
+            <div class="form-group fg12 sa_o_fg7 sa_2 ma_bo10 sa_480">
+              <label for="email" class="fg2_la1 pad_l">None Applicable:<span class="spn1"></span></label>
+              <div class="check1">
+                <div class="">
+                  <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider_tog round"></span>
+                  </label>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="form-group fg2 sa_o_fg4 sa_2 sa_480">
-            <label for="email" class="fg2_la1">Marital Status:<span class="spn1">*</span></label>
-            <div class="row rl_prt">
-              <div class="prtd_rat">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios1" value="option1" checked="">
-                  <label class="form-check-label" for="gridRadios1">All</label>
-                  <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios1" value="option1">
-                  <label class="form-check-label" for="gridRadios1">Single</label>
-                  <input class="form-check-input" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                  <label class="form-check-label" for="gridRadios2">Married</label>
+            <div class="fg12 sa_o_fg4 ma_bo20 sa_480">
+              <label class="lb_2">Designation:<span class="spn1">*</span>
+                <div class="check1 pull-right aplc_tog">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
                 </div>
+              </label><br>
+              <div class="dropdown-mul-1 dropdown-multiple-label txr">
+                <select style="display:none" name="" multiple="" placeholder="Select"></select>
               </div>
             </div>
-          </div>
+            <div class="fg12 sa_o_fg4 ma_bo20 sa_480">
+              <label class="lb_2">Pay Grade:<span class="spn1">*</span>
+                <div class="check1 pull-right aplc_tog">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </label><br>
+              <div class="dropdown-mul-1 dropdown-multiple-label txr">
+                <select style="display:none" name="" multiple="" placeholder="Select" class="inp_mst"></select>
+              </div>
+            </div>
+            <div class="fg12 sa_o_fg4 ma_bo20 sa_480">
+              <label class="lb_2">Experience:<span class="spn1">*</span>
+                <div class="check1 pull-right aplc_tog">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </label><br>
+              <div class="dropdown-mul-1 dropdown-multiple-label txr">
+                <select style="display:none" name="" multiple="" placeholder="Select"></select>
+              </div>
+            </div>
 
-        <div class="form-group fg2 sa_o_fg7 sa_2 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
+            <div class="form-group fg6 sa_o_fg7 sa_2 sa_480">
+              <label for="email" class="fg2_la1">Gender:<span class="spn1">*</span></label>
+              <div class="gendr1">
+                <button class="btn_gndr gen_m sel_gen"><i class="gen_m"><img src="../images/hcm/gen1.png"></i></button>
+                <button class="btn_gndr gen_f"><i class="gen_m"><img src="../images/hcm/gen2.png"></i></button>
+                <button class="btn_gndr gen_a"><i class="gen_m"><img src="../images/hcm/gen3.png"></i></button>
+              </div>
+            </div>
+            <div class="fg6 btw_wid" style="display: block;">  
+              <div class="but_100 btn_mac">
+                <label for="pwd" class="fg2_la1">Marital Status:<span class="spn1"></span> </label>
+                <button class="btn_mac1"><i class=" fa fa-check btn_mar1" style="display:block;"></i> Single</button>
+                <button class="btn_mac2"><i class=" fa fa-check btn_mar2" style="display: none;"></i> Married</button>
+                <button class="btn_mac3"><i class=" fa fa-check btn_mar3" style="display: none;"></i> All</button>
+              </div>
             </div>
           </div>
         </div>
@@ -1615,7 +1600,66 @@ jQuery(document).ready(function() {
       }
     });
   </script>
-<!---multiple selection new_script_closed--->
+<!---multiple selection new_script_closed-->
+
+<script>
+$(document).ready(function(){
+    $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+    $(".btw_wid").hide();
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+    $(".btw_wid").show();
+  });
+  $(".btn_z1").click(function(){
+    $(".btn_tick").toggle();
+  });
+  $(".btn_z2").click(function(){
+    $(".btn_tick1").toggle();
+  });
+  $(".gen_m").click(function(){
+    $(".gen_m").addClass("sel_gen");
+    $(".gen_f, .gen_a").removeClass("sel_gen");
+  });
+  $(".gen_f").click(function(){
+    $(".gen_f").addClass("sel_gen");
+    $(".gen_a, .gen_m").removeClass("sel_gen");
+  });
+  $(".gen_a").click(function(){
+    $(".gen_a").addClass("sel_gen");
+    $(".gen_f, .gen_m").removeClass("sel_gen");
+  });
+  $(".btn_mac1").click(function(){
+    $(".btn_mar1").show();
+    $(".btn_mar2, .btn_mar3").hide();
+  });
+  $(".btn_mac2").click(function(){
+    $(".btn_mar2").show();
+    $(".btn_mar1, .btn_mar3").hide();
+  });
+  $(".btn_mac3").click(function(){
+    $(".btn_mar3").show();
+    $(".btn_mar2, .btn_mar1").hide();
+  });
+});
+</script>
+
+<script>
+function chk_ern() {
+    if (document.getElementById("check_earn").checked==true) {
+      $(".duty_re").hide();
+      $(".duty_re1").show();
+    }else
+    {
+     $(".duty_re1").hide();
+      $(".duty_re").show();
+    }
+    
+}
+</script>
 
 </body>
 </html>
