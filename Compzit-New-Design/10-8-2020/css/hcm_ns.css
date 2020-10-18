@@ -1324,3 +1324,14 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .sel_des{background-color: #b8e9ff;}
 .lve_typ .fg4{margin-bottom: 10px;}
 .box_trvl_earn .fg4, .box_trvl_earn .fg6{margin-bottom: 0px;padding-bottom:0px!important;}
+.frm_to .form-control{width:81%!important;}
+.rqst_box2_cnt .sub_cont{margin-top: 0px;}
+.rqsz_b h3{margin-top: 0px;}
+.rqsz_b ul{width: 100%;height: auto;margin:auto;padding-left:0px;}
+.rqsz_b ul li{list-style: none;width: 100%;margin:auto;float: left;height:30px;}
+.rqsz_b ul li span{float: right;text-align: right;}
+.lf_25{width: 23%;margin-right: 0px;padding:14px;}
+.lf_50{width: 53%;}
+.spn_gn{color:#48abf1;}
+.spn_gn1{color: #1ed000;}
+.spn_gn2{color:#e23a38;}

@@ -946,573 +946,465 @@ function closeNav5() {
 <!----------------------------------------------header_section_closed------------------------------------------------------------->
 
 
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
 
   <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">HCM</a></li>
-         <li class="active">Add Pay Grade</li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">HCM</a></li>
+    <li><a href="leave_request.html">Leave Request</a></li>
+    <li class="active">Add Leave Request</li>
   </ol>
 
   <div class="content_sec2 cont_contr">
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
+
         <h2>Add Pay Grade</h2>
-
-        
-        <div class="form-group fg2 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst tr_l" id="email" placeholder="Name" name="email">
-        </div>
-
-        <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-          <label for="email" class="fg2_la1">Basic Pay Range:<span class="spn1">*</span></label>
-          <div class="col-md-6 pa_l">
-            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="From" name="email">
+        <div class="rqst_container">
+          <div class="rqst_box1">
+            <button class="rqst_box1_btn ar_b1 sel_btq" autofocus="">
+              <div class="rqst_img_box1">
+                <img src="../images/hcm/btn_ico1.png" class="">
+              </div>
+              <h3>Pay Grade</h3>
+            </button>
+            <button class="rqst_box1_btn ar_b2">
+              <div class="rqst_img_box1">
+                <img src="../images/hcm/btn_ico2.png" class="">
+              </div>
+              <h3>Allowance / Benefits</h3>
+            </button>
+            <button class="rqst_box1_btn ar_b3">
+              <div class="rqst_img_box1">
+                <img src="../images/hcm/btn_ico3.png" class="">
+              </div>
+              <h3>Deductions</h3>
+            </button>
           </div>
-          <div class="col-md-6 pa_l">
-            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="To" name="email">
-          </div>
-        </div>
-              
-       <div class="form-group fg2 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Currency 1</option>
-            <option>Currency 2</option>
-            <option>Currency 3</option>
-          </select>
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Restrict the Range:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="clearfix"></div>
+          <div class="rqst_box2 lf_50">
+            <div class="lev_rqst" style="display:block;">
+            <div class="rqst_box2_cnt">
+              <div class="form-group fg6 sa_2 sa_640_i">
+                <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
+                <input type="text" class="form-control fg2_inp1 inp_mst tr_l" id="email" placeholder="Name" name="email">
+              </div>
+              <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                <label for="email" class="fg2_la1">Basic Pay Range:<span class="spn1">*</span></label>
+                <div class="fg6 pa_l frm_to">
+                  <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
+                </div>
+                <div class="fg6 pa_l frm_to">
+                  <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                </div>
+              </div>
+              <div class="form-group fg6 sa_2 sa_640_i">
+                <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                  <option>Currency 1</option>
+                  <option>Currency 2</option>
+                  <option>Currency 3</option>
+                </select>
+              </div>
+              <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
+                <label for="email" class="fg2_la1 pad_l">Restrict The Range:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
+                <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="devider"></div>
        
-        <div class="sub_cont pull-right">
-          <div class="save_sec">
-            <button type="submit" class="btn sub1">Save</button>
-            <button type="submit" class="btn sub3">Save & Close</button>
-            <button type="submit" class="btn sub2">Clear</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
+              <div class="sub_cont pull-right">
+                <div class="save_sec">
+                  <button type="submit" class="btn sub1">Save</button>
+                  <button type="submit" class="btn sub3">Save & Close</button>
+                  <button type="submit" class="btn sub2">Clear</button>
+                  <button type="submit" class="btn sub4">Cancel</button>
+                </div>
 
-          <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update & Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-        </div>
-
-         <div class="clearfix"></div>
-        <div class="devider"></div>
-        
-
-        <h2>Allowance / Benefits</h2>
-
-        
-        <div class="form-group fg2 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Currency 1</option>
-            <option>Currency 2</option>
-            <option>Currency 3</option>
-          </select>
-        </div>
-
-        <div class="form-group fg5 sa_2 sa_640 sa_480 sa_640_i">
-          <label for="email" class="fg2_la1"><span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Amount</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Percentage</label>
+                <div class="edit_sec">
+                  <button type="submit" class="btn sub1">Update</button>
+                  <button type="submit" class="btn sub3">Update & Close</button>
+                  <button type="submit" class="btn sub2">Confirm</button>
+                  <button type="submit" class="btn sub4">Cancel</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-          <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
-          <div class="col-md-6 pa_l">
-            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="From" name="email">
-          </div>
-          <div class="col-md-6 pa_l">
-            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="To" name="email">
-          </div>
-        </div>
-
-        <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="clearfix"></div>
-       
-        <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Restrict the limit:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-        
-        <div class="clearfix"></div>
-       
-        <div class="sub_cont pull-right">
-          <div class="save_sec">
-            <button type="submit" class="btn sub1">Save</button>
-            <!-- <button type="submit" class="btn sub3">Save & Close</button> -->
-            <button type="submit" class="btn sub2">Clear</button>
-            <!-- <button type="submit" class="btn sub4">Cancel</button> -->
-          </div>
-
-          <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update & Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
-
-          <div class="r_800">
-          <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
-            <thead class="thead1">
-              <tr>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Addition">
-                </th>
-                <th class="tr_r">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Percentage / Amount Range">
-                </th>
-                
-                <th rowspan="2" class="th_b5">Status</th>
-                <th rowspan="2" class="th_b6">Actions</th>
-              </tr>
-              <tr>
-                <th class="th_b4 tr_l">Addition</th>
-                <th class="th_b4 tr_r">Percentage / Amount Range</th>
-              </tr>
-             
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tr_l">Addition 1</td>
-                <td class="tr_r">0.00</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Active</button>
-                </td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </div>
-                  <div class="btn_stl2"> 
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i> View
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                  </div>
-
-                  <div class="btn_stl3">
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="tr_l">Addition 2</td>
-                <td class="tr_r">0.00</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Active</button>
-                </td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </div>
-                  <div class="btn_stl2"> 
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i> View
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                  </div>
-
-                  <div class="btn_stl3">
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
-        </div>
-
-         <div class="clearfix"></div>
-        <div class="devider"></div>
-        
-        <h2>Deduction</h2>
-
-        
-        <div class="form-group fg2 sa_480 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1">Salary Deduction:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Salary Deduction 1</option>
-            <option>Salary Deduction 2</option>
-            <option>Salary Deduction 3</option>
-          </select>
-        </div>
-
-        <div class="form-group fg5 sa_2 sa_640 sa_480 sa_640_i">
-          <label for="email" class="fg2_la1"><span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Amount</label>
+          <!---sec_1_closed-->
+          <div class="trvl_sec" style="display:none;">
+            <div class="rqst_box2_cnt">
+              <div class="form-group fg6 sa_2 sa_640_i">
+                <label for="email" class="fg2_la1">Salary Addition:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                  <option>Addition 1</option>
+                  <option>Addition 2</option>
+                  <option>Addition 3</option>
+                </select>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Percentage</label>
+              <div class="form-group fg6 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
+                <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+                <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/cal.png"></i><span> Amount</span></button>
+                <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Percentage</span></button>  
+              </div>
+              <div class="clearfix"></div>
+              <div class="amnt_rge1" style="display:none;">
+                <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1">Amount Range:<span class="spn1">*</span></label>
+                  <div class="fg6 pa_l frm_to">
+                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
+                  </div>
+                  <div class="fg6 pa_l frm_to">
+                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                  </div>
+                </div>
+              </div>
+              <div class="amnt_rge2" style="display: block;">
+                <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
+                  <div class="fg6 pa_l frm_to">
+                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
+                  </div>
+                  <div class="fg6 pa_l frm_to">
+                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                  </div>
+                </div>
+                <div class="form-group fg7 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1"></span></label>
+                  <div class="check1">
+                    <div class="">
+                      <label class="switch">
+                        <input type="checkbox" checked="">
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group fg5 fg2_mr sa_2 sa_640_i">
+                <label for="email" class="fg2_la1 pad_l">Restrict The Limit:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group fg8 fg2_mr sa_2 sa_640_i">
+                <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="devider"></div>
+              <div class="sub_cont pull-right">
+                <div class="save_sec">
+                  <button type="submit" class="btn sub1">Save</button>
+                  <button type="submit" class="btn sub2">Clear</button>
+                </div>
+                <div class="edit_sec">
+                  <button type="submit" class="btn sub1">Update</button>
+                  <button type="submit" class="btn sub3">Update & Close</button>
+                  <button type="submit" class="btn sub2">Confirm</button>
+                  <button type="submit" class="btn sub4">Cancel</button>
+                </div>
+              </div>
+              <div class="hcm_res r_800">
+                <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
+                  <thead class="thead1">
+                    <tr>
+                      <th class="col-md-5 tr_l">Addition</th>
+                      <th class="col-md-4 tr_r">Amount / Percentage Range</th>
+                      <th class="col-md-3">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tr_l">Addition 1</td>
+                      <td class="tr_r">1000.00</td>
+                      <td> 
+                        <div class="btn_stl1">
+                          <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                              <i class="fa fa-check-circle "></i>
+                            </button>
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i>
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </div>
+                        <div class="btn_stl2"> 
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i> View
+                          </button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-edit"></i> Edit
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash"></i> Delete
+                          </button>
+                        </div>
+                        <div class="btn_stl3">
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tr_l">Addition 1</td>
+                      <td class="tr_r">1000.00</td>
+                      <td> 
+                        <div class="btn_stl1">
+                          <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                              <i class="fa fa-check-circle "></i>
+                            </button>
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i>
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </div>
+                        <div class="btn_stl2"> 
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i> View
+                          </button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-edit"></i> Edit
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash"></i> Delete
+                          </button>
+                        </div>
+                        <div class="btn_stl3">
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-          <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
-          <div class="col-md-6 pa_l">
-            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="From" name="email">
-          </div>
-          <div class="col-md-6 pa_l">
-            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="To" name="email">
-          </div>
-        </div>
-
-        <div class="form-group fg8 fg2_mr sa_fg4 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group fg8 fg2_mr sa_fg4 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Total Amount:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="clearfix"></div>
-       
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Restrict the limit:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-        
-        <div class="clearfix"></div>
-       
-        <div class="sub_cont pull-right">
-          <div class="save_sec">
-            <button type="submit" class="btn sub1">Save</button>
-            <!-- <button type="submit" class="btn sub3">Save & Close</button> -->
-            <button type="submit" class="btn sub2">Clear</button>
-            <!-- <button type="submit" class="btn sub4">Cancel</button> -->
-          </div>
-
-          <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update & Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span>
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
-
-          <div class="r_800">
-          <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
-            <thead class="thead1">
-              <tr>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Deduction">
-                </th>
-                <th class="tr_r">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Percentage / Amount Range">
-                </th>
-                
-                <th rowspan="2" class="th_b5">Status</th>
-                <th rowspan="2" class="th_b6">Actions</th>
-              </tr>
-              <tr>
-                <th class="th_b4 tr_l">Deduction</th>
-                <th class="th_b4 tr_r">Percentage / Amount Range</th>
-              </tr>
-
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tr_l">Deduction 1</td>
-                <td class="tr_r">0.00</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Active</button>
-                </td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </div>
-                  <div class="btn_stl2"> 
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i> View
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete
-                    </button>
-                  </div>
-
-                  <div class="btn_stl3">
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="tr_l">Deduction 2</td>
-                <td class="tr_r">0.00</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Active</button>
-                </td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </div>
-                  <div class="btn_stl2"> 
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i> View
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                  </div>
-
-                  <div class="btn_stl3">
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
-        </div>
-
-         <div class="clearfix"></div>
-        <div class="devider"></div>
-
-        <h2>Salary Summery</h2>
-
-         <div class="top_br_container hc_at">
-            <div class="top_br_1 pa_h1">
-              <div class="col-md-5 tx_100 hcm_1_2">
-                <ul>
-                  <li><span class="fg6 li_100">Basic Pay Range</span> <span class="fg6 li_100_1"></span></li>
-                  <li><span class="fg6 li_100">Addition Range</span> <span class="fg6 li_100_1">
-                    <span>0.00</span>
-                    <span class="to_clr">to</span>
-                    <span>0.00</span>
-                  </span></li>
-                   <li><span class="fg6 li_100">Deduction Range</span> <span class="fg6 li_100_1">
-                    <span>0.00</span>
-                    <span class="to_clr">to</span>
-                    <span>0.00</span>
-                  </span></li>
-                </ul>
+          </div><!--trvl_sec_closed-->
+          <!--famly_sec-->
+          <div class="fmly_sec" style="display: none;">
+            <div class="rqst_box2_cnt">
+              <div class="form-group fg6 sa_2 sa_640_i">
+                <label for="email" class="fg2_la1">Salary Deduction:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                  <option>Deduction 1</option>
+                  <option>Deduction 2</option>
+                  <option>Deduction 3</option>
+                </select>
               </div>
-              <div class="col-md-5 tx_100 hcm_1_2">
-                
+              <div class="form-group fg6 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
+                <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+                <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/cal.png"></i><span> Amount</span></button>
+                <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Percentage</span></button>  
               </div>
-
-              <div class="col-md-2">
+              <div class="clearfix"></div>
+              <div class="amnt_rge1" style="display:none;">
+                <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1">Amount Range:<span class="spn1">*</span></label>
+                  <div class="fg6 pa_l frm_to">
+                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
+                  </div>
+                  <div class="fg6 pa_l frm_to">
+                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                  </div>
+                </div>
+              </div>
+              <div class="amnt_rge2" style="display: block;">
+                <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
+                  <div class="fg6 pa_l frm_to">
+                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
+                  </div>
+                  <div class="fg6 pa_l frm_to">
+                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                  </div>
+                </div>
+                <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1"></span></label>
+                  <div class="check1">
+                    <div class="">
+                      <label class="switch">
+                        <input type="checkbox" checked="">
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Total Amount:<span class="spn1"></span></label>
+                  <div class="check1">
+                    <div class="">
+                      <label class="switch">
+                        <input type="checkbox" checked="">
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
+                <label for="email" class="fg2_la1 pad_l">Restrict The Limit:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
+                <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="devider"></div>
+              <div class="sub_cont pull-right">
+                <div class="save_sec">
+                  <button type="submit" class="btn sub1">Save</button>
+                  <button type="submit" class="btn sub2">Clear</button>
+                </div>
+                <div class="edit_sec">
+                  <button type="submit" class="btn sub1">Update</button>
+                  <button type="submit" class="btn sub3">Update & Close</button>
+                  <button type="submit" class="btn sub2">Confirm</button>
+                  <button type="submit" class="btn sub4">Cancel</button>
+                </div>
+              </div>
+              <div class="hcm_res r_800">
+                <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
+                  <thead class="thead1">
+                    <tr>
+                      <th class="col-md-5 tr_l">Deduction</th>
+                      <th class="col-md-4 tr_r">Amount / Percentage Range</th>
+                      <th class="col-md-3">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tr_l">Deduction 1</td>
+                      <td class="tr_r">1000.00</td>
+                      <td> 
+                        <div class="btn_stl1">
+                          <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                              <i class="fa fa-check-circle "></i>
+                            </button>
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i>
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </div>
+                        <div class="btn_stl2"> 
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i> View
+                          </button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-edit"></i> Edit
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash"></i> Delete
+                          </button>
+                        </div>
+                        <div class="btn_stl3">
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="tr_l">Deduction 1</td>
+                      <td class="tr_r">1000.00</td>
+                      <td> 
+                        <div class="btn_stl1">
+                          <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                              <i class="fa fa-check-circle "></i>
+                            </button>
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i>
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </div>
+                        <div class="btn_stl2"> 
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i> View
+                          </button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-edit"></i> Edit
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash"></i> Delete
+                          </button>
+                        </div>
+                        <div class="btn_stl3">
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
-        
+        </div>
+          <div class="rqst_box3 rqsz_b lf_25">
+            <h3>Salary Summary</h3>
+            <ul>
+              <li>Basic Pay:<span class="spn_gn">1,000.00 - 2,000.00 QAR</span></li>
+              <li>Addition:<span class="spn_gn1">1,00.00 - 200.00 QAR</span></li>
+              <li>Deduction:<span class="spn_gn2">1,00.00 - 200.00 QAR</span></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
     </div>
@@ -1523,7 +1415,7 @@ function closeNav5() {
 <i class="fa fa-save"></i>
 </a>
 
-<a href="pay_grade.html" type="button" class="list_b" title="Back to List">
+<a href="leave_request.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a>
 
@@ -1539,6 +1431,28 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are You Sure?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--------script section_started---------->
@@ -1568,7 +1482,7 @@ function closeNav() {
 }
 </script>
 
-<!--app_more button_onclick----->
+<!--app_more button_onclick---->
 <script>
 function openNav1() {
     document.getElementById("mySidenav1").style.height = "200px";
@@ -1904,6 +1818,179 @@ jQuery(document).ready(function() {
  });
 
 </script>
+
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
+<script>
+function sli_chk() {
+  if (document.getElementById("cbx_dtl").checked==true) {
+    document.getElementById("in_dt1").disabled = false;}
+  else{document.getElementById("in_dt1").disabled = true;}
+}
+</script>
+
+
+<script>
+function multple_dys() {
+
+    if (document.getElementById("multple_dys").checked==true) {
+      $(".to_disbl").prop('disabled', false);
+    }else
+    {
+      $(".to_disbl").prop('disabled', true);
+    }
+    
+}
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".ar_b1").click(function(){
+    $(".ar_b1").addClass("sel_btq");
+    $(".ar_b2, .ar_b3, .ar_b4").removeClass("sel_btq");
+    $(".lev_rqst").show();
+    $(".trvl_sec, .fmly_sec, .cont_sec").hide();
+
+  });
+$(".ar_b2").click(function(){
+    $(".ar_b2").addClass("sel_btq");
+    $(".ar_b1, .ar_b3, .ar_b4").removeClass("sel_btq");
+    $(".trvl_sec").show();
+    $(".lev_rqst, .fmly_sec, .cont_sec").hide();
+  });
+$(".ar_b3").click(function(){
+    $(".ar_b3").addClass("sel_btq");
+    $(".ar_b1, .ar_b2, .ar_b4").removeClass("sel_btq");
+    $(".fmly_sec").show();
+    $(".lev_rqst, .trvl_sec, .cont_sec").hide();
+  });
+$(".ar_b4").click(function(){
+    $(".ar_b4").addClass("sel_btq");
+    $(".ar_b1, .ar_b2, .ar_b3").removeClass("sel_btq");
+    $(".cont_sec").show();
+    $(".lev_rqst, .fmly_sec, .trvl_sec").hide();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".op_tab1").click(function(){
+    $(".op_tab1").addClass("sel_tabz");
+    $(".op_tab2").removeClass("sel_tabz");
+    $(".multp_dyz").hide();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".multp_dyz").fadeIn(600);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".sesn_btn1").click(function(){
+    $(".sesn_btn1").addClass("sel_section");
+    $(".sesn_btn2, .sesn_btn3").removeClass("sel_section");
+  });
+  $(".sesn_btn2").click(function(){
+    $(".sesn_btn2").addClass("sel_section");
+    $(".sesn_btn1, .sesn_btn3").removeClass("sel_section");
+  });
+  $(".sesn_btn3").click(function(){
+    $(".sesn_btn3").addClass("sel_section");
+    $(".sesn_btn1, .sesn_btn2").removeClass("sel_section");
+  });
+  $(".sesn_btn1_a").click(function(){
+    $(".sesn_btn1_a").addClass("sel_section");
+    $(".sesn_btn2_a, .sesn_btn3_a").removeClass("sel_section");
+  });
+  $(".sesn_btn2_a").click(function(){
+    $(".sesn_btn2_a").addClass("sel_section");
+    $(".sesn_btn1_a, .sesn_btn3_a").removeClass("sel_section");
+  });
+  $(".sesn_btn3_a").click(function(){
+    $(".sesn_btn3_a").addClass("sel_section");
+    $(".sesn_btn1_a, .sesn_btn2_a").removeClass("sel_section");
+  });
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+    $(".amnt_rge1").show(); 
+    $(".amnt_rge2").hide(); 
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+    $(".amnt_rge2").show();
+    $(".amnt_rge1").hide(); 
+  });
+});
+  </script>
+<!---help_pop_over_script-->
+<script>
+$(".song-status-link").popover({
+            html: true,
+            placement: 'left',
+            content: function () {
+                return $("#song-status-popover").html();
+            }
+});
+$('html').on('click', function (e) {
+if(!$(e.target).is('.song-status-link') && $(e.target).closest('.popover').length == 0) {
+$(".song-status-link").popover('hide');
+}
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+   $('.popover.left').hide("");
+  } 
+});
+    $(document).on("click", ".popover.left .btn-dz" , function(){
+   $('.popover.left').hide("");
+    });
+</script>
+<!---help_pop_over_script_closed-->
 
 </body>
 </html>
