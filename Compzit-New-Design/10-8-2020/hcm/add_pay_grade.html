@@ -964,20 +964,20 @@ function closeNav5() {
         <h2>Add Pay Grade</h2>
         <div class="rqst_container">
           <div class="rqst_box1">
-            <button class="rqst_box1_btn ar_b1 sel_btq" autofocus="">
-              <div class="rqst_img_box1">
+            <button class="rqst_box1_btn ar_b1 sel_btq tb_py" autofocus="">
+              <div class="rqst_img_box1 tb_py_g">
                 <img src="../images/hcm/pay3.png" class="">
               </div>
               <h3>Pay Grade</h3>
             </button>
-            <button class="rqst_box1_btn ar_b2">
-              <div class="rqst_img_box1">
+            <button class="rqst_box1_btn ar_b2 tb_py">
+              <div class="rqst_img_box1 tb_py_g">
                 <img src="../images/hcm/pay1.png" class="">
               </div>
-              <h3>Allowance / Benefits</h3>
+              <h3>Allowances / Benefits</h3>
             </button>
-            <button class="rqst_box1_btn ar_b3">
-              <div class="rqst_img_box1">
+            <button class="rqst_box1_btn ar_b3 tb_py">
+              <div class="rqst_img_box1 tb_py_g">
                 <img src="../images/hcm/pay2.png" class="">
               </div>
               <h3>Deductions</h3>
@@ -990,15 +990,6 @@ function closeNav5() {
                 <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
                 <input type="text" class="form-control fg2_inp1 inp_mst tr_l" id="email" placeholder="Name" name="email">
               </div>
-              <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
-                <label for="email" class="fg2_la1">Basic Pay Range:<span class="spn1">*</span></label>
-                <div class="fg6 pa_l frm_to">
-                  <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
-                </div>
-                <div class="fg6 pa_l frm_to">
-                  <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
-                </div>
-              </div>
               <div class="form-group fg6 sa_2 sa_640_i">
                 <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 fg_chs2 inp_mst">
@@ -1006,6 +997,15 @@ function closeNav5() {
                   <option>Currency 2</option>
                   <option>Currency 3</option>
                 </select>
+              </div>
+              <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                <label for="email" class="fg2_la1">Basic Pay Range:<span class="spn1">*</span></label>
+                <div class="fg6 pa_l frm_to">
+                  <input type="number" class="form-control fg2_inp1 inp_mst tr_r b1_inp" placeholder="From" name="email">
+                </div>
+                <div class="fg6 pa_l frm_to">
+                  <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                </div>
               </div>
               <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
                 <label for="email" class="fg2_la1 pad_l">Restrict The Range:<span class="spn1"></span></label>
@@ -1052,99 +1052,134 @@ function closeNav5() {
           <!---sec_1_closed-->
           <div class="trvl_sec" style="display:none;">
             <div class="rqst_box2_cnt">
-              <div class="form-group fg6 sa_2 sa_640_i">
-                <label for="email" class="fg2_la1">Salary Addition:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-                  <option>Addition 1</option>
-                  <option>Addition 2</option>
-                  <option>Addition 3</option>
-                </select>
-              </div>
-              <div class="form-group fg6 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
-                <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-                <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/per2.png"></i><span> Amount</span></button>
-                <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/per1.png"></i><span> Percentage</span></button>  
-              </div>
-              <div class="clearfix"></div>
-              <div class="amnt_rge1" style="display:none;">
-                <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
-                  <label for="email" class="fg2_la1">Amount Range:<span class="spn1">*</span></label>
-                  <div class="fg6 pa_l frm_to">
-                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
-                  </div>
-                  <div class="fg6 pa_l frm_to">
-                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+              <div class="fix_hei_b">
+                <div class="form-group fg6 sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1">Salary Addition:<span class="spn1">*</span></label>
+                  <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                    <option>Addition 1</option>
+                    <option>Addition 2</option>
+                    <option>Addition 3</option>
+                  </select>
+                </div>
+                <div class="form-group fg6 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
+                  <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+                  <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/per2.png"></i><span> Amount</span></button>
+                  <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/per1.png"></i><span> Percentage</span></button>  
+                </div>
+                <div class="clearfix"></div>
+                <div class="amnt_rge1" style="display:block;">
+                  <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                    <label for="email" class="fg2_la1">Amount Range:<span class="spn1">*</span></label>
+                    <div class="fg6 pa_l frm_to">
+                      <input type="number" class="form-control fg2_inp1 inp_mst tr_r b1_inp" placeholder="From" name="email">
+                    </div>
+                    <div class="fg6 pa_l frm_to">
+                      <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="amnt_rge2" style="display: block;">
-                <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
-                  <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
-                  <div class="fg6 pa_l frm_to">
-                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
+                <div class="amnt_rge2" style="display:none;">
+                  <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                    <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
+                    <div class="fg6 pa_l frm_to">
+                      <input type="number" class="form-control fg2_inp1 inp_mst tr_r b1_inp" placeholder="From" name="email">
+                    </div>
+                    <div class="fg6 pa_l frm_to">
+                      <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                    </div>
                   </div>
-                  <div class="fg6 pa_l frm_to">
-                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                  <div class="form-group fg7 fg2_mr sa_2 sa_640_i">
+                    <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1"></span></label>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="form-group fg7 fg2_mr sa_2 sa_640_i">
-                  <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1"></span></label>
+                <div class="form-group fg5 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Restrict The Limit:<span class="spn1"></span></label>
                   <div class="check1">
                     <div class="">
                       <label class="switch">
-                        <input type="checkbox" checked="">
+                        <input type="checkbox" >
                         <span class="slider_tog round"></span>
                       </label>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="form-group fg5 fg2_mr sa_2 sa_640_i">
-                <label for="email" class="fg2_la1 pad_l">Restrict The Limit:<span class="spn1"></span></label>
-                <div class="check1">
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox" >
-                      <span class="slider_tog round"></span>
-                    </label>
+                <div class="form-group fg7 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+                  <div class="check1">
+                    <div class="">
+                      <label class="switch">
+                        <input type="checkbox" >
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="form-group fg7 fg2_mr sa_2 sa_640_i">
-                <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-                <div class="check1">
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox" >
-                      <span class="slider_tog round"></span>
-                    </label>
+                <div class="clearfix"></div>
+                <div class="devider"></div>
+                <div class="sub_cont pull-right">
+                  <div class="save_sec">
+                    <button type="submit" class="btn sub1">Save</button>
+                    <button type="submit" class="btn sub2">Clear</button>
                   </div>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="devider"></div>
-              <div class="sub_cont pull-right">
-                <div class="save_sec">
-                  <button type="submit" class="btn sub1">Save</button>
-                  <button type="submit" class="btn sub2">Clear</button>
-                </div>
-                <div class="edit_sec">
-                  <button type="submit" class="btn sub1">Update</button>
-                  <button type="submit" class="btn sub3">Update & Close</button>
-                  <button type="submit" class="btn sub2">Confirm</button>
-                  <button type="submit" class="btn sub4">Cancel</button>
+                  <div class="edit_sec">
+                    <button type="submit" class="btn sub1">Update</button>
+                    <button type="submit" class="btn sub3">Update & Close</button>
+                    <button type="submit" class="btn sub2">Confirm</button>
+                    <button type="submit" class="btn sub4">Cancel</button>
+                  </div>
                 </div>
               </div>
               <div class="hcm_res r_800">
                 <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
                   <thead class="thead1">
                     <tr>
-                      <th class="col-md-5 tr_l">Addition</th>
-                      <th class="col-md-4 tr_r">Amount / Percentage Range</th>
+                      <th class="col-md-4 tr_l">Addition</th>
+                      <th class="col-md-5 tr_r">Amount / Percentage Range</th>
                       <th class="col-md-3">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
+                    <tr>
+                      <td class="tr_l">Addition 1</td>
+                      <td class="tr_r">1000.00</td>
+                      <td> 
+                        <div class="btn_stl1">
+                          <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                              <i class="fa fa-check-circle "></i>
+                            </button>
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i>
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </div>
+                        <div class="btn_stl2"> 
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                            <i class="fa fa-list-alt"></i> View
+                          </button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-edit"></i> Edit
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
+                            <i class="fa fa-trash"></i> Delete
+                          </button>
+                        </div>
+                        <div class="btn_stl3">
+                          <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
+                          <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                        </div>
+                      </td>
+                    </tr>
                     <tr>
                       <td class="tr_l">Addition 1</td>
                       <td class="tr_r">1000.00</td>
@@ -1219,109 +1254,111 @@ function closeNav5() {
           <!--famly_sec-->
           <div class="fmly_sec" style="display: none;">
             <div class="rqst_box2_cnt">
-              <div class="form-group fg6 sa_2 sa_640_i">
-                <label for="email" class="fg2_la1">Salary Deduction:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-                  <option>Deduction 1</option>
-                  <option>Deduction 2</option>
-                  <option>Deduction 3</option>
-                </select>
-              </div>
-              <div class="form-group fg6 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
-                <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-                <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/per2.png"></i><span> Amount</span></button>
-                <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/per1.png"></i><span> Percentage</span></button>  
-              </div>
-              <div class="clearfix"></div>
-              <div class="amnt_rge1" style="display:none;">
-                <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
-                  <label for="email" class="fg2_la1">Amount Range:<span class="spn1">*</span></label>
-                  <div class="fg6 pa_l frm_to">
-                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
-                  </div>
-                  <div class="fg6 pa_l frm_to">
-                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
-                  </div>
+              <div class="fix_hei_b">
+                <div class="form-group fg6 sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1">Salary Deduction:<span class="spn1">*</span></label>
+                  <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                    <option>Deduction 1</option>
+                    <option>Deduction 2</option>
+                    <option>Deduction 3</option>
+                  </select>
                 </div>
-              </div>
-              <div class="amnt_rge2" style="display: block;">
-                <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
-                  <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
-                  <div class="fg6 pa_l frm_to">
-                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="From" name="email">
-                  </div>
-                  <div class="fg6 pa_l frm_to">
-                    <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
-                  </div>
+                <div class="form-group fg6 sa_o_fg7 sa_2 sa_480 dt_bsd1 db_ma0">
+                  <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+                  <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/per2.png"></i><span> Amount</span></button>
+                  <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/per1.png"></i><span> Percentage</span></button>  
                 </div>
-                <div class="fg6 from_sectn">
+                <div class="clearfix"></div>
+                <div class="amnt_rge1" style="display:none;">
                   <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
-                    <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1"></span></label>
-                    <div class="check1">
-                      <div class="">
-                        <label class="switch">
-                          <input type="checkbox" id="chk_bsk" checked="" onclick="chk_bsk()">
-                          <span class="slider_tog round"></span>
-                        </label>
+                    <label for="email" class="fg2_la1">Amount Range:<span class="spn1">*</span></label>
+                    <div class="fg6 pa_l frm_to">
+                      <input type="number" class="form-control fg2_inp1 inp_mst tr_r b1_inp" placeholder="From" name="email">
+                    </div>
+                    <div class="fg6 pa_l frm_to">
+                      <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                    </div>
+                  </div>
+                </div>
+                <div class="amnt_rge2" style="display: block;">
+                  <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                    <label for="email" class="fg2_la1">Percentage:<span class="spn1">*</span></label>
+                    <div class="fg6 pa_l frm_to">
+                      <input type="number" class="form-control fg2_inp1 inp_mst tr_r b1_inp" placeholder="From" name="email">
+                    </div>
+                    <div class="fg6 pa_l frm_to">
+                      <input type="number" class="form-control fg2_inp1 inp_mst tr_r" placeholder="To" name="email">
+                    </div>
+                  </div>
+                  <div class="fg6 from_sectn">
+                    <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                      <label for="email" class="fg2_la1 pad_l">Basic Pay:<span class="spn1"></span></label>
+                      <div class="check1">
+                        <div class="">
+                          <label class="switch">
+                            <input type="checkbox" id="chk_bsk" checked="" onclick="chk_bsk()">
+                            <span class="slider_tog round"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
+                      <label for="email" class="fg2_la1 pad_l">Total Amount:<span class="spn1"></span></label>
+                      <div class="check1">
+                        <div class="">
+                          <label class="switch">
+                            <input type="checkbox" id="chk_bsk1" onclick="chk_bsk1()">
+                            <span class="slider_tog round"></span>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="form-group fg6 fg2_mr sa_2 sa_640_i">
-                    <label for="email" class="fg2_la1 pad_l">Total Amount:<span class="spn1"></span></label>
-                    <div class="check1">
-                      <div class="">
-                        <label class="switch">
-                          <input type="checkbox" id="chk_bsk1" onclick="chk_bsk1()">
-                          <span class="slider_tog round"></span>
-                        </label>
-                      </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Restrict The Limit:<span class="spn1"></span></label>
+                  <div class="check1">
+                    <div class="">
+                      <label class="switch">
+                        <input type="checkbox" >
+                        <span class="slider_tog round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
+                  <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+                  <div class="check1">
+                    <div class="">
+                      <label class="switch">
+                        <input type="checkbox" >
+                        <span class="slider_tog round"></span>
+                      </label>
                     </div>
                   </div>
                 </div>
                 <div class="clearfix"></div>
-              </div>
-              <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-                <label for="email" class="fg2_la1 pad_l">Restrict The Limit:<span class="spn1"></span></label>
-                <div class="check1">
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox" >
-                      <span class="slider_tog round"></span>
-                    </label>
+                <div class="devider"></div>
+                <div class="sub_cont pull-right">
+                  <div class="save_sec">
+                    <button type="submit" class="btn sub1">Save</button>
+                    <button type="submit" class="btn sub2">Clear</button>
                   </div>
-                </div>
-              </div>
-              <div class="form-group fg2 fg2_mr sa_2 sa_640_i">
-                <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-                <div class="check1">
-                  <div class="">
-                    <label class="switch">
-                      <input type="checkbox" >
-                      <span class="slider_tog round"></span>
-                    </label>
+                  <div class="edit_sec">
+                    <button type="submit" class="btn sub1">Update</button>
+                    <button type="submit" class="btn sub3">Update & Close</button>
+                    <button type="submit" class="btn sub2">Confirm</button>
+                    <button type="submit" class="btn sub4">Cancel</button>
                   </div>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="devider"></div>
-              <div class="sub_cont pull-right">
-                <div class="save_sec">
-                  <button type="submit" class="btn sub1">Save</button>
-                  <button type="submit" class="btn sub2">Clear</button>
-                </div>
-                <div class="edit_sec">
-                  <button type="submit" class="btn sub1">Update</button>
-                  <button type="submit" class="btn sub3">Update & Close</button>
-                  <button type="submit" class="btn sub2">Confirm</button>
-                  <button type="submit" class="btn sub4">Cancel</button>
                 </div>
               </div>
               <div class="hcm_res r_800">
                 <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
                   <thead class="thead1">
                     <tr>
-                      <th class="col-md-5 tr_l">Deduction</th>
-                      <th class="col-md-4 tr_r">Amount / Percentage Range</th>
+                      <th class="col-md-4 tr_l">Deduction</th>
+                      <th class="col-md-5 tr_r">Amount / Percentage Range</th>
                       <th class="col-md-3">Actions</th>
                     </tr>
                   </thead>
@@ -1402,7 +1439,7 @@ function closeNav5() {
             <h3>Salary Summary</h3>
             <ul>
               <li>Basic Pay:<span class="spn_gn">1,000.00 - 2,000.00 QAR</span></li>
-              <li>Addition:<span class="spn_gn1">1,00.00 - 200.00 QAR</span></li>
+              <li>Allowance:<span class="spn_gn1">1,00.00 - 200.00 QAR</span></li>
               <li>Deduction:<span class="spn_gn2">1,00.00 - 200.00 QAR</span></li>
             </ul>
           </div>
