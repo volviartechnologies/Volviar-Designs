@@ -512,12 +512,14 @@ function closeNav5() {
                   <button class="btn act_btn bn2 bt_e" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Approve">
                       <i class="fa fa-trophy"></i>
                   </button>
-                  <button class="btn act_btn bn3 bt_e rejct_s" type="button" data-toggle="modal" data-target="#exampleModal_st" title="Reject">
+                  <button class="btn act_btn bn3 bt_e rejct_s" type="button" data-toggle="modal" data-target="#reason_reject" title="Reject">
                       <i class="rejct_ss"><img src="../images/hcm/rejct.png"></i>
                   </button>
-                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
-                    <i class="fa fa-list-alt"></i>
-                  </button>
+                  <a href="view_org.html">
+                    <button class="btn act_btn bn4 bt_v" title="View">
+                      <i class="fa fa-list-alt"></i>
+                    </button>
+                  </a>
                 </div>
 
                 <div class="btn_stl2"> 
@@ -594,6 +596,31 @@ function closeNav5() {
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
         
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---reject_reason-->
+<div class="modal fade in" id="reason_reject" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: 40%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Organization Approval</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body padng_btm">
+        <div class="form-group fg12 sa_2">
+          <label for="email" class="fg2_la1">Organization Rejection Reason:<span class="spn1">*</span></label>
+          <textarea class="form-control fg_chs1 inp_mst" rows="3"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn sub1">Save</button>
+       <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
       </div>
     </div>
   </div>
