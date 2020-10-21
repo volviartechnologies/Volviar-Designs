@@ -1341,6 +1341,14 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .tb_py_g img{width:60px;height: 55px;}
 .tb_py_g{margin-left: 0px;margin-top: 0px;}
 .tb_py h3{padding-top: 20px;}
+.mar_tp_11{margin-bottom: 20px;padding-bottom: 0px;}
+.mar_tp_11 h3{margin-bottom: 0px;}
+.mar_tp_11 .dt_tblz{margin-bottom: 0px;}
+.mar_tp_11 .dt_tblz tbody tr:hover{box-shadow: none!important;cursor: default;}
+.mar_tp_11 .hcm_res{height: 126px!important;overflow-y: auto;}
+.frm_to{width: 46%;}
+.frm_to .form-control{width:97.5%!important;}
+
 
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
