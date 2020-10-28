@@ -548,23 +548,12 @@ function closeNav5() {
 
 <!---inner_content_sections area_started-->
           <h1 class="h1_con">Add Guarantee Category</h1>
-          <div class="form-group fg2 sa_2 sa_480">
-            <label for="email" class="fg2_la1">Guarantee Category Name:<span class="spn1">*</span></label>
-            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Guarantee Category Name">
-          </div>
-          <div class="form-group fg2 sa_2 sa_640 sa_480 sa_640_i sa_fg4_1">
-            <label for="email" class="fg2_la1">Mode<span class="spn1">*</span></label>
-            <div class="row rl_prt">
-              <div class="prtd_rat">
-                <div class="form-check fg6">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                  <label class="form-check-label" for="gridRadios2">Bidding</label>
-                </div>
-                <div class="form-check fg6">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                  <label class="form-check-label" for="gridRadios1">Awarded</label>
-                </div>
-              </div>
+          <div class="form-group fg4 sa_2 sa_480">
+            <label for="email" class="fg2_la1" style="width: auto;">Guarantee Category:<span class="spn1">*</span></label>
+            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Guarantee Category" autofocus="">
+            <div class="ch_ab mr_rgt_ab">
+              <button class="bid1 sel_ab1" title="Bidding" id="ba_box1"><i class="fa fa-stack-exchange"></i> </button>
+              <button class="awd1" title="Awarded" id="ba_box2"><i class="fa fa-shield"></i> </button>
             </div>
           </div>
           <div class="form-group fg2 fg2_mr sa_fg1">
@@ -580,7 +569,7 @@ function closeNav5() {
           </div>
 <!---=================section_devider============--->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
+      <div class="free_sp2"></div>
       <div class="devider"></div>
 <!---=================section_devider============--->
 
@@ -1227,8 +1216,19 @@ $(".sup_cus").click(function(){
   $(".dis_csmr").hide(100);
 });
 </script>
-<!----added script for menubar extra dropdown_closed--->
+<!----added script for menubar extra dropdown_closed-->
 
-
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".bid1").click(function(){
+    $(".bid1").addClass("sel_ab1");
+    $(".awd1").removeClass("sel_ab1");
+  });
+  $(".awd1").click(function(){
+    $(".awd1").addClass("sel_ab1");
+    $(".bid1").removeClass("sel_ab1");
+  });
+});
+</script>
 </body>
 </html>
