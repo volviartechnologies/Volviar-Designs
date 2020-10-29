@@ -1434,6 +1434,9 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .free_sp2{width: 100%;height:10px;margin:auto;}
 .mr_rgt_ab{margin-right:42px;margin-top: -60px; }
 .mr_rgt_ab button{font-size: 16px;}
+.fa_lo{width: auto;margin-right: 8px;font-size: 18px;}
+.guar_cat .fg6{margin-bottom: 0px!important;}
+
 .opn_ltd{background-color: #fbfbfb;padding: 2px 20px;margin-left: 50px;margin-bottom: 10px;padding-top: 6px;width: 40%;}
 .opn_ltd .fa_lo {width: auto;margin: auto;float: left;font-size: 24px;color: #26ace2;margin-right: 10px;margin-top: -4px;}
 .opn_ltd .fg6{padding-bottom:2px!important;text-align: center;}
@@ -1452,6 +1455,11 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .box_hstry .act_btn:hover .fa-times-circle{margin-right:0px;color: #fff;}
 .fg_3_1 label, .modal-body label{font-size: 13px;}
 .modal-body .text_ar1{width: 100%;border-radius: 4px;font-size: 13px;height: 60px;}
+.wid_92{width: 92%;}
+.padg_btm0{padding-bottom: 0px;}
+.padg_btm0 .switch{height: 18px;}
+.mr_tp_head h3{margin-top: 0px;}
+.padg_btm0 label{margin-bottom: 2px;}
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
   .rqsz_b ul li{height: auto;}
