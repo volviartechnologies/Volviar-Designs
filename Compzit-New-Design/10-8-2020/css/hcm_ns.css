@@ -1460,6 +1460,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .padg_btm0 .switch{height: 18px;}
 .mr_tp_head h3{margin-top: 0px;}
 .padg_btm0 label{margin-bottom: 2px;}
+.fltr_xx .fg6{padding-bottom:0px!important;}
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
   .rqsz_b ul li{height: auto;}
