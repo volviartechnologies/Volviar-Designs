@@ -548,142 +548,166 @@ function closeNav5() {
 <!---frame_border_area_opened---->
 
 <!---inner_content_sections area_started-->
-          <h1 class="h1_con">Add Request For Guarantee</h1>
-          <div class="form-group fg2 sa_640_i1 sa_640 sa_480">
-            <label for="email" class="fg2_la1">Guarantee Type<span class="spn1">*</span></label>
-            <div class="row rl_prt">
-              <div class="prtd_rat">
-                <div class="form-check fg6">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="cbx_z1" value="option2" onclick="sl_z1()">
-                  <label class="form-check-label tr_c" for="cbx_z1"><i class="fa fa-unlock fa_lo"></i> Open </label>
-                </div>
-                <div class="form-check fg6">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="cbx_z2" value="option1" checked="" onclick="sl_z2()">
-                  <label class="form-check-label tr_c" for="cbx_z2"><i class="fa fa-lock fa_lo"></i> Limited </label>
+          <h1 style="width: auto;">Add Request For Guarantee </h1>
+            <div class="form-group fg2 sa_640_i1 sa_640 sa_480 opn_ltd">
+              <div class="row rl_prt">
+                <div class="prtd_rat">
+                  <div class="form-check fg6">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="cbx_z1" value="option2" onclick="sl_z1()">
+                    <label class="form-check-label tr_c" for="cbx_z1"><i class="fa fa-unlock fa_lo"></i> Open </label>
+                  </div>
+                  <div class="form-check fg6">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="cbx_z2" value="option1" checked="" onclick="sl_z2()">
+                    <label class="form-check-label tr_c" for="cbx_z2"><i class="fa fa-lock fa_lo"></i> Limited </label>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Ref#:<span class="spn1">*</span></label>
-            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="RQST/2019/271622713" disabled="">
-          </div>
-          <div class="fg2 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Project:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 inp_mst dt_wdt1" name="browser">
-              <option>Project 1</option>
-              <option>Project 2</option>
-              <option>Project 3</option>
-            </select>
-            <a href="javascript:;" onclick="openWin()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a> 
-          </div>
-          <div class="fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Guarantee Category:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 inp_mst dt_wdt1" name="browser">
-              <option>Guarantee Category 1</option>
-              <option>Guarantee Category 2</option>
-              <option>Guarantee Category 3</option>
-            </select>
-            <a href="javascript:;" onclick="openWin1()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a> 
-          </div>
-          <div class="fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Client/Customer:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 inp_mst dt_wdt1" name="browser">
-              <option>Customer 1</option>
-              <option>Customer 2</option>
-              <option>Customer 3</option>
-            </select>
-            <a href="javascript:;" onclick="openWin2()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a> 
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">In Favour Of:<span class="spn1"></span></label>
-            <input type="text" class="form-control fg2_inp1" placeholder="In Favour Of">
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Validity Of Guarantee:<span class="spn1">*</span></label>
-            <div class="input-group dt_wdt">
-              <input class="form-control inp_bdr tr_r inp_mst tr_r" id="z_1a" type="text" placeholder="0">
-              <span class="input-group-addon date1">Days</span>
-            </div>
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1  sa_480">
-            <label for="pwd" class="fg2_la1">Project/RFQ Closing Date:<span class="spn1">*</span></label>
-            <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-              <input class="form-control inp_bdr inp_mst" type="text">
-              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-            </div>
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
-            <input type="text" class="form-control fg2_inp1 inp_mst tr_r" placeholder="0.00">
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-              <option>INR - Indian Rupee</option>
-              <option>USD - US Dollar</option>
-              <option>OMR - Omani Riyal</option>
-            </select> 
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 sa_2 sa_480">
-            <label for="email" class="fg2_la1">Remarks:<span class="spn1"></span></label>
-            <textarea type="text" class="form-control fg2_inp1" placeholder="Remarks"></textarea>
-          </div>
-
           <div class="clearfix"></div>
-          <div class="devider"></div>
-          <!-- <div class="free_sp"></div> -->
-
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 frm_50 sa_o_fg4">
-            <label for="email" class="fg2_la1">ALB -Contact Person:<span class="spn1"></span></label>
-            <div class="check1">
-              <div class="">
-                <label>Select Employee From List</label>
-                <label class="switch flt_l mar_rg1">
-                  <input type="checkbox" class="bu_em_al">
-                  <span class="slider_tog round"></span>
-                </label>
+          <div class="fg_3_1">
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Ref#:<span class="spn1">*</span></label>
+              <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="RQST/2019/271622713" disabled="">
+            </div>
+            <div class="fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Guarantee Category:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 inp_mst dt_wdt1" name="browser">
+                <option>Guarantee Category 1</option>
+                <option>Guarantee Category 2</option>
+                <option>Guarantee Category 3</option>
+              </select>
+              <a href="javascript:;" onclick="openWin1()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a> 
+            </div>
+            <div class="fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Client / Customer:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 inp_mst dt_wdt1" name="browser">
+                <option>Customer 1</option>
+                <option>Customer 2</option>
+                <option>Customer 3</option>
+              </select>
+              <a href="javascript:;" onclick="openWin2()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a> 
+            </div>
+            <div class="fg4 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Project:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 inp_mst dt_wdt1" name="browser">
+                <option>Project 1</option>
+                <option>Project 2</option>
+                <option>Project 3</option>
+              </select>
+              <a href="javascript:;" onclick="openWin()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a> 
+            </div>
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Job Category:<span class="spn1"></span></label>
+              <select class="form-control fg2_inp1 fg_chs2">
+                <option>Job Category 1</option>
+                <option>Job Category 2</option>
+                <option>Job Category 3</option>
+              </select> 
+            </div>
+            <div class="form-group fg7 fg2_mr sa_fg1">
+              <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+              <div class="check1">
+                <div class="">
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
               </div>
             </div>
-            <input type="text" class="form-control fg2_inp1 emp_non" placeholder="ALB -Contact Person">
-            <select class="form-control fg2_inp1 fg_chs2 emp_al" style="display: none;">
-              <option>Employee 1</option>
-              <option>Employee 2</option>
-              <option>Employee 3</option>
-            </select>
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">ALB -Contact Person Email:<span class="spn1"></span></label>
-            <input type="text" class="form-control fg2_inp1" placeholder="ALB -Contact Person Email">
-          </div>
-          <div class="form-group fg2 sa_fg4_1 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Job Category:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2">
-              <option>Job Category 1</option>
-              <option>Job Category 2</option>
-              <option>Job Category 3</option>
-            </select> 
-          </div>
-          <div class="form-group fg7 fg2_mr sa_fg1">
-            <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-            <div class="check1">
-              <div class="">
-                <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider_tog round"></span>
-                </label>
+            <div class="clearfix"></div>
+            <div class="free_sp2"></div>
+            <div class="devider"></div>
+
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">In Favour Of:<span class="spn1"></span></label>
+              <input type="text" class="form-control fg2_inp1" placeholder="In Favour Of">
+            </div>
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Validity:<span class="spn1">*</span></label>
+              <div class="input-group dt_wdt">
+                <input class="form-control inp_bdr tr_r inp_mst tr_r" id="z_1a" type="text" placeholder="0">
+                <span class="input-group-addon date1">Days</span>
               </div>
             </div>
-          </div>
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1  sa_480">
+              <label for="pwd" class="fg2_la1">Project / RFQ Closing Date:<span class="spn1">*</span></label>
+              <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                <input class="form-control inp_bdr inp_mst" type="text">
+                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                <option>INR - Indian Rupee</option>
+                <option>USD - US Dollar</option>
+                <option>OMR - Omani Riyal</option>
+              </select> 
+            </div>
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
+              <input type="text" class="form-control fg2_inp1 inp_mst tr_r" placeholder="0.00">
+            </div>
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_2 sa_480">
+              <label for="email" class="fg2_la1">Remarks:<span class="spn1"></span></label>
+              <textarea type="text" class="form-control fg2_inp1" placeholder="Remarks"></textarea>
+            </div>
+            <div class="clearfix"></div>
+            <div class="free_sp2"></div>
+            <div class="devider"></div>
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 frm_50 sa_o_fg4">
+              <div class="check1">
+                <div class="">
+                  <label>Concerned Employee</label>
+                  <label class="switch flt_l mar_rg1" title="Select Employee From List">
+                    <input type="checkbox" class="bu_em_al">
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
+              <input type="text" class="form-control fg2_inp1 emp_non" placeholder="concerned employee">
+              <select class="form-control fg2_inp1 fg_chs2 emp_al" style="display: none;">
+                <option>Employee 1</option>
+                <option>Employee 2</option>
+                <option>Employee 3</option>
+              </select>
+            </div>
+            <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Email:<span class="spn1"></span></label>
+              <input type="text" class="form-control fg2_inp1" placeholder="Email">
+            </div>
 
-          <div class="fg4 mr_bt_ad">
-            <label for="email" class="fg2_la1 pad_l">Attach RFG:<span class="spn1"></span></label>
-            <div class="fg2 sa_640_i">
-              <input type="file" id="file-upload" multiple="" required="">
-              <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-              <div id="file-upload-filename" class="file_n"></div>
+            <div class="fg4">
+              <label for="email" class="fg2_la1 pad_l">Request For Guarantee:<span class="spn1"></span></label>
+              <div class="fg_3_1">
+                <input type="file" id="file-upload" multiple="" required="">
+                <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+                <div id="file-upload-filename" class="file_n"></div>
+              </div>
+                <div class="">
+                  <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#view_copy" title="View">
+                    <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3" title="Remove Selected File">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
             </div>
           </div>
+          <div class="fg4">
+            <div class="box_hstry">
+              <h3>HISTORY</h3>
+              <ul>
+                <li><span class="sp_op1">Last Modified Date:</span><span class="sp_op2">29/10/2020</span></li>
+                <li><span class="sp_op1">Last Modified User:</span><span class="sp_op2">Faiz</span></li>
+                <li><span class="sp_op1">Last Modified Status:</span><span class="sp_op2">Closed</span></li>
+              </ul>
+              <button class="btn btn-primary bt_s_al" data-toggle="modal" data-target="#mdl_grty">View All History</button>
+              <button class="btn act_btn bn3" data-toggle="modal" data-target="#mdl_grty1" title="Close"><i class="fa fa-times-circle"></i></button>
+            </div>
+          </div>
+          <div class="clearfix"></div>
 
 <!---=================section_devider============--->
       <div class="clearfix"></div>
@@ -760,6 +784,64 @@ function closeNav5() {
 <!-------------------footer_section_closed------------------------------------->
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+
+<!-- Modal1 -->
+<div class="modal fade" id="mdl_grty">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Request For Guarantee</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mrg_mdl">
+        <h5>Request For Guarantee History - <span>Rqst0001</span></h5>
+        <table id="example" class="display table-bordered tbl_480" cellspacing="0" width="100%">
+          <thead class="thead1">
+            <tr>
+              <th class="th_b4 tr_c">Date & Time</th>
+              <th class="th_b4 tr_l">User</th>
+              <th class="th_b6 tr_c">Previous Status</th>
+              <th class="th_b6 tr_c">Modified Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>29/10/2020 12:00 PM</td>
+              <td class="tr_l">Faiz</td>
+              <td>Closed</td>
+              <td>Closed</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="mdl_grty1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Request For Guarantee</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label>Close Reason</label>
+        <textarea placeholder="Close Reason" row="3" class="text_ar1"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
