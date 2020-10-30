@@ -1461,6 +1461,16 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .mr_tp_head h3{margin-top: 0px;}
 .padg_btm0 label{margin-bottom: 2px;}
 .fltr_xx .fg6{padding-bottom:0px!important;}
+.bnk_ins{width: 100%;margin:auto;float: left;background-color: transparent;border:1px solid #4098d6;color: #4098d6;text-align: center;margin-bottom:6px;padding:6px;}
+.bnk_ins:hover, .bnk_ins:focus, .sel_bnk_ins{background-color: #4098d6;color: #fff;}
+.tb_btz{border:none;padding:7px;border-bottom: 1px solid #ccc;font-size: 13px;}
+.tb_btz.tb_buton_sel{border-bottom: 1px solid #4098d6;}
+.fltr_sxz{font-size: 13px!important;}
+.img_plcy img{width: 20px;height:20px;margin: auto;float: left;}
+.tb_cs{background-color: transparent;margin-bottom:10px;}
+.tb_cs span{margin: auto;float: left;width: auto;text-align: left;padding-left: 10px;}
+.tb_cs_sel{color: #00a8ec;font-weight: 600;border-bottom: 1px solid #00a8ec}
+.fg_wid_f{width: 100%!important;}
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
   .rqsz_b ul li{height: auto;}

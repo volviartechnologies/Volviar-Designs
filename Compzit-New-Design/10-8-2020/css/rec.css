@@ -3527,7 +3527,7 @@ body{position: fixed;left: 0;right: 0;}
 .cur_1{font-size: 9px;background-color: #419cdb;text-transform: uppercase;font-weight: 300;color: #fff;padding: 2px 6px;border-radius: 8px;}
 .foot_defer{background-color:#eceff1!important;color: #000;font-weight: 300!important;}
 .foot_defer th{font-weight: 600!important;}
-.filtr_sec{width:400px;height:565px;margin: auto;float:right;position: fixed;top:49px;background-color: #fff;right: 0px;z-index: 9999;box-shadow: -2px 1px 15px #ccc;
+.filtr_sec{width:400px;height:572px;margin: auto;float:right;position: fixed;top:49px;background-color: #fff;right: 0px;z-index: 9999;box-shadow: -2px 1px 15px #ccc;
               transition: 0.5s;margin-right: -400px;}
 
 .filtr_sec_cnt{width: 100%;height: auto;margin: auto;float: left;padding:10px;}
@@ -3539,7 +3539,7 @@ body{position: fixed;left: 0;right: 0;}
 .btn_serbox{width: 100%;height:auto;background-color: transparent;color:#00a8ec;border:1px solid #00a8ec;padding:6px;margin-top: 20px;}
 .btn_serbox:hover{background-color:#00a8ec;color: #fff; }
 .btn_fltr{width: auto;margin:auto;height: auto;float: right;background-color: transparent;border:1px solid #e0f2ff;color:#00a8ec;font-size:15px;position: fixed;
-          top:62px;right: 10px;padding: 2px 9px;border-radius: 20px;}
+          top:56px;right: 10px;padding: 2px 9px;border-radius: 20px;}
 .filtr_sec .tab_btn{width: 40%;}
 .fltr_cls{width: 12%;height: auto;margin:auto;float:right;text-align: center;background-color: transparent;border:1px solid #e0f2ff;color:#00a8ec;font-size: 16px;
           padding: 0px 7px;border-radius: 20px;margin-top:5px;margin-right:10px;border-radius: 20px;}
