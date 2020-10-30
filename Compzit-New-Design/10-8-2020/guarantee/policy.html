@@ -745,139 +745,154 @@ function closeNav5() {
 
 
 <button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
-<div class="filtr_sec mr_400">
+<div class="filtr_sec fltr_plcy mr_400">
   <div class="rqst_box2_head1">
     <button class="tab_btn opt_ab1 op_tab1 sel_tabz">Bank Guarantee</button>
     <button class="tab_btn opt_ab2 op_tab2">Insurance</button>
     <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
   </div>
-  <div class="filtr_sec_cnt">
-    <div class="form-group fg6">
-      <label for="email" class="fg2_la1">Policy#:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2">
-        <option>0001245</option>
-        <option>0001246</option>
-        <option>0001247</option>
-      </select> 
-    </div>
-    <div class="form-group fg6">
-      <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1"></span> </label>
-      <div id="datepicker" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
-        <input class="form-control inp_bdr" type="text"  />
-        <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+  <div class="filtr_sec_cnt cntnt_bx1">
+    <div class="box_cnt_zz">
+      <div class="form-group fg6">
+        <label for="pwd" class="fg2_la1">From Date:<span class="spn1"></span> </label>
+        <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+          <input class="form-control inp_bdr" type="text"  />
+          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+        </div>
       </div>
-    </div>
-    <div class="form-group fg6">
-      <label for="pwd" class="fg2_la1">From Date:<span class="spn1"></span> </label>
-      <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
-        <input class="form-control inp_bdr" type="text"  />
-        <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+      <div class="form-group fg6">
+        <label for="pwd" class="fg2_la1">To Date:<span class="spn1"></span> </label>
+        <div id="datepicker2" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+          <input class="form-control inp_bdr" type="text"  />
+          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+        </div>
       </div>
-    </div>
-    <div class="form-group fg6">
-      <label for="pwd" class="fg2_la1">To Date:<span class="spn1"></span> </label>
-      <div id="datepicker2" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
-        <input class="form-control inp_bdr" type="text"  />
-        <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-      </div>
-    </div>
-    <div class="form-group fg6">
-      <label for="email" class="fg2_la1">Status:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2">
-        <option>New</option>
-        <option>Confirmed</option>
-        <option>Renewed</option>
-        <option>Closed</option>
-        <option>All</option>
-      </select> 
-    </div>
-    <div class="form-group fg6" >
-      <label for="email" class="fg2_la1">Type:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2">
-        <option>Open</option>
-        <option>Limited</option>
-        <option>All</option>
-      </select> 
-    </div>
-
-    <div class="form-group fg6 gur_opt">
-      <label for="email" class="fg2_la1">Guarantee Mode:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2">
-        <option>Mode 1</option>
-        <option>Mode 2</option>
-        <option>Mode 3</option>
-      </select> 
-    </div>
-    <div class="form-group fg6 sa_640 dt_bsd1 gur_opt">
-      <button class="tb_btz tb_buton1 tb_buton_sel"><i class="fa fa-stack-exchange bid1"></i> Bidding</button>
-      <button class="tb_btz tb_buton2"><i class="fa fa fa-shield awd1"></i> Awarded</button>
-    </div>
-    <div class="form-group fg12 sa_640 gur_opt">
-      <button class="fg6 tb_btz tb_cs tb_cus_sup1 tb_cs_sel"><i class="img_plcy"><img src="../images/gms/cus.png"></i> <span>Customer</span></button>
-      <button class="fg6 tb_btz tb_cs tb_cus_sup2"><i class="img_plcy"><img src="../images/gms/sup.png"></i> <span>Supplier</span></button>
-    </div>
-    <div class="gur_opt">
-      <div class="form-group fg12 tb_cus_1" >
-        <label for="email" class="fg2_la1">Customer:<span class="spn1"></span></label>
-        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-          <option>Customer 1</option>
-          <option>Customer 2</option>
-          <option>Customer 3</option>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Status:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
+          <option>New</option>
+          <option>Confirmed</option>
+          <option>Renewed</option>
+          <option>Closed</option>
+          <option>All</option>
         </select> 
       </div>
-      <div class="form-group fg12 tb_cus_2" style="display: none;">
-        <label for="email" class="fg2_la1">Supplier:<span class="spn1"></span></label>
-        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-          <option>Supplier 1</option>
-          <option>Supplier 2</option>
-          <option>Supplier 3</option>
+      <div class="form-group fg6" >
+        <label for="email" class="fg2_la1">Type:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
+          <option>Open</option>
+          <option>Limited</option>
+          <option>All</option>
+        </select> 
+      </div>
+      <div class="form-group fg6 sa_640 dt_bsd1 gur_opt">
+        <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+        <button class="tb_btz tb_buton1 tb_buton_sel"><i class="fa fa-stack-exchange bid1 icon_plcy"></i> <span class="sp_plcy">Bidding</span></button>
+        <button class="tb_btz tb_buton2"><i class="fa fa fa-shield awd1 icon_plcy"></i> <span class="sp_plcy">Awarded</span></button>
+      </div>
+      <div class="form-group fg6 gur_opt">
+        <label for="email" class="fg2_la1">Guarantee Mode:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
+          <option>Mode 1</option>
+          <option>Mode 2</option>
+          <option>Mode 3</option>
         </select> 
       </div>
     </div>
-    <div class="form-group fg12 gur_opt" style="display:block;">
-      <label for="email" class="fg2_la1">Bank:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-        <option>Bank 1</option>
-        <option>Bank 2</option>
-        <option>Bank 3</option>
-      </select> 
-    </div>
+    <div class="clearfix"></div>
+    <div class="devider"></div>
 
-    <div class="form-group fg12 ins_opt" style="display: none;">
-      <label for="email" class="fg2_la1">Insurance Type:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-        <option>Insurance Type 1</option>
-        <option>Insurance Type 2</option>
-        <option>Insurance Type 3</option>
-      </select> 
+    <div class="box_cnt_zz">
+      <div class="form-group fg12 sa_640 gur_opt">
+        <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel"><i class="img_plcy"><img src="../images/gms/cus.png"></i> <span>Customer</span></button>
+        <button class="tb_btz tb_cs tb_cus_sup2"><i class="img_plcy"><img src="../images/gms/sup.png"></i> <span>Supplier</span></button>
+      </div>
+      <div class="gur_opt">
+        <div class="form-group fg12 tb_cus_1" >
+          <label for="email" class="fg2_la1">Customer:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>Customer 1</option>
+            <option>Customer 2</option>
+            <option>Customer 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 tb_cus_2" style="display: none;">
+          <label for="email" class="fg2_la1">Supplier:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>Supplier 1</option>
+            <option>Supplier 2</option>
+            <option>Supplier 3</option>
+          </select> 
+        </div>
+      </div>
+      <div class="form-group fg12 gur_opt" style="display:block;">
+        <label for="email" class="fg2_la1">Bank:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Bank 1</option>
+          <option>Bank 2</option>
+          <option>Bank 3</option>
+        </select> 
+      </div>
     </div>
-    <div class="form-group fg12 ins_opt" style="display: none;">
-      <label for="email" class="fg2_la1">Insurance Provider:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-        <option>Insurance Provider 1</option>
-        <option>Insurance Provider 2</option>
-        <option>Insurance Provider 3</option>
-      </select> 
+    <div class="box_cnt_zz">
+      <div class="form-group fg12 ins_opt" style="display: none;">
+        <label for="email" class="fg2_la1">Insurance Type:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Insurance Type 1</option>
+          <option>Insurance Type 2</option>
+          <option>Insurance Type 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg12 ins_opt" style="display: none;">
+        <label for="email" class="fg2_la1">Insurance Provider:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Insurance Provider 1</option>
+          <option>Insurance Provider 2</option>
+          <option>Insurance Provider 3</option>
+        </select> 
+      </div>
     </div>
-    <div class="form-group fg6">
-      <label for="email" class="fg2_la1">Currency:<span class="spn1"></span></label>
-      <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-        <option>Indian Rupee</option>
-        <option>Qatar Riyal</option>
-        <option>US Dollar</option>
-      </select> 
-    </div>
+    <div class="clearfix"></div>
+    <div class="devider"></div>
 
-    <div class="fg6 sa_fg4">
-      <label class="form1 mar_bo mar_tp lb_wa flt_r">
-        <span class="button-checkbox">
-          <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-          <input type="checkbox" class="hidden">
-        </span>
-        <p class="pz_s">Show Deleted Entries</p>
-      </label>
+    <div class="box_cnt_zz">
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Policy#:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
+          <option>0001245</option>
+          <option>0001246</option>
+          <option>0001247</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1"></span> </label>
+        <div id="datepicker" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+          <input class="form-control inp_bdr" type="text"  />
+          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+        </div>
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Currency:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2">
+          <option>Indian Rupee</option>
+          <option>Qatar Riyal</option>
+          <option>US Dollar</option>
+        </select> 
+      </div>
+
+      <div class="fg6 sa_fg4">
+        <label class="form1 mar_bo mar_tp lb_wa">
+          <span class="button-checkbox">
+            <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+            <input type="checkbox" class="hidden">
+          </span>
+          <p class="pz_s">Show Deleted Entries</p>
+        </label>
+      </div>
     </div>
-    <button class="btn_serbox"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
   </div>
 </div>
 
