@@ -893,6 +893,7 @@ function closeNav5() {
     <div class="box_cnt_zz">
       <button class="btn_serbox"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
     </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
   </div>
 </div>
 
@@ -1366,7 +1367,7 @@ $(document).ready(function(){
   $('.fltr_cls, .content_container').click(function() {
   $('.filtr_sec').removeClass("mr_400");
 });
-  $('.btn_serbox').click(function() {
+  $('.btn_serbox, .fix_flt_ser').click(function() {
   $('.on_show').hide();
   $('.on_hide').show();
   $('.filtr_sec').removeClass("mr_400");
