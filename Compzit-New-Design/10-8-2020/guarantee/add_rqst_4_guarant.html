@@ -564,7 +564,7 @@ function closeNav5() {
               </div>
             </div>
           <div class="clearfix"></div>
-          <div class="fg_3_1">
+          <div class="fg_3_4">
             <div class="form-group fg4 sa_fg4_1 sa_640_i1 sa_480">
               <label for="email" class="fg2_la1">Ref#:<span class="spn1">*</span></label>
               <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="RQST/2019/271622713" disabled="">
@@ -695,23 +695,89 @@ function closeNav5() {
                 </div>
             </div>
           </div>
-          <div class="fg4">
+          <div class="fg_3_4_1">
             <div class="box_hstry">
-              <h3>HISTORY</h3>
+              <h3>Current Status Of RFG</h3>
               <ul>
-                <li><span class="sp_op1">Last Modified Date:</span><span class="sp_op2">29/10/2020</span></li>
-                <li><span class="sp_op1">Last Modified User:</span><span class="sp_op2">Faiz</span></li>
-                <li><span class="sp_op1">Last Modified Status:</span><span class="sp_op2">Closed</span></li>
+                <li><span class="sp_op1">Last Modified:</span><span class="sp_op2">29/10/2020</span></li>
+                <li><span class="sp_op1">User:</span><span class="sp_op2">Faiz</span></li>
+                <li><span class="sp_op1">Status:</span><span class="sp_op2">Closed</span></li>
               </ul>
-              <button class="btn btn-primary bt_s_al" data-toggle="modal" data-target="#mdl_grty">View All History</button>
-              <button class="btn act_btn bn3" data-toggle="modal" data-target="#mdl_grty1" title="Close"><i class="fa fa-times-circle"></i></button>
+              <button class="btn btn-primary bt_s_al show_add_mbr3">Track RFG Status</button>
+              <button class="btn act_btn bn3" data-toggle="modal" data-target="#mdl_grty1" title="Close Request For Guarantee"><i class="fa fa-times-circle"></i></button>
+              <div class="drop_tm tm_op3 mrg_ax" style="display: none;">
+                <h5>Track RFG Status</h5>
+                <p>Reference# - <span>Rqst0001</span></p>
+                <div class="cont_drpb">
+                  <table id="example" class="display table-bordered tbl_480" cellspacing="0" width="100%">
+                    <thead class="thead1">
+                      <tr>
+                        <th class="th_b4 tr_c">Date & Time</th>
+                        <th class="th_b4 tr_l">User</th>
+                        <th class="th_b6 tr_c">Previous Status</th>
+                        <th class="th_b6 tr_c">Modified Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>29/10/2020 12:00 PM</td>
+                        <td class="tr_l">Faiz</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                      </tr>
+                      <tr>
+                        <td>29/10/2020 12:00 PM</td>
+                        <td class="tr_l">Faiz</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                      </tr>
+                      <tr>
+                        <td>29/10/2020 12:00 PM</td>
+                        <td class="tr_l">Faiz</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                      </tr>
+                      <tr>
+                        <td>29/10/2020 12:00 PM</td>
+                        <td class="tr_l">Faiz</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                      </tr>
+                      <tr>
+                        <td>29/10/2020 12:00 PM</td>
+                        <td class="tr_l">Faiz</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                      </tr>
+                      <tr>
+                        <td>29/10/2020 12:00 PM</td>
+                        <td class="tr_l">Faiz</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                      </tr>
+                      <tr>
+                        <td>29/10/2020 12:00 PM</td>
+                        <td class="tr_l">Faiz</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                      </tr>
+                      <tr>
+                        <td>29/10/2020 12:00 PM</td>
+                        <td class="tr_l">Faiz</td>
+                        <td>Closed</td>
+                        <td>Closed</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
           <div class="clearfix"></div>
 
 <!---=================section_devider============--->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
+      <div class="free_sp2"></div>
       <div class="devider"></div>
 <!---=================section_devider============--->
 
@@ -791,13 +857,13 @@ function closeNav5() {
   <div class="modal-dialog mod1" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Request For Guarantee</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Track RFG Status</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body mrg_mdl">
-        <h5>Request For Guarantee History - <span>Rqst0001</span></h5>
+        <h5>Reference# - <span>Rqst0001</span></h5>
         <table id="example" class="display table-bordered tbl_480" cellspacing="0" width="100%">
           <thead class="thead1">
             <tr>
@@ -1455,6 +1521,37 @@ $(".sup_cus").click(function(){
 </script>
 <!-----open new window_closed---------->
 
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+    $('.show_add_mbr3').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op3').toggle();
+        
+    });
+    
+    $('.tm_op3').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    $('body').click( function() {
+       
+        $('.drop_tm').hide();
+        
+    });
+
+    
+});
+  $( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC  
+    $(".drop_tm").hide();
+    }
+});
+</script>
 
 </body>
 </html>
