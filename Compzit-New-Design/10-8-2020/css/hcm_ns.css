@@ -1508,6 +1508,7 @@ textarea.form-control{height: 42px;}
 .max_wid_200 .fg2_inp1{width: 100%!important;}
 .sml_flt_cls{width: 50px;}
 .max_wid_200 .filtr_sec_cnt{padding:10px 20px;}
+.dsbl .head_img img{opacity: .3;}
 
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
