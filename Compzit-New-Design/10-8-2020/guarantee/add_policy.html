@@ -551,17 +551,13 @@ function closeNav5() {
 <!---inner_content_sections area_started-->
 
           <h1 class="h1_con">Add Policy</h1>
-            <div class="fg2 sa_fg4_1 sa_2 sa_640_i1 sa_480">
-              <label for="email" class="fg2_la1">Policy Type:<span class="spn1">*</span></label>
-              <select class="form-control fg2_inp1 inp_mst shw_ins1" name="browser">
-                <option>Bank Guarantee</option>
-                <option>Insurance</option>
-              </select>
-            </div>
+          <div class="button_box1">
+            <button class="btn_plc_ins shw_grt1 sel_plc_ins">Bank Guarantee</button>
+            <button class="btn_plc_ins shw_ins1">Insurance</button>
+          </div>
 
           <div class="ins1" style="display:none;">
             <div class="clearfix"></div>
-            <h3 class="mar_tp1">Add Insurance</h3>
             <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
               <label for="email" class="fg2_la1">Ref#:<span class="spn1">*</span></label>
               <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="RQST/2019/271622713" disabled="">
@@ -689,13 +685,16 @@ function closeNav5() {
 
           <div class="grt1" style="display:block;">
             <div class="clearfix"></div>
-            <h3 class="mar_tp1">Add Bank Guarantee</h3>
-            <div class="form-group fg4 sa_o_fg5 sa_640_i1 sa_640 sa_480">
+            <div class="form-group fg4 sa_640 dt_bsd1" style="display:block;">
+              <button class="tb_buton1 tb_buton_sel"><i class="icon_1_grp"><img src="../images/hcm/icon_4.png"></i><span> Client Guarantee</span></button>
+              <button class="tb_buton2"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Supplier Guarantee</span></button>
+            </div>
+            <!-- <div class="form-group fg4 sa_o_fg5 sa_640_i1 sa_640 sa_480">
               <div class="row rl_prt">
                 <div class="prtd_rat">
                   <div class="form-check fg6">
                     <input class="form-check-input" type="radio" name="gridRadios1"  id="cli_grnty" value="option2" onclick="sl_z1()" checked="">
-                    <label class="form-check-label tr_c" for="cli_grnty"><i class="fa fa-user fa_lo"></i> Client Guarantee </label>
+                    <label class="form-check-label tr_c" for="cli_grnty"><i class="fa fa-user fa_lo"></i> </label>
                   </div>
                   <div class="form-check fg6">
                     <input class="form-check-input" type="radio" name="gridRadios1" id="sup_grnty" value="option1">
@@ -703,7 +702,7 @@ function closeNav5() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="clearfix"></div>
             <div class="devider"></div>
             
@@ -1065,7 +1064,7 @@ function closeNav5() {
                     <div class="fg12 sa_640_i">
                       <h3>Notifications:<span class="spn1">*</span></h3>
                     </div>
-                    <div class="form-group fg4 sa_fg4_1 sa_640_i1">
+                    <div class="form-group fg7 sa_fg4_1 sa_640_i1">
                       <label for="email" class="fg2_la1">Dashboard:<span class="spn1"></span></label>
                       <div class="check1">
                         <div class="">
@@ -1675,10 +1674,14 @@ $(document).ready(function(){
   $(".shw_grt1").click(function(){
     $(".ins1").hide();
     $(".grt1").show();
+    $(".shw_grt1").addClass("sel_plc_ins");
+    $(".shw_ins1").removeClass("sel_plc_ins");
   });
   $(".shw_ins1").click(function(){
     $(".ins1").show();
     $(".grt1").hide();
+    $(".shw_grt1").removeClass("sel_plc_ins");
+    $(".shw_ins1").addClass("sel_plc_ins");
   });
 });
 </script>
@@ -1711,18 +1714,7 @@ $(document).ready(function(){
 });
 </script>
 
-<script>
-$(document).ready(function(){
-  $("#cli_grnty").click(function(){
-    $(".sub_c").hide();
-    $(".sub_b").show();
-  });
-  $("#sup_grnty").click(function(){
-    $(".sub_c").show();
-    $(".sub_b").hide();
-  });
-});
-</script>
+
 
 <script>
 function limit() {
@@ -1747,6 +1739,29 @@ function limit3() {
       document.getElementById("dte3").disabled =false;
     }
 }
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+    $(".sub_c").hide();
+    $(".sub_b").show();
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+    $(".sub_c").show();
+    $(".sub_b").hide();
+  });
+  $(".btn_z1").click(function(){
+    $(".btn_tick").toggle();
+  });
+  $(".btn_z2").click(function(){
+    $(".btn_tick1").toggle();
+  });
+});
 </script>
    
 </body>
