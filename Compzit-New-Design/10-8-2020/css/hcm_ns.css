@@ -1359,7 +1359,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .sklz1 .fg4{margin-bottom:6px;}
 .offcl_img{width:90%;height: auto;margin:auto;margin-bottom:10px;text-align: center;border-right: 1px solid #ccc;}
 .offcl_img img{width:50%;height: auto;}
-.tm_head{width:70%;height:126px;margin: auto;float: left;background-color: #fff;box-shadow: 1px 1px 15px #ccc;border-radius: 8px;margin-bottom:20px;
+.tm_head{width:70%;height:126px;margin: auto;float: left;background-color: #fff;box-shadow: 1px 1px 15px #ccc;border-radius: 8px;margin-bottom:16px;
         padding-top:4px;}
 .tm_head h5{padding-left: 6px;text-transform: uppercase;line-height: 14px;margin: auto;float: left;max-height: 30px;overflow-y: hidden;width: 100%;}
 .head_img{width: 50px;height: 50px;margin: auto;float: left;border:1px solid #ccc;border-radius: 50px;overflow-y: hidden;margin:5px;margin-top:14px;margin-left: -10px;}
@@ -1499,7 +1499,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .menu_fix1{right: 70px;}
 .fg_3_4 .devider{margin-bottom: 13px;}
 .fg_3_4 label{font-size: 13px!important;}
-.max_wid_200{max-width: 200px;max-height:300px;}
+.max_wid_200{max-width: 200px;max-height:266px;}
 textarea.form-control{height: 42px;}
 #myBtn{z-index: 999991}
 .tm_head.dsbl{background-color:#f3f3f3;}
