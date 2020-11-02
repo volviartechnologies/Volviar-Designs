@@ -1473,7 +1473,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .tb_cs_sel span{color: #000;background-color: #e0f2ff; width:auto;}
 .fg_wid_f{width:95%!important;}
 .box_cnt_zz{width:85%;float: none;margin: auto;}
-.fltr_plcy{width: 550px;margin-right: -550px;}
+.fltr_plcy{width: 550px;margin-right: -550px;z-index: 99999;}
 .fltr_plcy .fg6, .fltr_plcy .fg12{padding-bottom:4px!important;margin:auto;float:left;}
 .fltr_plcy .devider{width: 100%;height: 1px;background-color: #ccc;margin: auto;margin-bottom: 6px;margin-top:6px;}
 .icon_plcy{width: 20px;height: 20px;border-radius: 50px;border:1px solid #ccc;margin: auto;float: left;margin-top: 1px;line-height: 19px;}
@@ -1497,6 +1497,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .mrg_ax p{padding-left:12px;font-weight: 600;margin-bottom: 4px;}
 .cntnt_bx1 .dt_fltr{padding-left: 0px;}
 .menu_fix1{right: 70px;}
+
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
   .rqsz_b ul li{height: auto;}
