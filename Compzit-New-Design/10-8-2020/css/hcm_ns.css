@@ -1437,7 +1437,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .fa_lo{width: auto;margin-right: 8px;font-size: 18px;}
 .guar_cat .fg6{margin-bottom: 0px!important;}
 
-.opn_ltd{background-color: #fbfbfb;padding: 2px 20px;margin-left: 50px;margin-bottom: 10px;padding-top: 6px;width: 40%;}
+.opn_ltd{background-color: #fbfbfb;padding: 2px 20px;margin-left: 50px;margin-bottom:4px;padding-top: 4px;width: 40%;}
 .opn_ltd .fa_lo {width: auto;margin: auto;float: left;font-size: 24px;color: #26ace2;margin-right: 10px;margin-top: -4px;}
 .opn_ltd .fg6{padding-bottom:2px!important;text-align: center;}
 .box_hstry{width:80%;height: auto;margin:auto;float:none;min-height: 200px;background-color:#fff;padding:10px;box-shadow: 1px 1px 10px #ccc;}
@@ -1489,7 +1489,7 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .btn_serbox:hover, .btn_serbox:focus{background-color: #00a8ec;color: #fff;}
 .fix_flt_ser{width: 40px;height: 40px;background-color:#ebf9ff;border:1px solid #00a8ec;color:#00a8ec;position:absolute;bottom: 306px;right: 11px;border-radius: 50px;}
 .fix_flt_ser:hover, .fix_flt_ser:focus{background-color:#00a8ec;color: #fff;}
-.mrg_ax{margin-left:-344px; width: 650px;position: relative;margin-top: 47px;padding-top: 6px;max-height: 300px;}
+.mrg_ax{margin-left: 0;width: 655px;position: absolute;margin-top: 375px;padding-top: 6px;max-height: 300px;margin-right: 44px;float: right;right: 0;left: auto;}
 .mrg_ax h5{width: 100%;padding-left: 10px;}
 .mrg_ax:before{content: " ";position: absolute;left:auto;right: 204px;top: -15px;border-right: 0px solid transparent;border-left: 10px solid transparent;border-bottom: 15px solid #fff;
               border-top: transparent;}
@@ -1497,7 +1497,9 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .mrg_ax p{padding-left:12px;font-weight: 600;margin-bottom: 4px;}
 .cntnt_bx1 .dt_fltr{padding-left: 0px;}
 .menu_fix1{right: 70px;}
-
+.fg_3_4 .devider{margin-bottom: 13px;}
+.fg_3_4 label{font-size: 13px!important;}
+textarea.form-control{height: 42px;}
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
   .rqsz_b ul li{height: auto;}
