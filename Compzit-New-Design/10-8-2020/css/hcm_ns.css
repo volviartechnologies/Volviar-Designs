@@ -1513,7 +1513,25 @@ textarea.form-control{height: 42px;}
 .btn_plc_ins{width: 50%;margin: auto;float: left;border: 1px solid #47a8ec; background-color: transparent; padding: 8px;color: #4098d6;}
 .sel_plc_ins{background-color:#4098d6;color: #fff; }
 .dltd_z{width:auto;margin: auto;float:none;background-color: #e68181;color: #fff;padding: 0px 11px;border-radius: 20px;font-size: 10px;margin-top: 10px;margin-left: 22px;}
-.sup_cus_b{width: 360px;margin-top: -16px;margin-left: 40px;}
+.sup_cus_b{width: 360px;margin-top: -16px;margin-left: 40px;border: 1px solid #dff2ff;border-top: none;}
+.bgbdr .tb_buton_sel{background-color: transparent;}
+.bgbdr .tb_buton2:hover, .bg_blu  .tb_buton1:hover{background-color: transparent;}
+.bgbdr .icon_1_grp img{width: 25px;height: 25px; padding-left: 6px;}
+.mr_rgt11{margin-right: 30px;}
+.prd_btn{width: auto;margin: auto;float: left;margin-left: 20px;margin-top: -4px;margin-bottom: 2px;font-size: 13px;}
+.prd_hd{float: left;}
+.btn-prd_btn{width:74px;margin: auto;float: left;background-color: transparent;border:1px solid #ccc;padding: 2px;}
+.btn_prd_sel{background-color:#4098d6;color: #fff;}
+.mr_rgt26{margin-right: 26px;}
+.btn_clr{margin: auto;float: left;width: auto;padding: 5px;background-color: transparent;color:#ef9000;border: none;font-size: 18px;}
+.intim{margin-top: -2px;margin-left: 34px;}
+.intim .fg2{padding-bottom:2px;}
+.intim .btn_int{font-size: 10px;border-top:none;margin-left: 4px;background-color: transparent;color: #48acf2;}
+.intim .btn_int.active, .intim .btn_int:hover, .intim .btn_int:focus{background-color:#48acf2!important;color: #fff; }
+.notf_plcy{margin-top: 0px;}
+.notf_plcy h3{margin-top: 7px;margin-bottom: 2px;}
+.bg_wht{box-shadow: 1px 1px 15px #ccc;background-color: #fff;}
+.cls_prd{margin-top: 2px;}
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
   .rqsz_b ul li{height: auto;}
