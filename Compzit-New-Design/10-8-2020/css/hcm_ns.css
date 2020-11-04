@@ -1519,21 +1519,27 @@ textarea.form-control{height: 42px;}
 .bgbdr .icon_1_grp img{width: 25px;height: 25px; padding-left: 6px;}
 .mr_rgt11{margin-right: 30px;}
 .prd_btn{width: auto;margin: auto;float: left;margin-left: 20px;margin-top: -4px;margin-bottom: 2px;font-size: 13px;}
-.prd_hd{float: left;}
-.btn-prd_btn{width:74px;margin: auto;float: left;background-color: transparent;border:1px solid #ccc;padding: 2px;}
+.prd_hd{float: left;margin-right: 10px;}
+.btn-prd_btn{width:auto;margin: auto;float: left;background-color: transparent;border:1px solid #ccc; padding: 7px 6px;}
 .btn_prd_sel{background-color:#4098d6;color: #fff;}
 .mr_rgt26{margin-right: 26px;}
-.btn_clr{margin: auto;float: left;width: auto;padding: 5px;background-color: transparent;color:#ef9000;border: none;font-size: 18px;}
-.intim{margin-top: -2px;margin-left:0;}
-.intim .fg2{padding-bottom:2px;}
-.intim .btn_int{font-size: 10px;border-top:none;margin-left: 4px;background-color: transparent;color: #48acf2;}
+.btn_clr{margin: auto;float: left;width: auto;padding:6px 5PX;background-color: transparent;color:#ef9000;border: none;font-size: 18px;}
+.intim{margin-top:1px;margin-left:0;border:1px solid #ccc;padding-bottom:0px;    padding-right: 0;}
+.intim .fg2{padding-bottom:0;padding-right:0px;}
+.intim .btn_int{font-size: 10px;border-top:none;margin-left: 0px;background-color: transparent;color: #48acf2;padding:6px 0px;border-radius: 0px;width: 100%;margin-right: 0px;padding-right: 0px;}
 .intim .btn_int.active, .intim .btn_int:hover, .intim .btn_int:focus{background-color:#48acf2!important;color: #fff; }
-.notf_plcy{margin-top: 0px;padding-left: 10px;}
+.notf_plcy{margin-top: 0px;padding-left: 0px;}
 .notf_plcy h3{margin-top: 7px;margin-bottom: 2px;}
 .bg_wht{box-shadow: 1px 1px 15px #ccc;background-color: #fff;}
 .cls_prd{margin-top: 2px;}
 .bx_pdg{padding:4px;}
 .bx_max_hgt{max-height: 130px;overflow-y: auto;}
+.prd_btn .fg2_inp1{width: 60%!important;border-radius: 4px 0px 0px 4px;}
+.pdng_tpv{width: 74%;}
+.bg_wht .fg2_inp1{font-size: 12px;padding: 2px 4px;height: 30px;}
+.bg_wht .act_btn{margin-top: 4px;}
+.spot_bg{margin-top: -8px;}
+.spot_bg label{color: #333;font-size: 13px;text-transform: none;}
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
   .rqsz_b ul li{height: auto;}
@@ -1586,4 +1592,4 @@ textarea.form-control{height: 42px;}
   .drop_tm:before{top: 148px;}
   .team_head_list{margin-bottom:140px;}
 }
-.mr_btm20{width:100%;float:left;margin-bottom: 10px;height: auto;padding: 10px 0px;}
+.mr_btm20{width:100%;float:left;margin-bottom:0px;height: auto;padding: 10px 0px;}
