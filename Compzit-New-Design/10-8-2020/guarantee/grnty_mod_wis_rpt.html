@@ -545,7 +545,7 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
+<!---inner_content_sections area_started-->
           <h1 class="h1_con">Guarantee Mode Wise Report</h1>
           <div class="form-group fg5 frm_50 sa_o_fg4">
             <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
@@ -556,17 +556,17 @@ function closeNav5() {
             </select> 
           </div>
           <div class="form-group fg5 frm_50 sa_o_fg4">
-            <label for="email" class="fg2_la1">Guarantee Mode:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2">
-              <option>Guarantee Mode 1</option>
-              <option>Guarantee Mode 2</option>
-            </select> 
-          </div>
-          <div class="form-group fg5 frm_50 sa_o_fg4">
             <label for="email" class="fg2_la1">Guarantee method:<span class="spn1"></span></label>
             <select class="form-control fg2_inp1 fg_chs2">
               <option>Client Guarantee</option>
               <option>Supplier Guarantee</option>
+            </select> 
+          </div>
+          <div class="form-group fg5 frm_50 sa_o_fg4">
+            <label for="email" class="fg2_la1">Guarantee Mode:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1 fg_chs2">
+              <option>Guarantee Mode 1</option>
+              <option>Guarantee Mode 2</option>
             </select> 
           </div>
           <div class="form-group fg5 frm_50 sa_o_fg4">
@@ -585,73 +585,48 @@ function closeNav5() {
 <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
 
-        <div class="tab_res">
-           <p class="plc1 pull-right pl_rg wdt tr_r">Total number of records: 100</p>
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-
-          </div>
-
-          <!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
-
-          <div class="r_1024">
-          <table class="display table-bordered pro_tab1 tbl_1024" cellspacing="0" width="100%">
+        <div class="r_1024">
+         <table id="example" class="display table-bordered tablsrt tbl_1024" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="tr_l">
+                <th class="th_b8 tr_l">Guarantee Ref#
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Guarantee Ref#">
                 </th>
-                <th class="tr_c">
+                <th class="th_b8 tr_c">Date of Guarantee
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Date of Guarantee">
                 </th>
-                <th class="tr_l">
+                <th class="th_b8 tr_l">Guarantee Method
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Guarantee Method">
                 </th>
-                <th class="tr_l">
+                <th class="th_b4 tr_l">Supplier/Client Name
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Supplier/Client Name">
                 </th>
-                <th class="tr_l">
+                <th class="th_b6 tr_l">Project Ref#
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Project Ref#">
                 </th>
-                <th class="tr_c">
+                <th class="th_b7 tr_c">Expiry Date
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Expiry Date">
                 </th>
-                <th class="tr_l">
+                <th class="th_b6 tr_l">Bank
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Bank">
                 </th>
-                <th class="tr_l">
+                <th class="th_b7 tr_l">Job Code
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Job Code">
                 </th>
-                <th class="tr_r">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Amount">
-                </th>
-                <th class="tr_c">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Currency">
-                </th>
-              </tr>
-              <tr>
-                <th class="th_b8 tr_l">Guarantee Ref#</th>
-                <th class="th_b8 tr_c">Date of Guarantee</th>
-                <th class="th_b8 tr_l">Guarantee Method</th>
-                <th class="th_b4 tr_l">Supplier/Client Name</th>
-                <th class="th_b6 tr_l">Project Ref#</th>
-                <th class="th_b7 tr_c">Expiry Date</th>
-                <th class="th_b6 tr_l">Bank</th>
-                <th class="th_b7 tr_l">Job Code</th>
                 <th class="th_b7 tr_r">Amount</th>
-                <th class="th_b6 tr_c">Currency</th>
+                <th class="th_b6 tr_c">Currency
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Currency"></th>
               </tr>
             </thead>
             <tbody>
@@ -681,18 +656,6 @@ function closeNav5() {
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
         </div>
 
 
@@ -1150,5 +1113,64 @@ $(".btn_1").click(function(){
 </script>
 <!----display_div script_closed--->
 
+
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+  <!---Data_table_script for search_closed--->
+
+  <script type="text/javascript">
+  $(document).ready(function(){ 
+    $(".cont_contr").scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $(".cont_contr").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
 </body>
 </html>
