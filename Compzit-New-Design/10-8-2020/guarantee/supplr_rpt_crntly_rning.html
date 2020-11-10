@@ -561,13 +561,13 @@ function closeNav5() {
 <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
         
          <table id="example" class="display table-bordered" cellspacing="0" width="100%">
           <thead class="thead1">
             <tr>
               
-              <th class="th_b8 tr_l">Ref#
+              <th class="th_b6 tr_l">Ref#
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                 <input type="text" class="tb_inp_1 tb_in" placeholder="Ref#" onkeydown="return DisableEnter(event)">
               </th>
@@ -575,7 +575,7 @@ function closeNav5() {
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                 <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Recharge Amount" onkeydown="return DisableEnter(event)">
               </th>
-              <th class="th_b8 tr_c">Date
+              <th class="th_b7 tr_c">Date
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                 <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Date" onkeydown="return DisableEnter(event)">
               </th>
@@ -672,12 +672,20 @@ function closeNav5() {
 <!---print_button_closed--->
 
 <!---add_button--->
-<a href="add_water_card.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
+<a href="add_policy.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
 <i class="fa fa-plus-circle"></i>
 </a>
 <!---add_button_closed--->
+<!---print_button_closed-->
+<div class="print_opt">
+  <button class="csv_b csv_b1"><i class="fa fa-newspaper-o " aria-hidden="true"></i>Summary</button> 
+  <button class="pdf_b csv_b1"><i class="fa fa-file-text" aria-hidden="true"></i>Detail</button>
+</div>
 
-
+<!---import_button_section-->
+<a href="#" type="button" class="imprt_o" title="Export" onclick="import_1()">
+  <i class="fa fa-code-fork" aria-hidden="true"></i>
+</a>
 <div class="import_opt">
   <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
   <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>

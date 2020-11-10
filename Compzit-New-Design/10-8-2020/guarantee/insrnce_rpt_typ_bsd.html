@@ -577,67 +577,37 @@ function closeNav5() {
             <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
           </div>
 
-<!---=================section_devider============--->
+<!---=================section_devider============-->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
-
-        <div class="tab_res">
-          <div class="col-md-8 mar_at flt_l sa_640_i1 sa_480">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div>
-          <div class="col-md-4 mar_at flt_r tr_r sa_640_i1 sa_480">
-            <h3>Total Records#:<span>100</span></h3>
-          </div>
+<!---=================section_devider============-->
           <div class="r_1024">
-          <table class="display table-bordered pro_tab1 tbl_1024" cellspacing="0" width="100%">
-            <thead class="thead1">
+            <table id="example" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
+              <thead class="thead1">
               <tr>
-                <th class="tr_l">
+                <th class="th_b6 tr_l">Insurance Ref#
                   <input type="text" class="tb_inp_1 tb_in tr_l tb_in1_1" placeholder="Insurance Ref#">
                 </th>
-                <th class="tr_c">
+                <th class="th_b7 tr_c">Date
                   <input type="text" class="tb_inp_1 tb_in tr_c tb_in1_1" placeholder="Date">
                 </th>
-                <th class="tr_l">
+                <th class="th_b8 tr_l">Insurance Category
                   <input type="text" class="tb_inp_1 tb_in tr_l tb_in1_1" placeholder="Insurance Category">
                 </th>
-                <th class="tr_l">
+                <th class="th_b8 tr_l">Insurance Provider
                   <input type="text" class="tb_inp_1 tb_in tr_l tb_in1_1" placeholder="Insurance Provider">
                 </th>
-                <th class="tr_c">
+                <th class="th_b6 tr_c">Expiry Date
                   <input type="text" class="tb_inp_1 tb_in tr_c tb_in1_1" placeholder="Expiry Date">
                 </th>
-                <th class="tr_c">
-                  <input type="text" class="tb_inp_1 tb_in tr_c tb_in1_1" placeholder="Age(Days)">
+                <th class="th_b7 tr_c">Age (Days)
+                  <input type="text" class="tb_inp_1 tb_in tr_c tb_in1_1" placeholder="Age (Days)">
                 </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l tb_in1_1" placeholder="Project Ref#">
-                </th>
-                <th class="tr_r">
-                  <input type="text" class="tb_inp_1 tb_in tr_r tb_in1_1" placeholder="Amount">
-                </th>
-                <th class="tr_c">
-                  <input type="text" class="tb_inp_1 tb_in tr_c tb_in1_1" placeholder="Currency">
-                </th>
-              </tr>
-              <tr>
-                <th class="th_b6 tr_l">Insurance Ref#</th>
-                <th class="th_b7 tr_c">Date</th>
-                <th class="th_b8 tr_l">Insurance Category</th>
-                <th class="th_b8 tr_l">Insurance Provider</th>
-                <th class="th_b6 tr_c">Expiry Date</th>
-                <th class="th_b7 tr_c">Age(Days)</th>
-                <th class="th_b8 tr_l">Project Ref#</th>
+                <th class="th_b8 tr_l">Project Ref#
+                  <input type="text" class="tb_inp_1 tb_in tr_l tb_in1_1" placeholder="Project Ref#"></th>
                 <th class="th_b7 tr_r">Amount</th>
-                <th class="th_b6 tr_c">Currency</th>
+                <th class="th_b6 tr_c">Currency
+                  <input type="text" class="tb_inp_1 tb_in tr_c tb_in1_1" placeholder="Currency"></th>
               </tr>
             </thead>
             <tbody>
@@ -667,18 +637,6 @@ function closeNav5() {
           </table>
         </div>
 
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
-        </div>
-
 
 <!---inner_content_sections area_closed--->
 
@@ -698,13 +656,12 @@ function closeNav5() {
 </a>
 <!---print_button_closed--->
 
-<!---add_button--->
-<a href="add_water_card.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
-<i class="fa fa-plus-circle"></i>
+
+
+<!---import_button_section-->
+<a href="#" type="button" class="imprt_o" title="Export" onclick="import_1()">
+  <i class="fa fa-code-fork" aria-hidden="true"></i>
 </a>
-<!---add_button_closed--->
-
-
 <div class="import_opt">
   <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
   <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
@@ -1138,6 +1095,46 @@ $(".cus_dte").click(function(){
 });
 </script>
 
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
 
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+  <!---Data_table_script for search_closed--->
 </body>
 </html>
