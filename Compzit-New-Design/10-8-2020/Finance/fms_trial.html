@@ -810,6 +810,7 @@ function closeNav5() {
 </div>
 <!----------------------------------------------Content_section_closed------------------------------------------------------------>
 
+</div>
 <div class="filtr_sec mr_400">
   <div class="rqst_box2_head1">
     <button class="tab_btn opt_ab1 op_tab1 sel_tabz">Date Based</button>
@@ -828,7 +829,28 @@ function closeNav5() {
       <button class="tb_buton2"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Detailed</span></button>
     </div>
 
+
       <div class="box_flwdt">
+        <div class="form-group fg12 prid_1 top_mar1" style="display: none;">
+          <div class="fince_yr">
+            <label for="pwd" class="fg2_la1">Financial Year:<span class="spn1"></span> </label>
+            <div class="dropdown btn_chse_sec1">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+                <span class="sp_msg1">Apr 2018 - Mar 2019</span>
+                <span class="sp_msg2" style="display: none;">Apr 2018 - Mar 2019</span>
+                <span class="sp_msg3" style="display: none;">Apr 2020 - Mar 2021</span>
+                <span class="sp_msg4" style="display: none;">Apr 2017 - Mar 2018</span> 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <ul class="dropdown-menu drop_dn mail_drop">
+                <li class="sel_ms1 sel_act_msg"><a href="#"><span>Apr 2018 - Mar 2019</span></a></li>
+                <li class="sel_ms2"><a href="#"><span>Apr 2019 - Mar 2020</span></a></li>
+                <li class="sel_ms3"><a href="#"><span>Apr 2020 - Mar 2021</span></a></li>
+                <li class="sel_ms4"><a href="#"><span>Apr 2017 - Mar 2018</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="form-group fg12 db_o1 top_mar1">
           <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
           <div id="datepicker" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
@@ -1462,6 +1484,35 @@ $(document).ready(function(){
   $('.filtr_sec').removeClass("mr_400");
 });
 
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".sel_ms1").click(function(){
+    $(".sel_ms1").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms3, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg1").show();
+    $(".sp_msg2, .sp_msg3, .sp_msg4").hide();
+  });
+  $(".sel_ms2").click(function(){
+    $(".sel_ms2").addClass("sel_act_msg");
+    $(".sel_ms1, .sel_ms3, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg2").show();
+    $(".sp_msg1, .sp_msg3, .sp_msg4").hide();
+  });
+  $(".sel_ms3").click(function(){
+    $(".sel_ms3").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms1, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg3").show();
+    $(".sp_msg2, .sp_msg1, .sp_msg4").hide();
+  });
+  $(".sel_ms4").click(function(){
+    $(".sel_ms4").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms3, .sel_ms1").removeClass("sel_act_msg");
+    $(".sp_msg4").show();
+    $(".sp_msg2, .sp_msg3, .sp_msg1").hide();
+  });
+});
 </script>
 </body>
 </html>
