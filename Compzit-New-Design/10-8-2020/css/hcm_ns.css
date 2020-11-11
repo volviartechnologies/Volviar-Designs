@@ -1494,12 +1494,13 @@ tbody .drpdn_lft_1, tbody .drpdn_lft_2, tbody .drpdn_lft_2{float: none;}
 .mrg_ax:before{content: " ";position: absolute;left:auto;right: 204px;top: -15px;border-right: 0px solid transparent;border-left: 10px solid transparent;border-bottom: 15px solid #fff;
               border-top: transparent;}
 .cont_drpb{max-height:145px;overflow-y: auto;width: 100%;height: auto;margin: auto;float: left;}
-.mrg_ax p{padding-left:12px;font-weight: 600;margin-bottom: 4px;}
+.mrg_ax p{padding-left:12px;font-weight: 600;margin-bottom: 4px;width: auto;margin:auto;float: left;}
 .cntnt_bx1 .dt_fltr{padding-left: 0px;}
 .menu_fix1{right: 70px;}
 .fg_3_4 .devider{margin-bottom: 13px;}
 .fg_3_4 label{font-size: 13px!important;}
 .max_wid_200{max-width: 220px;margin-right: -220px;}
+.mrg_ax .bn6{margin-top: 0px;height: auto;padding:0px 14px;}
 textarea.form-control{height: 42px;}
 #myBtn{z-index: 999;}
 .tm_head.dsbl{background-color:#f3f3f3;}
