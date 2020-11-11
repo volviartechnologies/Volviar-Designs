@@ -1605,3 +1605,4 @@ textarea.form-control{height: 42px;}
 .fince_yr label{width: 34%;margin:auto;float: left;padding:9px;border: none;border-bottom:1px solid #e8e8e8;height:38px;}
 .fince_yr .btn_chse_sec1 button{background-color:#b9ddf7; }
 .fince_yr .btn_chse_sec1 button:focus, .fince_yr .btn_chse_sec1 button:hover{box-shadow: 1px 1px 15px #ccc;}
+.pagination{margin-bottom:40px!important;}
