@@ -540,7 +540,7 @@ function closeNav5() {
       <li><a href="#">Home</a></li>
       <li><a href="#">GMS</a></li>
       <li><a href="#">Insurance Report</a></li>
-      <li class="active">Insurance Expiry Range Report</li>
+      <li class="active">Periodical Insurance Expiry Report</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -550,7 +550,7 @@ function closeNav5() {
 <!---frame_border_area_opened---->
 
 <!---inner_content_sections area_started-->
-          <h1 class="h1_con">Insurance Expiry Range Report</h1>
+          <h1 class="h1_con">Periodical Insurance Expiry Report</h1>
           <div class="form-group fg5 frm_50 sa_o_fg4">
             <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
             <select class="form-control fg2_inp1 fg_chs2">
@@ -563,15 +563,16 @@ function closeNav5() {
             <label for="email" class="fg2_la1">Insurance Expiry:<span class="spn1"></span></label>
             <select class="form-control fg2_inp1 fg_chs2 cus_dte">
               <option>1 Month</option>
-              <option>3 Month</option>
-              <option>Custom Date</option>
+              <option>3 Months</option>
+              <option>Custom Period</option>
             </select> 
           </div>
-          <div class="form-group fg5 hcm_2_1 shw_dte" style="display: none;">
-            <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1"></span></label>
-            <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-              <input class="form-control inp_bdr" type="text">
-              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          <div class="form-group fg5 hcm_2_1" style="display:block;">
+            <label for="pwd" class="fg2_la1">As On Date:<span class="spn1 as_onlbl">*</span></label>
+            <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr expr_dt inp_mst" type="text" disabled="">
+              <span class="input-group-addon date1 dt_spn disbld"><i class="fa fa-calendar"></i></span>
+              <!-- <span class="disbld"><i class="fa fa-calendar"></i></span> -->
             </div>
           </div>
           <div class="form-group fg5 frm_50 sa_o_fg4">
@@ -1106,11 +1107,13 @@ $(".sup_cus").click(function(){
   $(".dis_csmr").hide(100);
 });
 </script>
-<!----added script for menubar extra dropdown_closed--->
+<!----added script for menubar extra dropdown_closed-->
 
 <script type="text/javascript">
 $(".cus_dte").click(function(){
-  $(".shw_dte").show(100);
+  $(".dt_spn").removeClass("disbld");
+  $(".as_onlbl").show();
+  $(".expr_dt").prop('disabled', false);
 });
 </script>
 

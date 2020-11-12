@@ -1606,3 +1606,6 @@ textarea.form-control{height: 42px;}
 .fince_yr .btn_chse_sec1 button{background-color:#b9ddf7; }
 .fince_yr .btn_chse_sec1 button:focus, .fince_yr .btn_chse_sec1 button:hover{box-shadow: 1px 1px 15px #ccc;}
 .pagination{margin-bottom:40px!important;}
+.disbld{background-color: #ccc;color: #000;display: none;}
+.inp_mst:disabled{border:1px solid #ccc!important;}
+.as_onlbl{display: none;}
