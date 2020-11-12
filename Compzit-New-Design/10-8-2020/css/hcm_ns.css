@@ -1511,7 +1511,7 @@ textarea.form-control{height: 42px;}
 .max_wid_200 .filtr_sec_cnt{padding:10px 20px;}
 .dsbl .head_img img{opacity: .3;}
 .button_box1{width:350px;margin:auto;float:left;height: auto;margin-bottom: 6px;margin-left: 36px;margin-top: -16px;font-size: 13px;}
-.btn_plc_ins{width: 50%;margin: auto;float: left;border: 1px solid #47a8ec; background-color: transparent; padding: 8px;color: #4098d6;}
+.btn_plc_ins{width: 50%;margin: auto;float: left;border: 1px solid #47a8ec; background-color: #fff; padding: 8px;color: #4098d6;}
 .sel_plc_ins{background-color:#4098d6;color: #fff; }
 .dltd_z{width:auto;margin: auto;float:none;background-color: #e68181;color: #fff;padding: 0px 11px;border-radius: 20px;font-size: 10px;margin-top: 10px;margin-left: 22px;}
 .sup_cus_b{width: 360px;margin-top: -16px;margin-left: 40px;border: 1px solid #dff2ff;border-top: none;}
@@ -1617,3 +1617,8 @@ textarea.form-control{height: 42px;}
 .btn_serbox{margin-top: 14px;}
 .tab_lbl{margin-left: 6px;}
 .tb_btns_5{min-width:18.8%;}
+.button_box1{position: fixed;right: 8px;width: 80px; top: 264px;}
+.btn_plc_ins{width: 81px;height: 60px;float: none;}
+.sup_cus_b{margin-right: 54px;}
+.btn_plc_ins:hover{background-image: linear-gradient(to bottom right, #d8edfc, #4e91bf);color:#fff;}
+.sec_st{width: 100%;margin:auto;float: left;}
