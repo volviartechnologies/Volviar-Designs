@@ -549,12 +549,10 @@ function closeNav5() {
 
 <!---inner_content_sections area_started-->
         <h1 class="h1_con">Policy</h1>
-
-        
-<!---=================section_devider============-->
-      <div class="clearfix"></div>
-      <div class="devider"></div>
-<!---=================section_devider============-->
+               
+        <div class="clearfix"></div>
+        <h3 class="h3_mar_top0">Headline</h3>
+        <div class="devider"></div>
         
         <table id="example" class="display table-bordered" cellspacing="0" width="100%">
           <thead class="thead1">
@@ -751,17 +749,33 @@ function closeNav5() {
     <button class="tab_btn opt_ab2 op_tab2">Insurance</button>
     <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
   </div>
-  <div class="filtr_sec_cnt cntnt_bx1">
+  <div class="form-group">
+    <label for="pwd" class="fg2_la1 tab_lbl">Report:<span class="spn1"></span> </label>
+    <div class="tab_f_12 gur_tabs">
+      <button class="tb_btns tb_btns1">Expiry in 3 Months</button>
+      <button class="tb_btns tb_btns2">Currently Running</button>
+      <button class="tb_btns tb_btns3">Open Status</button>
+      <button class="tb_btns tb_btns4 sel_tb_btns">All</button>
+    </div>
+    <div class="tab_f_12 ins_tabs" style="display: none;">
+      <button class="tb_btns tb_btns_5 tb_btns1">Expiry in 3 Months</button>
+      <button class="tb_btns tb_btns_5 tb_btns2">Currently Running</button>
+      <button class="tb_btns tb_btns_5 tb_btns3">Open Status</button>
+      <button class="tb_btns tb_btns_5 tb_btns5">Expired</button>
+      <button class="tb_btns tb_btns_5 tb_btns4 sel_tb_btns">All</button>
+    </div>
+  </div>
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3">
     <div class="box_cnt_zz">
       <div class="form-group fg6">
-        <label for="pwd" class="fg2_la1">From Date:<span class="spn1"></span> </label>
+        <label for="pwd" class="fg2_la1 wid_50fx">From Date:<span class="spn1"></span> </label>
         <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
           <input class="form-control inp_bdr dt_fltr" type="text"  />
           <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
         </div>
       </div>
       <div class="form-group fg6">
-        <label for="pwd" class="fg2_la1">To Date:<span class="spn1"></span> </label>
+        <label for="pwd" class="fg2_la1 wid_50fx">To Date:<span class="spn1"></span> </label>
         <div id="datepicker2" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
           <input class="form-control inp_bdr dt_fltr" type="text"  />
           <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -1363,6 +1377,8 @@ $(document).ready(function() {
 $(document).ready(function(){
   $('.btn_fltr').click(function() {
   $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
 });
   $('.fltr_cls, .content_container').click(function() {
   $('.filtr_sec').removeClass("mr_400");
@@ -1375,15 +1391,15 @@ $(document).ready(function(){
   $(".op_tab1").click(function(){
   $(".op_tab1").addClass("sel_tabz");
   $(".op_tab2").removeClass("sel_tabz");
-    $(".ins_opt").hide();
-    $(".gur_opt").show();
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
 
   });
   $(".op_tab2").click(function(){
     $(".op_tab2").addClass("sel_tabz");
     $(".op_tab1").removeClass("sel_tabz");
-    $(".ins_opt").show();
-    $(".gur_opt").hide();
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
   });
   $(".tb_buton1").click(function(){
     $(".tb_buton1").addClass("tb_buton_sel");
@@ -1404,6 +1420,28 @@ $(document).ready(function(){
     $(".tb_cus_sup1").removeClass("tb_cs_sel");
     $(".tb_cus_2").show();
     $(".tb_cus_1").hide();
+  });
+  //buttons for report section//
+
+  $(".tb_btns1").click(function(){
+    $(".tb_btns1").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns2").click(function(){
+    $(".tb_btns2").addClass("sel_tb_btns");
+    $(".tb_btns1, .tb_btns3, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns3").click(function(){
+    $(".tb_btns3").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns1, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns4").click(function(){
+    $(".tb_btns4").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns1, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns5").click(function(){
+    $(".tb_btns5").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns1, .tb_btns4").removeClass("sel_tb_btns");
   });
 });
 </script>

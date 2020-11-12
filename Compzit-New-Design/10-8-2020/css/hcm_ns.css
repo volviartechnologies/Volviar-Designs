@@ -1609,3 +1609,11 @@ textarea.form-control{height: 42px;}
 .disbld{background-color: #ccc;color: #000;display: none;}
 .inp_mst:disabled{border:1px solid #ccc!important;}
 .as_onlbl{display: none;}
+.tab_f_12{width: 100%;height: auto;margin:auto;float: left;text-align: center;}
+.png_tp3{padding-top:3px;}
+.tb_btns{width: auto;margin:auto;float:left;text-align: center;background-color: transparent;border:1px solid #ccc;font-size: 13px;min-width: 25%;border-left:none;border-top: none;padding: 3px;}
+.sel_tb_btns{background-color: #d8edfc;color: #000;border-bottom:1px solid #d8edfc;}
+.wid_50fx{width: auto;margin:auto;float: left;border-bottom: 1px solid #ccc;padding:7px;padding-top:8px;}
+.btn_serbox{margin-top: 14px;}
+.tab_lbl{margin-left: 6px;}
+.tb_btns_5{min-width:18.8%;}
