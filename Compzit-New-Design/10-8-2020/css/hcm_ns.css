@@ -1519,15 +1519,15 @@ textarea.form-control{height: 42px;}
 .bgbdr .tb_buton2:hover, .bg_blu  .tb_buton1:hover{background-color: transparent;}
 .bgbdr .icon_1_grp img{width: 25px;height: 25px; padding-left: 6px;}
 .mr_rgt11{margin-right: 30px;}
-.prd_btn{width: auto;margin: auto;float: left;margin-left: 20px;margin-top: -4px;margin-bottom: 2px;font-size: 13px;}
-.prd_hd{float: left;margin-right: 10px;}
-.btn-prd_btn{width:auto;margin: auto;float: left;background-color: transparent;border:1px solid #ccc; padding: 7px 6px;}
+.prd_btn{width: auto;margin: auto;float:right;margin-left: 0px;margin-top: -4px;margin-bottom: 2px;font-size: 13px;margin-right: 41px;}
+.prd_hd{float: left;margin-right: 16px;}
+.btn-prd_btn{width:auto;margin: auto;float: left;background-color: transparent;border:1px solid #ccc; padding: 3px 6px;}
 .btn_prd_sel{background-color:#4098d6;color: #fff;}
 .mr_rgt26{margin-right: 26px;}
 .btn_clr{margin: auto;float: left;width: auto;padding:6px 5PX;background-color: transparent;color:#ef9000;border: none;font-size: 18px;}
 .intim{margin-top:1px;margin-left:0;border:1px solid #ccc;padding-bottom:0px;    padding-right: 0;}
 .intim .fg2{padding-bottom:0;padding-right:0px;}
-.intim .btn_int{font-size: 10px;border-top:none;margin-left: 0px;background-color: transparent;color: #48acf2;padding:6px 0px;border-radius: 0px;width: 100%;margin-right: 0px;padding-right: 0px;}
+.intim .btn_int{font-size: 10px;border-top:none;margin-left: 0px;background-color: transparent;color: #48acf2;padding:2px 0px;border-radius: 0px;width: 100%;margin-right: 0px;padding-right: 0px;}
 .intim .btn_int.active, .intim .btn_int:hover, .intim .btn_int:focus{background-color:#48acf2!important;color: #fff; }
 .notf_plcy{margin-top: 0px;padding-left: 0px;}
 .notf_plcy h3{margin-top: 7px;margin-bottom: 2px;}
@@ -1618,7 +1618,13 @@ textarea.form-control{height: 42px;}
 .tab_lbl{margin-left: 6px;}
 .tb_btns_5{min-width:18.8%;}
 .button_box1{position: fixed;right: 8px;width: 80px; top: 264px;}
-.btn_plc_ins{width: 81px;height: 60px;float: none;}
+.btn_plc_ins{width: 81px;height: 36px;float: none;}
 .sup_cus_b{margin-right: 54px;}
 .btn_plc_ins:hover{background-image: linear-gradient(to bottom right, #d8edfc, #4e91bf);color:#fff;}
 .sec_st{width: 100%;margin:auto;float: left;}
+.fg41{width: 41%;margin:auto;float: left;}
+.ful_wd{width:100%!important;}
+.wid_92_i{width: 92%!important;}
+.wid_70i{width: 70%;}
+.dflt_opn{background-color:#48acf2!important;color: #fff!important;}
+.mr_lft6{margin-left: 6px;}

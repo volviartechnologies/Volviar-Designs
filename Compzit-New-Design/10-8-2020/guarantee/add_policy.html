@@ -552,14 +552,14 @@ function closeNav5() {
 
           <h1><span class="flt_l">Add Policy</span>
 
-            <div class="dt_bsd1 sup_cus_b grt1 bgbdr flt_r" style="display:block;">
+            <div class="dt_bsd1 sup_cus_b grt1 bgbdr" style="display:block;">
               <button class="tb_buton1 tb_buton_sel"><i class="icon_1_grp"><img src="../images/gms/cus.png"></i><span> Client Guarantee</span></button>
               <button class="tb_buton2"><i class="icon_1_grp"><img src="../images/gms/sup.png"></i><span> Supplier Guarantee</span></button>
             </div>
           </h1>
 
             <div class="button_box1">
-              <button class="btn_plc_ins shw_grt1 sel_plc_ins">Bank Guarantee</button>
+              <button class="btn_plc_ins shw_grt1 sel_plc_ins">Guarantee</button>
               <button class="btn_plc_ins shw_ins1">Insurance</button>
             </div>
           
@@ -578,9 +578,40 @@ function closeNav5() {
                 <option>Vehicle Insurance</option>
               </select>
             </div>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_640 sa_480">
+              <label for="email" class="fg2_la1">Insurance Category:<span class="spn1">*</span></label>
+              <div class="row rl_prt">
+                <div class="prtd_rat">
+                  <div class="form-check fg4">
+                    <input class="form-check-input" type="radio" name="gridos1" id="chk_3" value="option2" onclick="limit2()">
+                    <label class="form-check-label tr_c" for="chk_3"><i class="fa fa-unlock fa_lo"></i> Open </label>
+                  </div>
+                  <div class="form-check fg6">
+                    <input class="form-check-input" type="radio" name="gridos1" id="chk_4" value="option1" checked="" onclick="limit3()">
+                    <label class="form-check-label tr_c" for="chk_4"><i class="fa fa-lock fa_lo"></i> Limited </label>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
               <label for="email" class="fg2_la1">Insurance#:<span class="spn1">*</span></label>
               <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Insurance#">
+            </div>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1  sa_480">
+              <div class="fg6" style="padding-bottom:0px!important;">
+                <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span></label>
+                <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
+                  <input class="form-control inp_bdr inp_mst z_1a" type="text">
+                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <div class="form-group fg41 sa_o_fg4 sa_2 sa_640_i1 sa_480">
+                <label for="email" class="fg2_la1">Days#:<span class="spn1"></span></label>
+                <div class="input-group">
+                  <input class="form-control inp_bdr tr_r tr_r" type="text" placeholder="0" disabled="">
+                  <span class="input-group-addon date1">Days</span>
+                </div>
+              </div>
             </div>
             <div class="fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
               <label for="email" class="fg2_la1">Insurance Provider:<span class="spn1">*</span></label>
@@ -590,6 +621,27 @@ function closeNav5() {
                 <option>Provider 3</option>
               </select>
             </div>
+            <div class="fg2">
+              <div class="form-group fg6 sa_o_fg4 sa_2 sa_640_i1 sa_480" style="padding-bottom:0px!important;">
+                <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
+                <input type="text" class="form-control fg2_inp1 inp_mst tr_r ful_wd" placeholder="0.00">
+              </div>
+              <div class="fg4 sa_o_fg4 sa_2 sa_640_i1 sa_480" style="width: 42%;">
+                <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1 inp_mst" name="browser">
+                  <option>USD</option>
+                  <option>INR</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1  sa_480">
+              <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span></label>
+              <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                <input class="form-control inp_bdr inp_mst z_1a" id="dte3" type="text">
+                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+            <div class="clearfix"></div>
             <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 frm_50 sa_o_fg4">
               <div class="check1">
                 <div class="">
@@ -610,60 +662,6 @@ function closeNav5() {
                 <a href="javascript:;" onclick="openWin()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a>
               </div> 
             </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_640 sa_480">
-              <label for="email" class="fg2_la1">Insurance Category:<span class="spn1">*</span></label>
-              <div class="row rl_prt">
-                <div class="prtd_rat">
-                  <div class="form-check fg6">
-                    <input class="form-check-input" type="radio" name="gridos1" id="chk_3" value="option2" onclick="limit2()">
-                    <label class="form-check-label tr_c" for="chk_3"><i class="fa fa-unlock fa_lo"></i> Open </label>
-                  </div>
-                  <div class="form-check fg6">
-                    <input class="form-check-input" type="radio" name="gridos1" id="chk_4" value="option1" checked="" onclick="limit3()">
-                    <label class="form-check-label tr_c" for="chk_4"><i class="fa fa-lock fa_lo"></i> Limited </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
-              <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
-              <input type="text" class="form-control fg2_inp1 inp_mst tr_r" placeholder="0.00">
-            </div>
-            <div class="fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
-              <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
-              <select class="form-control fg2_inp1 inp_mst" name="browser">
-                <option>USD - US Dollar</option>
-                <option>INR - Indian Rupee</option>
-                <option>OMR - Omani Riyal</option>
-              </select>
-            </div>
-            <div class="clearfix"></div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1  sa_480">
-              <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span></label>
-              <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-                <input class="form-control inp_bdr inp_mst z_1a" type="text">
-                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-              </div>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
-              <label for="email" class="fg2_la1">Days#:<span class="spn1"></span></label>
-              <div class="input-group dt_wdt">
-                <input class="form-control inp_bdr tr_r tr_r" type="text" placeholder="0" disabled="">
-                <span class="input-group-addon date1">Days</span>
-              </div>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1  sa_480">
-              <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span></label>
-              <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-                <input class="form-control inp_bdr inp_mst z_1a" id="dte3" type="text">
-                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-              </div>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_2 sa_480">
-              <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-              <textarea type="text" class="form-control fg2_inp1" placeholder="Description"></textarea>
-            </div>
-            <div class="clearfix"></div>
 
             <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 frm_50 sa_o_fg4">
               <div class="check1">
@@ -688,6 +686,10 @@ function closeNav5() {
               <label for="email" class="fg2_la1">Email ID:<span class="spn1"></span></label>
               <input type="text" class="form-control fg2_inp1" placeholder="Email ID">
             </div>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_2 sa_480">
+              <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+              <textarea type="text" class="form-control fg2_inp1" placeholder="Description"></textarea>
+            </div>
           </div>
 
 
@@ -705,9 +707,40 @@ function closeNav5() {
                 <option>Mode 2</option>
               </select>
             </div>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_640 sa_480">
+              <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
+              <div class="row rl_prt">
+                <div class="prtd_rat guar_cat">
+                  <div class="form-check fg4">
+                    <input class="form-check-input" type="radio" name="ratio1" id="chk_1" value="option2" onclick="limit()">
+                    <label class="form-check-label tr_c" for="chk_1"><i class="fa fa-unlock fa_lo"></i> Open </label>
+                  </div>
+                  <div class="form-check fg6">
+                    <input class="form-check-input" type="radio" name="ratio1" id="chk_2" value="option1" checked="" onclick="limit1()">
+                    <label class="form-check-label tr_c" for="chk_2"><i class="fa fa-lock fa_lo"></i> Limited </label>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
               <label for="email" class="fg2_la1">Guarantee#:<span class="spn1">*</span></label>
               <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Guarantee#">
+            </div>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1  sa_480">
+              <div class="fg6" style="padding-bottom:0px!important;">
+                <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span></label>
+                <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
+                  <input class="form-control inp_bdr inp_mst z_1a" type="text">
+                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <div class="form-group fg41 sa_o_fg4 sa_2 sa_640_i1 sa_480">
+                <label for="email" class="fg2_la1">Days#:<span class="spn1"></span></label>
+                <div class="input-group">
+                  <input class="form-control inp_bdr tr_r tr_r" type="text" placeholder="0" disabled="">
+                  <span class="input-group-addon date1">Days</span>
+                </div>
+              </div>
             </div>
             <div class="fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
               <label for="email" class="fg2_la1">Bank:<span class="spn1">*</span></label>
@@ -716,25 +749,25 @@ function closeNav5() {
                 <option>Bank 2</option>
               </select>
             </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 frm_50 sa_o_fg4 sub_c padg_btm0" style="display: none;">
-              <div class="check1">
-                <div class="">
-                  <label>Sub - Contract:<span class="spn1">*</span></label>
-                  <label class="switch flt_l mar_rg1" title="Select From List">
-                    <input type="checkbox" class="bu_em_al">
-                    <span class="slider_tog round"></span>
-                  </label>
-                </div>
+            <div class="fg2">
+              <div class="form-group fg6 sa_o_fg4 sa_2 sa_640_i1 sa_480" style="padding-bottom:0px!important;">
+                <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
+                <input type="text" class="form-control fg2_inp1 inp_mst tr_r ful_wd" placeholder="0.00">
               </div>
-              <input type="text" class="form-control fg2_inp1 emp_non" placeholder="Sub-Contract">
-              <div class="emp_al" style="display: none;">
-                <select class="form-control fg2_inp1 fg_chs2 dt_wdt1">
-                  <option>Sub-Contract 1</option>
-                  <option>Sub-Contract 2</option>
-                  <option>Sub-Contract 3</option>
+              <div class="fg4 sa_o_fg4 sa_2 sa_640_i1 sa_480" style="width: 42%;">
+                <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
+                <select class="form-control fg2_inp1 inp_mst" name="browser">
+                  <option>USD</option>
+                  <option>INR</option>
                 </select>
-                <a href="javascript:;" onclick="openWin()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a>
-              </div> 
+              </div>
+            </div>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1  sa_480">
+              <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span></label>
+              <div id="datepicker4" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                <input class="form-control inp_bdr inp_mst z_1a" id="dte1" type="text">
+                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+              </div>
             </div>
             <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480 sub_c" style="display: none;">
               <label for="email" class="fg2_la1">Project:<span class="spn1">*</span></label>
@@ -760,57 +793,6 @@ function closeNav5() {
                 <a href="javascript:;" onclick="openWin()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a>
               </div> 
             </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_640 sa_480">
-              <label for="email" class="fg2_la1">Guarantee Category:<span class="spn1">*</span></label>
-              <div class="row rl_prt">
-                <div class="prtd_rat guar_cat">
-                  <div class="form-check fg6">
-                    <input class="form-check-input" type="radio" name="ratio1" id="chk_1" value="option2" onclick="limit()">
-                    <label class="form-check-label tr_c" for="chk_1"><i class="fa fa-unlock fa_lo"></i> Open </label>
-                  </div>
-                  <div class="form-check fg6">
-                    <input class="form-check-input" type="radio" name="ratio1" id="chk_2" value="option1" checked="" onclick="limit1()">
-                    <label class="form-check-label tr_c" for="chk_2"><i class="fa fa-lock fa_lo"></i> Limited </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
-              <label for="email" class="fg2_la1">Currency:<span class="spn1">*</span></label>
-              <select class="form-control fg2_inp1 inp_mst" name="browser">
-                <option>USD - US Dollar</option>
-                <option>INR - Indian Rupee</option>
-              </select>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
-              <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
-              <input type="text" class="form-control fg2_inp1 inp_mst tr_r" placeholder="0.00">
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1  sa_480">
-              <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span></label>
-              <div id="datepicker3" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-                <input class="form-control inp_bdr inp_mst z_1a" type="text">
-                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-              </div>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
-              <label for="email" class="fg2_la1">Days#:<span class="spn1"></span></label>
-              <div class="input-group dt_wdt">
-                <input class="form-control inp_bdr tr_r tr_r" type="text" placeholder="0" disabled="">
-                <span class="input-group-addon date1">Days</span>
-              </div>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1  sa_480">
-              <label for="pwd" class="fg2_la1">Expiry Date:<span class="spn1">*</span></label>
-              <div id="datepicker4" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-                <input class="form-control inp_bdr inp_mst z_1a" id="dte1" type="text">
-                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-              </div>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480 sub_c" style="display: none;">
-              <label for="email" class="fg2_la1">Contractor:<span class="spn1"></span></label>
-              <input type="text" class="form-control fg2_inp1" placeholder="Contractor" disabled="">
-            </div>
             <div class="fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
               <label for="email" class="fg2_la1">Customer:<span class="spn1">*</span></label>
               <select class="form-control fg2_inp1 inp_mst" name="browser">
@@ -818,25 +800,33 @@ function closeNav5() {
                 <option>Customer 2</option>
               </select>
             </div>
-            <div class="fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
-              <label for="email" class="fg2_la1">Ownership:<span class="spn1"></span></label>
-              <select class="form-control fg2_inp1" name="browser">
-                <option>Employee 1</option>
-                <option>Employee 2</option>
-              </select>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 frm_50 sa_o_fg4 sub_c padg_btm0" style="display: none;">
+              <div class="check1">
+                <div class="">
+                  <label>Sub - Contract:<span class="spn1">*</span></label>
+                  <label class="switch flt_l mar_rg1" title="Select From List">
+                    <input type="checkbox" class="bu_em_al">
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
+              <input type="text" class="form-control fg2_inp1 emp_non" placeholder="Sub-Contract">
+              <div class="emp_al" style="display: none;">
+                <select class="form-control fg2_inp1 fg_chs2 dt_wdt1">
+                  <option>Sub-Contract 1</option>
+                  <option>Sub-Contract 2</option>
+                  <option>Sub-Contract 3</option>
+                </select>
+                <a href="javascript:;" onclick="openWin()" title="Add New Customer"><span class="input-group-addon cur6"><i class="fa fa-plus"></i></span></a>
+              </div> 
             </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_2 sa_480">
-              <label for="email" class="fg2_la1">Address:<span class="spn1">*</span></label>
-              <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Address"></textarea>
+            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480 sub_c" style="display: none;">
+              <label for="email" class="fg2_la1">Contractor:<span class="spn1"></span></label>
+              <input type="text" class="form-control fg2_inp1" placeholder="Contractor" disabled="">
             </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_2 sa_480">
-              <label for="email" class="fg2_la1">Subject:<span class="spn1"></span></label>
-              <textarea type="text" class="form-control fg2_inp1" placeholder="Subject"></textarea>
-            </div>
-            <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_2 sa_480">
-              <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-              <textarea type="text" class="form-control fg2_inp1" placeholder="Description"></textarea>
-            </div>
+            <div class="clearfix"></div>
+            <div class="free_sp1"></div>
+            <div class="devider"></div>
             <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 frm_50 sa_o_fg4 padg_btm0">
               <div class="check1">
                 <div class="">
@@ -860,10 +850,24 @@ function closeNav5() {
               <label for="email" class="fg2_la1">Email ID:<span class="spn1"></span></label>
               <input type="text" class="form-control fg2_inp1" placeholder="Email ID">
             </div>
-            <div class="clearfix sub_c" style="display: none;"></div>
+            <div class="fg2 sa_o_fg4 sa_2 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Ownership:<span class="spn1"></span></label>
+              <select class="form-control fg2_inp1" name="browser">
+                <option>Employee 1</option>
+                <option>Employee 2</option>
+              </select>
+            </div>
             <div class="form-group fg2 sa_o_fg4 sa_2 sa_640_i1 sa_2 sa_480">
-              <label for="email" class="fg2_la1">Remarks:<span class="spn1"></span></label>
-              <textarea type="text" class="form-control fg2_inp1" placeholder="Remarks"></textarea>
+              <label for="email" class="fg2_la1">Address:<span class="spn1">*</span></label>
+              <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Address">
+            </div>
+            <div class="form-group fg6 sa_o_fg4 sa_2 sa_640_i1 sa_2 sa_480">
+              <label for="email" class="fg2_la1">Subject:<span class="spn1"></span></label>
+              <textarea type="text" rows="3" class="form-control fg2_inp1 wid_92_i" placeholder="Subject"></textarea>
+            </div>
+            <div class="form-group fg6 sa_o_fg4 sa_2 sa_640_i1 sa_2 sa_480">
+              <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
+              <textarea type="text" rows="3" class="form-control fg2_inp1 wid_92_i" placeholder="Description"></textarea>
             </div>
           </div>
           <div class="clearfix"></div>
@@ -944,7 +948,7 @@ function closeNav5() {
           <div class="fg2 sa_640_i1 sa_480">
             <label for="email" class="fg2_la1">Template:<span class="spn1">*</span>
               <a href="#shw_prd">
-              <button class="btn act_btn bn1 flt_r mr_rgt11 edit_prd" title="Edit">
+              <button class="btn act_btn bn1 flt_r mr_rgt11" title="Edit" data-toggle="modal" data-target="#edt_notification">
                 <i class="fa fa-edit"></i>
               </button>
             </a>
@@ -1183,6 +1187,141 @@ function closeNav5() {
   </div>
 </div>
 
+<!-- Modal1 -->
+<div class="modal fade" id="edt_notification">
+  <div class="modal-dialog wid_70i" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Template</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class=" br_1_et">
+              <div class="col-md-11 bg_wht">
+                <div class="fg4 mar_at flt_l" style="width: 26%;">
+                 <h3 class="mar_tp1"><span class="prd_hd">Period:<span class="spn1">*</span></span>
+                  <div class="prd_btn">
+                    <button class="btn-prd_btn prd_btn1 btn_prd_sel">Days</button>
+                    <button class="btn-prd_btn prd_btn2">Hours</button>
+                  </div>
+                 </h3>
+                    <div class="form-group">
+                      <input type="text" class="form-control fg2_inp1 tr_r" placeholder="0" style="width: 80%!important;"><button class="btn_clr" title="Clear"><i class="fa fa-undo"></i></button>
+                    </div>
+                  </div>
+
+                <div class="fg6 mar_at flt_l ">
+                  <h3 class="mar_tp1"><span class="prd_hd">Intimation:<span class="spn1">*</span></span>
+                    <div class="fg4 tab3 mar_at flt_l intim">
+                      <div class="fg2 col_25">
+                        <button class="btn btn-info btn_int btn_dvsn dflt_opn" title="Division">
+                          <i class="fa fa-building"></i>
+                        </button>
+                      </div>
+                      <div class="fg2 col_25">
+                        <button class="btn btn-info btn_int btn_dsgtn" title="Designation">
+                          <i class="fa fa-black-tie"></i>
+                        </button>
+                      </div>
+                      <div class="fg2 col_25">
+                        <button class="btn btn-info btn_int btn_emply" title="Employee">
+                          <i class="fa fa-users"></i>
+                        </button>
+                      </div>
+                      <div class="fg2 col_25">
+                        <button class="btn btn-info btn_int btn_mail" title="Generic Mail ID">
+                          <i class="fa fa-envelope-o"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </h3>
+                  <div class="box_inr1">
+                    <div class="r1_int">
+                      <div class="fg_3_1 col_75 sa_480 mar_at flt_l">
+                        <div id="division" class="opn_dvsn" style="display:block;">
+                          <select class="form-control fg2_inp1">
+                            <option>Division 1</option>
+                            <option>Division 2</option>
+                            <option>Division 3</option>
+                          </select>
+                        </div>
+                        <div id="designation" class="tabcontent opn_dsgtn" style="display: none;">
+                          <select class="form-control fg2_inp1">
+                            <option>Designation 1</option>
+                            <option>Designation 2</option>
+                            <option>Designation 3</option>
+                          </select>
+                        </div>
+                        <div id="employee" class="tabcontent opn_emply" style="display: none;">
+                          <select class="form-control fg2_inp1">
+                            <option>Employee 1</option>
+                            <option>Employee 2</option>
+                            <option>Employee 3</option>
+                          </select>
+                        </div>
+                        <div id="mail" class="tabcontent opn_mail" style="display: none;">
+                          <input class="form-control fg2_inp1" placeholder="Generic Mail ID">
+                        </div>
+                      </div>
+                      <div class="" style="width: auto;margin:auto;float: left;">
+                        <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                          <i class="fa fa-plus"></i>
+                        </button>
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="fg7 notf_plcy" style="width: 20%;">
+                    <div class="fg12 sa_640_i">
+                      <h3>Notifications:<span class="spn1">*</span></h3>
+                    </div>
+                    <div class="form-group fg6 sa_fg4_1 sa_640_i1">
+                      <label for="email" class="fg2_la1">Dashboard:<span class="spn1"></span></label>
+                      <div class="check1">
+                        <div class="">
+                          <label class="switch flt_l mar_rg1">
+                            <input type="checkbox" class="">
+                            <span class="slider_tog round"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group fg6 sa_fg4_1 sa_640_i1">
+                      <label for="email" class="fg2_la1">Email:<span class="spn1"></span></label>
+                      <div class="check1">
+                        <div class="">
+                          <label class="switch flt_l mar_rg1">
+                            <input type="checkbox" class="">
+                            <span class="slider_tog round"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="fg9 tr_c mar_at flt_l mar_tp1 mr_lft6">
+                <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add New">
+                  <i class="fa fa-plus-circle"></i>
+                </button>
+                <button class="btn act_btn bn3 cls_prd" title="Close">
+                  <i class="fa fa-times"></i>
+                </button>
+              </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="war-btn">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal1 -->
 <div class="modal fade" id="exampleModal1">
@@ -1664,12 +1803,12 @@ function sl_z1() {
 $(document).ready(function(){
   $(".shw_grt1").click(function(){
     $(".ins1").hide();
-    $(".grt1").show();
+    $(".grt1").fadeIn(800);
     $(".shw_grt1").addClass("sel_plc_ins");
     $(".shw_ins1").removeClass("sel_plc_ins");
   });
   $(".shw_ins1").click(function(){
-    $(".ins1").show();
+    $(".ins1").fadeIn(800);
     $(".grt1").hide();
     $(".shw_grt1").removeClass("sel_plc_ins");
     $(".shw_ins1").addClass("sel_plc_ins");
