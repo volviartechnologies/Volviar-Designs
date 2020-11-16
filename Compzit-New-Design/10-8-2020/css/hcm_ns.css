@@ -1628,3 +1628,5 @@ textarea.form-control{height: 42px;}
 .wid_70i{width: 70%;}
 .dflt_opn{background-color:#48acf2!important;color: #fff!important;}
 .mr_lft6{margin-left: 6px;}
+.intim .btn_int:focus{background-color:#91d2ff!important;}
+.btn_clr:focus{color:#000;}
