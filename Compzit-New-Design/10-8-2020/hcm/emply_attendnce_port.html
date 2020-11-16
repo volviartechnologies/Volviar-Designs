@@ -959,23 +959,30 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
+<!---inner_content_sections area_started-->
           <h1 class="h1_con">Employee Attendance Porting</h1>
-          <div class="form-group fg6 sa_1 sa_480">
-            <label for="email" class="fg2_la1 pad_l">Choose CSV File for Importing Data: <span class="spn1">&nbsp;</span></label>
-            <input type="file" id="file-upload" multiple="" required="">
-            <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-            <div id="file-upload-filename" class="file_n"></div>
-          </div>
-          <div class="fg2 sa_2 sa_480">
-            <label class="form1 mar_bo mar_tp">
-              <span class="button-checkbox">
-                <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                <input type="checkbox" class="hidden" />
-              </span>
-              <p class="pz_s">My data has Headers</p>
-            </label>
-          </div>
+          
+            <div class="form-group fg2 sa_fg3 sa_640">
+              <label for="email" class="fg2_la1 pad_l">Choose File: <span class="spn1">&nbsp;</span></label>
+              <input type="file" id="file-upload" multiple required />
+              <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Import data from CSV file</label>
+              <div id="file-upload-filename" class="file_n"></div>
+            </div>
+              
+            <div class="fg7_5 sa_fg3 sa_640">
+              <label class="form1 mar_bo mar_tp">
+                <span class="button-checkbox">
+                  <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                  <input type="checkbox" class="hidden" />
+                </span>
+                <p class="pz_s">My Data has Headers</p>
+              </label>
+            </div>
+
+            <div class="fg5 fg2_adn">
+              <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
+              <button class="btn tab_but1 butn5"><i class="fa fa-download"></i> Download CSV Template</button>  
+            </div>
           <div class="fg2 fg2_blk sa_2 sa_480">
             <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
             <button type="submit" class="btn sub1">Import</button>
@@ -983,31 +990,17 @@ function closeNav5() {
 <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
-      <div class="pull-right sell_1">
-        <button class="btn btn-info" disabled=""><i class="fa fa-angle-double-left"></i> Previous</button>
-        <button class="btn btn-danger"><i class="fa fa-trash"></i> Cancel</button>
-        <button class="btn btn-info">Next <i class="fa fa-angle-double-right"></i></button>
-      </div>
-      <h3>Correct List</h3>
+<!---=================section_devider============-->
 
-      <div class="tab_res sa_640">
-        <div class="col-md-12">
-          <p><span class="tbl_srt1">Showing </span> 
-            <select class="form-control tbl_srt">
-              <option>10</option>
-              <option>25</option>
-              <option>50</option>
-              <option>100</option>
-            </select> Entries
-          </p>
-        </div>
+     <div class="sec_1">
+      <h3>Correct List</h3>
+      <div class="clearfix"></div>
         <div class="r_800">
-          <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+          <table id="example" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="col-md-2 tr_l">Employee ID</th>
-                <th class="col-md-2 tr_l">First Name</th>
+                <th class="col-md-1 tr_l">Employee ID</th>
+                <th class="col-md-3 tr_l">First Name</th>
                 <th class="col-md-2 tr_l">Last Name</th>
                 <th class="col-md-2 tr_c">Date</th>
                 <th class="col-md-2 tr_c">Check In</th>
@@ -1020,20 +1013,104 @@ function closeNav5() {
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">Employee</td>
                 <td class="tr_c">05/11/2019</td>
-                <td class="tr_c">01/11/2019</td>
-                <td class="tr_c">10/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
               </tr>
               <tr>
                 <td class="tr_l">Emp0001</td>
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">Employee</td>
                 <td class="tr_c">05/11/2019</td>
-                <td class="tr_c">01/11/2019</td>
-                <td class="tr_c">10/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
+      <div class="sec_2" style="display: none;">
+      <h3>Early Going List</h3>
+      <div class="clearfix"></div>
+        <div class="r_800">
+          <table id="example1" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="col-md-1 tr_l">Employee ID</th>
+                <th class="col-md-3 tr_l">First Name</th>
+                <th class="col-md-2 tr_l">Last Name</th>
+                <th class="col-md-2 tr_c">Date</th>
+                <th class="col-md-2 tr_c">Check In</th>
+                <th class="col-md-2 tr_c">Check Out</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sec_3" style="display: none;">
+      <h3>Late Comers List</h3>
+      <div class="clearfix"></div>
+        <div class="r_800">
+          <table id="example2" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="col-md-1 tr_l">Employee ID</th>
+                <th class="col-md-3 tr_l">First Name</th>
+                <th class="col-md-2 tr_l">Last Name</th>
+                <th class="col-md-2 tr_c">Date</th>
+                <th class="col-md-2 tr_c">Check In</th>
+                <th class="col-md-2 tr_c">Check Out</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+        <div class="clearfix"></div>
+        <div class="free_sp1"></div>
+        <div class="devider"></div>
+
+      <div class="pull-right sell_1">
+        <button class="btn btn-info pre_sec" disabled=""><i class="fa fa-angle-double-left"></i> Previous</button>
+        <button class="btn btn-info pre_sec1" style="display: none;"><i class="fa fa-angle-double-left"></i> Previous1</button>
+        <button class="btn btn-danger"><i class="fa fa-trash"></i> Cancel</button>
+        <button class="btn btn-success sav_sec" disabled=""><i class="fa fa-save"></i> Save</button>
+        <button class="btn btn-info nxt_sec">Next <i class="fa fa-angle-double-right"></i></button>
+        <button class="btn btn-info nxt_sec1" style="display: none;">Next1 <i class="fa fa-angle-double-right"></i></button>
       </div>
 
 
@@ -1474,5 +1551,83 @@ function showFileName( event ) {
 </script>
 <!----file_uploader_script_Closed--->
 
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+    $('#example1').DataTable();
+    $('#example2').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+  <!---Data_table_script for search_closed-->
+<script>
+$(document).ready(function(){
+  $(".nxt_sec").click(function(){
+    $(".sec_1").hide();
+    $(".sec_2").show();
+    $(".nxt_sec").hide();
+    $(".nxt_sec1").show();
+    $(".pre_sec").prop('disabled', false);
+  });
+  $(".nxt_sec1").click(function(){
+    $(".sec_2").hide();
+    $(".sec_3").show();
+    $(".pre_sec1").show();
+    $(".pre_sec").hide();
+    $(".nxt_sec1").prop('disabled', true);
+    $(".sav_sec").prop('disabled', false);
+  });
+  $(".pre_sec1").click(function(){
+    $(".sec_1, .sec_3").hide();
+    $(".sec_2").show();
+    $(".pre_sec").show();
+    $(".pre_sec1").hide();
+    $(".nxt_sec1").prop('disabled', false);
+    $(".sav_sec").prop('disabled', true);
+  });
+  $(".pre_sec").click(function(){
+    $(".sec_2, .sec_3").hide();
+    $(".sec_1").show();
+    $(".nxt_sec1").hide();
+    $(".nxt_sec").show();
+    $(".sav_sec, .pre_sec").prop('disabled', true);
+  });
+});
+</script>
 </body>
 </html>
