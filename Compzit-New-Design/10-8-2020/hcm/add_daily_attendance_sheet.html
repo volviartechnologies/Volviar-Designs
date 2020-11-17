@@ -960,45 +960,40 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Add Daily Attendance Sheet</h2>
 
-        <div class="form-group fg2 hcm_2_1">
+        <div class="fg_3_1 lve_typ">
+        <div class="form-group fg4 hcm_2_1">
           <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
-          <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+          <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_2 sa_480">
+        <div class="form-group fg4 sa_fg4 sa_2 sa_480">
           <label for="email" class="fg2_la1">Idle Hours:<span class="spn1">*</span></label>
           <input class="form-control fg2_inp1 fg_chs2 inp_mst" placeholder="Idle Hours">
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_640 sa_480">
+        <div class="form-group fg4 sa_fg4 sa_640 sa_480">
           <label for="email" class="fg2_la1">OT Category:<span class="spn1">*</span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">NORMAL OT</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Holidat OT</label>
-              </div>
-            </div>
+          <div class=" dt_bsd1 mr_tz">
+            <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/cal.png"></i><span> Normal OT</span></button>
+            <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/icon_3.png"></i><span> Holiday OT</span></button>  
           </div>
         </div>
-
         <div class="clearfix"></div>
 
-        <div class="form-group fg6 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
+        <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
           <label for="email" class="fg2_la1 pad_l">Export File: <span class="spn1">&nbsp;</span></label>
           <input type="file" id="file-upload" multiple required />
           <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
           <div id="file-upload-filename" class="file_n"></div>
+          <button class="btn act_btn bn3 fnbtn" title="Remove Selected File">
+            <i class="fa fa-trash"></i>
+          </button>
         </div>
               
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
+        <div class="form-group fg5 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
           <label for="email" class="fg2_la1 pad_l">My data has Headers:<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
@@ -1022,37 +1017,40 @@ function closeNav5() {
             </div>
           </div>
         </div>
-
         <div class="clearfix"></div>
 
-        <div class="fg6 mar_tp_cnt sa_480">
-        <p>
-          <a href="#"><b class="bolder b2a"><i class="fa fa-sticky-note-o"></i> Conditions Note:</b></a><br>
-          <b class="bolder po1"> Note: Required CSV File Must Contain Employee Code, Project Code And Attendance Fields.</b>
-        </p>
+      <span class="opp_ico_img_ptp1 btm_info" data-toggle="tooltip" title="Required CSV File Must Contain Employee Code, Project Code And Attendance Fields." tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span>
+      </div>
+
+        <div class="fg4">
+          <div class="box_aplc extr_cls">
+            
+          <h3>Last Imported Records</h3>
+            <div class="r_480 dt_tblz sp_msg1">
+              <table class="table table-bordered">
+                <thead class="thead1">
+                  <tr>
+                    <th class="th_b8 tr_c">Date</th>
+                    <th class="th_b1 tr_c">Employees#</th>
+                    
+                  </tr>
+                </thead>
+                <tbody id="myTable">
+                <tr class="">
+                  <td class="tr_c">03/10/2019</td>
+                  <td class="tr_c">100</td>
+                </tr>
+
+                <tr>
+                  <td class="tr_c">02/10/2019</td>
+                  <td class="tr_c">100</td>
+                </tr>            
+               </tbody>
+            </table>
+          </div>
+          </div>
         </div>
         <div class="fg4 flt_r sa_fg3 sa_480">
-          <h3>Last Imported Records</h3>
-          <table class="table table-bordered">
-            <thead class="thead1">
-              <tr>
-                <th class="th_b8 tr_c">Date</th>
-                <th class="th_b1 tr_c">Employees#</th>
-                
-              </tr>
-            </thead>
-            <tbody id="myTable">
-            <tr class="">
-              <td class="tr_c">03/10/2019</td>
-              <td class="tr_c">100</td>
-            </tr>
-
-            <tr class="tr1">
-              <td class="tr_c">02/10/2019</td>
-              <td class="tr_c">100</td>
-            </tr>            
-           </tbody>
-        </table>
         </div>
         
    
@@ -1494,6 +1492,16 @@ function showFileName( event ) {
 $(document).ready(function(){
   $(".b2a").click(function(){
     $(".po1").toggle();
+  });
+    $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+    $(".btn_z1, .btn_z2").prop('disabled', true); 
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+    $(".btn_z1, .btn_z2").prop('disabled', false);
   });
 });
 </script>

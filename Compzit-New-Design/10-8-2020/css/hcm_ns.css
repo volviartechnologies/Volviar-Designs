@@ -1651,6 +1651,10 @@ textarea.form-control{height: 42px;}
 .modal-body .max_60{width: 100%;}
 .set_btn, .hid_btn{border-radius: 0px 4px 4px 0px!important; padding: 1px;}
 .inx1{margin-top: 10px;width: auto;margin: auto;float: left;margin-top: 10px;height: auto;background-color:#daeffd;padding:2px 9px; border-radius: 4px; margin-left: 4px;}
+.extr_cls{height: auto;}
+.extr_cls .dt_tblz tbody tr:hover, .dt_tblz tbody tr:focus{box-shadow: none!important;background-color: #fff;}
+.fnbtn{float: right;margin-right: 30px;}
+.mr_tz{margin-top: 0px;width: 100%;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
