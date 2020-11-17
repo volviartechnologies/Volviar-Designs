@@ -1091,8 +1091,9 @@ function closeNav5() {
                   </div>
                   </div>
 
-                  <div class="fg6 show_intm">
-                    <button class="btn act_btn bn3 set_btn" title="Set Intimation"><i class="fa fa-exclamation-triangle"></i></button>
+                  <div class="fg9 show_intm">
+                    <button class="btn act_btn bn3 set_btn" title="Set Intimation"><i class="fa fa-chevron-right"></i></button>
+                    <button class="btn act_btn bn3 hid_btn" title="Hide Intimation" style="display:none;"><i class="fa fa-chevron-left"></i></button>
                   </div>
 
                 <div class="fg6 wid_54">
@@ -1810,8 +1811,14 @@ function limit3() {
     $(".shw_dsgtn, .shw_emply, .shw_dvsn").hide();
   }); 
   $(".set_btn").click(function(){ 
-    $(".show_intm").hide();
+    $(".set_btn").hide();
+    $(".hid_btn").show();
     $(".wid_54").show();
+  }); 
+  $(".hid_btn").click(function(){ 
+    $(".hid_btn").hide();
+    $(".set_btn").show();
+    $(".wid_54").hide();
   }); 
 });
 </script>
