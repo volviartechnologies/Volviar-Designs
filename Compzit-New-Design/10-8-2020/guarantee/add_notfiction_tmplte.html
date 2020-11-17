@@ -550,14 +550,14 @@ function closeNav5() {
 
           <h1 class="h1_con">Add Notification Template</h1>
 
-          <div class="fg2 sa_640_i1 sa_480">
+          <div class="fg5 sa_640_i1 sa_480">
             <label for="email" class="fg2_la1">Template Type:<span class="spn1">*</span></label>
             <select class="form-control fg2_inp1 inp_mst" name="browser">
               <option>Bank Guarantee</option>
               <option>Insurance</option>
             </select>
           </div>
-          <div class="fg2 sa_640_i1 sa_480">
+          <div class="fg5 sa_640_i1 sa_480">
             <label for="email" class="fg2_la1">Template Name:<span class="spn1">*</span></label>
             <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Template Name">
           </div>
@@ -627,13 +627,14 @@ function closeNav5() {
                   </div>
                   </div>
 
-                  <div class="fg6 show_intm">
-                    <button class="btn act_btn bn3 set_btn" title="Set Intimation"><i class="fa fa-exclamation-triangle"></i></button>
+                  <div class="fg9 show_intm">
+                    <button class="btn act_btn bn3 set_btn" title="Set Intimation"><i class="fa fa-chevron-right"></i></button>
+                    <button class="btn act_btn bn3 hid_btn" title="Set Intimation" style="display:none;"><i class="fa fa-chevron-left"></i></button>
                   </div>
 
                 <div class="fg6 wid_54">
                   <div class="col-md-12 mar_at flt_l palft_04">
-                    <h3 class="mar_tp1"><span class="prd_hd">Intimation:<span class="spn1">*</span></span>
+                    <h3 class="mar_tp1 inx1"><span class="prd_hd">Intimation:<span class="spn1">*</span></span>
                     </h3>
                   </div>
 
@@ -694,7 +695,9 @@ function closeNav5() {
                             <i class="fa fa-trash"></i>
                           </button>
                         </div>
+                  <div class="clearfix"></div>
                   </div>
+
                 </div>
               </div>
               <div class="fg9 tr_c mar_at flt_l mar_tp1">
@@ -1394,8 +1397,14 @@ function limit3() {
     $(".shw_prd").hide();
   });
   $(".set_btn").click(function(){ 
-    $(".show_intm").hide();
+    $(".set_btn").hide();
+    $(".hid_btn").show();
     $(".wid_54").show();
+  }); 
+  $(".hid_btn").click(function(){ 
+    $(".hid_btn").hide();
+    $(".set_btn").show();
+    $(".wid_54").hide();
   });  
 });
 </script>
