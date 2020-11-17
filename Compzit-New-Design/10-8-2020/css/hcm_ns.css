@@ -1648,7 +1648,7 @@ textarea.form-control{height: 42px;}
 .fg43 .prd_btn .fg2_inp1{width: 65%!important;}
 .br_1_et{width: 100%;margin:auto;float: left;height: auto;}
 .show_intm{text-align: left;margin-top: 30px;margin-left: 16px;}
-
+.modal-body .max_60{width: 100%;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
