@@ -1655,6 +1655,24 @@ textarea.form-control{height: 42px;}
 .extr_cls .dt_tblz tbody tr:hover, .dt_tblz tbody tr:focus{box-shadow: none!important;background-color: #fff;}
 .fnbtn{float: right;margin-right: 30px;}
 .mr_tz{margin-top: 0px;width: 100%;}
+.blk_box{width: auto;margin: auto;float: none;text-align: center;}
+.blk_box img{width: auto;max-width: 500px;height: auto;max-height: 350px;}
+.blk_box p{font-size: 13px;width: 20%; margin: auto;background-color: #f1f8fd;padding: 4px;border-radius: 8px;}
+.mont_lst{width: 100%;margin: auto;float: left;margin-bottom: 10px;}
+.wid_8_3{width:16.66%;margin:auto;float: left;height: auto;background-color: #fff;color:#44a2e4;border:1px solid #d9efff;padding:4px;margin-bottom: 10px;}
+.sel_mnt{background-color: #44a2e4;color: #fff;}
+.wid_8_3:hover, .wid_8_3:focus{background-color:#ecf7ff;color: #44a2e4;}
+.wid_7_1{width: 14.27%;margin:auto;float: left;height:60px;border:none;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.dayz{width: 50%;margin:auto;float: left;font-size:24px;font-weight: 400;border-right: 1px solid #f2f2f2;text-align:right;padding-right: 10px;background-color:#f6fbff;color: #000;
+          height:58px;line-height: 64px;}
+.cal_der{width: 100%;margin: auto;float: left;border: 1px solid #ccc;}
+.emp1_cnt{font-size: 11px;background-color:transparent;border:none;border-bottom:1px solid #f2f2f2;padding:0px 1px;width: 100%;text-align: left;padding-left: 10px;}
+.emp1_cnt i {margin-right: 4px;}
+.data_box{width: 50%;margin:auto;float: left;}
+.emp_bt1{color:#17c304;}
+.emp_bt2{color:#0fa4bd;}
+.emp_bt3{color:#cc9800;}
+.bdr_rg1{border-right: 1px solid #ccc;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
