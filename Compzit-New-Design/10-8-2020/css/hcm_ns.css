@@ -1673,6 +1673,12 @@ textarea.form-control{height: 42px;}
 .emp_bt2{color:#0fa4bd;}
 .emp_bt3{color:#cc9800;}
 .bdr_rg1{border-right: 1px solid #ccc;}
+.mr_tp0{margin-top:0px;}
+.widt_50{width: 38%;margin: auto;float: left;}
+.mr_tp_10{margin-top:-10px;}
+.bdr_lne li{border-bottom:1px solid #ccc;padding:2px;}
+.mrbtm_20{margin-bottom: 20px;}
+.bdr_lne{width: 100%;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

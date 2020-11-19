@@ -983,15 +983,15 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="fg2 fg2_hc4 frm_50 sa_2 sa_o_fg6">
-          <label class="form1 mar_bo mar_tp">
-            <span class="button-checkbox">
-              <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-              <input type="checkbox" class="hidden">
-            </span>
-            <p class="pz_s">Show Deleted Entries</p>
-          </label>
-        </div>
+            <div class="fg7_5 sa_fg2">
+              <label class="form1 mar_bo mar_tp lb_wa">
+                <span class="button-checkbox">
+                  <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                  <input type="checkbox" class="hidden" />
+                </span>
+                <p class="pz_s">Show Deleted Entries</p>
+              </label>
+            </div>
 
         <div class="fg8">
           <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
@@ -1002,50 +1002,28 @@ function closeNav5() {
       <div class="clearfix"></div>
       <!-- <div class="free_sp"></div> -->
       <div class="devider"></div>
-<!---=================section_devider============--->
-        
-        <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
+<!---=================section_devider============-->
 
           <div class="r_800">
-          <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="tr_l">
+                <th class="th_b7 tr_l"> Employee ID
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
                 </th>
-                <th class="tr_l">
+                <th class="th_b4 tr_l">Employee
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee">
                 </th>
-                <th class="tr_c">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Join/Rejoin Date">
+                <th class="th_b6 tr_c">Join / Resume Date
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Join / Resume Date">
                 </th>
-                <th class="tr_c">
+                <th class="th_b6 tr_c">Settled Date
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Settled Date">
                 </th>
-                <th class="tr_r">
+                <th class="th_b8 tr_r">Settlement Amount
                   <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Settlement Amount">
                 </th>
-                <th rowspan="2" class="th_b6">Actions</th>
-              </tr>
-              <tr>
-                <th class="th_b7 tr_l"> Employee ID</th>
-                <th class="th_b8 tr_l">Employee</th>
-                <th class="th_b6 tr_c">Join / Rejoin Date</th>
-                <th class="th_b6 tr_c">Settled Date</th>
-                <th class="th_b8 tr_r">Settlement Amount</th>
+                <th class="th_b6">Actions</th>
               </tr>
              
             </thead>
@@ -1126,18 +1104,6 @@ function closeNav5() {
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
         </div>
 
 
@@ -1564,6 +1530,100 @@ $(".wr2").click(function(){
 
 <!-------------print_script_close--------------------->
 
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+  <!---Data_table_script for search_closed--->
+
+<!----data_table_css & Scripts_closed--->
+
+<!----alert message_script---->
+<script type="text/javascript">
+  function myAlertTop(){
+  $(".myAlert-top").show(100);
+  setTimeout(function(){
+    $(".myAlert-top").hide(400); 
+  }, 1500);
+}
+
+function myAlertBottom(){
+  $(".myAlert-bottom").show(100);
+  setTimeout(function(){
+    $(".myAlert-bottom").hide(400); 
+  }, 1500);
+
+}
+</script>
+
+<script type="text/javascript">
+  $( "#war-btn" ).click(function() {
+  $( "div.war" ).fadeIn( 200 ).delay( 500 ).fadeOut( 400 );
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".imprt_o").click(function(){
+    $(".import_opt").toggle(300);
+  });
+});
+</script>
+
+  <script type="text/javascript">
+  $(document).ready(function(){ 
+    $(".cont_contr").scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $(".cont_contr").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+});
+</script>
+
+<!----alert_message_script_closed--->
 
 </body>
 </html>
