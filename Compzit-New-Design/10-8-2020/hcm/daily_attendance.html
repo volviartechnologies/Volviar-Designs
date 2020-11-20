@@ -972,19 +972,22 @@ function closeNav5() {
           </div>
           <div class="fg_3_1 mont_al" style="display: none;">
             <div class="mont_lst">
-              <button class="wid_8_3 mnt1 sel_mnt">January</button>
-              <button class="wid_8_3 mnt2">February</button>
-              <button class="wid_8_3 mnt3">March</button>
-              <button class="wid_8_3 mnt4">April</button>
-              <button class="wid_8_3 mnt5">May</button>
-              <button class="wid_8_3 mnt6">June</button>
-              <button class="wid_8_3 mnt7">July</button>
-              <button class="wid_8_3 mnt8">August</button>
-              <button class="wid_8_3 mnt9">September</button>
-              <button class="wid_8_3 mnt10">October</button>
-              <button class="wid_8_3 mnt11">November</button>
-              <button class="wid_8_3 mnt12">December</button>
+              <button class="wid_8_3 mnt1 sel_mnt"><i class="fa fa-calendar"></i> January</button>
+              <button class="wid_8_3 mnt2"><i class="fa fa-calendar"></i> February</button>
+              <button class="wid_8_3 mnt3"><i class="fa fa-calendar"></i> March</button>
+              <button class="wid_8_3 mnt4"><i class="fa fa-calendar"></i> April</button>
+              <button class="wid_8_3 mnt5"><i class="fa fa-calendar"></i> May</button>
+              <button class="wid_8_3 mnt6"><i class="fa fa-calendar"></i> June</button>
+              <button class="wid_8_3 mnt7"><i class="fa fa-calendar"></i> July</button>
+              <button class="wid_8_3 mnt8"><i class="fa fa-calendar"></i> August</button>
+              <button class="wid_8_3 mnt9"><i class="fa fa-calendar"></i> September</button>
+              <button class="wid_8_3 mnt10"><i class="fa fa-calendar"></i> October</button>
+              <button class="wid_8_3 mnt11"><i class="fa fa-calendar"></i> November</button>
+              <button class="wid_8_3 mnt12" disabled=""><i class="fa fa-calendar"></i> December</button>
             </div>
+          </div>
+          <div class="fg9 flt_r">
+            <button class="btn btn_imprt" title="Last Imported Records" data-toggle="modal" data-target="#records"><i class="fa fa-book"></i></button>
           </div>
           <div class="clearfix"></div>
           <div class="devider"></div>
@@ -995,260 +998,1612 @@ function closeNav5() {
           <div class="cal_der" style="display: none;">
             <!--row-1-->
             <div class="wid_7_1">
-              <span class="dayz">1</span>
+              <button class="dayz fa_day" onclick="window.location.href = 'add_daily_attendance_sheet.html'">1</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr1" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="drop_tm drop_cal tm_op1" style="display: none;">
+                <h5>PREVIOUS IMPORT</h5>
+                <div class="tbl_entr">
+                  <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                    <thead class="thead1">
+                      <tr>
+                        <th class="col-md-3 tr_c">Date</th>
+                        <th class="col-md-3 tr_l">CSV file</th>
+                        <th class="col-md-3 tr_c">Employee#</th>
+                        <th class="col-md-3 tr_c">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tr_c">20/11/2020</td>
+                        <td class="tr_l">file.csv</td>
+                        <td class="tr_c">100</td>
+                        <td>
+                          <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tr_c">20/11/2020</td>
+                        <td class="tr_l">file.csv</td>
+                        <td class="tr_c">100</td>
+                        <td>
+                          <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">2</span>
+              <button class="dayz pa_day">2</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr2" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
+
+                  <div class="drop_tm drop_cal tm_op2" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
               </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">3</span>
+              <button class="dayz">3</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr3" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op3" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">4</span>
+              <button class="dayz">4</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr4" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op4" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">5</span>
+              <button class="dayz">5</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr5" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op5" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">6</span>
+              <button class="dayz">6</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr6" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op6" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">7</span>
+              <button class="dayz hldy">7</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr7" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op7" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <!--row-1--closed-->
             <!--row-1-->
             <div class="wid_7_1">
-              <span class="dayz">8</span>
+              <button class="dayz">8</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr8" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op8" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">9</span>
+              <button class="dayz">9</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr9" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op9" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">10</span>
+              <button class="dayz">10</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr10" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op10" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">11</span>
+              <button class="dayz">11</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr11" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op11" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">12</span>
+              <button class="dayz">12</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr12" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op12" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">13</span>
+              <button class="dayz">13</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr13" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op13" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">14</span>
+              <button class="dayz hldy">14</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr14" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op14" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <!--row-1--closed-->
             <!--row-1-->
             <div class="wid_7_1">
-              <span class="dayz">15</span>
+              <button class="dayz">15</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr15" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op15" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">16</span>
+              <button class="dayz">16</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr16" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op16" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">17</span>
+              <button class="dayz">17</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr17" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op17" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">18</span>
+              <button class="dayz">18</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr18" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op18" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">19</span>
+              <button class="dayz">19</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr19" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op19" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">20</span>
+              <button class="dayz">20</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr20" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op20" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">21</span>
+              <button class="dayz hldy">21</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr21" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op21" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <!--row-1--closed-->
             <!--row-1-->
             <div class="wid_7_1">
-              <span class="dayz">22</span>
+              <button class="dayz">22</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr22" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op22" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">23</span>
+              <button class="dayz">23</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr23" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op23" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">24</span>
+              <button class="dayz">24</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr24" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op24" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">25</span>
+              <button class="dayz">25</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr25" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op25" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
             <div class="wid_7_1">
-              <span class="dayz">26</span>
+              <button class="dayz">26</button>
               <div class="data_box">
-                <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
-                <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
-                <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
+                <span class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</span>
+                <button class="emp1_cnt emp_bt2" title="Attendance Marked" data-toggle="modal" data-target="#emplyelst"><i class="fa fa-pencil"></i> 3000</button>
+                <button class="emp1_cnt emp_bt3" title="Attendance Pending" data-toggle="modal" data-target="#pndglst"><i class="fa fa-pencil-square"></i> 3000</button>
+                <div class="actn_btn">
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Confirm ">
+                      <i class="fa fa-check"></i>
+                  </button>
+                  <button class="btn act_btn bn4 bt_e show_add_mbr26" type="button" title="Show Previous Import">
+                      <i class="fa fa-list-alt"></i>
+                  </button>
+                  <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                      <i class="fa fa-trash"></i>
+                  </button>
+                  <button class="btn act_btn bn2 bt_e" type="button" title="Reopen ">
+                      <i class="fa fa-repeat"></i>
+                  </button>
+                </div>
               </div>
+
+                  <div class="drop_tm drop_cal tm_op26" style="display: none;">
+                    <h5>PREVIOUS IMPORT</h5>
+                    <div class="tbl_entr">
+                      <table class="display table-bordered hcm_tbl_44 dt_tblz imptr_tbl" cellspacing="0" width="100%">
+                        <thead class="thead1">
+                          <tr>
+                            <th class="col-md-3 tr_c">Date</th>
+                            <th class="col-md-3 tr_l">CSV file</th>
+                            <th class="col-md-3 tr_c">Employee#</th>
+                            <th class="col-md-3 tr_c">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="tr_c">20/11/2020</td>
+                            <td class="tr_l">file.csv</td>
+                            <td class="tr_c">100</td>
+                            <td>
+                              <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
             </div>
-            <div class="wid_7_1">
-              <span class="dayz">27</span>
-              <div class="data_box">
+            <div class="wid_7_1 disbld_dyz">
+              <button class="dayz" disabled="">27</button>
+              <!-- <div class="data_box">
                 <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
                 <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
                 <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
-              </div>
+              </div> -->
             </div>
-            <div class="wid_7_1">
-              <span class="dayz">28</span>
-              <div class="data_box">
+            <div class="wid_7_1 disbld_dyz">
+              <button class="dayz hldy" disabled="">28</button>
+              <!-- <div class="data_box">
                 <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
                 <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
                 <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
-              </div>
+              </div> -->
             </div>
             <!--row-1--closed-->
             <!--row-1-->
-            <div class="wid_7_1">
-              <span class="dayz">29</span>
-              <div class="data_box">
+            <div class="wid_7_1 feb_n ful_30 disbld_dyz">
+              <button class="dayz" disabled="">29</button>
+              <!-- <div class="data_box">
                 <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
                 <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
                 <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
-              </div>
+              </div> -->
             </div>
-            <div class="wid_7_1 feb_n ful_30">
-              <span class="dayz">30</span>
-              <div class="data_box">
+            <div class="wid_7_1 feb_n ful_30 disbld_dyz">
+              <button class="dayz" disabled="">30</button>
+              <!-- <div class="data_box">
                 <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
                 <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
                 <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
-              </div>
+              </div> -->
             </div>
-            <div class="wid_7_1 feb_n ful_d">
-              <span class="dayz">31</span>
-              <div class="data_box bdr_rg1">
+            <div class="wid_7_1 feb_n ful_d disbld_dyz">
+              <button class="dayz" disabled="">31</button>
+              <!-- <div class="data_box bdr_rg1">
                 <button class="emp1_cnt emp_bt1" title="Employee Count"><i class="fa fa-user"></i> 3000</button>
                 <button class="emp1_cnt emp_bt2" title="Partially Allocated"><i class="fa fa-pencil"></i> 3000</button>
                 <button class="emp1_cnt emp_bt3" title="Fully Allocated"><i class="fa fa-pencil-square"></i> 3000</button>
-              </div>
+              </div> -->
             </div>
             <!--row-1--closed-->
           </div>
@@ -1321,22 +2676,192 @@ function closeNav5() {
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="emplyelst" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header mo_hd1">
-        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ATTENDANCE MARKED</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-       ...
+        <table class="display table-bordered hcm_tbl_44" cellspacing="0" width="100%">
+          <thead class="thead1 head_clra">
+            <tr>
+              <th class="col-md-3 tr_l">Employee Code
+                <input type="text" class="tb_inp_1 tb_in" placeholder="Employee Code">
+              </th>
+              <th class="col-md-5 tr_l">Employee Name
+                <input type="text" class="tb_inp_1 tb_in" placeholder="Employee Name">
+              </th>
+              <th class="col-md-2 tr_c">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+              <td>
+                <button class="btn act_btn bn3 bt_e" type="button" title="Delete ">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="modal-footer mo_ft1">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-        
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="pndglst" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ATTENDANCE PENDING</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="display table-bordered hcm_tbl_44" cellspacing="0" width="100%">
+          <thead class="thead1 head_clra">
+            <tr>
+              <th class="col-md-3 tr_l">Employee Code
+                <input type="text" class="tb_inp_1 tb_in" placeholder="Employee Code">
+              </th>
+              <th class="col-md-5 tr_l">Employee Name
+                <input type="text" class="tb_inp_1 tb_in" placeholder="Employee Name">
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+            </tr>
+            <tr>
+              <td class="tr_l">Empl001</td>
+              <td class="tr_l">Employee 1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="records" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog flt_r" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PREVIOUS SUMMARY</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="display table-bordered hcm_tbl_44 " cellspacing="0" width="100%">
+          <thead class="thead1 head_clra">
+            <tr>
+              <th class="col-md-3 tr_c">Date
+              </th>
+              <th class="col-md-5 tr_l">Employees
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tr_c">04/10/2020</td>
+              <td class="tr_l">Employee 1</td>
+            </tr>
+            <tr>
+              <td class="tr_c">04/10/2020</td>
+              <td class="tr_l">Employee 1</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
@@ -1794,6 +3319,209 @@ $(document).ready(function(){
     $(".ful_d, .ful_30").show();
     $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt1").removeClass("sel_mnt");
   });
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+    $('.show_add_mbr1').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op1').toggle();
+        $('.tm_op10, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op1').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr2').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op2').toggle();
+        $('.tm_op1, .tm_op3, .tm_op10, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op2').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr3').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op3').toggle();
+        $('.tm_op1, .tm_op10, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op3').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr4').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op4').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op10, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op4').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr5').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op5').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op10, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op5').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr6').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op6').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op10, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op6').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr7').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op7').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op10, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op7').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr8').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op8').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op10, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op8').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr9').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op9').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op10, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op9').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr10').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op10').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op10').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr11').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op11').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op10, .tm_op12').hide();
+        
+    });
+    
+    $('.tm_op11').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    
+    $('.show_add_mbr12').click( function(e) {
+        
+        e.preventDefault(); // stops link from making page jump to the top
+        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
+        $('.tm_op12').toggle();
+        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op10, .tm_op11').hide();
+        
+    });
+    
+    $('.tm_op12').click( function(e) {
+        
+        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
+        
+    });
+    
+    $('body').click( function() {
+       
+        $('.drop_tm').hide();
+        
+    });
+    
 });
 </script>
 
