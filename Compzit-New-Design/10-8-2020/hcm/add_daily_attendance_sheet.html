@@ -88,6 +88,12 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
 <link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
 
+<!-- <msdropdown> -->
+<link rel="stylesheet" type="text/css" href="../dr1/css/msdropdown/dd.css" />
+<script src="../dr1/js/msdropdown/jquery.dd.js"></script>
+<!-- </msdropdown> -->
+<link rel="stylesheet" type="text/css" href="../dr1/css/msdropdown/flags.css" />
+
 <link rel="stylesheet" type="text/css" href="../css/rec.css">
 <link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
 <link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
@@ -959,7 +965,7 @@ function closeNav5() {
       
       <div class="content_box1 cont_contr">
         <h2>Add Daily Attendance Sheet</h2>
-        <div class="form-group fg2 hcm_2_1">
+        <div class="form-group fg5 hcm_2_1">
           <label for="pwd" class="fg2_la1">Date:<span class="spn1">*</span> </label>
           <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr inp_mst" type="text">
@@ -967,21 +973,22 @@ function closeNav5() {
           </div>
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_2 sa_480">
+        <div class="form-group fg7 sa_fg4 sa_2 sa_480">
           <label for="email" class="fg2_la1">Idle Hours:<span class="spn1">*</span></label>
           <input class="form-control fg2_inp1 fg_chs2 inp_mst" placeholder="Idle Hours">
         </div>
 
         <div class="form-group fg2 sa_fg4 sa_640 sa_480">
           <label for="email" class="fg2_la1">OT Category:<span class="spn1">*</span></label>
-          <div class=" dt_bsd1 mr_tz">
-            <button class="tb_buton1 tb_buton_sel basq1"><i class="icon_1_grp"><img src="../images/hcm/ot1.png"></i><span> Normal OT</span></button>
-            <button class="tb_buton2 basq1"><i class="icon_1_grp"><img src="../images/hcm/ot2.png"></i><span> Holiday OT</span></button>  
-          </div>
+          <select name="countries" id="countries" class="form-control fg2_inp1" autofocus="">
+            <option value='ad' data-image="..\images\icons\hcm\ot.png" data-imagecss="flag ad" data-title="Normal OT" selected="">Normal OT</option>
+            <option value='ae' data-image="..\images\icons\hcm\ot.png" data-imagecss="flag ae" data-title="Holiday OT">Holiday OT</option>
+          </select> 
         </div>
 
         <div class="form-group fg2 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Export File: <span class="spn1">&nbsp;</span></label>
+          <label for="email" class="fg2_la1 pad_l"><span class="opp_ico_img_ptp1 btm_info sp_ntfy" data-toggle="tooltip" title="Required CSV File Must Contain Employee Code, Project Code And Attendance Fields." tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span> &nbsp; <span class="spn1">&nbsp;</span>
+      </label>
           <input type="file" id="file-upload" multiple required />
           <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
           <div id="file-upload-filename" class="file_n"></div>
@@ -989,13 +996,13 @@ function closeNav5() {
             <i class="fa fa-trash"></i>
           </button>
         </div>
-        <div class="clearfix"></div>
-        <div class="fg2 fg2_adn">
-          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-          <button class="btn tab_but1 butn5"><i class="fa fa-download"></i> Download CSV File</button>  
+        <div class="fg8 fg2_adn">
+          <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+          <button class="btn tab_but1 butn5" title=" Download CSV File"><i class="fa fa-download"></i></button>  
         </div>
+        <div class="clearfix"></div>
               
-        <div class="form-group fg7 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
+        <div class="form-group fg5 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
           <label for="email" class="fg2_la1 pad_l">My data has Headers:<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
@@ -1008,7 +1015,7 @@ function closeNav5() {
         </div>
         
 
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
+        <div class="form-group fg5 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
           <label for="email" class="fg2_la1 pad_l">Consolidate Errors:<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
@@ -1020,10 +1027,6 @@ function closeNav5() {
           </div>
         </div>
         <div class="clearfix"></div>
-
-      <span class="opp_ico_img_ptp1 btm_info" data-toggle="tooltip" title="Required CSV File Must Contain Employee Code, Project Code And Attendance Fields." tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span>
-        <div class="fg4 flt_r sa_fg3 sa_480">
-        </div>
         
    
         <div class="clearfix"></div>
@@ -1478,6 +1481,48 @@ $(document).ready(function(){
 });
 </script>
 <!-----conditions section_script_closed------------>
+
+
+<script>
+$(document).ready(function() {
+$("#countries").msDropdown({roundedBorder:false});
+// $("#countries").prop("disabled", true);
+})
+</script>
+
+<script>
+$(document).ready(function(e) {
+  $("#countries").msDropdown({visibleRows:4});
+  $("").msDropdown();
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 9) { 
+   $('.dd .ddChild').hide();
+  } 
+});
+</script> 
+<script>
+$(document).ready(function() {
+$("#countries1").msDropdown({roundedBorder:false});
+// $("#countries").prop("disabled", true);
+})
+</script>
+
+<script>
+$(document).ready(function(e) {
+  $("#countries1").msDropdown({visibleRows:4});
+  $("").msDropdown();
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 9) { 
+   $('.dd .ddChild').hide();
+  } 
+});
+</script> 
 
 </body>
 </html>

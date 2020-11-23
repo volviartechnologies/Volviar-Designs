@@ -1712,6 +1712,7 @@ textarea.form-control{height: 42px;}
 .bg_o11{background-color: #a8c508!important; color: #fff;}
 .bg_o12{background-color: #d68000!important; color: #fff;}
 .wid_8_3:disabled i{background-color: #ccc!important;}
+.sp_ntfy{margin: auto;float: left;padding-left: 0px;text-align: left;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
