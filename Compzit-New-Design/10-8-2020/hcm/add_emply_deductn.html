@@ -1023,13 +1023,15 @@ function closeNav5() {
                 </select> 
               </div>
             </div>
-            <div class="form-group fg2 sa_fg4 sa_o_fg4">
-              <label for="email" class="fg2_la1">Doc#:<span class="spn1"></span></label>
-              <input type="text" class="form-control fg2_inp1" placeholder="Doc#">
-            </div>
-            <div class="form-group fg2 sa_fg4 sa_o_fg4">
-              <label for="email" class="fg2_la1">Ref#:<span class="spn1"></span></label>
-              <input type="text" class="form-control fg2_inp1" placeholder="Ref#">
+            <div class="fg6">
+              <div class="form-group fg6 sa_fg4 sa_o_fg4">
+                <label for="email" class="fg2_la1">Doc#:<span class="spn1"></span></label>
+                <input type="text" class="form-control fg2_inp1 wid_100_i" placeholder="Doc#">
+              </div>
+              <div class="form-group fg6 sa_fg4 sa_o_fg4">
+                <label for="email" class="fg2_la1">Ref#:<span class="spn1"></span></label>
+                <input type="text" class="form-control fg2_inp1 wid_80_i" placeholder="Ref#">
+              </div>
             </div>
 
             <div class="form-group fg6 sa_fg4 sa_o_fg4">
@@ -1039,24 +1041,26 @@ function closeNav5() {
 
             <div class="sub_cont pull-right fg6">
               <div class="save_sec">
-                <button type="submit" class="btn sub1 op_clt">Calculate</button>
+                <button type="submit" class="btn sub1 op_clt" title="Calculate"><i class="fa fa-calculator"></i></button>
               </div>
             </div>
           </div>
           <div class="wid_60 mar_at flt_l">
             <div class="">
               <div class="r_640 ">
-                <table class="table table-bordered tbl_640 tbl_spl1">
+                <table id="example" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
                   <thead class="thead1">
                       <tr>
                         <th class="th_b5_2">Sl#</th>
                         <th class="th_b7 tr_c">Date</th>
                         <th class="th_b7 tr_r">Amount</th>
                         <th class="th_b6 tr_c">Paid Date</th>
-                        <th class="th_b7 tr_r">Paid Amount</th>
+                        <th class="th_b8 tr_r">Paid Amount</th>
                         <th class="th_b6 tr_r">Balance</th>
-                        <th class="th_b7 tr_c">Actions</th>
+                        <th class="th_b1 tr_c">Actions</th>
                       </tr>
+                  </thead>
+                  <thead class="clt_op1">
                   </thead>
                   <tbody id="myTable" class="clt_op">
                     <tr class="tr1">
@@ -1128,7 +1132,7 @@ function closeNav5() {
                     </td>
                     </tr>
                    </tbody>
-                    <tfoot class="clt_op">
+                    <tfoot>
                       <tr style="background-color:#eceff1!important;">
                         <td class="txt_rd bg1 tr_l" colspan="2" style="background-color:#eceff1!important;" rowspan="1">Total</td>
                         <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
@@ -1572,10 +1576,54 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $(".op_clt").click(function(){
-    $(".clt_op").show(400);
+    $(".clt_op").show();
+    $(".clt_op1").hide();
   });
 });
 </script>
+
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+
 
 </body>
 </html>
