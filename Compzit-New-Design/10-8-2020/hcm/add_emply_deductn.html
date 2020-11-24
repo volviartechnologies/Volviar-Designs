@@ -1039,7 +1039,6 @@ function closeNav5() {
         </div>
 
         <div class="clearfix"></div>
-      <div class="free_sp"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
@@ -1061,16 +1060,12 @@ function closeNav5() {
                 <th class="col-md-2 tr_r">Amount</th>
                 <th class="col-md-2 tr_c">Paid Date</th>
                 <th class="col-md-2 tr_r">Amount Paid</th>
-                <th class="col-md-2 tr_c">Action</th>
+                <th class="col-md-2 tr_r">Balance Amount</th>
+                <th class="col-md-2 tr_c">Actions</th>
               </tr>
           </thead>
           <tbody id="myTable">
-            <tr class="ttl_rw td_fb">
-              <td colspan="2">Total</td>
-              <td class="tr_r">20000.00</td>
-              <td colspan="3"></td>
-            </tr>
-            <tr class="crnt_rw">
+            <tr class="tr1">
               <td>1</td>
               <td class="tr_l">
                 <input type="text" class="form-control fg2_inp2 tr_c" placeholder="10/10/2019" name="email" disabled="">
@@ -1083,6 +1078,9 @@ function closeNav5() {
                   <input class="form-control inp_bdr fg2_inp2 tr_c" type="text">
                   <span class="input-group-addon date1 dt_cal1"><i class="fa fa-calendar"></i></span>
                 </div>
+              </td>
+              <td class="tr_l">
+               <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
               </td>
               <td class="tr_l">
                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
@@ -1118,6 +1116,9 @@ function closeNav5() {
               <td class="tr_l">
                <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
               </td>
+              <td class="tr_l">
+               <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
+              </td>
               <td>
                 <div class="btn_stl1">
                 <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
@@ -1133,15 +1134,24 @@ function closeNav5() {
             </td>
             </tr>
            </tbody>
+            <tfoot>
+              <tr style="background-color:#eceff1!important;">
+                <td class="txt_rd bg1 tr_l" colspan="2" style="background-color:#eceff1!important;" rowspan="1">Total</td>
+                <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
+                <td class="txt_rd bg1 tr_r" colspan="1"></td>
+                <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
+                <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
+                <td class="txt_rd bg1 tr_r" colspan="1"></td>
+              </tr>
+            </tfoot>
         </table>
         </div>
 
           
-<!---=================section_devider============--->
+<!---=================section_devider============-->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
    
 
 
