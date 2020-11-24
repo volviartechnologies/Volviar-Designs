@@ -1724,6 +1724,8 @@ textarea.form-control{height: 42px;}
 .icn_va img{width: 100%;height: auto;margin: auto;float: left; padding: 1px;}
 .bg_blx{width:50%;margin: auto;float: left;background-color: #eff8ff; padding: 4px 10px;margin-bottom: 10px;margin-right: 20px;border-radius: 8px;}
 .bg_blx .tb_buton_sel, .tb_buton2:hover, .tb_buton1:hover{background-color: transparent;}
+.bg_blx .tb_buton_sel:hover span, .bg_blx .tb_buton1:focus span, .bg_blx .tb_buton2:hover span, .bg_blx .tb_buton2:focus span, .bg_blx .tb_cs:hover span, .bg_blx .tb_cs:focus span, .bg_blx .tb_buton_sel span{
+      background-color:#95d3ff;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
