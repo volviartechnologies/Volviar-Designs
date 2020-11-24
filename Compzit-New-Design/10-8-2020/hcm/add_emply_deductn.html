@@ -949,8 +949,8 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li><a href="#">Employee Deduction</a></li>
-      <li class="active">Add Employee Deduction</li>
+      <li><a href="#">Employee Loan</a></li>
+      <li class="active">Add Loan</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -958,195 +958,190 @@ function closeNav5() {
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
-        <h2>Add Employee Deduction</h2>
+        <h2>Add Loan</h2>
 
-        <div class="form-group fg2 sa_fg4 sa_o_fg4">
-          <label for="email" class="fg2_la1">Doc#:<span class="spn1"></span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="Doc#">
-        </div>
-        <div class="form-group fg2 sa_fg4 sa_o_fg4">
-          <label for="email" class="fg2_la1">Ref#:<span class="spn1"></span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="Ref#">
-        </div>
+        <div class="wid_40 mar_at flt_l">
 
-        <div class="form-group fg2 frm_2 frm_50 sa_o_fg4">
-          <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Employee 1</option>
-            <option>Employee 2</option>
-            <option>Employee 3</option>
-          </select> 
-        </div>
+            <div class="form-group fg6 sa_o_fg4">
+              <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                <option>Employee 1</option>
+                <option>Employee 2</option>
+                <option>Employee 3</option>
+              </select> 
+            </div>
 
-        <div class="form-group fg2 frm_2 frm_50 sa_o_fg4">
-          <label for="email" class="fg2_la1">Deduction:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Deduction 1</option>
-            <option>Deduction 2</option>
-            <option>Deduction 3</option>
-          </select> 
-        </div>
+            <div class="form-group fg6 sa_o_fg4">
+              <label for="email" class="fg2_la1">Loan Type:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                <option>Loan Type 1</option>
+                <option>Loan Type 2</option>
+                <option>Loan Type 3</option>
+              </select> 
+            </div>
 
-        <div class="form-group fg2 sa_fg4 sa_o_fg4">
-          <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst tr_r" placeholder="0.00">
-        </div>
+            <div class="form-group fg6 sa_o_fg4">
+              <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
+              <input type="text" class="form-control fg2_inp1 inp_mst tr_r" placeholder="0.00">
+            </div>
 
-        <div class="form-group fg2 frm_2 frm_50 sa_o_fg4">
-          <label for="email" class="fg2_la1">Effective Month:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>January</option>
-            <option>February</option>
-            <option>March</option>
-            <option>April</option>
-            <option>May</option>
-            <option>June</option>
-            <option>July</option>
-            <option>August</option>
-            <option>September</option>
-            <option>October</option>
-            <option>November</option>
-            <option>December</option>
-          </select> 
-        </div>
+            <div class="form-group fg6 sa_o_fg4">
+              <label for="email" class="fg2_la1">Installment Plan:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                <option>Plan 1</option>
+                <option>Plan 2</option>
+                <option>Plan 3</option>
+              </select> 
+            </div>
+            <div class="form-group fg6 sa_fg4 sa_o_fg4">
+              <label for="email" class="fg2_la1">Installment Count:<span class="spn1">*</span></label>
+              <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Installment Count">
+            </div>
+            <div class="form-group fg6 frm_2 frm_50 sa_o_fg4">
+              <label for="email" class="fg2_la1">Effective Month:<span class="spn1">*</span></label>
+              <div class="fg6">
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst wid_100_i">
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select> 
+              </div>
+              <div class="fg6">
+                <select class="form-control fg2_inp1 fg_chs2 inp_mst wid_80_i">
+                  <option>2017</option>
+                  <option>2018</option>
+                  <option>2019</option>
+                </select> 
+              </div>
+            </div>
+            <div class="form-group fg2 sa_fg4 sa_o_fg4">
+              <label for="email" class="fg2_la1">Doc#:<span class="spn1"></span></label>
+              <input type="text" class="form-control fg2_inp1" placeholder="Doc#">
+            </div>
+            <div class="form-group fg2 sa_fg4 sa_o_fg4">
+              <label for="email" class="fg2_la1">Ref#:<span class="spn1"></span></label>
+              <input type="text" class="form-control fg2_inp1" placeholder="Ref#">
+            </div>
 
-        <div class="form-group fg2 frm_2 frm_50 sa_o_fg4">
-          <label for="email" class="fg2_la1">Effective Year:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>2017</option>
-            <option>2018</option>
-            <option>2019</option>
-          </select> 
-        </div>
+            <div class="form-group fg6 sa_fg4 sa_o_fg4">
+              <label for="email" class="fg2_la1">Remarks:<span class="spn1"></span></label>
+              <textarea type="text" class="form-control fg2_inp1" placeholder="Remarks" rows="2"></textarea>
+            </div>
 
-        <div class="form-group fg2 sa_fg4 sa_o_fg4">
-          <label for="email" class="fg2_la1">Installment#:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Installment#">
-        </div>
-
-        <div class="form-group fg2 frm_2 frm_50 sa_o_fg4">
-          <label for="email" class="fg2_la1">Installment Plan:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Plan 1</option>
-            <option>Plan 2</option>
-            <option>Plan 3</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg4">
-          <label for="email" class="fg2_la1">Remarks:<span class="spn1"></span></label>
-          <textarea type="text" class="form-control fg2_inp1" placeholder="Remarks" rows="2"></textarea>
-        </div>
-
-        <div class="clearfix"></div>
-        <div class="devider"></div>
-
-        <div class="sub_cont pull-right">
-          <div class="save_sec">
-            <button type="submit" class="btn sub1 op_clt">Calculate</button>
+            <div class="sub_cont pull-right fg6">
+              <div class="save_sec">
+                <button type="submit" class="btn sub1 op_clt">Calculate</button>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="clearfix"></div>
-        <!-- <div class="free_sp"></div> -->
-
-      <div class="clt_op">
-        <div class="r_640 ">
-        <table class="table table-bordered tbl_640">
-          <thead class="thead1">
-              <tr>
-                <th class="col-md-1">Sl#</th>
-                <th class="col-md-2 tr_c">Date</th>
-                <th class="col-md-2 tr_r">Amount</th>
-                <th class="col-md-2 tr_c">Paid Date</th>
-                <th class="col-md-2 tr_r">Amount Paid</th>
-                <th class="col-md-2 tr_r">Balance Amount</th>
-                <th class="col-md-2 tr_c">Actions</th>
-              </tr>
-          </thead>
-          <tbody id="myTable">
-            <tr class="tr1">
-              <td>1</td>
-              <td class="tr_l">
-                <input type="text" class="form-control fg2_inp2 tr_c" placeholder="10/10/2019" name="email" disabled="">
-              </td>
-              <td class="tr_l">
-               <input type="text" class="form-control fg2_inp2 tr_r" placeholder="1000.00" name="email" disabled="">
-              </td>
-              <td class="tr_l">
-                <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                  <input class="form-control inp_bdr fg2_inp2 tr_c" type="text">
-                  <span class="input-group-addon date1 dt_cal1"><i class="fa fa-calendar"></i></span>
-                </div>
-              </td>
-              <td class="tr_l">
-               <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
-              </td>
-              <td class="tr_l">
-               <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
-              </td>
-              <td>
-                <div class="btn_stl1">
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </button>
+          <div class="wid_60 mar_at flt_l">
+            <div class="">
+              <div class="r_640 ">
+                <table class="table table-bordered tbl_640 tbl_spl1">
+                  <thead class="thead1">
+                      <tr>
+                        <th class="th_b5_2">Sl#</th>
+                        <th class="th_b7 tr_c">Date</th>
+                        <th class="th_b7 tr_r">Amount</th>
+                        <th class="th_b6 tr_c">Paid Date</th>
+                        <th class="th_b7 tr_r">Paid Amount</th>
+                        <th class="th_b6 tr_r">Balance</th>
+                        <th class="th_b7 tr_c">Actions</th>
+                      </tr>
+                  </thead>
+                  <tbody id="myTable" class="clt_op">
+                    <tr class="tr1">
+                      <td>1</td>
+                      <td class="tr_l">
+                        <input type="text" class="form-control fg2_inp2 tr_c" placeholder="10/10/2019" name="email" disabled="">
+                      </td>
+                      <td class="tr_l">
+                       <input type="text" class="form-control fg2_inp2 tr_r" placeholder="1000.00" name="email" disabled="">
+                      </td>
+                      <td class="tr_l">
+                        <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                          <input class="form-control inp_bdr fg2_inp2 tr_c" type="text">
+                          <span class="input-group-addon date1 dt_cal1"><i class="fa fa-calendar"></i></span>
+                        </div>
+                      </td>
+                      <td class="tr_l">
+                       <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
+                      </td>
+                      <td class="tr_l">
+                       <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
+                      </td>
+                      <td>
+                        <div class="btn_stl1">
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
+                      <div class="btn_stl2"> 
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                      </div>
+                      <div class="btn_stl3">
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                      </div>
+                    </td>
+                    </tr>
+                    <tr class="">
+                      <td>1</td>
+                      <td class="tr_l">
+                        <input type="text" class="form-control fg2_inp2 tr_c" placeholder="10/10/2019" name="email" disabled="">
+                      </td>
+                      <td class="tr_l">
+                       <input type="text" class="form-control fg2_inp2 tr_r" placeholder="1000.00" name="email" disabled="">
+                      </td>
+                      <td class="tr_l">
+                        <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                          <input class="form-control inp_bdr fg2_inp2 tr_c" type="text">
+                          <span class="input-group-addon date1 dt_cal1"><i class="fa fa-calendar"></i></span>
+                        </div>
+                      </td>
+                      <td class="tr_l">
+                       <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
+                      </td>
+                      <td class="tr_l">
+                       <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
+                      </td>
+                      <td>
+                        <div class="btn_stl1">
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
+                      <div class="btn_stl2"> 
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                      </div>
+                      <div class="btn_stl3">
+                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                      </div>
+                    </td>
+                    </tr>
+                   </tbody>
+                    <tfoot class="clt_op">
+                      <tr style="background-color:#eceff1!important;">
+                        <td class="txt_rd bg1 tr_l" colspan="2" style="background-color:#eceff1!important;" rowspan="1">Total</td>
+                        <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
+                        <td class="txt_rd bg1 tr_r" colspan="1"></td>
+                        <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
+                        <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
+                        <td class="txt_rd bg1 tr_r" colspan="1"></td>
+                      </tr>
+                    </tfoot>
+                </table>
               </div>
-              <div class="btn_stl2"> 
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-              </div>
-              <div class="btn_stl3">
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-              </div>
-            </td>
-            </tr>
-            <tr class="">
-              <td>1</td>
-              <td class="tr_l">
-                <input type="text" class="form-control fg2_inp2 tr_c" placeholder="10/10/2019" name="email" disabled="">
-              </td>
-              <td class="tr_l">
-               <input type="text" class="form-control fg2_inp2 tr_r" placeholder="1000.00" name="email" disabled="">
-              </td>
-              <td class="tr_l">
-                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                  <input class="form-control inp_bdr fg2_inp2 tr_c" type="text">
-                  <span class="input-group-addon date1 dt_cal1"><i class="fa fa-calendar"></i></span>
-                </div>
-              </td>
-              <td class="tr_l">
-               <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
-              </td>
-              <td class="tr_l">
-               <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00" name="email" required="">
-              </td>
-              <td>
-                <div class="btn_stl1">
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
-              <div class="btn_stl2"> 
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-              </div>
-              <div class="btn_stl3">
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-              </div>
-            </td>
-            </tr>
-           </tbody>
-            <tfoot>
-              <tr style="background-color:#eceff1!important;">
-                <td class="txt_rd bg1 tr_l" colspan="2" style="background-color:#eceff1!important;" rowspan="1">Total</td>
-                <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
-                <td class="txt_rd bg1 tr_r" colspan="1"></td>
-                <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
-                <td class="txt_rd bg1 tr_r" colspan="1"> 1000.00</td>
-                <td class="txt_rd bg1 tr_r" colspan="1"></td>
-              </tr>
-            </tfoot>
-        </table>
-        </div>
-
+            </div>
+          </div>
           
 <!---=================section_devider============-->
       <div class="clearfix"></div>
