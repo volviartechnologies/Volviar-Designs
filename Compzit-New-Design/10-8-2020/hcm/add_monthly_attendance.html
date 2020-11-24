@@ -958,92 +958,89 @@ function closeNav5() {
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
-        <h2>Add Monthly Attendance Sheet</h2>
 
-        <div class="form-group fg4 sa_fg4 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Month:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>January</option>
-            <option>Febuary</option>
-            <option>March</option>
-            <option>April</option>
-            <option>May</option>
-            <option>June</option>
-            <option>July</option>
-            <option>August</option>
-            <option>January</option>
-            <option>September</option>
-            <option>October</option>
-            <option>November</option>
-            <option>December</option>
-          </select>
-        </div>
+        <div class="pro_rt1" style="display:block;">
+          <h2>Add Monthly Attendance Sheet</h2>
 
-        <div class="form-group fg4 sa_fg4 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Year:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>2017</option>
-            <option>2018</option>
-            <option>2019</option>
-          </select>
-        </div>
-
-        <div class="form-group fg4 sa_fg4 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Idle Hour:<span class="spn1">*</span></label>
-          <input class="form-control fg2_inp1 fg_chs2 inp_mst" placeholder="Idle Hour">
-        </div>
-
-        <div class="clearfix"></div>
-
-        <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Export File: <span class="spn1">&nbsp;</span></label>
-          <input type="file" id="file-upload" multiple required />
-          <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-          <div id="file-upload-filename" class="file_n"></div>
-        </div>
-              
-        <div class="form-group fg5 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
-          <label for="email" class="fg2_la1 pad_l">My data has Headers:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
+          <div class="form-group fg5 frm_2 frm_50 sa_o_fg4">
+            <label for="email" class="fg2_la1">Effective Month:<span class="spn1">*</span></label>
+            <div class="fg6">
+              <select class="form-control fg2_inp1 fg_chs2 inp_mst wid_100_i">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select> 
+            </div>
+            <div class="fg6">
+              <select class="form-control fg2_inp1 fg_chs2 inp_mst wid_80_i">
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+              </select> 
             </div>
           </div>
-        </div>
-        
+          <div class="form-group fg7 sa_fg4 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Idle Hour:<span class="spn1">*</span></label>
+            <input class="form-control fg2_inp1 fg_chs2 inp_mst" placeholder="Idle Hour">
+          </div>
 
-        <div class="form-group fg5 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Consolidate Errors:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
+          <div class="fg_bdr wid_30_bx">
+            <div class="form-group fg_3_1 sa_480">
+              <label for="email" class="fg2_la1 pad_l">
+                <span class="opp_ico_img_ptp1 btm_info sp_ntfy" data-toggle="tooltip" title="Required CSV File Must Contain Day, Employee Code, Project Code And Attendance Fields." tooltip-title="Tooltip title #1"><img src="../images/icons/opp/hint.png"></span> &nbsp; <span class="spn1">&nbsp;</span>
               </label>
+              <input type="file" id="file-upload" multiple required />
+              <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+              <div id="file-upload-filename" class="file_n"></div>
+              <button class="btn act_btn bn3 fnbtn" title="Remove Selected File">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+            <div class="fg8 fg2_adn">
+              <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+              <button class="btn tab_but1 butn5" title=" Download CSV File"><i class="fa fa-download"></i></button>  
             </div>
           </div>
-        </div>
+                
+          <div class="form-group fg7 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
+            <label for="email" class="fg2_la1 pad_l">My data has Headers:<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" >
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
 
-        <div class="clearfix"></div>
-
-        <div class="fg6 mar_tp_cnt sa_480">
-        <p>
-          <a href="#"><b class="bolder b2a"><i class="fa fa-sticky-note-o"></i> Conditions Note:</b></a><br>
-          <b class="bolder po1"> Note: Required CSV File Must Contain Employee Code, Project Code And Attendance Fields.</b>
-        </p>
-        </div>
-        
+          <div class="form-group fg7 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
+            <label for="email" class="fg2_la1 pad_l">Consolidate Errors:<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" >
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
    
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1">Process</button>
+            <button type="submit" class="btn sub1 bt_pro_rt2">Import</button>
             <button type="submit" class="btn sub4">Cancel</button>
           </div>
 
@@ -1052,6 +1049,154 @@ function closeNav5() {
             <button type="submit" class="btn sub3">Update & Close</button>
             <button type="submit" class="btn sub2">Confirm</button>
             <button type="submit" class="btn sub4">Cancel</button>
+          </div>
+        </div>
+        </div>
+
+        <div class="pro_rt2" style="display:none;">
+          <h2>Incorrect List</h2>
+
+          <div class="sub_cont pull-right">
+            <div class="save_sec">
+              <button type="submit" class="btn sub3 cl_div_b"><< Back</button>
+              <button type="submit" class="btn sub4">Cancel</button>
+              <button type="submit" class="btn sub3 cl_div_n">Next >></button>
+            </div>
+          </div>
+
+          <p><li><i class="fa fa-arrow-circle-right"></i> Following records in uploaded file contain either missing fields or mismatched fields.These records will be excluded while importing.</li>
+            <li><i class="fa fa-arrow-circle-right"></i> Use "Next" button to continue.</li>
+          </p>
+          <div class="clearfix"></div>
+          <div class="devider"></div>
+
+           <div class="r_640">
+            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b5 tr_r">Day</th>
+                  <th class="th_b6 tr_l">OT Category</th>
+                  <th class="th_b7 tr_l">Employee Code</th>
+                  <th class="th_b2 tr_l">Employee</th>
+                  <th class="th_b4 tr_l">Designation</th>
+                  <th class="th_b6 tr_l">Project Code</th>
+                  <th class="th_b1 tr_c">Attendance</th>
+                  <th class="th_b5 tr_r">OT</th>
+                  <th class="th_b8 tr_l">Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_r">01</td>
+                  <td class="tr_l"> Category 1</td>
+                  <td class="tr_l">Emp001</td>
+                  <td class="tr_l">Employee 1</td>
+                  <td class="tr_l">Designation 1</td>
+                  <td class="tr_l">Pr001</td>
+                  <td class="tr_c">A</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_l">test message</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr style="background-color:#eceff1!important;">
+                  <td class="txt_rd tr_l" colspan="3" style="background-color:#eceff1!important;color:#48acf2;">Total Employees #: 30</td>
+                  <td class="txt_rd tr_r" colspan="6" style="background-color:#eceff1!important;color:#48acf2;">November 2020</td>
+                 </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="clearfix"></div>
+          <div class="devider"></div>
+
+          <div class="sub_cont pull-right">
+            <div class="save_sec">
+              <button type="submit" class="btn sub3 cl_div_b"><< Back</button>
+              <button type="submit" class="btn sub4">Cancel</button>
+              <button type="submit" class="btn sub3 cl_div_n">Next >></button>
+            </div>
+
+            <div class="edit_sec">
+              <button type="submit" class="btn sub1">Update</button>
+              <button type="submit" class="btn sub3">Update & Close</button>
+              <button type="submit" class="btn sub2">Confirm</button>
+              <button type="submit" class="btn sub4">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pro_rt3" style="display:none;">
+          <h2>Correct List</h2>
+
+          <div class="sub_cont pull-right">
+            <div class="save_sec">
+              <button type="submit" class="btn sub4 cl_div_b">Cancel</button>
+              <button type="submit" class="btn sub1 cl_div_n">Save</button>
+            </div>
+          </div>
+
+          <p><li><i class="fa fa-arrow-circle-right"></i> Use "Save" button to add following records in uploaded file to the table.</li>
+          </p>
+          <div class="clearfix"></div>
+          <div class="devider"></div>
+
+           <div class="r_640">
+            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b5 tr_r">Day</th>
+                  <th class="th_b6 tr_l">OT Category</th>
+                  <th class="th_b8 tr_l">Employee Code</th>
+                  <th class="th_b2 tr_l">Employee</th>
+                  <th class="th_b6 tr_l">Designation</th>
+                  <th class="th_b6 tr_l">Project Code</th>
+                  <th class="th_b7 tr_c">Attendance</th>
+                  <th class="th_b5 tr_r">OT</th>
+                  <th class="th_b1 tr_r">Idle Hour</th>
+                  <th class="th_b1 tr_r">Final OT</th>
+                  <th class="th_b7 tr_r">Rounded OT</th>
+                  <th class="th_b8 tr_l">Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_r">01</td>
+                  <td class="tr_l"> Category 1</td>
+                  <td class="tr_l">Emp001</td>
+                  <td class="tr_l">Employee 1</td>
+                  <td class="tr_l">Designation 1</td>
+                  <td class="tr_l">Pr001</td>
+                  <td class="tr_c">A</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_l">test message</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr style="background-color:#eceff1!important;">
+                  <td class="txt_rd tr_l" colspan="3" style="background-color:#eceff1!important;color:#48acf2;">Total Employees #: 30</td>
+                  <td class="txt_rd tr_r" colspan="9" style="background-color:#eceff1!important;color:#48acf2;">November 2020</td>
+                 </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="clearfix"></div>
+          <div class="devider"></div>
+
+          <div class="sub_cont pull-right">
+            <div class="save_sec">
+              <button type="submit" class="btn sub4 cl_div_b">Cancel</button>
+              <button type="submit" class="btn sub1 cl_div_n">Save</button>
+            </div>
+
+            <div class="edit_sec">
+              <button type="submit" class="btn sub1">Update</button>
+              <button type="submit" class="btn sub3">Update & Close</button>
+              <button type="submit" class="btn sub2">Confirm</button>
+              <button type="submit" class="btn sub4">Cancel</button>
+            </div>
           </div>
         </div>
         
@@ -1479,6 +1624,23 @@ $(document).ready(function(){
 });
 </script>
 <!-----conditions section_script_closed------------>
+
+<script>
+$(document).ready(function(){
+  $(".bt_pro_rt2").click(function(){
+    $(".pro_rt1").fadeOut(100);
+    $(".pro_rt2").fadeIn(300);
+  });
+  $(".bt_pro_rt1").click(function(){
+    $(".pro_rt1").fadeIn(300);
+    $(".pro_rt2").fadeOut(100);
+  });
+  $(".cl_div_n").click(function(){
+    $(".pro_rt3").fadeIn(300);
+    $(".pro_rt2, .pro_rt1").fadeOut(100);
+  });
+});
+</script>
 
 </body>
 </html>

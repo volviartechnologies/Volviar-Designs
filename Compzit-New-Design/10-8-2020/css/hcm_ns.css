@@ -1728,6 +1728,7 @@ textarea.form-control{height: 42px;}
       background-color:#95d3ff;}
 .clt_op1{height: 100px;width: 100%;margin: auto;float: left;}
 .clt_op1 tr{display: none;}
+.wid_30_bx{width: 30%;margin-right: 40px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
