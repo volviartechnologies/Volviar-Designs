@@ -1713,6 +1713,8 @@ textarea.form-control{height: 42px;}
 .bg_o12{background-color: #d68000!important; color: #fff;}
 .wid_8_3:disabled i{background-color: #ccc!important;}
 .sp_ntfy{margin: auto;float: left;padding-left: 0px;text-align: left;}
+.fg_bdr{border:1px solid #ccc;width:35%;margin: auto;float: left;padding:2px 10px;border-radius: 8px;}
+.fg_bdr .fg_3_1{width: 80%!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
