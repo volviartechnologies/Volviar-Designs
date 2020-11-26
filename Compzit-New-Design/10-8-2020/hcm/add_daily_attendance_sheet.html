@@ -1077,7 +1077,8 @@ function closeNav5() {
 
 
 <!-- Modal1 -->
-<div class="modal fade" id="imprt_dta">
+
+<div class="modal fade" id="imprt_dta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document" style="width: 90%;">
     <div class="modal-content">
       <div class="modal-header">
@@ -1088,16 +1089,29 @@ function closeNav5() {
         </button>
       </div>
       <div class="modal-body">
+
+
+        <div class="pro_rt2 flt_r">
+          <button type="submit" class="btn sub3 cl_div_b"><< Back</button>
+          <button type="submit" class="btn sub4">Cancel</button>
+          <button type="submit" class="btn sub3 cl_div_n">Next >></button>
+        </div>
+
+        <div class="pro_rt3 flt_r" style="display: none;">
+          <button type="submit" class="btn sub4 cl_div_n1" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn sub1">Save</button>
+        </div>
         <div class="pro_rt2">
-          <p><li><i class="fa fa-arrow-circle-right"></i> Following records in uploaded file contain either missing fields or mismatched fields.These records will be excluded while importing.</li>
-            <li><i class="fa fa-arrow-circle-right"></i> Use "Next" button to continue.</li>
+
+          <p class="wid_p"><li class="wid_p"><i class="fa fa-arrow-circle-right"></i> Incorrect Records Whould be Excluded While Importing. Select Next button to Continue </li>
           </p>
+
           <div class="clearfix"></div>
           <div class="tab_pop_c">
-            <button class="btn_tabx op_tbx1 selctd_btnz">Incorrect Attendance <span class="rd">21</span></button>
-            <button class="btn_tabx op_tbx2">Incorrect Employee Code <span class="rd">21</span></button>
-            <button class="btn_tabx op_tbx3">Incorrect OT <span class="rd">21</span></button>
-            <button class="btn_tabx op_tbx4">Incorrect Project Code <span class="rd">21</span></button>
+            <button class="btn_tabx op_tbx1 selctd_btnz" title="Incorrect Attendance"><i class="bg_o1">A</i> <span class="rd">( 21 )</span></button>
+            <button class="btn_tabx op_tbx2" title="Incorrect Employee Code"><i class="bg_o2">E</i> <span class="rd">( 21 )</span></button>
+            <button class="btn_tabx op_tbx3" title="Incorrect OT"><i class="bg_o3">O</i> <span class="rd">( 21 )</span></button>
+            <button class="btn_tabx op_tbx4" title="Incorrect Project Code"><i class="bg_o4">P</i> <span class="rd">( 21 )</span></button>
           </div>
 
            <div class="rgt_tb_x">
@@ -1130,12 +1144,8 @@ function closeNav5() {
           </div>
         </div>
 
-        <div class="pro_rt3" style="display:none;">
-
-          <p><li><i class="fa fa-arrow-circle-right"></i> Use "Save" button to add following records in uploaded file to the table.</li>
-          </p>
+        <div class="pro_rt3" style="display:none;">         
           <div class="clearfix"></div>
-          <div class="devider"></div>
 
            <div class="r_640">
             <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
