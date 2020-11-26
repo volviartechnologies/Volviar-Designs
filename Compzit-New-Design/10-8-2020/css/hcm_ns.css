@@ -1746,7 +1746,6 @@ textarea.form-control{height: 42px;}
   .wid_8_3{height: 42px;}
 .btn_imprt{position: fixed;top:140px;}
 }
-
 @media only screen and (max-width:800px){
 .bg_wht{margin:auto;float: left;width: 90%;}
 .max_60 .spot_bg{width: 50%!important;}
