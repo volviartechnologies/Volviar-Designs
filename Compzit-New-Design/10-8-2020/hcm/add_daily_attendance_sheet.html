@@ -1039,7 +1039,7 @@ function closeNav5() {
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1 bt_pro_rt2">Import</button>
+            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#imprt_dta">Import</button>
             <button type="submit" class="btn sub4">Cancel</button>
           </div>
 
@@ -1219,6 +1219,136 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
+
+
+<!-- Modal1 -->
+<div class="modal fade" id="imprt_dta">
+  <div class="modal-dialog" role="document" style="width: 90%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reason for delete</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="pro_rt2">
+          <div class="sub_cont pull-right">
+            <div class="save_sec">
+              <button type="submit" class="btn sub3 cl_div_b"><< Back</button>
+              <button type="submit" class="btn sub4">Cancel</button>
+              <button type="submit" class="btn sub3 cl_div_n">Next >></button>
+            </div>
+          </div>
+
+          <p><li><i class="fa fa-arrow-circle-right"></i> Following records in uploaded file contain either missing fields or mismatched fields.These records will be excluded while importing.</li>
+            <li><i class="fa fa-arrow-circle-right"></i> Use "Next" button to continue.</li>
+          </p>
+          <div class="clearfix"></div>
+          <div class="devider"></div>
+
+           <div class="r_640">
+            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b7 tr_l">Employee Code</th>
+                  <th class="th_b2 tr_l">Employee</th>
+                  <th class="th_b4 tr_l">Designation</th>
+                  <th class="th_b6 tr_l">Project Code</th>
+                  <th class="th_b1 tr_c">Attendance</th>
+                  <th class="th_b5 tr_r">OT</th>
+                  <th class="th_b8 tr_l">Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_l">Emp001</td>
+                  <td class="tr_l">Employee 1</td>
+                  <td class="tr_l">Designation 1</td>
+                  <td class="tr_l">Pr001</td>
+                  <td class="tr_c">A</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_l">test message</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr style="background-color:#eceff1!important;">
+                  <td class="txt_rd tr_l" colspan="3" style="background-color:#eceff1!important;color:#48acf2;">Total Employees #: 30</td>
+                  <td class="txt_rd tr_r" colspan="4" style="background-color:#eceff1!important;color:#48acf2;">Date : 25-11-2020</td>
+                 </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+        <div class="pro_rt3" style="display:none;">
+          <div class="sub_cont pull-right">
+            <div class="save_sec">
+              <button type="submit" class="btn sub4 cl_div_b">Cancel</button>
+              <button type="submit" class="btn sub1 cl_div_n">Save</button>
+            </div>
+          </div>
+
+          <p><li><i class="fa fa-arrow-circle-right"></i> Use "Save" button to add following records in uploaded file to the table.</li>
+          </p>
+          <div class="clearfix"></div>
+          <div class="devider"></div>
+
+           <div class="r_640">
+            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b8 tr_l">Employee Code</th>
+                  <th class="th_b2 tr_l">Employee</th>
+                  <th class="th_b6 tr_l">Designation</th>
+                  <th class="th_b6 tr_l">Project Code</th>
+                  <th class="th_b7 tr_c">Attendance</th>
+                  <th class="th_b5 tr_r">OT</th>
+                  <th class="th_b1 tr_r">Idle Hour</th>
+                  <th class="th_b1 tr_r">Final OT</th>
+                  <th class="th_b7 tr_r">Rounded OT</th>
+                  <th class="th_b8 tr_l">Remarks</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_l">Emp001</td>
+                  <td class="tr_l">Employee 1</td>
+                  <td class="tr_l">Designation 1</td>
+                  <td class="tr_l">Pr001</td>
+                  <td class="tr_c">A</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_r">101</td>
+                  <td class="tr_l">test message</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr style="background-color:#eceff1!important;">
+                  <td class="txt_rd tr_l" colspan="3" style="background-color:#eceff1!important;color:#48acf2;">Total Employees #: 30</td>
+                  <td class="txt_rd tr_r" colspan="7" style="background-color:#eceff1!important;color:#48acf2;">November 2020</td>
+                 </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pro_rt2">
+          <button type="submit" class="btn sub3 cl_div_b"><< Back</button>
+          <button type="submit" class="btn sub4">Cancel</button>
+          <button type="submit" class="btn sub3 cl_div_n">Next >></button>
+        </div>
+
+        <div class="pro_rt3" style="display: none;">
+          <button type="submit" class="btn sub4 cl_div_b">Cancel</button>
+          <button type="submit" class="btn sub1 cl_div_n">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--------script section_started---------->
