@@ -1729,13 +1729,17 @@ textarea.form-control{height: 42px;}
 .clt_op1{height: 100px;width: 100%;margin: auto;float: left;}
 .clt_op1 tr{display: none;}
 .wid_30_bx{width: 30%;margin-right: 40px;}
-.tab_pop_c{width:17%;height: auto;margin: auto;float: left;background-color:transparent;}
-.rgt_tb_x{width: 83%;margin:auto;float: left;height: auto;padding: 4px;}
+.tab_pop_c{width:8%;height: auto;margin: auto;float: left;background-color:transparent;}
+.rgt_tb_x{width:92%;margin:auto;float: left;height: auto;padding: 4px;}
 .btn_tabx{width: 100%;height: auto;margin: auto;float: left;background-color: #fff;border:1px solid #ccc;padding:10px 4px;margin-top: 5px;font-size: 13px;}
 .rgt_tb_x table thead tr th, .tbl_shrt_ft table thead tr th, .rgt_tb_x table tbody tr td, .tbl_shrt_ft table tbody tr td{font-size: 11px;}
 .selctd_btnz, .btn_tabx:hover, .btn_tabx:focus{background-color: #d2f3ff;border: 1px solid #d2f3ff;}
 .check_rgt{width: auto;float: right;margin-right: 28px;margin-top: -7px;}
 .fg6_1{width: 64%;margin:auto;float: left;}
+.wid_p, .wid_p li{width: auto;max-width: 70%;margin: auto;float: left;}
+.btn_tabx i{width: 30px;height: 30px;margin:auto;float: left;font-style: normal;border-radius: 50px;line-height: 28px;}
+.btn_tabx span{width: auto;margin: auto;float:right; margin-top: 4px;margin-right: 12px;font-weight: 600;}
+.mrb_4{margin-bottom: 4px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
