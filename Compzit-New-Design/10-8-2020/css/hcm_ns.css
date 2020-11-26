@@ -1734,6 +1734,8 @@ textarea.form-control{height: 42px;}
 .btn_tabx{width: 100%;height: auto;margin: auto;float: left;background-color: #fff;border:1px solid #ccc;padding:10px 4px;margin-top: 5px;font-size: 13px;}
 .rgt_tb_x table thead tr th, .tbl_shrt_ft table thead tr th, .rgt_tb_x table tbody tr td, .tbl_shrt_ft table tbody tr td{font-size: 11px;}
 .selctd_btnz, .btn_tabx:hover, .btn_tabx:focus{background-color: #d2f3ff;border: 1px solid #d2f3ff;}
+.check_rgt{width: auto;float: right;margin-right: 28px;margin-top: -7px;}
+.fg6_1{width: 64%;margin:auto;float: left;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

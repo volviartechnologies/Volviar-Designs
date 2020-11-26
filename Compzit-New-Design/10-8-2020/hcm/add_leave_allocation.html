@@ -963,7 +963,7 @@ function closeNav5() {
         <h2>Add Leave Allocation Details</h2>
 
         <div class="fg_3_1">
-        <div class="form-group fg6 sa_640">
+        <div class="form-group fg4 sa_640">
           <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 inp_mst emply_sel" required="" autofocus="">
             <option>Employee 1</option>
@@ -972,7 +972,52 @@ function closeNav5() {
             <option>Employee 4</option>
           </select>
         </div>
-        <div class="form-group fg6 sa_640">
+
+        <div class="fg6_1">
+          <div class="fg6 sect_n11">
+            <label for="pwd" class="fg2_la1">From Date & Session:<span class="spn1">*</span> 
+              <div class="check1 check_rgt">
+                <div class="">
+                  <label class="switch" onclick="multple_dys()" title="Multiple Days">
+                    <input type="checkbox" id="multple_dys">
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
+            </label>
+            <div class="form-group fg6 sa_o_fg2 sa_o_fg4">
+              <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                <input class="form-control inp_bdr inp_mst" type="text">
+                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+            <div class="form-group fg6 sa_o_fg4">
+              <select class="form-control fg2_inp1 inp_mst wi_se100" required="">
+                <option>First</option>
+                <option>Second</option>
+                <option>Fullday</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="fg6 sect_n11">
+            <label for="pwd" class="fg2_la1">To Date & Session:<span class="spn1">*</span> </label>
+            <div class="form-group fg6 sa_o_fg2 sa_o_fg4">
+              <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                <input class="form-control inp_bdr inp_mst to_disbl" type="text" disabled="">
+                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+            <div class="form-group fg6 sa_o_fg4">
+              <select class="form-control fg2_inp1 inp_mst wi_se100 to_disbl" required="" disabled="">
+                <option>First</option>
+                <option>Second</option>
+                <option>Fullday</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group fg4 sa_640">
           <label for="email" class="fg2_la1">Leave Type:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 inp_mst" required="">
             <option>Leave type1</option>
@@ -981,58 +1026,10 @@ function closeNav5() {
             <option>Leave type4</option>
           </select>
         </div>
-        <div class="fg6">
-        <div class="form-group fg2_30 fg2_mr sa_fg4 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Multiple Days:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch" onclick="multple_dys()">
-                <input type="checkbox" id="multple_dys">
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        
-        <div class="fg_3_1 sect_n11">
-          <label for="pwd" class="fg2_la1">From Date & Session:<span class="spn1">*</span> </label>
-          <div class="form-group fg6 sa_o_fg2 sa_o_fg4">
-            <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-              <input class="form-control inp_bdr inp_mst" type="text">
-              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-            </div>
-          </div>
-          <div class="form-group fg6 sa_o_fg4">
-            <select class="form-control fg2_inp1 inp_mst wi_se100" required="">
-              <option>First</option>
-              <option>Second</option>
-              <option>Fullday</option>
-            </select>
-          </div>
-        </div>
-      </div>
-
-        <div class="fg6 sect_n11">
-          <label for="pwd" class="fg2_la1">To Date & Session:<span class="spn1">*</span> </label>
-          <div class="form-group fg6 sa_o_fg2 sa_o_fg4">
-            <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-              <input class="form-control inp_bdr inp_mst to_disbl" type="text" disabled="">
-              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-            </div>
-          </div>
-          <div class="form-group fg6 sa_o_fg4">
-            <select class="form-control fg2_inp1 inp_mst wi_se100 to_disbl" required="" disabled="">
-              <option>First</option>
-              <option>Second</option>
-              <option>Fullday</option>
-            </select>
-          </div>
-        </div>
 
         <div class="fg4">
           <div class="form-group fg6 fg2_mr sa_fg4 sa_480">
-            <label for="email" class="fg2_la1 pad_l">Settlement Eligiblity:<span class="spn1"></span></label>
+            <label for="email" class="fg2_la1 pad_l">Settlement Eligiblity<span class="spn1"></span></label>
             <div class="check1">
               <div class="">
                 <label class="switch">
@@ -1043,7 +1040,7 @@ function closeNav5() {
             </div>
           </div>
           <div class="form-group fg6 fg2_mr sa_fg4 sa_480">
-            <label for="email" class="fg2_la1 pad_l">Include In Settlement:<span class="spn1"></span></label>
+            <label for="email" class="fg2_la1 pad_l">Include In Settlement<span class="spn1"></span></label>
             <div class="check1">
               <div class="">
                 <label class="switch">
