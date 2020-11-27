@@ -962,15 +962,15 @@ function closeNav5() {
 
         <div class="rqst_container">
           <div class="rqst_box1 rqs_wz">
-            <button class="rqst_box1_btn ar_b1 sel_btq" autofocus="" title="Based on Approved Leaves">
+            <button class="rqst_box1_btn ar_b1 sel_btq bt_cl1" autofocus="" title="Based on Approved Leaves">
               <div class="rqst_img_box1">
-                <img src="../images/hcm/btn_ico1.png" class="">
+                <img src="../images/hcm/leav_s1.png" class="">
               </div>
               <h3>Approved Leaves</h3>
             </button>
-            <button class="rqst_box1_btn ar_b2"" title="Based on Eligible Days">
+            <button class="rqst_box1_btn ar_b2 bt_cl1"" title="Based on Eligible Days">
               <div class="rqst_img_box1">
-                <img src="../images/hcm/btn_ico2.png" class="">
+                <img src="../images/hcm/leav_s2.png" class="">
               </div>
               <h3>Eligible Days</h3>
             </button>
@@ -1339,8 +1339,9 @@ function closeNav5() {
                   </div>
                 </div>
               </div>
+              <div class="clearfix"></div>
               <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div>
-              <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
+              <div class="dataTables_paginate paging_simple_numbers mr_rg16" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
             </div>
             <div class="ta_bxz2" style="display: none;">
               <div class="form-group fg4 sa_640">
@@ -1352,24 +1353,25 @@ function closeNav5() {
                 </select>
               </div>
 
-              <div class="emply_box_1 seltdxz" style="display: none;">
+              <div class="emply_box_1" style="display:block;">
                 <div class="emply_dtl_s2">
-                  <h3>Employee Name 1</h3>
-                  <span>Emp001</span>
+                  <h3 class=" seltdxz" style="display: none;">Employee Name 1</h3>
+                  <span class=" seltdxz" style="display: none;">Emp001</span>
                 </div>
                 <div class="clearfix"></div>
                 <div class="devider bccr_clr"></div>
 
                 <div class="lft_empl_b">
                   <div class="user_im_l">
-                    <img src="../images/hcm/user.jpg">
+                    <img src="../images/hcm/no_pik.png">
                   </div>
                 </div>
                 <div class="emply_dtl_s1">
-                  <label>Joining / Resuming Date <span class="flt_r">20/11/2020</span></label>
+                  <label>Joining / Resuming Date <span class="flt_r seltdxz" style="display:none;">20/11/2020</span></label>
+                  <label class="lv_to">Total Eligible Days <span class="flt_r seltdxz" style="display:none;">24</span></label>
                   <div class="fince_yr drop_dte1">
                     <div class="dropdown btn_chse_sec1">
-                      <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true">
+                      <button class="dropdown-toggle procd_btn" type="button" data-toggle="dropdown" aria-expanded="true" disabled="">
                         <span class="sp_msg1">Proceed</span>
                       </button>
                       <ul class="dropdown-menu drop_dn mail_drop">
@@ -1852,6 +1854,7 @@ $(".ar_b2").click(function(){
   });
 $(".opt_selxz").click(function(){
     $(".seltdxz").show();
+    $(".procd_btn").prop('disabled', false);
   });
 });
 </script>
