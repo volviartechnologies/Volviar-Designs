@@ -1771,6 +1771,7 @@ textarea.form-control{height: 42px;}
 .procd_drop a{width: 100%;height: 20px;margin: auto;float: left;}
 .procd_drop a:hover, .procd_drop a:focus{background-color:#6cd8ff!important;}
 .hei_at_txt{height:auto!important;}
+.paid_im img{width: 17px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
