@@ -1036,7 +1036,7 @@ function closeNav5() {
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#imprt_dta">Import</button>
+            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#duplicate_pop">Import</button>
             <button type="submit" class="btn sub4">Cancel</button>
           </div>
 
@@ -1074,7 +1074,60 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
-
+<!-- Modal -->
+<div class="modal fade" id="duplicate_pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: 90%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure delete?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+          <thead class="thead1">
+            <tr>
+              <th class="th_b5 tr_l">
+              </th>
+              <th class="th_b7 tr_l">Employee Code</th>
+              <th class="th_b2 tr_l">Employee</th>
+              <th class="th_b4 tr_l">Designation</th>
+              <th class="th_b6 tr_l">Project Code</th>
+              <th class="th_b1 tr_c">Attendance</th>
+              <th class="th_b5 tr_r">OT</th>
+              <th class="th_b8 tr_l">Remarks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tr_l">
+                <i class="button-checkbox">
+                  <button type="button" class="act_btck btn_uc3 contr1_1"><i class="state-icon fa fa-square-o gly2 ic1"></i><i class="fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                  <input type="checkbox" class="hidden">
+                </i>
+              </td>
+              <td class="tr_l">Emp001</td>
+              <td class="tr_l">Employee 1</td>
+              <td class="tr_l">Designation 1</td>
+              <td class="tr_l">Pr001</td>
+              <td class="tr_c">A</td>
+              <td class="tr_r">101</td>
+              <td class="tr_l">test message</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div>
+        <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#imprt_dta">Over Write</button>
+        <button type="button" class="btn btn-danger" data-dismiss="#duplicate_pop">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal1 -->
 
@@ -1152,7 +1205,7 @@ function closeNav5() {
               <thead class="thead1">
                 <tr>
                   <th class="th_b8 tr_l">Employee Code</th>
-                  <th class="th_b2 tr_l">Employee</th>
+                  <th class="th_b4 tr_l">Employee</th>
                   <th class="th_b6 tr_l">Designation</th>
                   <th class="th_b6 tr_l">Project Code</th>
                   <th class="th_b7 tr_c">Attendance</th>
@@ -1161,6 +1214,7 @@ function closeNav5() {
                   <th class="th_b1 tr_r">Final OT</th>
                   <th class="th_b7 tr_r">Rounded OT</th>
                   <th class="th_b8 tr_l">Remarks</th>
+                  <th class="th_b7 tr_c">Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -1179,7 +1233,12 @@ function closeNav5() {
                     <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0">
                   </td>
                   <td class="tr_l">
-                    <textarea type="text" class="form-control fg2_inp2 tr_l hei_at_txt" placeholder="Type text here" rows="1"></textarea>
+                    <textarea type="text" class="form-control fg2_inp2 tr_l hei_at_txt" placeholder="Type" rows="1"></textarea>
+                  </td>
+                  <td class="tr_c">
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                      <i class="fa fa-trash"></i>
+                    </button>
                   </td>
                 </tr>
               </tbody>
@@ -1205,6 +1264,7 @@ function closeNav5() {
   </div>
 </div>
 <!--------script section_started---------->
+
 
 <!-----table_search------------>
 <script>
@@ -1696,5 +1756,18 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+$(document).ready(function(){
+  $(".chk_allbx .ic1").click(function(){
+    $(".ic2").fadeIn(100);
+    $(".ic1").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+  $(".chk_allbx .ic2").click(function(){
+    $(".ic2").fadeOut(100);
+    $(".ic1").fadeIn(100);
+$('.hidew').prop('checked',false);
+  });
+  </script>
 </body>
 </html>
