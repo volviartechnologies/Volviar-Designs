@@ -1764,10 +1764,12 @@ textarea.form-control{height: 42px;}
 .mr_rg16{margin-right: 12px;}
 .bt_cl1{font-size: 13px;}
 .bt_cl1 .rqst_img_box1{margin-left: 0px;margin-top: 1px;width:40px;}
-.bt_cl1 img{width: 40px;margin-left: 0px;}
-.bt_cl1 h3{padding-top:8px!important;font-size: 13px;}
+.bt_cl1 img{width: 60px;margin-left: -20px;}
+.bt_cl1 h3{padding-top:18px!important;font-size: 13px;}
 .emply_dtl_s2{width: 100%;height: 32px;margin: auto;float: left;}
 .drop_dte1 .btn_chse_sec1 button:disabled{background-color: #ccc;cursor: not-allowed;}
+.procd_drop a{width: 100%;height: 20px;margin: auto;float: left;}
+.procd_drop a:hover, .procd_drop a:focus{background-color:#6cd8ff!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
