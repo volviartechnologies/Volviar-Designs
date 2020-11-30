@@ -1797,6 +1797,9 @@ textarea.form-control{height: 42px;}
 .pm_slry{top: 30px;width: 200px;max-width: 200px;left: 176px;background-color: #fff;}
 .pm_slry li{background-color:#f9f9f9;}
 .pm_slry li span{font-weight: 400!important;}
+.rfg_btn{top: 350px!important;background-color: #fff!important;border: 1px solid #4098d6;}
+.rfg_btn:hover{background-color:#f1fffa!important;}
+.img_rfg img{width: 20px;margin-top: -3px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

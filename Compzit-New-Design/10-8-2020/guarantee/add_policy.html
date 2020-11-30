@@ -1013,8 +1013,13 @@ function closeNav5() {
   <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
   <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
 </div>
-<!---import_button_section_closed--->
+<!---import_button_section_closed-->
 
+<a href="#" type="button" onclick="topFunction()" id="" class="dropdown dd_spl1 opp_btz tp_ovr rfg_btn" title="Change Quotation Status" data-toggle="modal" data-target="#rqst_grty">
+<i class="img_rfg">
+  <img src="../images/icons/opp/rfg_btn.png">
+</i>
+</a>
 
 <!---alert_message_section---->
 <div class="myAlert-top alert alert-success">
@@ -1181,6 +1186,83 @@ function closeNav5() {
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="rqst_grty" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: 70%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bank Guarentee</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="fg4 sa_o_fg4 sa_2 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Guarentee Mode:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1" name="browser">
+            <option>Bank Guarentee</option>
+            <option>Insurance</option>
+          </select>
+        </div>
+        <div class="fg4 sa_o_fg4 sa_2 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Customer:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1" name="browser">
+            <option>Customer 1</option>
+            <option>Customer 2</option>
+          </select>
+        </div>
+        <div class="fg2 sa_480">
+          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
+          <button class="submit_ser"></button>
+          <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
+        </div>
+        <div class="clearfix"></div>
+        <div class="r_480">
+        <table id="example" class="display table-bordered tbl_480" cellspacing="0" width="100%">
+          <thead class="thead1">
+            <tr>
+              <th class="th_b6 tr_l">Guarentee Mode</th>
+              <th class="th_b2 tr_l">Customer</th>
+              <th class="th_b8 tr_l">Project</th>
+              <th class="th_b7 tr_r">Amount</th>
+             <th class="th_b5">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tr_l">Guarentee Mode 1</td>
+              <td class="tr_l">Customer 1</td>
+              <td class="tr_l">Project 1</td>
+              <td class="tr_r">1000.00</td>
+              <td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn11" data-toggle="modal" data-target="#exampleModal" title="Import">
+                    <i class="img_rfg">
+                      <img src="../images/icons/opp/rfg_btn.png">
+                    </i>
+                  </button>
+                </div>
+                <div class="btn_stl2"> 
+                  <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View"><i class="fa fa-list-alt"></i> View
+                  </button>
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
+                </div>
+                <div class="btn_stl3">
+                  <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button>
+                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
