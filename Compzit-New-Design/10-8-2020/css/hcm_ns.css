@@ -1659,7 +1659,7 @@ textarea.form-control{height: 42px;}
 .blk_box img{width: auto;max-width: 500px;height: auto;max-height: 350px;}
 .blk_box p{font-size: 13px;width: 20%; margin: auto;background-color: #f1f8fd;padding: 4px;border-radius: 8px;}
 .mont_lst{width: 100%;margin: auto;float: left;margin-bottom: 10px;margin-top: -40px;}
-.wid_8_3{width:16.66%;margin:auto;float: left;height:40px;background-color: #fff;color:#44a2e4;border:1px solid #d9efff;padding:4px;margin-bottom: 10px;text-align: left;}
+.wid_8_3{margin:auto;float: left;height:40px;background-color: #fff;color:#44a2e4;border:none;padding:4px;margin-bottom:0px;text-align: left;width: 100%!important;border-bottom:1px solid #caf3ff;}
 .sel_mnt{background-color: #44a2e4;color: #fff;}
 .wid_8_3:hover, .wid_8_3:focus{background-color:#ecf7ff;color: #44a2e4;}
 .wid_7_1{width: 11.4%;margin:auto;float: left;height:71px;border:none;border-left: 1px solid #ccc;border: 1px solid #ccc;margin:7px;}
@@ -1804,6 +1804,16 @@ textarea.form-control{height: 42px;}
 .wid_76_pz{width: 76%!important;}
 .emp_dtl_bdr li{background-color: transparent!important;border-bottom: 1px solid #ccc;border-radius: 0px;}
 .dtl_amtz li{width: 100%;margin: auto;float: left; height: 30px;margin-bottom: 10px; padding: 5px 10px;}
+.wid_72pz{width: 72%!important;margin: auto;float: left;}
+.wid_72pz .spn1{font-weight: 300;float: right;text-align: right;margin: auto;float: right!important;margin-top: 6px;}
+.width_100pz{width: 100%;margin:auto;float:left;height:20px;}
+.width_100pz button{padding:1px 4px!important;border-radius: 1px!important;}
+.act_cols{width:16.66%!important;height: 63px;margin:auto;float: left;background-color:#f8feff;margin-top: 4px; border: 1px solid #d9efff;}
+.act_cols .btn{padding:1px 7px;border-radius: 1px;border:none;}
+.mr_tp16{margin-top:16px;margin-right: 10px;}
+.btn_imprt1{color: #44a2e4;border: 1px solid #44a2e4;}
+.btn_imprt1:hover, .btn_imprt1:focus{color: #fff;background-color: #44a2e4;}
+.wid_9pz{width: 9%;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
