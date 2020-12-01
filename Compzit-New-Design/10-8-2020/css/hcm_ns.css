@@ -1783,7 +1783,7 @@ textarea.form-control{height: 42px;}
 .pro_rt2_1 li{font-weight: 600; font-size: 13px;color: #607d8b; list-style: none;}
 .pro_rt3 table thead tr th{font-size: 11px!important;}
 .mar_lft_20{margin-left: 20px;}
-.spn_zp1{font-weight: 400!important;width:52%!important;margin:auto!important;float: left!important;}
+.spn_zp1{font-weight: 400!important;width:70%!important;margin:auto!important;float: left!important;}
 .join_leav li{background-color:#fff1df;padding: 2px 5px;border-radius: 4px;margin-bottom: 4px;}
 .bg_grn{background-color:#d6f2ff!important;}
 .bg_red{background-color:#ffe9e8!important;}
@@ -1800,6 +1800,10 @@ textarea.form-control{height: 42px;}
 .rfg_btn{top: 350px!important;background-color: #fff!important;border: 1px solid #4098d6;position: static; width: 60px;padding: 0px 16px; margin-top: 15px; float: left;margin: auto;margin-top: -10px;}
 .rfg_btn:hover, .rfg_btn:focus{background-color:#f1fffa!important;}
 .img_rfg img{width: 20px;margin-top: 1px;}
+.wid_40pz{width: 40%;}
+.wid_76_pz{width: 76%!important;}
+.emp_dtl_bdr li{background-color: transparent!important;border-bottom: 1px solid #ccc;border-radius: 0px;}
+.dtl_amtz li{width: 100%;margin: auto;float: left; height: 30px;margin-bottom: 10px; padding: 5px 10px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
