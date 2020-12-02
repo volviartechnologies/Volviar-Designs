@@ -1820,6 +1820,7 @@ textarea.form-control{height: 42px;}
 .pop_hd span{width: auto;margin: auto;}
 .spn_za1{width:auto!important;margin:auto!important;}
 .bg_nz{background-color: transparent!important;margin-bottom: 0px!important;border-bottom: 1px solid #ccc;border-radius: 0px;}
+.bg_vsly{background-color: #aae0ff!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
