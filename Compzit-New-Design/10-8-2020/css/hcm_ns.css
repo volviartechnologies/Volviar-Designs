@@ -1544,6 +1544,8 @@ textarea.form-control{height: 42px;}
 .import_opt{top: 136px;}
 .mrrgt0 .form-control{width:100%!important;}
 .mrrgt0{padding-right: 20px;}
+.bt_rpn{margin-top: -14px; padding: 5px 20px;height: 30px;margin-left: 10px;}
+
 @media only screen and (max-width:1100px){
   .lf_25{width: 22%;}
   .rqsz_b ul li{height: auto;}
