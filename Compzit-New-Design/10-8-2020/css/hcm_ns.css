@@ -1664,7 +1664,7 @@ textarea.form-control{height: 42px;}
 .wid_8_3{margin:auto;float: left;height:74px;background-color: #fff;color:#44a2e4;border:none;padding:4px;margin-bottom:0px;text-align: left;width: 80%!important;border-bottom:1px solid #caf3ff;}
 .sel_mnt{background-color: #44a2e4;color: #fff;}
 .wid_8_3:hover, .wid_8_3:focus{background-color:#ecf7ff;color: #44a2e4;}
-.wid_7_1{width: 11.4%;margin:auto;float: left;height:71px;border:none;border-left: 1px solid #ccc;border: 1px solid #ccc;margin:7px;}
+.wid_7_1{width: 11.4%;margin:auto;float: left;height:71px;border:none;border-left: 1px solid #ccc;border: 1px solid #ccc;margin:4px 5px;}
 .dayz{width: 30%;margin:auto;float: left;font-size:24px;font-weight: 400;border-right: 1px solid #f2f2f2;text-align:right;padding-right: 10px;background-color:#f6fbff;color: #000;
           height:68px;line-height: 64px;border:none;}
 .dayz:hover{background-color:#c8e7ff;}
@@ -1810,8 +1810,8 @@ textarea.form-control{height: 42px;}
 .wid_72pz .spn1{font-weight: 300;float: right;text-align: right;margin: auto;float: right!important;margin-top: 6px;}
 .width_100pz{width: 100%;margin:auto;float:left;height:20px;}
 .width_100pz button{padding:1px 4px!important;border-radius: 1px!important;}
-.act_cols{width:16%!important;height: 74px;margin:auto;float: left;background-color:#f8feff;margin-top: 4px; border: 1px solid #d9efff;}
-.act_cols .btn{padding:1px 9px;border-radius: 1px;border:none;height: 12px;line-height: 4px;margin-top: -9px;font-size: 11px;}
+.act_cols{width:16%!important;height: 74px;margin:auto;float: left;background-color:#f8feff;margin-top: 4px; border: 1px solid #d9efff;margin-bottom: 5px;margin-right: 6px;}
+.act_cols .btn{padding:1px 9px;border-radius: 1px;border:none;height: 15px;line-height: 4px;margin-top: -9px;font-size: 11px;}
 .mr_tp16{margin-top:16px;margin-right: 10px;position: fixed;right: 0px;top: 250px;}
 .btn_imprt1{color: #44a2e4;border: 1px solid #44a2e4;top:300px;}
 .btn_imprt1:hover, .btn_imprt1:focus{color: #fff;background-color: #44a2e4;}
@@ -1821,6 +1821,9 @@ textarea.form-control{height: 42px;}
 .spn_za1{width:auto!important;margin:auto!important;}
 .bg_nz{background-color: transparent!important;margin-bottom: 0px!important;border-bottom: 1px solid #ccc;border-radius: 0px;}
 .bg_vsly{background-color: #aae0ff!important;}
+.mar_btm_dvdr{margin-bottom: 10px;}
+.bn2:focus{color:#fff;background-color: #34c461;}
+.bn3:focus{color:#fff;background-color: #d10000;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
