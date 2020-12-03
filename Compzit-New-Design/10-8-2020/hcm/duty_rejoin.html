@@ -950,7 +950,7 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li class="active">Duty Rejoin</li>
+      <li class="active">Duty Resume</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -959,159 +959,233 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
-          <h1 class="h1_con">Duty Rejoin</h1>
-
-          <div class="clearfix"></div>
-          <div class="free_sp"></div>
-
-         <div class="form-group fg2 sa_fg4 sa_640 sa_480">
-          <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Rejoin</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Confirm</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Rejected</label>
-              </div>
-            </div>
-          </div>
-        </div>
+<!---inner_content_sections area_started-->
+          <h1 class="h1_con">Duty Resume</h1>
+            <button class="tabli sa_480_btn tb_a1 sel_tba" autofocus=""> Resume</button>
+            <button class="tabli sa_480_btn tb_a2"> Confirm</button>
+            <button class="tabli sa_480_btn tb_a3"> Rejected</button>
 
 <!---=================section_devider============--->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
 
-        <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
+          <div id="Ho" class="tab4 tbe_pdg" style="display:block;">
+            <div class="r_800">
+              <table id="example" class="display table-bordered tbl_900" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="th_b6 tr_l"> Employee ID
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
+                    </th>
 
-          <div class="r_800">
-          <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
-            <thead class="thead1">
-              <tr>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee Name">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Department">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Leave From Date">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Leave to Date">
-                </th>
-                <th rowspan="2" class="th_b7">Action</th>
-                 </tr>
-              <tr>
-                <th class="th_b2 tr_l"> Employee ID</th>
+                    <th class="th_b2 tr_l"> Employee
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee">
+                    </th>
+                    <th class="th_b4 tr_l"> Designation
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
+                    </th>
+                    <th class="th_b4 tr_l"> Department
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
+                    </th>
+                    <th class="th_b8 tr_c"> Leave From
+                      <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Leave From">
+                    </th>
+                    <th class="th_b8 tr_c"> Leave to
+                      <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Leave to">
+                    </th>
+                    <th class="th_b7">Actions</th>
+                  </tr>
+                 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tr_l">Polic</td>
+                    <td class="tr_l">Abin BK</td>
+                    <td class="tr_l">Aaaabbbbb</td>
+                    <td class="tr_l">Test Department</td>
+                    <td>05/09/2019</td>
+                    <td>05/09/2019</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Rejoin">
+                      <i class="fa fa-american-sign-language-interpreting"></i>
+                    </button>
+                  </div>
+                </td>
+                  </tr>
+                  <tr>
+                    <td class="tr_l">Polic</td>
+                    <td class="tr_l">Abin BK</td>
+                    <td class="tr_l">Aaaabbbbb</td>
+                    <td class="tr_l">Test Department</td>
+                    <td>05/09/2019</td>
+                    <td>05/09/2019</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Rejoin">
+                      <i class="fa fa-american-sign-language-interpreting"></i>
+                    </button>
+                  </div>
 
-                <th class="th_b2 tr_l"> Employee Name</th>
+                  <div class="btn_stl2"> 
+                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Rejoin">
+                        <i class="fa fa-american-sign-language-interpreting"></i> Rejoin
+                    </button>
+                  </div>
 
-                <th class="th_b2 tr_l"> Designation</th>
+                  <div class="btn_stl3">
+                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"> Rejoin</button>
+                  </div>
+                </td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-                <th class="th_b2 tr_c"> Department</th>
+          <div id="Ne" class="tab4 tbe_pdg">
+            <div class="r_800">
+              <table id="example1" class="display table-bordered tbl_900" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="th_b6 tr_l"> Employee ID
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
+                    </th>
 
-                <th class="th_b8 tr_c"> Leave From Date</th>
+                    <th class="th_b2 tr_l"> Employee
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee">
+                    </th>
+                    <th class="th_b4 tr_l"> Designation
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
+                    </th>
+                    <th class="th_b4 tr_l"> Department
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
+                    </th>
+                    <th class="th_b8 tr_c"> Leave From
+                      <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Leave From">
+                    </th>
+                    <th class="th_b8 tr_c"> Leave to
+                      <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Leave to">
+                    </th>
+                    <th class="th_b7">Actions</th>
+                  </tr>
+                 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tr_l">Polic</td>
+                    <td class="tr_l">Abin BK</td>
+                    <td class="tr_l">Aaaabbbbb</td>
+                    <td class="tr_l">Test Department</td>
+                    <td>05/09/2019</td>
+                    <td>05/09/2019</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn2 show-popup" data-toggle="modal" data-target="#cnfrm_mdl" title="Confirm">
+                      <i class="fa fa-check"></i>
+                    </button>
+                  </div>
+                </td>
+                  </tr>
+                  <tr>
+                    <td class="tr_l">Polic</td>
+                    <td class="tr_l">Abin BK</td>
+                    <td class="tr_l">Aaaabbbbb</td>
+                    <td class="tr_l">Test Department</td>
+                    <td>05/09/2019</td>
+                    <td>05/09/2019</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn2 show-popup" data-toggle="modal" data-target="#cnfrm_mdl" title="Confirm">
+                      <i class="fa fa-check"></i>
+                    </button>
+                  </div>
+                </td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          <div id="Co" class="tab4 tbe_pdg">
+            <div class="r_800">
+              <table id="example2" class="display table-bordered tbl_900" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="th_b6 tr_l"> Employee ID
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
+                    </th>
 
-                <th class="th_b8 tr_c"> Leave to Date</th>
-              </tr>
-             
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tr_l">Polic</td>
-                <td class="tr_l">Abin BK</td>
-                <td class="tr_l">Aaaabbbbb</td>
-                <td>Test Department</td>
-                <td>05/09/2019</td>
-                <td>05/09/2019</td>
-            <td>
-              <div class="btn_stl1">
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Rejoin">
-                  <i class="fa fa-american-sign-language-interpreting"></i>
-                </button>
-              </div>
-
-              <div class="btn_stl2"> 
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Rejoin">
-                    <i class="fa fa-american-sign-language-interpreting"></i> Rejoin
-                </button>
-              </div>
-
-              <div class="btn_stl3">
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"> Rejoin</button>
-              </div>
-            </td>
-              </tr>
-              <tr>
-                <td class="tr_l">Polic</td>
-                <td class="tr_l">Abin BK</td>
-                <td class="tr_l">Aaaabbbbb</td>
-                <td>Test Department</td>
-                <td>05/09/2019</td>
-                <td>05/09/2019</td>
-            <td>
-              <div class="btn_stl1">
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Rejoin">
-                  <i class="fa fa-american-sign-language-interpreting"></i>
-                </button>
-              </div>
-
-              <div class="btn_stl2"> 
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Rejoin">
-                    <i class="fa fa-american-sign-language-interpreting"></i> Rejoin
-                </button>
-              </div>
-
-              <div class="btn_stl3">
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"> Rejoin</button>
-              </div>
-            </td>
-              </tr>
-             
-            </tbody>
-          </table>
-        </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
-        </div>
+                    <th class="th_b2 tr_l"> Employee
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee">
+                    </th>
+                    <th class="th_b4 tr_l"> Designation
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
+                    </th>
+                    <th class="th_b4 tr_l"> Department
+                      <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                      <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
+                    </th>
+                    <th class="th_b8 tr_c"> Leave From
+                      <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Leave From">
+                    </th>
+                    <th class="th_b8 tr_c"> Leave to
+                      <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Leave to">
+                    </th>
+                    <th class="th_b7">Actions</th>
+                  </tr>
+                 
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tr_l">Polic</td>
+                    <td class="tr_l">Abin BK</td>
+                    <td class="tr_l">Aaaabbbbb</td>
+                    <td class="tr_l">Test Department</td>
+                    <td>05/09/2019</td>
+                    <td>05/09/2019</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn2 show-popup" data-toggle="modal" data-target="#cnfrm_mdl" title="Confirm">
+                      <i class="fa fa-check"></i>
+                    </button>
+                  </div>
+                </td>
+                  </tr>
+                  <tr>
+                    <td class="tr_l">Polic</td>
+                    <td class="tr_l">Abin BK</td>
+                    <td class="tr_l">Aaaabbbbb</td>
+                    <td class="tr_l">Test Department</td>
+                    <td>05/09/2019</td>
+                    <td>05/09/2019</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn2 show-popup" data-toggle="modal" data-target="#cnfrm_mdl" title="Confirm">
+                      <i class="fa fa-check"></i>
+                    </button>
+                  </div>
+                </td>
+                  </tr>
+                 
+                </tbody>
+              </table>
+            </div>
+          </div>
 
 
 <!---inner_content_sections area_closed--->
@@ -1181,41 +1255,42 @@ function closeNav5() {
   </div><!--wrapper_closed-->
 
 
-<!--------script section_started---------->
+<!--------script section_started--------->
 
-<!---modal_started--->
+<!---modal_started-->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog mod2 mar_reg" role="document">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title tr_c" id="exampleModalLabel">Rejoin Process</h4>
+        <h4 class="modal-title tr_c" id="exampleModalLabel">Resume Process</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
       </div>
       <div class="modal-body">
-
-        <div class="top_br_container tbr_contr">
-          <div class="top_br_1 tbr_set">
-            <div class="col-md-6 tx_100">
-              <ul>
-                <li><span class="fg6 li_100">Employee</span> <span class="fg6 li_100_1">: Employee 1</span></li>
-                <li><span class="fg6 li_100">Designation</span> <span class="fg6 li_100_1">: Designation 2</span></li>
-              </ul>
-            </div>
-            <div class="col-md-4 tx_100">
-              <ul>
-                <li><span class="fg6 li_100">Department</span> <span class="fg6 li_100_1">: Department 1</span></li>
-                <li><span class="fg6 li_100">Leave taken</span> <span class="fg6 li_100_1">: 2</span></li>
-              </ul>
-            </div>
-          </div>
+        <div class="fg12 empl_pop_dtl wid_liz">
+          <ul class="join_leav emp_dtl_bdr">
+            <li><span class="spn_zp1">Employee:</span> <span>Employee 1</span></li>
+            <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
+            <li class="bg_red elg_2"><span class="spn_zp1">Department:</span> <span>Department 1</span></li>
+            <li><span class="spn_zp1">Leave Taken:</span> <span>From  28/11/2020 To 03/12/2020</span></li>
+          </ul>
         </div>
         <div class="clearfix"></div>
         <div class="free_sp"></div>
-        <div class="devider"></div>
-        <div class="form-group fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Passport Handed Over To HR:<span class="spn1"></span></label>
+        <div class="form-group fg6_11 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1 pad_l">Passport Handed Over To HR<span class="spn1"></span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group fg5 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1 pad_l">Half Day<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
               <label class="switch">
@@ -1226,18 +1301,7 @@ function closeNav5() {
           </div>
         </div>
         <div class="form-group fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Half Day:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group fg4 sa_640_i1 sa_480">
-          <label for="pwd" class="fg2_la1">Rejoin Date:<span class="spn1">*</span> </label>
+          <label for="pwd" class="fg2_la1">Resume Date:<span class="spn1">*</span> </label>
           <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -1245,18 +1309,9 @@ function closeNav5() {
         </div>
       </div>
       <div class="modal-footer">
-        <div class="sub_cont pull-right">
-          <div class="save_sec">
-            <button type="submit" class="btn sub1">Rejoin</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-
-          <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update &amp; Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
+        <div class="save_sec flt_r">
+          <button type="submit" class="btn sub1">Resume</button>
+          <button type="submit" class="btn sub4">Cancel</button>
         </div>
       </div>
     </div>
@@ -1264,6 +1319,45 @@ function closeNav5() {
 </div>
 <!---modal_closed--->
 
+<!---modal_started-->
+<div class="modal fade" id="cnfrm_mdl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title tr_c" id="exampleModalLabel">Resume Confirm Process</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="fg12 empl_pop_dtl wid_liz">
+          <ul class="join_leav emp_dtl_bdr">
+            <li><span class="spn_zp1">Employee:</span> <span>Employee 1</span></li>
+            <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
+            <li class="bg_red elg_2"><span class="spn_zp1">Department:</span> <span>Department 1</span></li>
+            <li><span class="spn_zp1">Leave Was Taken:</span> <span>From  28/11/2020 To 03/12/2020</span></li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <div class="free_sp"></div>
+        <div class="form-group fg4 sa_640_i1 sa_480">
+          <label for="pwd" class="fg2_la1">Resume Date:<span class="spn1">*</span> </label>
+          <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="save_sec flt_r">
+          <button type="submit" class="btn sub1">Confirm</button>
+          <button type="submit" class="btn sub4">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!---modal_closed--->
 
 
 <!-----table_search------------>
@@ -1549,13 +1643,74 @@ $(".wr2").click(function(){
 
 <!-------------print_script_close--------------------->
 
-<!--date_picker--->
 
-<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
-<script src="../date_pick/datepicker.js"></script>
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+    $('#example1').DataTable();
+    $('#example2').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
 
-<!---date_picker_closed-->
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+  <!---Data_table_script for search_closed-->
+
+<script type="text/javascript">
+  $( ".tb_a1" ).click(function() {
+  $( "#Ho, #Ho1" ).fadeIn();
+  $( ".tb_a1").addClass( "sel_tba" );
+  $( ".tb_a2, .tb_a3").removeClass( "sel_tba" );
+  $( "#Ne, #Ne1" ).hide();
+  $( "#Co, #Co1" ).hide();
+});
+  $( ".tb_a2" ).click(function() {
+  $( "#Ne, #Ne1" ).fadeIn();
+  $( ".tb_a2").addClass( "sel_tba" );
+  $( ".tb_a1, .tb_a3").removeClass( "sel_tba" );
+  $( "#Ho, #Ho1" ).hide();
+  $( "#Co, #Co1" ).hide();
+});
+  $( ".tb_a3" ).click(function() {
+  $( "#Co, #Co1" ).fadeIn();
+  $( ".tb_a3").addClass( "sel_tba" );
+  $( ".tb_a1, .tb_a2").removeClass( "sel_tba" );
+  $( "#Ho, #Ho1" ).hide();
+  $( "#Ne, #Ne" ).hide();
+});
+</script>
 
 
 </body>

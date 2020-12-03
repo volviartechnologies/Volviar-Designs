@@ -1828,6 +1828,8 @@ textarea.form-control{height: 42px;}
 .mr_btm0{margin-bottom: 0px!important;border-radius: 0px!important;height: 26px!important;}
 .hd_mr_0{margin-top: 0px;}
 .pm_slry:before{content: " ";position: absolute;left: -10px;top:4px;border-right: 0px solid transparent;border-left: 10px solid transparent;border-bottom: -1px solid #fff;border-top: 14px solid #fff;}
+.wid_liz .emp_dtl_bdr .spn_zp1{width: 50%!important;}
+.fg6_11{width: 40%;margin: auto;float: left;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
