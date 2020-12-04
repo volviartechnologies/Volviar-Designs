@@ -1160,7 +1160,7 @@ function closeNav5() {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title tr_c" id="exampleModalLabel">Resume Process</h4>
+        <h4 class="modal-title tr_c" id="exampleModalLabel">Duty Resume</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
@@ -1168,17 +1168,17 @@ function closeNav5() {
       <div class="modal-body">
         <div class="fg12 empl_pop_dtl wid_liz">
           <ul class="join_leav emp_dtl_bdr">
-            <li><span class="spn_zp1">Employee:</span> <span>Employee 1</span></li>
+            <li><span class="spn_zp1">Employee ID:</span> <span>Employee 1</span></li>
             <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
             <li class="bg_red elg_2"><span class="spn_zp1">Department:</span> <span>Department 1</span></li>
-            <li><span class="spn_zp1">Leave Taken:</span> <span>From  28/11/2020 To 03/12/2020</span></li>
+            <li><span class="spn_zp1">Leave:</span> <span>  28/11/2020 To 03/12/2020</span></li>
           </ul>
         </div>
         <div class="clearfix"></div>
         <div class="free_sp"></div>
         <div class="form-group fg4 sa_640_i1 sa_480">
           <label for="pwd" class="fg2_la1">Resume Date:<span class="spn1">*</span> </label>
-          <div id="datepicker3" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+          <div id="datepicker5" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
@@ -1230,7 +1230,7 @@ function closeNav5() {
       <div class="modal-body">
         <div class="fg12 empl_pop_dtl wid_liz">
           <ul class="join_leav emp_dtl_bdr">
-            <li><span class="spn_zp1">Employee:</span> <span>Employee 1</span></li>
+            <li><span class="spn_zp1">Employee:</span> <span>Emp0001</span></li>
             <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
             <li class="bg_red elg_2"><span class="spn_zp1">Department:</span> <span>Department 1</span></li>
             <li><span class="spn_zp1">Leave Was Taken:</span> <span>From  28/11/2020 To 03/12/2020</span></li>
@@ -1409,6 +1409,14 @@ function myFunction_b() {
 <script type="text/javascript">
   $(function () {
   $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker5").datepicker({ 
         autoclose: true, 
         todayHighlight: true
   }).datepicker('update', new Date());
