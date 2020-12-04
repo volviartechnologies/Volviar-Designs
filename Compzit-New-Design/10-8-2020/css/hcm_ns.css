@@ -1864,6 +1864,7 @@ textarea.form-control{height: 42px;}
 .ta_bxz2{width: 80%;}
 .ta_bxz2 .emply_box_1{width: 90%;}
 .fg_640_sp1{width: 100%;}
+.sa_fg3_1{width: 40%;}
 }
 @media only screen and (max-width:640px){ 
 .blk_box p{width: 80%;}
@@ -1873,6 +1874,7 @@ textarea.form-control{height: 42px;}
 .box_tabz{width:68%;}
 .bt_cl1{width: 100%;}
 .ta_bxz2 .emply_box_1{width: 100%;}
+.sa_fg3_1{width: 50%;}
 }
 @media only screen and (max-width:500px){
   .fg43, .wid_54{width: 100%;}
@@ -1888,6 +1890,7 @@ textarea.form-control{height: 42px;}
   .pm_slry{max-width: 200px!important;}
   .empl_pop_dtl span{font-size:9px;}
   .spn_zp1 {width: 46%!important;}
+  .sa_fg3_1{width: 90%;}
 } 
 
 @media only screen and (max-width:380px){
