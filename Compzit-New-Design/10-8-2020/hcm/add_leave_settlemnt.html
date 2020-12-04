@@ -1448,7 +1448,7 @@ function closeNav5() {
               <li><span class="spn_zp1">Joining / Resuming Date:</span> <span>28/11/2020</span></li>
               <li class="bg_grn elg_2"><span class="spn_zp1">Leave From:</span> <span>28/11/2020</span></li>
               <li class="bg_red elg_2"><span class="spn_zp1">Leave To:</span> <span>28/11/2020</span></li>
-              <li class="bg_red elg_1" style="display:none;"><span class="spn_zp1">Eligible Days:</span> <span>28/11/2020</span></li>
+              <li class="bg_red"><span class="spn_zp1">Eligible Days:</span> <span>28/11/2020</span></li>
               <li><span class="spn_zp1">Previous Settled Date:</span> <span>28/11/2020</span></li>
             </ul>
           </div>
@@ -1460,7 +1460,7 @@ function closeNav5() {
         <div class="col-md-7 mar_at flt_r box_emp_br">
           <div class="empl_pop_dtl padg_tp10 dtl_amtz">
             <ul class="join_leav">
-              <li class="bg_grn"><span class="spn_zp1">Previous Month Salary:</span> <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1">1,000.00 </span></a>
+              <li class="bg_grn"><span class="spn_zp1">Previous Month Salary:</span> <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1">1,000.00 </span></button>
                 <ul class="dropdown-menu drop_dn mail_drop procd_drop pm_slry">
                   <li class="sel_ms2 bg_grn mr_btm0"><span>Basic Pay</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
                   <li class="sel_ms2 bg_grn mr_btm0"><span>Paygrade Addition</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
@@ -1475,7 +1475,7 @@ function closeNav5() {
                 </ul>
               </li>
               <li class="bg_grn"><span class="spn_zp1">Current Month Salary:</span> 
-                <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1">1,000.00 </span></a>
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1">1,000.00 </span></button>
                 <ul class="dropdown-menu drop_dn mail_drop procd_drop pm_slry">
                   <li class="sel_ms2 bg_grn mr_btm0"><span>Basic Pay</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
                   <li class="sel_ms2 bg_grn mr_btm0"><span>Paygrade Addition</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
@@ -1489,10 +1489,28 @@ function closeNav5() {
                   <div class="pop_hd hd_mr_0">One Day Salary:  <span class="">Rs. 768.00</span></div>
                 </ul>
               </li>
-              <li class="bg_grn bg_vsly"><span class="spn_zp1">Leave Salary:</span> <span class="amt_1">1,000.00 </span></li>
-              <li class="bg_grn"><span class="spn_zp1">Other Addition:</span> <span class="amt_1">1,000.00 </span></li>
+              <li class="bg_grn bg_vsly"><span class="spn_zp1">Leave Salary:</span><span class="amt_1">1,000.00 </span></button></li>
+              <li class="bg_grn"><span class="spn_zp1">Other Addition:</span>  
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1"><span class="amt_1">1,000.00 </span></button>
+                <ul class="dropdown-menu drop_dn mail_drop procd_drop pm_slry ad_ded_pop">
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>Basic Pay</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>Paygrade Addition</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>Arrear Amount Addition</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>Overtime Addition</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <div class="pop_hd">Total  <span class="flt_r tr_r">2000.00</span></div>
+                </ul>
+              </li>
               <li class="bg_grn"><span class="spn_zp1">Ticket Amount:</span> <input type="text" class="form-control inp_shrt_bx flt_r tr_r" placeholder="1,000.00"></li>
-              <li class="bg_red"><span class="spn_zp1">Other Deduction:</span> <span class="amt_1">1,000.00 </span></li>
+              <li class="bg_red"><span class="spn_zp1">Other Deduction:</span>
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1"><span class="amt_1">1,000.00 </span></button>
+                <ul class="dropdown-menu drop_dn mail_drop procd_drop pm_slry ad_ded_pop">
+                  <li class="sel_ms2 bg_red mr_btm0"><span>Paygrade Deduction</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_red mr_btm0"><span>Loan Deduction</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_red mr_btm0"><span>Mess Deduction</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_red mr_btm0"><span>Arrear Amount Deduction</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <div class="pop_hd">Total  <span class="flt_r tr_r">2000.00</span></div>
+                </ul>
+              </li>
               <div class="clearfix"></div>
               <div class="free_sp1"></div>
               <div class="devider"></div>

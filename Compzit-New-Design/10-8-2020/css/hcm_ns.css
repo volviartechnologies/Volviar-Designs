@@ -1830,6 +1830,17 @@ textarea.form-control{height: 42px;}
 .pm_slry:before{content: " ";position: absolute;left: -10px;top:4px;border-right: 0px solid transparent;border-left: 10px solid transparent;border-bottom: -1px solid #fff;border-top: 14px solid #fff;}
 .wid_liz .emp_dtl_bdr .spn_zp1{width: 50%!important;}
 .fg6_11{width: 40%;margin: auto;float: left;}
+.bodr_btnz{background-color: transparent;border:none;color: #000;float: right;}
+.bodr_btnz:hover, .bodr_btnz:focus{color: #d9534f;}
+.ad_ded_pop{margin-top:-120px!important;}
+.ad_ded_pop:before{margin-top: 100px!important;}
+.mar_top20{margin-top: 20px;border-radius: 4px;padding: 10px 10px;height: 40px; margin-top: 19px;}
+.fg4_a{width: 10%; margin: auto;float: left;}
+.fg_3_1_a{width: 90%;margin:auto;float: left;}
+.prnt_btz button{height: 32px;line-height:32px;width: 48px;}
+.prnt_btz button .fa{font-size: 16px;}
+.bc_opn{width: 20px;height: auto;margin:auto;float: left;}
+.bc_opn img{width: 80%;height: auto;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
