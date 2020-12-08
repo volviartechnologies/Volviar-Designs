@@ -1841,6 +1841,7 @@ textarea.form-control{height: 42px;}
 .prnt_btz button .fa{font-size: 16px;}
 .bc_opn{width: 20px;height: auto;margin:auto;float: left;}
 .bc_opn img{width: 80%;height: auto;}
+.hd_swtch .slider_tog{cursor: not-allowed;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

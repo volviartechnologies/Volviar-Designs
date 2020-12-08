@@ -1043,11 +1043,11 @@ function closeNav5() {
                         <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Duty Resume">
                           <i class="fa fa-american-sign-language-interpreting"></i>
                         </button>
-                        <button class="btn act_btn bn2" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
-                          <i class="fa fa-trophy"></i>
+                        <button class="btn act_btn bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                          <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
                         </button>
-                        <button class="btn act_btn bn3 bt_e rejct_s" data-toggle="modal" data-target="#dty_rjct" title="Reject">
-                          <i class="rejct_ss"><img src="../images/hcm/rejct.png"></i>
+                        <button class="btn act_btn bn11" data-toggle="modal" data-target="#dty_rjct" title="Reject">
+                          <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i>
                         </button>
                         <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#View_dty_rstr" title="View">
                           <i class="fa fa-list-alt"></i>
@@ -1067,11 +1067,11 @@ function closeNav5() {
                         <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Duty Resume">
                           <i class="fa fa-american-sign-language-interpreting"></i>
                         </button>
-                        <button class="btn act_btn bn2" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
-                          <i class="fa fa-trophy"></i>
+                        <button class="btn act_btn bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                          <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
                         </button>
-                        <button class="btn act_btn bn3 bt_e rejct_s" data-toggle="modal" data-target="#dty_rjct" title="Reject">
-                          <i class="rejct_ss"><img src="../images/hcm/rejct.png"></i>
+                        <button class="btn act_btn bn11" data-toggle="modal" data-target="#dty_rjct" title="Reject">
+                          <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i>
                         </button>
                         <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#View_dty_rstr" title="View">
                           <i class="fa fa-list-alt"></i>
@@ -1249,8 +1249,8 @@ function closeNav5() {
           <label for="email" class="fg2_la1 pad_l">Passport Submitted<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
-              <label class="switch">
-                <input type="checkbox">
+              <label class="switch hd_swtch">
+                <input type="checkbox" disabled="" checked="">
                 <span class="slider_tog round"></span>
               </label>
             </div>
@@ -1260,8 +1260,8 @@ function closeNav5() {
           <label for="email" class="fg2_la1 pad_l">Half Day<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
-              <label class="switch">
-                <input type="checkbox">
+              <label class="switch hd_swtch">
+                <input type="checkbox" disabled="">
                 <span class="slider_tog round"></span>
               </label>
             </div>
@@ -1295,13 +1295,15 @@ function closeNav5() {
             <li class="bg_red elg_2"><span class="spn_zp1">Department:</span> <span>Department 1</span></li>
             <li><span class="spn_zp1">Leave:</span> <span>  28/11/2020 To 03/12/2020</span></li>
             <li><span class="spn_zp1">Resume Date:</span> <span>  03/12/2020</span></li>
+            <li><span class="spn_zp1">Passport Submitted?:</span> <span class="yes1" style="display: none;color:#42ce67;">  Yes</span> <span class="yes2" style="color: #e91e63;">  No</span></li>
+            <li><span class="spn_zp1">Half Day?:</span>  <span class="yes1" style="color:#42ce67;">  Yes</span> <span class="yes2" style="display: none;color:#e91e63;">  No</span></li>
 
           </ul>
         </div>
       </div>
       <div class="modal-footer">
         <div class="save_sec flt_r">
-          <button type="submit" class="btn sub2" data-toggle="modal" data-target="#reason_trash">Reject</button>
+          <button type="submit" class="btn sub2" data-toggle="modal" data-target="#reason_trash" data-dismiss="#dty_rjct">Reject</button>
           <button type="submit" class="btn sub4">Cancel</button>
         </div>
       </div>
@@ -1311,15 +1313,15 @@ function closeNav5() {
 <!---modal_closed--->
  <!-- Forward_to_Modal1 -->
 <div class="modal fade" id="reason_trash" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document" style="width: 40%;margin-top: 100px;">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header mo_hd1">
+      <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Reject Reason</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body padng_btm">
+      <div class="modal-body padng_btm" style="min-height: 266px;">
         <div class="fg12 sa_o_fg1">
           <div class="">
             <label for="email" class="fg2_la1">Description: <span class="spn1">&nbsp;</span></label>
@@ -1328,7 +1330,7 @@ function closeNav5() {
         </div>
       </div>
 
-      <div class="modal-footer mo_hd1">
+      <div class="modal-footer">
         <button type="submit" class="btn sub1">Save</button>
        <button type="submit" class="btn sub4" data-dismiss="modal" aria-label="Close">Cancel</button>
       </div>
@@ -1359,9 +1361,31 @@ function closeNav5() {
         <div class="free_sp"></div>
         <div class="form-group fg4 sa_640_i1 sa_480">
           <label for="pwd" class="fg2_la1">Resume Date:<span class="spn1">*</span> </label>
-          <div id="datepicker4" class="input-group date" data-date-format="mm-dd-yyyy">
+          <div id="datepicker4" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg2 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1 pad_l">Passport Submitted<span class="spn1"></span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group fg5 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1 pad_l">Half Day<span class="spn1"></span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
