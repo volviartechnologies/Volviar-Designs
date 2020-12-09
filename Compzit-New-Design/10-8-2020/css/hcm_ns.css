@@ -1706,7 +1706,7 @@ textarea.form-control{height: 42px;}
 .bg_o3{background-color: #a8c508!important; color: #fff;}
 .bg_o4{background-color:#90c0ce!important; color: #fff;}
 .bg_o5{background-color:#ff8888!important; color: #fff;}
-.bg_o6{background-color:#53a3dc!important; color: #fff;}
+.bg_o6{background-color:#d6b722!important; color: #fff;}
 .bg_o7{background-color:#19a577!important; color: #fff;}
 .bg_o8{background-color:#eb7bff!important; color: #fff;}
 .bg_o9{background-color: #a100d6!important; color: #fff;}
@@ -1842,6 +1842,13 @@ textarea.form-control{height: 42px;}
 .bc_opn{width: 20px;height: auto;margin:auto;float: left;}
 .bc_opn img{width: 80%;height: auto;}
 .hd_swtch .slider_tog{cursor: not-allowed;}
+.wid_30 .tb_cs{width: 44%;}
+.mar_topz1{margin-top: 36px;}
+.mar_topz1 .wid_8_3{width: 100%!important;}
+.pre_for_btn{margin-top: 20px;width: 100%;float: left;}
+.btn_1a{width:40%;margin:auto;float: left;text-align: center;background-color: transparent;border:1px solid #44a2e4;margin-right: 16px;font-size: 20px;padding:2px;color: #44a2e4;}
+.btn_1a:hover{background-color: #44a2e4;color: #fff;}
+.ovrfl_no tbody tr:hover{box-shadow: none!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
