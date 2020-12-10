@@ -1844,21 +1844,29 @@ textarea.form-control{height: 42px;}
 .hd_swtch .slider_tog{cursor: not-allowed;}
 .wid_30 .tb_cs{width: 44%;}
 .mar_topz1{margin-top: 36px;}
-.mar_topz1 .wid_8_3{width: 100%!important;}
+.mar_topz1 .wid_8_3{width: 100%!important;height: 42px;}
 .pre_for_btn{margin-top: 20px;width: 100%;float: left;}
 .btn_1a{width:40%;margin:auto;float: left;text-align: center;background-color: transparent;border:1px solid #44a2e4;margin-right: 16px;font-size: 20px;padding:2px;color: #44a2e4;}
 .btn_1a:hover{background-color: #44a2e4;color: #fff;}
 .ovrfl_no tbody tr:hover{box-shadow: none!important;cursor: auto;}
-.mar_topz1 .act_cols{width: 24%!important;height: 210px;background-color: #fff!important;}
-.year_mntly{width: auto!important;margin: auto!important;float: left!important;padding: 22px 10px;background-color:#edf9ff;margin-right: 10px;}
-.line_1{list-style: none;width: auto;margin:auto;float: left;margin-left: 10px;margin-top:16px;}
+.mar_topz1 .act_cols{width: 23%!important;height: 210px;background-color: #fff!important;box-shadow: 1px 1px 15px #ccc; margin: 5px 12px;border-radius: 8px; overflow: hidden;}
+.year_mntly{width: auto!important;margin: auto!important;float: left!important;padding: 8px 10px;background-color:#edf9ff;margin-right: 10px;}
+.line_1{list-style: none;width: auto;margin:auto;float: left;margin-left: 10px;margin-top:2px;}
 .mar_topz1 .sel_mnt .year_mntly{color:#44a2e4!important;}
 .ovrfl_no{margin:4px;width: 98%;}
 .mar_topz1 .wid_8_3.sel_mnt{background-color: #eff8f9!important;color:#45a4e7;}
 .pre_nxt{width: 100%;margin: auto;float: left;}
-.btn_box1{width: auto;margin: auto;float: right;}
-.btn_box1 button{background-color: transparent;border:1px solid #bce7fd;color:#bce7fd;}
-.btn_box1 button:hover{background-color:#bce7fd;color: #fff; }
+.btn_box1{width:4%;margin: auto;float:none;}
+.btn_box1 button{background-color: transparent;border:1px solid #44a2e4;color:#44a2e4;width: 46%;}
+.btn_box1 button:hover, .btn_box1 button:focus{background-color:#44a2e4;color: #fff; }
+.mnt_slr_ul li{list-style: none;height:auto;width: 100%;margin: auto;float: left;padding: 3px;font-size: 13px!important;background-color: #eff8f9;margin-bottom: 5px;
+              border-radius: 4px;}
+.mnt_slr_ul{width: 100%;margin: auto;float: left;padding: 10px;}
+.bg_gr1{background-color: #eff8f9!important;}
+.bg_gr2{background-color:#ffe7c4!important;}
+.bg_gr3{background-color: #e1fbd4!important;}
+.bg_gr4{background-color: #ffe9e9!important;}
+.bg_gr5{background-color:#ddfaff!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
