@@ -983,12 +983,26 @@ function closeNav5() {
           <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
           <input id="myinpc3" type="text" class="form-control fg2_inp1 tr_l inp_mst" id="email" placeholder="Business Unit" name="email" >
         </div>
+
+        <div class="form-group fg2 sa_fg4 sa_640_i">
+          <label for="email" class="fg2_la1">Month & Year:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 60%!important;">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+          </select> 
+          <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 30%!important;">
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+          </select> 
+        </div>
         
-        <div class="form-group fg4 sa_640">
+        <div class="form-group fg2 sa_640">
           <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
             <div class="form-group fg12 sa_640 gur_opt">
-              <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel"><i class="img_plcy"><img src="../images/icons/opp/work.png"></i> <span>Worker</span></button>
-              <button class="tb_btz tb_cs tb_cus_sup2"><i class="img_plcy"><img src="../images/icons/opp/stf.png"></i> <span>Staff</span></button>
+              <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_40pz"><i class="img_plcy"><img src="../images/icons/opp/work.png"></i> <span>Worker</span></button>
+              <button class="tb_btz tb_cs tb_cus_sup2 wid_40pz"><i class="img_plcy"><img src="../images/icons/opp/stf.png"></i> <span>Staff</span></button>
             </div>
         </div>
 
@@ -1036,7 +1050,7 @@ function closeNav5() {
                   <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Paid Amount">
                 </th>
                 <th class="th_b6">
-                  <button type="submit" class="btn sub4 cls_ala">Close All</button>
+                  <button type="submit" class="btn sub4 cls_ala" title="Close All Payments">Close All</button>
                 </th>
               </tr>
              
@@ -1051,7 +1065,7 @@ function closeNav5() {
                   <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="0.00"></td>
                 <td>
                 <div class="btn_stl1">
-                  <button class="btn act_btn bn11" title="Close">
+                  <button class="btn act_btn bn11" title="Payment Closing">
                     <i class="opp_ico_img paid_im"><img src="../images/icons/opp/cls11.png"> </i>
                   </button>
                 </div>
@@ -1067,7 +1081,7 @@ function closeNav5() {
                 </td>
                 <td>
                 <div class="btn_stl1">
-                  <button class="btn act_btn bn11" title="Close">
+                  <button class="btn act_btn bn11" title="Payment Closing">
                     <i class="opp_ico_img paid_im"><img src="../images/icons/opp/cls11.png"> </i>
                   </button>
                 </div>
@@ -1097,9 +1111,7 @@ function closeNav5() {
   </div>
 </div><!--content_container_closed------>
 
-<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
-<i class="fa fa-save"></i>
-</a>
+
 
 <a href="payment_closing.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
