@@ -88,6 +88,14 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/afsdez_blue.css">
 <link rel="stylesheet" type="text/css" href="../css/afsdez_green.css"> -->
 
+
+<!---contrychoose_option-->
+<!-- <msdropdown> -->
+<link rel="stylesheet" type="text/css" href="../dr1/css/msdropdown/dd.css" />
+<script src="../dr1/js/msdropdown/jquery.dd.js"></script>
+<!-- </msdropdown> -->
+<link rel="stylesheet" type="text/css" href="../dr1/css/msdropdown/flags.css" />
+
 <link rel="stylesheet" type="text/css" href="../css/rec.css">
 <link rel="stylesheet" type="text/css" href="../css/pro_mng.css">
 <link rel="stylesheet" type="text/css" href="../css/hcm_ns.css">
@@ -964,29 +972,31 @@ function closeNav5() {
           
           <div class="form-group fg2 sa_fg4 sa_640_i">
             <label for="email" class="fg2_la1">Mode:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-              <option>Salary Process</option>
-              <option>Leave Settlement</option>
-              <option>End of Service Settlement</option>
-            </select> 
+            <select name="countries" id="countries" class="form-control fg2_inp1 inp_mst">
+              <option value='ad' data-image="..\images\icons\opp\mod2.png" data-imagecss="flag ad" data-title="Main Category" selected="">Monthly Salary</option>
+              <option value='ae' data-image="..\images\icons\opp\mod3.png" data-imagecss="flag ae" data-title="Sub Category">Leave Settlement</option>
+              <option value='af' data-image="..\images\icons\opp\mod1.png" data-imagecss="flag af" data-title="Small Category">End of Service Settlement</option>
+            </select>  
           </div>
 
           <div class="form-group fg2 sa_fg4 sa_640_i">
-            <label for="email" class="fg2_la1">Month:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+            <label for="email" class="fg2_la1">Month & Year:<span class="spn1">*</span></label>
+            <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 60%!important;">
               <option>January</option>
               <option>February</option>
               <option>March</option>
             </select> 
+            <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 30%!important;">
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+            </select> 
           </div>
 
-          <div class="form-group fg2 sa_fg4 sa_640_i">
-            <label for="email" class="fg2_la1">Year:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-              <option>January</option>
-              <option>February</option>
-              <option>March</option>
-            </select> 
+          <div class="fg8">
+            <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
+            <button class="submit_ser"></button>
+            <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
           </div>
 
           <div class="clearfix"></div>
@@ -1002,17 +1012,17 @@ function closeNav5() {
                 <th class="th_b11 tr_l"> Employee
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee">
                 </th>
-                <th class="th_b2 tr_l"> Process
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Process">
+                <th class="th_b2 tr_l"> Mode
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Mode">
                 </th>
-                <th class="th_b8 tr_c"> Closed Date
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Closed Date">
+                <th class="th_b4 tr_r"> Total Amount
+                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Total Amount">
                 </th>
                 <th class="th_b4 tr_r"> Paid Amount
                   <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Paid Amount">
                 </th>
-                <th class="th_b4 tr_r"> Total Amount
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Total Amount">
+                <th class="th_b8 tr_c"> Closed Date
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Closed Date">
                 </th>
               </tr>
              
@@ -1022,24 +1032,25 @@ function closeNav5() {
                 <td class="tr_l">Ref0054312</td>
                 <td class="tr_l">Stali</td>
                 <td class="tr_l">Aaaabbbbb</td>
-                <td class="tr_c">06/09/2019</td>
-                <td class="tr_r">14,254.00</td>
                 <td class="tr_r">15,456.00</td>
+                <td class="tr_r">14,254.00</td>
+                <td class="tr_c">06/09/2019</td>
               </tr>
               <tr>
                 <td class="tr_l">Ref0054312</td>
                 <td class="tr_l">Stali</td>
                 <td class="tr_l">Aaaabbbbb</td>
-                <td class="tr_c">06/09/2019</td>
                 <td class="tr_r">14,254.00</td>
                 <td class="tr_r">16,256.00</td>
+                <td class="tr_c">06/09/2019</td>
               </tr>
             </tbody>
             <tfoot>
               <tr style="background-color:#eceff1!important;">
-                <td class="txt_rd bg1 tr_l" colspan="4" style="background-color:#eceff1!important;">Total</td>
+                <td class="txt_rd bg1 tr_l" colspan="3" style="background-color:#eceff1!important;">Total</td>
                 <td class="txt_rd bg1 tr_r" rowspan="1" colspan="1"><b class="flt_l">INR</b> 1000.00</td>
                 <td class="txt_rd bg1 tr_r" rowspan="1" colspan="1"><b class="flt_l">INR</b> 1000.00</td>
+                <td class="txt_rd bg1 tr_r" rowspan="1" colspan="1"><b class="flt_l"></td>
               </tr>
             </tfoot>
           </table>
@@ -1466,7 +1477,30 @@ $(".wr2").click(function(){
 });
 </script>
 
-<!-------------print_script_close--------------------->
+<!-------------print_script_close-------------------->
+
+
+
+<script>
+$(document).ready(function() {
+$("#countries").msDropdown({roundedBorder:false});
+// $("#countries").prop("disabled", true);
+})
+</script>
+
+<script>
+$(document).ready(function(e) {
+  $("#countries").msDropdown({visibleRows:4});
+  $().msDropdown();
+});
+$(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 9) { 
+   $('.dd .ddChild').hide();
+  } 
+});
+</script> 
 
 <!--date_picker--->
 
