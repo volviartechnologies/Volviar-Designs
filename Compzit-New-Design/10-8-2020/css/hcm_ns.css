@@ -1844,7 +1844,7 @@ textarea.form-control{height: 42px;}
 .hd_swtch .slider_tog{cursor: not-allowed;}
 .wid_30 .tb_cs{width: 44%;}
 .mar_topz1{margin-top: 36px;}
-.mar_topz1 .wid_8_3{width: 100%!important;height: 42px;}
+.mar_topz1 .wid_8_3{width:88%!important;height: 42px;font-weight: 600;}
 .pre_for_btn{margin-top: 20px;width: 100%;float: left;}
 .btn_1a{width:40%;margin:auto;float: left;text-align: center;background-color: transparent;border:1px solid #44a2e4;margin-right: 16px;font-size: 20px;padding:2px;color: #44a2e4;}
 .btn_1a:hover{background-color: #44a2e4;color: #fff;}
@@ -1854,10 +1854,10 @@ textarea.form-control{height: 42px;}
 .line_1{list-style: none;width: auto;margin:auto;float: left;margin-left: 10px;margin-top:2px;}
 .mar_topz1 .sel_mnt .year_mntly{color:#44a2e4!important;}
 .ovrfl_no{margin:4px;width: 98%;}
-.mar_topz1 .wid_8_3.sel_mnt{background-color: #eff8f9!important;color:#45a4e7;}
-.pre_nxt{width: 100%;margin: auto;float: left;}
-.btn_box1{width:4%;margin: auto;float:none;}
-.btn_box1 button{background-color: transparent;border:1px solid #44a2e4;color:#44a2e4;width: 46%;}
+.mar_topz1 .wid_8_3.sel_mnt{background-color:#5098cc!important;color:#fff;}
+.pre_nxt{width: 2%;margin: auto;float: left;position: fixed; right:20px;top: 320px;}
+.btn_box1{width:100%;margin: auto;float:none;}
+.btn_box1 button{background-color:#d8edfb;border:1px solid #44a2e4;color:#44a2e4;width: 100%;height: 30px;margin-bottom: 8px;}
 .btn_box1 button:hover, .btn_box1 button:focus{background-color:#44a2e4;color: #fff; }
 .mnt_slr_ul li{list-style: none;height:auto;width: 100%;margin: auto;float: left;padding: 3px;font-size: 13px!important;background-color: #eff8f9;margin-bottom: 5px;
               border-radius: 4px;}
@@ -1882,7 +1882,7 @@ textarea.form-control{height: 42px;}
 .pop_5{width: 100%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 40px;position: fixed;top: 60px;float: none;right: 0; z-index: 9999;padding: 10px;}
 .footer{z-index: 9999;}
 .cls_ala{border:1px solid #ffa9a9;color: #ffa9a9;}
-.wid_40pz{width: 35%;}
+.wid_40pz{width:41%;}
 .tbl_xa thead tr th, .tbl_xa tbody tr td{font-size: 11px!important;}
 .lbr_chkz .act_btck{color: #97c5ec;}
 .hgt_aut{height: auto;}
@@ -1892,6 +1892,8 @@ textarea.form-control{height: 42px;}
 .ovr_ha{max-height: 340px;overflow-y: auto;}
 .drop_zza{margin-left: 240px;top: 144px;height:auto;min-height: 100px;width: 118px;}
 .drop_zza:before{top:86px;}
+.mr_tp12{margin-top: 12px;margin-left: 4px;}
+.ddlabel{font-size: 13px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

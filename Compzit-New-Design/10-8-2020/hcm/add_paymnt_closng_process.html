@@ -970,7 +970,7 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Payment Closing Process</h2>
           
-        <div class="form-group fg2 sa_fg4 sa_640_i">
+        <div class="form-group fg5 sa_fg4 sa_640_i">
           <label for="email" class="fg2_la1">Mode:<span class="spn1">*</span></label>
           <select name="countries" id="countries" class="form-control fg2_inp1 inp_mst">
             <option value='ad' data-image="..\images\icons\opp\mod2.png" data-imagecss="flag ad" data-title="Main Category" selected="">Monthly Salary</option>
@@ -979,55 +979,44 @@ function closeNav5() {
           </select>  
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
+        <div class="form-group fg5 sa_fg4 sa_o_fg2 sa_o_fg1">
           <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
           <input id="myinpc3" type="text" class="form-control fg2_inp1 tr_l inp_mst" id="email" placeholder="Business Unit" name="email" >
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_640_i">
+        <div class="form-group fg5 sa_fg4 sa_640_i">
           <label for="email" class="fg2_la1">Month & Year:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 60%!important;">
+          <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 55%!important;">
             <option>January</option>
             <option>February</option>
             <option>March</option>
           </select> 
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 30%!important;">
+          <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 35%!important;">
             <option>2018</option>
             <option>2019</option>
             <option>2020</option>
           </select> 
         </div>
         
-        <div class="form-group fg2 sa_640">
+        <div class="form-group fg5 sa_640">
           <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
             <div class="form-group fg12 sa_640 gur_opt">
               <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_40pz"><i class="img_plcy"><img src="../images/icons/opp/work.png"></i> <span>Worker</span></button>
               <button class="tb_btz tb_cs tb_cus_sup2 wid_40pz"><i class="img_plcy"><img src="../images/icons/opp/stf.png"></i> <span>Staff</span></button>
             </div>
         </div>
+        <div class="fg8">
+            <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
+            <button class="submit_ser"></button>
+            <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
+          </div>
 
       <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
-      <!---=================section_devider============--->
-
-      <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
-
+      <!---=================section_devider============-->
           <div class="r_1024">
-          <table class="display table-bordered pro_tab1 tbl_1024" cellspacing="0" width="100%">
+          <table id="example" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
                 <th class="th_b6 tr_l"> Employee ID
@@ -1090,18 +1079,6 @@ function closeNav5() {
              
             </tbody>
           </table>
-        </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
         </div>
 
         
@@ -1580,5 +1557,45 @@ $(document).on('keydown', function(e) {
 });
 </script> 
 
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
 </body>
 </html>
