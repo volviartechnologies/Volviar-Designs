@@ -1844,14 +1844,14 @@ textarea.form-control{height: 42px;}
 .hd_swtch .slider_tog{cursor: not-allowed;}
 .wid_30 .tb_cs{width: 44%;}
 .mar_topz1{margin-top: 36px;}
-.mar_topz1 .wid_8_3{width:100%!important;height: 42px;font-weight: 600;}
+.mar_topz1 .wid_8_3{width:100%!important;height:35px;font-weight: 600;}
 .pre_for_btn{margin-top: 20px;width: 100%;float: left;}
 .btn_1a{width:40%;margin:auto;float: left;text-align: center;background-color: transparent;border:1px solid #44a2e4;margin-right: 16px;font-size: 20px;padding:2px;color: #44a2e4;}
 .btn_1a:hover{background-color: #44a2e4;color: #fff;}
 .ovrfl_no tbody tr:hover{box-shadow: none!important;cursor: auto;}
-.mar_topz1 .act_cols{width: 23%!important;height: 210px;background-color: #fff!important;box-shadow: 1px 1px 15px #ccc; margin: 5px 12px;border-radius: 8px; overflow: hidden;}
-.year_mntly{width: auto!important;margin: auto!important;float: left!important;padding: 8px 10px;background-color:transparent;margin-right: 10px;}
-.line_1{list-style: none;width: auto;margin:auto;float: left;margin-left: 10px;margin-top:2px;}
+.mar_topz1 .act_cols{width: 23%!important;height: 224px;background-color: #fff!important;box-shadow: 1px 1px 15px #ccc; margin: 5px 12px;border-radius: 8px; overflow: hidden;}
+.year_mntly{width: auto!important;margin: auto!important;float: left!important;padding: 4px 10px;background-color:transparent;margin-right: 10px;}
+.line_1{list-style: none;width: auto;margin:auto;float: left;margin-left: 10px;margin-top:-2px;}
 .mar_topz1 .sel_mnt .year_mntly{background-color:#aecfe6!important;}
 .ovrfl_no{margin:4px;width: 98%;}
 .mar_topz1 .wid_8_3.sel_mnt{background-color:#aecfe6!important;color:#fff;}
@@ -1859,18 +1859,18 @@ textarea.form-control{height: 42px;}
 .btn_box1{width:100%;margin: auto;float:none;}
 .btn_box1 button{background-color:#d8edfb;border:1px solid #44a2e4;color:#44a2e4;width: 100%;height: 30px;margin-bottom: 8px;}
 .btn_box1 button:hover, .btn_box1 button:focus{background-color:#44a2e4;color: #fff; }
-.mnt_slr_ul li{list-style: none;height:auto;width: 100%;margin: auto;float: left;padding: 3px;font-size: 13px!important;background-color: #eff8f9;margin-bottom: 5px;
+.mnt_slr_ul li{list-style: none;height:auto;width: 100%;margin: auto;float: left;padding:2px 3px;font-size: 13px!important;background-color: #eff8f9;margin-bottom: 5px;
               border-radius: 4px;}
-.mnt_slr_ul{width: 100%;margin: auto;float: left;padding: 10px;}
+.mnt_slr_ul{width: 100%;margin: auto;float: left;padding:6px 10px;}
 .bg_gr1{background-color: transparent!important;border: 1px solid #e8e8e8;}
 .bg_gr2{background-color: transparent!important;border: 1px solid #e8e8e8;}
 .bg_gr3{background-color: transparent!important;border: 1px solid #e8e8e8;}
 .bg_gr4{background-color: transparent!important;border: 1px solid #e8e8e8;}
 .bg_gr5{background-color: transparent!important;border: 1px solid #e8e8e8;}
-.wid_atz1{width: auto!important;margin-right: 20px!important;}
-.sel_dropd .fg2_inp1{border:none!important;border-bottom:1px solid #e8e8e8!important;border-radius: 0px;width: 50%;margin: auto;float: left;height: 38px;border-right: 1px solid #e8e8e8!important;}
+.wid_atz1{width: auto!important;margin-right: 20px!important;padding-top:10px!important;}
+.sel_dropd .fg2_inp1{border:none!important;border-bottom:1px solid #e8e8e8!important;border-radius: 0px;width: 50%;margin: auto;float: left;height: 30px;border-right: 1px solid #e8e8e8!important;}
 .lb_ser1{width: 50%;height: auto;margin:auto;float: left;}
-.sel_dropd .fince_yr label{    background-color: #e1f8ff;}
+.sel_dropd .fince_yr label{background-color: #e1f8ff;padding: 6px;height: 30px;}
 .sel_dropd{margin-top: 3px;}
 .spn_spl1{width: 55%;margin:auto;float: left;}
 .spn_spl2{width:12%;margin: auto;float: left;}
@@ -1895,7 +1895,7 @@ textarea.form-control{height: 42px;}
 .mr_tp12{margin-top:0px;margin-left: 4px;float: right;}
 .ddlabel{font-size: 13px;}
 .prnt_z{margin-top: 2px;}
-.prnt_z i{background-color: transparent!important;font-size: 18px;margin-right: 0px;height: auto;width: auto;padding:4px;}
+.prnt_z i{background-color: transparent!important;font-size: 18px;margin-right: 0px;height: auto;width: auto;padding:1px 4px;}
 .mar_topz1 .act_cols.sel_vs{border:1px solid #000;}
 
 @media only screen and (max-width:1100px){
