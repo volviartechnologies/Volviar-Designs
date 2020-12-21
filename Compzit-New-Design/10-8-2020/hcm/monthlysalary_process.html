@@ -1383,18 +1383,18 @@ function closeNav5() {
                   <table id="example" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
                     <thead class="thead1">
                       <tr>
-                        <th class="th_b5">
+                        <th class="th_b5_2">
                           <i class="flt_l butn-chk lbr_chkz">
                             <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
                             <input type="checkbox" class="hidew" style="display:none;">
                           </i>
                         </th>
                         <th class="th_b6 tr_l">Employee ID</th>
-                        <th class="th_b4 tr_l">Employee</th>
+                        <th class="th_b8 tr_l">Employee</th>
                         <th class="th_b6 tr_l">Designation</th>
-                        <th class="th_b7 tr_c">Pay Grade</th>
+                        <th class="th_b1 tr_c">Pay<br> Grade</th>
                         <th class="th_b1 tr_c">Basic Pay</th>
-                        <th class="th_b7 tr_c">Over Time<br> Amount</th>
+                        <th class="th_b7 tr_c">O T<br> Amount</th>
                         <th class="th_b1 tr_c">Addition</th>
                         <th class="th_b7 tr_c">Other<br> Addition</th>
                         <th class="th_b7 tr_c">Arrear<br> Amount</th>
@@ -1403,18 +1403,60 @@ function closeNav5() {
                         <th class="th_b7 tr_c">Other<br> Deduction</th>
                         <th class="th_b6 tr_c">Leave Arrear<br> Amount</th>
                         <th class="th_b7 tr_c">Total<br> Amount</th>
-                        <th class="th_b4">Actions</th>
+                        <th class="th_b2">Actions</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td class="tr_l">
                           <i class="flt_l butn-chk">
-                            <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                            <button type="button" class="act_btck"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
                             <input type="checkbox" class="hidew" style="display:none;">
                           </i>
                         </td>
-                        <td class="tr_l">Emp001</td>
+                        <td class="tr_l">
+                          <span class="bc_opn bc_op1" title="Bank"><img src="../images/icons/opp/bc1.png"></span> Emp001
+                        </td>
+                        <td class="tr_l">Employee 1</td>
+                        <td class="tr_l">Designation 1</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td> 
+                          <div class="btn_stl1">
+                            <button class="btn act_btn bn1 btn_shrt1 opn_pop_5" title="Edit">
+                              <i class="fa fa-edit"></i>
+                            </button>
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                              <i class="rejct_ss paid_im"><img src="../images/icons/opp/slryp.png"></i>
+                            </button>
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                              <i class="rejct_ss paid_im"><img src="../images/icons/opp/apr1_1.png"></i>
+                            </button>
+                            <button class="btn act_btn btn_shrt1 bn3" title="Delete">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tr_l">
+                          <i class="flt_l butn-chk">
+                            <button type="button" class="act_btck"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidew" style="display:none;">
+                          </i>
+                        </td>
+                        <td class="tr_l">
+                          <span class="bc_opn bc_op2" title="Cash"><img src="../images/icons/opp/bc2.png"></span> Emp001
+                        </td>
                         <td class="tr_l">Employee 1</td>
                         <td class="tr_l">Designation 1</td>
                         <td class="tr_l">100.00</td>
@@ -1430,10 +1472,16 @@ function closeNav5() {
                         <td class="tr_c">10/12/2020</td>
                         <td> 
                           <div class="btn_stl1">
-                            <button class="btn act_btn bn1 opn_pop_5" title="Edit">
+                            <button class="btn act_btn bn1 btn_shrt1 opn_pop_5" title="Edit">
                               <i class="fa fa-edit"></i>
                             </button>
-                            <button class="btn act_btn bn3" title="Delete">
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                              <i class="rejct_ss paid_im"><img src="../images/icons/opp/slryp.png"></i>
+                            </button>
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                              <i class="rejct_ss paid_im"><img src="../images/icons/opp/apr1_1.png"></i>
+                            </button>
+                            <button class="btn act_btn btn_shrt1 bn3" title="Delete">
                               <i class="fa fa-trash"></i>
                             </button>
                           </div>
@@ -1444,7 +1492,7 @@ function closeNav5() {
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-success">Confirm</button>
+                <button type="button" class="btn btn-success">Approve All</button>
                 <button type="button" class="btn btn-danger btn_cls_pop4">Cancel</button>
               </div>
             </div>
