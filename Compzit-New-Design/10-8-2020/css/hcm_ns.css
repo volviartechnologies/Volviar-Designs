@@ -1880,7 +1880,7 @@ textarea.form-control{height: 42px;}
 .pop_3{width: 80%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 60px;position: fixed;top: 60px;float: none;right:10%; z-index: 9999;padding: 10px;}
 .pop_4{width: 100%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 40px;position: fixed;top: 60px;float: none;right: 0; z-index: 9999;padding: 10px;}
 .pop_5{width: 100%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 40px;position: fixed;top: 60px;float: none;right: 0; z-index: 9999;padding: 10px;}
-.pop_wps, .pop_pp{width: 100%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 40px;position: fixed;top: 60px;float: none;right: 0; z-index: 9999;padding: 10px;}
+.pop_wps, .pop_pp, .pop_fi{width: 100%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 40px;position: fixed;top: 60px;float: none;right: 0; z-index: 9999;padding: 10px;}
 .footer{z-index: 9999;}
 .cls_ala{border:1px solid #ffa9a9;color: #ffa9a9;}
 .wid_40pz{width:41%;}
@@ -1903,6 +1903,7 @@ textarea.form-control{height: 42px;}
 .boz_12{margin-top: -6px;}
 /*.mar_b10 h5{color:#70c8f9; }*/
 .mar_b10 h5 label{color: #000;}
+.prnt_btz button.sam_b{width: auto;line-height:normal;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
