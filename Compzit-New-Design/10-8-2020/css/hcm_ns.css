@@ -1880,6 +1880,7 @@ textarea.form-control{height: 42px;}
 .pop_3{width: 80%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 60px;position: fixed;top: 60px;float: none;right:10%; z-index: 9999;padding: 10px;}
 .pop_4{width: 100%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 40px;position: fixed;top: 60px;float: none;right: 0; z-index: 9999;padding: 10px;}
 .pop_5{width: 100%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 40px;position: fixed;top: 60px;float: none;right: 0; z-index: 9999;padding: 10px;}
+.pop_wps, .pop_pp{width: 100%;height:auto;margin: auto;background-color: #fff;border-radius: 8px;margin-top: 40px;position: fixed;top: 60px;float: none;right: 0; z-index: 9999;padding: 10px;}
 .footer{z-index: 9999;}
 .cls_ala{border:1px solid #ffa9a9;color: #ffa9a9;}
 .wid_40pz{width:41%;}
