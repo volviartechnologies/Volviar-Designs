@@ -1868,10 +1868,10 @@ function closeNav5() {
                           <h5>Salary Summary</h5>
                         </div>
                         <ul class="pl_lft0 slary_sum flt_r sum_ofc">
-                          <li><span class="fg6 li_100 mar_at flt_l">Basic Pay:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 20000 QAR</span></li>
-                          <li><span class="fg6 li_100 mar_at flt_l gn">Addition:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r gn"> 100 QAR</span></li>
-                          <li><span class="fg6 li_100 mar_at flt_l rd">Deduction:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r rd"> 20 QAR</span></li>
-                          <li><span class="fg6 li_100 mar_at flt_l">Total Pay:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 20080 QAR</span></li>
+                          <li><span class="fg6 li_100 mar_at flt_l">Basic Pay:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 2,000.00 QAR</span></li>
+                          <li><span class="fg6 li_100 mar_at flt_l gn">Addition:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r gn"> 1,000.00 QAR</span></li>
+                          <li><span class="fg6 li_100 mar_at flt_l rd">Deduction:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r rd"> 20.00 QAR</span></li>
+                          <li><span class="fg6 li_100 mar_at flt_l">Total Pay:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 2,000.00 QAR</span></li>
                         </ul>
                       </div>
                     </div>
@@ -1879,9 +1879,16 @@ function closeNav5() {
                 </div>
               </div>
                 <div class="fg_3_1 ovr_ha flt_r">
-                  <div class="top_br_container hc_at sc_hgt flt_r">
+                  <div class="tab_stf tb1_qlf tab_qlf tb_opzaq">
+                    <button class="tablinks1 bt_op2 selected_bx">
+                      <i class="fa fa-money" title="Allowances / Benefits"></i> <span>Allowances / Benefits</span>
+                    </button>
+                    <button class="tablinks1 bt_op1">
+                      <i class="fa fa-scissors fa_stf" title="Deduction"></i> <span>Deduction</span>
+                    </button>
+                  </div>
+                  <div class="top_br_container hc_at sc_hgt flt_r opn_alwn">
                     <div class="top_br_1 pa_h1">
-                      <h5>Allowances / Benefits</h5>
                       <div class="form-group fg4 sa_2 sa_480">
                         <label for="email" class="fg2_la1" style="width: auto;">Addition:<span class="spn1">*</span></label>
                         <div class="ch_ab chg_btn" style="margin-top: -2px;">
@@ -1899,9 +1906,9 @@ function closeNav5() {
                           <label for="email" class="fg2_la1">Amount:<span class="spn1">*</span></label>
                           <input type="text" class="form-control fg2_inp1 fg_chs2 inp_mst tr_r" placeholder="0.00"> 
                         </div>
-                        <div class="form-group fg7 sa_2 sa_480">
+                        <div class="form-group fg5 sa_2 sa_480">
                           <label for="email" class="fg2_la1">Range:<span class="spn1"></span></label>
-                          <span class="spn1"><b>3000 - 10000 QAR</b></span>
+                          <span class="spn1"><b>3,000.00 - 10,000.00 QAR</b></span>
                         </div>
                       </div>
                       <div class="percn_1_a" style="display: none;">
@@ -1955,16 +1962,13 @@ function closeNav5() {
                             <tbody>
                               <tr>
                                 <td class="tr_l">Addition 1</td>
-                                <td class="tr_r">1000.00</td>
+                                <td class="tr_r">1,000.00</td>
                                 <td> 
                             <div class="btn_stl1">
-                              <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                                  <i class="fa fa-check-circle "></i>
-                                </button>
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
-                                <i class="fa fa-list-alt"></i>
+                              <button class="btn act_btn bn1 bt_v" data-toggle="modal" data-target="#ex1" title="edit">
+                                <i class="fa fa-edit"></i>
                               </button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#ex1" title="Delete">
                                 <i class="fa fa-trash"></i>
                               </button>
                             </div>
@@ -1994,9 +1998,8 @@ function closeNav5() {
                       </div>
                     </div>
                   </div>
-                  <div class="top_br_container hc_at sc_hgt flt_r">
+                  <div class="top_br_container hc_at sc_hgt flt_r opn_dedu" style="display: none;">
                     <div class="top_br_1 pa_h1">
-                      <h5>Deduction</h5>
                       <div class="form-group fg4 sa_2 sa_480">
                         <label for="email" class="fg2_la1" style="width: auto;">Deduction:<span class="spn1">*</span></label>
                         <div class="ch_ab chg_btn" style="margin-top: -2px;">
@@ -2016,7 +2019,7 @@ function closeNav5() {
                         </div>
                         <div class="form-group fg4 sa_2 sa_480">
                           <label for="email" class="fg2_la1">Range:<span class="spn1"></span></label>
-                          <span class="spn1"><b>3000 - 10000 QAR</b></span>
+                          <span class="spn1"><b>3,000.00 - 10,000.00 QAR</b></span>
                         </div>
                       </div>
                       <div class="percn_2_d" style=" display:none;">
@@ -2070,7 +2073,7 @@ function closeNav5() {
                             <tbody>
                               <tr>
                                 <td class="tr_l">Deduction 1</td>
-                                <td class="tr_r">1000.00</td>
+                                <td class="tr_r">1,000.00</td>
                                 <td> 
                             <div class="btn_stl1">
                               <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
@@ -2750,6 +2753,18 @@ $('.hidew').prop('checked',true);
     $(".co2 .ic1").fadeIn(100);
     $(".co2 .ic2").fadeOut(100);
 $('.hidew').prop('checked',false);
+  });
+  $(".bt_op2").click(function(){
+    $(".bt_op2").addClass("selected_bx");
+    $(".bt_op1").removeClass("selected_bx");
+    $(".opn_alwn").fadeIn(100);
+    $(".opn_dedu").hide();
+  });
+  $(".bt_op1").click(function(){
+    $(".bt_op1").addClass("selected_bx");
+    $(".bt_op2").removeClass("selected_bx");
+    $(".opn_dedu").fadeIn(100);
+    $(".opn_alwn").hide();
   });
 });
 </script>

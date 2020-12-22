@@ -1904,6 +1904,12 @@ textarea.form-control{height: 42px;}
 /*.mar_b10 h5{color:#70c8f9; }*/
 .mar_b10 h5 label{color: #000;}
 .prnt_btz button.sam_b{width: auto;line-height:normal;}
+.inp_sxml{width: 100%;font-size: 9px!important;padding:2px;height: 16px;}
+.axz_b{font-size: 14px;}
+.prn_mdl button{line-height:30px;border-radius: 0px;}
+.modal-open .z_inx{z-index: 9999999!important;}
+.tb_opzaq{width: 50%;margin-left: 4%;}
+.tb_opzaq .tablinks1{width: 50%;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
