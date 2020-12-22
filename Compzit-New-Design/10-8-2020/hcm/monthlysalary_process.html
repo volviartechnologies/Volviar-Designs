@@ -1839,25 +1839,31 @@ function closeNav5() {
 
             <div class="pop_5" style="display: none;">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Monthly Salary Process</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Edit Monthly Salary</h5>
                 <button type="button" class="close btn_cls_pop5">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
                 <div class="fg4">
-                  <div class="box_aplc hgt_aut">
-                    <div class="txt_blu_1">
-                      <div class="col-md-12 tx_100 hcm_1_2 pa_rgt0">
-                        <div class="col-md-6 mar_at flt_l">
-                        </div>
-                        <ul class="pl_lft0 slary_sum flt_r sum_ofc">
-                          <li><span class="fg4 li_100 mar_at flt_l">Employee:</span> <span class="fg_3_1 li_100_1 mar_at flt_l tr_l"> Employee 1</span></li>
-                          <li><span class="fg4 li_100 mar_at flt_l">Designation:</span> <span class="fg_3_1 li_100_1 mar_at flt_l tr_l"> Designation 1</span></li>
-                          <li><span class="fg4 li_100 mar_at flt_l">Month & Year:</span> <span class="fg_3_1 li_100_1 mar_at flt_l tr_l"> December 2020</span></li>
-                          <li><span class="fg4 li_100 mar_at flt_l">Pay Grade:</span> <span class="fg_3_1 li_100_1 mar_at flt_l tr_l"> 20080 QAR 2100 QAR</span></li>
-                        </ul>
+                  <div class="fg12 mar_at flt_l box_emp_br edt_mnt">
+                    <div class="clearfix"></div>
+                    <div class="fg12 empl_pop_dtl">
+                      <h3>Employee Name 1</h3>
+                      <span>EMP0001</span>
+                    </div>
+                    <div class="devider"></div>
+                    <div class="fg5">
+                      <div class="user_im_1">
+                        <img src="../images/hcm/user.jpg">
                       </div>
+                    </div>
+                    <div class="fg_3_1 empl_pop_dtl wid_76_pz">
+                      <ul class="join_leav emp_dtl_bdr">
+                        <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
+                        <li class="bg_red elg_2"><span class="spn_zp1">Month & Year:</span> <span>28/11/2020</span></li>
+                        <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span>100.00 - 1,000.00</span></li>
+                      </ul>
                     </div>
                   </div>
                 <div class="fg12">
@@ -1868,10 +1874,49 @@ function closeNav5() {
                           <h5>Salary Summary</h5>
                         </div>
                         <ul class="pl_lft0 slary_sum flt_r sum_ofc">
-                          <li><span class="fg6 li_100 mar_at flt_l">Basic Pay:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 2,000.00 QAR</span></li>
-                          <li><span class="fg6 li_100 mar_at flt_l gn">Addition:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r gn"> 1,000.00 QAR</span></li>
-                          <li><span class="fg6 li_100 mar_at flt_l rd">Deduction:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r rd"> 20.00 QAR</span></li>
-                          <li><span class="fg6 li_100 mar_at flt_l">Total Pay:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 2,000.00 QAR</span></li>
+                          <li><span class="fg6 li_100 mar_at flt_l">Basic:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 
+                            <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
+                              <span class="sp_msg1">1,000.00</span>
+                            </button>
+                            <ul class="dropdown-menu drop_dn bln_pop">
+                              <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                              <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                              <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                            </ul>
+                            </span>
+                          </li>
+                          <li><span class="fg6 li_100 mar_at flt_l gn">Addition:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r gn"> 
+                            <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
+                              <span class="sp_msg1">1,000.00</span>
+                            </button>
+                            <ul class="dropdown-menu drop_dn bln_pop bln_p1">
+                              <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                              <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                              <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                            </ul></span></li>
+                          <li><span class="fg6 li_100 mar_at flt_l rd">Deduction:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r rd"> 
+                            <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
+                              <span class="sp_msg1">1,000.00</span>
+                            </button>
+                            <ul class="dropdown-menu drop_dn bln_pop bln_p2">
+                              <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                              <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                              <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                            </ul></span></li>
+                          <li><span class="fg6 li_100 mar_at flt_l">Total Salary:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 
+                            <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
+                              <span class="sp_msg1">1,000.00</span>
+                            </button>
+                            <ul class="dropdown-menu drop_dn bln_pop bln_p3">
+                              <span class="soz_1">
+                                <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                              </span>
+                            </ul></span></li>
                         </ul>
                       </div>
                     </div>
@@ -1964,33 +2009,15 @@ function closeNav5() {
                                 <td class="tr_l">Addition 1</td>
                                 <td class="tr_r">1,000.00</td>
                                 <td> 
-                            <div class="btn_stl1">
-                              <button class="btn act_btn bn1 bt_v" data-toggle="modal" data-target="#ex1" title="edit">
-                                <i class="fa fa-edit"></i>
-                              </button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#ex1" title="Delete">
-                                <i class="fa fa-trash"></i>
-                              </button>
-                            </div>
-
-                            <div class="btn_stl2"> 
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
-                                <i class="fa fa-list-alt"></i> View
-                              </button>
-                              <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
-                                <i class="fa fa-edit"></i> Edit
-                              </button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
-                                <i class="fa fa-trash"></i> Delete
-                              </button>
-                            </div>
-
-                            <div class="btn_stl3">
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
-                              <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                            </div>
-                          </td>
+                                  <div class="btn_stl1">
+                                    <button class="btn act_btn bn1 bt_v" data-toggle="modal" data-target="#ex1" title="edit">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#ex1" title="Delete">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </div>
+                                </td>
                               </tr>
                             </tbody>
                           </table>
@@ -2075,36 +2102,15 @@ function closeNav5() {
                                 <td class="tr_l">Deduction 1</td>
                                 <td class="tr_r">1,000.00</td>
                                 <td> 
-                            <div class="btn_stl1">
-                              <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                                  <i class="fa fa-check-circle "></i>
-                                </button>
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
-                                <i class="fa fa-list-alt"></i>
-                              </button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                                <i class="fa fa-trash"></i>
-                              </button>
-                            </div>
-
-                            <div class="btn_stl2"> 
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
-                                <i class="fa fa-list-alt"></i> View
-                              </button>
-                              <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">
-                                <i class="fa fa-edit"></i> Edit
-                              </button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">
-                                <i class="fa fa-trash"></i> Delete
-                              </button>
-                            </div>
-
-                            <div class="btn_stl3">
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal"> View</button>
-                              <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                            </div>
-                          </td>
+                                  <div class="btn_stl1">
+                                    <button class="btn act_btn bn1 bt_v" data-toggle="modal" data-target="#ex1" title="edit">
+                                      <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#ex1" title="Delete">
+                                      <i class="fa fa-trash"></i>
+                                    </button>
+                                  </div>
+                                </td>
                               </tr>
                             </tbody>
                           </table>
