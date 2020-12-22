@@ -1384,23 +1384,29 @@ function closeNav5() {
                       <tr>
                         <th class="th_b5_2">
                           <i class="flt_l butn-chk lbr_chkz">
-                            <button type="button" class="act_btck chk_allbx"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                            <button type="button" class="act_btck axz_b chk_allbx"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
                             <input type="checkbox" class="hidew" style="display:none;">
                           </i>
                         </th>
-                        <th class="th_b6 tr_l">Employee ID</th>
-                        <th class="th_b8 tr_l">Employee</th>
-                        <th class="th_b6 tr_l">Designation</th>
-                        <th class="th_b1 tr_c">Pay<br> Grade</th>
+                        <th class="th_b6 tr_l">Employee ID
+                          <input type="text" class="tb_inp_1 tb_in tr_l inp_sxml" placeholder="Employee ID">
+                        </th>
+                        <th class="th_b8 tr_l">Employee
+                          <input type="text" class="tb_inp_1 tb_in tr_l inp_sxml" placeholder="Employee">
+                        </th>
+                        <th class="th_b6 tr_l">Designation
+                          <input type="text" class="tb_inp_1 tb_in tr_l inp_sxml" placeholder="Designation">
+                        </th>
+                        <th class="th_b1 tr_l">Pay<br> Grade</th>
                         <th class="th_b1 tr_c">Basic Pay</th>
                         <th class="th_b7 tr_c">O T<br> Amount</th>
                         <th class="th_b1 tr_c">Addition</th>
                         <th class="th_b7 tr_c">Other<br> Addition</th>
-                        <th class="th_b7 tr_c">Arrear<br> Amount</th>
-                        <th class="th_b7 tr_c">Instalment<br> Amount</th>
+                        <th class="th_b7 tr_c">Arrear<br> Addition</th>
+                        <th class="th_b7 tr_c">Loan<br> Deduction</th>
                         <th class="th_b7 tr_c">Deduction</th>
                         <th class="th_b7 tr_c">Other<br> Deduction</th>
-                        <th class="th_b6 tr_c">Leave Arrear<br> Amount</th>
+                        <th class="th_b6 tr_c">Leave Arrear<br> Deduction</th>
                         <th class="th_b7 tr_c">Total<br> Amount</th>
                         <th class="th_b2">Actions</th>
                       </tr>
@@ -1409,7 +1415,7 @@ function closeNav5() {
                       <tr>
                         <td class="tr_l">
                           <i class="flt_l butn-chk">
-                            <button type="button" class="act_btck"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                            <button type="button" class="act_btck axz_b co1"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
                             <input type="checkbox" class="hidew" style="display:none;">
                           </i>
                         </td>
@@ -1418,7 +1424,7 @@ function closeNav5() {
                         </td>
                         <td class="tr_l">Employee 1</td>
                         <td class="tr_l">Designation 1</td>
-                        <td class="tr_r">1000.00</td>
+                        <td class="tr_l">Grade 1</td>
                         <td class="tr_r">1000.00</td>
                         <td class="tr_r">1000.00</td>
                         <td class="tr_r">1000.00</td>
@@ -1434,7 +1440,7 @@ function closeNav5() {
                             <button class="btn act_btn bn1 btn_shrt1 opn_pop_5" title="Edit">
                               <i class="fa fa-edit"></i>
                             </button>
-                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Monthly Salary Process">
                               <i class="rejct_ss paid_im"><img src="../images/icons/opp/slryp.png"></i>
                             </button>
                             <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
@@ -1449,7 +1455,7 @@ function closeNav5() {
                       <tr>
                         <td class="tr_l">
                           <i class="flt_l butn-chk">
-                            <button type="button" class="act_btck"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                            <button type="button" class="act_btck axz_b co2"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
                             <input type="checkbox" class="hidew" style="display:none;">
                           </i>
                         </td>
@@ -1458,7 +1464,7 @@ function closeNav5() {
                         </td>
                         <td class="tr_l">Employee 1</td>
                         <td class="tr_l">Designation 1</td>
-                        <td class="tr_r">1000.00</td>
+                        <td class="tr_l">Grade 1</td>
                         <td class="tr_r">1000.00</td>
                         <td class="tr_r">1000.00</td>
                         <td class="tr_r">1000.00</td>
@@ -1474,7 +1480,7 @@ function closeNav5() {
                             <button class="btn act_btn bn1 btn_shrt1 opn_pop_5" title="Edit">
                               <i class="fa fa-edit"></i>
                             </button>
-                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Monthly Salary Process">
                               <i class="rejct_ss paid_im"><img src="../images/icons/opp/slryp.png"></i>
                             </button>
                             <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
@@ -2686,209 +2692,28 @@ $(document).ready(function(){
     $(".amnt_2_d").hide();
     $(".percn_2_d").show();
   });
+  $(".co1 .ic1").click(function(){
+    $(".co1 .ic2").fadeIn(100);
+    $(".co1 .ic1").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+  $(".co1 .ic2").click(function(){
+    $(".co1 .ic1").fadeIn(100);
+    $(".co1 .ic2").fadeOut(100);
+$('.hidew').prop('checked',false);
+  });
+  $(".co2 .ic1").click(function(){
+    $(".co2 .ic2").fadeIn(100);
+    $(".co2 .ic1").fadeOut(100);
+$('.hidew').prop('checked',true);
+  });
+  $(".co2 .ic2").click(function(){
+    $(".co2 .ic1").fadeIn(100);
+    $(".co2 .ic2").fadeOut(100);
+$('.hidew').prop('checked',false);
+  });
 });
 </script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    
-    $('.show_add_mbr1').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op1').toggle();
-        $('.tm_op10, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op1').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr2').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op2').toggle();
-        $('.tm_op1, .tm_op3, .tm_op10, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op2').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr3').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op3').toggle();
-        $('.tm_op1, .tm_op10, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op3').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr4').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op4').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op10, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op4').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr5').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op5').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op10, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op5').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr6').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op6').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op10, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op6').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr7').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op7').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op10, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op7').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr8').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op8').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op10, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op8').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr9').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op9').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op10, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op9').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr10').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op10').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op11, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op10').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr11').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op11').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op10, .tm_op12').hide();
-        
-    });
-    
-    $('.tm_op11').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    
-    $('.show_add_mbr12').click( function(e) {
-        
-        e.preventDefault(); // stops link from making page jump to the top
-        e.stopPropagation(); // when you click the button, it stops the page from seeing it as clicking the body too
-        $('.tm_op12').toggle();
-        $('.tm_op1, .tm_op3, .tm_op2, .tm_op4, .tm_op5, .tm_op6, .tm_op7, .tm_op8, .tm_op9, .tm_op10, .tm_op11').hide();
-        
-    });
-    
-    $('.tm_op12').click( function(e) {
-        
-        e.stopPropagation(); // when you click within the content area, it stops the page from seeing it as clicking the body too
-        
-    });
-    
-    $('body').click( function() {
-       
-        $('.drop_tm').hide();
-        
-    });
-    
-});
-</script>
+
 </body>
 </html>
