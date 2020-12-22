@@ -1440,13 +1440,13 @@ function closeNav5() {
                             <button class="btn act_btn bn1 btn_shrt1 opn_pop_5" title="Edit">
                               <i class="fa fa-edit"></i>
                             </button>
-                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Monthly Salary Process">
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#ex1" title="Monthly Salary Process">
                               <i class="rejct_ss paid_im"><img src="../images/icons/opp/slryp.png"></i>
                             </button>
-                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#ex1" title="Approve">
                               <i class="rejct_ss paid_im"><img src="../images/icons/opp/apr1_1.png"></i>
                             </button>
-                            <button class="btn act_btn btn_shrt1 bn3" title="Delete">
+                            <button class="btn act_btn btn_shrt1 bn3" title="Delete" data-toggle="modal" data-target="#ex1">
                               <i class="fa fa-trash"></i>
                             </button>
                           </div>
@@ -1480,13 +1480,13 @@ function closeNav5() {
                             <button class="btn act_btn bn1 btn_shrt1 opn_pop_5" title="Edit">
                               <i class="fa fa-edit"></i>
                             </button>
-                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Monthly Salary Process">
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#ex1" title="Monthly Salary Process">
                               <i class="rejct_ss paid_im"><img src="../images/icons/opp/slryp.png"></i>
                             </button>
-                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#cnfrm_mdl" title="Approve">
+                            <button class="btn act_btn btn_shrt1 bn11" data-toggle="modal" data-target="#ex1" title="Approve">
                               <i class="rejct_ss paid_im"><img src="../images/icons/opp/apr1_1.png"></i>
                             </button>
-                            <button class="btn act_btn btn_shrt1 bn3" title="Delete">
+                            <button class="btn act_btn btn_shrt1 bn3" title="Delete" data-toggle="modal" data-target="#ex1">
                               <i class="fa fa-trash"></i>
                             </button>
                           </div>
@@ -1670,7 +1670,7 @@ function closeNav5() {
                         <td class="tr_r">1000.00</td>
                         <td> 
                           <div class="btn_stl1">
-                            <button class="btn_shrt1 bn11" title="Mark as Paid"><i class="opp_ico_img paid_im"><img src="../images/icons/opp/paid.png"> </i></button>
+                            <button class="btn_shrt1 bn11" title="Mark as Paid" data-toggle="modal" data-target="#ex1"><i class="opp_ico_img paid_im"><img src="../images/icons/opp/paid.png"> </i></button>
                           </div>
                         </td>
                       </tr>
@@ -1699,7 +1699,7 @@ function closeNav5() {
                         <td class="tr_r">1000.00</td>
                         <td> 
                           <div class="btn_stl1">
-                            <button class="btn_shrt1 bn11" title="Mark as Paid"><i class="opp_ico_img paid_im"><img src="../images/icons/opp/paid.png"> </i></button>
+                            <button class="btn_shrt1 bn11" title="Mark as Paid" data-toggle="modal" data-target="#ex1"><i class="opp_ico_img paid_im"><img src="../images/icons/opp/paid.png"> </i></button>
                           </div>
                         </td>
                       </tr>
@@ -1780,7 +1780,7 @@ function closeNav5() {
                         <td class="tr_r">1000.00</td>
                         <td> 
                           <div class="btn_stl1">
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#ex1" title="View">
                                 <i class="fa fa-list-alt"></i>
                               </button>
                           </div>
@@ -1811,7 +1811,7 @@ function closeNav5() {
                         <td class="tr_r">1000.00</td>
                         <td> 
                           <div class="btn_stl1">
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#exampleModal" title="View">
+                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#ex1" title="View">
                                 <i class="fa fa-list-alt"></i>
                               </button>
                           </div>
@@ -1822,14 +1822,14 @@ function closeNav5() {
                 </div>
               </div>
               <div class="modal-footer">
-                <div class="prnt_btz">
+                <div class="prnt_btz prn_mdl">
                   <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print Monthly Statement">
                     <i class="fa fa-print"></i>
                   </button>
-                  <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Download WPS">
+                  <button class="btn act_btn bn6 prn_mdl" data-toggle="modal" data-target="#exampleModal" title="Download WPS">
                     <i class="fa fa-download"></i>
                   </button>
-                  <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Download Payslip">
+                  <button class="btn act_btn bn1 prn_mdl" data-toggle="modal" data-target="#exampleModal" title="Download Payslip">
                     <i class="fa fa-download"></i>
                   </button>
                   <button type="button" class="btn btn-danger sam_b btn_cls_pop_fi">Cancel</button>
@@ -2176,6 +2176,27 @@ function closeNav5() {
 </div>
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+  <!-- Modal -->
+  <div class="modal fade z_inx" id="ex1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header mo_hd1">
+          <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+         ...
+        </div>
+        <div class="modal-footer mo_ft1">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
