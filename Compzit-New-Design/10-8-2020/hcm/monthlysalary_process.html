@@ -95,6 +95,13 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
+
+<!---multiple selection css-->
+ <script type="text/javascript" src="../m_select/mock.js"></script>  
+  <link rel="stylesheet" type="text/css" href="../m_select/jquery.dropdown.css">
+  <script src="../m_select/jquery.dropdown.js"></script>
+<!---multiple selection css closed--->
+
 <!--------css_Included_closed------->
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
@@ -1920,7 +1927,7 @@ function closeNav5() {
                               </span>
                             </ul></span>
                           </li>
-                          <li><span class="fg6 li_100 mar_at flt_l">Total Salary:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 
+                          <li class="sumq"><span class="fg6 li_100 mar_at flt_l">Total Salary:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 
                             <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
                               <span class="sp_msg1">1,000.00</span>
                             </button>
@@ -2257,6 +2264,181 @@ function closeNav5() {
 
 
 
+            <div class="opn_add_p" style="display:none;">
+              <h2>Add Monthly Salary Process</h2>
+
+                <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
+                  <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
+                  <input id="myinpc3" type="text" class="form-control fg2_inp1 tr_l inp_mst" id="email" placeholder="Business Unit" name="email" >
+                </div>
+
+                <div class="form-group fg2 sa_fg4 sa_640_i">
+                  <label for="email" class="fg2_la1">Month &amp; Year:<span class="spn1">*</span></label>
+                  <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 55%!important;">
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                  </select> 
+                  <select class="form-control fg2_inp1 fg_chs2 inp_mst" style="width: 35%!important;">
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                  </select> 
+                </div>
+
+                <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
+                  <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
+                  <input id="myinpc3" type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Division" name="email">
+                </div>
+
+                <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
+                  <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
+                  <input id="myinpc3" type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Department" name="email" >
+                </div>
+
+                <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
+                  <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
+                  <input id="myinpc3" type="text" class="form-control fg2_inp1 tr_l" id="email" placeholder="Designation" name="email">
+                </div>
+
+                <div class="form-group fg2 sa_640">
+                  <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
+                  <div class="form-group fg12 sa_640 gur_opt">
+                    <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_40pz"><i class="img_plcy"><img src="../images/icons/opp/work.png"></i> <span>Worker</span></button>
+                    <button class="tb_btz tb_cs tb_cus_sup2 wid_40pz"><i class="img_plcy"><img src="../images/icons/opp/stf.png"></i> <span>Staff</span></button>
+                  </div>
+                </div>
+
+              <div class="form-group fg2 sa_1">
+               <label for="" class="fg2_la1">Employee:<span class="spn1">*</span></label><br>
+                <div class="dropdown-mul-1" style="margin-right: 10px!important;">
+                  <select style="display:none;width: 96%;" multiple placeholder="Select"> </select>
+                </div>   
+              </div> 
+
+            <!---=================section_devider============--->
+            <div class="clearfix"></div>
+            <div class="devider"></div>
+            <!---=================section_devider============-->
+
+              <div class="sub_cont pull-right">
+                <div class="save_sec">
+                  <!-- <button type="submit" class="btn sub1">Complete</button> -->
+                  <button type="submit" class="btn sub1 slry_prs">Salary Process</button>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+
+              <div class="opn_add_cnt" style="display: none;">
+              <div class="">
+                <div class="r_640">  
+                  <table id="example" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
+                    <thead class="thead1">
+                      <tr>
+                        <th class="th_b5_2">
+                          <i class="flt_l butn-chk lbr_chkz">
+                            <button type="button" class="act_btck axz_b chk_allbx"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidew" style="display:none;">
+                          </i>
+                        </th>
+                        <th class="th_b6 tr_l">Employee ID
+                          <input type="text" class="tb_inp_1 tb_in tr_l inp_sxml" placeholder="Employee ID">
+                        </th>
+                        <th class="th_b2 tr_l">Employee
+                          <input type="text" class="tb_inp_1 tb_in tr_l inp_sxml" placeholder="Employee">
+                        </th>
+                        <th class="th_b6 tr_l">Designation
+                          <input type="text" class="tb_inp_1 tb_in tr_l inp_sxml" placeholder="Designation">
+                        </th>
+                        <th class="th_b1 tr_l">Pay<br> Grade</th>
+                        <th class="th_b1 tr_c">Basic Pay</th>
+                        <th class="th_b7 tr_c">O T<br> Amount</th>
+                        <th class="th_b1 tr_c">Addition</th>
+                        <th class="th_b7 tr_c">Other<br> Addition</th>
+                        <th class="th_b7 tr_c">Arrear<br> Addition</th>
+                        <th class="th_b7 tr_c">Loan<br> Deduction</th>
+                        <th class="th_b7 tr_c">Deduction</th>
+                        <th class="th_b7 tr_c">Other<br> Deduction</th>
+                        <th class="th_b6 tr_c">Leave Arrear<br> Deduction</th>
+                        <th class="th_b7 tr_c">Total<br> Amount</th>
+                        <th class="th_b2">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tr_l">
+                          <i class="flt_l butn-chk">
+                            <button type="button" class="act_btck axz_b co1"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidew" style="display:none;">
+                          </i>
+                        </td>
+                        <td class="tr_l">
+                          <span class="bc_opn bc_op1" title="Bank"><img src="../images/icons/opp/bc1.png"></span> Emp001
+                        </td>
+                        <td class="tr_l">Employee 1</td>
+                        <td class="tr_l">Designation 1</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td> 
+                          <div class="btn_stl1">
+                              <button class="btn act_btn bn3 bt_v" data-toggle="modal" data-target="#ex1" title="Delete">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tr_l">
+                          <i class="flt_l butn-chk">
+                            <button type="button" class="act_btck axz_b co2"><i class="state-icon fa fa-square-o ic1" style=""></i><i class="state-icon fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidew" style="display:none;">
+                          </i>
+                        </td>
+                        <td class="tr_l">
+                          <span class="bc_opn bc_op2" title="Cash"><img src="../images/icons/opp/bc2.png"></span> Emp001
+                        </td>
+                        <td class="tr_l">Employee 1</td>
+                        <td class="tr_l">Designation 1</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td class="tr_r">1000.00</td>
+                        <td> 
+                          <div class="btn_stl1">
+                              <button class="btn act_btn bn3 bt_v" data-toggle="modal" data-target="#ex1" title="Delete">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger btn_cls_pop_pp">Delete</button>
+              </div>
+              </div>
+            </div>
+            </div>
+
 
 <!---inner_content_sections area_closed--->
 
@@ -2278,9 +2460,12 @@ function closeNav5() {
 </div><!--wrapper_closed-->
 
 
-<!---add_button--->
-<a href="#" type="button" onclick="topFunction()" id="myBtn" title="Add New">
+<!---add_button-->
+<a href="#" class="add_s1" type="button" onclick="topFunction()" id="myBtn" title="Add New">
 <i class="fa fa-plus-circle"></i>
+</a>
+<a href="#" class="add_s2" type="button" onclick="topFunction()" id="myBtn" title="Back" style="display: none;">
+<i class="fa fa-arrow-circle-right"></i>
 </a>
 <!---add_button_closed--->
 
@@ -2904,6 +3089,94 @@ $('.hidew').prop('checked',false);
   });
 });
 </script>
+
+
+<script src="../js/select2.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
+
+<!---multiple selection new_script-->
+  <script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(false)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+
+    $('.dropdown-mul-2').dropdown({
+      limitCount: 5,
+      searchable: false
+    });
+
+    $('.dropdown-sin-1').dropdown({
+      readOnly: true,
+      input: '<input type="text" maxLength="20" placeholder="">'
+    });
+
+    $('.dropdown-sin-2').dropdown({
+      data: json2.data,
+      input: '<input type="text" maxLength="20" placeholder="">'
+    });
+  </script>
+
+<style type="text/css">
+  .dropdown-display-label{padding:3px 25px 5px 0!important;}
+  .l_b{margin-bottom:0px!important;    font-size: 13px;}
+  .dropdown-multiple-label{max-width: 92%!important;margin-bottom:10px!important;}
+</style>
+<script>
+$(document).ready(function(){
+  $(".pan1").click(function(){
+    $(".pan_lst1").toggle();
+  });
+    $(".tb_cus_sup1").click(function(){
+    $(".tb_cus_sup1").addClass("tb_cs_sel");
+    $(".tb_cus_sup2").removeClass("tb_cs_sel");
+  });
+    $(".tb_cus_sup2").click(function(){
+    $(".tb_cus_sup2").addClass("tb_cs_sel");
+    $(".tb_cus_sup1").removeClass("tb_cs_sel");
+    $(".tb_cus_2").show();
+    $(".tb_cus_1").hide();
+  });
+
+  $(".add_s1").click(function(){
+    $(".add_s1").hide();
+    $(".add_s2, .opn_add_p").show();
+  });
+
+  $(".add_s2").click(function(){
+    $(".add_s2, .opn_add_p").hide();
+    $(".add_s1").show();
+    $(".opn_add_cnt").hide();
+  });
+
+  $(".slry_prs").click(function(){
+    $(".opn_add_cnt").show();
+  });
+});
+</script>
+
 
 </body>
 </html>
