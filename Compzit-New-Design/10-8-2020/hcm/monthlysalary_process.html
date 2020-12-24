@@ -1787,7 +1787,7 @@ function closeNav5() {
                         <td class="tr_r">1000.00</td>
                         <td> 
                           <div class="btn_stl1">
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#ex1" title="View">
+                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#leave_pop" title="View">
                                 <i class="fa fa-list-alt"></i>
                               </button>
                           </div>
@@ -1818,7 +1818,7 @@ function closeNav5() {
                         <td class="tr_r">1000.00</td>
                         <td> 
                           <div class="btn_stl1">
-                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#ex1" title="View">
+                              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#leave_pop" title="View">
                                 <i class="fa fa-list-alt"></i>
                               </button>
                           </div>
@@ -2315,6 +2315,21 @@ function closeNav5() {
 
     <div class="opn_add_p" style="display:none;">
       <h2>Monthly Salary Process</h2>
+      <div class="form-group fg2 sa_fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Business Unit:<span class="spn1"></span></label>
+          <h5 class="h5_tags">Business Unit 1</h5>
+        </div>
+        <div class="form-group fg2 sa_fg4 sa_640_i">
+          <label for="email" class="fg2_la1">Month &amp; Year:<span class="spn1">*</span></label>
+            <h5 class="h5_tags">January 2021</h5>
+        </div>
+        <div class="form-group fg2 sa_fg4 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Employee Type:<span class="spn1"></span></label>
+          <h5 class="h5_tags">Staff</h5>
+        </div>
+        <div class="clearfix"></div>
+        <div class="devider"></div>
+      <h3>Processed Employee</h3>
       <div class="opn_add_cnt">
       <div class="">
         <div class="r_640">  
@@ -2381,9 +2396,7 @@ function closeNav5() {
                 <td class="tr_r">1000.00</td>
                 <td> 
                   <div class="btn_stl1">
-                      <button class="btn act_btn bn3 bt_v" data-toggle="modal" data-target="#ex1" title="Delete">
-                        <i class="fa fa-trash"></i>
-                      </button>
+                      <button class="btn act_btn bn11" title="Process Monthly Salary"><i class="opp_ico_img paid_im"><img src="../images/icons/opp/slryp.png"> </i></button>
                   </div>
                 </td>
               </tr>
@@ -2412,9 +2425,7 @@ function closeNav5() {
                 <td class="tr_r">1000.00</td>
                 <td> 
                   <div class="btn_stl1">
-                      <button class="btn act_btn bn3 bt_v" data-toggle="modal" data-target="#ex1" title="Delete">
-                        <i class="fa fa-trash"></i>
-                      </button>
+                      <button class="btn act_btn bn11" title="Process Monthly Salary"><i class="opp_ico_img paid_im"><img src="../images/icons/opp/slryp.png"> </i></button>
                   </div>
                 </td>
               </tr>
@@ -2442,7 +2453,8 @@ function closeNav5() {
       </div>
       <div class="clearfix"></div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger btn_cls_pop_pp">Delete</button>
+        <button type="button" class="btn btn-success">Process Monthly Salary</button>
+        <button type="button" class="btn btn-danger btn_cls_pop_pp">Cancel</button>
       </div>
       </div>
     </div>
@@ -2519,8 +2531,8 @@ function closeNav5() {
         <div class="devider"></div>
         <!---=================section_devider============-->
 
-            <button class="btn_serbox"><i class="fa fa-search on_show"></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Salary Process</button>
-            <button class="btn act_btn bn2 mar_top20 calcult" title="Calculate"><i class="fa fa-calculator"></i></button>
+            <button class="btn_serbox"><i class="fa fa-search on_show"></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Calculate Salary</button>
+            <button class="btn act_btn bn2 mar_top20 calcult" title="Calculate Salary"><i class="fa fa-calculator"></i></button>
       </div>
     </div>
 
@@ -2533,7 +2545,184 @@ function closeNav5() {
   </p>
 </div>
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
+
+
+<div class="modal fade z_inx" id="leave_pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod_70pz" role="document" style="width: 70%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Leave Settlement</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body max_hei11">
+
+        
+                <div class="wid_40_q">
+                  <div class="fg12 mar_at flt_l box_emp_br edt_mnt">
+                    <div class="clearfix"></div>
+                    <div class="fg12 empl_pop_dtl">
+                      <h3>Employee Name 1</h3>
+                      <span>EMP0001</span>
+                    </div>
+                    <div class="devider"></div>
+                    <div class="fg5">
+                      <div class="user_im_1">
+                        <img src="../images/hcm/user.jpg">
+                      </div>
+                    </div>
+                    <div class="fg_3_1 empl_pop_dtl wid_76_pz">
+                      <ul class="join_leav emp_dtl_bdr">
+                        <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
+                        <li class="bg_red elg_2"><span class="spn_zp1">Month & Year:</span> <span>28/11/2020</span></li>
+                        <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span>100.00 - 1,000.00</span></li>
+                        <li class="bg_grn elg_2"><span class="spn_zp1">Business Unit:</span> <span>Business Unit 1</span></li>
+                        <li class="bg_red elg_2"><span class="spn_zp1">Division:</span> <span>Division 1</span></li>
+                        <li class="bg_red"><span class="spn_zp1">Department:</span> <span>Department 1</span></li>
+                        <li class="bg_red"><span class="spn_zp1">Employee Type:</span> <span>Worker</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="fg12">
+                    <div class="box_aplc hgt_aut">
+                      <div class="txt_blu_1">
+                        <div class="col-md-12 tx_100 hcm_1_2 pa_rgt0">
+                          <div class="col-md-6 mar_at flt_l" style="padding-top: 10px;">
+                            <h5>Salary Summary</h5>
+                          </div>
+                          <ul class="pl_lft0 slary_sum flt_r sum_ofc">
+                            <li><span class="fg6 li_100 mar_at flt_l">Basic:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 
+                              <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
+                                <span class="sp_msg1">1,000.00</span>
+                              </button>
+                              <ul class="dropdown-menu drop_dn bln_pop">
+                                <span class="soz_1">
+                                  <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                  <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                  <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                  <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                  <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                  <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                </span>
+                              </ul>
+                              </span>
+                            </li>
+                            <li><span class="fg6 li_100 mar_at flt_l gn">Addition:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r gn"> 
+                              <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
+                                <span class="sp_msg1">1,000.00</span>
+                              </button>
+                              <ul class="dropdown-menu drop_dn bln_pop bln_p1">
+                                <span class="soz_1">
+                                  <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                  <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                  <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                  <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                  <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                  <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                </span>
+                              </ul></span>
+                            </li>
+                            <li><span class="fg6 li_100 mar_at flt_l rd">Deduction:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r rd"> 
+                              <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
+                                <span class="sp_msg1">1,000.00</span>
+                              </button>
+                              <ul class="dropdown-menu drop_dn bln_pop bln_p2">
+                                <span class="soz_1">
+                                  <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                  <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                  <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                  <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                  <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                  <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                </span>
+                              </ul></span>
+                            </li>
+                            <li class="sumq"><span class="fg6 li_100 mar_at flt_l">Total Salary:</span> <span class="fg6 li_100_1 mar_at flt_r tr_r"> 
+                              <button class="dropdown-toggle box_ae" type="button" data-toggle="dropdown" aria-expanded="true">
+                                <span class="sp_msg1">1,000.00</span>
+                              </button>
+                              <ul class="dropdown-menu drop_dn bln_pop bln_p3">
+                                <span class="soz_1">
+                                  <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                  <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                  <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                  <li class="sel_ms2"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2019 - Mar 2020</span></a></li>
+                                  <li class="sel_ms3"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2020 - Mar 2021</span></a></li>
+                                  <li class="sel_ms4"><a href="#" class="elg2_bt" data-toggle="modal" data-target="#leave_pop"><span>Apr 2017 - Mar 2018</span></a></li>
+                                </span>
+                              </ul></span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        <div class="col-md-7 mar_at flt_r box_emp_br">
+          <div class="empl_pop_dtl padg_tp10 dtl_amtz">
+            <ul class="join_leav">
+              <li class="bg_grn"><span class="spn_zp1">Basic Pay:</span> <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1">1,000.00 </span></button>
+                <!-- <ul class="dropdown-menu drop_dn mail_drop procd_drop pm_slry">
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>Basic Pay</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>OT Amount</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>Addition</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>Other Addition</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_grn mr_btm0"><span>Arrear Addition</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_red mr_btm0"><span>Paygrade Deduction</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_red mr_btm0"><span>Loan Deduction</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_red mr_btm0"><span>Mess Deduction</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <li class="sel_ms2 bg_red mr_btm0"><span>Arrear Amount Deduction</span>  <span class="spn_za1 flt_r tr_r">2000.00</span></li>
+                  <div class="pop_hd">Total  <span class="flt_r tr_r">2000.00</span></div>
+                  <div class="pop_hd hd_mr_0">One Day Salary:  <span class="">Rs. 768.00</span></div>
+                </ul> -->
+              </li>
+              <li class="bg_grn"><span class="spn_zp1">OT Amount:</span> 
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1">1,000.00 </span></button>
+              </li>
+              <li class="bg_grn bg_vsly"><span class="spn_zp1">Addition:</span><span class="amt_1">1,000.00 </span></button></li>
+              <li class="bg_grn"><span class="spn_zp1">Other Addition:</span>  
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1"><span class="amt_1">1,000.00 </span></button>
+              </li>
+              <li class="bg_grn"><span class="spn_zp1">Arrear Addition:</span>  
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1"><span class="amt_1">1,000.00 </span></button>
+              </li>
+              <li class="bg_red"><span class="spn_zp1">Loan Deduction:</span>
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1"><span class="amt_1">1,000.00 </span></button>
+              </li>
+              <li class="bg_red"><span class="spn_zp1">Deduction:</span>
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1"><span class="amt_1">1,000.00 </span></button>
+              </li>
+              <li class="bg_red"><span class="spn_zp1">Other Deduction:</span>
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1"><span class="amt_1">1,000.00 </span></button>
+              </li>
+              <li class="bg_red"><span class="spn_zp1">Leave Arrear Deduction:</span>
+                <button href="#" class="dropdown-toggle bodr_btnz" type="button" data-toggle="dropdown" aria-expanded="true"><span class="amt_1"><span class="amt_1">1,000.00 </span></button>
+              </li>
+              <div class="clearfix"></div>
+              <div class="free_sp1"></div>
+              <div class="devider"></div>
+              <li class="net_amz"><span class="spn_zp1">Total Amount:</span> <span class="amt_1">1,000.00 </span></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="prnt_btz flt_l">
+          <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print Payslip">
+            <i class="fa fa-print"></i>
+          </button>
+        </div>
+        <div class="save_sec flt_r">
+          <button type="submit" class="btn sub4">Cancel</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Modal -->
   <div class="modal fade z_inx" id="ex1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
