@@ -1386,7 +1386,7 @@ function closeNav5() {
               </div>
               <div class="modal-body">
                 <div class="r_640">  
-                  <table id="example" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
+                  <table id="example3" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
                     <thead class="thead1">
                       <tr>
                         <th class="th_b5_2">
@@ -1520,7 +1520,7 @@ function closeNav5() {
 
               <div class="modal-body">
                 <div class="r_640">  
-                  <table id="example" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
+                  <table id="example4" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
                     <thead class="thead1">
                       <tr>
                         <th class="th_b5_2">
@@ -1619,7 +1619,7 @@ function closeNav5() {
               </div>
               <div class="modal-body">
                 <div class="r_640">  
-                  <table id="example" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
+                  <table id="example5" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
                     <thead class="thead1">
                       <tr>
                         <th class="th_b5_2">
@@ -1729,7 +1729,7 @@ function closeNav5() {
               </div>
               <div class="modal-body">
                 <div class="r_640">  
-                  <table id="example" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
+                  <table id="example6" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
                     <thead class="thead1">
                       <tr>
                         <th class="th_b5_2">
@@ -2318,7 +2318,7 @@ function closeNav5() {
       <div class="opn_add_cnt">
       <div class="">
         <div class="r_640">  
-          <table id="example" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
+          <table id="example2" class="display table-bordered tbl_640 tbl_xa" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
                 <th class="th_b5_2">
@@ -2350,11 +2350,11 @@ function closeNav5() {
                 <th class="th_b2">Actions</th>
               </tr>
             </thead>
-            <tbody class="empty_dta">
+            <!-- <tbody class="empty_dta">
                <tr>
                 <td class="tr_c" colspan="16" rowspan="2">No Result Fount</td>
               </tr>
-            </tbody>
+            </tbody> -->
             <tbody class="show_dta" style="display: none;">
               <tr>
                 <td class="tr_l">
@@ -2419,6 +2419,24 @@ function closeNav5() {
                 </td>
               </tr>
             </tbody>
+            <tfoot class="show_dta">
+              <tr class="foot_bg show_dta" style="display: none;">
+                <td colspan="3" class="tr_l">Total</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r">1000.00</td>
+                <td class="tr_r"></td>
+              </tr>
+            </tfoot>
           </table>
         </div>
       </div>
@@ -2428,8 +2446,8 @@ function closeNav5() {
       </div>
       </div>
     </div>
-    <div class="filtr_sec fltr_plcy">
-      <div class="box_cnt_zz mr_tp10">
+    <div class="filtr_sec fltr_plcy fltr_zzz">
+      <div class="box_cnt_zz mr_tp10 inr_cds">
         <button class="fltr_cls flt_fx"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
         <div class="form-group fg12 sa_fg4 sa_o_fg2 sa_o_fg1">
           <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
@@ -2502,6 +2520,7 @@ function closeNav5() {
         <!---=================section_devider============-->
 
             <button class="btn_serbox"><i class="fa fa-search on_show"></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Salary Process</button>
+            <button class="btn act_btn bn2 mar_top20 calcult" title="Calculate"><i class="fa fa-calculator"></i></button>
       </div>
     </div>
 
@@ -2834,6 +2853,12 @@ $(function () {
 <script type="text/javascript">
 $(document).ready(function() {
     $('#example').DataTable();
+    $('#example1').DataTable();
+    $('#example2').DataTable();
+    $('#example3').DataTable();
+    $('#example4').DataTable();
+    $('#example5').DataTable();
+    $('#example6').DataTable();
 } );
 </script>
   <!-- <script type="text/javascript" src="../table/js1.js"></script>
@@ -3006,6 +3031,7 @@ $(document).ready(function(){
 
   if (keyCode == 27) { 
     $(".pop_2, .pop_3, .pop_4, .pop_5, .pop_wps, .pop_pp, .pop_fi").fadeOut();
+    $('.filtr_sec').removeClass("mr_400");
   } 
 });
 });
