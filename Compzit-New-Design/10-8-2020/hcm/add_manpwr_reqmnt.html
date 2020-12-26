@@ -112,6 +112,11 @@ function closeNav5() {
 
  <div class="mySave1" id="mySave">
   <div class="save_sec">
+    <button type="submit" class="btn sub1 bt_b" data-toggle="modal" data-target="#exampleModal_apr">Approve</button>
+    <button type="submit" class="btn sub4 bt_b" data-toggle="modal" data-target="#exampleModal1">Reject</button>
+    <button type="submit" class="btn sub3 bt_b" data-toggle="modal" data-target="#ex_cnfrm">Confirm</button>
+    <button type="submit" class="btn sub1 bt_b" data-toggle="modal" data-target="#ex_repn">Reopen</button>
+    <button type="submit" class="btn sub1 bt_b" data-toggle="modal" data-target="#exampleModal1">Close Req.</button>
     <button type="submit" class="btn sub1 bt_b">Save</button>
     <button type="submit" class="btn sub3 bt_b">Save & Close</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
@@ -1089,28 +1094,17 @@ function closeNav5() {
             </div>
           </div>
         </div>
-        <div class="clearfix"></div>
-        <div class="devider"></div>
-        <h3>HR Department</h3>
-        <div class="form-group fg2 sa_2">
-          <label for="pwd" class="fg2_la1">Request Verified Date:<span class="spn1">*</span> </label>
-          <div id="datepicker3" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr inp_mst" type="text"  />
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-        <div class="form-group fg2 sa_640 sa_2 col_75">
-          <label for="email" class="fg2_la1">Notes From HR:<span class="spn1">*</span></label>
-          <textarea rows="2" cols="30" class="form-control flt_l tb_in inp_mst" placeholder="Notes From HR"></textarea>
-        </div>
    
         <div class="clearfix"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1">Verify</button>
-            <button type="submit" class="btn sub4">Reject</button>
+            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_apr">Approve</button>
+            <button type="submit" class="btn sub4" data-toggle="modal" data-target="#exampleModal1" >Reject</button>
+            <button type="submit" class="btn sub3" data-toggle="modal" data-target="#ex_cnfrm">Confirm</button>
+            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#ex_repn" >Reopen</button>
+            <button type="submit" class="btn sub4" data-toggle="modal" data-target="#exampleModal1">Close Req.</button>
             <button type="submit" class="btn sub1">Save</button>
             <button type="submit" class="btn sub3">Save & Close</button>
             <button type="submit" class="btn sub4">Cancel</button>
@@ -1138,12 +1132,7 @@ function closeNav5() {
 <a href="manpowr_reqrmnt.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a>
-<a href="#" type="button" class="add_op_atch_btn" data-toggle="modal" data-target="#add_files" title="Reopen">
-<i class="fa fa-unlock"></i>
-</a>
-<a href="#" type="button" class="add_op_atch_btn tp_za" data-toggle="modal" data-target="#add_files" title="Close">
-<i class="fa fa-times"></i>
-</a>
+
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
   <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
@@ -1154,8 +1143,149 @@ function closeNav5() {
 
 </div><!--wrapper_closed-->
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure delete?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Reason for delete</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="al-box war">Warning Alert !!!</div>
+        <textarea placeholder="Reason for Delete" row="6" class="text_ar1"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="war-btn">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal_apr">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Approve</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group fg6 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Notes by Approver:<span class="spn1">*</span></label>
+          <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Notes by Approver"></textarea> 
+        </div>
+        <div class="form-group fg6 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Responsible Person:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 inp_mst fg_chs2">
+            <option>Person 1</option>
+            <option>Person 2</option>
+            <option>Person 3</option>
+          </select> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="war-btn">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ex_cnfrm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure delete?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="ex_repn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure delete?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ...
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--------script section_started---------->
