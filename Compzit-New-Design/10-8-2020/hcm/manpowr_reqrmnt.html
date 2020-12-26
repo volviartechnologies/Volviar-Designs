@@ -1026,7 +1026,7 @@ function closeNav5() {
           <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="th_b6 tr_l"> Ref#
+                <th class="th_b1 tr_l"> Ref#
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Ref#">
                 </th>
@@ -1038,33 +1038,28 @@ function closeNav5() {
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
                 </th>
-                <th class="th_b6 tr_c"> Date
+                <th class="th_b7 tr_c"> Date
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Date">
                 </th>
-                <th class="th_b7 tr_c"> Resources#
+                <th class="th_b1 tr_c"> Count
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Resources#">
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Count">
                 </th>
-                <th class="th_b6 tr_c"> Closure Date
+                <th class="th_b1 tr_c"> Req. Status
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Closure Date">
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Req. Status">
                 </th>
-                <th class="th_b8 tr_c"> Requirement Status
-                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Requirement Status">
-                </th>
-                <th class="th_b8">Actions</th>
+                <th class="th_b2">Actions</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="tr_l">ref/2018/54895626</td>
+                <td class="tr_l">ref/2018/5</td>
                 <td class="tr_l">Division 1</td>
                 <td class="tr_l">Designation 1</td>
                 <td class="tr_c">20/08/2019</td>
                 <td class="tr_c">1</td>
-                <td class="tr_c">20/08/2019</td>
                 <td class="tr_c">Approved</td>
                 <td>
                   <div class="btn_stl1">
@@ -1074,87 +1069,176 @@ function closeNav5() {
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal3" title="Confirm">
+                      <i class="fa fa-check"></i>
                     </button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Reopen">
+                      <i class="fa fa-unlock"></i>
+                    </button>
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal1" title="Close">
+                      <i class="fa fa-close"></i>
+                    </button>
+                    <span class="dropdown dd_spl1">
+                      <button class="btn act_btn bn11 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Approve / Reject">
+                      <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
+                    </button>
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
+                        <li class="li1_cz">
+                          <a href="#" data-toggle="modal" data-target="#exampleModal_apr" title="Approve">
+                            <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i> Approve
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal1" title="Reject">
+                            <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i> Reject
+                          </a>
+                        </li>
+                      </ul>
+                    </span>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="tr_l">ref/2018/54895626</td>
+                <td class="tr_l">ref/2018/5</td>
                 <td class="tr_l">Division 1</td>
                 <td class="tr_l">Designation 1</td>
                 <td class="tr_c">20/08/2019</td>
                 <td class="tr_c">1</td>
-                <td class="tr_c">20/08/2019</td>
                 <td class="tr_c">Approved</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-times-circle"></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="tr_l">ref/2018/54895626</td>
-                <td class="tr_l">Division 1</td>
-                <td class="tr_l">Designation 1</td>
-                <td class="tr_c">20/08/2019</td>
-                <td class="tr_c">1</td>
-                <td class="tr_c">20/08/2019</td>
-                <td class="tr_c">Approved</td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status" disabled="">
+                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
                       <i class="fa fa-check-circle "></i>
                     </button>
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal3" title="Confirm">
+                      <i class="fa fa-check"></i>
                     </button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Reopen">
+                      <i class="fa fa-unlock"></i>
+                    </button>
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal1" title="Close">
+                      <i class="fa fa-close"></i>
+                    </button>
+                    <span class="dropdown dd_spl1">
+                      <button class="btn act_btn bn11 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Approve / Reject">
+                      <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
+                    </button>
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
+                        <li class="li1_cz">
+                          <a href="#" data-toggle="modal" data-target="#exampleModal_apr" title="Approve">
+                            <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i> Approve
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal1" title="Reject">
+                            <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i> Reject
+                          </a>
+                        </li>
+                      </ul>
+                    </span>
                   </div>
                 </td>
               </tr>
               <tr>
-                <td class="tr_l">ref/2018/54895626</td>
+                <td class="tr_l">ref/2018/5</td>
                 <td class="tr_l">Division 1</td>
                 <td class="tr_l">Designation 1</td>
                 <td class="tr_c">20/08/2019</td>
                 <td class="tr_c">1</td>
-                <td class="tr_c">20/08/2019</td>
                 <td class="tr_c">Approved</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status" disabled="">
-                      <i class="fa fa-times-circle"></i>
+                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                      <i class="fa fa-check-circle "></i>
                     </button>
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal3" title="Confirm">
+                      <i class="fa fa-check"></i>
                     </button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                       <i class="fa fa-trash"></i>
                     </button>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Reopen">
+                      <i class="fa fa-unlock"></i>
+                    </button>
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal1" title="Close">
+                      <i class="fa fa-close"></i>
+                    </button>
+                    <span class="dropdown dd_spl1">
+                      <button class="btn act_btn bn11 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Approve / Reject">
+                      <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
+                    </button>
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
+                        <li class="li1_cz">
+                          <a href="#" data-toggle="modal" data-target="#exampleModal_apr" title="Approve">
+                            <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i> Approve
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal1" title="Reject">
+                            <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i> Reject
+                          </a>
+                        </li>
+                      </ul>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="tr_l">ref/2018/5</td>
+                <td class="tr_l">Division 1</td>
+                <td class="tr_l">Designation 1</td>
+                <td class="tr_c">20/08/2019</td>
+                <td class="tr_c">1</td>
+                <td class="tr_c">Approved</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                      <i class="fa fa-check-circle "></i>
+                    </button>
+                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal3" title="Confirm">
+                      <i class="fa fa-check"></i>
+                    </button>
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Reopen">
+                      <i class="fa fa-unlock"></i>
+                    </button>
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal1" title="Close">
+                      <i class="fa fa-close"></i>
+                    </button>
+                    <span class="dropdown dd_spl1">
+                      <button class="btn act_btn bn11 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Approve / Reject">
+                      <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
+                    </button>
+                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
+                        <li class="li1_cz">
+                          <a href="#" data-toggle="modal" data-target="#exampleModal_apr" title="Approve">
+                            <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i> Approve
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" data-toggle="modal" data-target="#exampleModal1" title="Reject">
+                            <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i> Reject
+                          </a>
+                        </li>
+                      </ul>
+                    </span>
                   </div>
                 </td>
               </tr>
@@ -1254,7 +1338,7 @@ function closeNav5() {
 <div class="modal fade" id="exampleModal1">
   <div class="modal-dialog mod1" role="document">
     <div class="modal-content">
-      <div class="modal-header mo_hd1">
+      <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Reason for delete</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -1262,11 +1346,42 @@ function closeNav5() {
       </div>
       <div class="modal-body">
         <div class="al-box war">Warning Alert !!!</div>
-        <textarea placeholder="Write reason for delete" row="6" class="text_ar1"></textarea>
+        <textarea placeholder="Reason for Delete" row="6" class="text_ar1"></textarea>
       </div>
-      <div class="modal-footer mo_ft1">
-        <button type="button" class="btn btn-primary" id="war-btn">Proceed</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="war-btn">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal_apr">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Approve</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group fg6 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Notes by Approver:<span class="spn1">*</span></label>
+          <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Notes by Approver"></textarea> 
+        </div>
+        <div class="form-group fg6 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Responsible Person:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 inp_mst fg_chs2">
+            <option>Person 1</option>
+            <option>Person 2</option>
+            <option>Person 3</option>
+          </select> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="war-btn">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
