@@ -1971,10 +1971,11 @@ span.box_ae{padding-right: 6px;}
 .bsc_t{color: #17628e;}
 .add_s2{position: fixed;top: 220px;right: 10px;z-index: 99;font-size: 20px;border: none;outline: none;background-color: #48acf2;color: #fff;
     cursor: pointer;padding: 0px;border-radius: 4px;border-radius: 37px;width: 46px;height: 28px;text-align: center;transition-delay: 0.1s;padding-top: 0px;}
-.drp_bse{margin-left: 130px;width: 204px!important;overflow: visible;position: absolute!important;top: 55px;}
+.drp_bse{margin-left: 130px;width: 204px!important;overflow: visible;position: absolute!important;top: 55px;color: #000;}
 .drp_bse:before{content: " ";position: absolute;left: -10px;top: 34px;border-right: 0px solid transparent; border-left: 10px solid transparent;border-bottom: -1px solid #fff;border-top:14px solid #d6f2ff;}
 .drp_bse li{font-size: 11px;height: auto!important;padding: 1px;}
 .dtcta:before{border-top:14px solid #ffe9e8;top: 58px;}
+.mnthy_slry .frz_ll{font-size: 11px;}
 
 
 @media only screen and (max-width:1100px){
