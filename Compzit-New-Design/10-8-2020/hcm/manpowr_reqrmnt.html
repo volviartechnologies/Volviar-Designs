@@ -1022,6 +1022,9 @@ function closeNav5() {
       <div class="devider"></div>
 <!---=================section_devider============-->
 
+          <div class="pop_2" style="display: none;" >
+          </div>
+
            <div class="r_1024">
           <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
             <thead class="thead1">
@@ -1046,11 +1049,11 @@ function closeNav5() {
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Count">
                 </th>
-                <th class="th_b1 tr_c"> Req. Status
+                <th class="th_b7 tr_c"> Req. Status
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Req. Status">
                 </th>
-                <th class="th_b2">Actions</th>
+                <th class="th_b3">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -1063,182 +1066,140 @@ function closeNav5() {
                 <td class="tr_c">Approved</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-check-circle "></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <span class="dropdown dd_lft0">
+                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status">
+                        <i class="fa fa-check-circle "></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm sts_bx">
+                        <div class="modal-header">
+                          <h5>Change Status</h5>
+                        </div>
+                        <div class="head_txt">Are you sure to change the active status of this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc1 cls_sts" id="InputToFocus" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_sts">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    <button class="btn act_btn bn1" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#ex_cnfrm" title="Confirm">
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_cnfm" title="Confirm">
                       <i class="fa fa-check"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Reopen">
-                      <i class="fa fa-unlock"></i>
-                    </button>
-                    <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn11 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Approve / Reject">
-                      <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
-                    </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
-                        <li class="li1_cz">
-                          <a href="#" data-toggle="modal" data-target="#exampleModal_apr" title="Approve">
-                            <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i> Approve
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" data-toggle="modal" data-target="#exampleModal1" title="Reject">
-                            <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i> Reject
-                          </a>
-                        </li>
-                      </ul>
+                      </button>
+                      <div class="dropdown-menu drop_dnm cnfm_bx">
+                        <div class="modal-header">
+                          <h5>Confirm</h5>
+                        </div>
+                        <div class="head_txt">Are you sure to confirm this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                          <button class="btn btn-danger cls_cnfm">No</button>
+                        </div>
+                      </div>
                     </span>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal1" title="Close Req.">
-                      <i class="fa fa-close"></i>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="tr_l">ref/2018/5</td>
-                <td class="tr_l">Division 1</td>
-                <td class="tr_l">Designation 1</td>
-                <td class="tr_c">20/08/2019</td>
-                <td class="tr_c">1</td>
-                <td class="tr_c">Approved</td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status" disabled="">
-                      <i class="fa fa-times-circle"></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#ex_cnfrm" title="Confirm">
-                      <i class="fa fa-check"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                       <i class="fa fa-trash"></i>
-                    </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Reopen">
-                      <i class="fa fa-unlock"></i>
-                    </button>
-                    <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn11 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Approve / Reject">
-                      <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
-                    </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
-                        <li class="li1_cz">
-                          <a href="#" data-toggle="modal" data-target="#exampleModal_apr" title="Approve">
-                            <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i> Approve
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" data-toggle="modal" data-target="#exampleModal1" title="Reject">
-                            <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i> Reject
-                          </a>
-                        </li>
-                      </ul>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                        </div>
+                      </div>
                     </span>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal1" title="Close Req.">
-                      <i class="fa fa-close"></i>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="tr_l">ref/2018/5</td>
-                <td class="tr_l">Division 1</td>
-                <td class="tr_l">Designation 1</td>
-                <td class="tr_c">20/08/2019</td>
-                <td class="tr_c">1</td>
-                <td class="tr_c">Approved</td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status" disabled="">
-                      <i class="fa fa-check-circle "></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#ex_cnfrm" title="Confirm">
-                      <i class="fa fa-check"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Reopen">
-                      <i class="fa fa-unlock"></i>
-                    </button>
-                    <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn11 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Approve / Reject">
-                      <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
-                    </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
-                        <li class="li1_cz">
-                          <a href="#" data-toggle="modal" data-target="#exampleModal_apr" title="Approve">
-                            <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i> Approve
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" data-toggle="modal" data-target="#exampleModal1" title="Reject">
-                            <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i> Reject
-                          </a>
-                        </li>
-                      </ul>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_ropn" title="Reopen">
+                        <i class="fa fa-unlock"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm ropn_bx">
+                        <div class="modal-header">
+                          <h5>Reopen</h5>
+                        </div>
+                        <div class="head_txt">Are you sure to reopen this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_ropn" id="InputToFocus3" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_ropn">No</button>
+                        </div>
+                      </div>
                     </span>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal1" title="Close Req.">
-                      <i class="fa fa-close"></i>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="tr_l">ref/2018/5</td>
-                <td class="tr_l">Division 1</td>
-                <td class="tr_l">Designation 1</td>
-                <td class="tr_c">20/08/2019</td>
-                <td class="tr_c">1</td>
-                <td class="tr_c">Approved</td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-times-circle"></i>
-                    </button>
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#ex_cnfrm" title="Confirm">
-                      <i class="fa fa-check"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
-                    </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#ex_repn" title="Reopen">
-                      <i class="fa fa-unlock"></i>
-                    </button>
-                    <span class="dropdown dd_spl1">
-                      <button class="btn act_btn bn11 bt_e dropdown-toggle" type="button" data-toggle="dropdown" data-tt="tooltip" data-placement="top" title="Approve / Reject">
-                      <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
-                    </button>
-                      <ul class="dropdown-menu drop_dn spn_drp_tbl dp_qtn_n" role="dialog" aria-haspopup="true" aria-expanded="false">
-                        <li class="li1_cz">
-                          <a href="#" data-toggle="modal" data-target="#exampleModal_apr" title="Approve">
-                            <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i> Approve
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#" data-toggle="modal" data-target="#exampleModal1" title="Reject">
-                            <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i> Reject
-                          </a>
-                        </li>
-                      </ul>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn11 opn_aprvl" title="Approve">
+                        <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm aprvl_bx">
+                        <div class="modal-header">
+                          <h5>Approve</h5>
+                        </div>
+                        <div class="head_txt">
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Notes by Approver:<span class="spn1">*</span></label>
+                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Notes by Approver" id="InputToFocus4" autofocus="on"></textarea> 
+                          </div>
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Responsible Person:<span class="spn1">*</span></label>
+                            <select class="form-control fg2_inp1 inp_mst fg_chs2">
+                              <option>Person 1</option>
+                              <option>Person 2</option>
+                              <option>Person 3</option>
+                            </select> 
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_aprvl">Yes</button>
+                          <button class="btn btn-danger cls_aprvl">No</button>
+                        </div>
+                      </div>
                     </span>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal1" title="Close Req.">
-                      <i class="fa fa-close"></i>
-                    </button>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn11 opn_rjct" title="Reject">
+                        <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm rjct_bx">
+                        <div class="modal-header">
+                          <h5>Reject</h5>
+                        </div>
+                        <div class="head_txt">
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Reason for rejection:<span class="spn1">*</span></label>
+                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for rejection" autofocus="on" id="InputToFocus5"></textarea> 
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_rjct" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_rjct">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_clsreq" title="Close Req.">
+                        <i class="fa fa-close"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm clsreq_bx">
+                        <div class="modal-header">
+                          <h5>Requirement Closing</h5>
+                        </div>
+                        <div class="head_txt">
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Reason for requirement closing:<span class="spn1">*</span></label>
+                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for requirement closing" autofocus="on" id="InputToFocus6"></textarea> 
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_clsreq" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_clsreq">No</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
                 </td>
               </tr>
@@ -1830,8 +1791,55 @@ $(document).ready(function() {
     $("#par_win_box").on('shown.bs.modal', function(){
         $(this).find('.pro_ip1').focus();
     });
+    $(".sts_bx").on('shown.bs.modal', function(){
+        $(this).find('.foc1').focus();
+    });
 });
 </script>
 
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".sts_bx, .pop_2").fadeIn();
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".cnfm_bx, .pop_2").fadeIn();
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".dlt_bx, .pop_2").fadeIn();
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".ropn_bx, .pop_2").fadeIn();
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".aprvl_bx, .pop_2").fadeIn();
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".rjct_bx, .pop_2").fadeIn();
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".clsreq_bx, .pop_2").fadeIn();
+    $('#InputToFocus6').focus();
+  });
+  $(".pop_2, .btn-danger").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+  } 
+});
+</script>
 </body>
 </html>
