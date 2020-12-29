@@ -1098,17 +1098,141 @@ function closeNav5() {
         <div class="clearfix"></div>
         <div class="devider"></div>
 
+        <div class="pop_2" style="display: none;" > </div>
+
         <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#exampleModal_apr">Approve</button>
-            <button type="submit" class="btn sub4" data-toggle="modal" data-target="#exampleModal1" >Reject</button>
-            <button type="submit" class="btn sub3" data-toggle="modal" data-target="#ex_cnfrm">Confirm</button>
-            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#ex_repn" >Reopen</button>
-            <button type="submit" class="btn sub4" data-toggle="modal" data-target="#exampleModal1">Close Req.</button>
             <button type="submit" class="btn sub1">Save</button>
             <button type="submit" class="btn sub3">Save & Close</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-            <button type="submit" class="btn sub2">Clear</button>
+              <span class="dropdown dd_lft0">
+                <button class="dropdown-toggle btn nw1 sub3 opn_cnfm" title="Confirm">
+                Confirm
+                </button>
+                <div class="dropdown-menu drop_dnm cnfm_bx rgt_0b">
+                  <div class="modal-header">
+                    <h5>Confirm</h5>
+                    <button type="button" class="close cls_pop" title="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="head_txt">Are you sure to confirm this entry?</div>
+                  <div class="modal-footer">
+                    <div class="flt_r">
+                      <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                      <button class="btn btn-danger cls_cnfm">No</button>
+                    </div>
+                  </div>
+                </div>
+              </span>
+
+            <span class="dropdown dd_lft0 ">
+              <button class="dropdown-toggle btn nw1 sub1 opn_ropn" title="Reopen">
+                Reopen
+              </button>
+              <div class="dropdown-menu drop_dnm ropn_bx rgt_0b1">
+                <div class="modal-header">
+                  <h5>Reopen</h5>
+                  <button type="button" class="close" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">Are you sure to reopen this entry?</div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success cls_ropn" id="InputToFocus3" autofocus="">Yes</button>
+                    <button class="btn btn-danger cls_ropn">No</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <span class="dropdown dd_lft0 ">
+              <button class="dropdown-toggle btn nw1 sub1 bn2 opn_aprvl" title="Approve">
+                Approve
+              </button>
+              <div class="dropdown-menu drop_dnm aprvl_bx rgt_0b2">
+                <div class="modal-header">
+                  <h5>Approve</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">
+                  <div class="form-group fg12 frm_2 frm_50">
+                    <label for="email" class="fg2_la1">Notes by Approver:<span class="spn1">*</span></label>
+                    <textarea class="form-control fg2_inp1 inp_mst fg_chs2" id="InputToFocus4" placeholder="Notes by Approver"></textarea> 
+                  </div>
+                  <div class="form-group fg12 frm_2 frm_50">
+                    <label for="email" class="fg2_la1">Responsible Person:<span class="spn1">*</span></label>
+                    <select class="form-control fg2_inp1 inp_mst fg_chs2">
+                      <option>Person 1</option>
+                      <option>Person 2</option>
+                      <option>Person 3</option>
+                    </select> 
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success cls_aprvl">Save</button>
+                    <button class="btn btn-danger cls_aprvl">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <span class="dropdown dd_lft0 ">
+              <button class="dropdown-toggle btn nw1 sub4 opn_rjct" title="Reject">
+                Reject
+              </button>
+              <div class="dropdown-menu drop_dnm rjct_bx rgt_0b3">
+                <div class="modal-header">
+                  <h5>Reject</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">
+                  <div class="form-group fg12 frm_2 frm_50">
+                    <label for="email" class="fg2_la1">Reason for Rejection:<span class="spn1">*</span></label>
+                    <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for Rejection" autofocus="on" id="InputToFocus5"></textarea> 
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success cls_rjct" autofocus="">Save</button>
+                    <button class="btn btn-danger cls_rjct">Cancel</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <span class="dropdown dd_lft0">
+              <button class="dropdown-toggle btn nw1 sub4 opn_clsreq" title="Close Req.">
+                Close Req.
+              </button>
+              <div class="dropdown-menu drop_dnm clsreq_bx rgt_0b4">
+                <div class="modal-header">
+                  <h5>Requirement Closing</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">
+                  <div class="form-group fg12 frm_2 frm_50">
+                    <label for="email" class="fg2_la1">Reason for Requirement Closing:<span class="spn1">*</span></label>
+                    <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for Requirement Closing" autofocus="on" id="InputToFocus6"></textarea> 
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success cls_clsreq" autofocus="">Save</button>
+                    <button class="btn btn-danger cls_clsreq">Close</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <button type="submit" class="btn nw1 sub4">Cancel</button>
+            <button type="submit" class="btn nw1 sub2">Clear</button>
           </div>
 
           <div class="edit_sec">
@@ -1724,6 +1848,69 @@ $(document).ready(function(){
   });
   });
 </script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
+    $('#InputToFocus6').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .nw1").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+  } 
+});
+</script>
+<!-- <script>
+function show()
+{
+  document.getElementById("element").focus();
+    $(".sts_bx, .pop_2").fadeIn();
+}
+
+</script> -->
 
 </body>
 </html>

@@ -1067,7 +1067,7 @@ function closeNav5() {
                 <td>
                   <div class="btn_stl1">
                     <span class="dropdown dd_lft0">
-                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status" data-effect="fade">
+                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status">
                         <i class="fa fa-check-circle "></i>
                       </button>
                       <div class="dropdown-menu drop_dnm sts_bx">
@@ -1130,7 +1130,7 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm ropn_bx">
                         <div class="modal-header">
                           <h5>Reopen</h5>
-                          <button type="button" class="close cls_pop" title="Close">
+                          <button type="button" class="close" title="Close">
                             <span aria-hidden="true">×</span>
                           </button>
                         </div>
@@ -1155,7 +1155,7 @@ function closeNav5() {
                         <div class="head_txt">
                           <div class="form-group fg12 frm_2 frm_50">
                             <label for="email" class="fg2_la1">Notes by Approver:<span class="spn1">*</span></label>
-                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Notes by Approver" id="InputToFocus4" autofocus="on"></textarea> 
+                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" id="InputToFocus4" placeholder="Notes by Approver"></textarea> 
                           </div>
                           <div class="form-group fg12 frm_2 frm_50">
                             <label for="email" class="fg2_la1">Responsible Person:<span class="spn1">*</span></label>
@@ -1168,8 +1168,8 @@ function closeNav5() {
                           <div class="clearfix"></div>
                         </div>
                         <div class="modal-footer">
-                          <button class="btn btn-success cls_aprvl">Yes</button>
-                          <button class="btn btn-danger cls_aprvl">No</button>
+                          <button class="btn btn-success cls_aprvl">Save</button>
+                          <button class="btn btn-danger cls_aprvl">Cancel</button>
                         </div>
                       </div>
                     </span>
@@ -1192,8 +1192,8 @@ function closeNav5() {
                           <div class="clearfix"></div>
                         </div>
                         <div class="modal-footer">
-                          <button class="btn btn-success cls_rjct" autofocus="">Yes</button>
-                          <button class="btn btn-danger cls_rjct">No</button>
+                          <button class="btn btn-success cls_rjct" autofocus="">Save</button>
+                          <button class="btn btn-danger cls_rjct">Cancel</button>
                         </div>
                       </div>
                     </span>
@@ -1216,8 +1216,8 @@ function closeNav5() {
                           <div class="clearfix"></div>
                         </div>
                         <div class="modal-footer">
-                          <button class="btn btn-success cls_clsreq" autofocus="">Yes</button>
-                          <button class="btn btn-danger cls_clsreq">No</button>
+                          <button class="btn btn-success cls_clsreq" autofocus="">Save</button>
+                          <button class="btn btn-danger cls_clsreq">Close</button>
                         </div>
                       </div>
                     </span>
@@ -1855,10 +1855,10 @@ $(document).ready(function(){
     $(".clsreq_bx").show( 300);
     $('#InputToFocus6').focus();
   });
-  $(".pop_2, .btn-danger").click(function(){
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
-  $(".dropdown-toggle, .act_btn, .cls_pop").focus(function(){
+  $(".dropdown-toggle, .act_btn").focus(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
 });
@@ -1869,7 +1869,6 @@ $(document).ready(function(){
 
   if (keyCode == 27) { 
     $(".drop_dnm, .pop_2").fadeOut();
-    $(".sts_bx").hide();
   } 
 });
 </script>
