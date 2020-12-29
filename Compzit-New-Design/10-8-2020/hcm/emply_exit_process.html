@@ -1094,10 +1094,13 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm cnfm_bx">
                         <div class="modal-header">
                           <h5>Confirm</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">Are you sure to confirm this entry?</div>
                         <div class="modal-footer">
-                          <button class="btn btn-success foc2 cls_cnfm Focus1" id="InputToFocus1" autofocus="on">Yes</button>
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
                           <button class="btn btn-danger cls_cnfm">No</button>
                         </div>
                       </div>
@@ -1109,6 +1112,9 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm repn dlt_bx">
                         <div class="modal-header">
                           <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">Are you sure to delete this entry?</div>
                         <div class="modal-footer">
@@ -1124,6 +1130,9 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm ropn_bx">
                         <div class="modal-header">
                           <h5>Reopen</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">Are you sure to reopen this entry?</div>
                         <div class="modal-footer">
@@ -1778,21 +1787,24 @@ jQuery(document).ready(function() {
 <script>
 $(document).ready(function(){
   $(".opn_cnfm").click(function(){
-    $(".cnfm_bx, .pop_2").fadeIn();
-    $('.Focus1').focus();
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
   });
   $(".opn_dlt").click(function(){
-    $(".dlt_bx, .pop_2").fadeIn();
-    // $('#InputToFocus2').focus();
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
   });
   $(".opn_ropn").click(function(){
-    $(".ropn_bx, .pop_2").fadeIn();
-    // $('#InputToFocus3').focus();
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
   });
   $(".pop_2, .btn-danger").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
-  $(".dropdown-toggle").focus(function(){
+  $(".dropdown-toggle, .act_btn, .cls_pop").focus(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
 });
@@ -1803,10 +1815,18 @@ $(document).ready(function(){
 
   if (keyCode == 27) { 
     $(".drop_dnm, .pop_2").fadeOut();
-    $(".drop_dnm").hide();
+    $(".sts_bx").hide();
   } 
 });
 </script>
+<!-- <script>
+function show()
+{
+  document.getElementById("element").focus();
+    $(".sts_bx, .pop_2").fadeIn();
+}
+
+</script> -->
 
 <!---data_table_css & scripts_started---->
 <script type="text/javascript">
