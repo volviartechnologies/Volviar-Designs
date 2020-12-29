@@ -1067,12 +1067,15 @@ function closeNav5() {
                 <td>
                   <div class="btn_stl1">
                     <span class="dropdown dd_lft0">
-                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status">
+                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status" data-effect="fade">
                         <i class="fa fa-check-circle "></i>
                       </button>
                       <div class="dropdown-menu drop_dnm sts_bx">
                         <div class="modal-header">
                           <h5>Change Status</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">Are you sure to change the active status of this entry?</div>
                         <div class="modal-footer">
@@ -1091,6 +1094,9 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm cnfm_bx">
                         <div class="modal-header">
                           <h5>Confirm</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">Are you sure to confirm this entry?</div>
                         <div class="modal-footer">
@@ -1106,6 +1112,9 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm repn dlt_bx">
                         <div class="modal-header">
                           <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">Are you sure to delete this entry?</div>
                         <div class="modal-footer">
@@ -1121,6 +1130,9 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm ropn_bx">
                         <div class="modal-header">
                           <h5>Reopen</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">Are you sure to reopen this entry?</div>
                         <div class="modal-footer">
@@ -1136,6 +1148,9 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm aprvl_bx">
                         <div class="modal-header">
                           <h5>Approve</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">
                           <div class="form-group fg12 frm_2 frm_50">
@@ -1165,11 +1180,14 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm rjct_bx">
                         <div class="modal-header">
                           <h5>Reject</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">
                           <div class="form-group fg12 frm_2 frm_50">
-                            <label for="email" class="fg2_la1">Reason for rejection:<span class="spn1">*</span></label>
-                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for rejection" autofocus="on" id="InputToFocus5"></textarea> 
+                            <label for="email" class="fg2_la1">Reason for Rejection:<span class="spn1">*</span></label>
+                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for Rejection" autofocus="on" id="InputToFocus5"></textarea> 
                           </div>
                           <div class="clearfix"></div>
                         </div>
@@ -1186,11 +1204,14 @@ function closeNav5() {
                       <div class="dropdown-menu drop_dnm clsreq_bx">
                         <div class="modal-header">
                           <h5>Requirement Closing</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
                         </div>
                         <div class="head_txt">
                           <div class="form-group fg12 frm_2 frm_50">
-                            <label for="email" class="fg2_la1">Reason for requirement closing:<span class="spn1">*</span></label>
-                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for requirement closing" autofocus="on" id="InputToFocus6"></textarea> 
+                            <label for="email" class="fg2_la1">Reason for Requirement Closing:<span class="spn1">*</span></label>
+                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for Requirement Closing" autofocus="on" id="InputToFocus6"></textarea> 
                           </div>
                           <div class="clearfix"></div>
                         </div>
@@ -1800,34 +1821,44 @@ $(document).ready(function() {
 <script>
 $(document).ready(function(){
   $(".opn_sts").click(function(){
-    $(".sts_bx, .pop_2").fadeIn();
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
     $('#InputToFocus').focus();
   });
   $(".opn_cnfm").click(function(){
-    $(".cnfm_bx, .pop_2").fadeIn();
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
     $('#InputToFocus1').focus();
   });
   $(".opn_dlt").click(function(){
-    $(".dlt_bx, .pop_2").fadeIn();
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
     $('#InputToFocus2').focus();
   });
   $(".opn_ropn").click(function(){
-    $(".ropn_bx, .pop_2").fadeIn();
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
     $('#InputToFocus3').focus();
   });
   $(".opn_aprvl").click(function(){
-    $(".aprvl_bx, .pop_2").fadeIn();
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
     $('#InputToFocus4').focus();
   });
   $(".opn_rjct").click(function(){
-    $(".rjct_bx, .pop_2").fadeIn();
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
     $('#InputToFocus5').focus();
   });
   $(".opn_clsreq").click(function(){
-    $(".clsreq_bx, .pop_2").fadeIn();
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
     $('#InputToFocus6').focus();
   });
   $(".pop_2, .btn-danger").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .cls_pop").focus(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
 });
@@ -1838,8 +1869,17 @@ $(document).ready(function(){
 
   if (keyCode == 27) { 
     $(".drop_dnm, .pop_2").fadeOut();
+    $(".sts_bx").hide();
   } 
 });
 </script>
+<!-- <script>
+function show()
+{
+  document.getElementById("element").focus();
+    $(".sts_bx, .pop_2").fadeIn();
+}
+
+</script> -->
 </body>
 </html>
