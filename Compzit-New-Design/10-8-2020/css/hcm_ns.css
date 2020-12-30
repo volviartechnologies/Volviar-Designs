@@ -2008,6 +2008,7 @@ span.box_ae{padding-right: 6px;}
 .fg_80{width: 80%;margin:auto;float: left;}
 .dlt_pop1{bottom: -36px;right: 34px;}
 .dlt_pop1:before{right: -14px;top: auto;border-right: 16px solid transparent;bottom: 34px;}
+.wid_10p{width: 100%;}
 
 /*=========circlecss======*/
 .prog_lea .progress .progress-value{background:#247db9;line-height: 26px;}
