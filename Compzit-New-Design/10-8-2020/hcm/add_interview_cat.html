@@ -961,12 +961,12 @@ function closeNav5() {
       
       <div class="content_box1 cont_contr">
         <h2>Add Interview Category</h2>
-        <div class="fg4">
-          <div class="form-group fg_3_1 frm_2 frm_50 sa_o_fg4">
+        <div class="fg_40">
+          <div class="form-group fg_80 sa_480">
             <label for="email" class="fg2_la1">Interview Category:<span class="spn1">*</span></label>
             <input class="form-control fg2_inp1 inp_mst" placeholder="Interview Category">
           </div>
-          <div class="form-group fg2 fg2_mr sa_fg4">
+          <div class="form-group fg5 fg2_mr sa_fg4">
             <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
             <div class="check1">
               <div class="">
@@ -978,14 +978,16 @@ function closeNav5() {
             </div>
           </div>
         </div>
+
+      <div class="pop_2" style="display: none;" ></div>
         <div class="fg6 col_s1">
           <h3>Assessment Points</h3>
-          <div class="r_480">
-            <table class="table table-bordered tbl_480">
+          <div class="">
+            <table class="table table-bordered txt_f12">
               <thead class="thead1">
                 <tr>
                   <th class="col-md-6 tr_l">Name</th>
-                  <th class="th_b6 tr_c">Default</th>
+                  <th class="col-md-2 tr_c">Default</th>
                   <th class="col-md-2 tr_c">Actions</th>
                 </tr>
               </thead>
@@ -1007,9 +1009,25 @@ function closeNav5() {
                   <td>
                     <div class="btn_stl1">
                       <button class="btn act_btn bn2" title="Add New"><i class="fa fa-plus-circle"></i></button>
-                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                        <i class="fa fa-trash"></i>
+
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
+                      <i class="fa fa-trash"></i>
                       </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx dlt_pop1">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
                     </div>
                   </td>
                 </tr>
@@ -1440,6 +1458,72 @@ $(document).ready(function(){
   $(".pan1").click(function(){
     $(".pan_lst1").toggle();
   });
+});
+</script>
+
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
+    $('#InputToFocus6').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
 });
 </script>
 

@@ -2003,7 +2003,11 @@ span.box_ae{padding-right: 6px;}
 .rgt_0b4{right:70px;}
 .rgt_0b4:before{left:220px;right: auto;}
 .show_dv{display:block;}
-.col_s1 h3{margin-top:-32px;}
+.col_s1 h3{margin-top:0px;}
+.fg_40{width: 40%;margin:auto;float: left;}
+.fg_80{width: 80%;margin:auto;float: left;}
+.dlt_pop1{bottom: -36px;right: 34px;}
+.dlt_pop1:before{right: -14px;top: auto;border-right: 16px solid transparent;bottom: 34px;}
 
 /*=========circlecss======*/
 .prog_lea .progress .progress-value{background:#247db9;line-height: 26px;}
@@ -2028,6 +2032,10 @@ span.box_ae{padding-right: 6px;}
 .rqs_wz{width: 23%;}
 .box_tabz{width: 75%;}
 .wid_40pz{width: 100%;}
+.fg_40, .col_s1{width: 100%;}
+.fg_80{width: 50%;}
+.col_s1 h3{margin-top:20px;}
+
 }
 @media only screen and (max-width:800px){
 .bg_wht{margin:auto;float: left;width: 90%;}
@@ -2070,6 +2078,9 @@ span.box_ae{padding-right: 6px;}
   .empl_pop_dtl span{font-size:9px;}
   .spn_zp1 {width: 46%!important;}
   .sa_fg3_1{width: 90%;}
+  .dlt_pop1 {bottom: 22px;right: 0;width: 100%;}
+  .dlt_pop1:before {right: 8px;bottom: -12px;}
+  .txt_f12 thead tr th, .txt_f12 tbody tr td{font-size: 10px!important;}
 } 
 
 @media only screen and (max-width:380px){
