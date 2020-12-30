@@ -1815,8 +1815,16 @@ $(document).ready(function(){
 
   if (keyCode == 27) { 
     $(".drop_dnm, .pop_2").fadeOut();
-    $(".sts_bx").hide();
+    document.getElementById("#InputToFocus1").hide();
   } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
 });
 </script>
 <!-- <script>

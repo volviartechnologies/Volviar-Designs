@@ -1022,8 +1022,7 @@ function closeNav5() {
       <div class="devider"></div>
 <!---=================section_devider============-->
 
-          <div class="pop_2" style="display: none;" >
-          </div>
+          <div class="pop_2" style="display: none;" ></div>
 
            <div class="r_1024">
           <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
@@ -1070,7 +1069,7 @@ function closeNav5() {
                       <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status">
                         <i class="fa fa-check-circle "></i>
                       </button>
-                      <div class="dropdown-menu drop_dnm sts_bx">
+                      <div class="dropdown-menu drop_dnm sts_bx overlayInner">
                         <div class="modal-header">
                           <h5>Change Status</h5>
                           <button type="button" class="close cls_pop" title="Close">
@@ -1084,6 +1083,24 @@ function closeNav5() {
                         </div>
                       </div>
                     </span>
+                    <!-- <span class="dropdown dd_lft0">
+                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status">
+                        <i class="fa fa-check-circle "></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm sts_bx">
+                        <div class="modal-header">
+                          <h5>Change Status</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to change the active status of this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc1 cls_sts" id="InputToFocus" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_sts">No</button>
+                        </div>
+                      </div>
+                    </span> -->
                     <button class="btn act_btn bn1" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
@@ -1786,37 +1803,7 @@ $(document).ready(function() {
     } );
 } );
   </script>
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $("#myModal_2").on('shown.bs.modal', function(){
-        $(this).find('#not_op1').focus();
-    });
-    $("#myModal_3").on('shown.bs.modal', function(){
-        $(this).find('#fol_op1').focus();
-    });
-    $("#myModal_3_cls").on('shown.bs.modal', function(){
-        $(this).find('.cls_in1').focus();
-    });
-    $("#allocate_to").on('shown.bs.modal', function(){
-        $(this).find('#all_op1').focus();
-    });
-    $("#win_box").on('shown.bs.modal', function(){
-        $(this).find('.win_op1').focus();
-    });
-    $("#reopen_qoute_box").on('shown.bs.modal', function(){
-        $(this).find('.reop_op1').focus();
-    });
-    $("#loss_info").on('shown.bs.modal', function(){
-        $(this).find('.loss_op1').focus();
-    });
-    $("#par_win_box").on('shown.bs.modal', function(){
-        $(this).find('.pro_ip1').focus();
-    });
-    $(".sts_bx").on('shown.bs.modal', function(){
-        $(this).find('.foc1').focus();
-    });
-});
-</script>
+
 
 <script>
 $(document).ready(function(){
@@ -1869,16 +1856,17 @@ $(document).ready(function(){
 
   if (keyCode == 27) { 
     $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
   } 
 });
 </script>
-<!-- <script>
-function show()
-{
-  document.getElementById("element").focus();
-    $(".sts_bx, .pop_2").fadeIn();
-}
-
-</script> -->
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
+</script>
 </body>
 </html>
