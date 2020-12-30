@@ -1010,7 +1010,7 @@ function closeNav5() {
                       <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status">
                         <i class="fa fa-check-circle "></i>
                       </button>
-                      <div class="dropdown-menu drop_dnm sts_bx">
+                      <div class="dropdown-menu drop_dnm sts_bx overlayInner">
                         <div class="modal-header">
                           <h5>Change Status</h5>
                           <button type="button" class="close cls_pop" title="Close">
@@ -1507,7 +1507,6 @@ $(".wr2").click(function(){
 
 <!-------------print_script_close--------------------->
 
-
 <!---data_table_css & scripts_started---->
 <script type="text/javascript">
 $(document).ready(function() {
@@ -1604,6 +1603,13 @@ $(document).ready(function(){
   } 
 });
 </script>
-
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
+</script>
 </body>
 </html>
