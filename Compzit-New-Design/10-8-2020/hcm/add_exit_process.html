@@ -96,7 +96,7 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
-<!--------css_Included_closed------->
+<!--------css_Included_closed------>
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
 
@@ -105,10 +105,51 @@ function closeNav5() {
 </head>
 <body onLoad="MM_preloadImages('../images/btn_h.png','../images/serch_bn_h.png')">
 
- <div class="mySave1" id="mySave">
+ <div class="mySave1 ms_ov" id="mySave">
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Save</button>
     <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+      <span class="dropdown dd_lft0">
+        <button class="dropdown-toggle btn nw1 sub3 opn_cnfm1" title="Confirm">
+        Confirm
+        </button>
+        <div class="dropdown-menu drop_dnm cnfm_bx1 rgt_0b rgt_fx_pop">
+          <div class="modal-header">
+            <h5>Confirm</h5>
+            <button type="button" class="close cls_pop" title="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="head_txt">Are you sure to confirm this entry?</div>
+          <div class="modal-footer">
+            <div class="flt_r">
+              <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+              <button class="btn btn-danger cls_cnfm">No</button>
+            </div>
+          </div>
+        </div>
+      </span>
+
+    <span class="dropdown dd_lft0 ">
+      <button class="dropdown-toggle btn nw1 sub1 opn_ropn1" title="Reopen">
+        Reopen
+      </button>
+      <div class="dropdown-menu drop_dnm ropn_bx1 rgt_0b1 rgt_fx_pop1">
+        <div class="modal-header">
+          <h5>Reopen</h5>
+          <button type="button" class="close" title="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="head_txt">Are you sure to reopen this entry?</div>
+        <div class="modal-footer">
+          <div class="flt_r">
+            <button class="btn btn-success cls_ropn" id="InputToFocus3" autofocus="">Yes</button>
+            <button class="btn btn-danger cls_ropn">No</button>
+          </div>
+        </div>
+      </div>
+    </span>
     <button type="submit" class="btn sub2 bt_b">Clear</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
   </div>
@@ -1033,7 +1074,8 @@ function closeNav5() {
 
         
 
-        <div class="pop_2" style="display: none;" > </div>
+        <div class="pop_2" style="display: none;"> </div>
+        <div class="pop_2_11" style="display: none;"> </div>
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
@@ -1409,6 +1451,7 @@ function opensave() {
 
 function closesave() {
     document.getElementById("mySave").style.width = "0px";
+    $(".ropn_bx1, .cnfm_bx1, .pop_2_11").hide( 300);
 }
 </script>
 <!--save_pop up_closed-->
@@ -1468,7 +1511,7 @@ function sel1() {
 <!------hide and visible div_closed--->
 
 
-<!-----table_sec_fixed--->
+<!-----table_sec_fixed-->
 <script type="text/javascript">
   // requires jquery library
 jQuery(document).ready(function() {
@@ -1500,30 +1543,20 @@ $(document).ready(function(){
     $(".cnfm_bx").show( 300);
     $('#InputToFocus1').focus();
   });
-  $(".opn_dlt").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dlt_bx").show( 300);
-    $('#InputToFocus2').focus();
+  $(".opn_cnfm1").click(function(){
+    $(".pop_2_11").fadeIn();
+    $(".cnfm_bx1").show( 300);
+    $('#InputToFocus1').focus();
   });
   $(".opn_ropn").click(function(){
     $(".pop_2").fadeIn();
     $(".ropn_bx").show( 300);
     $('#InputToFocus3').focus();
   });
-  $(".opn_aprvl").click(function(){
-    $(".pop_2").fadeIn();
-    $(".aprvl_bx").show( 300);
-    $('#InputToFocus4').focus();
-  });
-  $(".opn_rjct").click(function(){
-    $(".pop_2").fadeIn();
-    $(".rjct_bx").show( 300);
-    $('#InputToFocus5').focus();
-  });
-  $(".opn_clsreq").click(function(){
-    $(".pop_2").fadeIn();
-    $(".clsreq_bx").show( 300);
-    $('#InputToFocus6').focus();
+  $(".opn_ropn1").click(function(){
+    $(".pop_2_11").fadeIn();
+    $(".ropn_bx1").show( 300);
+    $('#InputToFocus3').focus();
   });
   $(".pop_2, .btn-danger, .cls_pop").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
@@ -1548,6 +1581,7 @@ $(document).ready(function(){
     if (e.which == 27) {
         $(".overlayInner").fadeOut(300); 
     $(".drop_dnm, .pop_2").fadeOut();
+     document.getElementById("mySave").style.width = "0px";
     }
 });
 </script>
