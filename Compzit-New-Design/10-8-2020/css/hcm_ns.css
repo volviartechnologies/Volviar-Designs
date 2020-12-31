@@ -2027,6 +2027,12 @@ span.box_ae{padding-right: 6px;}
 .rgt_fx_pop1{right: 86px;margin-top: 100px;bottom: -163px;}
 .rgt_fx_pop:before{left: auto;right: -12px;top: 58px;}
 .rgt_fx_pop1:before{left: auto;right: -12px;top: 98px;}
+.rgt_fx_pop3{right: 86px;margin-top: 100px;bottom: -240px;}
+.rgt_fx_pop3:before{left: auto;right: -12px;top: 170px;}
+.rgt_fx_pop4{right: 86px;margin-top: 100px;bottom: -240px;}
+.rgt_fx_pop4:before{left: auto;right: -12px;top: 150px;}
+.rgt_fx_pop5{right: 86px;margin-top: 100px;bottom: -260px;}
+.rgt_fx_pop5:before{left: auto;right: -12px;top: 170px;}
 .ms_ov{overflow:visible;z-index: 999999;}
 
 @media only screen and (max-width:1100px){

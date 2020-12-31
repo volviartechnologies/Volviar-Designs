@@ -137,7 +137,7 @@ function closeNav5() {
       <div class="dropdown-menu drop_dnm ropn_bx1 rgt_0b1 rgt_fx_pop1">
         <div class="modal-header">
           <h5>Reopen</h5>
-          <button type="button" class="close" title="Close">
+          <button type="button" class="close cls_pop" title="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
@@ -992,14 +992,15 @@ function closeNav5() {
   <ol class="breadcrumb">
         <li><a href="#">Home</a></li>
         <li><a href="#">HCM</a></li>
-         <li class="active">Add Exit Process</li>
+        <li><a href="#">Employee Exit Process</a></li>
+         <li class="active">Add Employee Exit Process</li>
   </ol>
 
   <div class="content_sec2 cont_contr">
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
-        <h2>Add Exit Process</h2>
+        <h2>Add Employee Exit Process</h2>
 
        
       <div class="max_hei11 mnthy_slry">
@@ -1109,7 +1110,7 @@ function closeNav5() {
               <div class="dropdown-menu drop_dnm ropn_bx rgt_0b1">
                 <div class="modal-header">
                   <h5>Reopen</h5>
-                  <button type="button" class="close" title="Close">
+                  <button type="button" class="close cls_pop" title="Close">
                     <span aria-hidden="true">×</span>
                   </button>
                 </div>
@@ -1451,7 +1452,7 @@ function opensave() {
 
 function closesave() {
     document.getElementById("mySave").style.width = "0px";
-    $(".ropn_bx1, .cnfm_bx1, .pop_2_11").hide( 300);
+    $(".ropn_bx1, .cnfm_bx1, .pop_2_11").hide();
 }
 </script>
 <!--save_pop up_closed-->
@@ -1571,7 +1572,7 @@ $(document).ready(function(){
   var keyCode = e.keyCode || e.which; 
 
   if (keyCode == 27) { 
-    $(".drop_dnm, .pop_2").fadeOut();
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
     document.getElementById("#InputToFocus1").hide();
   } 
 });
@@ -1580,8 +1581,7 @@ $(document).ready(function(){
   $(document).keyup(function(e) {
     if (e.which == 27) {
         $(".overlayInner").fadeOut(300); 
-    $(".drop_dnm, .pop_2").fadeOut();
-     document.getElementById("mySave").style.width = "0px";
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
     }
 });
 </script>
