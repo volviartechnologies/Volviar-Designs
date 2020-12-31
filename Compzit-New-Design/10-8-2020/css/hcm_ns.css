@@ -2009,12 +2009,19 @@ span.box_ae{padding-right: 6px;}
 .dlt_pop1{bottom: -36px;right: 34px;}
 .dlt_pop1:before{right: -14px;top: auto;border-right: 16px solid transparent;bottom: 34px;}
 .wid_10p{width: 100%;}
+.act_btn:visited{box-shadow: 1px 1px 15px #ccc;}
 
 /*=========circlecss======*/
 .prog_lea .progress .progress-value{background:#247db9;line-height: 26px;}
 .prog_lea .progress:after{border: 2px solid #fff;}
 .prog_lea .progress{width: 30px;height: 30px;}
 .prog_lea .progress .progress-bar{border-width: 3px;}
+.sp_dz{background-color: #2798f1;padding: 2px 4px;border-radius: 4px;color: #fff;font-size: 11px!important;}
+.wi_80inp{width: 100%!important;margin-bottom:10px;}
+.str_dte span{width: auto!important;}
+.mn_270{min-height: 270px;}
+
+
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
 .wid_8_3{width: 25%;}
