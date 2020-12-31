@@ -945,7 +945,7 @@ function closeNav5() {
 <!----------------------------------------------header_section_closed------------------------------------------------------------->
 
 
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
 
   <ol class="breadcrumb">
@@ -960,84 +960,71 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Add Exit Process</h2>
 
-        <div class="form-group fg2 fg2_blk fg2_blk1 sa_1">
-          <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Staff</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Worker</label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-              <div class="form-group fg4 sa_640">
-                <label for="email" class="fg2_la1">Employee:</label>
-                <select class="form-control fg2_inp1" required="" onclick="openemp_dtl()">
-                  <option>Employee 1</option>
-                  <option>Employee 2</option>
-                  <option>Employee 3</option>
-                  <option>Employee 4</option>
-                </select>
-              </div>
-
-              <div class="clearfix"></div>
-              <div class="free_sp"></div>
-              <div class="devider"></div>
-
-          <div class="emp_dtl" id="emp_dtl">
-             <div class="top_br_container">
-            <div class="top_br_1">
-              <div class="col-md-4">
-                <ul>
-                  <li><span class="fg6 li_100">Employee</span> <span class="fg6 li_100_1">: Employee 1</span></li>
-                  <li><span class="fg6 li_100">Pay Grade</span> <span class="fg6 li_100_1">: 10</span></li>
-                  <li><span class="fg6 li_100">Division</span> <span class="fg6 li_100_1">: Division 1</span></li>
-                </ul>
-              </div>
-              <div class="col-md-4">
-                <ul>
-                  <li><span class="fg6 li_100">Designation</span> <span class="fg6 li_100_1">: Designation 1</span></li>
-                  <li><span class="fg6 li_100">Department</span> <span class="fg6 li_100_1">: Department 1</span></li>
-                </ul>
-              </div>
-
-              <div class="col-md-3">
-              </div>
-            </div>
-          </div>
-
-          <div class="form-group fg2 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 inp_mst" required="">
+       
+      <div class="max_hei11 mnthy_slry">
+        <div class="fg4">
+          <div class="form-group fg12 hcm_2_1">
+            <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1 fg_chs2 wi_80inp">
               <option>Employee 1</option>
               <option>Employee 2</option>
               <option>Employee 3</option>
-              <option>Employee 4</option>
-            </select>
+            </select> 
           </div>
-          <div class="form-group fg2 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Reason:<span class="spn1">*</span></label>
-            <textarea rows="4" cols="30" class="form-control flt_l tb_in inp_mst" placeholder="Reason"></textarea>
-          </div>
-
-          <div class="form-group fg2 sa_o_fg2 sa_o_fg1">
-            <label for="pwd" class="fg2_la1">To Date:<span class="spn1"></span> </label>
-            <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-              <input class="form-control inp_bdr" type="text">
-              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          <div class="clearfix"></div>
+          <div class="fg12 mar_at flt_l box_emp_br edt_mnt">
+            <div class="clearfix"></div>
+            <div class="fg12 empl_pop_dtl">
+              <h3>Employee Name 1</h3>
+              <span>EMP0001</span>
+            </div>
+            <div class="devider"></div>
+            <div class="fg5">
+              <div class="user_im_1">
+                <img src="../images/hcm/user.jpg">
+              </div>
+            </div>
+            <div class="fg_3_1 empl_pop_dtl wid_76_pz">
+              <ul class="join_leav emp_dtl_bdr">
+                <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
+                <li class="bg_red"><span class="spn_zp1">Employee Type:</span> <span class="frz_ll">Worker</span></li>
+                <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">100.00 - 1,000.00</span></li>
+                <li class="bg_red elg_2"><span class="spn_zp1">Division:</span> <span class="frz_ll">Division 1</span></li>
+                <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
+                <li class="bg_red"><span class="spn_zp1">Notice Period:</span> <span class="frz_ll">30 <span class="sp_dz">Days</span></span></li>
+              </ul>
             </div>
           </div>
-        
-         <div class="form-group fg2 sa_o_fg2 sa_o_fg1">
-          <label for="email" class="fg2_la1">Notice Period:<span class="spn1"></span></label>
-          <input id="myinpc3" type="text" class="form-control fg2_inp1 tr_r" id="email" placeholder="0" name="email" disabled="">
         </div>
+        <div class="fg6 mar_at box_emp_br mn_270">
+          <div class="empl_pop_dtl padg_tp10 dtl_amtz dtld_az">
+            <div class="form-group fg6 hcm_2_1">
+              <label for="email" class="fg2_la1">Exit Mode:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+                <option>Resignation</option>
+                <option>Termination</option>
+                <option>Retirement</option>
+                <option>Abscond</option>
+                <option>Death</option>
+                <option>Rejoin</option>
+                <option>Police Custody</option>
+                <option>Other</option>
+              </select> 
+            </div>
+            <div class="fg6 str_dte">
+              <label for="pwd" class="fg2_la1">Start Date:<span class="spn1">*</span> </label>
+              <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                <input class="form-control inp_bdr inp_mst" type="text" id="dte_1_a">
+                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+              </div>
+            </div>
+            <div class="form-group fg6 sa_640 sa_2 col_75">
+              <label for="email" class="fg2_la1">Comments:<span class="spn1">*</span></label>
+              <textarea rows="4" cols="30" class="form-control flt_l tb_in inp_mst" placeholder="Comments"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
    
         <div class="clearfix"></div>
         <div class="free_sp"></div>
@@ -1071,7 +1058,7 @@ function closeNav5() {
 <i class="fa fa-save"></i>
 </a>
 
-<a href="job_descrptn.html" type="button" class="list_b" title="Back to List">
+<a href="emply_exit_process.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a>
 
