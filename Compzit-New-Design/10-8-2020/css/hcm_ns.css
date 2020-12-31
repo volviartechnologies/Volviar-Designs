@@ -2019,7 +2019,8 @@ span.box_ae{padding-right: 6px;}
 .sp_dz{background-color: #2798f1;padding: 2px 4px;border-radius: 4px;color: #fff;font-size: 11px!important;}
 .wi_80inp{width: 100%!important;margin-bottom:10px;}
 .str_dte span{width: auto!important;}
-.mn_270{min-height: 284px;margin-left: 20px;    margin-top: -12px;}
+.mn_270{min-height: 272px;margin-left: 20px; }
+.in_wid_96{width: 95%!important;}
 
 
 @media only screen and (max-width:1100px){

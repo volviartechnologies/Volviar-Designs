@@ -965,7 +965,7 @@ function closeNav5() {
         <div class="fg4">
           <div class="form-group fg12 hcm_2_1">
             <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2 wi_80inp">
+            <select class="form-control fg2_inp1 fg_chs2 wi_80inp" autofocus="">
               <option>Employee 1</option>
               <option>Employee 2</option>
               <option>Employee 3</option>
@@ -988,9 +988,9 @@ function closeNav5() {
               <ul class="join_leav emp_dtl_bdr">
                 <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
                 <li class="bg_red"><span class="spn_zp1">Employee Type:</span> <span class="frz_ll">Worker</span></li>
-                <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">100.00 - 1,000.00</span></li>
                 <li class="bg_red elg_2"><span class="spn_zp1">Division:</span> <span class="frz_ll">Division 1</span></li>
                 <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
+                <li class="bg_red"><span class="spn_zp1">Joining Date:</span> <span class="frz_ll">31/12/2020</span></li>
                 <li class="bg_red"><span class="spn_zp1">Notice Period:</span> <span class="frz_ll">30 <span class="sp_dz">Days</span></span></li>
               </ul>
             </div>
@@ -1018,9 +1018,9 @@ function closeNav5() {
                 <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
               </div>
             </div>
-            <div class="form-group fg6 sa_640 sa_2 col_75">
+            <div class="form-group fg12 sa_640 sa_2 col_75">
               <label for="email" class="fg2_la1">Comments:<span class="spn1">*</span></label>
-              <textarea rows="4" cols="30" class="form-control flt_l tb_in inp_mst" placeholder="Comments"></textarea>
+              <textarea rows="4" cols="30" class="form-control flt_l tb_in inp_mst in_wid_96" placeholder="Comments"></textarea>
             </div>
           </div>
         </div>
@@ -1031,21 +1031,58 @@ function closeNav5() {
         <div class="devider"></div>
 
 
+        
+
+        <div class="pop_2" style="display: none;" > </div>
+
         <div class="sub_cont pull-right">
           <div class="save_sec">
             <button type="submit" class="btn sub1">Save</button>
             <button type="submit" class="btn sub3">Save & Close</button>
-            <button type="submit" class="btn sub2">Clear</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
+              <span class="dropdown dd_lft0">
+                <button class="dropdown-toggle btn nw1 sub3 opn_cnfm" title="Confirm">
+                Confirm
+                </button>
+                <div class="dropdown-menu drop_dnm cnfm_bx rgt_0b">
+                  <div class="modal-header">
+                    <h5>Confirm</h5>
+                    <button type="button" class="close cls_pop" title="Close">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+                  <div class="head_txt">Are you sure to confirm this entry?</div>
+                  <div class="modal-footer">
+                    <div class="flt_r">
+                      <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                      <button class="btn btn-danger cls_cnfm">No</button>
+                    </div>
+                  </div>
+                </div>
+              </span>
 
-          <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update & Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
+            <span class="dropdown dd_lft0 ">
+              <button class="dropdown-toggle btn nw1 sub1 opn_ropn" title="Reopen">
+                Reopen
+              </button>
+              <div class="dropdown-menu drop_dnm ropn_bx rgt_0b1">
+                <div class="modal-header">
+                  <h5>Reopen</h5>
+                  <button type="button" class="close" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">Are you sure to reopen this entry?</div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success cls_ropn" id="InputToFocus3" autofocus="">Yes</button>
+                    <button class="btn btn-danger cls_ropn">No</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <button type="submit" class="btn nw1 sub4">Cancel</button>
+            <button type="submit" class="btn nw1 sub2">Clear</button>
           </div>
-        </div>
       </div><!---emp_dtl_closed-->
         
       </div>
@@ -1449,6 +1486,70 @@ function openemp_dtl() {
     x.style.display = "block";
   }
 }
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
+    $('#InputToFocus6').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .nw1").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
 </script>
 
 </body>
