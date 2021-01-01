@@ -2034,6 +2034,7 @@ span.box_ae{padding-right: 6px;}
 .rgt_fx_pop5{right: 86px;margin-top: 100px;bottom: -260px;}
 .rgt_fx_pop5:before{left: auto;right: -12px;top: 170px;}
 .ms_ov{overflow:visible;z-index: 999999;}
+.mar_top_20{margin-top:40px!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
