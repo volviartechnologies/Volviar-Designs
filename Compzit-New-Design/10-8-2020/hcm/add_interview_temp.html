@@ -946,14 +946,14 @@ function closeNav5() {
 <!----------------------------------------------header_section_closed------------------------------------------------------------->
 
 
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
 
   <ol class="breadcrumb">
         <li><a href="#">Home</a></li>
         <li><a href="#">HCM</a></li>
         <li><a href="intrvw_templte.html">Interview Template</a></li>
-         <li class="active">Add</li>
+         <li class="active">Add Interview Template</li>
   </ol>
 
   <div class="content_sec2 cont_contr">
@@ -962,54 +962,47 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Add Interview Template</h2>
 
-        <div class="form-group fg2 sa_o_fg1">
-          <label for="email" class="fg2_la1">Template Name:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Template Name 1</option>
-            <option>Template Name 2</option>
-            <option>Template Name 3</option>
-          </select> 
-        </div>
-        <div class="form-group fg5 sa_fg2">
-          <label for="email" class="fg2_la1 pad_l">Active:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group fg5 sa_fg2">
-          <label for="email" class="fg2_la1 pad_l">Validate Levels in Order:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-          
-<!---=================section_devider============--->
-      <div class="clearfix"></div>
-      <div class="free_sp"></div>
-      <div class="devider"></div>
-<!---=================section_devider============--->
-    
-   
 
-      <div class="r_640">
-        <table class="table table-bordered tbl_640">
+        <div class="pop_2" style="display: none;" ></div>
+
+        <div class="fg6 sa_1">
+          <div class="form-group fg6 sa_o_fg1">
+            <label for="email" class="fg2_la1">Template Name:<span class="spn1">*</span></label>
+            <input type="text" class="form-control fg2_inp1 fg_chs2 inp_mst" placeholder="Template Name">
+          </div>
+          <div class="form-group fg7 sa_fg2">
+            <label for="email" class="fg2_la1 pad_l">Active:<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" >
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group fg4 sa_fg2">
+            <label for="email" class="fg2_la1 pad_l">Validate Levels in Order:<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" >
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fg6 sa_1">
+           <div class="r_480">
+        <table class="table table-bordered tbl_480 tbl_xa">
             <thead class="thead1">
               <tr>
-                <th class="col-md-4 tr_l">Schedule Name</th>
-                <th class="col-md-3 tr_l">Category</th>
-                <th class="col-md-2 tr_l">Type</th>
-                <th class="col-md-1 tr_c">Scoring</th>
-                <th class="col-md-2 tr_c">Action</th>
+                <th class="th_b3 tr_l">Schedule Name</th>
+                <th class="th_b2 tr_l">Category</th>
+                <th class="th_b8 tr_l">Type</th>
+                <th class="th_b6 tr_c">Scoring</th>
+                <th class="th_b8 tr_c">Actions</th>
               </tr>
             </thead>
             <tbody id="myTable">
@@ -1031,53 +1024,50 @@ function closeNav5() {
                 </select>
               </td>
               <td class="tr_c">
-                <span class="button-checkbox flt_n">
-                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                    <input type="checkbox" class="hidden" />
-                </span>
+                <div class="check1 wid_10p">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
               </td>
               <td>
-                  <div class="btn_stl1">
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                  <i class="fa fa-list-alt"></i>
-                </button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                  <i class="fa fa-edit"></i>
-                </button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
-
-              <div class="btn_stl2"> 
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                    <i class="fa fa-list-alt"></i> View
-                </button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit
-                </button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                
-              </div>
-
-              <div class="btn_stl3">
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button>
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-               
-              </div>
-            </td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn2" title="Add New"><i class="fa fa-plus-circle"></i></button>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                    <div class="dropdown-menu drop_dnm repn dlt_bx dlt_pop1 dt_popz">
+                      <div class="modal-header">
+                        <h5>Delete</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to delete this entry?</div>
+                      <div class="modal-footer">
+                        <button class="btn btn-success cls_dlt">Yes</button>
+                        <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+              </td>
             </tr>
            </tbody>
-        </table>
+          </table>
         </div>
-        
-
-      <!---=================section_devider============--->
+        </div>
+          
+<!---=================section_devider============--->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
       <div class="devider"></div>
-      <!---=================section_devider============--->
-
+<!---=================section_devider============-->
+    
+   
 
       <div class="sub_cont pull-right">
           <div class="save_sec">
@@ -1492,6 +1482,71 @@ $(document).ready(function(){
   $(".pan1").click(function(){
     $(".pan_lst1").toggle();
   });
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
+    $('#InputToFocus6').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
 });
 </script>
 

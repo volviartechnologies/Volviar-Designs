@@ -2038,6 +2038,9 @@ span.box_ae{padding-right: 6px;}
 .bg_clr1{background-color: #fff;padding: 4px;margin-bottom: 10px!important;}
 .mar_top_20 .fg2_inp1{margin-bottom: 10px;}
 .bdr_to_blu{border-top: 16px solid #4eb6ff;}
+.bn11:focus{outline: 1px solid #000;}
+.dt_popz{bottom: -56px;}
+.dt_popz:before{bottom: 50px;}
 
 
 @media only screen and (max-width:1100px){
