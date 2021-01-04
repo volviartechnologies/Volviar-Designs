@@ -1068,8 +1068,8 @@ function closeNav5() {
                         </div>
                         <div class="head_txt">Do you want to generate WPS for this entry?</div>
                         <div class="modal-footer">
-                          <button class="btn btn-success cls_dlt">Yes</button>
-                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                          <button class="btn btn-success cls_dlt" id="InputToFocuswps" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_dlt">No</button>
                         </div>
                       </div>
                     </span>
@@ -1086,15 +1086,15 @@ function closeNav5() {
                         </div>
                         <div class="head_txt">Do you want to mark this entry as paid?</div>
                         <div class="modal-footer">
-                          <button class="btn btn-success cls_dlt">Yes</button>
-                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                          <button class="btn btn-success cls_dlt" id="InputToFocusmp" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_dlt">No</button>
                         </div>
                       </div>
                     </span>
-                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print Payslip">
+                    <button class="btn act_btn bn6" title="Print Payslip">
                       <i class="fa fa-print"></i>
                     </button>
-                    <button class="btn act_btn bn7" data-toggle="modal" data-target="#exampleModal" title="EOS Print">
+                    <button class="btn act_btn bn7" title="EOS Print">
                       <i class="fa fa-print"></i>
                     </button>
                   </div>
@@ -1143,10 +1143,10 @@ function closeNav5() {
                     <button class="btn act_btn bn11" type="button" data-toggle="modal" data-target="#paid_box" title="Mark as Paid">
                       <i class="opp_ico_img paid_im"><img src="../images/icons/opp/paid.png"> </i> 
                     </button>
-                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print Payslip">
+                    <button class="btn act_btn bn6" title="Print Payslip">
                       <i class="fa fa-print"></i>
                     </button>
-                    <button class="btn act_btn bn7" data-toggle="modal" data-target="#exampleModal" title="EOS Print">
+                    <button class="btn act_btn bn7" title="EOS Print">
                       <i class="fa fa-print"></i>
                     </button>
                   </div>
@@ -1860,12 +1860,12 @@ $(document).ready(function(){
   $(".opn_wps").click(function(){
     $(".pop_2").fadeIn();
     $(".wps_bx").show( 300);
-    $('#InputToFocus2').focus();
+    $('#InputToFocuswps').focus();
   });
   $(".opn_map").click(function(){
     $(".pop_2").fadeIn();
     $(".map_bx").show( 300);
-    $('#InputToFocus2').focus();
+    $('#InputToFocusmp').focus();
   });
   $(".pop_2, .btn-danger, .cls_pop,  cls_dlt").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
