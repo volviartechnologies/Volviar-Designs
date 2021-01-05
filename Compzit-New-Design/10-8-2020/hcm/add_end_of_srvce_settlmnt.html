@@ -1166,7 +1166,7 @@ function closeNav5() {
           </div>
           <div class="form-group fg_3_1_a">
             <label for="pwd" class="fg2_la1">Remarks:<span class="spn1"></span> </label>
-            <textarea class="form-control fg2_inp1 wid_96" placeholder="Remarks"></textarea>
+            <textarea class="form-control fg2_inp1 wid_96" id="first" placeholder="Remarks" autofocus=""></textarea>
           </div>
           <div class="fg4_a">
             <button class="btn act_btn bn2 mar_top20" title="Calculate"><i class="fa fa-calculator"></i></button>
@@ -1597,7 +1597,7 @@ function sel1() {
 <!------hide and visible div_closed--->
 
 
-<!-----table_sec_fixed--->
+<!-----table_sec_fixed-->
 <script type="text/javascript">
   // requires jquery library
 jQuery(document).ready(function() {
@@ -1612,6 +1612,11 @@ $(document).ready(function(){
     $(".clt_op").show(400);
   });
 });
+</script>
+<script>
+$('#leave_pop').on('shown.bs.modal', function () {
+    $('#first').focus();
+})
 </script>
 
 </body>
