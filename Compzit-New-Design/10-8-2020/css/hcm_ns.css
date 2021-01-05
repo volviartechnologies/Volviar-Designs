@@ -2041,6 +2041,10 @@ span.box_ae{padding-right: 6px;}
 .bn11:focus{outline: 1px solid #000;}
 .dt_popz{bottom: -56px;}
 .dt_popz:before{bottom: 50px;}
+.wid_100q{width: 100%!important;}
+.wid_100q .emply_box_1{height: auto;}
+.mr_b00{margin-bottom: 0px;}
+.mr_b02{margin-bottom: 2px!important;}
 
 
 @media only screen and (max-width:1100px){
