@@ -2042,10 +2042,19 @@ span.box_ae{padding-right: 6px;}
 .dt_popz{bottom: -56px;}
 .dt_popz:before{bottom: 50px;}
 .wid_100q{width: 100%!important;}
-.wid_100q .emply_box_1{height: auto;}
+.wid_100q .emply_box_1{height: auto;padding: 10px 2px;}
 .mr_b00{margin-bottom: 0px;}
 .mr_b02{margin-bottom: 2px!important;}
-
+.wid_100q .lft_empl_b{width: 23%;}
+.wid_100q .emply_dtl_s1{width:75%;}
+.wid_100q .emply_dtl_s1 label{padding:4px;margin-top: 8px;height: auto;}
+.wid_100q .emply_dtl_s2{padding:10px 6px;height: auto;}
+.wid_100q .fince_yr{margin-top: 20px;}
+.wid_100q .btn_chse_sec1 button{padding:6px;}
+.tbl_pgntn{width:93%;height: auto;margin:auto;float: left;position: absolute;bottom: 80px;}
+.bg11_a{width: 100%;height:auto;margin: auto;float: left;margin-top: 10px;}
+.bg11_a label span{font-weight: 600;margin-left: 10px;}
+.bg11_a label{background-color: #daeef1;padding: 2px 6px;border-radius: 4px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
