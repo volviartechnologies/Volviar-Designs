@@ -2057,7 +2057,11 @@ span.box_ae{padding-right: 6px;}
 .bg11_a label{background-color: #daeef1;padding: 2px 6px;border-radius: 4px;}
 .fg_wid_f10{width: 100%!important;}
 .bt_za1{width: 96%;}
-
+.wid_100_pz{width: 100%!important;}
+.pnl_100{margin-right: 20px;width: 30%!important;}
+.bx_1as{display: block;right: 40px;top: 120px;max-height: 500px; margin: auto;float: left;height:230px;}
+.bx_1as:before{right:-13px;bottom: 150px;border-right: 13px solid transparent;border-left: 1px solid transparent;border-top: 16px solid #fff;}
+.bx_1as .head_txt{max-height: 150px;overflow-y: auto;min-height: 150px;}
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
 .wid_8_3{width: 25%;}
