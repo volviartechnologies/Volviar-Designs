@@ -1110,41 +1110,41 @@ function closeNav5() {
   <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
     <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
     <div class="box_cnt_zz">
-      <div class="form-group fg12 frm_2 frm_50">
+      <div class="form-group fg12 frm_2 frm_50 mar_top_20">
           <label for="email" class="fg2_la1">Division<span class="spn1"></span>:</label>
-          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10" autofocus="">
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="InputToFocus1" autofocus="">
             <option>Division 1</option>
             <option>Division 2</option>
             <option>Division 3</option>
           </select> 
         </div>
-        <div class="form-group fg12 frm_2 frm_50">
+        <div class="form-group fg12 frm_2 frm_50 mar_top_20">
           <label for="email" class="fg2_la1">Department<span class="spn1"></span>:</label>
-          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10">
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
             <option>Department 1</option>
             <option>Department 2</option>
             <option>Department 3</option>
           </select> 
         </div>
-        <div class="form-group fg12 frm_2 frm_50">
+        <div class="form-group fg12 frm_2 frm_50 mar_top_20">
           <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10">
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
             <option>Project 1</option>
             <option>Project 2</option>
             <option>Project 3</option>
           </select> 
         </div>
-        <div class="form-group fg12 frm_2 frm_50">
+        <div class="form-group fg12 frm_2 frm_50 mar_top_20">
           <label for="email" class="fg2_la1">Designation<span class="spn1"></span>:</label>
-          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10" autofocus="">
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" autofocus="">
             <option>Designation 1</option>
             <option>Designation 2</option>
             <option>Designation 3</option>
           </select> 
         </div>
-        <div class="form-group fg12 frm_2 frm_50">
+        <div class="form-group fg12 frm_2 frm_50 mar_top_20">
           <label for="email" class="fg2_la1">Role:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10">
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
             <option>Role 1</option>
             <option>Role 2</option>
             <option>Role 3</option>
@@ -1152,7 +1152,7 @@ function closeNav5() {
         </div>
     </div>
     <div class="box_cnt_zz">
-      <button class="btn_serbox"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+      <button class="btn_serbox bt_za1"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
     </div>
     <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
   </div>
@@ -1561,6 +1561,7 @@ $(document).ready(function(){
   $('.filtr_sec').addClass("mr_400");
   $('.on_show').show();
   $('.on_hide').hide();
+  $('#InputToFocus1').focus();
 });
   $('.fltr_cls, .content_container').click(function() {
   $('.filtr_sec').removeClass("mr_400");
