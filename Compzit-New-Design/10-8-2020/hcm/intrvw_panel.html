@@ -962,45 +962,6 @@ function closeNav5() {
 <!---inner_content_sections area_started-->
           <h1 class="h1_con">Interview Panel</h1>
 
-          
-        <div class="form-group fg5 frm_2 frm_50">
-          <label for="email" class="fg2_la1">Division<span class="spn1"></span>:</label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Division 1</option>
-            <option>Division 2</option>
-            <option>Division 3</option>
-          </select> 
-        </div>
-        <div class="form-group fg5 frm_2 frm_50">
-          <label for="email" class="fg2_la1">Department<span class="spn1"></span>:</label>
-          <select class="form-control fg2_inp1 fg_chs2" autofocus="">
-            <option>Department 1</option>
-            <option>Department 2</option>
-            <option>Department 3</option>
-          </select> 
-        </div>
-        <div class="form-group fg5 frm_2 frm_50">
-          <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Project 1</option>
-            <option>Project 2</option>
-            <option>Project 3</option>
-          </select> 
-        </div>
-        <div class="form-group fg5 frm_2 frm_50">
-          <label for="email" class="fg2_la1">Role:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Role 1</option>
-            <option>Role 2</option>
-            <option>Role 3</option>
-          </select> 
-        </div>
-        
-        <div class="fg8 fg2_blk frm_2">
-          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-          <button class="submit_ser"></button>
-          <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
-        </div>
 <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
@@ -1141,7 +1102,61 @@ function closeNav5() {
   </p>
 </div>
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
+
+
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
+<div class="filtr_sec mr_400">
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
+    <div class="box_cnt_zz">
+      <div class="form-group fg12 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Division<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10" autofocus="">
+            <option>Division 1</option>
+            <option>Division 2</option>
+            <option>Division 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Department<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10">
+            <option>Department 1</option>
+            <option>Department 2</option>
+            <option>Department 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10">
+            <option>Project 1</option>
+            <option>Project 2</option>
+            <option>Project 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Designation<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10" autofocus="">
+            <option>Designation 1</option>
+            <option>Designation 2</option>
+            <option>Designation 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 frm_2 frm_50">
+          <label for="email" class="fg2_la1">Role:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f10">
+            <option>Role 1</option>
+            <option>Role 2</option>
+            <option>Role 3</option>
+          </select> 
+        </div>
+    </div>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1539,6 +1554,80 @@ $(document).ready(function() {
     } );
 } );
   </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+  });
+  $(".tb_cus_sup1").click(function(){
+    $(".tb_cus_sup1").addClass("tb_cs_sel");
+    $(".tb_cus_sup2").removeClass("tb_cs_sel");
+    $(".tb_cus_1").show();
+    $(".tb_cus_2").hide();
+  });
+  $(".tb_cus_sup2").click(function(){
+    $(".tb_cus_sup2").addClass("tb_cs_sel");
+    $(".tb_cus_sup1").removeClass("tb_cs_sel");
+    $(".tb_cus_2").show();
+    $(".tb_cus_1").hide();
+  });
+  //buttons for report section//
+
+  $(".tb_btns1").click(function(){
+    $(".tb_btns1").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns2").click(function(){
+    $(".tb_btns2").addClass("sel_tb_btns");
+    $(".tb_btns1, .tb_btns3, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns3").click(function(){
+    $(".tb_btns3").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns1, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns4").click(function(){
+    $(".tb_btns4").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns1, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns5").click(function(){
+    $(".tb_btns5").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns1, .tb_btns4").removeClass("sel_tb_btns");
+  });
+});
+</script>
+
 
 </body>
 </html>

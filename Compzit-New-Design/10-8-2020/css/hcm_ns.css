@@ -2055,6 +2055,7 @@ span.box_ae{padding-right: 6px;}
 .bg11_a{width: 100%;height:auto;margin: auto;float: left;margin-top: 10px;}
 .bg11_a label span{font-weight: 600;margin-left: 10px;}
 .bg11_a label{background-color: #daeef1;padding: 2px 6px;border-radius: 4px;}
+.fg_wid_f10{width: 100%!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
@@ -2132,4 +2133,11 @@ span.box_ae{padding-right: 6px;}
 @media only screen and (max-width:360px){
 .bg_wht{margin-bottom: 40px;}
 .wid_7_1{width: 100%;}
+}
+@media only screen and (max-height: 1100px) and (min-height:900px){
+  .content_container{height: 1024px;}
+  .cont_contr{min-height: 920px;}
+  .wr2{height: 1030px;}
+  .fix_flt_ser{top: 220px;}
+  .filtr_sec{height: 100%;}
 }
