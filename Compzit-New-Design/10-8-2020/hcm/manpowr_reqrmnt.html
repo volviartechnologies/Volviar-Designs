@@ -1003,6 +1003,13 @@ function closeNav5() {
               <option>Pending</option>
             </select> 
           </div>
+          <div class="form-group fg2 frm_2 frm_50">
+            <label for="email" class="fg2_la1">Allocation Status:<span class="spn1">*</span></label>
+            <select class="form-control fg2_inp1  inp_mst fg_chs2 sel_ar">
+              <option>Allocated</option>
+              <option>Pending</option>
+            </select> 
+          </div>
           <div class="fg7_5 sa_fg4">
             <label class="form1 mar_bo mar_tp lb_wa">
               <span class="button-checkbox">
@@ -1083,24 +1090,6 @@ function closeNav5() {
                         </div>
                       </div>
                     </span>
-                    <!-- <span class="dropdown dd_lft0">
-                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status">
-                        <i class="fa fa-check-circle "></i>
-                      </button>
-                      <div class="dropdown-menu drop_dnm sts_bx">
-                        <div class="modal-header">
-                          <h5>Change Status</h5>
-                          <button type="button" class="close cls_pop" title="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                        <div class="head_txt">Are you sure to change the active status of this entry?</div>
-                        <div class="modal-footer">
-                          <button class="btn btn-success foc1 cls_sts" id="InputToFocus" autofocus="">Yes</button>
-                          <button class="btn btn-danger cls_sts">No</button>
-                        </div>
-                      </div>
-                    </span> -->
                     <button class="btn act_btn bn1" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
@@ -1235,6 +1224,37 @@ function closeNav5() {
                         <div class="modal-footer">
                           <button class="btn btn-success cls_clsreq" autofocus="">Save</button>
                           <button class="btn btn-danger cls_clsreq">Close</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn11 op_al opn_realc" title="Allocate" style="display: none;">
+                        <i class="rejct_ss"><img src="../images/icons/opp/alc1.png"></i>
+                      </button>
+                      <button class="dropdown-toggle btn act_btn bn11 op_ra opn_realc" title="Reallocate">
+                        <i class="rejct_ss"><img src="../images/icons/opp/realc.png"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm realc">
+                        <div class="modal-header">
+                          <h5>Allocate</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Responsible Person:<span class="spn1">*</span></label>
+                            <select class="form-control fg2_inp1 inp_mst fg_chs2" id="InputToFocus7">
+                              <option>Person 1</option>
+                              <option>Person 2</option>
+                              <option>Person 3</option>
+                            </select> 
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_aprvl">Save</button>
+                          <button class="btn btn-danger cls_aprvl">Cancel</button>
                         </div>
                       </div>
                     </span>
@@ -1842,11 +1862,21 @@ $(document).ready(function(){
     $(".clsreq_bx").show( 300);
     $('#InputToFocus6').focus();
   });
+  $(".opn_realc").click(function(){
+    $(".pop_2").fadeIn();
+    $(".realc").show( 300);
+    $('#InputToFocus7').focus();
+  });
   $(".pop_2, .btn-danger, .cls_pop").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
-  $(".dropdown-toggle, .act_btn").focus(function(){
+  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
     $(".drop_dnm, .pop_2").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
   });
 });
 </script>
