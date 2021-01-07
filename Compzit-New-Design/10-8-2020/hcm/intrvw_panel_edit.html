@@ -1001,7 +1001,7 @@ function closeNav5() {
                   <td>No</td>
                   <td class="td1">
                     <div class="btn_stl1">
-                      <button class="btn act_btn bn2" title="Add Panel Members"  data-toggle="modal" data-target="#panel_bx">
+                      <button class="btn act_btn bn2" title="Add Panel Members"  data-toggle="modal" data-target="#myModal_2">
                       <i class="fa fa-plus-circle"></i>
                       </button>
                     </div>
@@ -1209,7 +1209,7 @@ function closeNav5() {
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
 <!-- Modal -->
-<div class="modal fade" id="panel_bx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog mod_70wz" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -1231,7 +1231,7 @@ function closeNav5() {
           <tbody>
             <tr>
               <td>
-                <select type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" id="InputToFocus1" autofocus="on">
+                <select type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" id="not_op1" autofocus="on">
                   <option>Employee 1</option>
                   <option>Employee 2</option>
                   <option>Employee 3</option>
@@ -1655,27 +1655,29 @@ $(document).ready(function(){
   });
 });
 </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#panel_bx").on('shown.bs.modal', function(){
+        $(this).find('#not_op1').focus();
+    });
+</script>
 <script>
 $(document).ready(function(){
   $(".opn_cnfm").click(function(){
     $(".pop_2").fadeIn();
     $(".cnfm_bx").show( 300);
-    $('#InputToFocus1').focus();
   });
   $(".opn_dlt").click(function(){
     $(".pop_2").fadeIn();
     $(".dlt_bx").show( 300);
-    $('#InputToFocus2').focus();
   });
   $(".opn_wps").click(function(){
     $(".pop_2").fadeIn();
     $(".wps_bx").show( 300);
-    $('#InputToFocuswps').focus();
   });
   $(".opn_map").click(function(){
     $(".pop_2").fadeIn();
     $(".map_bx").show( 300);
-    $('#InputToFocusmp').focus();
   });
   $(".pop_2, .btn-danger, .cls_pop,  cls_dlt").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
@@ -1701,6 +1703,34 @@ $(document).ready(function(){
         $(".overlayInner").fadeOut(300); 
     $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
     }
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#myModal_2").on('shown.bs.modal', function(){
+        $(this).find('#not_op1').focus();
+    });
+    $("#myModal_3").on('shown.bs.modal', function(){
+        $(this).find('#fol_op1').focus();
+    });
+    $("#myModal_3_cls").on('shown.bs.modal', function(){
+        $(this).find('.cls_in1').focus();
+    });
+    $("#allocate_to").on('shown.bs.modal', function(){
+        $(this).find('#all_op1').focus();
+    });
+    $("#win_box").on('shown.bs.modal', function(){
+        $(this).find('.win_op1').focus();
+    });
+    $("#reopen_qoute_box").on('shown.bs.modal', function(){
+        $(this).find('.reop_op1').focus();
+    });
+    $("#loss_info").on('shown.bs.modal', function(){
+        $(this).find('.loss_op1').focus();
+    });
+    $("#par_win_box").on('shown.bs.modal', function(){
+        $(this).find('.pro_ip1').focus();
+    });
 });
 </script>
 
