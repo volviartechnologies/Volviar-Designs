@@ -954,28 +954,28 @@ function closeNav5() {
         <li><a href="#">Home</a></li>
         <li><a href="#">HCM</a></li>
         <li><a href="intrvw_panel.html">Interview Panel</a></li>
-         <li class="active">Edit Interview Panel</li>
+         <li class="active">Interview Panel Allocation</li>
   </ol>
 
   <div class="content_sec2 cont_contr">
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
-        <h2>Edit Interview Panel </h2>
+        <h2>Interview Panel Allocation</h2>
 
 
 
-          <div class="pop_2" style="display: none;" ></div>
+          
 
         <div class="fg4 mar_at flt_l box_emp_br edt_mnt pnl_100">
           <div class="fg_3_1 empl_pop_dtl wid_100_pz">
             <ul class="join_leav emp_dtl_bdr">
               <li class="bg_grn elg_2"><span class="spn_zp1">Ref#:</span> <span class="frz_ll">REF/2018/441621379</span></li>
-              <li class="bg_red"><span class="spn_zp1">Date of Request:</span> <span class="frz_ll">06/01/2021</span></li>
-              <li class="bg_red"><span class="spn_zp1">Resources#:</span> <span class="frz_ll">10</span></li>
               <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
               <li class="bg_red"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
               <li class="bg_red"><span class="spn_zp1">Project:</span> <span class="frz_ll">Project 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Date of Request:</span> <span class="frz_ll">06/01/2021</span></li>
+              <li class="bg_red"><span class="spn_zp1">Resources#:</span> <span class="frz_ll">10</span></li>
               <li class="bg_red"><span class="spn_zp1">Experience:</span> <span class="frz_ll">2 Year</span></li>
               <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">30000.00</span></li>
             </ul>
@@ -986,11 +986,11 @@ function closeNav5() {
             <table class="table table-bordered tbl_800">
                 <thead class="thead1">
                   <tr>
-                    <th class="th_b8 tr_l">Schedule Name</th>
-                    <th class="th_b8 tr_l">Category</th>
+                    <th class="th_b8 tr_l">Interview Schedule</th>
+                    <th class="th_b8 tr_l">Interview Category</th>
                     <th class="th_b7 tr_c">Type</th>
                     <th class="th_b5">Scoring</th>
-                    <th class="th_b5">Panel</th>
+                    <th class="th_b6">Panel Members</th>
                   </tr>
                 </thead>
                 <tbody id="myTable">
@@ -1001,120 +1001,9 @@ function closeNav5() {
                   <td>No</td>
                   <td class="td1">
                     <div class="btn_stl1">
-                    <span class="dropdown dd_lft0">
-                      <button class="dropdown-toggle btn act_btn bn2 opn_cnfm" title="Add Panel">
+                      <button class="btn act_btn bn2" title="Add Panel Members"  data-toggle="modal" data-target="#panel_bx">
                       <i class="fa fa-plus-circle"></i>
                       </button>
-                      <div class="dropdown-menu drop_dnm cnfm_bx bx_1as" style="display: none;">
-                        <div class="modal-header">
-                          <h5>Add Panel</h5>
-                          <button type="button" class="close cls_pop" title="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                        <div class="head_txt">
-                          <table class="table table-bordered tbl_640 tbl_xa">
-                            <thead class="thead1">
-                              <tr>
-                                <th class="th_b3 tr_l">Employee</th>
-                                <th class="th_b6 tr_c">Default</th>
-                                <th class="th_b6">Actions</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <select type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" id="InputToFocus1" autofocus="on">
-                                    <option>Employee 1</option>
-                                    <option>Employee 2</option>
-                                    <option>Employee 3</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <div class="row rl_prt">
-                                    <div class="prtd_rat">
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="td1">
-                                  <div class="btn_stl1">
-                                     <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
-                                      <i class="fa fa-plus-circle"></i>
-                                     </button>
-                                      <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
-                                   </div>
-                                </td>
-                              </tr><!-- 
-                              <tr>
-                                <td>
-                                  <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
-                                    <option>Employee 1</option>
-                                    <option>Employee 2</option>
-                                    <option>Employee 3</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <div class="row rl_prt">
-                                    <div class="prtd_rat">
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="td1">
-                                  <div class="btn_stl1">
-                                     <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
-                                      <i class="fa fa-plus-circle"></i>
-                                     </button>
-                                      <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
-                                   </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
-                                    <option>Employee 1</option>
-                                    <option>Employee 2</option>
-                                    <option>Employee 3</option>
-                                  </select>
-                                </td>
-                                <td>
-                                  <div class="row rl_prt">
-                                    <div class="prtd_rat">
-                                      <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td class="td1">
-                                  <div class="btn_stl1">
-                                     <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
-                                      <i class="fa fa-plus-circle"></i>
-                                     </button>
-                                      <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
-                                   </div>
-                                </td>
-                              </tr> -->
-                            </tbody>
-                          </table>
-                        </div>
-                        <div class="modal-footer">
-                          <button class="btn btn-success foc2 cls_cnfm">Save</button>
-                          <button class="btn btn-danger cls_cnfm">Close</button>
-                        </div>
-                      </div>
-                    </span>
-                     </div>
-                     <div class="btn_stl2">
-                     <button class="btn act_btn bn1 pan1"><i class="fa fa-trash"></i> Panel</button>
-                     </div>
-                     <div class="btn_stl3">
-                      <button class="btn act_btn bn1 pan1"> Panel</button>
                     </div>
                   </td>
                 </tr>           
@@ -1302,9 +1191,6 @@ function closeNav5() {
   </div>
 </div><!--content_container_closed------>
 
-<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
-<i class="fa fa-save"></i>
-</a>
 
 <a href="intrvw_panel.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
@@ -1323,21 +1209,75 @@ function closeNav5() {
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade" id="panel_bx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod_70wz" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Are you sure delete?</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Panel Members</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-       ...
+        <div class="pop_2" style="display: none;" ></div>
+        <table class="table table-bordered tbl_640 tbl_xa">
+          <thead class="thead1">
+            <tr>
+              <th class="th_b3 tr_l">Employee</th>
+              <th class="th_b6 tr_c">Default</th>
+              <th class="th_b6">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <select type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw" id="InputToFocus1" autofocus="on">
+                  <option>Employee 1</option>
+                  <option>Employee 2</option>
+                  <option>Employee 3</option>
+                </select>
+              </td>
+              <td>
+                <div class="row rl_prt">
+                  <div class="prtd_rat">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="td1">
+                <div class="btn_stl1">
+                   <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                    <i class="fa fa-plus-circle"></i>
+                   </button>
+                  <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
+                      <i class="fa fa-trash"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx md_dlt1" style="display: none;">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
+                 </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
         
       </div>
     </div>
