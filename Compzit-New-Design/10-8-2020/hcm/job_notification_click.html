@@ -95,6 +95,12 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
+  <!---multiple selection css-->
+ <script type="text/javascript" src="../m_select/mock.js"></script>  
+  <link rel="stylesheet" type="text/css" href="../m_select/jquery.dropdown.css">
+  <script src="../m_select/jquery.dropdown.js"></script>
+<!---multiple selection css closed--->
+
 <!--------css_Included_closed------->
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
@@ -951,7 +957,7 @@ function closeNav5() {
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
       <li><a href="job_notification.html">Job Notification</a></li>
-      <li class="active">Ref#123</li>
+      <li class="active">Manage Job Notification</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -959,235 +965,161 @@ function closeNav5() {
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
-        <h2>Job Notification</h2>      
+        <h2>Manage Job Notification</h2> 
 
-        <div class="top_br_container tbr_contr">
-          <div class="top_br_1 tbr_set">
-            <div class="col-md-6 tx_100">
-              <ul>
-                <li><span class="fg6 li_100">Ref#</span> <span class="fg6 li_100_1">: Ref#123</span></li>
-                <li><span class="fg6 li_100">Resources#</span> <span class="fg6 li_100_1">: 2</span></li>
-                <li><span class="fg6 li_100">Department</span> <span class="fg6 li_100_1">: Department 1</span></li>
-                <li><span class="fg6 li_100">Experience</span> <span class="fg6 li_100_1">: 2</span></li>
-              </ul>
-            </div>
-            <div class="col-md-4 tx_100">
-              <ul>
-                <li><span class="fg6 li_100">Date Of Request</span> <span class="fg6 li_100_1">: 04/11/2019</span></li>
-                <li><span class="fg6 li_100">Designation</span> <span class="fg6 li_100_1">: Designation 1</span></li>
-                <li><span class="fg6 li_100">Project</span> <span class="fg6 li_100_1">: Project 1</span></li>
-                <li><span class="fg6 li_100">Pay Grade</span> <span class="fg6 li_100_1">: C1</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="fg4 sa_o_fg5 sa_2 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Consultancies:<span class="spn1"></span></label>
-          <div class="nation_bx ad_emp1">
-            <ul>
-              <li>
-                <label class="form1">
-                  <span class="button-checkbox">
-                    <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                    <input type="checkbox" class="hidden">
-                  </span>
-                  <p class="pz_s">Consultancy 1</p>
-                </label>
-              </li>
-              <li>
-                <label class="form1">
-                  <span class="button-checkbox">
-                    <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                    <input type="checkbox" class="hidden">
-                  </span>
-                  <p class="pz_s">Consultancy 2</p>
-                </label>
-              </li>
-              <li>
-                <label class="form1">
-                  <span class="button-checkbox">
-                    <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                    <input type="checkbox" class="hidden">
-                  </span>
-                  <p class="pz_s">Consultancy 3</p>
-                </label>
-              </li>
-              <li>
-                <label class="form1">
-                  <span class="button-checkbox">
-                    <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                    <input type="checkbox" class="hidden">
-                  </span>
-                  <p class="pz_s">Consultancy 4</p>
-                </label>
-              </li>
-              <li>
-                <label class="form1">
-                  <span class="button-checkbox">
-                    <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                    <input type="checkbox" class="hidden">
-                  </span>
-                  <p class="pz_s">Consultancy 5</p>
-                </label>
-              </li>
+        <div class="fg4 mar_at flt_l box_emp_br edt_mnt pnl_100">
+          <div class="fg_3_1 empl_pop_dtl wid_100_pz">
+            <ul class="join_leav emp_dtl_bdr">
+              <li class="bg_grn elg_2"><span class="spn_zp1">Ref#:</span> <span class="frz_ll">REF/2018/441621379</span></li>
+              <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Project:</span> <span class="frz_ll">Project 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Date of Request:</span> <span class="frz_ll">06/01/2021</span></li>
+              <li class="bg_red"><span class="spn_zp1">Resources#:</span> <span class="frz_ll">10</span></li>
+              <li class="bg_red"><span class="spn_zp1">Experience:</span> <span class="frz_ll">2 Year</span></li>
+              <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">30000.00</span></li>
             </ul>
           </div>
-        </div>
-        <div class="form-group fg4 fg2_mr sa_o_fg5 sa_640_i">
-          <label for="email" class="fg2_la1 pad_l">Inter Office Communication:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" class="shw_sec1">
-                <span class="slider_tog round"></span>
-              </label>
+        </div> 
+        <div class="fg_3_1">
+          <div class="fg6 sa_o_fg4 ma_bo20 sa_480">
+            <label class="lb_2">Consultancies:<span class="spn1"></span>
+              <button class="des_all des3 mr_rgt42" title="All" autofocus=""><i class="fa fa-list-ul"></i></button>
+            </label><br>
+            <div class="dropdown-mul-1 dropdown-multiple-label txr">
+              <select style="display:none" name="" multiple="" placeholder="Select"></select>
+            </div>
+          </div>  
+          <div class="form-group fg2 fg2_mr sa_o_fg5 sa_640_i">
+            <label for="email" class="fg2_la1 pad_l">Inter Office Communication:<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" class="shw_sec1">
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="clearfix"></div>
+          <div class="shw_cnt1">
+            <div class="fg6 sa_o_fg4 ma_bo20 sa_480">
+              <label class="lb_2">Division:<span class="spn1"></span>
+                <button class="des_all des3 mr_rgt42" title="All"><i class="fa fa-list-ul"></i></button>
+              </label><br>
+              <div class="dropdown-mul-1 dropdown-multiple-label txr">
+                <select style="display:none" name="" multiple="" placeholder="Select"></select>
+              </div>
+            </div> 
 
-        <div class="clearfix"></div>
-        <div class="free_sp"></div>
-        <div class="devider"></div>
-
-        <div class="top_br_container tbr_contr shw_cnt1">
-          <div class="top_br_1 tbr_set spl_1a">
-            <div class="fg4 sa_o_fg5 sa_2 sa_640_i">
-              <label for="email" class="fg2_la1 pad_l">Divisions:<span class="spn1"></span></label>
-              <div class="nation_bx ad_emp1">
-                <ul>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Division 1</p>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Division 2</p>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Division 3</p>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Division 4</p>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Division 5</p>
-                    </label>
-                  </li>
-                </ul>
+            <div class="fg6 sa_o_fg4 ma_bo20 sa_480">
+              <label class="lb_2">Department:<span class="spn1"></span>
+                <button class="des_all des3 mr_rgt42" title="All"><i class="fa fa-list-ul"></i></button>
+              </label><br>
+              <div class="dropdown-mul-1 dropdown-multiple-label txr">
+                <select style="display:none" name="" multiple="" placeholder="Select"></select>
               </div>
             </div>
-
-            <div class="fg4 sa_o_fg5 sa_2 sa_640_i">
-              <label for="email" class="fg2_la1 pad_l">Departments:<span class="spn1"></span></label>
-              <div class="nation_bx ad_emp1">
-                <ul>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Department 1</p>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Department 2</p>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Department 3</p>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Department 4</p>
-                    </label>
-                  </li>
-                  <li>
-                    <label class="form1">
-                      <span class="button-checkbox">
-                        <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </span>
-                      <p class="pz_s">Department 5</p>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="clearfix"></div>
-            <div class="free_sp"></div>
-            <div class="fg12">
-              <div class="nation_bx sel_emp">
-                <div class="form-group fg4 sa_o_fg5 sa_2 sa_640_i sa_480">
+            <div class="clearfix"></div> 
+            <div class="top_br_container tbr_contr shw_cnt1">
+              <div class="top_br_1 tbr_set spl_1a bg_blu1">
+                <div class="form-group fg6 sa_o_fg5 sa_2 sa_640_i sa_480">
                   <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
                   <select class="form-control fg2_inp1 fg_chs2 ch_emp">
                     <option>Employee 1</option>
                     <option>Employee 2</option>
                   </select> 
                 </div>
-                <div class="fg4 dis_n1">
-                  <i class="fa fa-arrow-circle-right sel_arr1"></i>
-                </div>
-                <div class="fg4 sa_480">
-                  <div class="top_br_container tbr_contr">
-                    <div class="top_br_1 tbr_set spl_1a">
-                      <ul>
-                          <li class="l1">Employee 1 <a href="#"><i class="fa fa-close cls_lis"></i></a></li>
-                        </a>
-                        <li class="l2">Employee 2 <a href="#"><i class="fa fa-close cls_lis is2"></i></a></li>
-                        <li class="l3">Employee 3 <a href="#"><i class="fa fa-close cls_lis is3"></i></a></li>
-                      </ul>
-                    </div>
+                <div class="fg6 sa_480">
+                  <div class="add_sec_tm">
+                    <div class="fg12 bdr_b12">
+                      <h5>Send to</h5>
+                        <button class="btn tab_but1 bn3 flt_r rmv_al_tmz mr_r_dlt" title="Remove All Members">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </div>
+                        <ul class="emply_section list_f_mbrs mx-100">
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <img src="../images/hcm/user.jpg">
+                            <span class="spn_name">Employee 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                        </ul>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="clearfix"></div>
-          <div class="devider"></div>
-        </div>
+        </div> 
+
+        <div class="clearfix"></div>
+        <div class="free_sp"></div>
+        <div class="devider"></div>
         
 
         <div class="sub_cont pull-right">
@@ -1651,6 +1583,43 @@ $(document).ready(function(){
   });
 });
 </script>
+
+
+<!---multiple selection new_script-->
+<link href="../css/select2.min.css" rel="stylesheet" />
+<script src="../js/select2.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
+
+<!---multiple selection new_script-->
+  <script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(false)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+  </script>
+<!---multiple selection new_script_closed-->
 
 </body>
 </html>

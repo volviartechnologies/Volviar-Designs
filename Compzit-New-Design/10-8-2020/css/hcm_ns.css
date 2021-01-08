@@ -2069,6 +2069,12 @@ span.box_ae{padding-right: 6px;}
 .h5_lbl{max-width: 68%!important;}
 .mrb_80{margin-bottom: 80px;}
 .ssi1 img{margin-top: 1px;}
+.mr_rgt42{margin-right:10%;}
+.mx-100{max-height: 124px;}
+.mx-100 .employe_lst .spn_name{width: 84%;}
+.mr_r_dlt{margin-right: 28px;}
+.bg_blu1{background-color:#f7fcff;}
+.bdr_b12{width: 100%;height: auto;margin: auto;float: left;border-bottom: 1px solid #ccc;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
