@@ -2062,11 +2062,13 @@ span.box_ae{padding-right: 6px;}
 .bx_1as{display: block;right: 40px;top: 120px;max-height: 500px; margin: auto;float: left;height:230px;}
 .bx_1as:before{right:-13px;bottom: 150px;border-right: 13px solid transparent;border-left: 1px solid transparent;border-top: 16px solid #fff;}
 .bx_1as .head_txt{max-height: 150px;overflow-y: auto;min-height: 150px;}
-.mod_70wz{width: 70%;height: 300px;}
+.mod_70wz{width: 70%;height:auto;}
 .mod_70wz .modal-body{min-height:186px;}
 .md_dlt1{bottom:auto;top: -44px;right: 38px; }
 .md_dlt1:before{bottom: 82px;right: -12px;}
 .h5_lbl{max-width: 68%!important;}
+.mrb_80{margin-bottom: 80px;}
+.ssi1 img{margin-top: 1px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

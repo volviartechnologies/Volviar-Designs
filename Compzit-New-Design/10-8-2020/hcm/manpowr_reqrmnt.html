@@ -1148,8 +1148,11 @@ function closeNav5() {
                       </div>
                     </span>
                     <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn11 opn_aprvl" title="Approve">
-                        <i class="rejct_ss"><img src="../images/icons/opp/apr1_1.png"></i>
+                      <button class="dropdown-toggle btn act_btn bn11 opn_aprvl" title="Approve" onmouseover="aprl2()" onmouseout="aprl1()" onfocus="aprl2()" onfocusout="aprl1()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr1_1.png" id="aprl1">
+                          <img src="../images/icons/opp/apr1_1h.png" id="aprl2" style="display: none;">
+                        </i>
                       </button>
                       <div class="dropdown-menu drop_dnm aprvl_bx">
                         <div class="modal-header">
@@ -1180,8 +1183,11 @@ function closeNav5() {
                       </div>
                     </span>
                     <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn11 opn_rjct" title="Reject">
-                        <i class="rejct_ss"><img src="../images/icons/opp/apr2_1.png"></i>
+                      <button class="dropdown-toggle btn act_btn bn11 opn_rjct" title="Reject" onmouseover="aprl2r()" onmouseout="aprl1r()" onfocus="aprl2r()" onfocusout="aprl1r()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr2_1.png" id="aprl1r">
+                          <img src="../images/icons/opp/apr2_1h.png" id="aprl2r" style="display: none;">
+                        </i>
                       </button>
                       <div class="dropdown-menu drop_dnm rjct_bx">
                         <div class="modal-header">
@@ -1228,11 +1234,17 @@ function closeNav5() {
                       </div>
                     </span>
                     <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn11 op_al opn_realc" title="Allocate" style="display: none;">
-                        <i class="rejct_ss"><img src="../images/icons/opp/alc1.png"></i>
+                      <button class="dropdown-toggle btn act_btn bn11 op_al opn_realc" title="Allocate" style="display: none;" onmouseover="recl2r1()" onmouseout="recl1r1()" onfocus="recl2r1()" onfocusout="recl1r1()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/alc1.png" id="recl1r1">
+                          <img src="../images/icons/opp/alc1_1.png" id="recl2r1" style="display: none;">
+                        </i>
                       </button>
-                      <button class="dropdown-toggle btn act_btn bn11 op_ra opn_realc" title="Reallocate">
-                        <i class="rejct_ss"><img src="../images/icons/opp/realc.png"></i>
+                      <button class="dropdown-toggle btn act_btn bn11 op_ra opn_realc" title="Reallocate" onmouseover="recl2r()" onmouseout="recl1r()" onfocus="recl2r()" onfocusout="recl1r()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/realc.png" id="recl1r">
+                          <img src="../images/icons/opp/realc1.png" id="recl2r" style="display: none;">
+                        </i>
                       </button>
                       <div class="dropdown-menu drop_dnm realc">
                         <div class="modal-header">
@@ -1898,5 +1910,44 @@ $(document).ready(function(){
     }
 });
 </script>
+<script>
+function aprl1() {
+  document.getElementById("aprl1").style.display = "block";
+  document.getElementById("aprl2").style.display = "none";
+}
+
+function aprl2() {
+  document.getElementById("aprl2").style.display = "block";
+  document.getElementById("aprl1").style.display = "none";
+}
+function aprl1r() {
+  document.getElementById("aprl1r").style.display = "block";
+  document.getElementById("aprl2r").style.display = "none";
+}
+
+function aprl2r() {
+  document.getElementById("aprl2r").style.display = "block";
+  document.getElementById("aprl1r").style.display = "none";
+}
+function recl1r() {
+  document.getElementById("recl1r").style.display = "block";
+  document.getElementById("recl2r").style.display = "none";
+}
+
+function recl2r() {
+  document.getElementById("recl2r").style.display = "block";
+  document.getElementById("recl1r").style.display = "none";
+}
+function recl1r1() {
+  document.getElementById("recl1r1").style.display = "block";
+  document.getElementById("recl2r1").style.display = "none";
+}
+
+function recl2r1() {
+  document.getElementById("recl2r1").style.display = "block";
+  document.getElementById("recl1r1").style.display = "none";
+}
+</script>
+
 </body>
 </html>
