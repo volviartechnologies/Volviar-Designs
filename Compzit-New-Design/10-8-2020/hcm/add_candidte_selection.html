@@ -945,84 +945,99 @@ function closeNav5() {
 <!----------------------------------------------header_section_closed------------------------------------------------------------->
 
 
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
 
   <ol class="breadcrumb">
         <li><a href="#">Home</a></li>
         <li><a href="#">HCM</a></li>
         <li><a href="candidat_selctn.html">Candidate Selection</a></li>
-         <li class="active">Ref#01</li>
+         <li class="active">Manage Candidate Selection</li>
   </ol>
 
   <div class="content_sec2 cont_contr">
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
-        <h2>Add Candidate Selection</h2>
+        <h2>Manage Candidate Selection</h2>
+        <div class="fg4 mar_at flt_l box_emp_br edt_mnt pnl_100">
+          <div class="fg_3_1 empl_pop_dtl wid_100_pz">
+            <ul class="join_leav emp_dtl_bdr">
+              <li class="bg_grn elg_2"><span class="spn_zp1">Ref#:</span> <span class="frz_ll">REF/2018/441621379</span></li>
+              <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Project:</span> <span class="frz_ll">Project 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Date of Request:</span> <span class="frz_ll">06/01/2021</span></li>
+              <li class="bg_red"><span class="spn_zp1">Resources#:</span> <span class="frz_ll">10</span></li>
+              <li class="bg_red"><span class="spn_zp1">Experience:</span> <span class="frz_ll">2 Year</span></li>
+              <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">30000.00</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="fg_3_1">
+          <div class="form-group fg4 sa_fg4_1 sa_640_i sa_480 ma_bo10">
+            <label for="email" class="fg2_la1">Country:<span class="spn1">*</span></label>
+            <select class="form-control fg2_inp1 inp_mst" required="" autofocus="">
+              <option>Country 1</option>
+              <option>Country 2</option>
+              <option>Country 3</option>
+              <option>Country 4</option>
+            </select>
+          </div>
 
-          <div class="top_br_container hc_at">
-            <div class="top_br_1 pa_h1">
-              <div class="col-md-4 tx_100 hcm_1_2">
-                <ul>
-                  <li><span class="fg6 li_100">Ref#</span> <span class="fg6 li_100_1">: REF/2018/441658</span></li>
-                  <li><span class="fg6 li_100">Resources#</span> <span class="fg6 li_100_1">: 10</span></li>
-                  <li><span class="fg6 li_100">Department</span> <span class="fg6 li_100_1">: Aaaaaaa</span></li>
-                  <li><span class="fg6 li_100">Experience</span> <span class="fg6 li_100_1">: 10 year</span></li>
-                </ul>
-              </div>
-              <div class="col-md-4 tx_100 hcm_1_2">
-                <ul>
-                  <li><span class="fg6 li_100">Date of request</span> <span class="fg6 li_100_1">: 16/10/2019</span></li>
-                  <li><span class="fg6 li_100">Designation</span> <span class="fg6 li_100_1">: 111 des oil</span></li>
-                  <li><span class="fg6 li_100">Project</span> <span class="fg6 li_100_1">: </span></li>
-                  <li><span class="fg6 li_100">Pay Grade</span> <span class="fg6 li_100_1">: Sssss</span></li>
-                </ul>
-              </div>
-
-              <div class="col-md-3">
-              </div>
+          <div class="form-group fg6 sa_2 sa_640 sa_480 sa_640_i sa_fg4_1">
+            <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+            <div class="form-group fg12 sa_640 gur_opt">
+              <button class="tb_btz tb_cs tb_cus_sup1 wid_42a"><i class="img_plcy"><img src="../images/gms/res1.png"></i> <span>Browse Resumes</span></button>
+              <button class="tb_btz tb_cs tb_cus_sup2 tb_cs_sel wid_42a"><i class="img_plcy"><img src="../images/gms/res2.png"></i> <span>Import Resumes</span></button>
             </div>
           </div>
-        <div class="free_sp"></div>
+          <div class="clearfix"></div>
+          <div class="free_sp1"></div>
+          <div class="fg12 top_br_1 tbr_set spl_1a bg_blu1">
 
-        <div class="form-group fg2 sa_fg4_1 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Country:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 inp_mst" required="">
-                  <option>Country 1</option>
-                  <option>Country 2</option>
-                  <option>Country 3</option>
-                  <option>Country 4</option>
-                </select>
+          <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480 sa_fg4_1 resm1" style="display: none;">
+              <label for="email" class="fg2_la1 pad_l">Select Resumes:<span class="spn1"></span></label>
+              <div class="fg_3_1 wid_78p">
+                <input type="file" id="file-upload" multiple="" required="">
+                <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+                <div id="file-upload-filename" class="file_n"></div>
+              </div>
+              <div class="">
+                <button class="btn act_btn bn3" title="Remove Selected File">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+          </div>
+            <div class="pro_rt1 imprt1" style="display:block;">
+              <div class="form-group fg2 sa_fg3 sa_640">
+                <label for="email" class="fg2_la1 pad_l">Choose File: <span class="spn1">&nbsp;</span></label>
+                <input type="file" id="file-upload" multiple required />
+                <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Import data from CSV file</label>
+                <div id="file-upload-filename" class="file_n"></div>
+              </div>
+                  
+              <div class="fg2 fg2_adn">
+                <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
+                <button class="btn tab_but1 butn5"><i class="fa fa-download"></i> Sample CSV File</button>  
               </div>
 
-        <div class="form-group fg5 sa_2 sa_640 sa_480 sa_640_i sa_fg4_1">
-          <label for="email" class="fg2_la1"><span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Browse Resumes</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Import Resumes</label>
+              <div class="clearfix"></div>
+              <div class="devider"></div>
+
+            <div class="sub_cont pull-right">
+              <div class="save_sec">
+                <button type="submit" class="btn sub1 bt_pro_rt2">Proceed</button>
+                <button type="submit" class="btn sub4 bt_pro_rt1">Cancel</button>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="form-group fg6 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480 sa_fg4_1">
-          <label for="email" class="fg2_la1 pad_l">Select Resumes: <span class="spn1">&nbsp;</span></label>
-          <input type="file" id="file-upload" multiple required />
-          <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-          <div id="file-upload-filename" class="file_n"></div>
-        </div>
-              
+      </div>
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
-        <div class="devider"></div>
+        <div class="free_sp1"></div>
 
+          <div class="pop_2" style="display: none;" ></div>
         <div class="tab_res">
           <div class="col-md-12">
             <p><span class="tbl_srt1">Showing </span> 
@@ -1039,7 +1054,7 @@ function closeNav5() {
           </div> -->
 
           <div class="r_1024">
-          <table class="display table-bordered pro_tab1 tbl_1024" cellspacing="0" width="100%">
+          <table class="display table-bordered pro_tab1 tbl_1024 tbl_xa" cellspacing="0" width="100%">
             <thead class="thead1">
               
               <tr>
@@ -1063,7 +1078,7 @@ function closeNav5() {
 
                 <th class="th_b7 tr_l"> File Name</th>
 
-                <th class="th_b1 tr_c"> Action</th>
+                <th class="th_b1 tr_c"> Actions</th>
               </tr>
              
             </thead>
@@ -1107,9 +1122,41 @@ function closeNav5() {
                 <td class="tr_l"><a href="#">employee01</a></td>
                 <td>
                   <div class="btn_stl1">
-                <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
-                  <i class="fa fa-plus-circle"></i>
-                </button>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn4 opn_aprvl" title="Additional Information">
+                        <i class="fa fa-sticky-note-o "></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm aprvl_bx">
+                        <div class="modal-header">
+                          <h5>Additional Information</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Reference:<span class="spn1">*</span></label>
+                            <select class="form-control fg2_inp1 inp_mst fg_chs2" id="InputToFocus4">
+                              <option>Consultancy</option>
+                              <option>Division</option>
+                              <option>Department</option>
+                            </select> 
+                          </div>
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Skip Interview:<span class="spn1">*</span></label>
+                            <label class="switch">
+                              <input type="checkbox" >
+                              <span class="slider_tog round"></span>
+                            </label>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_aprvl">Save</button>
+                          <button class="btn btn-danger cls_aprvl">Cancel</button>
+                        </div>
+                      </div>
+                    </span>
                 <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
                   <i class="fa fa-trash"></i>
                 </button>
@@ -1207,8 +1254,8 @@ function closeNav5() {
 
         </div>
 
+
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
@@ -1637,8 +1684,42 @@ function showFileName( event ) {
   infoArea.textContent = '' + fileName;
 }
 </script>
-<!----file_uploader_script_Closed--->
+<!----file_uploader_script_Closed-->
+<script>
+  
+  $(".tb_cus_sup1").click(function(){
+    $(".tb_cus_sup1").addClass("tb_cs_sel");
+    $(".tb_cus_sup2").removeClass("tb_cs_sel");
+    $(".tb_cus_1, .resm1").show();
+    $(".tb_cus_2, .imprt1").hide();
+  });
+  $(".tb_cus_sup2").click(function(){
+    $(".tb_cus_sup2").addClass("tb_cs_sel");
+    $(".tb_cus_sup1").removeClass("tb_cs_sel");
+    $(".tb_cus_2, .imprt1").show();
+    $(".tb_cus_1, .resm1").hide();
+  });
+</script>
+<script>
+$(document).ready(function(){
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
 
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
 
 </body>
 </html>
