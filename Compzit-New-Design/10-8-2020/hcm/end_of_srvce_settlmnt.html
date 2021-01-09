@@ -1056,8 +1056,11 @@ function closeNav5() {
                       </div>
                     </span>
                     <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn11 opn_wps" title="Generate WPS">
-                      <i class="opp_ico_img paid_im"><img src="../images/icons/opp/wps.png"> </i>
+                      <button class="dropdown-toggle btn act_btn bn11 opn_wps" title="Generate WPS" onmouseover="wps1_1()" onmouseout="wps1()" onfocus="wps1_1()" onfocusout="wps1()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/wps.png" id="wps1">
+                          <img src="../images/icons/opp/wps1.png" id="wps1_1" style="display: none;">
+                        </i>
                       </button>
                       <div class="dropdown-menu drop_dnm repn wps_bx">
                         <div class="modal-header">
@@ -1074,8 +1077,11 @@ function closeNav5() {
                       </div>
                     </span>
                     <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn11 opn_map" title="Mark as Paid">
-                      <i class="opp_ico_img paid_im"><img src="../images/icons/opp/paid.png"> </i> 
+                      <button class="dropdown-toggle btn act_btn bn11 opn_map" title="Mark as Paid" onmouseover="map1_1()" onmouseout="map1()" onfocus="map1_1()" onfocusout="map1()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/paid.png" id="map1">
+                          <img src="../images/icons/opp/paid1.png" id="map1_1" style="display: none;">
+                        </i>
                       </button>
                       <div class="dropdown-menu drop_dnm repn map_bx">
                         <div class="modal-header">
@@ -1137,11 +1143,17 @@ function closeNav5() {
                       <button class="btn act_btn bn3" title="Delete">
                         <i class="fa fa-trash"></i>
                       </button>
-                    <button class="btn act_btn bn11" title="Generate WPS">
-                      <i class="opp_ico_img paid_im"><img src="../images/icons/opp/wps.png"> </i>
+                    <button class="btn act_btn bn11" title="Generate WPS" onmouseover="wps1_1a()" onmouseout="wps1a()" onfocus="wps1_1a()" onfocusout="wps1a()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/wps.png" id="wps1a">
+                          <img src="../images/icons/opp/wps1.png" id="wps1_1a" style="display: none;">
+                        </i>
                     </button>
-                    <button class="btn act_btn bn11" type="button" data-toggle="modal" data-target="#paid_box" title="Mark as Paid">
-                      <i class="opp_ico_img paid_im"><img src="../images/icons/opp/paid.png"> </i> 
+                    <button class="btn act_btn bn11" type="button" data-toggle="modal" data-target="#paid_box" title="Mark as Paid" onmouseover="map1_1a()" onmouseout="map1a()" onfocus="map1_1a()" onfocusout="map1a()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/paid.png" id="map1a">
+                          <img src="../images/icons/opp/paid1.png" id="map1_1a" style="display: none;">
+                        </i>
                     </button>
                     <button class="btn act_btn bn6" title="Print Payslip">
                       <i class="fa fa-print"></i>
@@ -1892,6 +1904,45 @@ $(document).ready(function(){
     $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
     }
 });
+</script>
+
+<script>
+function wps1() {
+  document.getElementById("wps1").style.display = "block";
+  document.getElementById("wps1_1").style.display = "none";
+}
+
+function wps1_1() {
+  document.getElementById("wps1_1").style.display = "block";
+  document.getElementById("wps1").style.display = "none";
+}
+function wps1a() {
+  document.getElementById("wps1a").style.display = "block";
+  document.getElementById("wps1_1a").style.display = "none";
+}
+
+function wps1_1a() {
+  document.getElementById("wps1_1a").style.display = "block";
+  document.getElementById("wps1a").style.display = "none";
+}
+function map1() {
+  document.getElementById("map1").style.display = "block";
+  document.getElementById("map1_1").style.display = "none";
+}
+
+function map1_1() {
+  document.getElementById("map1_1").style.display = "block";
+  document.getElementById("map1").style.display = "none";
+}
+function map1a() {
+  document.getElementById("map1a").style.display = "block";
+  document.getElementById("map1_1a").style.display = "none";
+}
+
+function map1_1a() {
+  document.getElementById("map1_1a").style.display = "block";
+  document.getElementById("map1a").style.display = "none";
+}
 </script>
 
 </body>

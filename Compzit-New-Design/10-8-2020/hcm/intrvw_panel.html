@@ -1013,8 +1013,11 @@ function closeNav5() {
                 <td class="tr_c">11</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="dropdown-toggle btn act_btn bn11" title="Allocate Interview Panel" onclick="location.href='intrvw_panel_edit.html';">
-                      <i class="opp_ico_img paid_im"><img src="../images/icons/opp/inpl1.png"> </i>
+                    <button class="dropdown-toggle btn act_btn bn11" title="Allocate Interview Panel" onclick="location.href='intrvw_panel_edit.html';" onmouseover="inpl1_1()" onmouseout="inpl1()" onfocus="inpl1_1()" onfocusout="inpl1()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/inpl1.png" id="inpl1">
+                          <img src="../images/icons/opp/inpl1_1.png" id="inpl1_1" style="display: none;">
+                        </i>
                     </button>
                   </div>
                 </td>
@@ -1029,8 +1032,11 @@ function closeNav5() {
                 <td class="tr_c">11</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="dropdown-toggle btn act_btn bn11" title="Allocate Interview Panel" onclick="location.href='intrvw_panel_edit.html';">
-                      <i class="opp_ico_img paid_im"><img src="../images/icons/opp/inpl1.png"> </i>
+                    <button class="dropdown-toggle btn act_btn bn11" title="Allocate Interview Panel" onclick="location.href='intrvw_panel_edit.html';" onmouseover="inpl1_1a()" onmouseout="inpl1a()" onfocus="inpl1_1a()" onfocusout="inpl1a()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/inpl1.png" id="inpl1a">
+                          <img src="../images/icons/opp/inpl1_1.png" id="inpl1_1a" style="display: none;">
+                        </i>
                     </button>
                   </div>
                 </td>
@@ -1169,7 +1175,6 @@ function closeNav5() {
         </button>
       </div>
       <div class="modal-body">
-       ...
       </div>
       <div class="modal-footer mo_ft1">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
@@ -1628,7 +1633,26 @@ $(document).ready(function(){
   });
 });
 </script>
+<script>
+function inpl1() {
+  document.getElementById("inpl1").style.display = "block";
+  document.getElementById("inpl1_1").style.display = "none";
+}
 
+function inpl1_1() {
+  document.getElementById("inpl1_1").style.display = "block";
+  document.getElementById("inpl1").style.display = "none";
+}
+function inpl1a() {
+  document.getElementById("inpl1a").style.display = "block";
+  document.getElementById("inpl1_1a").style.display = "none";
+}
+
+function inpl1_1a() {
+  document.getElementById("inpl1_1a").style.display = "block";
+  document.getElementById("inpl1a").style.display = "none";
+}
+</script>
 
 </body>
 </html>
