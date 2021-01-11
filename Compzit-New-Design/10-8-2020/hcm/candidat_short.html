@@ -961,154 +961,74 @@ function closeNav5() {
 <!---inner_content_sections area_started--->
           <h1 class="h1_con">Candidate Short List</h1>
 
-          <div class="form-group fg2 frm_2 frm_50">
-          <label for="email" class="fg2_la1">Department<span class="spn1"></span>:</label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Department1</option>
-            <option>Department2</option>
-            <option>Department3</option>
-          </select> 
-        </div>
-        <div class="form-group fg2 frm_2 frm_50">
-          <label for="email" class="fg2_la1">Division<span class="spn1"></span>:</label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Division1</option>
-            <option>Division2</option>
-            <option>Division3</option>
-          </select> 
-        </div>
-        <div class="form-group fg2 frm_2 frm_50">
-          <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Status1</option>
-            <option>Status2</option>
-            <option>Status3</option>
-          </select> 
-        </div>
-        
-        <div class="fg2 fg2_blk frm_2">
-          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-          <button class="submit_ser"></button>
-          <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
-        </div>
 <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
-
-        <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
+<!---=================section_devider============-->
 
            <div class="r_1024">
-          <table class="display table-bordered pro_tab1 tbl_1024" cellspacing="0" width="100%">
+          <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Ref#">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
-                </th>
-                <th class="tr_l">
+                <th class="th_b4 tr_l"> Division
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Division">
                 </th>
-                <th class="tr_l">
+                <th class="th_b4 tr_l"> Department
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
                 </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Closure Date">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Date">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Resources#">
-                </th>
-                <th class="tr_l">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Shortlisted persons#">
-                </th>
-                <th class="tr_l">
+                <th class="th_b4 tr_l"> Project
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Project">
                 </th>
-                
-
-              </tr>
-              <tr>
-                <th class="th_b8 tr_l"> Ref#</th>
-             
-                <th class="th_b4 tr_l"> Designation</th>
-              
-                <th class="th_b6 tr_l"> Division</th>
-              
-                <th class="th_b8 tr_l"> Department</th>
-
-                <th class="th_b6 tr_c"> Closure Date</th>
-              
-                <th class="th_b6 tr_c"> Date</th>
-              
-                <th class="th_b6 tr_r"> Resources#</th>
-
-                <th class="th_b4 tr_r"> Shortlisted persons#</th>
-
-                <th class="th_b6 tr_l"> Project</th>
-
+                <th class="th_b4 tr_l"> Designation
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
+                </th>
+                <th class="th_b8 tr_c">Requested Date
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Requested Date">
+                </th>
+                <th class="th_b8 tr_c"> Target Date
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Target Date">
+                </th>
+                <th class="th_b6 tr_c"> Resources#
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Resources#">
+                </th>
+                <th class="th_b7 tr_l"> Shortlisted<br> Persons#
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
+                </th>
+                <th class="th_b1 tr_c"> Actions</th>
                 </tr>
-             
             </thead>
             <tbody>
               <tr>
-                <td class="tr_l"><a href="shrtlist_cndidate_edit.html">ref/2018/54895626</a></td>
-                <td class="tr_l">Oil and gas</td>
                 <td class="tr_l">Division 1</td>
-                <td class="tr_l">New department</td>
-                <td class="tr_c">25/08/2019</td>
-                <td class="tr_c">20/08/2019</td>
-                <td class="tr_r">5</td>
-                <td class="tr_r">8</td>
                 <td class="tr_l">Project 1</td>
-                
-              </tr>
-              <tr>
-                <td class="tr_l"><a href="shrtlist_cndidate_edit.html">ref/2018/54895626</a></td>
-                <td class="tr_l">Oil and gas</td>
-                <td class="tr_l">Division 2</td>
                 <td class="tr_l">New department</td>
-                <td class="tr_c">25/08/2019</td>
+                <td class="tr_l">Designation 1</td>
                 <td class="tr_c">20/08/2019</td>
-                <td class="tr_r">5</td>
-                <td class="tr_r">8</td>
-                <td class="tr_l">Project 2</td>
-                
+                <td class="tr_c">25/08/2019</td>
+                <td class="tr_c">11</td>
+                <td class="tr_c">11</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="dropdown-toggle btn act_btn bn11" title="Manage Candidate" onclick="location.href='intrvw_panel_edit.html';" onmouseover="selc1()" onmouseout="selc()" onfocus="selc1()" onfocusout="selc()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/slec.png" id="selc">
+                          <img src="../images/icons/opp/slec1.png" id="selc1" style="display: none;">
+                        </i>
+                    </button>
+                  </div>
+                </td>
               </tr>
              
             </tbody>
           </table>
         </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
-        </div>
-
 
 <!---inner_content_sections area_closed--->
 
@@ -1121,7 +1041,7 @@ function closeNav5() {
 
 <!-------------------footer_section_opened------------------------------------->
   <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
-    <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico.png"></i> HUMEN CAPITAL MANAGEMENT</p>
+    <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico.png"></i> Procurement Management</p>
     <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
     <p class="pull-right tr_c foot_l ">Designed by <span>Volviar</span> Technologies</p>
   </div>
@@ -1172,7 +1092,61 @@ function closeNav5() {
   </p>
 </div>
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
+
+
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
+<div class="filtr_sec mr_400">
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
+    <div class="box_cnt_zz">
+      <div class="form-group fg12 frm_2 frm_50 mar_top_20">
+          <label for="email" class="fg2_la1">Division<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="InputToFocus1" autofocus="">
+            <option>Division 1</option>
+            <option>Division 2</option>
+            <option>Division 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 frm_2 frm_50 mar_top_20">
+          <label for="email" class="fg2_la1">Department<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>Department 1</option>
+            <option>Department 2</option>
+            <option>Department 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 frm_2 frm_50 mar_top_20">
+          <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>Project 1</option>
+            <option>Project 2</option>
+            <option>Project 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 frm_2 frm_50 mar_top_20">
+          <label for="email" class="fg2_la1">Designation<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" autofocus="">
+            <option>Designation 1</option>
+            <option>Designation 2</option>
+            <option>Designation 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg12 frm_2 frm_50 mar_top_20">
+          <label for="email" class="fg2_la1">Role:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>Role 1</option>
+            <option>Role 2</option>
+            <option>Role 3</option>
+          </select> 
+        </div>
+    </div>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox bt_za1"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1185,7 +1159,6 @@ function closeNav5() {
         </button>
       </div>
       <div class="modal-body">
-       ...
       </div>
       <div class="modal-footer mo_ft1">
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
@@ -1531,6 +1504,139 @@ $(".wr2").click(function(){
 
 <!-------------print_script_close--------------------->
 
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+  $('#InputToFocus1').focus();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+  });
+  $(".tb_cus_sup1").click(function(){
+    $(".tb_cus_sup1").addClass("tb_cs_sel");
+    $(".tb_cus_sup2").removeClass("tb_cs_sel");
+    $(".tb_cus_1").show();
+    $(".tb_cus_2").hide();
+  });
+  $(".tb_cus_sup2").click(function(){
+    $(".tb_cus_sup2").addClass("tb_cs_sel");
+    $(".tb_cus_sup1").removeClass("tb_cs_sel");
+    $(".tb_cus_2").show();
+    $(".tb_cus_1").hide();
+  });
+  //buttons for report section//
+
+  $(".tb_btns1").click(function(){
+    $(".tb_btns1").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns2").click(function(){
+    $(".tb_btns2").addClass("sel_tb_btns");
+    $(".tb_btns1, .tb_btns3, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns3").click(function(){
+    $(".tb_btns3").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns1, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns4").click(function(){
+    $(".tb_btns4").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns1, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns5").click(function(){
+    $(".tb_btns5").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns1, .tb_btns4").removeClass("sel_tb_btns");
+  });
+});
+</script>
+<script>
+function selc() {
+  document.getElementById("selc").style.display = "block";
+  document.getElementById("selc1").style.display = "none";
+}
+
+function selc1() {
+  document.getElementById("selc1").style.display = "block";
+  document.getElementById("selc").style.display = "none";
+}
+function selca() {
+  document.getElementById("selc_a").style.display = "block";
+  document.getElementById("selc1_a").style.display = "none";
+}
+
+function selc1a() {
+  document.getElementById("selc_a").style.display = "block";
+  document.getElementById("selc1_a").style.display = "none";
+}
+</script>
 
 </body>
 </html>
