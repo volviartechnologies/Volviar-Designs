@@ -2077,7 +2077,11 @@ span.box_ae{padding-right: 6px;}
 .bdr_b12{width: 100%;height: auto;margin: auto;float: left;border-bottom: 1px solid #ccc;}
 .wid_42a{width:45%;}
 .wid_78p{width: 78%!important;}
-
+.mr_r0 button{margin-right: 0px!important;}
+.mrb_10z{margin-bottom: 10px!important;}
+.cntcy{width: 96%;}
+.cntcy h5{width: 100%;}
+.txr .dropdown-display-label .dropdown-selected{font-size: 11px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
