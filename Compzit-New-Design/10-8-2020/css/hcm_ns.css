@@ -2079,9 +2079,14 @@ span.box_ae{padding-right: 6px;}
 .wid_78p{width: 78%!important;}
 .mr_r0 button{margin-right: 0px!important;}
 .mrb_10z{margin-bottom: 10px!important;}
-.cntcy{width: 96%;}
+.cntcy{width: 96%;padding: 20px;max-height: 340px;overflow:visible;}
 .cntcy h5{width: 100%;}
 .txr .dropdown-display-label .dropdown-selected{font-size: 11px;}
+.cntcy .dropdown-multiple-label{max-width: 98%!important;width: 98%!important;}
+.cntcy .mr_rgt42{margin-right: 2%;}
+.cntcy h3{margin-top: 0px;}
+.cntcy .dropdown-display-label{max-height:54px;}
+.cntcy .dropdown-main ul{max-height: 165px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
