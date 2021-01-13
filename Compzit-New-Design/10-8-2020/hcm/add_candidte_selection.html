@@ -975,21 +975,30 @@ function closeNav5() {
           </div>
         </div>
         <div class="fg_3_1">
-          <div class="form-group fg4 sa_fg4_1 sa_640_i sa_480 ma_bo10">
-            <label for="email" class="fg2_la1">Country:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 inp_mst" required="" autofocus="">
-              <option>Country 1</option>
-              <option>Country 2</option>
-              <option>Country 3</option>
-              <option>Country 4</option>
-            </select>
+          <div class="form-group fg6 sa_fg4_1 sa_640_i sa_480 ma_bo10">
+            <label for="email" class="fg2_la1">Interview Template:<span class="spn1">*</span></label>
+            <div class="dropdown btn_chse_sec1 int_tem">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" autofocus="">
+                <span class="sp_msg1"><i class="rnd_ico grn_t">I</i> <span>Template 1</span> <i class="fa fa-angle-down"></i></span>
+                <span class="sp_msg2" style="display: none;"><i class="rnd_ico blu_t">D</i> <span>Template 2</span> <i class="fa fa-angle-down"></i></span>
+                <span class="sp_msg3" style="display: none;"><i class="rnd_ico red_t">T</i> <span>Template 3</span> <i class="fa fa-angle-down"></i></span>
+                <span class="sp_msg4" style="display: none;"><i class="rnd_ico org_t">S</i> <span>Template 4</span> <i class="fa fa-angle-down"></i></span>
+              </button>
+              <ul class="dropdown-menu drop_dn mail_drop int_drp">
+                <li class="sel_ms1 sel_act_msg"><a href="#"> <i class="rnd_ico grn_t">I</i> <span>Template 1</span></a></li>
+                <li class="sel_ms2"><a href="#"><i class="rnd_ico blu_t">D</i> <span>Template 2</span></a></li>
+                <li class="sel_ms3"><a href="#"> <i class="rnd_ico red_t">T</i> <span>Template 3</span></a></li>
+                <li class="sel_ms4"><a href="#"> <i class="rnd_ico org_t">S</i> <span>Template 4</span></a></li>
+              </ul>
+            </div>
+            <button class="btn btn_sw1" title="Show Interview Schedule" data-toggle="modal" data-target="#intrvw"><i class="fa fa-calendar-check-o"></i></button>
           </div>
 
           <div class="form-group fg6 sa_2 sa_640 sa_480 sa_640_i sa_fg4_1">
             <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
             <div class="form-group fg12 sa_640 gur_opt">
-              <button class="tb_btz tb_cs tb_cus_sup1 wid_42a"><i class="img_plcy"><img src="../images/gms/res1.png"></i> <span>Browse Resumes</span></button>
-              <button class="tb_btz tb_cs tb_cus_sup2 tb_cs_sel wid_42a"><i class="img_plcy"><img src="../images/gms/res2.png"></i> <span>Import Resumes</span></button>
+              <button class="tb_btz tb_cs tb_cus_sup1 wid_42a"><i class="img_plcy"><img src="../images/gms/res1.png"></i> <span>Upload Resume Files</span></button>
+              <button class="tb_btz tb_cs tb_cus_sup2 tb_cs_sel wid_42a"><i class="img_plcy"><img src="../images/gms/res2.png"></i> <span>Import CSV File</span></button>
             </div>
           </div>
           <div class="clearfix"></div>
@@ -1039,19 +1048,6 @@ function closeNav5() {
 
           <div class="pop_2" style="display: none;" ></div>
         <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select>Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
 
           <div class="r_1024">
           <table class="display table-bordered pro_tab1 tbl_1024 tbl_xa" cellspacing="0" width="100%">
@@ -1078,7 +1074,7 @@ function closeNav5() {
 
                 <th class="th_b7 tr_l"> File Name</th>
 
-                <th class="th_b1 tr_c"> Actions</th>
+                <th class="th_b6 tr_c"> Actions</th>
               </tr>
              
             </thead>
@@ -1122,6 +1118,9 @@ function closeNav5() {
                 <td class="tr_l"><a href="#">employee01</a></td>
                 <td>
                   <div class="btn_stl1">
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add New">
+                      <i class="fa fa-plus-circle"></i>
+                    </button>
                     <span class="dropdown dd_lft0 ">
                       <button class="dropdown-toggle btn act_btn bn4 opn_aprvl" title="Additional Information">
                         <i class="fa fa-sticky-note-o "></i>
@@ -1215,6 +1214,9 @@ function closeNav5() {
                 <td class="tr_l"><a href="#">employee01</a></td>
                 <td>
                   <div class="btn_stl1">
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add New">
+                      <i class="fa fa-plus-circle"></i>
+                    </button>
                 <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="Additional Information">
                         <i class="fa fa-sticky-note-o "></i>
                 </button>
@@ -1241,21 +1243,11 @@ function closeNav5() {
             </tbody>
           </table>
         </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
         </div>
 
 
         <div class="clearfix"></div>
+        <div class="free_sp1"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
@@ -1300,7 +1292,45 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed--------------------------------------------------------->
 
-
+<!-- Modal -->
+<div class="modal fade" id="intrvw" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Interview Schedule List</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="r_1024">
+          <table class="display table-bordered pro_tab1 tbl_1024 tbl_xa" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b2 tr_l">Schedule NAME</th>
+                <th class="th_b8 tr_l">Category</th>
+                <th class="th_b8 tr_l">Type</th>
+                <th class="th_b6">Scoring</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">Candidate 1</td>
+                <td class=" tr_l">Doha</td>         
+                <td class=" tr_l">Doha</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--------script section_started---------->
 
@@ -1717,6 +1747,35 @@ $(document).ready(function(){
   $(".sel_ar").click(function(){
     $(".op_al").show();
     $(".op_ra").hide();
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".sel_ms1").click(function(){
+    $(".sel_ms1").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms3, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg1").show();
+    $(".sp_msg2, .sp_msg3, .sp_msg4").hide();
+  });
+  $(".sel_ms2").click(function(){
+    $(".sel_ms2").addClass("sel_act_msg");
+    $(".sel_ms1, .sel_ms3, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg2").show();
+    $(".sp_msg1, .sp_msg3, .sp_msg4").hide();
+  });
+  $(".sel_ms3").click(function(){
+    $(".sel_ms3").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms1, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg3").show();
+    $(".sp_msg2, .sp_msg1, .sp_msg4").hide();
+  });
+  $(".sel_ms4").click(function(){
+    $(".sel_ms4").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms3, .sel_ms1").removeClass("sel_act_msg");
+    $(".sp_msg4").show();
+    $(".sp_msg2, .sp_msg3, .sp_msg1").hide();
   });
 });
 </script>

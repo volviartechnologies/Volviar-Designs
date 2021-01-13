@@ -2087,7 +2087,19 @@ span.box_ae{padding-right: 6px;}
 .cntcy h3{margin-top: 0px;}
 .cntcy .dropdown-display-label{max-height:54px;}
 .cntcy .dropdown-main ul{max-height: 165px;}
-
+.wid80{width: 80%!important;}
+.int_tem{width: 85%;height: auto;margin: auto;float: left;margin-left: 0px;}
+.int_tem button{width: 100%;text-align: left;border-radius: 8px 0px 0px 8px;}
+.int_drp{min-width: 100%;max-height: 104px;overflow: auto;}
+.rnd_ico{width: 20px;height: 20px;margin:auto;float: left;background-color: transparent;border:none;font-style: normal;color: #fff!important;text-align: center;border-radius: 50px;margin-right: 10px;}
+.int_tem .fa{float: right;margin-top: 4px;}
+.rnd_ico.grn_t{background-color:#0bc711;color: #fff;}
+.rnd_ico.blu_t{background-color:#35b1d6;color: #fff;}
+.rnd_ico.red_t{background-color:#ef000b;color: #fff;}
+.rnd_ico.org_t{background-color:#f3a00a;color: #fff;}
+.btn_sw1{height: 40px; border: 1px solid #44a2e4;background-color: transparent;color:#44a2e4;padding:6px;}
+.btn_sw1:hover, .btn_sw1:focus{color: #fff;background-color:#44a2e4; }
+.tbl_xa .form-control{font-size: 11px;}
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
 .wid_8_3{width: 25%;}
