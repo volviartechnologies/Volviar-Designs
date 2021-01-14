@@ -2103,6 +2103,19 @@ span.box_ae{padding-right: 6px;}
 .pnl_86{width: 90%;margin-bottom: 10px;}
 .mrb0{margin-bottom: 0px;}
 .mrtp0{margin-top: 0px;}
+.pnl_90{margin-right: 20px;width: 90%!important;margin-top: 14px;}
+.adtn_fld{bottom: -74px;right: 33px;}
+.adtn_fld:before{right: -10px;bottom: 66px;}
+.shrt_bnz{font-size: 11px;padding: 4px 10px;}
+.mrtpz_b1{margin-top: 10px;}
+.sche_bx{right: auto;left: 30px;bottom:-30px;width: 600px;}
+.sche_bx:before{border-left: 11px solid transparent;bottom:20px;right: auto;left: -10px;}
+.opn_dtls{cursor: pointer;}
+.dtls_bx{right: auto;left:110px;bottom:auto;width: 600px;top:-60px; }
+.dtls_bx:before{border-left: 11px solid transparent;bottom:auto;right: auto;left: -10px;top: 64px;}
+.dtls_bx .head_txt{max-height: 210px;overflow: auto;}
+.cls_pop span{font-size: 18px;}
+.mza .spn_zp1{width: 30%!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
