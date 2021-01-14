@@ -960,22 +960,17 @@ function closeNav5() {
       
       <div class="content_box1 cont_contr">
         <h2>Manage Candidate Selection</h2>
-        <div class="fg4 mar_at flt_l box_emp_br edt_mnt pnl_100">
-          <div class="fg_3_1 empl_pop_dtl wid_100_pz">
-            <ul class="join_leav emp_dtl_bdr">
-              <li class="bg_grn elg_2"><span class="spn_zp1">Ref#:</span> <span class="frz_ll">REF/2018/441621379</span></li>
-              <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
-              <li class="bg_red"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
-              <li class="bg_red"><span class="spn_zp1">Project:</span> <span class="frz_ll">Project 1</span></li>
-              <li class="bg_red"><span class="spn_zp1">Date of Request:</span> <span class="frz_ll">06/01/2021</span></li>
-              <li class="bg_red"><span class="spn_zp1">Resources#:</span> <span class="frz_ll">10</span></li>
-              <li class="bg_red"><span class="spn_zp1">Experience:</span> <span class="frz_ll">2 Year</span></li>
-              <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">30000.00</span></li>
-            </ul>
+        <div class="fg4 sa_640">
+          <div class="fg12 mar_at flt_l box_emp_br edt_mnt pnl_86">
+            <div class="fg_3_1 empl_pop_dtl wid_100_pz">
+              <ul class="join_leav emp_dtl_bdr">
+                <li class="bg_grn elg_2"><span class="spn_zp1">Recruitment Ref#:</span> <span class="frz_ll"><a href="#" data-toggle="modal" data-target="#dtlz"> REF/2018/441621379</a></span></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="fg_3_1">
-          <div class="form-group fg6 sa_fg4_1 sa_640_i sa_480 ma_bo10">
+          <div class="clearfix"></div>
+            
+          <div class="form-group fg12 sa_640_i sa_480 ma_bo10">
             <label for="email" class="fg2_la1">Interview Template:<span class="spn1">*</span></label>
             <div class="dropdown btn_chse_sec1 int_tem">
               <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" autofocus="">
@@ -993,16 +988,16 @@ function closeNav5() {
             </div>
             <button class="btn btn_sw1" title="Show Interview Schedule" data-toggle="modal" data-target="#intrvw"><i class="fa fa-calendar-check-o"></i></button>
           </div>
+        </div>
+        <div class="fg_3_1 sa_o_f7">
 
-          <div class="form-group fg6 sa_2 sa_640 sa_480 sa_640_i sa_fg4_1">
-            <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+          <div class="form-group fg6  sa_o_f1 sa_640">
             <div class="form-group fg12 sa_640 gur_opt">
               <button class="tb_btz tb_cs tb_cus_sup1 wid_42a"><i class="img_plcy"><img src="../images/gms/res1.png"></i> <span>Upload Resume Files</span></button>
               <button class="tb_btz tb_cs tb_cus_sup2 tb_cs_sel wid_42a"><i class="img_plcy"><img src="../images/gms/res2.png"></i> <span>Import CSV File</span></button>
             </div>
           </div>
           <div class="clearfix"></div>
-          <div class="free_sp1"></div>
           <div class="fg12 top_br_1 tbr_set spl_1a bg_blu1">
 
           <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480 sa_fg4_1 resm1" style="display: none;">
@@ -1019,7 +1014,7 @@ function closeNav5() {
               </div>
           </div>
             <div class="pro_rt1 imprt1" style="display:block;">
-              <div class="form-group fg2 sa_fg3 sa_640">
+              <div class="form-group fg4 sa_fg3 sa_640">
                 <label for="email" class="fg2_la1 pad_l">Choose File: <span class="spn1">&nbsp;</span></label>
                 <input type="file" id="file-upload" multiple required />
                 <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Import data from CSV file</label>
@@ -1030,21 +1025,22 @@ function closeNav5() {
                 <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
                 <button class="btn tab_but1 butn5"><i class="fa fa-download"></i> Sample CSV File</button>  
               </div>
-
-              <div class="clearfix"></div>
-              <div class="devider"></div>
-
-            <div class="sub_cont pull-right">
-              <div class="save_sec">
-                <button type="submit" class="btn sub1 bt_pro_rt2">Proceed</button>
-                <button type="submit" class="btn sub4 bt_pro_rt1">Cancel</button>
+              <div class="fg4 sa_fg1 sa_640">
+                <div class="sub_cont pull-right mrb0">
+                  <div class="save_sec">
+                    <button type="submit" class="btn sub1 bt_pro_rt2">Proceed</button>
+                    <button type="submit" class="btn sub4 bt_pro_rt1">Cancel</button>
+                  </div>
+                </div>
               </div>
-            </div>
+
+            
           </div>
         </div>
       </div>
         <div class="clearfix"></div>
-        <div class="free_sp1"></div>
+        <div class="free_sp1 mrtp0"></div>
+        <div class="devider"></div>
 
           <div class="pop_2" style="display: none;" ></div>
         <div class="tab_res">
@@ -1331,6 +1327,38 @@ function closeNav5() {
     </div>
   </div>
 </div>
+<!-- Modal -->
+<div class="modal fade" id="dtlz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Recruitment Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="fg_3_1 empl_pop_dtl wid_100_pz">
+            <ul class="join_leav emp_dtl_bdr">
+              <li class="bg_grn elg_2"><span class="spn_zp1">Ref#:</span> <span class="frz_ll">REF/2018/441621379</span></li>
+              <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Project:</span> <span class="frz_ll">Project 1</span></li>
+              <li class="bg_red"><span class="spn_zp1">Date of Request:</span> <span class="frz_ll">06/01/2021</span></li>
+              <li class="bg_red"><span class="spn_zp1">Resources#:</span> <span class="frz_ll">10</span></li>
+              <li class="bg_red"><span class="spn_zp1">Experience:</span> <span class="frz_ll">2 Year</span></li>
+              <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">30000.00</span></li>
+            </ul>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+         
 
 <!--------script section_started---------->
 

@@ -2100,6 +2100,10 @@ span.box_ae{padding-right: 6px;}
 .btn_sw1{height: 40px; border: 1px solid #44a2e4;background-color: transparent;color:#44a2e4;padding:6px;}
 .btn_sw1:hover, .btn_sw1:focus{color: #fff;background-color:#44a2e4; }
 .tbl_xa .form-control{font-size: 11px;}
+.pnl_86{width: 90%;margin-bottom: 10px;}
+.mrb0{margin-bottom: 0px;}
+.mrtp0{margin-top: 0px;}
+
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
 .wid_8_3{width: 25%;}
@@ -2108,6 +2112,7 @@ span.box_ae{padding-right: 6px;}
 .rqs_wz{width: 17%;}
 .box_tabz{width: 81%;}
 .mod_70pz{width: 90%!important;}
+.sa_o_f1{width:100%!important;}
 }
 @media only screen and (max-width:800px){
 .mont_lst{margin-left: 0px;margin-top: 10px;}
@@ -2121,6 +2126,7 @@ span.box_ae{padding-right: 6px;}
 .fg_40, .col_s1{width: 100%;}
 .fg_80{width: 50%;}
 .col_s1 h3{margin-top:20px;}
+.sa_o_f7{width:66%!important;}
 
 }
 @media only screen and (max-width:800px){
@@ -2148,6 +2154,7 @@ span.box_ae{padding-right: 6px;}
 .bt_cl1{width: 100%;}
 .ta_bxz2 .emply_box_1{width: 100%;}
 .sa_fg3_1{width: 50%;}
+.sa_o_f7{width:100%!important;}
 }
 @media only screen and (max-width:500px){
   .fg43, .wid_54{width: 100%;}
@@ -2167,6 +2174,7 @@ span.box_ae{padding-right: 6px;}
   .dlt_pop1 {bottom: 22px;right: 0;width: 100%;}
   .dlt_pop1:before {right: 8px;bottom: -12px;}
   .txt_f12 thead tr th, .txt_f12 tbody tr td{font-size: 10px!important;}
+  .wid_42a{width: 100%;}
 } 
 
 @media only screen and (max-width:380px){
