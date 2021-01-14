@@ -949,7 +949,7 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li class="active">Salary Certificate</li>
+      <li class="active">Request for Salary Certificate</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -959,9 +959,36 @@ function closeNav5() {
 <!---frame_border_area_opened---->
 
 <!---inner_content_sections area_started-->
-          <h1 class="h1_con">Salary Certificate</h1>
+          <h1 class="h1_con">Request for Salary Certificate</h1>
 
-          <div class="form-group fg2 sa_fg4 sa_2 sa_480">
+          <div class="form-group fg5 sa_fg4 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1 fg_chs2" autofocus="">
+              <option>Department 1</option>
+              <option>Department 2</option>
+              <option>Department 3</option>
+            </select> 
+          </div>
+
+          <div class="form-group fg5 sa_fg4 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1 fg_chs2">
+              <option>Designation 1</option>
+              <option>Designation 2</option>
+              <option>Designation 3</option>
+            </select> 
+          </div>
+
+          <div class="form-group fg5 sa_fg4 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1 fg_chs2">
+              <option>Employee 1</option>
+              <option>Employee 2</option>
+              <option>Employee 3</option>
+            </select> 
+          </div>
+
+          <div class="form-group fg5 sa_fg4 sa_2 sa_480">
             <label for="email" class="fg2_la1">Status:<span class="spn1"></span></label>
             <select class="form-control fg2_inp1 fg_chs2">
               <option>Rejected</option>
@@ -977,9 +1004,11 @@ function closeNav5() {
         </div>
 <!---=================section_devider============--->
       <div class="clearfix"></div>
-      <!-- <div class="free_sp"></div> -->
+      <div class="free_sp1"></div>
       <div class="devider"></div>
 <!---=================section_devider============-->
+
+        <div class="pop_2" style="display: none;" ></div>
 
         <div class="r_800">
           <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
@@ -1004,7 +1033,7 @@ function closeNav5() {
                 <th class="th_b7">Status
                 <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
                 </th>
-                <th class="th_b8">Actions</th>
+                <th class="th_b2">Actions</th>
               </tr>
              
             </thead>
@@ -1023,8 +1052,77 @@ function closeNav5() {
                     <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
                       <i class="fa fa-list-alt"></i>
                     </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                       <i class="fa fa-trash"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn11 opn_aprvl" title="Approve" onmouseover="aprl2()" onmouseout="aprl1()" onfocus="aprl2()" onfocusout="aprl1()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr1_1.png" id="aprl1">
+                          <img src="../images/icons/opp/apr1_1h.png" id="aprl2" style="display: none;">
+                        </i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm aprvl_bx">
+                        <div class="modal-header">
+                          <h5>Approve</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          Are you sure to approve this request for a salary certificate?
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_aprvl" id="InputToFocus4">Save</button>
+                          <button class="btn btn-danger cls_aprvl">Cancel</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn11 opn_rjct" title="Reject" onmouseover="aprl2r()" onmouseout="aprl1r()" onfocus="aprl2r()" onfocusout="aprl1r()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr2_1.png" id="aprl1r">
+                          <img src="../images/icons/opp/apr2_1h.png" id="aprl2r" style="display: none;">
+                        </i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm rjct_bx">
+                        <div class="modal-header">
+                          <h5>Reject</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Reason for Rejection:<span class="spn1">*</span></label>
+                            <textarea class="form-control fg2_inp1 inp_mst fg_chs2" placeholder="Reason for Rejection" autofocus="on" id="InputToFocus5"></textarea> 
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_rjct" autofocus="">Save</button>
+                          <button class="btn btn-danger cls_rjct">Cancel</button>
+                        </div>
+                      </div>
+                    </span>
+                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print Salary Certificate Request">
+                      <i class="fa fa-print"></i>
                     </button>
                   </div>
 
@@ -1058,8 +1156,24 @@ function closeNav5() {
                     <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
                       <i class="fa fa-list-alt"></i>
                     </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                      <button class="dropdown-toggle btn act_btn bn3" title="Delete">
                       <i class="fa fa-trash"></i>
+                      </button>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn11" title="Approve">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr1_1.png" id="aprl1">
+                          <img src="../images/icons/opp/apr1_1h.png" id="aprl2" style="display: none;">
+                        </i>
+                      </button>
+                      <button class="dropdown-toggle btn act_btn bn11" title="Reject">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr2_1.png" id="aprl1r">
+                          <img src="../images/icons/opp/apr2_1h.png" id="aprl2r" style="display: none;">
+                        </i>
+                      </button>
+                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print Salary Certificate Request">
+                      <i class="fa fa-print"></i>
                     </button>
                   </div>
 
@@ -1093,8 +1207,24 @@ function closeNav5() {
                     <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
                       <i class="fa fa-list-alt"></i>
                     </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                      <button class="dropdown-toggle btn act_btn bn3" title="Delete">
                       <i class="fa fa-trash"></i>
+                      </button>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn11" title="Approve">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr1_1.png" id="aprl1">
+                          <img src="../images/icons/opp/apr1_1h.png" id="aprl2" style="display: none;">
+                        </i>
+                      </button>
+                      <button class="dropdown-toggle btn act_btn bn11" title="Reject">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr2_1.png" id="aprl1r">
+                          <img src="../images/icons/opp/apr2_1h.png" id="aprl2r" style="display: none;">
+                        </i>
+                      </button>
+                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print Salary Certificate Request">
+                      <i class="fa fa-print"></i>
                     </button>
                   </div>
 
@@ -1128,8 +1258,24 @@ function closeNav5() {
                     <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
                       <i class="fa fa-list-alt"></i>
                     </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                      <button class="dropdown-toggle btn act_btn bn3" title="Delete">
                       <i class="fa fa-trash"></i>
+                      </button>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn11" title="Approve">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr1_1.png" id="aprl1">
+                          <img src="../images/icons/opp/apr1_1h.png" id="aprl2" style="display: none;">
+                        </i>
+                      </button>
+                      <button class="dropdown-toggle btn act_btn bn11" title="Reject">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/apr2_1.png" id="aprl1r">
+                          <img src="../images/icons/opp/apr2_1h.png" id="aprl2r" style="display: none;">
+                        </i>
+                      </button>
+                    <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print Salary Certificate Request">
+                      <i class="fa fa-print"></i>
                     </button>
                   </div>
 
@@ -1640,5 +1786,118 @@ $(document).ready(function() {
     } );
 } );
   </script>
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
+    $('#InputToFocus6').focus();
+  });
+  $(".opn_realc").click(function(){
+    $(".pop_2").fadeIn();
+    $(".realc").show( 300);
+    $('#InputToFocus7').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
+</script>
+<script>
+function aprl1() {
+  document.getElementById("aprl1").style.display = "block";
+  document.getElementById("aprl2").style.display = "none";
+}
+
+function aprl2() {
+  document.getElementById("aprl2").style.display = "block";
+  document.getElementById("aprl1").style.display = "none";
+}
+function aprl1r() {
+  document.getElementById("aprl1r").style.display = "block";
+  document.getElementById("aprl2r").style.display = "none";
+}
+
+function aprl2r() {
+  document.getElementById("aprl2r").style.display = "block";
+  document.getElementById("aprl1r").style.display = "none";
+}
+function recl1r() {
+  document.getElementById("recl1r").style.display = "block";
+  document.getElementById("recl2r").style.display = "none";
+}
+
+function recl2r() {
+  document.getElementById("recl2r").style.display = "block";
+  document.getElementById("recl1r").style.display = "none";
+}
+function recl1r1() {
+  document.getElementById("recl1r1").style.display = "block";
+  document.getElementById("recl2r1").style.display = "none";
+}
+
+function recl2r1() {
+  document.getElementById("recl2r1").style.display = "block";
+  document.getElementById("recl1r1").style.display = "none";
+}
+</script>
 </body>
 </html>
