@@ -2110,7 +2110,8 @@ span.box_ae{padding-right: 6px;}
 .mrtpz_b1{margin-top: 10px;}
 .sche_bx{right: auto;left: 30px;bottom:-30px;width: 600px;}
 .sche_bx:before{border-left: 11px solid transparent;bottom:20px;right: auto;left: -10px;}
-.opn_dtls{cursor: pointer;}
+.opn_dtls{cursor: pointer;background-color: transparent;border: none;color: #333;}
+.opn_dtls:focus, .opn_dtls:hover{color: #3994d0;}
 .dtls_bx{right: auto;left:110px;bottom:auto;width: 600px;top:-60px;max-height: 340px; }
 .dtls_bx:before{border-left: 11px solid transparent;bottom:auto;right: auto;left: -10px;top: 64px;}
 
@@ -2129,6 +2130,8 @@ span.box_ae{padding-right: 6px;}
 .mr_rgt10{margin-right: 10px;}
 .th_b1_1{width: 1%;}
 .fg_wid_83{width: 83%!important;}
+.tog_za{height: 16px;}
+.tog_za .slider_tog:before{height: 12px; width: 12px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

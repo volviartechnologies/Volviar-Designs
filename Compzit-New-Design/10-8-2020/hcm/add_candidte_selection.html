@@ -968,7 +968,7 @@ function closeNav5() {
               <ul class="join_leav emp_dtl_bdr">
                 <li class="bg_grn elg_2"><span class="spn_zp1">Requirement Ref#:</span> 
                   <span class="frz_ll"> <span class="dropdown dd_lft0 ">
-                    <a class="dropdown-toggle opn_dtls"> REF/2018/441621379</a>
+                    <button class="dropdown-toggle opn_dtls" autofocus=""> REF/2018/441621379</button>
                       <div class="dropdown-menu drop_dnm dtls_bx">
                         <div class="modal-header">
                           <h5>Manpower Requirement Details</h5>
@@ -1005,7 +1005,7 @@ function closeNav5() {
             
           <div class="form-group fg12 sa_640_i sa_480 ma_bo10">
             <label for="email" class="fg2_la1">Interview Template:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_wid_83 inp_mst" autofocus="">
+            <select class="form-control fg2_inp1 fg_chs2 fg_wid_83 inp_mst">
             <option>Interview Template 1</option>
             <option>Interview Template 2</option>
             <option>Interview Template 3</option>
@@ -1165,12 +1165,12 @@ function closeNav5() {
                  </select>
                </td>
 
-                <td><label class="switch">
+                <td><label class="switch tog_za">
                 <input type="checkbox" >
                 <span class="slider_tog round"></span>
               </label></td>
 
-                <td><label class="switch">
+                <td><label class="switch tog_za">
                 <input type="checkbox" >
                 <span class="slider_tog round"></span>
               </label></td>
@@ -1310,12 +1310,12 @@ function closeNav5() {
                  </select>
                </td>
 
-                <td><label class="switch">
+                <td><label class="switch tog_za">
                 <input type="checkbox" >
                 <span class="slider_tog round"></span>
               </label></td>
 
-                <td><label class="switch">
+                <td><label class="switch tog_za">
                 <input type="checkbox" >
                 <span class="slider_tog round"></span>
               </label></td>
@@ -1988,7 +1988,7 @@ $(document).ready(function(){
   $(".pop_2, .btn-danger, .cls_pop").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
-  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+  $(".dropdown-toggle, .act_btn, .paginate_button, .fg_wid_83, .tb_btz").focus(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
 
