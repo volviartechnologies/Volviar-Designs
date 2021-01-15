@@ -2097,7 +2097,7 @@ span.box_ae{padding-right: 6px;}
 .rnd_ico.blu_t{background-color:#35b1d6;color: #fff;}
 .rnd_ico.red_t{background-color:#ef000b;color: #fff;}
 .rnd_ico.org_t{background-color:#f3a00a;color: #fff;}
-.btn_sw1{height: 40px; border: 1px solid #44a2e4;background-color: transparent;color:#44a2e4;padding:6px;}
+.btn_sw1{height: 34px; border: 1px solid #44a2e4;background-color: transparent;color:#44a2e4;padding:6px;}
 .btn_sw1:hover, .btn_sw1:focus{color: #fff;background-color:#44a2e4; }
 .tbl_xa .form-control{font-size: 11px;}
 .pnl_86{width: 90%;margin-bottom: 10px;}
@@ -2125,6 +2125,10 @@ span.box_ae{padding-right: 6px;}
 .rjct_bx1{right: 100px;}
 .box_rej{width: 90%;margin: auto;float:left;border: 1px solid #ccc;padding: 10px;font-size: 13px;font-weight: 600;margin-top: 5px;background-color: #fff3f3;border-radius: 4px 4px 0px 0px;border-bottom: none;}
 .cnt_rjt{width: 90%;margin: auto;float:left;border: 1px solid #ccc;padding: 10px;font-size: 13px;background-color: #fff;border-radius: 0px 0px 4px 4px;border-top: none;}
+.bdr_blue{border: 1px solid #a5daff;}
+.mr_rgt10{margin-right: 10px;}
+.th_b1_1{width: 1%;}
+.fg_wid_83{width: 83%!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

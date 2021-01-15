@@ -971,7 +971,7 @@ function closeNav5() {
                     <a class="dropdown-toggle opn_dtls"> REF/2018/441621379</a>
                       <div class="dropdown-menu drop_dnm dtls_bx">
                         <div class="modal-header">
-                          <h5>Candidate Selection</h5>
+                          <h5>Manpower Requirement Details</h5>
                           <button type="button" class="close cls_pop" title="Close">
                             <span aria-hidden="true">×</span>
                           </button>
@@ -1005,7 +1005,12 @@ function closeNav5() {
             
           <div class="form-group fg12 sa_640_i sa_480 ma_bo10">
             <label for="email" class="fg2_la1">Interview Template:<span class="spn1">*</span></label>
-            <div class="dropdown btn_chse_sec1 int_tem">
+            <select class="form-control fg2_inp1 fg_chs2 fg_wid_83 inp_mst" autofocus="">
+            <option>Interview Template 1</option>
+            <option>Interview Template 2</option>
+            <option>Interview Template 3</option>
+          </select>
+            <!-- <div class="dropdown btn_chse_sec1 int_tem">
               <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" autofocus="">
                 <span class="sp_msg1"><i class="rnd_ico grn_t">I</i> <span>Template 1</span> <i class="fa fa-angle-down"></i></span>
                 <span class="sp_msg2" style="display: none;"><i class="rnd_ico blu_t">D</i> <span>Template 2</span> <i class="fa fa-angle-down"></i></span>
@@ -1018,7 +1023,7 @@ function closeNav5() {
                 <li class="sel_ms3"><a href="#"> <i class="rnd_ico red_t">T</i> <span>Template 3</span></a></li>
                 <li class="sel_ms4"><a href="#"> <i class="rnd_ico org_t">S</i> <span>Template 4</span></a></li>
               </ul>
-            </div>
+            </div> -->
 
             <span class="dropdown dd_lft0 ">
               <button class="dropdown-toggle btn opn_sche btn_sw1" title="Show Interview Schedule">
@@ -1065,28 +1070,29 @@ function closeNav5() {
 
           <div class="form-group fg6  sa_o_f1 sa_640">
             <div class="form-group fg12 sa_640 gur_opt">
-              <button class="tb_btz tb_cs tb_cus_sup1 wid_42a"><i class="img_plcy"><img src="../images/gms/res1.png"></i> <span>Upload Resume Files</span></button>
-              <button class="tb_btz tb_cs tb_cus_sup2 tb_cs_sel wid_42a"><i class="img_plcy"><img src="../images/gms/res2.png"></i> <span>Import CSV File</span></button>
+              <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_42a"><i class="img_plcy"><img src="../images/gms/res1.png"></i> <span>Upload Resume Files</span></button>
+              <button class="tb_btz tb_cs tb_cus_sup2 wid_42a"><i class="img_plcy"><img src="../images/gms/res2.png"></i> <span>Import CSV File</span></button>
             </div>
           </div>
           <div class="clearfix"></div>
-          <div class="fg12 top_br_1 tbr_set spl_1a bg_blu1">
+          <div class="fg12 top_br_1 tbr_set spl_1a bg_blu1 bdr_blue">
 
-          <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480 sa_fg4_1 resm1" style="display: none;">
+          <div class="form-group fg_3_1 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480 sa_fg4_1 resm1" style="display:block;">
               <label for="email" class="fg2_la1 pad_l">Select Resumes:<span class="spn1"></span></label>
-              <div class="fg_3_1 wid_78p">
+              <div class="fg6 mar_at flt_l">
                 <input type="file" id="file-upload" multiple="" required="">
                 <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
                 <div id="file-upload-filename" class="file_n"></div>
               </div>
-              <div class="">
+              <div class="fg6 mar_at flt_l">
+                <label class="mr_rgt10">2 Files Selected</label>
                 <button class="btn act_btn bn3" title="Remove Selected File">
                   <i class="fa fa-trash"></i>
                 </button>
               </div>
           </div>
-            <div class="pro_rt1 imprt1" style="display:block;">
-              <div class="form-group fg4 sa_fg3 sa_640">
+            <div class="pro_rt1 imprt1" style="display: none;">
+              <div class="form-group fg6 sa_fg3 sa_640">
                 <label for="email" class="fg2_la1 pad_l">Choose File: <span class="spn1">&nbsp;</span></label>
                 <input type="file" id="file-upload" multiple required />
                 <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Import data from CSV file</label>
@@ -1094,9 +1100,9 @@ function closeNav5() {
               </div>
                   
               <div class="fg2 fg2_adn">
-                <button class="btn tab_but1 butn5 mrtpz_b1"><i class="fa fa-download"></i> Sample CSV File</button>  
+                <button class="btn tab_but1 butn5 mrtpz_b1 flt_r" title="Download CSV Template"><i class="fa fa-download"></i></button>  
               </div>
-              <div class="fg4 sa_fg1 sa_640">
+              <div class="fg2 sa_fg1 sa_640">
                 <div class="sub_cont pull-right mrb0">
                   <div class="save_sec">
                     <button type="submit" class="btn sub1 bt_pro_rt2 shrt_bnz">Proceed</button>
@@ -1120,15 +1126,15 @@ function closeNav5() {
             <thead class="thead1">
               
               <tr>
-                <th class="th_b6 tr_l"> Candidate Name</th>
+                <th class="th_b8 tr_l"> Candidate Name</th>
 
                 <th class="th_b7 tr_l"> Location</th>
 
                 <th class="th_b6 tr_l"> Country</th>
 
-                <th class="th_b1_4 tr_c"> Visa</th>
+                <th class="th_b1_1 tr_c"> Visa</th>
 
-                <th class="th_b1_4 tr_c"> License</th>
+                <th class="th_b1_1 tr_c"> License</th>
 
                 <th class="th_b6 tr_l"> Passport#</th>
 
@@ -1136,7 +1142,7 @@ function closeNav5() {
 
                 <th class="th_b7 tr_l"> Mobile#</th>
 
-                <th class="th_b1_4 tr_l"> Gender</th>
+                <th class="th_b5_5 tr_l"> Gender</th>
 
                 <th class="th_b7 tr_l"> File Name</th>
 
@@ -1205,6 +1211,7 @@ function closeNav5() {
                               <option>Consultancy</option>
                               <option>Division</option>
                               <option>Department</option>
+                              <option>Employee</option>
                             </select> 
                           </div>
                           <div class="form-group fg12 frm_2 frm_50">
@@ -1213,6 +1220,30 @@ function closeNav5() {
                               <option>Consultancy 1</option>
                               <option>Consultancy 2</option>
                               <option>Consultancy 3</option>
+                            </select> 
+                          </div>
+                          <div class="form-group fg12 frm_2 frm_50" style="display: none;">
+                            <label for="email" class="fg2_la1">Division:<span class="spn1">*</span></label>
+                            <select class="form-control fg2_inp1 inp_mst fg_chs2">
+                              <option>Division 1</option>
+                              <option>Division 2</option>
+                              <option>Division 3</option>
+                            </select> 
+                          </div>
+                          <div class="form-group fg12 frm_2 frm_50" style="display: none;">
+                            <label for="email" class="fg2_la1">Department:<span class="spn1">*</span></label>
+                            <select class="form-control fg2_inp1 inp_mst fg_chs2">
+                              <option>Department 1</option>
+                              <option>Department 2</option>
+                              <option>Department 3</option>
+                            </select> 
+                          </div>
+                          <div class="form-group fg12 frm_2 frm_50" style="display: none;">
+                            <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
+                            <select class="form-control fg2_inp1 inp_mst fg_chs2">
+                              <option>Employee 1</option>
+                              <option>Employee 2</option>
+                              <option>Employee 3</option>
                             </select> 
                           </div>
                           <div class="form-group fg12 frm_2 frm_50">
@@ -1985,6 +2016,8 @@ $(document).ready(function(){
     }
 });
 </script>
+
+
 
 </body>
 </html>
