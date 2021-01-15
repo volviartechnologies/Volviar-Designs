@@ -2132,6 +2132,8 @@ span.box_ae{padding-right: 6px;}
 .fg_wid_83{width: 83%!important;}
 .tog_za{height: 16px;}
 .tog_za .slider_tog:before{height: 12px; width: 12px;}
+.tbl_xa input{font-size: 12px!important;}
+.algn1{top: 148px;right: 28px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

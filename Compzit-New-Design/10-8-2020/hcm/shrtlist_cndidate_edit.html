@@ -95,7 +95,7 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
-<!--------css_Included_closed------->
+<!--------css_Included_closed------>
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
 
@@ -961,23 +961,59 @@ function closeNav5() {
 
 <!---inner_content_sections area_started-->
         <h1 class="h1_con">Manage Candidates for Shortlisting</h1>
-        <div class="fg4 mar_at flt_l box_emp_br edt_mnt pnl_100">
-          <div class="fg_3_1 empl_pop_dtl wid_100_pz">
-            <ul class="join_leav emp_dtl_bdr">
-              <li class="bg_grn elg_2"><span class="spn_zp1">Ref#:</span> <span class="frz_ll">REF/2018/441621379</span></li>
-              <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
-              <li class="bg_red"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
-              <li class="bg_red"><span class="spn_zp1">Project:</span> <span class="frz_ll">Project 1</span></li>
-              <li class="bg_red"><span class="spn_zp1">Date of Request:</span> <span class="frz_ll">06/01/2021</span></li>
-              <li class="bg_red"><span class="spn_zp1">Resources#:</span> <span class="frz_ll">10</span></li>
-              <li class="bg_red"><span class="spn_zp1">Experience:</span> <span class="frz_ll">2 Year</span></li>
-              <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">30000.00</span></li>
-            </ul>
+
+
+          <div class="pop_2" style="display: none;" ></div>
+        <div class="fg4 sa_640">
+          <div class="fg12 mar_at flt_l box_emp_br edt_mnt pnl_86">
+            <div class="fg_3_1 empl_pop_dtl wid_100_pz">
+              <ul class="join_leav emp_dtl_bdr">
+                <li class="bg_grn elg_2"><span class="spn_zp1">Requirement Ref#:</span> 
+                  <span class="frz_ll"> <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle opn_dtls" autofocus=""> REF/2018/441621379</button>
+                      <div class="dropdown-menu drop_dnm dtls_bx">
+                        <div class="modal-header">
+                          <h5>Manpower Requirement Details</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          <div class="fg_3_1 empl_pop_dtl wid_100_pz">
+                            <ul class="join_leav emp_dtl_bdr">
+                              <li class="bg_grn elg_2"><span class="spn_zp1">Requirement Ref#:</span> <span class="frz_ll">REF/2018/441621379</span></li>
+                              <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
+                              <li class="bg_red"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
+                              <li class="bg_red"><span class="spn_zp1">Project:</span> <span class="frz_ll">Project 1</span></li>
+                              <li class="bg_red"><span class="spn_zp1">Date of Request:</span> <span class="frz_ll">06/01/2021</span></li>
+                              <li class="bg_red"><span class="spn_zp1">Resources#:</span> <span class="frz_ll">10</span></li>
+                              <li class="bg_red"><span class="spn_zp1">Experience:</span> <span class="frz_ll">2 Year</span></li>
+                              <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">30000.00</span></li>
+                            </ul>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-danger cls_aprvl" id="InputToFocus9">Cancel</button>
+                        </div>
+                      </div>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
+          <div class="clearfix"></div>
         </div>
-        <div class="fg_3_1">
+
+<!---=================section_devider============-->
+      <div class="clearfix"></div>
+      <div class="free_sp1"></div>
+<!---=================section_devider============-->
+
+        <div class="fg12">
           <div class="r_1024">
-          <table class="display table-bordered pro_tab1 tbl_1024 tbl_xa" cellspacing="0" width="100%">
+          <table id="example" class="display table-bordered tbl_800 tbl_xa" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
                 <th class="th_b5_11">
@@ -986,14 +1022,21 @@ function closeNav5() {
                     <input type="checkbox" class="hidden" />
                   </span>
                 </th>
-                <th class="th_b2 tr_l">CANDIDATE NAME</th>
-                <th class="th_b8 tr_l">LOCATION</th>
-                <th class="th_b8 tr_l">NATIONALITY</th>
-                <th class="th_b6 tr_l">REFERENCE</th>
-                <th class="th_b1 tr_c">Visa</th>
+                <th class="th_b4 tr_l">CANDIDATE NAME
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Candidate Name">
+                </th>
+                <th class="th_b6 tr_l">LOCATION</th>
+                <th class="th_b6 tr_l">Country</th>
+                <th class="th_b5 tr_c">Visa</th>
                 <th class="th_b1 tr_c">Licence</th>
                 <th class="th_b6 tr_l">PASSPORT#</th>
-                <th class="th_b4 tr_l">FILE NAME</th>
+                <th class="th_b8 tr_l">Email</th>
+                <th class="th_b7 tr_l">Mobile#</th>
+                <th class="th_b1">Gender</th>
+                <th class="th_b8 tr_l">Reffered by</th>
+                <th class="th_b7 tr_c">Skip<br> Interview</th>
+                <th class="th_b8 tr_l">Resume</th>
+                <th class="th_b8">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -1005,27 +1048,29 @@ function closeNav5() {
                   </span></td>
                 <td class="tr_l">Candidate 1</td>
                 <td class=" tr_l">Doha</td>
-                <td class=" tr_l">123123123</td>            
-                <td class=" tr_l">Doha</td>
+                <td class=" tr_l">Qatar</td>
+                <td>Yes</td>            
                 <td>No</td>
+                <td class=" tr_l">GABP0001023</td>
+                <td class="tr_l">candidat@gmail.com</td>
+                <td class="tr_l">9999111100</td>
+                <td>Male</td>
+                <td class="tr_l">Employee 1</td>
                 <td>Yes</td>
-                <td class="tr_l">Send</td>
                 <td class=" tr_l"><a href="#">CAND_162485_0.csv</a></td>
-              </tr>
-              <tr>
                 <td>
-                  <span class="button-checkbox flt_n mr_r0">
-                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                    <input type="checkbox" class="hidden" />
-                  </span></td>
-                <td class="tr_l">Candidate 1</td>
-                <td class=" tr_l">Doha</td>
-                <td class=" tr_l">123123123</td>            
-                <td class=" tr_l">Doha</td>
-                <td>No</td>
-                <td>Yes</td>
-                <td class="tr_l">Send</td>
-                <td class=" tr_l"><a href="#">CAND_162485_0.csv</a></td>
+                  <div class="btn_stl1">
+                    <button class="dropdown-toggle btn act_btn bn11" title="Shortlist" onclick="location.href='shrtlist_cndidate_edit.html';" onmouseover="selc1()" onmouseout="selc()" onfocus="selc1()" onfocusout="selc()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/sl1.png" id="selc">
+                          <img src="../images/icons/opp/sl2.png" id="selc1" style="display: none;">
+                        </i>
+                    </button>
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#cnfrm_mdl" title="Confirm">
+                      <i class="fa fa-check"></i>
+                    </button>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -1039,7 +1084,7 @@ function closeNav5() {
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1">Save</button>
+            <button type="submit" class="btn sub1">Shortlist</button>
             <button type="submit" class="btn sub1">Confirm</button>
             <button type="submit" class="btn sub4">Cancel</button>
             <button type="submit" class="btn sub2">Clear</button>
@@ -1060,7 +1105,6 @@ function closeNav5() {
         </div>
       </div>
     </div>
-  </div>
 <!----------------------------------------------Content_section_opened------------------------------------------------------------->
 
 <!-------------------footer_section_opened------------------------------------->
@@ -1075,9 +1119,12 @@ function closeNav5() {
 
 
 
-<!-- <a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
+<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
 <i class="fa fa-save"></i>
-</a> -->
+</a>
+<a href="#" type="button" class="print_o algn1" title="Print page">
+  <i class="fa fa-print"></i>
+</a>
 
 <a href="candidat_short.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
@@ -1456,7 +1503,7 @@ function myAlertBottom(){
 <!----==========Procurement_management_script_section_started=======--->
 
 
-<!-------------print_script_start--------------------->
+<!-------------print_script_start-------------------->
 <script>
 $(document).ready(function(){
   $(".imprt_o").click(function(){
@@ -1470,8 +1517,151 @@ $(".wr2").click(function(){
 });
 </script>
 
-<!-------------print_script_close--------------------->
+<!-------------print_script_close-------------------->
 
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_sche").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sche_bx").show( 300);
+    $('#InputToFocus8').focus();
+  });
+  $(".opn_dtls").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dtls_bx").show( 300);
+    $('#InputToFocus9').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
+    $('#InputToFocus6').focus();
+  });
+  $(".opn_realc").click(function(){
+    $(".pop_2").fadeIn();
+    $(".realc").show( 300);
+    $('#InputToFocus7').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, .fg_wid_83, .tb_btz").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
+</script>
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+  <script>
+function selc() {
+  document.getElementById("selc").style.display = "block";
+  document.getElementById("selc1").style.display = "none";
+}
+
+function selc1() {
+  document.getElementById("selc1").style.display = "block";
+  document.getElementById("selc").style.display = "none";
+}
+function selca() {
+  document.getElementById("selc_a").style.display = "block";
+  document.getElementById("selc1_a").style.display = "none";
+}
+
+function selc1a() {
+  document.getElementById("selc_a").style.display = "block";
+  document.getElementById("selc1_a").style.display = "none";
+}
+</script>
 
 </body>
 </html>
