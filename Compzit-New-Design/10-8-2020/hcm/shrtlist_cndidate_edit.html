@@ -106,8 +106,8 @@ function closeNav5() {
 
  <div class="mySave1" id="mySave">
   <div class="save_sec">
-    <button type="submit" class="btn sub1 bt_b">Save</button>
-    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub1 bt_b">Shortlist</button>
+    <button type="submit" class="btn sub1 bt_b">Confirm</button>
     <button type="submit" class="btn sub2 bt_b">Clear</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
   </div>
@@ -1025,8 +1025,12 @@ function closeNav5() {
                 <th class="th_b4 tr_l">CANDIDATE NAME
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Candidate Name">
                 </th>
-                <th class="th_b6 tr_l">LOCATION</th>
-                <th class="th_b6 tr_l">Country</th>
+                <th class="th_b6 tr_l">LOCATION
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Location">
+                </th>
+                <th class="th_b6 tr_l">Country
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Country">
+                </th>
                 <th class="th_b5 tr_c">Visa</th>
                 <th class="th_b1 tr_c">Licence</th>
                 <th class="th_b6 tr_l">PASSPORT#</th>
@@ -1060,15 +1064,46 @@ function closeNav5() {
                 <td class=" tr_l"><a href="#">CAND_162485_0.csv</a></td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="dropdown-toggle btn act_btn bn11" title="Shortlist" onclick="location.href='shrtlist_cndidate_edit.html';" onmouseover="selc1()" onmouseout="selc()" onfocus="selc1()" onfocusout="selc()">
+                    <span class="dropdown dd_lft0">
+                    <button class="dropdown-toggle btn act_btn bn11 opn_sls" title="Shortlist" onmouseover="selc1()" onmouseout="selc()" onfocus="selc1()" onfocusout="selc()">
                         <i class="rejct_ss ssi1">
                           <img src="../images/icons/opp/sl1.png" id="selc">
                           <img src="../images/icons/opp/sl2.png" id="selc1" style="display: none;">
                         </i>
                     </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#cnfrm_mdl" title="Confirm">
+                      <div class="dropdown-menu drop_dnm sls_bx">
+                        <div class="modal-header">
+                          <h5>Candidate Shortlisting</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to shortlist this candidate?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus" autofocus="on">Yes</button>
+                          <button class="btn btn-danger cls_cnfm">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_cnfm" title="Confirm">
                       <i class="fa fa-check"></i>
-                    </button>
+                      </button>
+                      <div class="dropdown-menu drop_dnm cnfm_bx">
+                        <div class="modal-header">
+                          <h5>Confirm</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to confirm this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                          <button class="btn btn-danger cls_cnfm">No</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
                 </td>
               </tr>
@@ -1097,38 +1132,32 @@ function closeNav5() {
             <button type="submit" class="btn sub4">Cancel</button>
           </div>
         </div>
-
-
-<!---inner_content_sections area_closed--->
-
-<!---frame_border_area_closed---->
-        </div>
+        
       </div>
     </div>
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
-
-<!-------------------footer_section_opened------------------------------------->
-  <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
-    <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico.png"></i> Procurement Management</p>
-    <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
-    <p class="pull-right tr_c foot_l ">Designed by <span>Volviar</span> Technologies</p>
+    </div>
   </div>
-<!-------------------footer_section_closed------------------------------------->
-
-</div><!--wrapper_closed-->
-
-
+</div><!--content_container_closed------>
 
 <a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
 <i class="fa fa-save"></i>
 </a>
-<a href="#" type="button" class="print_o algn1" title="Print page">
-  <i class="fa fa-print"></i>
-</a>
+
 
 <a href="candidat_short.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a>
+
+<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+
+</div><!--wrapper_closed-->
+
 
 
 <div class="import_opt">
@@ -1474,6 +1503,20 @@ $(function () {
 <!---------------Checkbox_section_closed------------------------->
 
 
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "140px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+    
+}
+</script>
+<!--save_pop up_closed-->
+
 <!----alert message_script---->
 <script type="text/javascript">
   function myAlertTop(){
@@ -1521,9 +1564,9 @@ $(".wr2").click(function(){
 
 <script>
 $(document).ready(function(){
-  $(".opn_sts").click(function(){
+  $(".opn_sls").click(function(){
     $(".pop_2").fadeIn();
-    $(".sts_bx").show( 300);
+    $(".sls_bx").show( 300);
     $('#InputToFocus').focus();
   });
   $(".opn_cnfm").click(function(){
@@ -1642,6 +1685,51 @@ $(document).ready(function() {
     } );
 } );
   </script>
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_aprvl1").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".aprvl_bx1").show( 300);
+    $('#InputToFocus11').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    }
+});
+</script>
   <script>
 function selc() {
   document.getElementById("selc").style.display = "block";
