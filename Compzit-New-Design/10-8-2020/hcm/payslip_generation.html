@@ -983,8 +983,9 @@ function closeNav5() {
             </ul>
           </div>
         </div>
+      </div>
 
-        <div class="form-group fg12 frm_2 frm_50 sa_o_fg4">
+        <div class="form-group fg4 frm_2 frm_50 sa_o_fg4">
           <label for="email" class="fg2_la1">Month & Year:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst fg_wid_100z" autofocus="">
             <option>January</option>
@@ -1008,18 +1009,56 @@ function closeNav5() {
           </div>
   <!---=================section_devider============--->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
+      <div class="free_sp1"></div>
       <div class="devider"></div>
       <!---=================section_devider============-->
       <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1">Generate</button>
+            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#mnth">Generate</button>
           </div>
         </div>
+        
       </div>
+    </div>
+    </div>
+  </div>
+</div><!--content_container_closed------>
 
-      <div class="fg_3_1 pslp_mnt">
-        <h3>Payslip of the month of January</h3>
+<a href="#" type="button" class="print_o" title="Print page">
+  <i class="fa fa-print"></i>
+</a>
+
+<!-- <a href="measure_unit.html" type="button" class="list_b" title="Back to List">
+<i class="fa fa-arrow-circle-left"></i>
+</a> -->
+
+<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+
+</div><!--wrapper_closed-->
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="mnth" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod_70wz" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Payslip Of The Month Of January</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+      <div class="fg12 pslp_mnt">
         <div class="fg6">
         <div class="fg12 mar_at flt_l box_emp_br png_10">
           <div class="fg12 empl_pop_dtl">
@@ -1037,12 +1076,14 @@ function closeNav5() {
               <li><span class="spn_zp1">Department:</span> <span>Department 2</span></li>
               <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
               <li><span class="spn_zp1">Job Tittle:</span> <span>UI / UX Designer</span></li>
+              <li><span class="spn_zp1">Eligible Days:</span> <span>30</span></li>
+              <li><span class="spn_zp1">Present Days:</span> <span>3</span></li>
             </ul>
           </div>
         </div>
       </div>
 
-        <div class="rqst_box3 rqsz_b lf_25 mar_tp_11 fg6">
+        <div class="rqst_box3 rqsz_b lf_25 mar_tp_11 fg6 pyslp_h1">
           <h3>Basic & Allowances</h3>
           <div class="hcm_res">
             <table class="display table-bordered hcm_tbl_44 dt_tblz" cellspacing="0" width="100%">
@@ -1077,7 +1118,7 @@ function closeNav5() {
             </table>
           </div>
         </div>
-        <div class="rqst_box3 rqsz_b lf_25 mar_tp_11 fg6">
+        <div class="rqst_box3 rqsz_b lf_25 mar_tp_11 fg6 pyslp_h1">
           <h3>Deductions</h3>
           <div class="hcm_res">
             <table class="display table-bordered hcm_tbl_44 dt_tblz" cellspacing="0" width="100%">
@@ -1113,41 +1154,18 @@ function closeNav5() {
           </ul>
         </div>
       </div>
-     
-     
-          
-        
-
-        
-    
-
-
-        
+      </div>
+      <div class="modal-footer">
+        <div class="prnt_btz flt_r">
+          <button class="btn act_btn bn6" data-toggle="modal" data-target="#exampleModal" title="Print">
+            <i class="fa fa-print"></i>
+          </button>
+        </div>
       </div>
     </div>
-    </div>
   </div>
-</div><!--content_container_closed------>
-
-<a href="#" type="button" class="print_o" title="Print page">
-  <i class="fa fa-print"></i>
-</a>
-
-<!-- <a href="measure_unit.html" type="button" class="list_b" title="Back to List">
-<i class="fa fa-arrow-circle-left"></i>
-</a> -->
-
-<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
-  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
-  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
-  <p class="pull-right tr_c foot_l ">
-    Designed by <span>Volviar</span> Technologies
-  </p>
 </div>
 
-</div><!--wrapper_closed-->
-
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
 
 

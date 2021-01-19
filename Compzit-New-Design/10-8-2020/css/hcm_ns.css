@@ -2134,13 +2134,15 @@ span.box_ae{padding-right: 6px;}
 .tog_za .slider_tog:before{height: 12px; width: 12px;}
 .tbl_xa input{font-size: 12px!important;}
 .algn1{top: 148px;right: 28px;}
-.png_10{padding:10px 6px;margin-right: 40px;margin-bottom: 14px;}
+.png_10{padding:10px 6px;margin-right: 40px;margin-bottom: 14px;width: 90%;}
 .fg_wid_100z{width: 50%!important;}
-.pslp_mnt{padding:0px 20px;margin-top: -26px;}
+.pslp_mnt{padding:0px 20px;margin-top:0px;}
 .pslp_mnt h3{margin-top: 0px;}
 .png_10 .spn_zp1{width: 30%!important;}
 .lf_25.fg6{width: 48%!important;margin-left: 2%;}
 .lf_25.fg6 .hcm_res{height: auto!important;}
+.pyslp_h1 h3{font-size: 11px;padding:3px;}
+.pyslp_h1 .dt_tblz thead tr th, .pyslp_h1 .dt_tblz tbody tr td, .pyslp_h1 .dt_tblz tfoot tr th{font-size: 11px!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
