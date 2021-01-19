@@ -2234,6 +2234,8 @@ span.box_ae{padding-right: 6px;}
   .txt_f12 thead tr th, .txt_f12 tbody tr td{font-size: 10px!important;}
   .wid_42a{width: 100%;}
   .mnt_ls1a .act_cols{width: 48%!important;}
+  .png_10 .spn_zp1{margin: auto!important;float: left!important;}
+  .spn_sep{width: auto!important;margin: auto!important;float: left!important;}
 } 
 
 @media only screen and (max-width:380px){
