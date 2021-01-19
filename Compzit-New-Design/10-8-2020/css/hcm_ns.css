@@ -2139,12 +2139,12 @@ span.box_ae{padding-right: 6px;}
 .pslp_mnt{padding:0px 20px;margin-top:0px;}
 .pslp_mnt h3{margin-top: 0px;}
 .png_10 .spn_zp1{width: 32%!important;}
-.lf_25.fg6{width: 48%!important;margin-right: 2%;}
+.lf_25.fg6{width: 48%!important;margin-right: 2%;box-shadow: none;margin-bottom: 10px;}
 .lf_25.fg6 .hcm_res{height: auto!important;}
 .pyslp_h1 h3{font-size: 11px;padding:3px;}
 .pyslp_h1 .dt_tblz thead tr th, .pyslp_h1 .dt_tblz tbody tr td, .pyslp_h1 .dt_tblz tfoot tr th{font-size: 11px!important;}
-.mnt_ls1a .act_cols{width:29%!important;height: auto;}
-.mnt_ls1a .act_cols .wid_8_3{height:auto;width:100%!important;}
+.mnt_ls1a .act_cols{width:23%!important;height: auto;border-radius: 10px; overflow: hidden;background-color: transparent;margin-top: 8px;}
+.mnt_ls1a .act_cols .wid_8_3{height:auto;width:100%!important;border-radius: 10px;}
 .mnt_ls1a{width: 100%;height: auto;margin: auto;float: left;padding-top: 10px;}
 .mnt_ls1a .mont_lst{margin-top: 0px;}
 .spl_dtl h3{margin-top: 0px;}
@@ -2153,6 +2153,10 @@ span.box_ae{padding-right: 6px;}
 .tag_pls .rqst_box3{box-shadow: none;}
 .net_am li{width: 100%!important;margin:auto;float: left;border-bottom:none;}
 .net_am .spn_gn{width: auto;margin:auto;float: right;}
+.mnt_ls1a .act_cols .wid_8_3.sel_mnt{background-color: #0090f5;}
+.mnt_ls1a .act_cols .wid_8_3:hover, .mnt_ls1a .act_cols .wid_8_3:focus{background-color:#0090f5;color: #fff;}
+.year_sec{width:90%;height: auto;margin: auto;float: left;border:1px solid #e0f2ff;padding: 10px 10px;margin-bottom: 18px;border-radius: 10px;padding-left: 20px;box-shadow: -1px 2px 15px #ccc;}
+.year_sec .fg2_inp1 {width: 96%!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
@@ -2164,6 +2168,8 @@ span.box_ae{padding-right: 6px;}
 .mod_70pz{width: 90%!important;}
 .sa_o_f1{width:100%!important;}
 .mnt_ls1a .mont_lst{margin-left: 0px;}
+.mnt_ls1a .act_cols { width: 30%!important;}
+.mnt_ls1a .act_cols .wid_8_3{padding: 3px;}
 }
 @media only screen and (max-width:800px){
 .mont_lst{margin-left: 0px;margin-top: 10px;}
@@ -2181,6 +2187,7 @@ span.box_ae{padding-right: 6px;}
 .tag_pls .emp_dtl_bdr li {width: 50%;}
 .lf_25.fg6{width:100%!important;}
 .net_am{margin-bottom: 40px;width: 100%;height: auto;margin: auto;float: left;}
+.mnt_ls1a .act_cols {width: 23%!important;}
 
 }
 @media only screen and (max-width:800px){
@@ -2213,6 +2220,7 @@ span.box_ae{padding-right: 6px;}
 .png_10{margin-right: 0px;width: 100%;}
 .mnt_ls1a .act_cols{width: 31%;}
 .sm1_1{width: 100%;height: auto;margin: auto;float: left;margin-bottom: 60px;}
+.year_sec {width: 100%;}
 }
 @media only screen and (max-width:500px){
   .fg43, .wid_54{width: 100%;}
@@ -2233,7 +2241,7 @@ span.box_ae{padding-right: 6px;}
   .dlt_pop1:before {right: 8px;bottom: -12px;}
   .txt_f12 thead tr th, .txt_f12 tbody tr td{font-size: 10px!important;}
   .wid_42a{width: 100%;}
-  .mnt_ls1a .act_cols{width: 48%!important;}
+  .mnt_ls1a .act_cols{width:31%!important;}
   .png_10 .spn_zp1{margin: auto!important;float: left!important;}
   .spn_sep{width: auto!important;margin: auto!important;float: left!important;}
 } 
