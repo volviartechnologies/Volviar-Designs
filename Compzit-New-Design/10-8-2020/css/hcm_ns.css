@@ -2153,15 +2153,16 @@ span.box_ae{padding-right: 6px;}
 .tag_pls .rqst_box3{box-shadow: none;}
 .net_am li{width: 100%!important;margin:auto;float: left;border-bottom:none;}
 .net_am .spn_gn{width: auto;margin:auto;float: right;}
-.mnt_ls1a .act_cols .wid_8_3.sel_mnt{background-color: #0090f5;}
-.mnt_ls1a .act_cols .wid_8_3:hover, .mnt_ls1a .act_cols .wid_8_3:focus{background-color:#fff;border:1px solid #48acf2;color: #44a2e4;}
+.mnt_ls1a .act_cols .wid_8_3:hover, .mnt_ls1a .act_cols .wid_8_3:focus{background-color:#6e93ff;border:1px solid #6e93ff;color: #fff;}
+.mnt_ls1a .act_cols .wid_8_3.sel_mnt, , .mnt_ls1a .act_cols .wid_8_3::selection{background-color: #0090f5!important;}
 .year_sec{width:90%;height: auto;margin: auto;float: left;border:1px solid #e0f2ff;padding: 10px 10px;margin-bottom: 18px;border-radius: 10px;padding-left: 20px;box-shadow: -1px 2px 15px #ccc;}
-.year_sec .fg2_inp1 {width: 96%!important;}
+.year_sec .fg2_inp1 {width: 82%!important;}
 .min_maxhgt{width: 100%;min-height: 272px;max-height: 272px;}
 .mrbtm30{margin-bottom: 36px;}
 .mx_1.png_10 .spn_zp1{max-width: 32%!important; width: auto!important;}
 .rat_q1{right: 30px;bottom: -12px;}
 .rat_q1:before{right: -12px;bottom: 5px;}
+.box_cal{width: auto;margin: auto;height: auto;float: left;padding: 2px 6px;border-radius: 4px 0px 0px 4px;border: none;color: #d61400;font-size: 20px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
@@ -2175,6 +2176,7 @@ span.box_ae{padding-right: 6px;}
 .mnt_ls1a .mont_lst{margin-left: 0px;}
 .mnt_ls1a .act_cols { width: 30%!important;}
 .mnt_ls1a .act_cols .wid_8_3{padding: 3px;}
+.year_sec .fg2_inp1 {width: 74%!important;}
 }
 @media only screen and (max-width:800px){
 .mont_lst{margin-left: 0px;margin-top: 10px;}
@@ -2210,6 +2212,7 @@ span.box_ae{padding-right: 6px;}
 .ta_bxz2 .emply_box_1{width: 90%;}
 .fg_640_sp1{width: 100%;}
 .sa_fg3_1{width: 40%;}
+.spl_dtl h3 {margin-top: 18px;}
 }
 @media only screen and (max-width:640px){ 
 .blk_box p{width: 80%;}
