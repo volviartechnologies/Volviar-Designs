@@ -946,7 +946,7 @@ function closeNav5() {
 <!----------------------------------------------header_section_closed------------------------------------------------------------->
 
 
-<!----------------------------------------------Content_section_opened------------------------------------------------------------->
+<!----------------------------------------------Content_section_opened------------------------------------------------------------>
  <div class="content_container cont_contr" onclick="closeNav4(), closeNav5(), closeNav()" onmouseout="closeNav5()">
 
   <ol class="breadcrumb">
@@ -960,135 +960,105 @@ function closeNav5() {
       
       <div class="content_box1 cont_contr">
         <h2>Generate WPS</h2>
+          <div class="pop_2" style="display: none;" ></div>
 
-        
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Mode:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-              <option>Mode 1</option>
-              <option>Mode 2</option>
-              <option>Mode 3</option>
-            </select> 
-          </div>
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-              <option>Business Unit 1</option>
-              <option>Business Unit 2</option>
-              <option>Business Unit 3</option>
-            </select> 
-          </div>
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-          <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Staff</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Worker</label>
-              </div>
-            </div>
-          </div>
+        <div class="fg12">
+          <div class="r_1024">
+          <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b5_11">
+                  <span class="button-checkbox lbr_chk flt_n mr_r0">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all" autofocus=""></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                </th>
+                <th class="th_b7 tr_l">Employee ID
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
+                </th>
+                <th class="th_b2 tr_l">Employee
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee">
+                </th>
+                <th class="th_b4 tr_l">Designation
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
+                </th>
+                <th class="th_b6 tr_r">PayGrade</th>
+                <th class="th_b6 tr_r">Total Amount</th>
+                <th class="th_b6">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="button-checkbox flt_n mr_r0">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span></td>
+                <td class="tr_l">Candidate 1</td>
+                <td class=" tr_l">Doha</td>
+                <td class=" tr_l">Qatar</td>
+                <td class="tr_r">3,000.00</td>            
+                <td class="tr_r">3,000.00</td>
+                <td>
+                  <div class="btn_stl1">
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn act_btn bn4 opn_rjct" title="Comment">
+                      <i class="fa fa-commenting-o "></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm rjct_bx cmnt_bzx">
+                        <div class="modal-header">
+                          <h5>Comment</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          <div class="form-group fg12 frm_2 frm_50">
+                            <label for="email" class="fg2_la1">Comment:<span class="spn1"></span></label>
+                            <textarea class="form-control fg2_inp1 fg_chs2" placeholder="Comment" autofocus="on" id="InputToFocus10"></textarea> 
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Save</button>
+                          <button class="btn btn-danger cls_cnfm">Cancel</button>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Bank:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-              <option>Bank 1</option>
-              <option>Bank 2</option>
-              <option>Bank 3</option>
-            </select> 
-          </div>
-
-        <div class="clearfix"></div>
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2">
-              <option>Designation 1</option>
-              <option>Designation 2</option>
-              <option>Designation 3</option>
-            </select> 
-          </div>
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2">
-              <option>Department 1</option>
-              <option>Department 2</option>
-              <option>Department 3</option>
-            </select> 
-          </div>
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Divisoin:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2">
-              <option>Divisoin 1</option>
-              <option>Divisoin 2</option>
-              <option>Divisoin 3</option>
-            </select> 
-          </div>
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-                <label for="pwd" class="fg2_la1">From Date:<span class="spn1"></span> </label>
-                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                  <input class="form-control inp_bdr" type="text"/>
-                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-                </div>
-              </div>
-
-        <div class="form-group fg2 sa_fg4 sa_o_fg2 sa_o_fg1">
-            <label for="email" class="fg2_la1">Payer Bank:<span class="spn1">*</span></label>
-            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-              <option>Bank 1</option>
-              <option>Bank 2</option>
-              <option>Bank 3</option>
-            </select> 
-          </div>
-
-        
-
-      
-
-      <!---=================section_devider============--->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
+      <div class="free_sp1"></div>
       <div class="devider"></div>
-      <!---=================section_devider============--->
 
-        <div class="sub_cont pull-right">
-          <div class="save_sec">
-            <!-- <button type="submit" class="btn sub1">Complete</button> -->
-            <button type="submit" class="btn sub1">Search</button>
-             </div>
-
-          <!-- <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update & Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div> -->
+      <div class="sub_cont pull-right mr_tp01">
+        <div class="save_sec">
+          <!-- <button type="submit" class="btn sub1">Complete</button> -->
+          <button type="submit" class="btn sub1">Generate WPS List</button>
         </div>
+      </div>
+
        </div>
      </div>
     </div>
   </div>
 </div><!--content_container_closed------>
 
-<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
+<!-- <a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
 <i class="fa fa-save"></i>
-</a>
+</a> -->
 
 <a href="generate_wps.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a>
-
+<a href="#" type="button" class="print_o prnt_pstn" title="Print page">
+  <i class="fa fa-print"></i>
+</a>
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
   <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
@@ -1098,6 +1068,125 @@ function closeNav5() {
 </div>
 
 </div><!--wrapper_closed-->
+
+
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
+<div class="filtr_sec fltr_plcy mr_400">
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
+    <div class="clearfix"></div>
+    <div class="box_cnt_zz fltr_wps">
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Mode:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" autofocus="">
+          <option>Mode 1</option>
+          <option>Mode 2</option>
+          <option>Mode 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Salary Month & Year:<span class="spn1"></span></label>
+        <div class="fg_3_1 wid_62px">
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+        </div> 
+        <div class="fg4 wid_37px">
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>2020</option>
+            <option>2021</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Business Unit:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Business Unit 1</option>
+          <option>Business Unit 2</option>
+          <option>Business Unit 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Bank:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Bank 1</option>
+          <option>Bank 2</option>
+          <option>Bank 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Department 1</option>
+          <option>Department 2</option>
+          <option>Department 3</option>
+        </select> 
+      </div>
+
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Divisoin:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Divisoin 1</option>
+          <option>Divisoin 2</option>
+          <option>Divisoin 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Designation 1</option>
+          <option>Designation 2</option>
+          <option>Designation 3</option>
+        </select> 
+      </div>
+      <div class="fg6 bg_clr1">
+        <label for="email" class="fg2_la1">Processed Date:<span class="spn1"></span></label>
+        <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+          <input class="form-control inp_bdr dt_fltr" type="text"  />
+          <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+        </div>
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Payer Bank:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Bank 1</option>
+          <option>Bank 2</option>
+          <option>Bank 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6 sa_640 mrbx_0">
+        <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
+        <div class="form-group fg12 sa_640 gur_opt">
+          <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/work.png"></i> <span>Worker</span></button>
+          <button class="tb_btz tb_cs tb_cus_sup2 wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/stf.png"></i> <span>Staff</span></button>
+        </div>
+      </div>
+      <div class="form-group fg12">
+        <label for="email" class="fg2_la1">Sponsor:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Sponsor 1</option>
+          <option>Sponsor 2</option>
+          <option>Sponsor 3</option>
+        </select> 
+      </div>
+    </div>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
+  </div>
+</div>
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
@@ -1518,6 +1607,222 @@ $(document).ready(function(){
     $(".pan_lst1").toggle();
   });
 });
+</script>
+
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
+
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+  });
+  $(".tb_cus_sup1").click(function(){
+    $(".tb_cus_sup1").addClass("tb_cs_sel");
+    $(".tb_cus_sup2").removeClass("tb_cs_sel");
+    $(".tb_cus_1").show();
+    $(".tb_cus_2").hide();
+  });
+  $(".tb_cus_sup2").click(function(){
+    $(".tb_cus_sup2").addClass("tb_cs_sel");
+    $(".tb_cus_sup1").removeClass("tb_cs_sel");
+    $(".tb_cus_2").show();
+    $(".tb_cus_1").hide();
+  });
+  //buttons for report section//
+
+  $(".tb_btns1").click(function(){
+    $(".tb_btns1").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns2").click(function(){
+    $(".tb_btns2").addClass("sel_tb_btns");
+    $(".tb_btns1, .tb_btns3, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns3").click(function(){
+    $(".tb_btns3").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns1, .tb_btns4, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns4").click(function(){
+    $(".tb_btns4").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns1, .tb_btns5").removeClass("sel_tb_btns");
+  });
+  $(".tb_btns5").click(function(){
+    $(".tb_btns5").addClass("sel_tb_btns");
+    $(".tb_btns2, .tb_btns3, .tb_btns1, .tb_btns4").removeClass("sel_tb_btns");
+  });
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_wps").click(function(){
+    $(".pop_2").fadeIn();
+    $(".wps_bx").show( 300);
+    $('#InputToFocuswps').focus();
+  });
+  $(".opn_map").click(function(){
+    $(".pop_2").fadeIn();
+    $(".map_bx").show( 300);
+    $('#InputToFocusmp').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus10').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop,  cls_dlt").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .nw1, .bt_b, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
+    }
+});
+</script>
+
+<script>
+function wps1() {
+  document.getElementById("wps1").style.display = "block";
+  document.getElementById("wps1_1").style.display = "none";
+}
+
+function wps1_1() {
+  document.getElementById("wps1_1").style.display = "block";
+  document.getElementById("wps1").style.display = "none";
+}
+function wps1a() {
+  document.getElementById("wps1a").style.display = "block";
+  document.getElementById("wps1_1a").style.display = "none";
+}
+
+function wps1_1a() {
+  document.getElementById("wps1_1a").style.display = "block";
+  document.getElementById("wps1a").style.display = "none";
+}
+function map1() {
+  document.getElementById("map1").style.display = "block";
+  document.getElementById("map1_1").style.display = "none";
+}
+
+function map1_1() {
+  document.getElementById("map1_1").style.display = "block";
+  document.getElementById("map1").style.display = "none";
+}
+function map1a() {
+  document.getElementById("map1a").style.display = "block";
+  document.getElementById("map1_1a").style.display = "none";
+}
+
+function map1_1a() {
+  document.getElementById("map1_1a").style.display = "block";
+  document.getElementById("map1a").style.display = "none";
+}
 </script>
 
 </body>
