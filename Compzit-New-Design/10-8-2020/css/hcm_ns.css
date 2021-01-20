@@ -2159,6 +2159,9 @@ span.box_ae{padding-right: 6px;}
 .year_sec .fg2_inp1 {width: 96%!important;}
 .min_maxhgt{width: 100%;min-height: 272px;max-height: 272px;}
 .mrbtm30{margin-bottom: 36px;}
+.mx_1.png_10 .spn_zp1{max-width: 32%!important; width: auto!important;}
+.rat_q1{right: 30px;bottom: -12px;}
+.rat_q1:before{right: -12px;bottom: 5px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
