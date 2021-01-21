@@ -2174,6 +2174,7 @@ span.box_ae{padding-right: 6px;}
 .cmnt_bzx .head_txt{min-height: 100px;}
 .prnt_pstn{top: 146px;right: 28px;}
 .mr_tp01{margin-top: 0px;}
+.filtr_sec{z-index: 9999!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
