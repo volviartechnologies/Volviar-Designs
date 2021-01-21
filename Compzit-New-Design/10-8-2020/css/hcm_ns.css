@@ -2175,6 +2175,8 @@ span.box_ae{padding-right: 6px;}
 .prnt_pstn{top: 146px;right: 28px;}
 .mr_tp01{margin-top: 0px;}
 .filtr_sec{z-index: 9999!important;}
+.box_fr_wrkr{width: 100%;height: 26px;margin: auto;float: left;}
+.max_390{max-height: 396px!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}

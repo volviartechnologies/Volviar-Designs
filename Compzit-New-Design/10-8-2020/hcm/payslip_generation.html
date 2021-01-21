@@ -1030,23 +1030,30 @@ function closeNav5() {
               <ul class="join_leav emp_dtl_bdr">
                 <li><span class="spn_zp1">Department:</span> <span class="spn_sep">Department 2</span></li>
                 <li><span class="spn_zp1">Division:</span> <span class="spn_sep">Division 2</span></li>
-                <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span class="spn_sep">Designation 1</span></li>
+                <li class="bg_grn box_fr_staff" style="display: none;"><span class="spn_zp1">Designation:</span> <span class="spn_sep">Designation 1</span></li>
+                <li class="bg_grn box_wrkr"><span class="spn_zp1">Trade:</span> <span class="spn_sep">Trade 1</span></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="fg_3_1 spl_dtl">
-          <h3>Payslip For The Month Of January</h3>
-          <div class="fg12 mar_at flt_l">
-            <div class="fg12 mar_at flt_l box_emp_br png_10 tag_pls mrbtm30">
-              <div class="fg12 empl_pop_dtl">
-                <ul class="join_leav emp_dtl_bdr">
-                <li><span class="spn_zp1">Job Tittle:</span> <span class="spn_sep">UI / UX Designer</span></li>
-                <li><span class="spn_zp1">Eligible Days:</span> <span class="spn_sep">30</span></li>
-                <li><span class="spn_zp1">Present Days:</span> <span class="spn_sep">3</span></li>
-                </ul>
+          <div class="box_fr_staff" style="display: none;">
+            <h3>Payslip For The Month Of January</h3>
+            <div class="fg12 mar_at flt_l">
+              <div class="fg12 mar_at flt_l box_emp_br png_10 tag_pls mrbtm30">
+                <div class="fg12 empl_pop_dtl">
+                  <ul class="join_leav emp_dtl_bdr">
+                  <li><span class="spn_zp1">Job Tittle:</span> <span class="spn_sep">UI / UX Designer</span></li>
+                  <li><span class="spn_zp1">Eligible Days:</span> <span class="spn_sep">30</span></li>
+                  <li><span class="spn_zp1">Present Days:</span> <span class="spn_sep">3</span></li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="box_fr_wrkr">
+            <h3>Labour Card For The Month Of January</h3>
+            <div class="clearfix"></div>
           </div>
           <div class="fg12 mar_at flt_l min_maxhgt">
             <div class="rqst_box3 rqsz_b lf_25 mar_tp_11 fg6 pyslp_h1">
@@ -1132,9 +1139,16 @@ function closeNav5() {
           <div class="clearfix"></div>
           <div class="free_sp1"></div>
           <div class="devider"></div>
+
+          <div class="prnt_btz flt_l">
+          <button class="btn act_btn bn4" data-toggle="modal" data-target="#att_bx" title="Attendance">
+            <i class="fa fa-list-ol"></i>
+          </button>
+        </div>
           <div class="sub_cont pull-right  sm1_1">
             <div class="save_sec">
-              <button type="submit" class="btn sub3">Print Payslip</button>
+              <button type="submit" class="btn sub3 box_fr_staff" style="display: none;">Print Payslip</button>
+              <button type="submit" class="btn sub3 box_wrkr">Print Labour Card</button>
             </div>
           </div>
         </div>
@@ -1144,10 +1158,13 @@ function closeNav5() {
   </div>
 </div><!--content_container_closed------>
 
-<a href="#" type="button" class="print_o" title="Print Payslip">
+<a href="#" type="button" class="print_o box_staff" title="Print Payslip" style="display: none;">
   <i class="fa fa-print"></i>
 </a>
 
+<a href="#" type="button" class="print_o box_wrkr" title="Print Labour Card">
+  <i class="fa fa-print"></i>
+</a>
 <!-- <a href="measure_unit.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a> -->
@@ -1164,7 +1181,296 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
-
+<!-- Modal -->
+<div class="modal fade" id="att_bx" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="width: 70%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Attendance</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body max_390">
+        <div class="hcm_res">
+          <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b7 tr_l">Date</th>
+                <th class="th_b8 tr_l">Job#</th>
+                <th class="th_b8 tr_c">Status</th>
+                <th class="th_b6 tr_c">Normal Hrs</th>
+                <th class="th_b6 tr_r">Normal OT</th>
+                <th class="th_b6 tr_r">Holiday OT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">01 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">02 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">03 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">04 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">05 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">06 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">07 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">08 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">09 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">10 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">11 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">12 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">13 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">14 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">15 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">16 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">17 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">18 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">19 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">20 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">21 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">22 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">23 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">24 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">25 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">26 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">27 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">28 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">29 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">30 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+              <tr>
+                <td class="tr_l">31 jan</td>
+                <td class="tr_l">Job0001</td>
+                <td class="tr_c">Complete</td>
+                <td class="tr_c">30</td>
+                <td class="tr_r">1,000.00</td>
+                <td class="tr_r">1,000.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr style="background-color:#eceff1!important;">
+                <th colspan="4" class="tr_l txt_rd">Total</th>
+                <th class="tr_r txt_rd">10,000.00</th>
+                <th class="tr_r txt_rd">10,000.00</th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal" id="not_op1" autofocus="on">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -1627,6 +1933,54 @@ $(document).ready(function(){
     $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt1").removeClass("sel_mnt");
   });
 });
+</script>
+
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example1 tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+<script type="text/javascript">
+
+$('#att_bx').on('shown.bs.modal', function () {
+    $('#not_op1').focus();
+}) 
 </script>
 
 </body>
