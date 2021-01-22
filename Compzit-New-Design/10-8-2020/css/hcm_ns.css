@@ -2183,6 +2183,16 @@ span.box_ae{padding-right: 6px;}
 .max_390 .lf_25.fg6 .hcm_res{max-height:none;}
 .onhld{bottom: -47px;right: 36px;}
 .onhld:before{bottom:40px;right:-10px; }
+.onhold1{right:116px;bottom: 20px}
+.prc_mng{right: 126px;}
+.onhold1:before{bottom: -10px;right:98px;}
+.h1_wa1{width: auto!important;margin: auto;float: left;margin-right:100px!important;}
+.mrt_drop{top: -24px;}
+.mrt_drop:before{top:40px;}
+.mrtp_dra{margin-top: 10px;}
+.mr_rgt21{margin-right:40px;}
+.mr_tp_30{margin-top: -30px;}
+.reqcl1{right: 134px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
