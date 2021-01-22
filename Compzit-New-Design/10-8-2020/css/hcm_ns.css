@@ -2181,6 +2181,8 @@ span.box_ae{padding-right: 6px;}
 .fg_wid_f100{width: 100%!important;height: 32px!important;}
 .max_390 .min_maxhgt{min-height: auto;max-height:none;}
 .max_390 .lf_25.fg6 .hcm_res{max-height:none;}
+.onhld{bottom: -47px;right: 36px;}
+.onhld:before{bottom:40px;right:-10px; }
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
