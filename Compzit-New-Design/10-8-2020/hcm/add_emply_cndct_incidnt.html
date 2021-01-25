@@ -108,8 +108,8 @@ function closeNav5() {
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Save</button>
     <button type="submit" class="btn sub3 bt_b">Save & Close</button>
-    <button type="submit" class="btn sub2 bt_b">Clear</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -949,8 +949,8 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li><a href="#">Employee Conduct Incident</a></li>
-      <li class="active">add</li>
+      <li><a href="emply_cndct_incidnt.html">Employee Conduct Incident</a></li>
+      <li class="active">Add Employee Conduct Incident</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -967,7 +967,7 @@ function closeNav5() {
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
+          <select type="text" class="form-control fg2_inp1 inp_mst" autofocus="">
             <option>Business Unit 1</option>
             <option>Business Unit 2</option>
             <option>Business Unit 3</option>
@@ -1013,24 +1013,21 @@ function closeNav5() {
           <input type="text" class="form-control fg2_inp1" placeholder="08/10/2019" disabled="">
         </div>
 
-         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Description:<span class="spn1"></span></label>
-          <textarea type="text" class="form-control fg2_inp1" placeholder="Description"></textarea>
-        </div>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
+          <select type="text" class="form-control fg2_inp1 inp_mst">
+            <option>Category 1</option>
+            <option>Category 2</option>
+            <option>Category 3</option>
+          </select> 
+        </div>
+
+        <div class="form-group fg2 sa_640 mrbx_0">
           <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Positive</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Negative</label>
-              </div>
-            </div>
+          <div class="form-group fg12 sa_640 gur_opt">
+            <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn1.png"></i> <span>Positive</span></button>
+            <button class="tb_btz tb_cs tb_cus_sup2 wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn2.png"></i> <span>Negative</span></button>
           </div>
         </div>
 
@@ -1042,16 +1039,6 @@ function closeNav5() {
             <option>High</option>
             <option>Medium</option>
             <option>Low</option>
-          </select> 
-        </div>
-
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Category 1</option>
-            <option>Category 2</option>
-            <option>Category 3</option>
           </select> 
         </div>
               
@@ -1067,11 +1054,18 @@ function closeNav5() {
           </div>
         </div>
 
+         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
+          <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
+        </div>
+        
         <div class="clearfix"></div>
+        <div class="free_sp1"></div>
+        <div class="devider"></div>
 
         <h3>Notification<span class="spn1">*</span></h3>
 
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_480">
+        <div class="form-group fg8 fg2_mr sa_fg4 sa_480">
           <label for="email" class="fg2_la1 pad_l">Reporting Officer:<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
@@ -1083,7 +1077,7 @@ function closeNav5() {
           </div>
         </div>
 
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_480">
+        <div class="form-group fg8 fg2_mr sa_fg4 sa_480">
           <label for="email" class="fg2_la1 pad_l">Division Manager:<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
@@ -1095,7 +1089,7 @@ function closeNav5() {
           </div>
         </div>
 
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_480">
+        <div class="form-group fg8 fg2_mr sa_fg4 sa_480">
           <label for="email" class="fg2_la1 pad_l">Employee:<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
@@ -1117,8 +1111,8 @@ function closeNav5() {
           <div class="save_sec">
             <button type="submit" class="btn sub1">Save</button>
             <button type="submit" class="btn sub3">Save & Close</button>
-            <button type="submit" class="btn sub2">Clear</button>
             <button type="submit" class="btn sub4">Cancel</button>
+            <button type="submit" class="btn sub2">Clear</button>
           </div>
 
           <div class="edit_sec">
@@ -1512,7 +1506,7 @@ function sel1() {
 <!------hide and visible div_closed--->
 
 
-<!-----table_sec_fixed--->
+<!-----table_sec_fixed-->
 <script type="text/javascript">
   // requires jquery library
 jQuery(document).ready(function() {
@@ -1521,5 +1515,19 @@ jQuery(document).ready(function() {
 
 </script>
 
+<script type="text/javascript">
+  $(".tb_cus_sup1").click(function(){
+    $(".tb_cus_sup1").addClass("tb_cs_sel");
+    $(".tb_cus_sup2").removeClass("tb_cs_sel");
+    $(".tb_cus_1").show();
+    $(".tb_cus_2").hide();
+  });
+  $(".tb_cus_sup2").click(function(){
+    $(".tb_cus_sup2").addClass("tb_cs_sel");
+    $(".tb_cus_sup1").removeClass("tb_cs_sel");
+    $(".tb_cus_2").show();
+    $(".tb_cus_1").hide();
+  });
+</script>
 </body>
 </html>
