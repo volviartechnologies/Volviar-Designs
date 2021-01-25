@@ -958,6 +958,8 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
+<div class="pop_2" style="display: none;" ></div>
+
 <!---inner_content_sections area_started-->
           <h1 class="h1_con">Employee Conduct Incident</h1>
 
@@ -1012,13 +1014,13 @@ function closeNav5() {
                 <th class="th_b2 tr_l">Employee Name
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee Name">
                 </th>
-                <th class="th_b8 tr_l">Category
+                <th class="th_b6 tr_l">Category
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Category">
                 </th>
                 <th class="th_b7 tr_c">Incident Date
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Incident Date">
                 </th>
-                <th class="th_b1 tr_c">Type
+                <th class="th_b5 tr_c">Type
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Type">
                 </th>
                 <th class="th_b1 tr_c">Severity
@@ -1027,7 +1029,7 @@ function closeNav5() {
                 <th class="th_b1 tr_c">Status
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Status">
                 </th>
-                <th class="th_b6">Actions</th>
+                <th class="th_b4">Actions</th>
               </tr>
              
             </thead>
@@ -1043,15 +1045,81 @@ function closeNav5() {
                 <td class="tr_c">Terminated</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <button class="btn act_btn bn1" title="Edit" data-toggle="modal" data-target="#leave_pop" >
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_cnfm" title="Confirm">
+                      <i class="fa fa-check"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm cnfm_bx">
+                        <div class="modal-header">
+                          <h5>Confirm</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to confirm this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                          <button class="btn btn-danger cls_cnfm">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                       <i class="fa fa-trash"></i>
-                    </button>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_ropn" title="Close Incident">
+                        <i class="fa fa-times"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm ropn_bx">
+                        <div class="modal-header">
+                          <h5>Close Incident</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to close this incident?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_ropn" id="InputToFocus3" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_ropn">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_ropn1" title="Termination">
+                        <i class="fa fa-user-times"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm ropn_bx1">
+                        <div class="modal-header">
+                          <h5>Termination</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to terminate this employee?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_ropn" id="InputToFocus4" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_ropn">No</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
                   <div class="btn_stl2"> 
                     <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
@@ -1556,5 +1624,53 @@ $(document).ready(function() {
 });
 </script>
 
+<script>
+$(document).ready(function(){
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });  
+  $(".opn_ropn1").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx1").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".pop_2, .btn-danger").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .cls_pop, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
+</script>
 </body>
 </html>
