@@ -2199,6 +2199,9 @@ span.box_ae{padding-right: 6px;}
 .pdng_tp00{padding-top: 10px;}
 .memo_box{width: 50%;height: auto;margin: auto;float: left;padding: 10px;background-color: #edf7ff;}
 .top_0h h3{margin-top: 0px;}
+.pdng_tp6{padding-top: 6px;}
+.descrp{width: 100%;height: auto;margin: auto;float: left;padding: 6px;background-color: #ffe5e5;border-radius: 8px;font-size: 13px;}
+.wid12 .spn_zp1{width:34%!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
