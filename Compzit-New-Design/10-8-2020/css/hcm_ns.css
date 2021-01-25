@@ -2211,6 +2211,7 @@ span.box_ae{padding-right: 6px;}
 .mnt_ls1a .act_cols { width: 30%!important;}
 .mnt_ls1a .act_cols .wid_8_3{padding: 3px;}
 .year_sec .fg2_inp1 {width: 74%!important;}
+.fg7_5{width: 18.5%;}
 }
 @media only screen and (max-width:800px){
 .mont_lst{margin-left: 0px;margin-top: 10px;}
@@ -2229,6 +2230,7 @@ span.box_ae{padding-right: 6px;}
 .lf_25.fg6{width:100%!important;}
 .net_am{margin-bottom: 40px;width: 100%;height: auto;margin: auto;float: left;}
 .mnt_ls1a .act_cols {width: 23%!important;}
+.fg7_5{width:50%;}
 
 
 }
@@ -2294,6 +2296,7 @@ span.box_ae{padding-right: 6px;}
   .box_tabz{margin-bottom:150px;}
   .mnt_ls1a .act_cols{width: 47%!important;}
   .sm1_1{width: 100%;height: auto;margin: auto;float: left;margin-bottom: 140px;}
+  .fg7_5{width:100%!important;}
 }
 @media only screen and (max-width:360px){
 .bg_wht{margin-bottom: 40px;}
