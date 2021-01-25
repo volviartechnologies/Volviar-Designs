@@ -1041,64 +1041,83 @@ function closeNav5() {
             <option>Low</option>
           </select> 
         </div>
+
+         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
+          <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
+        </div>
               
         <div class="form-group fg2 fg2_mr sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1 pad_l">Issue Memo:<span class="spn1"></span></label>
           <div class="check1">
             <div class="">
               <label class="switch">
-                <input type="checkbox" >
+                <input type="checkbox" class="chk_mem">
                 <span class="slider_tog round"></span>
               </label>
             </div>
           </div>
         </div>
-
-         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
-          <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
-        </div>
-        
         <div class="clearfix"></div>
         <div class="free_sp1"></div>
         <div class="devider"></div>
 
-        <h3>Notification<span class="spn1">*</span></h3>
+        <div class="fg6 top_0h">
+            <h3>Notification<span class="spn1">*</span></h3>
 
-        <div class="form-group fg8 fg2_mr sa_fg4 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Reporting Officer:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
+            <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+              <label for="email" class="fg2_la1 pad_l">Reporting Officer:<span class="spn1"></span></label>
+              <div class="check1">
+                <div class="">
+                  <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+              <label for="email" class="fg2_la1 pad_l">Division Manager:<span class="spn1"></span></label>
+              <div class="check1">
+                <div class="">
+                  <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+              <label for="email" class="fg2_la1 pad_l">Employee:<span class="spn1"></span></label>
+              <div class="check1">
+                <div class="">
+                  <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="form-group fg8 fg2_mr sa_fg4 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Division Manager:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
+        <div class="memo_box" style="display: none;">
+          <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+            <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
+            <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
+          </div>
+          <div class="form-group fg6 fg2_mr sa_fg4 sa_480">
+            <label for="email" class="fg2_la1 pad_l">Mail Notification:<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" >
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="form-group fg8 fg2_mr sa_fg4 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Employee:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
         </div>
         
         
@@ -1528,6 +1547,13 @@ jQuery(document).ready(function() {
     $(".tb_cus_2").show();
     $(".tb_cus_1").hide();
   });
+</script>
+<script>
+$(document).ready(function(){
+  $(".chk_mem").click(function(){
+    $(".memo_box").fadeToggle();
+  });
+});
 </script>
 </body>
 </html>

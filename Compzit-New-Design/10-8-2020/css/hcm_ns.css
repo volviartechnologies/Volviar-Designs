@@ -2197,6 +2197,8 @@ span.box_ae{padding-right: 6px;}
 .wid_90pz{width: 90%!important;}
 .fg_w10p{width: 98%!important;}
 .pdng_tp00{padding-top: 10px;}
+.memo_box{width: 50%;height: auto;margin: auto;float: left;padding: 10px;background-color: #edf7ff;}
+.top_0h h3{margin-top: 0px;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
