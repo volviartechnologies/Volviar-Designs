@@ -2202,6 +2202,20 @@ span.box_ae{padding-right: 6px;}
 .pdng_tp6{padding-top: 6px;}
 .descrp{width: 100%;height: auto;margin: auto;float: left;padding: 6px;background-color: #ffe5e5;border-radius: 8px;font-size: 13px;}
 .wid12 .spn_zp1{width:34%!important;}
+.stf_bx1 .rqst_img_box1{margin-top: -5px;}
+.stf_bx1 .rqst_box1_btn{height: 64px;margin-bottom: 12px;}
+.ad_Stf_bx1{width: 76%;min-height: 442px;max-height: 350px;overflow: auto;}
+.rqst_box1_btn h3{padding-top:24px; }
+.spl1_3{width: 33.33%;}
+.ad_Stf_bx1 .form-group{margin-bottom:6px;}
+.pdn_al10{padding: 14px;padding-top: 6px;}
+.mr_btm16{margin-bottom: 16px!important;}
+.box_1op1, .box_1op2, .box_1op3{max-height: 368px;overflow: auto;}
+.othr_dtl{width: 100%;height: auto;margin:auto;float: left;max-height: 430px;overflow: auto;overflow-x: hidden;}
+.ad_Stf_bx1 .form-group.fg6{margin-bottom: 0px;}
+.pdng_10pz{padding:10px;}
+.fix_bxf{max-height: 430px;overflow: auto;}
+.fix_bxf h3, .spl_stf_bx1 h3{margin-top: 0px!important;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
