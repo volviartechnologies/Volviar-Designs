@@ -2216,6 +2216,8 @@ span.box_ae{padding-right: 6px;}
 .pdng_10pz{padding:10px;}
 .fix_bxf{max-height: 430px;overflow: auto;}
 .fix_bxf h3, .spl_stf_bx1 h3{margin-top: 0px!important;}
+.downld1{top: 160px;background-color: #0d9695;}
+.downld1:hover{background-color: #14bfbe;}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
