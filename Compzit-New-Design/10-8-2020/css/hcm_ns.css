@@ -2204,7 +2204,7 @@ span.box_ae{padding-right: 6px;}
 .wid12 .spn_zp1{width:34%!important;}
 .stf_bx1 .rqst_img_box1{margin-top: -5px;}
 .stf_bx1 .rqst_box1_btn{height: 64px;margin-bottom: 12px;}
-.ad_Stf_bx1{width: 76%;min-height: 442px;max-height: 350px;overflow: auto;}
+.ad_Stf_bx1{width: 76%;min-height: 442px;max-height: 350px;overflow:hidden;}
 .rqst_box1_btn h3{padding-top:24px; }
 .spl1_3{width: 33.33%;}
 .ad_Stf_bx1 .form-group{margin-bottom:6px;}
