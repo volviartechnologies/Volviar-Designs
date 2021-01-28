@@ -2219,7 +2219,7 @@ span.box_ae{padding-right: 6px;}
 .downld1{top: 160px;background-color: #0d9695;}
 .downld1:hover{background-color: #14bfbe;}
 .hei70{height: 80px;margin-bottom: 22px;border:none;}
-.li_all{width: 100%;height: auto;margin: auto;float: left;background-color: #ddf9ff;padding:4px 4px; margin-top: 4px;font-size: 13px;border-radius: 30px;}
+.li_all{width:86%;height: auto;margin: auto;float:none;background-color: #fff;padding:4px 4px; margin-top: 4px;font-size: 13px;border-radius: 30px;border: 1px solid #8ac3f1;}
 .li_all li{list-style: none;text-align: center;}
 .neg_line{border-top: 4px solid #f33223;}
 .pos_line{border-top: 4px solid #67bf00;}
@@ -2298,6 +2298,7 @@ span.box_ae{padding-right: 6px;}
 
 .hei70:hover, .hei70:focus{transform: scale(1.05);transition: .5s;}
 
+
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
 .wid_8_3{width: 25%;}
@@ -2366,6 +2367,7 @@ span.box_ae{padding-right: 6px;}
 .mnt_ls1a .act_cols{width: 31%;}
 .sm1_1{width: 100%;height: auto;margin: auto;float: left;margin-bottom: 60px;}
 .year_sec {width: 100%;}
+.wid_98z{width: 96%!important;}
 }
 @media only screen and (max-width:500px){
   .fg43, .wid_54{width: 100%;}
