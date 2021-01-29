@@ -2218,13 +2218,13 @@ span.box_ae{padding-right: 6px;}
 .fix_bxf h3, .spl_stf_bx1 h3{margin-top: 0px!important;}
 .downld1{top: 160px;background-color: #0d9695;}
 .downld1:hover{background-color: #14bfbe;}
-.hei70{height: 80px;margin-bottom: 22px;border:none;outline: none;width: 22%;margin-right: 32px;}
+.hei70{height: 80px;margin-bottom:14px;border:none;outline: none;width: 22%;margin-right: 32px;}
 .li_all{width:86%;height: auto;margin: auto;float:none;background-color: #fff;padding:4px 4px; margin-top: 4px;font-size: 13px;border-radius: 30px;border: 1px solid #8ac3f1;}
 .li_all li{list-style: none;text-align: center;}
-.neg_line{border-left: 4px solid #f33223;}
-.pos_line{border-left: 4px solid #67bf00;}
+/*.neg_line{border-left: 4px solid #f33223;}
+.pos_line{border-left: 4px solid #67bf00;}*/
 .cat_nm{width: 100%;height: auto;margin: auto;float: left;}
-.cat_nm h5{width: 100%;height: auto;padding:2px 4px;text-transform: uppercase;}
+.cat_nm h5{width: 100%;height: auto;padding:2px 4px;text-transform: uppercase;text-align: left;}
 .nw_icdn{background-color: #ddf9ff;}
 .nw_icdn .li_all{background-color: #c4f5ff;}
 .mr_tp6{float:right;text-align: center;margin-right: 0px;padding-right: 4px;background-color: #bf4141!important;font-size: 10px;margin-top: -26px;}
@@ -2285,11 +2285,18 @@ span.box_ae{padding-right: 6px;}
 
 .slexz{opacity: 1;}
 
-.hei70:hover, .hei70:focus{transform: scale(1.05);transition: .5s;}
+.hei70:hover, .hei70:focus{box-shadow:1px 1px 15px #9cd6ff;border:1px solid #9cd6ff;}
 .wi100{width: 100%;margin: auto;float: none;}
 .neg_incd img{width: 36px;height: auto;margin: auto;float: left;}
 .btn_postv:hover, .btn_postv:focus{transform: scale(1.05);transition: .1s;}
-
+.mrb10{margin-bottom: 10px;width: 100%;height: auto;float: left;}
+.mrb10_pag .pagination{margin-bottom: 10px!important;}
+.ser_zz{margin-top: -35px;}
+.box_np{width: 28px;height: 28px;margin: auto;float: left;border-radius: 20px;margin-top: 12px;margin-left: 8px;line-height: 25px;}
+.box_neg{border:2px solid #f33223;color: #f33223;}
+.box_pos{border:2px solid #67bf00;color: #67bf00;}
+/*.mrb10_pag{margin-top: 16px;}
+*/
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
 .wid_8_3{width: 25%;}
