@@ -2302,6 +2302,9 @@ span.box_ae{padding-right: 6px;}
 .mrb_6{margin-bottom: 8px!important;}
 .rply_inp{width: 100%!important;}
 .box_bdr{box-shadow: none;border: 1px solid #ccc;}
+.mr_top_descr{margin-top: 12px;width: 100%;float: left;}
+.wid_48pz{width: 48%;}
+
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){

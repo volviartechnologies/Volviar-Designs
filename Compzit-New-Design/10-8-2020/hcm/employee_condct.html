@@ -1482,7 +1482,7 @@ function closeNav5() {
       </div>
       <div class="modal-body">
         <div class="pop_2_1" style="display: none;"></div>
-        <div class="col-md-5 mar_at flt_l box_emp_br pdng_tp6">
+        <div class="wid_48pz mar_at flt_l box_emp_br pdng_tp6">
           <div class="fg12 empl_pop_dtl">
             <h3>Employee Name 1</h3>
             <span>EMP0001</span>
@@ -1507,7 +1507,7 @@ function closeNav5() {
               </span></li>
             </ul>
           </div>
-          <div class="form-group fg12">
+          <div class="form-group fg12 mr_top_descr">
             <label for="pwd" class="fg2_la1">Conduct Incident:<span class="spn1"></span> </label>
             <div class="descrp">
               <p>This area for showing description about the employee conduct</p>
@@ -1535,7 +1535,7 @@ function closeNav5() {
             <label for="email" class="fg2_la1">Letter Received:<span class="spn1"></span></label>
             <div class="check1">
               <div class="">
-                <label class="switch">
+                <label class="switch" autofocus="on" id="not_op1">
                   <input type="checkbox">
                   <span class="slider_tog round"></span>
                 </label>
@@ -1543,7 +1543,7 @@ function closeNav5() {
             </div>
           </div>
           <div class="form-group fg12">
-            <label for="email" class="fg2_la1">Replay Message:<span class="spn1">*</span></label>
+            <label for="email" class="fg2_la1">Reply Message:<span class="spn1">*</span></label>
             <textarea type="text" class="form-control fg2_inp1 inp_mst rply_inp" placeholder="Replay Message"></textarea>
           </div>
         </div>
@@ -2146,6 +2146,14 @@ $(document).ready(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
     }
 });
+</script>
+
+
+<script type="text/javascript">
+
+$('#emply_condt').on('shown.bs.modal', function () {
+    $('#not_op1').focus();
+}) 
 </script>
 
 </body>
