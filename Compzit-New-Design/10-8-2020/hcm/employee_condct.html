@@ -1481,6 +1481,7 @@ function closeNav5() {
         </button>
       </div>
       <div class="modal-body">
+        <div class="pop_2_1" style="display: none;"></div>
         <div class="col-md-5 mar_at flt_l box_emp_br pdng_tp6">
           <div class="fg12 empl_pop_dtl">
             <h3>Employee Name 1</h3>
@@ -1494,37 +1495,82 @@ function closeNav5() {
           </div>
           <div class="fg_3_1 empl_pop_dtl wid_76_pz">
             <ul class="join_leav emp_dtl_bdr">
-              <li><span class="spn_zp1">Type:</span> <span>Positive</span></li>
-              <li class="bg_grn elg_2"><span class="spn_zp1">Priority:</span> <span>High</span></li>
               <li class="bg_red elg_2"><span class="spn_zp1">Incident Date:</span> <span>28/01/2021</span></li>
+              <li><span class="spn_zp1">Type:</span> <span>Positive 
+                <span class="box_np pop_up_ico box_pos">
+                  <i class="fa fa-thumbs-up"></i>
+                </span>
+              </li>
+              <li class="bg_grn elg_2"><span class="spn_zp1">Priority:</span> <span>Best <i class="pop_up_ico">
+                <img src="../images/icons/opp/po_img1.png">
+                </i>
+              </span></li>
             </ul>
           </div>
           <div class="form-group fg12">
-            <label for="pwd" class="fg2_la1">Description:<span class="spn1"></span> </label>
+            <label for="pwd" class="fg2_la1">Conduct Incident:<span class="spn1"></span> </label>
             <div class="descrp">
               <p>This area for showing description about the employee conduct</p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6 mar_at flt_r box_emp_br pdng_tp6">
-          <div class="fg12 empl_pop_dtl wid12">
-            <ul class="join_leav emp_dtl_bdr">
-              <li><span class="spn_zp1">From:</span> <span>Employee 1</span></li>
-              <li class="bg_red elg_2"><span class="spn_zp1">Issue Date:</span> <span>28/01/2021</span></li>
-              <li class="bg_grn elg_2"><span class="spn_zp1">Reason:</span> <span>Reason 1</span></li>
-            </ul>
+        <div class="fg6 mar_at flt_r">
+          <div class="fg12 mar_at flt_r box_emp_br pdng_tp6 mrb_6 box_bdr">
+            <div class="fg12 empl_pop_dtl wid12">
+              <ul class="join_leav emp_dtl_bdr">
+                <li><span class="spn_zp1">Reported / Issued by:</span> <span>Employee 1</span></li>
+                <li class="bg_red elg_2"><span class="spn_zp1">Date:</span> <span>28/01/2021</span></li>
+                <li class="bg_grn elg_2"><span class="spn_zp1">Incident Category:</span> <span>Incident Category 1</span></li>
+              </ul>
+            </div>
+            <div class="form-group fg12">
+              <label for="pwd" class="fg2_la1">Description:<span class="spn1"></span> </label>
+              <div class="descrp hgt_srt">
+                <p>This area for showing description about the employee conduct</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group fg4 sa_2 sa_640_i1 sa_480 mrb_6">
+            <label for="email" class="fg2_la1">Letter Received:<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
           </div>
           <div class="form-group fg12">
-            <label for="pwd" class="fg2_la1">Description:<span class="spn1"></span> </label>
-            <div class="descrp">
-              <p>This area for showing description about the employee conduct</p>
-            </div>
+            <label for="email" class="fg2_la1">Replay Message:<span class="spn1">*</span></label>
+            <textarea type="text" class="form-control fg2_inp1 inp_mst rply_inp" placeholder="Replay Message"></textarea>
           </div>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        <span class="dropdown dd_lft0 ">
+          <button type="submit" class="dropdown-toggle btn sub1 opn_aprvlz">Confirm</button>
+          <div class="dropdown-menu drop_dnm aprvlz_bx" style="display:none;">
+            <div class="modal-header">
+              <h5>Confirm</h5>
+              <button type="button" class="close cls_pop" title="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="head_txt">
+              An email would be send to concerned person. Are you sure to confirm?
+              <div class="clearfix"></div>
+            </div>
+            <div class="modal-footer">
+              <div class="flt_r">
+                <button class="btn btn-success cls_aprvl" id="InputToFocus5">Yes</button>
+                <button class="btn btn-danger cls_aprvl">No</button>
+              </div>
+            </div>
+          </div>
+        </span>
+        <button type="button" class="btn btn-danger btn_cls" data-dismiss="modal">Cancel</button>
         
       </div>
     </div>
@@ -2059,6 +2105,45 @@ $( document ).on( 'keydown', function ( e ) {
   $('.on_show').hide();
   $('.on_hide').show();
   $('.filtr_sec').removeClass("mr_400");
+    }
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_aprvlz").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".aprvlz_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, select, .btn_cls").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
     }
 });
 </script>
