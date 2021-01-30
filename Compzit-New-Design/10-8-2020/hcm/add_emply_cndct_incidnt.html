@@ -108,8 +108,10 @@ function closeNav5() {
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Save</button>
     <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub1 bt_b">Update</button>
+    <button type="submit" class="btn sub3 bt_b">Update & Close</button>
     <button type="submit" class="btn sub1">Confirm</button>
-    <button type="submit" class="btn sub4">Close Incident</button>
+    <button type="submit" class="btn sub4">Incident Closing</button>
     <button type="submit" class="btn sub4">Termination</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
     <button type="submit" class="btn sub2 bt_b">Clear</button>
@@ -963,112 +965,131 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Employee Conduct Incident</h2>
 
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Ref#:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="ref0001" disabled="">
-        </div>
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst" autofocus="">
-            <option>Business Unit 1</option>
-            <option>Business Unit 2</option>
-            <option>Business Unit 3</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Department:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Department 1</option>
-            <option>Department 2</option>
-            <option>Department 3</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Division:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Department 1</option>
-            <option>Department 2</option>
-            <option>Department 3</option>
-          </select> 
-        </div>
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Employee 1</option>
-            <option>Employee 2</option>
-            <option>Employee 3</option>
-          </select> 
-        </div>
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Employee ID:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Emp0001</option>
-            <option>Emp0001</option>
-            <option>Emp0001</option>
-          </select> 
-        </div>
-
-         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Incident Date:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="08/10/2019" disabled="">
-        </div>
-
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Category 1</option>
-            <option>Category 2</option>
-            <option>Category 3</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 sa_640 mrbx_0">
-          <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
-          <div class="form-group fg12 sa_640 gur_opt">
-            <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn1.png"></i> <span>Positive</span></button>
-            <button class="tb_btz tb_cs tb_cus_sup2 wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn2.png"></i> <span>Negative</span></button>
-          </div>
-        </div>
-
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Severity:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Critical</option>
-            <option>High</option>
-            <option>Medium</option>
-            <option>Low</option>
-          </select> 
-        </div>
-
-         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
-          <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
-        </div>
-              
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Issue Memo:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" class="chk_mem">
-                <span class="slider_tog round"></span>
-              </label>
+        <div class="fg4">
+          <div class="mar_at flt_l box_emp_br wid_98_pz">
+            <div class="clearfix"></div>
+            <div class="fg12 empl_pop_dtl">
+              <h3>Employee Name 1</h3>
+              <span>EMP0001</span>
+            </div>
+            <div class="devider"></div>
+            <div class="fg5">
+              <div class="user_im_1">
+                <img src="../images/hcm/user.jpg">
+              </div>
+            </div>
+            <div class="fg_3_1 empl_pop_dtl wid_76_pz">
+              <ul class="join_leav emp_dtl_bdr">
+                <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
+                <li class="bg_red"><span class="spn_zp1">Division:</span> <span class="frz_ll">Division 1</span></li>
+                <li class="bg_red"><span class="spn_zp1">Business Unit:</span> <span class="frz_ll">Business Unit 1</span></li>
+                <li class="bg_red"><span class="spn_zp1">Ref#:</span> <span class="frz_ll">Ref0001</span></li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="clearfix"></div>
-        <div class="free_sp1"></div>
-        <div class="devider"></div>
+        <div class="fg6">
+          <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+            <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
+            <select type="text" class="form-control fg2_inp1 inp_mst" autofocus="on">
+              <option>Employee 1</option>
+              <option>Employee 2</option>
+              <option>Employee 3</option>
+            </select> 
+          </div>
+           <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+            <label for="email" class="fg2_la1">Incident Date:<span class="spn1">*</span></label>
+            <input type="text" class="form-control fg2_inp1" placeholder="08/10/2019" disabled="">
+          </div>
 
-        <div class="fg6 top_0h">
-            <h3>Notification<span class="spn1">*</span></h3>
+          <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+            <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
+            <select type="text" class="form-control fg2_inp1 inp_mst">
+              <option>Category 1</option>
+              <option>Category 2</option>
+              <option>Category 3</option>
+            </select> 
+          </div>
 
-            <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+          <div class="form-group fg6 sa_640 mrbx_0">
+            <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
+            <div class="form-group fg12 sa_640 gur_opt">
+              <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn1.png"></i> <span>Positive</span></button>
+              <button class="tb_btz tb_cs tb_cus_sup2 wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn2.png"></i> <span>Negative</span></button>
+            </div>
+          </div>
+
+          <div class="fg6">
+            <div class="tab_postv wid_pn90" style="display: block;">
+              <button class="btn_postv btn_p1 seltd_btn">
+                <i class="wi100"><img src="../images/icons/opp/po_img1.png"></i><br> Best
+              </button>
+              <button class="btn_postv btn_p2">
+                <i class="wi100"><img src="../images/icons/opp/po_img2.png"></i><br> Good
+              </button>
+              <button class="btn_postv btn_p3">
+                <i class="wi100"><img src="../images/icons/opp/po_img3.png"></i><br> Satisfactory
+              </button>
+            </div>
+            <div class="tab_negtv wid_pn90" style="display:none;">
+              <button class="btn_postv btn_p1 seltd_btn">
+                <i class="wi100"><img src="../images/icons/opp/ne1.png"></i><br> Critical
+              </button>
+              <button class="btn_postv btn_p2">
+                <i class="wi100"><img src="../images/icons/opp/ne2.png"></i><br> High
+              </button>
+              <button class="btn_postv btn_p3">
+                <i class="wi100"><img src="../images/icons/opp/ne3.png"></i><br> Medium
+              </button>
+              <button class="btn_postv btn_p4">
+                <i class="wi100"><img src="../images/icons/opp/ne4.png"></i><br> Low
+              </button>
+            </div>
+          </div>
+
+           <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+            <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
+            <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
+          </div>
+          <div class="clearfix"></div>
+          <div class="free_sp1"></div>
+          <div class="devider"></div>
+
+                
+          <div class="form-group fg7 fg2_mr sa_fg4 sa_640_i1 sa_480">
+            <label for="email" class="fg2_la1 pad_l">Issue Memo:<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" class="chk_mem">
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="memo_box " style="display: none;">
+            <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+              <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
+              <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
+            </div>
+            <div class="form-group fg6 fg2_mr sa_fg4 sa_480">
+              <label for="email" class="fg2_la1 pad_l">Mail Notification:<span class="spn1"></span></label>
+              <div class="check1">
+                <div class="">
+                  <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col_bdr1">
+          <h3>Notification<span class="spn1">*</span></h3>
+          <div class="devider"></div>
+
+            <div class="form-group fg12 fg2_mr sa_fg4 sa_480">
               <label for="email" class="fg2_la1 pad_l">Reporting Officer:<span class="spn1"></span></label>
               <div class="check1">
                 <div class="">
@@ -1080,7 +1101,7 @@ function closeNav5() {
               </div>
             </div>
 
-            <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+            <div class="form-group fg12 fg2_mr sa_fg4 sa_480">
               <label for="email" class="fg2_la1 pad_l">Division Manager:<span class="spn1"></span></label>
               <div class="check1">
                 <div class="">
@@ -1092,7 +1113,7 @@ function closeNav5() {
               </div>
             </div>
 
-            <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+            <div class="form-group fg12 fg2_mr sa_fg4 sa_480">
               <label for="email" class="fg2_la1 pad_l">Employee:<span class="spn1"></span></label>
               <div class="check1">
                 <div class="">
@@ -1103,38 +1124,22 @@ function closeNav5() {
                 </div>
               </div>
             </div>
-          </div>
-        <div class="memo_box" style="display: none;">
-          <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
-            <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
-          </div>
-          <div class="form-group fg6 fg2_mr sa_fg4 sa_480">
-            <label for="email" class="fg2_la1 pad_l">Mail Notification:<span class="spn1"></span></label>
-            <div class="check1">
-              <div class="">
-                <label class="switch">
-                  <input type="checkbox" >
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-
         </div>
+
         
-        
-   
+
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
+        <div class="free_sp1"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
             <button type="submit" class="btn sub1">Save</button>
             <button type="submit" class="btn sub3">Save & Close</button>
+            <button type="submit" class="btn sub1">Update</button>
+            <button type="submit" class="btn sub3">Update & Close</button>
             <button type="submit" class="btn sub1">Confirm</button>
-            <button type="submit" class="btn sub4">Close Incident</button>
+            <button type="submit" class="btn sub4">Incident Closing</button>
             <button type="submit" class="btn sub4">Termination</button>
             <button type="submit" class="btn sub4">Cancel</button>
             <button type="submit" class="btn sub2">Clear</button>
@@ -1544,15 +1549,46 @@ jQuery(document).ready(function() {
   $(".tb_cus_sup1").click(function(){
     $(".tb_cus_sup1").addClass("tb_cs_sel");
     $(".tb_cus_sup2").removeClass("tb_cs_sel");
-    $(".tb_cus_1").show();
-    $(".tb_cus_2").hide();
+    $(".tab_postv").fadeIn();
+    $(".tab_negtv").hide();
   });
   $(".tb_cus_sup2").click(function(){
     $(".tb_cus_sup2").addClass("tb_cs_sel");
     $(".tb_cus_sup1").removeClass("tb_cs_sel");
-    $(".tb_cus_2").show();
-    $(".tb_cus_1").hide();
+    $(".tab_postv").hide();
+    $(".tab_negtv").fadeIn();
   });
+  //buttons for report section//
+  $(".tab_postv .btn_p1").click(function(){
+    $(".tab_postv .btn_p1").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p2").click(function(){
+    $(".tab_postv .btn_p2").addClass("seltd_btn");
+    $(".tab_postv .btn_p1, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p3").click(function(){
+    $(".tab_postv .btn_p3").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p1, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+
+  $(".tab_negtv .btn_p1").click(function(){
+    $(".tab_negtv .btn_p1").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p2").click(function(){
+    $(".tab_negtv .btn_p2").addClass("seltd_btn");
+    $(".tab_negtv .btn_p1, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p3").click(function(){
+    $(".tab_negtv .btn_p3").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p1, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p4").click(function(){
+    $(".tab_negtv .btn_p4").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p1").removeClass("seltd_btn");
+  });
+
 </script>
 <script>
 $(document).ready(function(){
