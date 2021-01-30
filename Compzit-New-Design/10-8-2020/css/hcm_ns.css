@@ -2308,14 +2308,14 @@ span.box_ae{padding-right: 6px;}
 .cnfmb:hover, .cnfmb:focus{color: #fff!important;background-color: #67bf00!important;}
 .mr_t18{margin-top: -18px;}
 .spn_fw{ margin: auto;float: left;margin-top: 0px;width:83%;height: 0px;}
-.btn_recive{background-color: transparent;border:none;padding:0px;font-size: 20px;color: #34c461;}
+.btn_recive{background-color: transparent;border:none;padding:0px;font-size:16px;color: #34c461;}
 .recv_bx{top: -146px;right: 21px;max-height: 200px;min-height: 163px;}
 .recv_bx:before{right: -11px;top: 145px;bottom: auto;border-left: 0px;}
 .recv_bx .head_txt{padding:0px 10px;overflow: auto;max-height: 170px;border-radius: 0px 0px 8px 8px;}
-
+.recv_bx .modal-header{padding:3px 6px;}
 /*========message box=======*/
 .container1z {
-  border: 2px solid #beebff;
+  border: .5px solid #beebff;
   background-color:#f9fffa;
   border-radius: 5px;
   padding:4px;
@@ -2356,6 +2356,7 @@ span.box_ae{padding-right: 6px;}
 .container1z h5{width: 100%;color:#4391d2;margin: auto;float: left;}
 .deviderz{width: 100%;height:10px;margin: auto;float: left;background-color:transparent;border:none;border-bottom: 1px solid #ccc;margin-bottom: 8px;text-align: center;}
 .deviderz .date_sp{width: auto;margin: auto;float: none;background-color: #fff;font-size: 9px;padding:1px 8px;}
+
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
