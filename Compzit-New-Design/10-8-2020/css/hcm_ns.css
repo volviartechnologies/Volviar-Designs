@@ -2219,7 +2219,7 @@ span.box_ae{padding-right: 6px;}
 .fix_bxf h3, .spl_stf_bx1 h3{margin-top: 0px!important;}
 .downld1{top: 160px;background-color: #0d9695;}
 .downld1:hover{background-color: #14bfbe;}
-.hei70{height: 80px;margin-bottom:14px;border:none;outline: none;width: 22%;margin-right: 32px;}
+.hei70{height: 80px;margin-bottom:14px;border:none;outline: none;width:100%;/*margin-right: 32px;*/}
 .li_all{width:86%;height: auto;margin: auto;float:none;background-color: #fff;padding:4px 4px; margin-top: 4px;font-size: 13px;border-radius: 30px;border: 1px solid #8ac3f1;}
 .li_all li{list-style: none;text-align: center;}
 /*.neg_line{border-left: 4px solid #f33223;}
@@ -2304,7 +2304,59 @@ span.box_ae{padding-right: 6px;}
 .box_bdr{box-shadow: none;border: 1px solid #ccc;}
 .mr_top_descr{margin-top: 12px;width: 100%;float: left;}
 .wid_48pz{width: 48%;}
+.cnfmb{    margin-left: 7px;height: 18px;border: 1px solid #67bf00;background-color: #fff!important;color: #67bf00;padding-left: 3px;margin-top: -1px;}
+.cnfmb:hover, .cnfmb:focus{color: #fff!important;background-color: #67bf00!important;}
+.mr_t18{margin-top: -18px;}
+.spn_fw{ margin: auto;float: left;margin-top: 0px;width:83%;height: 0px;}
+.btn_recive{background-color: transparent;border:none;padding:0px;font-size: 20px;color: #34c461;}
+.recv_bx{top: -146px;right: 21px;max-height: 200px;min-height: 163px;}
+.recv_bx:before{right: -11px;top: 145px;bottom: auto;border-left: 0px;}
+.recv_bx .head_txt{padding:0px 10px;overflow: auto;max-height: 170px;}
 
+/*========message box=======*/
+.container1z {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container1z::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container1z img {
+  float: left;
+  max-width: 30px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container1z img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+.container1z h5{width: 100%;color: #000;margin: auto;float: left;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
