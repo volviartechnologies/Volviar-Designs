@@ -963,46 +963,12 @@ function closeNav5() {
 <!---inner_content_sections area_started-->
           <h1 class="h1_con">Employee Conduct Incident</h1>
 
-          <div class="form-group fg2 sa_2 sa_480">
-            <label for="email" class="fg2_la1">Business Unit:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_w10p">
-              <option>Business Unit 1</option>
-              <option>Business Unit 2</option>
-              <option>Business Unit 3</option>
-            </select> 
-          </div>
-
-          <div class="form-group fg2 sa_2 sa_480">
-            <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_w10p">
-              <option>Department 1</option>
-              <option>Department 2</option>
-              <option>Department 3</option>
-            </select> 
-          </div>
-
-          <div class="form-group fg2 sa_2 sa_480">
-            <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_w10p">
-              <option>Division 1</option>
-              <option>Division 2</option>
-              <option>Division 3</option>
-            </select> 
-          </div>
-
-          <div class="fg2 fg2_blk">
-            <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-            <button class="submit_ser"></button>
-            <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
-          </div>
-
-
           <div class="clearfix"></div>
           <!-- <div class="free_sp1"></div> -->
           <div class="devider"></div>
 
           <div class="r_800">
-        <table id="example" class="display table-bordered tbl_800" cellspacing="0" width="100%">
+        <table id="example" class="display table-bordered tbl_800 tbl_xa" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
                 <th class="th_b7 tr_l">Ref#
@@ -1011,7 +977,7 @@ function closeNav5() {
                 <th class="th_b7 tr_l">Employee ID
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
                 </th>
-                <th class="th_b2 tr_l">Employee Name
+                <th class="th_b4 tr_l">Employee Name
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee Name">
                 </th>
                 <th class="th_b6 tr_l">Category
@@ -1029,6 +995,7 @@ function closeNav5() {
                 <th class="th_b1 tr_c">Status
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Status">
                 </th>
+                <th class="th_b5 tr_c">Recieved</th>
                 <th class="th_b4">Actions</th>
               </tr>
              
@@ -1043,6 +1010,43 @@ function closeNav5() {
                 <td class="tr_c">Positive</td>
                 <td class="tr_c">High</td>
                 <td class="tr_c">Terminated</td>
+                <td class="tr_c">
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn_recive opn_recv">
+                        <i class="fa fa-toggle-on"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm recv_bx">
+                        <div class="modal-header">
+                          <h5>Conversation</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          <div class="container1z flt_l">
+                            <h5>Finance Manager<span class="time-right">11:00</span></h5><br>
+                            <p>Hello. How are you today?</p>
+                            
+                          </div>
+
+                          <div class="container1z darker flt_r">
+                            <h5>Employee 1<span class="time-right">11:00</span></h5><br>
+                            <p>Hey! I'm fine. Thanks for asking!</p>
+                          </div>
+                          <div class="container1z flt_l">
+                            <h5>Finance Manager<span class="time-right">11:00</span></h5><br>
+                            <p>Hello. How are you today?</p>
+                            
+                          </div>
+
+                          <div class="container1z darker flt_r">
+                            <h5>Employee 1<span class="time-right">11:00</span></h5><br>
+                            <p>Hey! I'm fine. Thanks for asking!</p>
+                          </div>
+                        </div>
+                      </div>
+                    </span>
+                </td>
                 <td>
                   <div class="btn_stl1">
                     <button class="btn act_btn bn1" title="Edit" data-toggle="modal" data-target="#leave_pop" >
@@ -1085,12 +1089,12 @@ function closeNav5() {
                       </div>
                     </span>
                     <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn3 opn_ropn" title="Close Incident">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_ropn" title="Close this Incident">
                         <i class="fa fa-times"></i>
                       </button>
                       <div class="dropdown-menu drop_dnm ropn_bx">
                         <div class="modal-header">
-                          <h5>Close Incident</h5>
+                          <h5>Close this Incident</h5>
                           <button type="button" class="close cls_pop" title="Close">
                             <span aria-hidden="true">×</span>
                           </button>
@@ -1103,12 +1107,12 @@ function closeNav5() {
                       </div>
                     </span>
                     <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn3 opn_ropn1" title="Termination">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_ropn1" title="Employee Termination">
                         <i class="fa fa-user-times"></i>
                       </button>
                       <div class="dropdown-menu drop_dnm ropn_bx1">
                         <div class="modal-header">
-                          <h5>Termination</h5>
+                          <h5>Employee Termination</h5>
                           <button type="button" class="close cls_pop" title="Close">
                             <span aria-hidden="true">×</span>
                           </button>
@@ -1206,7 +1210,111 @@ function closeNav5() {
   </p>
 </div>
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
+
+
+
+
+
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
+<div class="filtr_sec mr_400">
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
+    <div class="box_cnt_zz">
+      <div class="clearfix"></div>
+      <div class="form-group fg12 mrb10">
+        <label for="email" class="fg2_la1">Business Unit:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="InputToFocus1" autofocus="">
+          <option>Business Unit 1</option>
+          <option>Business Unit 2</option>
+          <option>Business Unit 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg12 mrb10">
+        <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Department 1</option>
+          <option>Department 2</option>
+          <option>Department 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg12 mrb10">
+        <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Division 1</option>
+          <option>Division 2</option>
+          <option>Division 3</option>
+        </select> 
+      </div>
+      <div class="fg12 bg_clr1 mrb10">
+        <label for="email" class="fg2_la1">Incident Date:<span class="spn1"></span></label>
+        <div class="form-group fg6 wid_dt52">
+          <label for="pwd" class="fg2_la1 wid_50fx">From:<span class="spn1"></span> </label>
+          <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr dt_fltr" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg6 wid_dt47">
+          <label for="pwd" class="fg2_la1 wid_50fx">To:<span class="spn1"></span> </label>
+          <div id="datepicker" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr dt_fltr" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group fg12 sa_640 mrbx_0 mrb10">
+        <label for="email" class="fg2_la1">Incident Type:<span class="spn1">*</span></label>
+        <div class="form-group fg12 sa_640 gur_opt">
+          <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn1.png"></i> <span>Positive</span></button>
+          <button class="tb_btz tb_cs tb_cus_sup2 wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn2.png"></i> <span>Negative</span></button>
+        </div>
+      </div>
+      <div class="fg12">
+        <div class="tab_postv" style="display: block;">
+          <button class="btn_postv btn_p1 seltd_btn">
+            <i class="wi100"><img src="../images/icons/opp/po_img1.png"></i><br> Best
+          </button>
+          <button class="btn_postv btn_p2">
+            <i class="wi100"><img src="../images/icons/opp/po_img2.png"></i><br> Good
+          </button>
+          <button class="btn_postv btn_p3">
+            <i class="wi100"><img src="../images/icons/opp/po_img3.png"></i><br> Satisfactory
+          </button>
+        </div>
+        <div class="tab_negtv" style="display:none;">
+          <button class="btn_postv btn_p1 seltd_btn">
+            <i class="wi100"><img src="../images/icons/opp/ne1.png"></i><br> Critical
+          </button>
+          <button class="btn_postv btn_p2">
+            <i class="wi100"><img src="../images/icons/opp/ne2.png"></i><br> High
+          </button>
+          <button class="btn_postv btn_p3">
+            <i class="wi100"><img src="../images/icons/opp/ne3.png"></i><br> Medium
+          </button>
+          <button class="btn_postv btn_p4">
+            <i class="wi100"><img src="../images/icons/opp/ne4.png"></i><br> Low
+          </button>
+        </div>
+      </div>
+      <div class="form-group fg12 mrb10">
+        <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f inp_mst">
+          <option>Confirmation Pending</option>
+          <option>Confirmed</option>
+          <option>Incident Closed</option>
+          <option>Employee Termination</option>
+        </select> 
+      </div>
+    </div>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox bt_za1 fix_serfl"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
+  </div>
+</div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1631,6 +1739,11 @@ $(document).ready(function(){
     $(".cnfm_bx").show( 300);
     $('#InputToFocus1').focus();
   });
+  $(".opn_recv").click(function(){
+    $(".pop_2").fadeIn();
+    $(".recv_bx").show( 300);
+    $('#InputToFocus1_1').focus();
+  });
   $(".opn_dlt").click(function(){
     $(".pop_2").fadeIn();
     $(".dlt_bx").show( 300);
@@ -1646,10 +1759,10 @@ $(document).ready(function(){
     $(".ropn_bx1").show( 300);
     $('#InputToFocus4').focus();
   });
-  $(".pop_2, .btn-danger").click(function(){
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
-  $(".dropdown-toggle, .act_btn, .cls_pop, .paginate_button").focus(function(){
+  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
 });
@@ -1669,8 +1782,94 @@ $(document).ready(function(){
     if (e.which == 27) {
         $(".overlayInner").fadeOut(300); 
     $(".drop_dnm, .pop_2").fadeOut();
+  $('.filtr_sec').removeClass("mr_400");
     }
 });
 </script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+  $('#InputToFocus1').focus();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+  });
+  $(".tb_cus_sup1").click(function(){
+    $(".tb_cus_sup1").addClass("tb_cs_sel");
+    $(".tb_cus_sup2").removeClass("tb_cs_sel");
+    $(".tab_postv").fadeIn();
+    $(".tab_negtv").hide();
+  });
+  $(".tb_cus_sup2").click(function(){
+    $(".tb_cus_sup2").addClass("tb_cs_sel");
+    $(".tb_cus_sup1").removeClass("tb_cs_sel");
+    $(".tab_postv").hide();
+    $(".tab_negtv").fadeIn();
+  });
+  //buttons for report section//
+  $(".tab_postv .btn_p1").click(function(){
+    $(".tab_postv .btn_p1").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p2").click(function(){
+    $(".tab_postv .btn_p2").addClass("seltd_btn");
+    $(".tab_postv .btn_p1, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p3").click(function(){
+    $(".tab_postv .btn_p3").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p1, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+
+  $(".tab_negtv .btn_p1").click(function(){
+    $(".tab_negtv .btn_p1").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p2").click(function(){
+    $(".tab_negtv .btn_p2").addClass("seltd_btn");
+    $(".tab_negtv .btn_p1, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p3").click(function(){
+    $(".tab_negtv .btn_p3").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p1, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p4").click(function(){
+    $(".tab_negtv .btn_p4").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p1").removeClass("seltd_btn");
+  });
+
+});
+</script>
+
 </body>
 </html>
