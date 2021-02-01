@@ -1256,19 +1256,20 @@ function closeNav5() {
                 <tr>
                   <td class="tr_l">Schedule 1</td>
                   <td class=" tr_l">
-                    <select type="text" class="fg2_inp2 tr_l" disabled="">
+                    <select type="text" class="fg2_inp2 tr_l">
                       <option>Good</option>
                     </select>
                   </td>
                   <td class=" tr_l">
-                    <select type="text" class="fg2_inp2 tr_l" disabled="">
+                    <select type="text" class="fg2_inp2 tr_l">
                       <option>Qualified</option>
                     </select>
                   </td>
                   <td class="tr_c">
-                    <select type="text" class="fg2_inp2 tr_c" disabled="">
-                      <option>08/01/2020</option>
-                    </select>
+                    <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                      <input class="form-control inp_bdr hei_20" type="text">
+                      <span class="input-group-addon date1 hei_20_f"><i class="fa fa-calendar"></i></span>
+                    </div>
                   </td>
                   <td>
                     <select type="text" class="fg2_inp2 tr_l" disabled="">
@@ -1304,6 +1305,7 @@ function closeNav5() {
                           <button class="btn btn-danger cls_cnfm" id="InputToFocus11">Close</button>
                         </div>
                       </div>
+                    </span>
                     </div>
                   </td>
                 </tr>
@@ -1317,6 +1319,7 @@ function closeNav5() {
             <i class="fa fa-print"></i>
           </button>
         </div>
+        <button type="button" class="btn btn-success">Save</button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -1573,32 +1576,20 @@ function myFunction_b() {
 }
 </script>
 
-
-
+<!---date_pickers--->
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
+<!--date_picker--->
 
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker1').datepicker({
-      uiLibrary: 'bootstrap'
-    });
-});
-</script>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker2').datepicker({
-      uiLibrary: 'bootstrap'
-    });
-});
-</script>
-
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
 
 
 <script type="text/javascript">
