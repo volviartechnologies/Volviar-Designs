@@ -965,6 +965,8 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Employee Conduct Incident</h2>
 
+        <div class="pop_2" style="display: none;" ></div>
+
         <div class="fg4">
           <div class="mar_at flt_l box_emp_br wid_98_pz">
             <div class="clearfix"></div>
@@ -988,8 +990,8 @@ function closeNav5() {
             </div>
           </div>
         </div>
-        <div class="fg6">
-          <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+        <div class="fg_3_1 box_rg_1">
+          <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
             <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
             <select type="text" class="form-control fg2_inp1 inp_mst" autofocus="on">
               <option>Employee 1</option>
@@ -997,12 +999,8 @@ function closeNav5() {
               <option>Employee 3</option>
             </select> 
           </div>
-           <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Incident Date:<span class="spn1">*</span></label>
-            <input type="text" class="form-control fg2_inp1" placeholder="08/10/2019" disabled="">
-          </div>
 
-          <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+          <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
             <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
             <select type="text" class="form-control fg2_inp1 inp_mst">
               <option>Category 1</option>
@@ -1011,7 +1009,15 @@ function closeNav5() {
             </select> 
           </div>
 
-          <div class="form-group fg6 sa_640 mrbx_0">
+          <div class="form-group fg4 sa_o_fg4 sa_2 sa_640_i1  sa_480">
+            <label for="pwd" class="fg2_la1">Incident Date:<span class="spn1">*</span></label>
+            <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr inp_mst z_1a" id="dte1" type="text">
+              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div>
+
+          <div class="form-group fg4 sa_640 mrbx_0">
             <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
             <div class="form-group fg12 sa_640 gur_opt">
               <button class="tb_btz tb_cs tb_cus_sup1 tb_cs_sel wid_45pz"><i class="img_plcy"><img src="../images/icons/opp/pn1.png"></i> <span>Positive</span></button>
@@ -1019,7 +1025,7 @@ function closeNav5() {
             </div>
           </div>
 
-          <div class="fg6">
+          <div class="fg4">
             <div class="tab_postv wid_pn90" style="display: block;">
               <button class="btn_postv btn_p1 seltd_btn">
                 <i class="wi100"><img src="../images/icons/opp/po_img1.png"></i><br> Best
@@ -1046,15 +1052,6 @@ function closeNav5() {
               </button>
             </div>
           </div>
-
-           <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
-            <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
-            <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
-          </div>
-          <div class="clearfix"></div>
-          <div class="free_sp1"></div>
-          <div class="devider"></div>
-
                 
           <div class="form-group fg7 fg2_mr sa_fg4 sa_640_i1 sa_480">
             <label for="email" class="fg2_la1 pad_l">Issue Memo:<span class="spn1"></span></label>
@@ -1067,6 +1064,57 @@ function closeNav5() {
               </div>
             </div>
           </div>
+          <div class="clearfix"></div>
+
+          <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
+            <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
+            <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Description"></textarea>
+          </div>
+
+          <div class="col_bdr1">
+            <h3>Notification<span class="spn1">*</span></h3>
+            <div class="devider"></div>
+            <div class="clearfix"></div>
+
+              <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+                <label for="email" class="fg2_la1 pad_l">Reporting Officer:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+                <label for="email" class="fg2_la1 pad_l">Division Manager:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group fg4 fg2_mr sa_fg4 sa_480">
+                <label for="email" class="fg2_la1 pad_l">Employee:<span class="spn1"></span></label>
+                <div class="check1">
+                  <div class="">
+                    <label class="switch">
+                      <input type="checkbox" >
+                      <span class="slider_tog round"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="free_sp1"></div>
           <div class="memo_box " style="display: none;">
             <div class="form-group fg6 sa_fg4 sa_640_i1 sa_480">
               <label for="email" class="fg2_la1">Description:<span class="spn1">*</span></label>
@@ -1084,46 +1132,46 @@ function closeNav5() {
               </div>
             </div>
           </div>
+          <span class="dropdown dd_lft0 flt_r">
+            <button class="dropdown-toggle btn_recive opn_recv rcv_btn" title="Received">
+              <i class="fa fa-check-square"></i>
+            </button>
+            <div class="dropdown-menu drop_dnm recv_bx rcv_ad1">
+              <div class="modal-header">
+                <h5>Conversation</h5>
+                <button type="button" class="close cls_pop" title="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="head_txt">
+                <div class="container1z flt_l">
+                  <h5>Finance Manager<span class="time-right">11:00 AM</span></h5><br>
+                  <p>Hello. How are you today?</p>
+                  
+                </div>
+
+                <div class="container1z darker flt_r">
+                  <h5>Employee 1<span class="time-right">11:00</span></h5><br>
+                  <p>Hey! I'm fine. Thanks for asking!</p>
+                </div>
+                <div class="deviderz">
+                  <span class="date_sp">30.01.2021 Saturday</span>
+                </div>
+                <div class="container1z flt_l">
+                  <h5>Finance Manager<span class="time-right">11:00</span></h5><br>
+                  <p>Hello. How are you today?</p>
+                  
+                </div>
+
+                <div class="container1z darker flt_r">
+                  <h5>Employee 1<span class="time-right">11:00</span></h5><br>
+                  <p>Hey! I'm fine. Thanks for asking!</p>
+                </div>
+              </div>
+            </div>
+          </span>
         </div>
-        <div class="col_bdr1">
-          <h3>Notification<span class="spn1">*</span></h3>
-          <div class="devider"></div>
-
-            <div class="form-group fg12 fg2_mr sa_fg4 sa_480">
-              <label for="email" class="fg2_la1 pad_l">Reporting Officer:<span class="spn1"></span></label>
-              <div class="check1">
-                <div class="">
-                  <label class="switch">
-                    <input type="checkbox" >
-                    <span class="slider_tog round"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group fg12 fg2_mr sa_fg4 sa_480">
-              <label for="email" class="fg2_la1 pad_l">Division Manager:<span class="spn1"></span></label>
-              <div class="check1">
-                <div class="">
-                  <label class="switch">
-                    <input type="checkbox" >
-                    <span class="slider_tog round"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group fg12 fg2_mr sa_fg4 sa_480">
-              <label for="email" class="fg2_la1 pad_l">Employee:<span class="spn1"></span></label>
-              <div class="check1">
-                <div class="">
-                  <label class="switch">
-                    <input type="checkbox" >
-                    <span class="slider_tog round"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
+        <div>
         </div>
 
         
@@ -1595,6 +1643,52 @@ $(document).ready(function(){
   $(".chk_mem").click(function(){
     $(".memo_box").fadeToggle();
   });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_recv").click(function(){
+    $(".pop_2").fadeIn();
+    $(".recv_bx").show( 300);
+    $('#InputToFocus1_1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });  
+  $(".opn_ropn1").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx1").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
 });
 </script>
 </body>
