@@ -1058,7 +1058,7 @@ function closeNav5() {
                   <td class=" tr_l"><a href="#">CAND_162485_0.csv</a></td>
                   <td>
                     <div class="btn_stl1">
-                        <button class="btn act_btn bn2" title="Evaluation" data-toggle="modal" data-target="#view_eval1">
+                        <button class="btn act_btn bn2 bn_opn1" title="Evaluation" data-toggle="modal" data-target="#view_eval1">
                           <i class="fa fa-history"></i>
                         </button>
                     </div>
@@ -1279,8 +1279,8 @@ function closeNav5() {
                   <td>
                     <div class="btn_stl1">
                     <span class="dropdown dd_lft0">
-                      <button class="dropdown-toggle btn act_btn bn4 opn_aprvl1" title="Evaluation">
-                        <i class="fa fa-list-alt"></i>
+                      <button class="dropdown-toggle btn act_btn bn4 opn_aprvl1" title="Assessment">
+                        <i class="fa fa-pencil-square"></i>
                       </button>
                       <div class="dropdown-menu drop_dnm aprvl_bx1 rat_q1 assess1">
                         <div class="head_txt bdr_max">
@@ -1313,7 +1313,7 @@ function closeNav5() {
                                       <option>option 2</option>
                                       <option>option 3</option>
                                     </select>
-                                    <button class="wid_10p" title="Add Interview Category" onclick="location.href = 'add_interview_cat.html';">
+                                    <button class="wid_10p" title="Add Interview Category" data-toggle="modal" data-target="#add_pop">
                                       <i class="fa fa-plus"></i>
                                     </button>
                                   </td>
@@ -1336,7 +1336,7 @@ function closeNav5() {
                                       <option>option 2</option>
                                       <option>option 3</option>
                                     </select>
-                                    <button class="wid_10p" title="Add Interview Category" onclick="location.href = 'add_interview_cat.html';">
+                                    <button class="wid_10p" title="Add Interview Category" data-toggle="modal" data-target="#add_pop">
                                       <i class="fa fa-plus"></i>
                                     </button>
                                   </td>
@@ -1359,7 +1359,7 @@ function closeNav5() {
                                       <option>option 2</option>
                                       <option>option 3</option>
                                     </select>
-                                    <button class="wid_10p" title="Add Interview Category" onclick="location.href = 'add_interview_cat.html';">
+                                    <button class="wid_10p" title="Add Interview Category" data-toggle="modal" data-target="#add_pop">
                                       <i class="fa fa-plus"></i>
                                     </button>
                                   </td>
@@ -1382,7 +1382,7 @@ function closeNav5() {
                                       <option>option 2</option>
                                       <option>option 3</option>
                                     </select>
-                                    <button class="wid_10p" title="Add Interview Category" onclick="location.href = 'add_interview_cat.html';">
+                                    <button class="wid_10p" title="Add Interview Category" data-toggle="modal" data-target="#add_pop">
                                       <i class="fa fa-plus"></i>
                                     </button>
                                   </td>
@@ -1403,6 +1403,7 @@ function closeNav5() {
                           </div>
                         </div>
                         <div class="modal-footer">
+                          <button class="btn btn-success">Save</button>
                           <button class="btn btn-danger cls_cnfm">Close</button>
                         </div>
                       </div>
@@ -1888,7 +1889,7 @@ $(document).ready(function(){
   $(".pop_2, .btn-danger, .cls_pop").click(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
-  $(".dropdown-toggle, .act_btn, .paginate_button, .fg_wid_83, .tb_btz").focus(function(){
+  $(".dropdown-toggle, .paginate_button, .fg_wid_83, .tb_btz").focus(function(){
     $(".drop_dnm, .pop_2").fadeOut();
   });
 
@@ -2008,7 +2009,7 @@ $(document).ready(function(){
   $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
   });
-  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+  $(".dropdown-toggle, .bn6, .bn_opn1, .paginate_button").focus(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
   });
 
@@ -2056,6 +2057,24 @@ function selc1a() {
   document.getElementById("selc1_a").style.display = "none";
 }
 </script>
+
+<!-- Modal -->
+<div class="modal fade" id="add_pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mod_add"" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Interview Category</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="div_mod" class="modal-body mod_add_bd mod_ln_ifr">
+        <object type="text/html" data="add_interview_cat.html" width="800px" height="1000" style="overflow:auto;">
+    </object>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
