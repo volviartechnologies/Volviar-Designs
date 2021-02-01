@@ -2381,7 +2381,12 @@ span.box_ae{padding-right: 6px;}
 .wid_btn_rdc .rqst_box1_btn h3{width: 64%;}
 .wid_btn_rdc{width:16%!important;}
 .wid_btn_rdc1{width: 80%;}
-
+.wid_90p{width: 86%;height: auto;margin: auto;float: left;}
+.wid_10p{width: auto;margin: auto;height: auto;float: left;border:none;background-color: transparent;color: green;}
+.mn_hgt{min-height: 250px;}
+.assess1{bottom: auto;top: -110px;width: 420px;}
+.assess1:before{bottom: auto;top: 120px;border-left: 0px solid transparent;}
+.bdr_max{padding:10px;max-height: 190px;overflow: auto;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
