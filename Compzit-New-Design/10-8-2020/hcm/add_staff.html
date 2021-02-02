@@ -962,6 +962,7 @@ function closeNav5() {
       
       <div class="content_box1 cont_contr">
         <h2>Add Staff</h2>
+        <div class="pop_2" style="display: none;" ></div>
         <div class="rqst_container">
           <div class="rqst_box1 stf_bx1 wid_btn_rdc">
             <button class="rqst_box1_btn ar_b1 sel_btq" autofocus="">
@@ -1071,9 +1072,8 @@ function closeNav5() {
               </div>
 
               <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
-                <label for="email" class="fg2_la1 pad_l">Attach Candidate Image: <span class="spn1"></span></label>
                 <div class="row">
-                  <div class="mar_at flt_l">
+                  <div class="mar_at flt_n mr_lft100">
                     <div class="circle">
                        <!-- User Profile Image -->
                       <img class="profile-pic" src="..\images\icons\opp\user1.png">
@@ -1154,8 +1154,8 @@ function closeNav5() {
                 <textarea type="text" class="form-control fg2_inp1 inp_mst" placeholder="Permanent Residential Address"></textarea>
               </div>
               <div class="form-group fg6 sa_2 sa_480">
-                <label for="email" class="fg2_la1">In case of Emergency Contact:<span class="spn1">*</span></label>
-                <textarea type="text" class="form-control fg2_inp1 inp_mst wid_93p" placeholder="In case of Emergency Contact"></textarea>
+                <label for="email" class="fg2_la1">Emergency Contact:<span class="spn1">*</span></label>
+                <textarea type="text" class="form-control fg2_inp1 inp_mst wid_93p" placeholder="Emergency Contact"></textarea>
               </div> 
               <div class="clearfix"></div>
               <div class="free_sp"></div>
@@ -1283,9 +1283,24 @@ function closeNav5() {
                               <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                                 <i class="fa fa-edit"></i>
                               </button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                              <span class="dropdown dd_lft0 ">
+                                <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                                 <i class="fa fa-trash"></i>
-                              </button>
+                                </button>
+                                <div class="dropdown-menu drop_dnm repn dlt_bx">
+                                  <div class="modal-header">
+                                    <h5>Delete</h5>
+                                    <button type="button" class="close cls_pop" title="Close">
+                                      <span aria-hidden="true">×</span>
+                                    </button>
+                                  </div>
+                                  <div class="head_txt">Are you sure to delete this entry?</div>
+                                  <div class="modal-footer">
+                                    <button class="btn btn-success cls_dlt">Yes</button>
+                                    <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                                  </div>
+                                </div>
+                              </span>
                             </div>
 
                             <div class="btn_stl2">
@@ -1391,36 +1406,24 @@ function closeNav5() {
                           <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                             <i class="fa fa-edit"></i>
                           </button>
-                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                          <span class="dropdown dd_lft0 ">
+                            <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                             <i class="fa fa-trash"></i>
-                          </button>
-                        </div>
-
-                        <div class="btn_stl2">
-                          <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
-                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                        </div>
-                        <div class="btn_stl3">
-                          <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                         <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tr_l">Employer 1</td>
-                      <td class="tr_l">Designation 1</td>
-                      <td class="tr_r">1000.00</td>
-                      <td>5</td>
-                      <td>3</td>
-                      <td class="tr_l">Demo text shows here</td>
-                      <td>
-                        <div class="btn_stl1">
-                          <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                            <i class="fa fa-edit"></i>
-                          </button>
-                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                            <i class="fa fa-trash"></i>
-                          </button>
+                            </button>
+                            <div class="dropdown-menu drop_dnm repn dlt_bx">
+                              <div class="modal-header">
+                                <h5>Delete</h5>
+                                <button type="button" class="close cls_pop" title="Close">
+                                  <span aria-hidden="true">×</span>
+                                </button>
+                              </div>
+                              <div class="head_txt">Are you sure to delete this entry?</div>
+                              <div class="modal-footer">
+                                <button class="btn btn-success cls_dlt">Yes</button>
+                                <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                              </div>
+                            </div>
+                          </span>
                         </div>
 
                         <div class="btn_stl2">
@@ -1546,9 +1549,24 @@ function closeNav5() {
                               <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                                 <i class="fa fa-edit"></i>
                               </button>
-                              <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                              <span class="dropdown dd_lft0 ">
+                                <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                                 <i class="fa fa-trash"></i>
-                              </button>
+                                </button>
+                                <div class="dropdown-menu drop_dnm repn dlt_bx">
+                                  <div class="modal-header">
+                                    <h5>Delete</h5>
+                                    <button type="button" class="close cls_pop" title="Close">
+                                      <span aria-hidden="true">×</span>
+                                    </button>
+                                  </div>
+                                  <div class="head_txt">Are you sure to delete this entry?</div>
+                                  <div class="modal-footer">
+                                    <button class="btn btn-success cls_dlt">Yes</button>
+                                    <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                                  </div>
+                                </div>
+                              </span>
                             </div>
                             <div class="btn_stl2">
                               <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
@@ -1811,7 +1829,7 @@ function closeNav5() {
               <div class="clearfix"></div>
 
 
-              <h3>Dependents List</h3>
+              <h3>Dependents</h3>
 
               <div class="hcm_res r_800">
                 <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
@@ -1831,32 +1849,24 @@ function closeNav5() {
                           <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                             <i class="fa fa-edit"></i>
                           </button>
-                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                            <i class="fa fa-trash"></i>
-                          </button>
-                        </div>
-
-                        <div class="btn_stl2">
-                          <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Edit </button>
-                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> Delete</button>
-                        </div>
-                        <div class="btn_stl3">
-                          <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
-                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="tr_l">Dependent 1</td>
-                      <td class="tr_l">Father</td>
-                      <td>
-                        <div class="btn_stl1">
-                          <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                           <i class="fa fa-edit"></i>
-                          </button>
-                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                            <i class="fa fa-trash"></i>
-                          </button>
+                            <span class="dropdown dd_lft0 ">
+                              <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
+                              <i class="fa fa-trash"></i>
+                              </button>
+                              <div class="dropdown-menu drop_dnm repn dlt_bx">
+                                <div class="modal-header">
+                                  <h5>Delete</h5>
+                                  <button type="button" class="close cls_pop" title="Close">
+                                    <span aria-hidden="true">×</span>
+                                  </button>
+                                </div>
+                                <div class="head_txt">Are you sure to delete this entry?</div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-success cls_dlt">Yes</button>
+                                  <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                                </div>
+                              </div>
+                            </span>
                         </div>
 
                         <div class="btn_stl2">
@@ -1890,7 +1900,7 @@ function closeNav5() {
                 <input type="text" class="form-control fg2_inp1" placeholder="Visa#">
               </div>
               <div class="form-group fg4 hcm_2_1 sa_480">
-                <label for="pwd" class="fg2_la1">Visa Expiry Date:<span class="spn1"></span> </label>
+                <label for="pwd" class="fg2_la1">Visa Expiry:<span class="spn1"></span> </label>
                 <div id="datepicker2a" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
                   <input class="form-control inp_bdr" type="text">
                   <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -1901,7 +1911,7 @@ function closeNav5() {
                 <input type="text" class="form-control fg2_inp1" placeholder="Passport#">
               </div>
               <div class="form-group fg4 hcm_2_1 sa_480">
-                <label for="pwd" class="fg2_la1">Passport Expiry Date:<span class="spn1"></span> </label>
+                <label for="pwd" class="fg2_la1">Passport Expiry:<span class="spn1"></span> </label>
                 <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
                   <input class="form-control inp_bdr" type="text">
                   <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -1927,17 +1937,17 @@ function closeNav5() {
               <div class="clearfix"></div>
 
 
-                <h3>Immigration List</h3>
+                <h3>Immigrations</h3>
                 <div class="tab_res">
                 <div class="hcm_res r_800">
                   <table class="display table-bordered pro_tab1 hcm_tbl_44 tbl_800" cellspacing="0" width="100%">
                     <thead class="thead1">
                       <tr>
-                        <th class="th_b4 tr_l">Visa Type</th>
+                        <th class="th_b2 tr_l">Visa Type</th>
                         <th class="col-md-2 tr_l">Visa#</th>
-                        <th class="col-md-2">Visa Expiry Date</th>
+                        <th class="col-md-2">Visa Expiry</th>
                         <th class="col-md-2 tr_l">Passport#</th>
-                        <th class="col-md-3">Passport Expiry Date</th>
+                        <th class="col-md-2">Passport Expiry</th>
                         <th class="col-md-2">Actions</th>
                       </tr>
                     </thead>
@@ -1953,9 +1963,24 @@ function closeNav5() {
                             <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                               <i class="fa fa-edit"></i>
                             </button>
-                            <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                            <span class="dropdown dd_lft0 ">
+                              <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                               <i class="fa fa-trash"></i>
-                            </button>
+                              </button>
+                              <div class="dropdown-menu drop_dnm repn dlt_bx">
+                                <div class="modal-header">
+                                  <h5>Delete</h5>
+                                  <button type="button" class="close cls_pop" title="Close">
+                                    <span aria-hidden="true">×</span>
+                                  </button>
+                                </div>
+                                <div class="head_txt">Are you sure to delete this entry?</div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-success cls_dlt">Yes</button>
+                                  <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                                </div>
+                              </div>
+                            </span>
                           </div>
 
                           <div class="btn_stl2">
@@ -2641,6 +2666,61 @@ $(document).ready(function(){
   $(".star_5").click(function(){
     $(".star_2, .star_3, .star_4, .star_1, .star_5").addClass("selected_star");
   });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_recv").click(function(){
+    $(".pop_2").fadeIn();
+    $(".recv_bx").show( 300);
+    $('#InputToFocus1_1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });  
+  $(".opn_ropn1").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx1").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+  $('.filtr_sec').removeClass("mr_400");
+    }
 });
 </script>
 
