@@ -2399,6 +2399,22 @@ span.box_ae{padding-right: 6px;}
 .wid_at12a{width: auto;}
 .wdt_80_lbl{width: 80%!important;margin-bottom: 10px;}
 .spn_ref img{width: 22px;height: auto;margin: auto;float: left; padding: 2px; padding-top: 8px;}
+.pdng_bx{padding: 6px;margin-top: 6px!important;}
+.lst_vi{list-style: none;width: 100%;height: auto;margin: auto;float: left;}
+.lst_vi .sp_tt1{width:35%;margin: auto;float: left;font-weight: 400!important;}
+.lst_vi .sp_tt2{width: auto;margin: auto;float: left;}
+.widgt_view .user_im_l{width: 25px;height: 25px;}
+.widgt_view .emply_box_1{height: 72px;border: none;text-align: left;padding:8px 4px;margin: 4px;}
+.widgt_view .lft_empl_b{width: 15%;}
+.widgt_view .emply_dtl_s1{width: 84%;}
+.mrb10_z{margin-bottom: 10px;}
+.widgt_view .emply_dtl_s2{height: 20px;}
+.widgt_view .emply_box_1:hover, .widgt_view .emply_box_1:focus{border:1px solid #ccc;}
+.wid_empdtl .spn_zp1{width: 30%!important;}
+.box_sdw0{box-shadow: none;}
+.mx_hegt430{max-height: 430px!important;}
+.mr_rt8{margin-right: 8px!important;}
+.viw_typ .wid_45pz{width: 49%!important;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
