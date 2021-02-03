@@ -1135,7 +1135,7 @@ function closeNav5() {
                     <div class="input-group-addon date1 chec_bx">
                     <div class="check1 flt_n">
                       <div class="">
-                        <label class="switch" title="Present Sponsor">
+                        <label class="switch" title="Current Sponsor">
                           <input type="checkbox">
                           <span class="slider_tog round"></span>
                         </label>
@@ -1762,7 +1762,7 @@ function closeNav5() {
                             <div class="head_txt">Are you sure to delete this entry?</div>
                             <div class="modal-footer">
                               <button class="btn btn-success cls_dlt">Yes</button>
-                              <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                              <button class="btn btn-danger cls_dlt" id="no1" autofocus="">No</button>
                             </div>
                           </div>
                         </span>
@@ -1873,7 +1873,7 @@ function closeNav5() {
                                 <div class="head_txt">Are you sure to delete this entry?</div>
                                 <div class="modal-footer">
                                   <button class="btn btn-success cls_dlt">Yes</button>
-                                  <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                                  <button class="btn btn-danger cls_dlt" id="no2" autofocus="">No</button>
                                 </div>
                               </div>
                             </span>
@@ -1987,7 +1987,7 @@ function closeNav5() {
                                 <div class="head_txt">Are you sure to delete this entry?</div>
                                 <div class="modal-footer">
                                   <button class="btn btn-success cls_dlt">Yes</button>
-                                  <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                                  <button class="btn btn-danger cls_dlt" id="no3" autofocus="">No</button>
                                 </div>
                               </div>
                             </span>
@@ -2694,7 +2694,7 @@ $(document).ready(function(){
   $(".opn_dlt").click(function(){
     $(".pop_2").fadeIn();
     $(".dlt_bx").show( 300);
-    $('#InputToFocus2').focus();
+    $('#InputToFocus2, #no1, #no2, #no3, #no4').focus();
   });
   $(".opn_ropn").click(function(){
     $(".pop_2").fadeIn();
