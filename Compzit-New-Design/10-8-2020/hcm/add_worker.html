@@ -108,8 +108,8 @@ function closeNav5() {
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Save</button>
     <button type="submit" class="btn sub3 bt_b">Save & Close</button>
-    <button type="submit" class="btn sub2 bt_b">Clear</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -950,7 +950,7 @@ function closeNav5() {
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
       <li><a href="#">Worker</a></li>
-      <li class="active">add</li>
+      <li class="active">Add Worker</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -959,99 +959,153 @@ function closeNav5() {
       
       <div class="content_box1 cont_contr">
         <h2>Add Worker</h2>
-
-        <div class="form-group fg2 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Candidate Name:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Candidate 1</option>
-            <option>Candidate 2</option>
-            <option>Candidate 3</option>
-          </select>
-        </div>
-
-        <div class="form-group fg2 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Candidate 1" disabled="">
-        </div>
-
-        <div class="form-group fg2 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Division:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Division 1" disabled="">
-        </div>
-
-        <div class="form-group fg2 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Designation:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Designation 1" disabled="">
-        </div>
-
-        <div class="form-group fg2 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Passport#:<span class="spn1"></span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="Passport#">
-        </div>
-
-        <div class="form-group fg2 hcm_2_1">
-          <label for="pwd" class="fg2_la1">Joining Date:<span class="spn1"></span> </label>
-          <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr" type="text">
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-                        
-        <div class="form-group fg2 hcm_2_1">
-          <label for="pwd" class="fg2_la1">Form Filling Date:<span class="spn1">*</span> </label>
-          <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr" type="text">
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-
-        <div class="form-group fg2 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Site#:<span class="spn1"></span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="Site#">
-        </div>
-
-        <div class="form-group fg6 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
-          <label for="email" class="fg2_la1 pad_l">License Attach:<span class="spn1">*</span></label>
-          <input type="file" id="file-upload" multiple="" required="">
-          <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-          <div id="file-upload-filename" class="file_n"></div>
-        </div>
-
-        <div class="form-group fg6 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Certificate Attach:<span class="spn1">*</span></label>
-          <input type="file" id="file-upload" multiple="" required="">
-          <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-          <div id="file-upload-filename" class="file_n"></div>
-        </div>
-
-        <div class="form-group fg6 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
-          <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
-        </div>
-
-   
-        <div class="clearfix"></div>
-        <div class="free_sp"></div>
-        <div class="devider"></div>
-
-
-        <div class="text_area_container tx_ar1">
-          <div class="txt_ara1 mr_at">
-            <h3>Other Document Attached</h3>
-            <div class="ar_1">
-              <div class="form-group fg4 fg2_mr1 sa_fg3 sa_640 ma_bo10 sa_480">
-                <input type="file" id="file-upload" multiple="" required="">
-                <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
-                <div id="file-upload-filename" class="file_n"></div>
+        <div class="fg4">
+          <div class="fg12 mar_at flt_l box_emp_br pdng_tp6 wid_92pz">
+            <div class="form-group fg12 sa_2 sa_480">
+              <label for="email" class="fg2_la1">Candidate Name:<span class="spn1">*</span></label>
+              <select type="text" class="form-control fg2_inp1 inp_mst">
+                <option>Candidate 1</option>
+                <option>Candidate 2</option>
+                <option>Candidate 3</option>
+              </select>
+            </div>
+            <div class="clearfix"></div>
+            <div class="free_sp1"></div>
+            <div class="fg12 empl_pop_dtl">
+              <h3>Employee Name 1</h3>
+              <span>EMP0001</span>
+            </div>
+            <div class="devider"></div>
+            <div class="fg5">
+              <div class="user_im_1">
+                <img src="../images/hcm/user.jpg">
               </div>
-              <div class="fg2">
-                <button class="btn act_btn bn2 bun1" title="Add New"><i class="fa fa-plus-circle"></i></button>
-                <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
-              </div>
-              <div class="clearfix"></div>
+            </div>
+            <div class="fg_3_1 empl_pop_dtl wid_76_pz">
+              <ul class="join_leav emp_dtl_bdr">
+                <li class="bg_red elg_2"><span class="spn_zp1">Division:</span> <span>Division 1</span></li>
+                <li><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
+                
+              </ul>
             </div>
           </div>
         </div>
+
+        <div class="fg_3_1">
+          <div class="form-group fg2 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Passport#:<span class="spn1"></span></label>
+            <input type="text" class="form-control fg2_inp1" placeholder="Passport#">
+          </div>
+
+          <div class="form-group fg2">
+            <label for="pwd" class="fg2_la1">Joining Date:<span class="spn1"></span> </label>
+            <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr" type="text">
+              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div>
+                          
+          <div class="form-group fg2">
+            <label for="pwd" class="fg2_la1">Form Filling Date:<span class="spn1">*</span> </label>
+            <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+              <input class="form-control inp_bdr" type="text">
+              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+            </div>
+          </div>
+
+          <div class="form-group fg2 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Site#:<span class="spn1"></span></label>
+            <input type="text" class="form-control fg2_inp1" placeholder="Site#">
+          </div>
+          <div class="clearfix"></div>
+          <div class="devider"></div>
+
+          <div class="fg6">
+            <label for="email" class="fg2_la1 pad_l">License Attach:<span class="spn1"></span></label>
+            <div class="fg_3_1">
+              <input type="file" id="file-upload" multiple="" required="">
+              <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+              <div id="file-upload-filename" class="file_n"></div>
+            </div>
+            <div class="">
+              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#view_copy" title="View">
+                <i class="fa fa-list-alt"></i>
+              </button>
+              <button class="btn act_btn bn3" title="Remove Selected File">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="fg6">
+            <label for="email" class="fg2_la1 pad_l">Certificate Attach:<span class="spn1"></span></label>
+            <div class="fg_3_1">
+              <input type="file" id="file-upload" multiple="" required="">
+              <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+              <div id="file-upload-filename" class="file_n"></div>
+            </div>
+            <div class="">
+              <button class="btn act_btn bn4 bt_v" data-toggle="modal" data-target="#view_copy" title="View">
+                <i class="fa fa-list-alt"></i>
+              </button>
+              <button class="btn act_btn bn3" title="Remove Selected File">
+                <i class="fa fa-trash"></i>
+              </button>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="devider"></div>
+
+          <div class="form-group fg6 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Comments:<span class="spn1"></span></label>
+            <textarea type="text" class="form-control fg2_inp1" placeholder="Comments"></textarea>
+          </div>
+          <div class="fg6 mr_tp_head top_bxh5">
+            <h5>Other Document Attached</h5>
+            <div class="r_1024 tbl_fx_hi wid_92">
+                <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+                  <thead class="thead1">
+                    <tr>
+                      <th class="col-md-8 tr_l">Attachments</th>
+                      <th class="col-md-4">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="tr_l"><a href="#">File.pdf</a></td>
+                      <td> 
+                        <div class="btn_stl1">
+                          <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                            <i class="fa fa-plus-circle"></i>
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class=" tr_l">
+                        <input type="file" id="file-upload" multiple="" required="">
+                        <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
+                        <div id="file-upload-filename" class="file_n"></div>
+                      </td>
+                      <td> 
+                        <div class="btn_stl1">
+                          <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
+                            <i class="fa fa-plus-circle"></i>
+                          </button>
+                          <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                            <i class="fa fa-trash"></i>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
 
    
         <div class="clearfix"></div>
@@ -1062,8 +1116,8 @@ function closeNav5() {
           <div class="save_sec">
             <button type="submit" class="btn sub1">Save</button>
             <button type="submit" class="btn sub3">Save & Close</button>
-            <button type="submit" class="btn sub2">Clear</button>
             <button type="submit" class="btn sub4">Cancel</button>
+            <button type="submit" class="btn sub2">Clear</button>
           </div>
 
           <div class="edit_sec">
