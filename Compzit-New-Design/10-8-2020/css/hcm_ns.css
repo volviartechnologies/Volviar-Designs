@@ -2401,10 +2401,10 @@ span.box_ae{padding-right: 6px;}
 .spn_ref img{width: 22px;height: auto;margin: auto;float: left; padding: 2px; padding-top: 8px;}
 .pdng_bx{padding: 6px;margin-top: 6px!important;}
 .lst_vi{list-style: none;width: 100%;height: auto;margin: auto;float: left;}
-.lst_vi .sp_tt1{width:14%;margin: auto;float: left;font-weight: 400!important;}
-.lst_vi .sp_tt2{width: auto;margin: auto;float: left;}
+.lst_vi .sp_tt1{width:14%;margin: auto;float: left;}
+.lst_vi .sp_tt2{width: auto;margin: auto;float: left;font-weight: 400!important;}
 .widgt_view .user_im_l{width: 35px;height: 35px;}
-.widgt_view .emply_box_1{height:90px;border: none;text-align: left;padding:0px 4px;margin:6px;}
+.widgt_view .emply_box_1{height:89px;border: none;text-align: left;padding:0px 4px;margin:6px;}
 .widgt_view .lft_empl_b{width: 18%;}
 .widgt_view .emply_dtl_s1{width: 82%;}
 .mrb10_z{margin-bottom: 10px;}
@@ -2412,7 +2412,7 @@ span.box_ae{padding-right: 6px;}
 .widgt_view .emply_box_1:hover, .widgt_view .emply_box_1:focus{border:1px solid #ccc;}
 .wid_empdtl .spn_zp1{width: 30%!important;}
 .box_sdw0{box-shadow: none;}
-.mx_hegt430{max-height: 434px!important;}
+.mx_hegt430{max-height: 438px!important;}
 .mr_rt8{margin-right: 8px!important;}
 .viw_typ .wid_45pz{width: 49%!important;}
 .mr_lft100{margin-left: 100px;}
@@ -2425,10 +2425,12 @@ span.box_ae{padding-right: 6px;}
 .widgt_view .emply_dtl_s2 h3{font-size: 12px;}
 .divi6{margin-bottom: 6px;}
 .mrb_tb0{margin-bottom: 4px!important;margin-top: 4px!important;}
-.pfl_dtl{padding-left: 0px;background-color: #edf7ff;width: 100%;height: auto; margin: auto;float: left;padding: 4px;border-radius: 4px;margin-bottom: 4px;}
-.mrt_mns9{margin-top: -8px;}
+.pfl_dtl{padding-left: 0px;background-color:#fff;width: 100%;height: auto; margin: auto;float: left;padding: 4px;border-radius: 4px;margin-bottom: 10px;border:1px solid #ccc;}
+.mrt_mns9{margin-top: -2px;margin-left: 20px;}
 .viw_btn1q{background-color: transparent;border: 1px solid #99d1fd;border-radius: 4px;font-size: 14px; padding: 4px 8px;}
 .vw_cs_sel{background-color:#48acf2;color: #fff;}
+.widt_ath{width: auto!important;}
+.pfl_dtl li{border-bottom: none;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
