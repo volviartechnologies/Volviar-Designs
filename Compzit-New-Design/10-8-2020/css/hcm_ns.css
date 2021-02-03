@@ -2412,7 +2412,7 @@ span.box_ae{padding-right: 6px;}
 .widgt_view .emply_box_1:hover, .widgt_view .emply_box_1:focus{border:1px solid #ccc;}
 .wid_empdtl .spn_zp1{width: 30%!important;}
 .box_sdw0{box-shadow: none;}
-.mx_hegt430{max-height: 430px!important;}
+.mx_hegt430{max-height: 434px!important;}
 .mr_rt8{margin-right: 8px!important;}
 .viw_typ .wid_45pz{width: 49%!important;}
 .mr_lft100{margin-left: 100px;}
@@ -2425,6 +2425,7 @@ span.box_ae{padding-right: 6px;}
 .widgt_view .emply_dtl_s2 h3{font-size: 12px;}
 .divi6{margin-bottom: 6px;}
 .mrb_tb0{margin-bottom: 4px!important;margin-top: 4px!important;}
+.pfl_dtl{padding-left: 0px;background-color: #edf7ff;width: 100%;height: auto; margin: auto;float: left;padding: 4px;border-radius: 4px;margin-bottom: 4px;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
