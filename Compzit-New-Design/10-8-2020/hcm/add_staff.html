@@ -1135,7 +1135,7 @@ function closeNav5() {
                     <div class="input-group-addon date1 chec_bx">
                     <div class="check1 flt_n">
                       <div class="">
-                        <label class="switch" title="Mail Delivary Allowed">
+                        <label class="switch" title="Present Sponsor">
                           <input type="checkbox">
                           <span class="slider_tog round"></span>
                         </label>
@@ -1611,7 +1611,6 @@ function closeNav5() {
 
           <div class="othr bdr_top_rgt" style="display:none;">
             <div class="othr_dtl pdn_al10">
-              <div class="spl_hcm od_mar_rt pdng_10pz wid_1za">
                 <div class="form-group fg2 sa_2 sa_480">
                   <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
                   <span class="spn_ref" title="Reference"><img src="../images/hcm/ref1.png" class=""></span>
@@ -1630,26 +1629,21 @@ function closeNav5() {
                   <input type="text" class="form-control fg2_inp1 inp_mst wid_1za" placeholder="Address">
                 </div>
                 <div class="form-group fg2 sa_2 sa_480">
-                  <label for="email" class="fg2_la1">Name:<span class="spn1"></span></label>
                   <span class="spn_ref" title="Reference"><img src="../images/hcm/ref1.png" class=""></span>
                   <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Name">
                 </div>
                 <div class="form-group fg2 sa_2 sa_480">
-                  <label for="email" class="fg2_la1">Occupation:<span class="spn1"></span></label>
                   <input type="text" class="form-control fg2_inp1 inp_mst wid_1za" placeholder="Occupation">
                 </div>
                 <div class="form-group fg2 sa_2 sa_480">
-                  <label for="email" class="fg2_la1">Phone#:<span class="spn1"></span></label>
                   <input type="text" class="form-control fg2_inp1 inp_mst wid_1za" placeholder="Phone#">
                 </div>
                 <div class="form-group fg2 sa_2 sa_480">
-                  <label for="email" class="fg2_la1">Address:<span class="spn1"></span></label>
                   <input type="text" class="form-control fg2_inp1 inp_mst wid_1za" placeholder="Address">
                 </div>
-              </div>
 
               <div class="clearfix"></div>
-              <div class="devider"></div>
+              <div class="devider divi6"></div>
 
               <div class="form-group fg2 sa_2 sa_480">
                 <label for="email" class="fg2_la1">Blood Group:<span class="spn1">*</span></label>
@@ -1684,7 +1678,7 @@ function closeNav5() {
               </div>
               
               <div class="clearfix"></div>
-              <div class="devider"></div>
+              <div class="devider divi6"></div>
 
               <div class="form-group fg6 sa_2 sa_640 sa_480 pa_lr">
                 <label for="email" class="fg2_la1 wid_at">Have you suffered from any major illness?<span class="spn1"></span>
@@ -1697,7 +1691,7 @@ function closeNav5() {
                   </div>
                 </div>
                 </label>
-                <textarea type="text" class="form-control fg2_inp1" placeholder="If Yes, please give details" disabled=""></textarea>
+                <input type="text" class="form-control fg2_inp1" placeholder="If Yes, please give details" disabled="">
               </div>
               <div class="form-group fg6 sa_2 sa_640 sa_480 pa_lr">
                 <label for="email" class="fg2_la1 wid_at">Have you applied for an employment with us earlier?<span class="spn1"></span>
@@ -1710,7 +1704,7 @@ function closeNav5() {
                   </div>
                 </div>
                 </label>
-                <textarea type="text" class="form-control fg2_inp1" placeholder="If Yes, please give details" disabled=""></textarea>
+                <input type="text" class="form-control fg2_inp1" placeholder="If Yes, please give details" disabled="">
               </div>
               <div class="clearfix"></div>
               <div class="fg6">
@@ -1743,7 +1737,7 @@ function closeNav5() {
                   <div class="top_br_1 pa_h1">
                     <h5>Other Documents, if any</h5>
                     <div class="clearfix"></div>
-                    <div class="free_sp1"></div>
+                    <div class="free_sp2"></div>
                     <div class="fg12">
                       <div class="col-md-8">
                         <input type="file" id="file-upload" multiple required />
@@ -1754,16 +1748,32 @@ function closeNav5() {
                       </div>
                       <div class="col-md-4">
                         <button class="btn act_btn bn2" title="Add New"><i class="fa fa-plus-circle"></i></button>
-                        <button class="btn act_btn bn3" title="Delete"><i class="fa fa-trash"></i></button>
+                        <span class="dropdown dd_lft0 ">
+                          <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
+                          <i class="fa fa-trash"></i>
+                          </button>
+                          <div class="dropdown-menu drop_dnm repn dlt_bx">
+                            <div class="modal-header">
+                              <h5>Delete</h5>
+                              <button type="button" class="close cls_pop" title="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                            </div>
+                            <div class="head_txt">Are you sure to delete this entry?</div>
+                            <div class="modal-footer">
+                              <button class="btn btn-success cls_dlt">Yes</button>
+                              <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                            </div>
+                          </div>
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="clearfix"></div>
-              <div class="free_sp"></div>
-              <div class="devider"></div>
-              <div class="sub_cont pull-right">
+              <div class="devider divi6"></div>
+              <div class="sub_cont pull-right mrb_tb0">
                 <div class="save_sec">
                   <button type="submit" class="btn sub1">Save</button>
                   <button type="submit" class="btn sub3">Save & Close</button>
