@@ -2401,10 +2401,10 @@ span.box_ae{padding-right: 6px;}
 .spn_ref img{width: 22px;height: auto;margin: auto;float: left; padding: 2px; padding-top: 8px;}
 .pdng_bx{padding: 6px;margin-top: 6px!important;}
 .lst_vi{list-style: none;width: 100%;height: auto;margin: auto;float: left;}
-.lst_vi .sp_tt1{width:16%;margin: auto;float: left;font-weight: 400!important;}
+.lst_vi .sp_tt1{width:14%;margin: auto;float: left;font-weight: 400!important;}
 .lst_vi .sp_tt2{width: auto;margin: auto;float: left;}
 .widgt_view .user_im_l{width: 35px;height: 35px;}
-.widgt_view .emply_box_1{height:94px;border: none;text-align: left;padding:0px 4px;margin:6px;}
+.widgt_view .emply_box_1{height:90px;border: none;text-align: left;padding:0px 4px;margin:6px;}
 .widgt_view .lft_empl_b{width: 18%;}
 .widgt_view .emply_dtl_s1{width: 82%;}
 .mrb10_z{margin-bottom: 10px;}
@@ -2426,6 +2426,9 @@ span.box_ae{padding-right: 6px;}
 .divi6{margin-bottom: 6px;}
 .mrb_tb0{margin-bottom: 4px!important;margin-top: 4px!important;}
 .pfl_dtl{padding-left: 0px;background-color: #edf7ff;width: 100%;height: auto; margin: auto;float: left;padding: 4px;border-radius: 4px;margin-bottom: 4px;}
+.mrt_mns9{margin-top: -8px;}
+.viw_btn1q{background-color: transparent;border: 1px solid #99d1fd;border-radius: 4px;font-size: 14px; padding: 4px 8px;}
+.vw_cs_sel{background-color:#48acf2;color: #fff;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
