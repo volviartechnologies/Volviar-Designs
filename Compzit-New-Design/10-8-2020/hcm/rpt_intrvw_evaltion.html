@@ -949,7 +949,7 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li class="active">Interview Evaluation Report</li>
+      <li class="active">Interview Evaluation</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -958,16 +958,16 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
-          <h1 class="h1_con">Interview Evaluation Report</h1>
+<!---inner_content_sections area_started-->
+          <h1 class="h1_con">Interview Evaluation</h1>
 
          
         <div class="form-group fg2 sa_o_fg4 sa_480">
-          <label for="email" class="fg2_la1">MPR Ref#:<span class="spn1">*</span></label>
+          <label for="email" class="fg2_la1">Manpower Recruitement Ref#:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
             <option>Ref0001</option>
-            <option>2018</option>
-            <option>2017</option>
+            <option>Ref0001</option>
+            <option>Ref0001</option>
           </select> 
         </div>
 
@@ -988,10 +988,9 @@ function closeNav5() {
 <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
-        
+<!---=================section_devider============-->
         <div class="tab_res">
-          <div class="col-md-12">
+          <div class="col-md-8">
             <p><span class="tbl_srt1">Showing </span> 
               <select class="form-control tbl_srt">
                 <option>10</option>
@@ -1000,46 +999,53 @@ function closeNav5() {
                 <option>100</option>
               </select> Entries
             </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
+          </div>
+          <div class="col-md-2 pull-right mar_at flt_r">
+            <input type="text" class="form-control tbl_ser_n" placeholder="Search">
+          </div>
+
 
           <div class="r_1024">
-          <table class="display table-bordered pro_tab1 tbl_1024" cellspacing="0" width="100%">
+            <table id="" class="display table-bordered" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="tr_l">
+                <th class="col-md-2 tr_l">Candidate Name
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Candidate Name">
                 </th>
-                <th class="tr_l">
+                <th class="col-md-2 tr_l">Interview Template
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Interview Template">
                 </th>
-                <th class="tr_c">
+                <th class="col-md-2 tr_c">Interview Date
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Interview Date">
                 </th>
-                <th class="tr_l">
+                <th class="col-md-2 tr_l">Interviewer
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Interviewer">
                 </th>
-                <th class="tr_l">
+                <th class="col-md-2 tr_l">Evaluation Round
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Evaluation Round">
                 </th>
-                <th class="tr_c">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Score">
-                </th>
-                <th class="col-md-1 tr_c" rowspan="2">Dicission</th>
-              </tr>
-              <tr>
-                <th class="col-md-2 tr_l">Candidate Name</th>
-                <th class="col-md-2 tr_l">Interview Template</th>
-                <th class="col-md-2 tr_c">Interview Date</th>
-                <th class="col-md-2 tr_l">Interviewer</th>
-                <th class="col-md-2 tr_l">Evaluation Round</th>
                 <th class="col-md-1 tr_c">Score</th>
+                <th class="col-md-1 tr_c">Dicission</th>
               </tr>
              
             </thead>
             <tbody>
+              <tr class="tr1">
+                <td class="tr_l" rowspan="2">Candidate 1</td>
+                <td class="tr_l" rowspan="2">Template 1</td>
+                <td class="tr_c">18/09/2019</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">P G Certificate</td>
+                <td class="tr_c">Exelent</td>
+                <td class="tr_c">Qualified</td>
+              </tr>
+              <tr>
+                <td class="tr_c">18/09/2019</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">P G Certificate</td>
+                <td class="tr_c">Exelent</td>
+                <td class="tr_c">Qualified</td>
+              </tr>
               <tr>
                 <td class="tr_l" rowspan="2">Candidate 1</td>
                 <td class="tr_l" rowspan="2">Template 1</td>
@@ -1047,29 +1053,14 @@ function closeNav5() {
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">P G Certificate</td>
                 <td class="tr_c">Exelent</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Qualified</button>
-                </td>
+                <td class="tr_c">Qualified</td>
               </tr>
-              <tr>
+              <tr class="tr1">
                 <td class="tr_c">18/09/2019</td>
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">P G Certificate</td>
                 <td class="tr_c">Exelent</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Qualified</button>
-                </td>
-              </tr>
-              <tr>
-                <td class="tr_l">Candidate 1</td>
-                <td class="tr_l">Template 1</td>
-                <td class="tr_c">18/09/2019</td>
-                <td class="tr_l">Employee 1</td>
-                <td class="tr_l">P G Certificate</td>
-                <td class="tr_c">Exelent</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Qualified</button>
-                </td>
+                <td class="tr_c">Qualified</td>
               </tr>
             </tbody>
           </table>
@@ -1116,18 +1107,18 @@ function closeNav5() {
 </a>
 <!---print_button_closed--->
 
-<!---add_button--->
-<a href="add_job_descrptn.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
-<i class="fa fa-plus-circle"></i>
+
+
+<!---import_button_section-->
+<a href="#" type="button" class="imprt_o" title="Export" onclick="import_1()">
+  <i class="fa fa-code-fork" aria-hidden="true"></i>
 </a>
-<!---add_button_closed--->
-
-
 <div class="import_opt">
   <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
   <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
 </div>
 <!---import_button_section_closed--->
+
 
 
 <!---alert_message_section---->
@@ -1509,6 +1500,46 @@ $(".wr2").click(function(){
 
 <!-------------print_script_close--------------------->
 
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
 
 </body>
 </html>
