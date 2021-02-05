@@ -2437,7 +2437,7 @@ span.box_ae{padding-right: 6px;}
 .mr_tp_yr{margin-left: 30px;margin-top: 8px;}
 .wi_100pza{width: 100%!important;margin: auto;float: left;height:auto;background-color: transparent;border: none;}
 .head_txas{width: 100%;height: auto;margin:auto;float: left; border-bottom: 1px solid #f1f1f1!important;padding: 6px 2px;}
-.hei90pz{height: 120px;background-color: #fff;width: 23%!important;padding:0px;border-radius: 8px;margin-right: 2%;margin-bottom: 2%;}
+.hei90pz{height: 120px;background-color: #fff;width: 23%!important;padding:0px;border-radius: 8px;margin-right: 2%;margin-bottom: 2%;overflow: hidden;}
 .nbr_req{width: 100%;height: auto;margin: auto;float: left;text-align: center;padding: 12px 0px;font-size: 24px;font-weight: 600;}
 .hei90pz:hover, .hei90pz:focus{border:1px solid #76d5ff;box-shadow: 1px 1px 15px #ccc;}
 .yer_sp1{width: auto!important;height: auto;margin: auto!important;float: left;margin-right: 10px!important;}
@@ -2452,9 +2452,14 @@ span.box_ae{padding-right: 6px;}
 .nbr_req img{width: 50px;height: auto;margin-top: -4px;padding: 7px;/*border: 1px solid #98d0f7;*/border-radius: 50px;}
 .nbr_req{line-height: 20px;}
 .prnt_btz h3{width: auto;margin: auto;float: left;margin-left: 20px;margin-top: 6px;}
-
+.new_date_sec .form-control:focus{border-bottom: 1px solid #48acf2;}
+.crved{width: 100px;height: 30px;background-color: #4dadf1;border: 1px solid #bce3ff;-ms-transform: rotate(-40deg);transform: rotate(-40deg);
+      border-radius: 20px;text-align: center;padding-top: 4px;margin: auto;float: left;margin-left: -33px;margin-top: -9px;color: #fff;}
+.hei90pz .line_1 {list-style: none;width: 66%;margin: auto;float: right;margin-left: 10px;margin-top: -2px;}
 /*.mrb10_pag{margin-top: 16px;}
 */
+
+
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
 .wid_8_3{width: 25%;}
