@@ -2453,9 +2453,15 @@ span.box_ae{padding-right: 6px;}
 .nbr_req{line-height: 20px;}
 .prnt_btz h3{width: auto;margin: auto;float: left;margin-left: 20px;margin-top: 6px;}
 .new_date_sec .form-control:focus{border-bottom: 1px solid #48acf2;}
-.crved{width: 100px;height: 30px;background-color: #4dadf1;border: 1px solid #bce3ff;-ms-transform: rotate(-40deg);transform: rotate(-40deg);
-      border-radius: 20px;text-align: center;padding-top: 4px;margin: auto;float: left;margin-left: -33px;margin-top: -9px;color: #fff;}
+.crved{width: 100px;height: 40px;background-color:#3d89bf;-ms-transform: rotate(-40deg);transform: rotate(-40deg);
+      border-radius: 20px;text-align: center;padding-top: 17px;margin: auto;float: left;margin-left: -42px;margin-top: -22px;color: #fff;}
 .hei90pz .line_1 {list-style: none;width: 66%;margin: auto;float: right;margin-left: 10px;margin-top: -2px;}
+.drp_lb1z .dropdown-multiple-label{max-width: 95%!important;}
+.drp_lb1z .dropdown-display-label{max-height: 100px!important;}
+.sp_subhd{font-size: 14px;color: #48acf2;}
+.sel_dropd .fince_yr.fnr_saa label{height: 38px;padding: 10px 8px;}
+.fnr_saa{margin-left: 20px;}
+.fnr_saa .open>.drop_dn{max-height: 110px;overflow: auto;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 
