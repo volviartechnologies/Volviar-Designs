@@ -2468,9 +2468,41 @@ span.box_ae{padding-right: 6px;}
 .nil_req{background-color:#e40000;}
 .sel_dropd .fg2_inp1.bdr_blu1{border: 1px solid #e1f8ff!important;}
 .sel_dropd .fince_yr.fnr_saa label{width: 21%;}
+.sts_oc{width: auto;margin: auto;float: left;margin-right: 10px;margin-top: 3px;}
+.clr_g{color: #4CAF50;}
+.clr_r{color:#e9291e;}
+.wid_630{width: 30%!important;color: #333!important;height: auto;}
+.wid_630 .spn_zp1{width: 34%!important;}
+.wid_630 .wid_8_3 span{margin-top: 0px;color: #333!important;}
+.wid_630 .emp_dtl_bdr li{background-color: #daefff!important;border-bottom: none;border-radius: 6px;}
+.mr_bg1{width: 25%;height: 20px;    margin: auto;float: left; background-color:#2196F3;margin-bottom: 4px;color: #fff!important;}
+.mr_bg2{width: 50%;height: 20px;    margin: auto;float: left; background-color:#FF9800;margin-bottom: 4px;color: #fff!important;}
+.mr_bg3{width: 10%;height: 20px;    margin: auto;float: left; background-color:#4CAF50;margin-bottom: 4px;color: #fff!important;}
+.chrt_box{margin: auto;float: left;width: 100%;height: auto;background-color: transparent;border:none;}
+.wid_630 .wid_8_3 .chrt_box span{color: #fff!important;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 12px sans-serif;
+  text-anchor: end;
+}
+
+
+
+#slider8 {
+  height: 250px;
+}
+
+#slider9 {
+  height: 250px;
+}
 
 @media only screen and (max-width:1100px){
 .max_60{width: 64%;}
