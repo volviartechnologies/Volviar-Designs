@@ -1170,7 +1170,12 @@ function closeNav5() {
                 <div class="container1z darker flt_r">
                   <h5>Employee 1<span class="time-right">11:00</span></h5><br>
                   <p>Hey! I'm fine. Thanks for asking!</p>
+                  <button class="btn_dlt" title="Delete"><i class="fa fa-trash"></i></button>
                 </div>
+              </div>
+              <div class="type_box">
+                <textarea id="inp_a1" autofocus="" placeholder="Type Your Message"></textarea>
+                <button class="save_bt" title="Send Message"><i class="fa fa-paper-plane"></i></button>
               </div>
             </div>
           </span>
@@ -1663,7 +1668,7 @@ $(document).ready(function(){
   $(".opn_recv").click(function(){
     $(".pop_2").fadeIn();
     $(".recv_bx").show( 300);
-    $('#InputToFocus1_1').focus();
+    $('#inp_a1').focus();
   });
   $(".opn_dlt").click(function(){
     $(".pop_2").fadeIn();
