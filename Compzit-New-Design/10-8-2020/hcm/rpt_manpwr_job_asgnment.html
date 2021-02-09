@@ -973,51 +973,46 @@ function closeNav5() {
 <!---=================section_devider============-->
 
           <div class="r_800">
-            <table id="example" class="display table-bordered" cellspacing="0" width="100%">
+            <table id="example" class="display table-bordered tbl_xa" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="th_b6 tr_l">Ref#
+                <th class="th_b7 tr_l">Ref#
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Ref#">
                 </th>
-                <th class="th_b7 tr_c">Approved Date
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Approved Date">
+                <th class="th_b8 tr_l">Division
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Division">
                 </th>
-                <th class="th_b4 tr_l">Assigned To
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Assigned To">
+                <th class="th_b8 tr_l">Department
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
+                </th>
+                <th class="th_b8 tr_l">Designation
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
                 </th>
                 <th class="th_b4 tr_l">Project
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Project">
                 </th>
-                <th class="th_b7 tr_c">Status
+                <th class="th_b7 tr_c">Approved
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Date">
+                </th>
+                <th class="th_b4 tr_l">Assigned To
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Assigned To">
+                </th>
+                <th class="th_b6 tr_c">Status
                   <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Status">
                 </th>
-                <th class="th_b7 tr_c">Assign (Days)
-                </th>
+                <th class="th_b5 tr_c">Ageing (Days)</th>
               </tr>
              
             </thead>
             <tbody>
               <tr>
                 <td class="tr_l">Aaaaaaaaaa</td>
-                <td class="tr_c">Aaaaaaaaaa</td>
+                <td class="tr_l">Aaaaaaaaaa</td>
                 <td class="tr_l">Aaaaaaaaaa</td>
                 <td class="tr_l">Round 1</td>
-                <td>Active</td>
-                <td class="tr_c">10</td>
-              </tr>
-              <tr>
                 <td class="tr_l">Aaaaaaaaaa</td>
-                <td class="tr_c">Aaaaaaaaaa</td>
-                <td class="tr_l">Aaaaaaaaaa</td>
-                <td class="tr_l">Round 1</td>
-                <td>Active</td>
-                <td class="tr_c">10</td>
-              </tr>
-              <tr>
-                <td class="tr_l">Aaaaaaaaaa</td>
-                <td class="tr_c">Aaaaaaaaaa</td>
-                <td class="tr_l">Aaaaaaaaaa</td>
-                <td class="tr_l">Round 1</td>
+                <td class="tr_c">10/02/2021</td>
+                <td class="tr_l">Employee 1</td>
                 <td>Active</td>
                 <td class="tr_c">10</td>
               </tr>
@@ -1096,20 +1091,63 @@ function closeNav5() {
 
 
 <button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
-<div class="filtr_sec mr_400">
+<div class="filtr_sec fltr_plcy mr_400">
   <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
     <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
-    <div class="box_cnt_zz">
+    <div class="box_cnt_zz mrb_4z">
       <div class="clearfix"></div>
-      <div class="form-group fg12 mrb10">
-        <label for="email" class="fg2_la1">Status:<span class="spn1"></span></label>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
         <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="Inpz1" autofocus="">
-          <option>Active</option>
-          <option>Cancel</option>
-          <option>Pending</option>
+          <option>Division 1</option>
+          <option>Division 2</option>
+          <option>Division 3</option>
         </select> 
       </div>
-      <div class="fg12 bg_clr1 mrb10">
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Department 1</option>
+          <option>Department 2</option>
+          <option>Department 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Designation 1</option>
+          <option>Designation 2</option>
+          <option>Designation 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Project 1</option>
+          <option>Project 2</option>
+          <option>Project 3</option>
+        </select> 
+      </div>
+      <div class="fg12 mar_bo1 sel_op_1 hc_op1 drp_lb1z lz11">
+        <label class="">Assigned To:</label><br>
+        <div class="dropdown-mul-1 dropdown-multiple-label">
+          <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
+        </div>
+      </div>
+      <div class="form-group fg12 mrb10">
+        <label for="email" class="fg2_la1">Status:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Pending</option>
+          <option>GM Approved</option>
+          <option>Requirement Allocated</option>
+          <option>Job Notified</option>
+          <option>Rejected</option>
+          <option>Interview Done</option>
+          <option>Closed</option>
+        </select> 
+      </div>
+      <div class="fg12 bg_clr1">
+        <label for="email" class="fg2_la1">Approved:<span class="spn1"></span></label>
         <div class="form-group fg6 wid_dt52">
           <label for="pwd" class="fg2_la1 wid_50fx">From:<span class="spn1"></span> </label>
           <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
@@ -1123,20 +1161,6 @@ function closeNav5() {
             <input class="form-control inp_bdr dt_fltr" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
-        </div>
-      </div>
-      <div class="form-group fg12 mrb10">
-        <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
-        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-          <option>Project 1</option>
-          <option>Project 2</option>
-          <option>Project 3</option>
-        </select> 
-      </div>
-      <div class="fg12 mar_bo1 sel_op_1 hc_op1 drp_lb1z">
-        <label class="">Assigned To:</label><br>
-        <div class="dropdown-mul-1 dropdown-multiple-label">
-          <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
         </div>
       </div>
     </div>
@@ -1487,21 +1511,6 @@ function myAlertBottom(){
 <!----==========Procurement_management_script_section_started=======--->
 
 
-<!-------------print_script_start--------------------->
-<script>
-$(document).ready(function(){
-  $(".imprt_o").click(function(){
-    $(".import_opt").toggle(300);
-  });
-});
-</script>
-<script type="text/javascript">
-$(".wr2").click(function(){
-  $(".import_opt").hide(400);
-});
-</script>
-
-<!-------------print_script_close--------------------->
 
 
 
