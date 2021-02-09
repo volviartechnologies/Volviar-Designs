@@ -2490,8 +2490,8 @@ span.box_ae{padding-right: 6px;}
 .ref_dta{width: 100%;height: auto;margin: auto;float: left;background-color: #2196f3;padding: 4px;text-align: left; color: #fff;}
 .btn_dlt{width: 30px;height: auto;margin: auto;float: right;background-color: TRANSPARENT;color: #f18484;border: 1px solid #fb7373;border-radius: 10px;font-size: 10px;}
 .btn_dlt:hover, .btn_dlt:focus{background-color:#f18484;color: #fff;border: 1px solid #fb7373;}
-.type_box{width: 100%;height: auto;margin:auto;float: left;background-color:#e5f4ff;padding: 4px;}
-.type_box textarea{width:88%;border:1px solid #ccc;border-radius: 4px;font-size: 12px;margin: auto;float: left;}
+.type_box{width: 100%;height: auto;margin:auto;float: left;background-color:#e6e6e6;padding: 4px;}
+.type_box textarea{width:88%;border:1px solid #ccc;border-radius: 4px;font-size: 12px;margin: auto;float: left;padding:4px;}
 .type_box .save_bt{width: auto;height: auto;margin: auto;float: left;padding: 1px 10px;border-radius: 20px;border: 1px solid #4CAF50;background-color: transparent;color: #4CAF50;margin-left: 6px;}
 .type_box .save_bt:hover, .type_box .save_bt:focus{background-color: #4CAF50;color: #fff;}
 
