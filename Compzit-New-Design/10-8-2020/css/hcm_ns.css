@@ -2478,6 +2478,7 @@ span.box_ae{padding-right: 6px;}
 .mr_bg1{width: 25%;max-width: 80%; height: 16px;margin: auto;float: left; background-color:#2196F3;margin-bottom: -2px;color: #fff!important;}
 .mr_bg2{width: 50%;max-width: 80%; height: 16px;margin: auto;float: left; background-color:#FF9800;margin-bottom: -2px;color: #fff!important;}
 .mr_bg3{width: 10%;max-width: 80%; height: 16px;margin: auto;float: left; background-color:#4CAF50;margin-bottom: -2px;color: #fff!important;}
+.mr_bg4{width: 40%;max-width: 80%; height: 16px;margin: auto;float: left; background-color:#da3e13;margin-bottom: -2px;color: #fff!important;}
 .chrt_box{margin: auto;float: left;width: 100%;height:16px;background-color: transparent;border:none;}
 .wid_630 .wid_8_3 .chrt_box span{color: #000!important;font-weight: 600!important;margin-left: 4px;}
 .wid_th80{width: 80%;}
@@ -2494,7 +2495,7 @@ span.box_ae{padding-right: 6px;}
 .type_box textarea{width:88%;border:1px solid #ccc;border-radius: 4px;font-size: 12px;margin: auto;float: left;padding:4px;}
 .type_box .save_bt{width: auto;height: auto;margin: auto;float: left;padding: 1px 10px;border-radius: 20px;border: 1px solid #4CAF50;background-color: transparent;color: #4CAF50;margin-left: 6px;}
 .type_box .save_bt:hover, .type_box .save_bt:focus{background-color: #4CAF50;color: #fff;}
-
+.fg_wid_f.fg98{width: 98%!important;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 

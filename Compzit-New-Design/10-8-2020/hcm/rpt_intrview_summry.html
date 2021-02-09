@@ -966,9 +966,6 @@ function closeNav5() {
       <div class="clearfix"></div>
       <div class="devider"></div>
 <!---=================section_devider============-->
-      
-          
-      
           
           <div class="act_cols mnt_s1 hei90pz wid_630" data-toggle="modal" data-target="#emply_dtls">
             <h5 class="ref_dta">Ref#: ref000123</h5>
@@ -979,15 +976,15 @@ function closeNav5() {
                 <li><span class="spn_zp1">Department:</span> <span>Department 1</span></li>
                 <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span>Designation 1</span></li>
               </ul>
-              <button class="w3-light-grey chrt_box" title="Resource count" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Required Resources" data-toggle="modal" data-target="#dtl_mod">
                 <div class="w3-green mr_bg1"></div><span>10</span>
               </button><br>
 
-              <button class="w3-light-grey chrt_box" title="Interview Attended" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Interview Attended Candidates" data-toggle="modal" data-target="#dtl_mod">
                 <div class="w3-red mr_bg2"></div><span>20</span>
               </button><br>
  
-              <button class="w3-light-grey chrt_box" title="Selected" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod">
                 <div class="w3-blue mr_bg3"></div><span>3</span>
               </button>
             </span>
@@ -1126,8 +1123,20 @@ function closeNav5() {
   </div>
 <!----------------------------------------------Content_section_opened------------------------------------------------------------>
 
+<!-------------------footer_section_opened------------------------------------->
+ <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
+  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+  <p class="pull-right tr_c foot_l ">
+    Designed by <span>Volviar</span> Technologies
+  </p>
+</div>
+<!-------------------footer_section_closed------------------------------------->
 
-<!---print_button-->
+</div><!--wrapper_closed-->
+
+
+<!---print_button--->
 <a href="#" type="button" class="print_o" title="Print page">
   <i class="fa fa-print"></i>
 </a>
@@ -1144,13 +1153,6 @@ function closeNav5() {
 </div>
 
 
-<div class="import_opt">
-  <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
-  <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
-</div>
-<!---import_button_section_closed--->
-
-
 <!---alert_message_section---->
 <div class="myAlert-top alert alert-success">
   <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
@@ -1162,19 +1164,6 @@ function closeNav5() {
   <strong>Danger!</strong> Request not conmpleted is simply dummy text of the printing and typesetting industry.
 </div>
 <!----alert_message_section_closed---->
-
-
-
-<div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
-  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico4.png"></i> Humen Capital Management</p>
-  <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
-  <p class="pull-right tr_c foot_l ">
-    Designed by <span>Volviar</span> Technologies
-  </p>
-</div>
-
-<!----------------------------------------------Content_section_closed------------------------------------------------------------>
-
 
 
 <button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
@@ -1383,10 +1372,8 @@ function closeNav5() {
   </div><!--wrapper_closed-->
 
 
-<!--------script section_started---------->
 
 <!--------script section_started---------->
-
 
 
 <!-----table_search------------>
@@ -1526,9 +1513,6 @@ function myFunction_b() {
   }
 }
 </script>
-
-
-
 <script type="text/javascript">
   $(function () {
   $("#datepicker").datepicker({ 
@@ -1550,9 +1534,6 @@ function myFunction_b() {
 <link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
 <script src="../date_pick/datepicker.js"></script>
-
-<!---date_picker_closed-->
-
 
 
 <script type="text/javascript">
@@ -1669,120 +1650,8 @@ $(".wr2").click(function(){
 });
 </script>
 
-<!-------------print_script_close--------------------->
+<!-------------print_script_close-------------------->
 
-<!---data_table_css & scripts_started---->
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
-</script>
-  <!-- <script type="text/javascript" src="../table/js1.js"></script>
-  <script type="text/javascript" src="../table/js2.js"></script> -->
-  <script type="text/javascript" src="../table/js3.js"></script>
-
-  <link rel="stylesheet" type="text/css" href=../table/table.css">
-
-
-  <!---data_table_script for search--->
-  <script type="text/javascript">
-    $(document).ready(function() {
-    // Setup - add a text input to each footer cell
-    $('#example tfoot th').each( function () {
-        var title = $(this).text();
-        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-    } );
- 
-    // DataTable
-    var table = $('#example').DataTable();
- 
-    // Apply the search
-    table.columns().every( function () {
-        var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value ) {
-                that
-                    .search( this.value )
-                    .draw();
-            }
-        } );
-    } );
-} );
-  </script>
-
-  <!---Data_table_script for search_closed-->
-
-  <script type="text/javascript">
-  $(document).ready(function(){ 
-    $(".cont_contr").scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $(".cont_contr").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
-});
-</script>
-
-<script>
-$(document).ready(function(){
-  $(".opn_cnfm").click(function(){
-    $(".pop_2").fadeIn();
-    $(".cnfm_bx").show( 300);
-    $('#InputToFocus1').focus();
-  });
-  $(".opn_recv").click(function(){
-    $(".pop_2").fadeIn();
-    $(".recv_bx").show( 300);
-    $('#InputToFocus1_1').focus();
-  });
-  $(".opn_dlt").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dlt_bx").show( 300);
-    $('#InputToFocus2').focus();
-  });
-  $(".opn_ropn").click(function(){
-    $(".pop_2").fadeIn();
-    $(".ropn_bx").show( 300);
-    $('#InputToFocus3').focus();
-  });  
-  $(".opn_ropn1").click(function(){
-    $(".pop_2").fadeIn();
-    $(".ropn_bx1").show( 300);
-    $('#InputToFocus4').focus();
-  });
-  $(".pop_2, .btn-danger, .cls_pop").click(function(){
-    $(".drop_dnm, .pop_2").fadeOut();
-  });
-  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
-    $(".drop_dnm, .pop_2").fadeOut();
-  });
-});
-</script>
-<script>
-  $(document).on('keydown', function(e) { 
-  var keyCode = e.keyCode || e.which; 
-
-  if (keyCode == 27) { 
-    $(".drop_dnm, .pop_2").fadeOut();
-    document.getElementById("#InputToFocus1").hide();
-  } 
-});
-</script>
-<script type="text/javascript">
-  $(document).keyup(function(e) {
-    if (e.which == 27) {
-        $(".overlayInner").fadeOut(300); 
-    $(".drop_dnm, .pop_2").fadeOut();
-  $('.filtr_sec').removeClass("mr_400");
-    }
-});
-</script>
 
 
 <script type="text/javascript">
@@ -1822,17 +1691,17 @@ $(document).ready(function(){
     $(".tb_buton2").addClass("tb_buton_sel");
     $(".tb_buton1").removeClass("tb_buton_sel");
   });
-  $(".tb_cus_sup1").click(function(){
-    $(".tb_cus_sup1").addClass("tb_cs_sel");
-    $(".tb_cus_sup2").removeClass("tb_cs_sel");
-    $(".tab_postv").fadeIn();
-    $(".tab_negtv").hide();
+  $(".viw_b1").click(function(){
+    $(".viw_b1").addClass("vw_cs_sel");
+    $(".viw_b2").removeClass("vw_cs_sel");
+    $(".widgt_view").fadeIn();
+    $(".tbl_view").hide();
   });
-  $(".tb_cus_sup2").click(function(){
-    $(".tb_cus_sup2").addClass("tb_cs_sel");
-    $(".tb_cus_sup1").removeClass("tb_cs_sel");
-    $(".tab_postv").hide();
-    $(".tab_negtv").fadeIn();
+  $(".viw_b2").click(function(){
+    $(".viw_b2").addClass("vw_cs_sel");
+    $(".viw_b1").removeClass("vw_cs_sel");
+    $(".widgt_view").hide();
+    $(".tbl_view").fadeIn();
   });
   //buttons for report section//
   $(".tab_postv .btn_p1").click(function(){
@@ -1867,8 +1736,185 @@ $(document).ready(function(){
 
 });
 </script>
+<script>
+  $( document ).on( 'click', function ( e ) {
+    if ( $( e.target ).closest( elem ).length === 0 ) {
+        $( elem ).hide();
+    }
+});
+
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC       
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+    }
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_aprvlz").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".aprvlz_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, select, .btn_cls").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    }
+});
+</script>
 
 
+<script type="text/javascript">
 
+$('#emply_condt').on('shown.bs.modal', function () {
+    $('#not_op1').focus();
+}) 
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2, #no1, #no2, #no3, #no4').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });  
+  $(".opn_ropn1").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx1").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".pop_2, .btn-danger").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .cls_pop, .paginate_button, .emply_box_1").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
+</script>
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+    $('#example1').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+<script>
+$(document).ready(function(){
+  $(".sel_ms1").click(function(){
+    $(".sel_ms1").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms3, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg1").show();
+    $(".sp_msg2, .sp_msg3, .sp_msg4").hide();
+  });
+  $(".sel_ms2").click(function(){
+    $(".sel_ms2").addClass("sel_act_msg");
+    $(".sel_ms1, .sel_ms3, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg2").show();
+    $(".sp_msg1, .sp_msg3, .sp_msg4").hide();
+  });
+  $(".sel_ms3").click(function(){
+    $(".sel_ms3").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms1, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg3").show();
+    $(".sp_msg2, .sp_msg1, .sp_msg4").hide();
+  });
+  $(".sel_ms4").click(function(){
+    $(".sel_ms4").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms3, .sel_ms1").removeClass("sel_act_msg");
+    $(".sp_msg4").show();
+    $(".sp_msg2, .sp_msg3, .sp_msg1").hide();
+  });
+});
+</script>
 </body>
 </html>
