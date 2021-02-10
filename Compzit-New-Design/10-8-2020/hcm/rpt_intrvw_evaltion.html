@@ -95,6 +95,12 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
+<!---multiple selection css-->
+ <script type="text/javascript" src="../m_select/mock.js"></script>  
+  <link rel="stylesheet" type="text/css" href="../m_select/jquery.dropdown.css">
+  <script src="../m_select/jquery.dropdown.js"></script>
+<!---multiple selection css closed--->
+
 <!--------css_Included_closed------->
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
@@ -963,7 +969,7 @@ function closeNav5() {
 
          
         <div class="form-group fg2 sa_o_fg4 sa_480">
-          <label for="email" class="fg2_la1">Manpower Recruitement Ref#:<span class="spn1">*</span></label>
+          <label for="email" class="fg2_la1">Requirement Reference#:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
             <option>Ref0001</option>
             <option>Ref0001</option>
@@ -971,13 +977,11 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="form-group fg2 sa_o_fg4 sa_480">
+        <div class="form-group fg4 sa_o_fg4 sa_480">
           <label for="email" class="fg2_la1">Candidate:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Candidate 1</option>
-            <option>Candidate 2</option>
-            <option>Candidate 3</option>
-          </select> 
+          <div class="dropdown-mul-1 dropdown-multiple-label">
+            <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
+          </div>
         </div>
 
         <div class="fg8 fg2_blk">
@@ -1009,58 +1013,62 @@ function closeNav5() {
             <table id="" class="display table-bordered" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="col-md-2 tr_l">Candidate Name
+                <th class="th_b8 tr_l">Candidate Name
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Candidate Name">
                 </th>
-                <th class="col-md-2 tr_l">Interview Template
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Interview Template">
+                <th class="th_b7 tr_l">Passport#
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Passport#">
                 </th>
-                <th class="col-md-2 tr_c">Interview Date
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Interview Date">
+                <th class="th_b6 tr_l">Template
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Template">
                 </th>
-                <th class="col-md-2 tr_l">Interviewer
+                <th class="th_b7 tr_c">Interview Date
+                </th>
+                <th class="th_b6 tr_l">Interviewer
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Interviewer">
                 </th>
-                <th class="col-md-2 tr_l">Evaluation Round
+                <th class="th_b6 tr_l">Evaluation Round
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Evaluation Round">
                 </th>
-                <th class="col-md-1 tr_c">Score</th>
-                <th class="col-md-1 tr_c">Dicission</th>
+                <th class="th_b6 tr_c">Score</th>
+                <th class="th_b6 tr_l">Dicision</th>
               </tr>
              
             </thead>
             <tbody>
               <tr class="tr1">
                 <td class="tr_l" rowspan="2">Candidate 1</td>
+                <td class="tr_l" rowspan="2">GABOP0001</td>
                 <td class="tr_l" rowspan="2">Template 1</td>
                 <td class="tr_c">18/09/2019</td>
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">P G Certificate</td>
                 <td class="tr_c">Exelent</td>
-                <td class="tr_c">Qualified</td>
+                <td class="tr_l">Qualified</td>
               </tr>
-              <tr>
+              <tr class="">
                 <td class="tr_c">18/09/2019</td>
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">P G Certificate</td>
                 <td class="tr_c">Exelent</td>
-                <td class="tr_c">Qualified</td>
+                <td class="tr_l">Qualified</td>
               </tr>
-              <tr>
+              <tr class="">
                 <td class="tr_l" rowspan="2">Candidate 1</td>
+                <td class="tr_l" rowspan="2">GABOP0001</td>
                 <td class="tr_l" rowspan="2">Template 1</td>
                 <td class="tr_c">18/09/2019</td>
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">P G Certificate</td>
                 <td class="tr_c">Exelent</td>
-                <td class="tr_c">Qualified</td>
+                <td class="tr_l">Qualified</td>
               </tr>
               <tr class="tr1">
                 <td class="tr_c">18/09/2019</td>
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">P G Certificate</td>
                 <td class="tr_c">Exelent</td>
-                <td class="tr_c">Qualified</td>
+                <td class="tr_l">Qualified</td>
               </tr>
             </tbody>
           </table>
@@ -1540,6 +1548,45 @@ $(document).ready(function() {
     } );
 } );
   </script>
+
+
+
+
+<!---multiple selection new_script--->
+<link href="../css/select2.min.css" rel="stylesheet" />
+<script src="../js/select2.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
+
+<!---multiple selection new_script--->
+  <script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(false)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+  </script>
+<!---multiple selection new_script_closed--->
 
 </body>
 </html>
