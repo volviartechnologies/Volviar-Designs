@@ -2498,6 +2498,13 @@ span.box_ae{padding-right: 6px;}
 .type_box .save_bt{width: auto;height: auto;margin: auto;float: left;padding: 1px 10px;border-radius: 20px;border: 1px solid #4CAF50;background-color: transparent;color: #4CAF50;margin-left: 6px;}
 .type_box .save_bt:hover, .type_box .save_bt:focus{background-color: #4CAF50;color: #fff;}
 .fg_wid_f.fg98{width: 98%!important;}
+.conver{float: right;margin-right: -30px;background-color: #36b7ff;padding: 2px 4px;border-radius: 20px;color: #fff;margin-top: -27px;}
+.convr_btn{width: auto;height: auto;background-color: #43a0e1!important;color: #fff;border-radius: 20px;margin: auto;margin-top: -7px;float: right;border: none;margin-right: -10px;padding: 4px 4px;}
+.conver:hover, .conver:focus{background-color: #ccc;}
+.convr_bx{width: 290px;top:-60px;}
+.convr_bx h5{font-size: 11px;}
+.convr_bx:before{top:60px;}
+.convr_bx .type_box textarea{width: 84%!important;height: 28px;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 
