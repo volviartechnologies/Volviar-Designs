@@ -949,7 +949,7 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li class="active">Payroll Process Report</li>
+      <li class="active">Monthly Salary Summary</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -958,175 +958,80 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
-          <h1 class="h1_con">Payroll Process Report</h1>
-
-    
-        <div class="form-group fg2 hcm_rs_2 sa_480">
-          <label for="email" class="fg2_la1">Department:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>Department 1</option>
-            <option>Department 2</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 hcm_rs_2 sa_480">
-          <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Division 1</option>
-            <option>Division 2</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 hcm_rs_2 sa_480">
-          <label for="email" class="fg2_la1">Bank:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Bank 1</option>
-            <option>Bank 2</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 hcm_rs_2 sa_480">
-          <label for="email" class="fg2_la1">Salary Month:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>January</option>
-            <option>February</option>
-            <option>March</option>
-            <option>April</option>
-            <option>May</option>
-            <option>June</option>
-            <option>July</option>
-            <option>August</option>
-            <option>September</option>
-            <option>October</option>
-            <option>November</option>
-            <option>December</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 hcm_rs_2 sa_480">
-          <label for="email" class="fg2_la1">Salary Year:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 fg_chs2 inp_mst">
-            <option>2017</option>
-            <option>2018</option>
-            <option>2019</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 hcm_rs_2 sa_480">
-          <label for="email" class="fg2_la1">Search Option:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1 fg_chs2">
-            <option>Basic</option>
-            <option>Advanced</option>
-          </select> 
-        </div>
-
-        <div class="fg8 fg2_blk">
-          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-          <button class="submit_ser"></button>
-          <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
-        </div>
-<!---=================section_devider============--->
+<!---inner_content_sections area_started-->
+          <h1 class="h1_con">Monthly Salary Summary</h1>
+<!---=================section_devider============-->
       <div class="clearfix"></div>
-      <div class="free_sp"></div>
+      <div class="free_sp2"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
-        
-        <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
+<!---=================section_devider============-->
 
           <div class="r_1024">
-          <table class="display table-bordered pro_tab1 tbl_1024" cellspacing="0" width="100%">
+            <table id="example" class="display table-bordered" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <!-- <th class="tr_c">
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Date">
-                </th> -->
-                <th class="tr_l">
+                <!-- <th class="th_b7 tr_c">Date</th> -->
+                <th class="th_b7 tr_l">Employee ID
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
                 </th>
-                <th class="tr_l">
+                <th class="th_b4 tr_l">Employee
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee">
                 </th>
-                <th class="tr_r">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Basic Pay">
-                </th>
-                <th class="tr_r">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Addition">
-                </th>
-                <th class="tr_r">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Deduction">
-                </th>
-                <th class="tr_r">
-                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Total Salary">
-                </th>
-                <th class="tr_l">
+                <th class="th_b4 tr_l">Bank
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Bank">
                 </th>
-                <th class="th_b1 tr_c" rowspan="2">Status</th>
-              </tr>
-              <tr>
-                <!-- <th class="th_b7 tr_c">Date</th> -->
-                <th class="th_b8 tr_l">Employee ID</th>
-                <th class="th_b4 tr_l">Employee</th>
-                <th class="th_b7 tr_r">Basic Pay</th>
-                <th class="th_b6 tr_r">Addition</th>
-                <th class="th_b6 tr_r">Deduction</th>
-                <th class="th_b6 tr_r">Total Salary</th>
-                <th class="th_b4 tr_l">Bank</th>
+                <th class="th_b7 tr_r">Basic Pay
+                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Basic Pay">
+                </th>
+                <th class="th_b6 tr_r">Addition
+                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Addition">
+                </th>
+                <th class="th_b6 tr_r">Deduction
+                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Deduction">
+                </th>
+                <th class="th_b6 tr_r">Total Salary
+                  <input type="text" class="tb_inp_1 tb_in tr_r" placeholder="Total Salary">
+                </th>
+                <th class="th_b1 tr_c">Status</th>
               </tr>
             </thead>
             <tbody>
                <tr>
                 <td class="tr_l">ref00001</td>
                 <td class="tr_l">Employee 1</td>
-                <td class="tr_r">1000.00</td>
-                <td class="tr_r">100.00</td>
-                <td class="tr_r">100.00</td>
-                <td class="tr_r">1000.00</td>
                 <td class="tr_l">Bank 1</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Active</button>
+                <td class="tr_r">
+                  <span class="spn_smry">1000.00</span>
+                  <span class="spn_dtl" style="display: none;">
+                    <span class="wi_1fl">1000.00</span>
+                    <span class="wi_1fl bg_ttl1">1000.00</span>
+                  </span>
                 </td>
-              </tr>
-               <tr>
-                <td class="tr_l">ref00001</td>
-                <td class="tr_l">Employee 1</td>
-                <td class="tr_r">1000.00</td>
-                <td class="tr_r">100.00</td>
-                <td class="tr_r">100.00</td>
-                <td class="tr_r">1000.00</td>
-                <td class="tr_l">Bank 1</td>
-                <td class="tr_c">
-                  <button class="btn tab_but1 butn1">Active</button>
+                <td class="tr_r">
+                  <span class="spn_smry">1000.00</span>
+                  <span class="spn_dtl" style="display: none;">
+                    <span class="wi_1fl">1000.00</span>
+                    <span class="wi_1fl bg_ttl1">1000.00</span>
+                  </span>
                 </td>
+                <td class="tr_r">
+                  <span class="spn_smry">1000.00</span>
+                  <span class="spn_dtl" style="display: none;">
+                    <span class="wi_1fl">1000.00</span>
+                    <span class="wi_1fl bg_ttl1">1000.00</span>
+                  </span>
+                </td>
+                <td class="tr_r">
+                  <span class="spn_smry">1000.00</span>
+                  <span class="spn_dtl" style="display: none;">
+                    <span class="wi_1fl">1000.00</span>
+                    <span class="wi_1fl bg_ttl1">1000.00</span>
+                  </span>
+                </td>
+                <td class="tr_c">Active</td>
               </tr>
             </tbody>
           </table>
-        </div>
-
-        <nav aria-label="Page navigation example" class="pull-right">
-          <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
-
         </div>
 
 
@@ -1158,18 +1063,18 @@ function closeNav5() {
 </a>
 <!---print_button_closed--->
 
-<!---add_button--->
-<a href="add_job_descrptn.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
-<i class="fa fa-plus-circle"></i>
+
+
+<!---import_button_section-->
+<a href="#" type="button" class="imprt_o" title="Export" onclick="import_1()">
+  <i class="fa fa-code-fork" aria-hidden="true"></i>
 </a>
-<!---add_button_closed--->
-
-
 <div class="import_opt">
   <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
   <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
 </div>
 <!---import_button_section_closed--->
+
 
 
 <!---alert_message_section---->
@@ -1195,6 +1100,157 @@ function closeNav5() {
 </div>
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
+
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
+<div class="filtr_sec fltr_plcy mr_400">
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
+    <div class="box_cnt_zz">
+      <div class="clearfix"></div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="Inpz1" autofocus="">
+          <option>Division 1</option>
+          <option>Division 2</option>
+          <option>Division 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Department 1</option>
+          <option>Department 2</option>
+          <option>Department 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6">
+        <label for="email" class="fg2_la1">Bank:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Bank 1</option>
+          <option>Bank 2</option>
+          <option>Bank 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg6 sa_640 dt_bsd1 gur_opt mar_tp0">
+        <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label>
+        <button class="tb_btz tb_buton1 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/rpt1.png"></i> <span class="sp_plcy sp_laz">Summary</span></button>
+        <button class="tb_btz tb_buton2"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/rpt2.png"></i> <span class="sp_plcy sp_laz">Detailed</span></button>
+      </div>
+      <div class="fg12 sa_1">
+        <div class="year_sec">
+          <div class="form-group fg12 mar_at sa_2 sa_480">
+            <span class="box_cal"><i class="fa fa-calendar"></i></span>
+            <select class="form-control fg2_inp1 fg_chs2 inp_mst">
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option selected="">2021</option>
+            </select> 
+          </div>
+          <div class="clearfix"></div>
+          <div class="mnt_ls1a">
+            <div class="mont_lst">
+              <div class="act_cols">
+                <button class="wid_8_3 mnt1 sel_mnt"><i class="bg_o12">J</i> <span>JAN</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt2"><i class="bg_o1">F</i> <span>FEB</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt3"><i class="bg_o2">M</i> <span>MAR</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt4"><i class="bg_o3">A</i> <span>APR</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt5"><i class="bg_o4">M</i> <span>MAY </span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt6"><i class="bg_o5">J</i> <span>JUN</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt7"><i class="bg_o6">J</i> <span>JUL</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt8"><i class="bg_o7">A</i> <span>AUG</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt9"><i class="bg_o8">S</i> <span>SEP</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt10"><i class="bg_o9">O</i> <span>OCT</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt11"><i class="bg_o10">N</i> <span>NOV</span></button>
+              </div>
+              <div class="act_cols">
+                <button class="wid_8_3 mnt12"><i class="bg_o11">D</i> <span>DEC</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox bt_za1 fix_serfl"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
+  </div>
+</div>
+
+
+<div class="modal fade" id="dtl_mod" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog wid_th80" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="fg12 mar_at flt_l box_emp_br png_10 tag_pls mx_1">
+          <div class="fg12 empl_pop_dtl">
+            <ul class="join_leav emp_dtl_bdr mx_w45">
+            <li><span class="spn_zp1">Project:</span> <span class="spn_sep">Project 1</span></li>
+            <li><span class="spn_zp1">Designation / Position:</span> <span class="spn_sep">Web Developer</span></li>
+            </ul>
+          </div>
+        </div>
+          <div class="r_800">
+            <table id="example" class="display table-bordered pro_tab1 tbl_800 tbl_xa" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b4 tr_l">Candidate Name</th>
+                  <th class="th_b6 tr_l">Location</th>
+                  <th class="th_b6 tr_l">Country</th>
+                  <th class="th_b6 tr_c">Passport#</th>
+                  <th class="th_b4 tr_l">Email</th>
+                  <th class="th_b7">Gender</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_l">Candidate Name 1</td>
+                  <td class="tr_l">Location 1</td>
+                  <td class="tr_l">India</td>
+                  <td class="tr_l">GABP000114524147</td>
+                  <td class="tr_l">user@gmail.com</td>
+                  <td class="tr_c">male</td>
+              </tbody>
+            </table>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1410,7 +1466,6 @@ function myFunction_b() {
 </script>
 
 
-
 <script type="text/javascript">
   $(function () {
   $("#datepicker").datepicker({ 
@@ -1432,8 +1487,6 @@ function myFunction_b() {
 <link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
 <script src="../date_pick/datepicker.js"></script>
-
-<!---date_picker_closed-->
 
 
 
@@ -1551,8 +1604,391 @@ $(".wr2").click(function(){
 });
 </script>
 
-<!-------------print_script_close--------------------->
+<!-------------print_script_close-------------------->
 
 
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+  $('#Inpz1').focus();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+    $(".spn_smry").show();
+    $(".spn_dtl").hide();
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+    $(".spn_dtl").show();
+    $(".spn_smry").hide();
+  });
+  $(".viw_b1").click(function(){
+    $(".viw_b1").addClass("vw_cs_sel");
+    $(".viw_b2").removeClass("vw_cs_sel");
+    $(".widgt_view").fadeIn();
+    $(".tbl_view").hide();
+  });
+  $(".viw_b2").click(function(){
+    $(".viw_b2").addClass("vw_cs_sel");
+    $(".viw_b1").removeClass("vw_cs_sel");
+    $(".widgt_view").hide();
+    $(".tbl_view").fadeIn();
+  });
+  //buttons for report section//
+  $(".tab_postv .btn_p1").click(function(){
+    $(".tab_postv .btn_p1").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p2").click(function(){
+    $(".tab_postv .btn_p2").addClass("seltd_btn");
+    $(".tab_postv .btn_p1, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p3").click(function(){
+    $(".tab_postv .btn_p3").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p1, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+
+  $(".tab_negtv .btn_p1").click(function(){
+    $(".tab_negtv .btn_p1").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p2").click(function(){
+    $(".tab_negtv .btn_p2").addClass("seltd_btn");
+    $(".tab_negtv .btn_p1, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p3").click(function(){
+    $(".tab_negtv .btn_p3").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p1, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p4").click(function(){
+    $(".tab_negtv .btn_p4").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p1").removeClass("seltd_btn");
+  });
+
+});
+</script>
+<script>
+  $( document ).on( 'click', function ( e ) {
+    if ( $( e.target ).closest( elem ).length === 0 ) {
+        $( elem ).hide();
+    }
+});
+
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC       
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+    }
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_aprvlz").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".aprvlz_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, select, .btn_cls").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    }
+});
+</script>
+
+
+<script type="text/javascript">
+
+$('#emply_condt').on('shown.bs.modal', function () {
+    $('#not_op1').focus();
+}) 
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2, #no1, #no2, #no3, #no4').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });  
+  $(".opn_ropn1").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx1").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".pop_2, .btn-danger").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .cls_pop, .paginate_button, .emply_box_1").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
+</script>
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+    $('#example1').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+<script>
+$(document).ready(function(){
+  $(".sel_ms1").click(function(){
+    $(".sel_ms1").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms3, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg1").show();
+    $(".sp_msg2, .sp_msg3, .sp_msg4").hide();
+  });
+  $(".sel_ms2").click(function(){
+    $(".sel_ms2").addClass("sel_act_msg");
+    $(".sel_ms1, .sel_ms3, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg2").show();
+    $(".sp_msg1, .sp_msg3, .sp_msg4").hide();
+  });
+  $(".sel_ms3").click(function(){
+    $(".sel_ms3").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms1, .sel_ms4").removeClass("sel_act_msg");
+    $(".sp_msg3").show();
+    $(".sp_msg2, .sp_msg1, .sp_msg4").hide();
+  });
+  $(".sel_ms4").click(function(){
+    $(".sel_ms4").addClass("sel_act_msg");
+    $(".sel_ms2, .sel_ms3, .sel_ms1").removeClass("sel_act_msg");
+    $(".sp_msg4").show();
+    $(".sp_msg2, .sp_msg3, .sp_msg1").hide();
+  });
+});
+</script>
+
+
+<!---multiple selection new_script-->
+<link href="../css/select2.min.css" rel="stylesheet" />
+<script src="../js/select2.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
+
+<!---multiple selection new_script-->
+  <script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(false)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+  </script>
+<!---multiple selection new_script_closed-->
+
+<script>
+$(document).ready(function(){
+  $(".shw_mnth").click(function(){
+    $(".blk_box").hide();
+    $(".cal_der, .mont_al").show();
+  });
+  $(".mnt1").click(function(){
+    $(".mnt1").addClass("sel_mnt");
+    $(".ful_d, .ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt2").click(function(){
+    $(".mnt2").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".mnt1, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt3").click(function(){
+    $(".mnt3").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_d, .ful_30").show();
+    $(".mnt2, .mnt1, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt4").click(function(){
+    $(".mnt4").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_30").show();
+    $(".mnt2, .mnt3, .mnt1, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt5").click(function(){
+    $(".mnt5").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_d, .ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt1, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt6").click(function(){
+    $(".mnt6").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt1, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt7").click(function(){
+    $(".mnt7").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_d, .ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt1, .mnt8, .mnt9, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt8").click(function(){
+    $(".mnt8").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_d, .ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt1, .mnt9, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt9").click(function(){
+    $(".mnt9").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt1, .mnt10, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt10").click(function(){
+    $(".mnt10").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_d, .ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt1, .mnt11, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt11").click(function(){
+    $(".mnt11").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt1, .mnt12").removeClass("sel_mnt");
+  });
+  $(".mnt12").click(function(){
+    $(".mnt12").addClass("sel_mnt");
+    $(".feb_n").hide();
+    $(".ful_d, .ful_30").show();
+    $(".mnt2, .mnt3, .mnt4, .mnt5, .mnt6, .mnt7, .mnt8, .mnt9, .mnt10, .mnt11, .mnt1").removeClass("sel_mnt");
+  });
+});
+</script>
 </body>
 </html>
