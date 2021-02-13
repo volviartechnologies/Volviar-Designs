@@ -95,6 +95,12 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
+<!---multiple selection css-->
+ <script type="text/javascript" src="../m_select/mock.js"></script>  
+  <link rel="stylesheet" type="text/css" href="../m_select/jquery.dropdown.css">
+  <script src="../m_select/jquery.dropdown.js"></script>
+<!---multiple selection css closed--->
+
 <!--------css_Included_closed------->
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
@@ -959,24 +965,15 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
-<!---inner_content_sections area_started--->
+<!---inner_content_sections area_started-->
           <h1 class="h1_con">Exit Procedure</h1>
 
-          <div class="form-group fg2 fg2_blk fg2_blk1 sa_1">
-          <label for="email" class="fg2_la1">Job Assignment:<span class="spn1">*</span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check" onclick="openblance(), dehide1()">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Assigned</label>
-              </div>
-              <div class="form-check" onclick="openclosr(), dehide()">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Not Assigned</label>
-              </div>
-            </div>
+          
+          <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0">
+            <label for="email" class="fg2_la1">Job Assignment:<span class="spn1"></span></label>
+            <button class="tb_btz tb_buton1 tb_op1 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/rpt1.png"></i> <span class="sp_plcy sp_laz">Assigned</span></button>
+            <button class="tb_btz tb_buton2 tb_op2"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/rpt2.png"></i> <span class="sp_plcy sp_laz">Not Assigned</span></button>
           </div>
-        </div>
 
         <div class="form-group fg2 hcm_2_1">
           <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
@@ -996,27 +993,12 @@ function closeNav5() {
 <!---=================section_devider============--->
       <div class="clearfix"></div>
       <div class="devider"></div>
-<!---=================section_devider============--->
+<!---=================section_devider============-->
 
-        <div class="tab_res">
-          <div class="col-md-12">
-            <p><span class="tbl_srt1">Showing </span> 
-              <select class="form-control tbl_srt">
-                <option>10</option>
-                <option>25</option>
-                <option>50</option>
-                <option>100</option>
-              </select> Entries
-            </p>
-          </div><!-- 
-          <div class="col-md-2 pull-right tb_ser_hcm">
-            <input type="text" class="form-control tbl_ser_n" placeholder="Search Items">
-          </div> -->
-
-    <!--when click not assign_closed--->
-          <div class="nt_asgn" id="nt_asgn">
+    <!--when click not assign_closed-->
+          <div class="nt_asgn" style="display: none;">
            <div class="r_800">
-          <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+            <table id="example1" class="display table-bordered" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
                 <th class="th_b5">
@@ -1025,8 +1007,8 @@ function closeNav5() {
                     <input type="checkbox" class="hidden" />
                   </span>
                 </th>
-                <th class="th_b4 tr_l">Employee ID</th>
-                <th class="th_b4 tr_l">Employee Name</th>
+                <th class="th_b6 tr_l">Employee ID</th>
+                <th class="th_b2 tr_l">Employee Name</th>
                 <th class="th_b4 tr_l">Designation</th>
                 <th class="th_b4 tr_l">Division</th>
                 <th class="th_b4 tr_l">Department</th>
@@ -1061,10 +1043,13 @@ function closeNav5() {
             </tbody>
           </table>
         </div>
+        <div class="clearfix"></div>
+        <div class="free_sp2"></div>
+        <div class="devider"></div>
 
         <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1">Assign</button>
+            <button type="submit" class="btn sub1" data-toggle="modal" data-target="#ext_psd">Assign</button>
             <!-- <button type="submit" class="btn sub4">Cancel</button> -->
           </div>
 
@@ -1082,15 +1067,25 @@ function closeNav5() {
 <!---when click on assign ratio-->
       <div class="asgn" id="asgn">
            <div class="r_800">
-          <table class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
+            <table id="example" class="display table-bordered" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="th_b4 tr_l">Employee ID</th>
-                <th class="th_b4 tr_l">Employee Name</th>
-                <th class="th_b4 tr_l">Designation</th>
-                <th class="th_b4 tr_l">Division</th>
-                <th class="th_b4 tr_l">Department</th>
-                <th class="th_b4 tr_l">Action</th>
+                <th class="th_b6 tr_l">Employee ID
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee ID">
+                </th>
+                <th class="th_b4 tr_l">Employee Name
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee Name">
+                </th>
+                <th class="th_b4 tr_l">Designation
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
+                </th>
+                <th class="th_b4 tr_l">Division
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Division">
+                </th>
+                <th class="th_b4 tr_l">Department
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
+                </th>
+                <th class="th_b6 tr_c">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -1102,34 +1097,22 @@ function closeNav5() {
                 <td class=" tr_l">Department 1</td> 
                 <td>
                   <div class="btn_stl1">
-                    <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
-                    </button> -->
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#ext_psd" title="Edit">
                       <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
                     </button>
                   </div>
 
                   <div class="btn_stl2"> 
-                    <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i> View
-                    </button> -->
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Add</button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> delete</button>
                   </div>
 
                   <div class="btn_stl3">
-                    <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button> -->
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-               
                   </div>
                 </td>
               </tr>
-              
               <tr>
                 <td class="tr_l">Emp001</td>
                 <td class=" tr_l">Employee 1</td>
@@ -1138,30 +1121,19 @@ function closeNav5() {
                 <td class=" tr_l">Department 1</td> 
                 <td>
                   <div class="btn_stl1">
-                    <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i>
-                    </button> -->
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#ext_psd" title="Edit">
                       <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                      <i class="fa fa-trash"></i>
                     </button>
                   </div>
 
                   <div class="btn_stl2"> 
-                    <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                      <i class="fa fa-list-alt"></i> View
-                    </button> -->
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit"></i> Add</button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i> delete</button>
                   </div>
 
                   <div class="btn_stl3">
-                    <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal"> View</button> -->
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal">Edit</button>
                     <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal">Delete</button>
-               
                   </div>
                 </td>
               </tr>
@@ -1233,7 +1205,66 @@ function closeNav5() {
   </p>
 </div>
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
+
+<!-- Modal -->
+<div class="modal fade" id="ext_psd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog mop_dlg1" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Exit Procedure</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mdl_mn_hgt">
+        <div class="r_480">
+          <table class="table table-bordered tbl_480 tbl_xa">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b8 tr_l">Particulars</th>
+                <th class="th_b3 tr_l">Employee</th>
+                <th class="th_b7 tr_l">Status</th>
+                <th class="th_b6 tr_c">Target</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr class="">
+                <td class="tr_l">Flight Ticket</td>
+                <td class="tr_l">
+                  <div class="dropdown-mul-1 dropdown-multiple-label mr_btm6z">
+                    <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
+                  </div>
+                </td>
+                <td class="tr_l">
+                  <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
+                    <option>Job Assigned</option>
+                    <option>Availability Check</option>
+                    <option>Awaiting: Approval from candidate</option>
+                    <option>Booking Confirm, Ticket copy attach</option>
+                  </select>
+                </td>
+                <td>
+                  <div class="tdte">
+                    <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
+                      <input class="form-control inp_bdr fg2_inp2" type="text"  />
+                      <span class="input-group-addon date1 int_dt dl_nn"><i class="fa fa-calendar"></i></span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1385,7 +1416,7 @@ $(document).ready(function(){
 
 </script>
 
-<!--searchbox_list_script_opened------->
+<!--searchbox_list_script_opened------>
 
 
 <script>
@@ -1451,28 +1482,52 @@ function myFunction_b() {
 
 
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
-
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker1').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
-
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker2').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+
+<!---date_picker_closed-->
 
 
 
@@ -1590,7 +1645,7 @@ $(".wr2").click(function(){
 });
 </script>
 
-<!-------------print_script_close--------------------->
+<!-------------print_script_close-------------------->
 <script>
 function openblance() {
   var x = document.getElementById("asgn");
@@ -1624,5 +1679,110 @@ function dehide1() {
 }
 </script>
 
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".tb_op1").click(function(){
+    $(".tb_op1").addClass("tb_buton_sel");
+    $(".tb_op2").removeClass("tb_buton_sel");
+  });
+  $(".tb_op2").click(function(){
+    $(".tb_op2").addClass("tb_buton_sel");
+    $(".tb_op1").removeClass("tb_buton_sel");
+  });
+  </script>
+
+<script>
+$(document).ready(function(){
+  $(".tb_op1").click(function(){
+    $(".tb_op1").addClass("tb_buton_sel");
+    $(".tb_op2").removeClass("tb_buton_sel");
+    $(".nt_asgn").hide();
+    $(".asgn").show();
+  });
+  $(".tb_op2").click(function(){
+    $(".tb_op2").addClass("tb_buton_sel");
+    $(".tb_op1").removeClass("tb_buton_sel");
+    $(".asgn").hide();
+    $(".nt_asgn").show();
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+    $('#example1').DataTable();
+} );
+</script>
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+<!---multiple selection new_script-->
+<link href="../css/select2.min.css" rel="stylesheet" />
+<script src="../js/select2.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
+
+<!---multiple selection new_script-->
+  <script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(false)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+  </script>
+<!---multiple selection new_script_closed--->
 </body>
 </html>
