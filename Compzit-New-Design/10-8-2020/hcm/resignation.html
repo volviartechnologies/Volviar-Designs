@@ -96,7 +96,7 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
-<!--------css_Included_closed------->
+<!--------css_Included_closed------>
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
 
@@ -108,8 +108,13 @@ function closeNav5() {
  <div class="mySave1" id="mySave">
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Resign</button>
-    <button type="submit" class="btn sub3 bt_b">Confirm</button>
+    <span class="dropdown dd_lft0">
+      <button class="dropdown-toggle btn nw1 sub3 opn_cnfmzz" title="Confirm">
+      Confirm
+      </button>
+    </span>
     <button type="submit" class="btn sub2 bt_b">Retract</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
   </div>
 
@@ -999,32 +1004,107 @@ function closeNav5() {
      
         <div class="fg4 mar_at flt_l box_emp_br edt_mnt pnl_100">
           <div class="fg_3_1 empl_pop_dtl wid_100_pz wdtz951">
-      
-            <h3 class="rd ntc_reg ln_hgt">You have 108 days of notice period for leaving from this organisation</h3> 
 
             <div class="form-group fg12 sa_1">
               <label for="email" class="fg2_la1">Reason:<span class="spn1">*</span></label>
-              <textarea rows="4" cols="30" class="form-control flt_l tb_in  inp_mst" placeholder="Reason" autofocus=""></textarea>
+              <select class="form-control flt_l tb_in  inp_mst" placeholder="Reason" autofocus="">
+                <option>Reason 1</option>
+                <option>Reason 2</option>
+                <option>Reason 3</option>
+              </select>
             </div>       
-            <div class="form-group fg12 sa_o_fg4">
-                <label for="pwd" class="fg2_la1">Preferred Leaving Date:<span class="spn1"></span> </label>
-                <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-                  <input class="form-control inp_bdr" type="text"  />
-                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-                </div>
+            <div class="form-group fg6 sa_o_fg4">
+              <label for="pwd" class="fg2_la1">Preferred Leaving Date:<span class="spn1"></span> </label>
+              <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                <input class="form-control inp_bdr" type="text"  />
+                <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
               </div>
-            
+            </div>
+            <div class="form-group fg44p sa_1">
+              <label for="email" class="fg2_la1">Notice Period (Days):<span class="spn1"></span></label>
+              <input class="form-control flt_l tb_in tr_c" placeholder="108" disabled="">
+            </div> 
+            <div class="form-group fg12 sa_1">
+              <label for="email" class="fg2_la1">Comments:<span class="spn1">*</span></label>
+              <textarea rows="4" cols="30" class="form-control flt_l tb_in  inp_mst" placeholder="Comments"></textarea>
+            </div>
       </div>
     </div>
     <div class="clearfix"></div>
     <div class="free_sp1"></div>
     <div class="devider"></div>
-          
+
+    <div class="sts_ico">
+      <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+        <i class="fa fa-check-circle "></i>
+      </button>
+    </div>
+        <div class="pop_2" style="display: none;"> </div>
+        <div class="pop_2_11" style="display: none;"> </div>
+
         <div class="sub_cont pull-right">
           <div class="save_sec">
-            <button type="submit" class="btn sub1">Resign</button>
-            <button type="submit" class="btn sub3">Confirm</button>
-            <button type="submit" class="btn sub2">Retract</button>
+            <span class="dropdown dd_lft0">
+              <button class="dropdown-toggle btn nw1 sub1 opn_resgn" title="Resign">
+              Resign
+              </button>
+              <div class="dropdown-menu drop_dnm resgn_bx rgt_0b1c1">
+                <div class="modal-header">
+                  <h5>Resign</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">Are you sure to send the resignation request?</div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success foc2 cls_cnfm" autofocus="on">Yes</button>
+                    <button class="btn btn-danger cls_cnfm" id="InputToFocus2">No</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <span class="dropdown dd_lft0">
+              <button class="dropdown-toggle btn nw1 sub3 opn_cnfm" title="Confirm">
+              Confirm
+              </button>
+              <div class="dropdown-menu drop_dnm cnfm_bx rgt_0b1c">
+                <div class="modal-header">
+                  <h5>Confirm</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">Are you sure to confirm this entry?</div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                    <button class="btn btn-danger cls_cnfm">No</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <span class="dropdown dd_lft0">
+              <button class="dropdown-toggle btn nw1 sub2 opn_retrct" title="Retract">
+              Retract
+              </button>
+              <div class="dropdown-menu drop_dnm retrct_bx rgt_0b1c2">
+                <div class="modal-header">
+                  <h5>Retract</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">Are you sure to retract this resignation request?</div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success foc2 cls_cnfm" autofocus="on" id="InputToFocus3">Yes</button>
+                    <button class="btn btn-danger cls_cnfm">No</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <button type="submit" class="btn sub2">Clear</button>
             <button type="submit" class="btn sub4">Cancel</button>
           </div>
         
@@ -1035,6 +1115,21 @@ function closeNav5() {
 </div><!--content_container_closed------>
 
 
+      <div class="dropdown-menu drop_dnm cnfmzz_bx rgt_0b">
+        <div class="modal-header">
+          <h5>Confirm</h5>
+          <button type="button" class="close cls_pop" title="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="head_txt">Are you sure to confirm this entry?</div>
+        <div class="modal-footer">
+          <div class="flt_r">
+            <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+            <button class="btn btn-danger cls_cnfm">No</button>
+          </div>
+        </div>
+      </div>
 
 <!-- <a href="measure_unit.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
@@ -1431,6 +1526,61 @@ $(document).ready(function(){
 <script src="../date_pick/datepicker.js"></script>
 
 <!---date_picker_closed-->
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_resgn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".resgn_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_retrct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".retrct_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_cnfmzz").click(function(){
+    $(".pop_2_11").fadeIn();
+    $(".cnfmzz_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .nw1, .bt_b").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
+    }
+});
+</script>
 
 </body>
 </html>
