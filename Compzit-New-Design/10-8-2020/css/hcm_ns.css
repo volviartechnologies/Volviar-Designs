@@ -2526,12 +2526,15 @@ span.box_ae{padding-right: 6px;}
 .rgt_0b1c1{right: 40px;}
 .rgt_0b1c1:before{left: 120px;right: auto;}
 .rgt_0b1c2:before{right: 160px;}
-.addtn_c{background-color:#d9ffac!important;}
-.dedun_c{background-color:#ffdcdc!important;}
+.addtn_c{background-color:#d9ffac!important;border: 1px solid #9e9e9e!important;}
+.dedun_c{background-color:#ffdcdc!important;border: 1px solid #9e9e9e!important;}
 .mop_dlg1{width: 70%;}
 .mdl_mn_hgt{min-height: 300px;}
 .mr_btm6z{margin-bottom: 4px!important;}
-
+.table-bordered > tbody > tr > td.addtn_c{border: 1px solid #9dd082!important;}
+.table-bordered > tbody > tr > td.dedun_c{border: 1px solid #ffbebe!important;}
+.pdng_tpalgn{padding-top: 20px;}
+.sts_ico img{width: 30px;height: auto;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 
