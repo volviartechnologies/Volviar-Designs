@@ -108,6 +108,7 @@ function closeNav5() {
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Save</button>
     <button type="submit" class="btn sub3 bt_b">Save & Close</button>
+    <button type="submit" class="btn sub3 bt_b">Confirm</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
     <button type="submit" class="btn sub2 bt_b">Clear</button>
   </div>
@@ -951,7 +952,7 @@ function closeNav5() {
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
       <li><a href="#">Exit Interview Process</a></li>
-      <li class="active">Manage Exit Interview Process</li>
+      <li class="active">Update Interview Feedback</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -959,10 +960,12 @@ function closeNav5() {
     <div class="content_area_container cont_contr">
       
       <div class="content_box1 cont_contr">
-        <h2>Manage Exit Interview Process</h2>      
+        <h2>Update Interview Feedback</h2>    
+
+        <div class="pop_2" style="display: none;"> </div>  
 
         <div class="fg4">
-          <div class="fg12 mar_at flt_l box_emp_br edt_mnt wdtz95">
+          <div class="fg12 mar_at flt_l box_emp_br edt_mnt wdtz95 hei_at">
             <div class="clearfix"></div>
             <div class="fg12 empl_pop_dtl">
               <h3>Employee Name 1</h3>
@@ -975,11 +978,12 @@ function closeNav5() {
               </div>
             </div>
             <div class="fg_3_1 empl_pop_dtl wid_76_pz">
-              <ul class="join_leav emp_dtl_bdr">
+              <ul class="join_leav emp_dtl_bdr wid_36">
                 <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
                 <li class="bg_red elg_2"><span class="spn_zp1">Division:</span> <span class="frz_ll">Division 1</span></li>
                 <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
-                <li class="bg_red"><span class="spn_zp1">Pay Grade:</span> <span class="frz_ll">3,000.00</span></li>
+                <li class="bg_red"><span class="spn_zp1">Resignation Date:</span> <span class="frz_ll">15/02/2021</span></li>
+                <li class="bg_red"><span class="spn_zp1">Date of Leaving:</span> <span class="frz_ll">15/02/2021</span></li>
               </ul>
             </div>
           </div>
@@ -990,27 +994,27 @@ function closeNav5() {
             <table class="table table-bordered tbl_640">
               <thead class="thead1">
                 <tr>
-                  <th class="col-md-2 tr_l">Question#</th>
+                  <th class="th_b4 tr_l">Question#</th>
                   <th class="col-md-10 tr_l">Questions</th>
                 </tr>
               </thead>
               <tbody id="myTable">
                 <tr class="tr1">
-                  <td class="tr_l">Question 1</td>
+                  <td class="tr_c">1 <span class="cls_bgb flt_r"><i class="fa fa-question-circle"></i> </span></td>
                   <td class="tr_l">Common qtn 1</td>
                 </tr>
                 <tr>
-                  <td class="tr_l">Answer</td>
+                  <td class="tr_c"><span class="cls_bgbg flt_r">A</span></td>
                   <td class="tr_l">
                     <input type="text" class="form-control fg2_inp2 tr_l" id="email" placeholder="Answer" name="email" required="">
                   </td>
                 </tr>
                 <tr class="tr1">
-                  <td class="tr_l">Question 2</td>
-                  <td class="tr_l">Common qtn 2</td>
+                  <td class="tr_c">1 <span class="cls_bgb flt_r"><i class="fa fa-question-circle"></i> </span></td>
+                  <td class="tr_l">Common qtn 1</td>
                 </tr>
                 <tr>
-                  <td class="tr_l">Answer</td>
+                  <td class="tr_c"><span class="cls_bgbg flt_r">A</span></td>
                   <td class="tr_l">
                     <input type="text" class="form-control fg2_inp2 tr_l" id="email" placeholder="Answer" name="email" required="">
                   </td>
@@ -1028,6 +1032,26 @@ function closeNav5() {
             <!-- <button type="submit" class="btn sub1">Complete</button> -->
             <button type="submit" class="btn sub1">Save</button>
             <button type="submit" class="btn sub3">Save & Close</button>
+            <span class="dropdown dd_lft0">
+              <button class="dropdown-toggle btn nw1 sub3 opn_cnfm" title="Confirm">
+              Confirm
+              </button>
+              <div class="dropdown-menu drop_dnm cnfm_bx rgt_0b1c rgt_bfr1">
+                <div class="modal-header">
+                  <h5>Confirm</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">Are you sure to confirm this entry?</div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                    <button class="btn btn-danger cls_cnfm">No</button>
+                  </div>
+                </div>
+              </div>
+            </span>
             <button type="submit" class="btn sub4">Cancel</button>
             <button type="submit" class="btn sub2">Clear</button>
           </div>
@@ -1447,6 +1471,62 @@ $(document).ready(function(){
   });
 });
 </script>
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_resgn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".resgn_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_retrct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".retrct_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_cnfmzz").click(function(){
+    $(".pop_2_11").fadeIn();
+    $(".cnfmzz_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .nw1, .bt_b").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
+    }
+});
+</script>
+
 
 </body>
 </html>

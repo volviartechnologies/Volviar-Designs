@@ -950,7 +950,7 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li class="active">Exit Interview Process</li>
+      <li class="active">Exit Interview</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -960,34 +960,14 @@ function closeNav5() {
 <!---frame_border_area_opened---->
 
 <!---inner_content_sections area_started-->
-          <h1 class="h1_con">Exit Interview Process</h1>
-
-          <div class="form-group fg2 hcm_2_1">
-            <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2">
-              <option>Designation 1</option>
-              <option>Designation 2</option>
-              <option>Designation 3</option>
-            </select> 
-          </div>
-          <div class="form-group fg2 hcm_2_1">
-            <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2">
-              <option>Employee 1</option>
-              <option>Employee 2</option>
-              <option>Employee 3</option>
-            </select> 
-          </div>
-
-        <div class="fg2 fg2_blk hcm_2_1">
-          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-          <button class="submit_ser"></button>
-          <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
-        </div>
+          <h1 class="h1_con">Exit Interview</h1>
 <!---=================section_devider============-->
       <div class="clearfix"></div>
       <div class="devider"></div>
 <!---=================section_devider============-->
+
+
+        <div class="pop_2" style="display: none;"> </div>  
 
           <div class="hcm_res r_800">
         <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
@@ -1005,7 +985,10 @@ function closeNav5() {
                 <th class="th_b4 tr_l">Department
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
                 </th>
-                <th class="th_b6">Action</th>
+                <th class="th_b7 tr_c">Resignation Date
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Resignation Date">
+                </th>
+                <th class="th_b6">Actions</th>
               </tr>
              
             </thead>
@@ -1015,19 +998,36 @@ function closeNav5() {
                 <td class="tr_l">Employee 1</td>
                 <td class="tr_l">Designation 1</td>
                 <td class="tr_l">Department</td>
+                <td class="tr_c">15/02/2021</td>
                 <td>
                   <div class="btn_stl1">
-                <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                  <i class="fa fa-list-alt"></i>
-                </button><!-- 
-                <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                  <i class="fa fa-edit"></i>
-                </button>
-                <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
-                  <i class="fa fa-trash"></i>
-                </button> -->
-                <button class="btn act_btn bn1" onclick="location.href='exit_intrview_process_click.html';" data-toggle="modal" data-target="#exampleModal" title="Manage Interview">
-                  <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
+                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
+                      <i class="fa fa-list-alt"></i>
+                    </button>
+                    <button class="dropdown-toggle btn act_btn bn11" title="Update Interview Feedback" onclick="location.href='exit_intrview_process_click.html';" onmouseover="selc1()" onmouseout="selc()" onfocus="selc1()" onfocusout="selc()">
+                        <i class="rejct_ss ssi1">
+                          <img src="../images/icons/opp/infd.png" id="selc">
+                          <img src="../images/icons/opp/infd1.png" id="selc1" style="display: none;">
+                        </i>
+                    </button>
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_cnfm" title="Confirm">
+                      <i class="fa fa-check"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm cnfm_bx">
+                        <div class="modal-header">
+                          <h5>Confirm</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to confirm this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                          <button class="btn btn-danger cls_cnfm">No</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
                 </td>
               </tr>
@@ -1091,6 +1091,56 @@ function closeNav5() {
     Designed by <span>Volviar</span> Technologies
   </p>
 </div>
+
+
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
+<div class="filtr_sec mr_400">
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
+    <div class="box_cnt_zz">
+      <div class="clearfix"></div>
+      <div class="form-group fg12">
+        <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="Inpz1" autofocus="">
+          <option>Designation 1</option>
+          <option>Designation 2</option>
+          <option>Designation 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg12">
+        <label for="email" class="fg2_la1">Employee:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+          <option>Employee 1</option>
+          <option>Employee 2</option>
+          <option>Employee 3</option>
+        </select> 
+      </div>
+      <div class="fg12 bg_clr1">
+        <label for="email" class="fg2_la1">Resignation Date:<span class="spn1"></span></label>
+        <div class="form-group fg6 wid_dt52">
+          <label for="pwd" class="fg2_la1 wid_50fx">From:<span class="spn1"></span> </label>
+          <div id="datepicker1" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr dt_fltr" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+        <div class="form-group fg6 wid_dt47">
+          <label for="pwd" class="fg2_la1 wid_50fx">To:<span class="spn1"></span> </label>
+          <div id="datepicker" class="input-group date new_date_sec" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr dt_fltr" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox bt_za1 fix_serfl"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
+  </div>
+</div>
+
+
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
@@ -1418,29 +1468,28 @@ function myFunction_b() {
 
 
 
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker').datepicker({
-      uiLibrary: 'bootstrap'
-    });
-});
-</script>
 
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker1').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
-
 <script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker2').datepicker({
-      uiLibrary: 'bootstrap'
-    });
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
 });
 </script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
 
 
 
@@ -1604,6 +1653,180 @@ $(document).ready(function(){
         $(".cont_contr").animate({ scrollTop: 0 }, 600); 
         return false; 
     }); 
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_resgn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".resgn_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_retrct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".retrct_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_cnfmzz").click(function(){
+    $(".pop_2_11").fadeIn();
+    $(".cnfmzz_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .nw1, .bt_b, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
+    }
+});
+</script>
+
+<script>
+function selc() {
+  document.getElementById("selc").style.display = "block";
+  document.getElementById("selc1").style.display = "none";
+}
+
+function selc1() {
+  document.getElementById("selc1").style.display = "block";
+  document.getElementById("selc").style.display = "none";
+}
+function selca() {
+  document.getElementById("selc_a").style.display = "block";
+  document.getElementById("selc1_a").style.display = "none";
+}
+
+function selc1a() {
+  document.getElementById("selc_a").style.display = "block";
+  document.getElementById("selc1_a").style.display = "none";
+}
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+  $('#Inpz1').focus();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+  });
+  $(".viw_b1").click(function(){
+    $(".viw_b1").addClass("vw_cs_sel");
+    $(".viw_b2").removeClass("vw_cs_sel");
+    $(".widgt_view").fadeIn();
+    $(".tbl_view").hide();
+  });
+  $(".viw_b2").click(function(){
+    $(".viw_b2").addClass("vw_cs_sel");
+    $(".viw_b1").removeClass("vw_cs_sel");
+    $(".widgt_view").hide();
+    $(".tbl_view").fadeIn();
+  });
+  //buttons for report section//
+  $(".tab_postv .btn_p1").click(function(){
+    $(".tab_postv .btn_p1").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p2").click(function(){
+    $(".tab_postv .btn_p2").addClass("seltd_btn");
+    $(".tab_postv .btn_p1, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p3").click(function(){
+    $(".tab_postv .btn_p3").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p1, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+
+  $(".tab_negtv .btn_p1").click(function(){
+    $(".tab_negtv .btn_p1").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p2").click(function(){
+    $(".tab_negtv .btn_p2").addClass("seltd_btn");
+    $(".tab_negtv .btn_p1, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p3").click(function(){
+    $(".tab_negtv .btn_p3").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p1, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p4").click(function(){
+    $(".tab_negtv .btn_p4").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p1").removeClass("seltd_btn");
+  });
+
+});
+</script>
+<script>
+  $( document ).on( 'click', function ( e ) {
+    if ( $( e.target ).closest( elem ).length === 0 ) {
+        $( elem ).hide();
+    }
+});
+
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC       
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+    }
 });
 </script>
 

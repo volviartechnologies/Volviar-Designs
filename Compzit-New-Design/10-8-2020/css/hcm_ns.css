@@ -2535,6 +2535,12 @@ span.box_ae{padding-right: 6px;}
 .table-bordered > tbody > tr > td.dedun_c{border: 1px solid #ffbebe!important;}
 .pdng_tpalgn{padding-top: 20px;}
 .sts_ico img{width: 30px;height: auto;}
+.hei_at{height: auto;}
+.rgt_bfr1:before{left:auto;right: 100px;}
+.wid_36 .spn_zp1{width: 36%!important;}
+.cls_bgbg{background-color: #4caf50;color: #fff;width: 16px;height: 16px;text-align: center;border-radius: 20px;font-size: 11px;}
+.cls_bgbg:befor{content: ""; border-left: 6px solid #ccc;border-bottom: 6px solid #ccc}
+.cls_bgb{color: #1da1fd;font-size: 16px;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 
