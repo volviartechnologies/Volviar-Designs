@@ -2547,7 +2547,8 @@ span.box_ae{padding-right: 6px;}
 .stwt_btn{width: 42px;height: 17px;}
 .stwt_btn .slider_tog:before{height: 12px;width: 12px;left: 2px;bottom: 3px;}
 .rgt_psn{right: 20px;}
-
+.droplist .dropdown-main ul{max-height: 200px;} 
+.droplist .dropdown-display-label{max-height: 50px;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 

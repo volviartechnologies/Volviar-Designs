@@ -1267,7 +1267,7 @@ function closeNav5() {
               <tr class="">
                 <td class="tr_l">Flight Ticket</td>
                 <td class="tr_l">
-                  <div class="dropdown-mul-1 dropdown-multiple-label mr_btm6z">
+                  <div class="dropdown-mul-1 dropdown-multiple-label mr_btm6z droplist">
                     <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
                   </div>
                 </td>
@@ -1948,6 +1948,11 @@ function closesave() {
 }
 </script>
 <!--save_pop up_closed-->
+<script type="text/javascript">
+    $('#ext_psd').on('shown.bs.modal', function () {
+        $(".droplist input").focus();
+    });
+</script>
 
 </body>
 </html>
