@@ -95,6 +95,13 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
+<!---multiple selection css-->
+ <script type="text/javascript" src="../m_select/mock.js"></script>  
+  <link rel="stylesheet" type="text/css" href="../m_select/jquery.dropdown.css">
+  <script src="../m_select/jquery.dropdown.js"></script>
+<!---multiple selection css closed--->
+
+
 <!--------css_Included_closed------->
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
@@ -108,8 +115,8 @@ function closeNav5() {
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Save</button>
     <button type="submit" class="btn sub3 bt_b">Save & Close</button>
-    <button type="submit" class="btn sub2 bt_b">Clear</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -950,7 +957,7 @@ function closeNav5() {
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
       <li><a href="#">Accommodation</a></li>
-      <li class="active">add</li>
+      <li class="active">Add Accommodation</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -960,12 +967,14 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Add Accommodation</h2>
 
-        <div class="form-group fg2 sa_2 sa_480">
+        <div class="fg6">
+
+        <div class="form-group fg6 sa_2 sa_480">
           <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Name">
+          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Name" autofocus="">
         </div>
 
-        <div class="form-group fg2 sa_2 sa_480">
+        <div class="form-group fg6 sa_2 sa_480">
           <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 inp_mst">
             <option>Category 1</option>
@@ -977,9 +986,9 @@ function closeNav5() {
           </select>
         </div>
 
-        <div class="form-group fg7 sa_2 sa_480">
+        <div class="form-group fg6 sa_2 sa_480">
           <label for="email" class="fg2_la1">Floor#:<span class="spn1">*</span></label>
-          <div class="input-group number-spinner">
+          <div class="input-group number-spinner dt_wdt">
             <span class="input-group-btn data-dwn">
               <button class="btn btn-default btn-info blu_spn" data-dir="dwn"><span class="fa fa-minus"></span></button>
             </span>
@@ -990,110 +999,90 @@ function closeNav5() {
           </div>
         </div>
 
-        <div class="form-group fg4 sa_2 sa_480">
+        <div class="form-group fg6 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Location:<span class="spn1"></span></label>
+          <input type="text" class="form-control fg2_inp1" placeholder="Location">
+        </div>
+        <div class="form-group fg6 sa_2 sa_480">
+          <div class="form-group fg6 sa_2 sa_480">
+            <label for="email" class="fg2_la1 pad_l">Mess Enabled:<span class="spn1">*</span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" class="mes_btn" checked="" >
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group fg6 sa_2 sa_480">
+            <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" >
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group fg6 sa_2 sa_480">
           <label for="email" class="fg2_la1">Address:<span class="spn1"></span></label>
           <textarea type="text" class="form-control fg2_inp1" placeholder="Address"></textarea>
         </div>
-
-        <div class="form-group fg2 sa_2 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Have a Mess Enabled:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" class="mes_btn" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
+        <div class="fg6 sel_op_1 hc_op1 drp_lb1z mrb00 max_52p">
+          <label class="">Business Unit:</label><br>
+          <div class="dropdown-mul-1 dropdown-multiple-label">
+            <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
           </div>
-          <br/>
-          <div class="top_br_container tbr_contr mes_detl" style="display: none;">
-            <div class="top_br_1 tbr_set bg_txt_1 wdt_96">
-              <div class="form-group fg6 sa_2 sa_480">
+        </div>
+        <div class="fg6">
+          <div class="">
+            <div class="top_br_1 tbr_set wdt_96">
+              <div class="form-group fg12 sa_2 sa_480">
                 <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 inp_mst">
+                <select class="form-control fg2_inp1 inp_mst mes_detl">
                   <option>Category 1</option>
                   <option>Category 2</option>
                   <option>Category 3</option>
                 </select>
               </div>
-              <div class="form-group fg4 sa_2 sa_480">
+              <div class="form-group fg6 sa_2 sa_480">
                 <label for="email" class="fg2_la1">Subscribers#:<span class="spn1">*</span></label>
                 <div class="input-group number-spinner">
                   <span class="input-group-btn data-dwn">
-                    <button class="btn btn-default btn-info blu_spn" data-dir="dwn"><span class="fa fa-minus"></span></button>
+                    <button class="btn btn-default btn-info blu_spn mes_pls" data-dir="dwn"><span class="fa fa-minus"></span></button>
                   </span>
-                  <input type="text" class="form-control text-center inp_mst" value="1" min="-10" max="40">
+                  <input type="text" class="form-control text-center inp_mst mes_detl" value="1" min="-10" max="40">
                   <span class="input-group-btn data-up">
-                    <button class="btn btn-default btn-info blu_spn" data-dir="up"><span class="fa fa-plus"></span></button>
+                    <button class="btn btn-default btn-info blu_spn mes_pls" data-dir="up"><span class="fa fa-plus"></span></button>
                   </span>
                 </div>
-
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="form-group fg2 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Location:<span class="spn1"></span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="Location">
-        </div>
-
-        <div class="form-group fg8 sa_2 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div>
-   
-        <div class="clearfix"></div>
-        <div class="free_sp"></div>
-        <div class="devider"></div>
-
-        <div class="sub_cont pull-right">
-          <div class="save_sec">
-            <button type="submit" class="btn sub1 add_1pre">Save</button>
-            <button type="submit" class="btn sub3">Save & Close</button>
-            <button type="submit" class="btn sub2">Clear</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-
-          <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update & Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-        </div>
-   
-        <div class="clearfix"></div>
-        <div class="free_sp"></div>
-        <div class="devider"></div>
-
-        <h3>Accommodation Premises<span class="spn1">*</span></h3>
-
-        <div class="top_br_container tbr_contr">
+        <div class="fg6 tbl_bsa">
+          <h3>Accommodation Premises<span class="spn1">*</span></h3>
+          <div class="top_br_container tbr_contr">
           <div class="top_br_1 tbr_set">
-            <p class="pre_txt">Please save the accomodation to continue...</p>
+            <!-- <p class="pre_txt">Please save the accomodation to continue...</p> -->
 
-            <div class="col-md-8 pa_prem pre_box1" style="display:block;">
+            <div class="fg12 pa_prem pre_box1" style="display:block;">
               <div class="r_640">
                 <table class="display table-bordered pro_tab1 tbl_640" cellspacing="0" width="100%">
                   <thead class="thead1">
                     <tr>
-                      <th class="col-md-1">Sl#</th>
                       <th class="col-md-6 tr_l">Room Name</th>
                       <th class="col-md-2">Count</th>
-                      <th class="col-md-3">Action</th>
+                      <th class="col-md-3">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>1</td>
                       <td class="tr_l">Room 1</td>
                       <td>
                         <input type="number" class="tb_inp_1 tb_in tr_c" placeholder="0" disabled="">
@@ -1113,7 +1102,6 @@ function closeNav5() {
                       </td>
                     </tr>
                     <tr>
-                      <td>1</td>
                       <td class="tr_l">Room 1</td>
                       <td>
                         <input type="number" class="tb_inp_1 tb_in tr_c" placeholder="0" disabled="">
@@ -1139,6 +1127,27 @@ function closeNav5() {
 
             </div>
           </div>
+        </div>
+   
+        <div class="clearfix"></div>
+        <div class="free_sp"></div>
+        <div class="devider"></div>
+
+        <div class="sub_cont pull-right">
+          <div class="save_sec">
+            <button type="submit" class="btn sub1 add_1pre">Save</button>
+            <button type="submit" class="btn sub3">Save & Close</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+            <button type="submit" class="btn sub2">Clear</button>
+          </div>
+
+          <div class="edit_sec">
+            <button type="submit" class="btn sub1">Update</button>
+            <button type="submit" class="btn sub3">Update & Close</button>
+            <button type="submit" class="btn sub2">Confirm</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+          </div>
+        </div>
         
       </div>
     </div>
@@ -1715,12 +1724,13 @@ console.clear();
 
 </script>
 
-<!-----approval_set_section_script_closed--->
+<!-----approval_set_section_script_closed-->
 
 <script>
 $(document).ready(function(){
   $(".mes_btn").click(function(){
-    $(".mes_detl").toggle(400);
+    $(".mes_detl").prop("disabled", true);
+    $(".mes_pls").prop("disabled", true);
   });
 });
 </script>
@@ -1779,7 +1789,7 @@ window.onclick = function(event) {
     }
 }
 </script>
-<!---add premises_section_popup_script_closed--->
+<!---add premises_section_popup_script_closed-->
 <script>
 $(document).ready(function(){
   $(".add_1pre").click(function(){
@@ -1788,5 +1798,43 @@ $(document).ready(function(){
   });
 });
 </script>
+
+
+
+<!---multiple selection new_script-->
+<link href="../css/select2.min.css" rel="stylesheet" />
+<script src="../js/select2.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
+
+<!---multiple selection new_script-->
+  <script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(false)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+  </script>
+<!---multiple selection new_script_closed--->
 </body>
 </html>
