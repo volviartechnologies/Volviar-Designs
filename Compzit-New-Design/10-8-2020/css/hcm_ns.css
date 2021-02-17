@@ -2552,6 +2552,17 @@ span.box_ae{padding-right: 6px;}
 .tbl_bsa h3{margin-top: 0px;}
 .max_52p .dropdown-display-label{max-height: 52px!important;}
 .max_52p .dropdown-main ul{max-height: 190px!important;}
+.padg_rg1{padding-right: 20px;}
+.box_dr{width: 100%;height: auto;padding: 20px;border: 1px solid #ccc;margin: auto;float: left; padding-bottom: 0px;border-radius: 8px;}
+.sub_1 option {font-weight: 300;margin-bottom: 4px;padding: 2px 6px;background-color: rgba(204, 229, 249, 0.3);color: #ce0b00;border-radius: 4px;}
+.sub_2 option{font-weight: 300;margin-bottom: 4px;padding: 2px 6px;border-radius: 4px;}
+.sub_1, .sub_2{padding:6px;}
+.bg_txt_1{margin-bottom: 10px;}
+.fnt_12{font-size: 13px;}
+.subject-info-box-1, .subject-info-box-2{width: 40%!important;}
+.padding_tp50{padding-top: 50px;text-align: center;}
+.pldg_0 .subject-info-box-1, .subject-info-box-2{padding:0px;}
+
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
