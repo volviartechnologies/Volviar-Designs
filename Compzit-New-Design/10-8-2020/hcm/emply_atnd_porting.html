@@ -711,6 +711,7 @@ function closeNav5() {
 <!------------------==================mySidenav4_closed======================--------------------->
 
 
+
   <div class="wrapper wr2" onmouseover="closesave()">
 
 <div class="menu_fix">
@@ -949,7 +950,7 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li class="active">Employee Transfer</li>
+      <li class="active">Employee Attendance Porting</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -959,72 +960,159 @@ function closeNav5() {
 <!---frame_border_area_opened---->
 
 <!---inner_content_sections area_started-->
-          <h1 class="h1_con">Employee Transfer  
-            <div class="transf_contain flt_r">
-              <h3>New Transfer</h3>
-              <div class="">
-                <a href="add_emply_single.html">
-                  <button class="bu_trf1"><i class="fa fa-user"></i> Single Transfer</button>
-                </a>
-                <a href="add_emply_bulk.html">
-                  <button class="bu_trf2"><i class="fa fa-users"></i> Bulk Transfer</button>
-                </a>
-              </div>
+          <h1 class="h1_con">Employee Attendance Porting</h1>
+          
+            <div class="form-group fg2 sa_fg3 sa_640">
+              <label for="email" class="fg2_la1 pad_l">Choose File: <span class="spn1">&nbsp;</span></label>
+              <input type="file" id="file-upload" multiple required />
+              <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Import data from CSV file</label>
+              <div id="file-upload-filename" class="file_n"></div>
             </div>
-          </h1>
+              
+            <div class="fg7_5 sa_fg3 sa_640">
+              <label class="form1 mar_bo mar_tp">
+                <span class="button-checkbox">
+                  <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                  <input type="checkbox" class="hidden" />
+                </span>
+                <p class="pz_s">My Data has Headers</p>
+              </label>
+            </div>
 
-          <div class="pop_2" style="display: none;" ></div>
-
-         
-<!---=================section_devider============-->
+            
+          <div class="fg2 fg2_blk sa_2 sa_480">
+            <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
+            <button type="submit" class="btn sub1">Import</button>
+          </div>
+          <div class="fg5 fg2_adn flt_r">
+            <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
+            <button class="btn tab_but1 butn5"><i class="fa fa-download"></i> Download CSV Template</button>  
+          </div>
+<!---=================section_devider============--->
       <div class="clearfix"></div>
-      <div class="free_sp2"></div>
       <div class="devider"></div>
 <!---=================section_devider============-->
-          <div class="r_1024">
-            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+
+     <div class="sec_1">
+      <h3>Correct List</h3>
+      <div class="clearfix"></div>
+        <div class="r_800">
+          <table id="example" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="col-md-3 tr_l"> Employee Name
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee Name">
-                </th>
-                <th class="col-md-2 tr_l"> Department
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
-                </th>
-                <th class="col-md-3 tr_l"> PayGrade
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Paygrade">
-                </th>
-                <th class="col-md-1 tr_c"> From Date
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="From Date">
-                </th>
-                <th class="col-md-1 tr_c"> To Date
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="To Date">
-                </th>
-                <th class="col-md-2">Actions</th>
+                <th class="th_b6 tr_l">Employee ID</th>
+                <th class="th_b4 tr_l">First Name</th>
+                <th class="th_b4 tr_l">Last Name</th>
+                <th class="th_b7 tr_c">Date</th>
+                <th class="th_b6 tr_c">Check In</th>
+                <th class="th_b6 tr_c">Check Out</th>
               </tr>
-             
             </thead>
             <tbody>
               <tr>
+                <td class="tr_l">Emp0001</td>
                 <td class="tr_l">Employee 1</td>
-                <td class="tr_l">Department 1</td>
-                <td class="tr_l">40</td>
-                <td>03/09/2019</td>
-                <td>10/09/2019</td>
-                <td>
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal1" title="Renew">
-                      <i class="fa fa-repeat"></i>
-                    </button>
-                  </div>
-                </td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
+      <div class="sec_2" style="display: none;">
+      <h3>Early Going List</h3>
+      <div class="clearfix"></div>
+        <div class="r_800">
+          <table id="example1" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="col-md-1 tr_l">Employee ID</th>
+                <th class="col-md-3 tr_l">First Name</th>
+                <th class="col-md-2 tr_l">Last Name</th>
+                <th class="col-md-2 tr_c">Date</th>
+                <th class="col-md-2 tr_c">Check In</th>
+                <th class="col-md-2 tr_c">Check Out</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sec_3" style="display: none;">
+      <h3>Late Comers List</h3>
+      <div class="clearfix"></div>
+        <div class="r_800">
+          <table id="example2" class="display table-bordered tbl_1024" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="col-md-1 tr_l">Employee ID</th>
+                <th class="col-md-3 tr_l">First Name</th>
+                <th class="col-md-2 tr_l">Last Name</th>
+                <th class="col-md-2 tr_c">Date</th>
+                <th class="col-md-2 tr_c">Check In</th>
+                <th class="col-md-2 tr_c">Check Out</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+              <tr>
+                <td class="tr_l">Emp0001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Employee</td>
+                <td class="tr_c">05/11/2019</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">09:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+        <div class="clearfix"></div>
+        <div class="free_sp1"></div>
+        <div class="devider"></div>
+
+      <div class="pull-right sell_1 save_sec">
+        <button class="btn sub3 pre_sec" disabled=""><i class="fa fa-angle-double-left"></i> Previous</button>
+        <button class="btn sub3 pre_sec1" style="display: none;"><i class="fa fa-angle-double-left"></i> Previous1</button>
+        <button class="btn sub4"> Cancel</button>
+        <button class="btn sub1 sav_sec" disabled=""> Save</button>
+        <button class="btn sub3 nxt_sec">Next <i class="fa fa-angle-double-right"></i></button>
+        <button class="btn sub3 nxt_sec1" style="display: none;">Next1 <i class="fa fa-angle-double-right"></i></button>
+      </div>
 
 
 <!---inner_content_sections area_closed--->
@@ -1052,6 +1140,7 @@ function closeNav5() {
   <i class="fa fa-print"></i>
 </a>
 <!---print_button_closed--->
+
 
 
 <div class="import_opt">
@@ -1083,88 +1172,7 @@ function closeNav5() {
   </p>
 </div>
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------>
-
-
-
-
-<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
-<div class="filtr_sec mr_400">
-  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
-    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
-    <div class="box_cnt_zz">
-      <div class="clearfix"></div>
-      <h3>Transfer Type</h3>
-      
-      <div class="fltr_bxv">
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0"><!-- 
-          <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label> -->
-          <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Single</span></button>
-          <button class="tb_btz tb_buton2 viw_b1_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/sb2.png"></i> <span class="sp_plcy sp_laz">Bulk</span></button>
-        </div>
-        
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0"><!-- 
-          <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label> -->
-          <button class="tb_btz tb_buton1 viw_b2 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/ib1.png"></i> <span class="sp_plcy sp_laz">Inter Office</span></button>
-          <button class="tb_btz tb_buton2 viw_b2_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/ib2.png"></i> <span class="sp_plcy sp_laz">Business Unit</span></button>
-        </div>
-        
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0"><!-- 
-          <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label> -->
-          <button class="tb_btz tb_buton1 viw_b3 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/mn1.png"></i> <span class="sp_plcy sp_laz">Manpower Request</span></button>
-          <button class="tb_btz tb_buton2 viw_b3_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/mn2.png"></i> <span class="sp_plcy sp_laz">Normal</span></button>
-        </div>
-        
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0"><!-- 
-          <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label> -->
-          <button class="tb_btz tb_buton1 viw_b4 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
-          <button class="tb_btz tb_buton2 viw_b4_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Permanent</span></button>
-        </div>
-      </div>
-
-    </div>
-    <div class="box_cnt_zz">
-      <button class="btn_serbox bt_za1"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
-    </div>
-    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Renew</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="fg6">
-          <label for="pwd" class="fg2_la1">To:<span class="spn1"></span> </label>
-          <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr" type="text" id="dte_1_a">
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-
-        <div class="fg6">
-          <label for="pwd" class="fg2_la1">To:<span class="spn1"></span> </label>
-          <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr" type="text" id="dte_1_a">
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1">Save</button>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
+<!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1316,7 +1324,7 @@ $(document).ready(function(){
 
 </script>
 
-<!--searchbox_list_script_opened------>
+<!--searchbox_list_script_opened------->
 
 
 <script>
@@ -1380,52 +1388,30 @@ function myFunction_b() {
 </script>
 
 
-<script type="text/javascript">
-  $(function () {
-  $("#datepicker").datepicker({ 
-        autoclose: true, 
-        todayHighlight: true
-  }).datepicker('update', new Date());
-});
-</script>
-<script type="text/javascript">
-  $(function () {
-  $("#datepicker1").datepicker({ 
-        autoclose: true, 
-        todayHighlight: true
-  }).datepicker('update', new Date());
-});
-</script>
-<script type="text/javascript">
-  $(function () {
-  $("#datepicker2").datepicker({ 
-        autoclose: true, 
-        todayHighlight: true
-  }).datepicker('update', new Date());
-});
-</script>
-<script type="text/javascript">
-  $(function () {
-  $("#datepicker3").datepicker({ 
-        autoclose: true, 
-        todayHighlight: true
-  }).datepicker('update', new Date());
-});
-</script>
-<script type="text/javascript">
-  $(function () {
-  $("#datepicker4").datepicker({ 
-        autoclose: true, 
-        todayHighlight: true
-  }).datepicker('update', new Date());
-});
-</script>
-<!--date_picker--->
 
-<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
-<script src="../date_pick/datepicker.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
 
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker1').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#datepicker2').datepicker({
+      uiLibrary: 'bootstrap'
+    });
+});
+</script>
 
 
 
@@ -1543,13 +1529,36 @@ $(".wr2").click(function(){
 });
 </script>
 
-<!-------------print_script_close-------------------->
+<!-------------print_script_close--------------------->
+
+<!----file_uploader_script_started--->
+<script type="text/javascript">
+  var input = document.getElementById( 'file-upload' );
+var infoArea = document.getElementById( 'file-upload-filename' );
+
+input.addEventListener( 'change', showFileName );
+
+function showFileName( event ) {
+  
+  // the change event gives us the input it occurred in 
+  var input = event.srcElement;
+  
+  // the input has an array of files in the `files` property, each one has a name that you can use. We're just using the name here.
+  var fileName = input.files[0].name;
+  
+  // use fileName however fits your app best, i.e. add it into a div
+  infoArea.textContent = '' + fileName;
+}
+</script>
+<!----file_uploader_script_Closed--->
 
 
 <!---data_table_css & scripts_started---->
 <script type="text/javascript">
 $(document).ready(function() {
     $('#example').DataTable();
+    $('#example1').DataTable();
+    $('#example2').DataTable();
 } );
 </script>
   <!-- <script type="text/javascript" src="../table/js1.js"></script>
@@ -1587,196 +1596,39 @@ $(document).ready(function() {
   </script>
 
   <!---Data_table_script for search_closed-->
-
-
 <script>
 $(document).ready(function(){
-  $(".opn_sts").click(function(){
-    $(".pop_2").fadeIn();
-    $(".sts_bx").show( 300);
-    $('#InputToFocus').focus();
+  $(".nxt_sec").click(function(){
+    $(".sec_1").hide();
+    $(".sec_2").show();
+    $(".nxt_sec").hide();
+    $(".nxt_sec1").show();
+    $(".pre_sec").prop('disabled', false);
   });
-  $(".opn_sts_1").click(function(){
-    $(".pop_2").fadeIn();
-    $(".sts_bx_1").show( 300);
-    $('#InputToFocus_1').focus();
+  $(".nxt_sec1").click(function(){
+    $(".sec_2").hide();
+    $(".sec_3").show();
+    $(".pre_sec1").show();
+    $(".pre_sec").hide();
+    $(".nxt_sec1").prop('disabled', true);
+    $(".sav_sec").prop('disabled', false);
   });
-  $(".opn_cnfm").click(function(){
-    $(".pop_2").fadeIn();
-    $(".cnfm_bx").show( 300);
-    $('#InputToFocus1').focus();
+  $(".pre_sec1").click(function(){
+    $(".sec_1, .sec_3").hide();
+    $(".sec_2").show();
+    $(".pre_sec").show();
+    $(".pre_sec1").hide();
+    $(".nxt_sec1").prop('disabled', false);
+    $(".sav_sec").prop('disabled', true);
   });
-  $(".opn_dlt_1").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dlt_bx_1").show( 300);
-    $('#InputToFocus2_1').focus();
-  });
-  $(".opn_dlt_2").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dlt_bx_2").show( 300);
-    $('#InputToFocus2_2').focus();
-  });
-  $(".opn_dlt_3").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dlt_bx_3").show( 300);
-    $('#InputToFocus2_3').focus();
-  });
-  $(".opn_dlt").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dlt_bx").show( 300);
-    $('#InputToFocus2').focus();
-  });
-  $(".opn_ropn").click(function(){
-    $(".pop_2").fadeIn();
-    $(".ropn_bx").show( 300);
-    $('#InputToFocus3').focus();
-  });
-  $(".opn_aprvl").click(function(){
-    $(".pop_2").fadeIn();
-    $(".aprvl_bx").show( 300);
-    $('#InputToFocus4').focus();
-  });
-  $(".opn_rjct").click(function(){
-    $(".pop_2").fadeIn();
-    $(".rjct_bx").show( 300);
-    $('#InputToFocus5').focus();
-  });
-  $(".opn_rjct1").click(function(){
-    $(".pop_2_1").fadeIn();
-    $(".rjct_bx1").show( 300);
-    $('#InputToFocus10').focus();
-  });
-  $(".opn_aprvl1").click(function(){
-    $(".pop_2_1").fadeIn();
-    $(".aprvl_bx1").show( 300);
-    $('#InputToFocus11').focus();
-  });
-  $(".opn_clsreq").click(function(){
-    $(".pop_2").fadeIn();
-    $(".clsreq_bx").show( 300);
-    $('#InputToFocus6').focus();
-  });
-  $(".opn_realc").click(function(){
-    $(".pop_2").fadeIn();
-    $(".realc").show( 300);
-    $('#InputToFocus7').focus();
-  });
-  $(".opn_renew").click(function(){
-    $(".pop_2").fadeIn();
-    $(".renew_bx").show( 300);
-    $('#renew1').focus();
-  });
-  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
-  });
-  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
-  });
-
-  $(".sel_ar").click(function(){
-    $(".op_al").show();
-    $(".op_ra").hide();
+  $(".pre_sec").click(function(){
+    $(".sec_2, .sec_3").hide();
+    $(".sec_1").show();
+    $(".nxt_sec1").hide();
+    $(".nxt_sec").show();
+    $(".sav_sec, .pre_sec").prop('disabled', true);
   });
 });
 </script>
-<script>
-  $(document).on('keydown', function(e) { 
-  var keyCode = e.keyCode || e.which; 
-
-  if (keyCode == 27) { 
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
-    document.getElementById("#InputToFocus1").hide();
-  } 
-});
-</script>
-<script type="text/javascript">
-  $(document).keyup(function(e) {
-    if (e.which == 27) {
-        $(".overlayInner").fadeOut(300); 
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
-    }
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $('.btn_fltr').click(function() {
-  $('.filtr_sec').addClass("mr_400");
-  $('.on_show').show();
-  $('.on_hide').hide();
-  $('#Inpz1').focus();
-});
-  $('.fltr_cls, .content_container').click(function() {
-  $('.filtr_sec').removeClass("mr_400");
-});
-  $('.btn_serbox, .fix_flt_ser').click(function() {
-  $('.on_show').hide();
-  $('.on_hide').show();
-  $('.filtr_sec').removeClass("mr_400");
-});
-  $(".op_tab1").click(function(){
-  $(".op_tab1").addClass("sel_tabz");
-  $(".op_tab2").removeClass("sel_tabz");
-    $(".ins_opt, .ins_tabs").hide();
-    $(".gur_opt, .gur_tabs").show();
-
-  });
-  $(".op_tab2").click(function(){
-    $(".op_tab2").addClass("sel_tabz");
-    $(".op_tab1").removeClass("sel_tabz");
-    $(".ins_opt, .ins_tabs").show();
-    $(".gur_opt, .gur_tabs").hide();
-  });
-  $(".viw_b1").click(function(){
-    $(".viw_b1").addClass("tb_buton_sel");
-    $(".viw_b1_a").removeClass("tb_buton_sel");
-  });
-  $(".viw_b1_a").click(function(){
-    $(".viw_b1_a").addClass("tb_buton_sel");
-    $(".viw_b1").removeClass("tb_buton_sel");
-  });
-  $(".viw_b2").click(function(){
-    $(".viw_b2").addClass("tb_buton_sel");
-    $(".viw_b2_a").removeClass("tb_buton_sel");
-  });
-  $(".viw_b2_a").click(function(){
-    $(".viw_b2_a").addClass("tb_buton_sel");
-    $(".viw_b2").removeClass("tb_buton_sel");
-  });
-  $(".viw_b3").click(function(){
-    $(".viw_b3").addClass("tb_buton_sel");
-    $(".viw_b3_a").removeClass("tb_buton_sel");
-  });
-  $(".viw_b3_a").click(function(){
-    $(".viw_b3_a").addClass("tb_buton_sel");
-    $(".viw_b3").removeClass("tb_buton_sel");
-  });
-  $(".viw_b4").click(function(){
-    $(".viw_b4").addClass("tb_buton_sel");
-    $(".viw_b4_a").removeClass("tb_buton_sel");
-  });
-  $(".viw_b4_a").click(function(){
-    $(".viw_b4_a").addClass("tb_buton_sel");
-    $(".viw_b4").removeClass("tb_buton_sel");
-  });
-
-});
-</script>
-<script>
-  $( document ).on( 'click', function ( e ) {
-    if ( $( e.target ).closest( elem ).length === 0 ) {
-        $( elem ).hide();
-    }
-});
-
-$( document ).on( 'keydown', function ( e ) {
-    if ( e.keyCode === 27 ) { // ESC       
-  $('.on_show').hide();
-  $('.on_hide').show();
-  $('.filtr_sec').removeClass("mr_400");
-    }
-});
-</script>
-
 </body>
 </html>

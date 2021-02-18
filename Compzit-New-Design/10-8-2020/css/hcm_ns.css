@@ -2574,7 +2574,9 @@ span.box_ae{padding-right: 6px;}
 .dtl_lft{width:96%;margin: auto;float: left;}
 .box_saz{padding:0px;margin-top: 0px!important;}
 .tbr_csa{margin-bottom: 0px;}
-
+.hei_80{height:80px;}
+.fltr_bxv .dt_bsd1 span.sp_plcy.sp_laz{padding:2px 4px;}
+.fltr_bxv .gur_opt{border-bottom: 1px solid #ccc;margin-bottom: 10px;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
