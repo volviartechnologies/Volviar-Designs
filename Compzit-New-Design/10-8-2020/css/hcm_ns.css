@@ -2562,6 +2562,9 @@ span.box_ae{padding-right: 6px;}
 .subject-info-box-1, .subject-info-box-2{width: 40%!important;}
 .padding_tp50{padding-top: 50px;text-align: center;}
 .pldg_0 .subject-info-box-1, .subject-info-box-2{padding:0px;}
+.fg80{width: 80%!important;margin: auto;float: left;}
+.pstn_st1{bottom: auto;top: -80px;right: 30px;}
+.pstn_st1:before{right: -10px;top: 82px;}
 
 /*.mrb10_pag{margin-top: 16px;}
 */

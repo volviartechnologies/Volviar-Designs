@@ -960,13 +960,16 @@ function closeNav5() {
 <!---frame_border_area_opened---->
           
           <h1 class="h1_con h2_con">Add Accommodation Category</h1>
-          <div class="fg4">
-            <div class="form-group fg_3_1 sa_o_fg4">
+          
+          <div class="pop_2" style="display: none;" ></div>
+          
+          <div class="fg6">
+            <div class="form-group fg80 sa_o_fg4">
              <label for="email" class="fg2_la1">Category Name:<span class="spn1">*</span></label>
              <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Category Name" name="email" autofocus="">
             </div>
 
-            <div class="form-group fg4 fg2_mr sa_fg1">
+            <div class="form-group fg5 fg2_mr sa_fg1">
               <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
               <div class="check1">
                 <div class="">
@@ -978,7 +981,7 @@ function closeNav5() {
               </div>
             </div>
           </div>
-          <div class="fg_3_1">
+          <div class="fg6">
             <h5 class="">Accommodation Premises</h5>
             <div class="free_sp2"></div>
 
@@ -986,7 +989,7 @@ function closeNav5() {
               <table class="display table-bordered pro_tab1 tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
-                    <th class="col-md-8 tr_l"> Room Name</th>
+                    <th class="col-md-8 tr_l"> Premise Name</th>
                     <th class="col-md-2">Status</th>
                     <th class="col-md-2">Actions</th>
                   </tr>
@@ -1011,9 +1014,24 @@ function closeNav5() {
                         <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add">
                           <i class="fa fa-plus-circle"></i>
                         </button>
-                        <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                        <span class="dropdown dd_lft0 ">
+                          <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                           <i class="fa fa-trash"></i>
-                        </button>
+                          </button>
+                          <div class="dropdown-menu drop_dnm repn dlt_bx pstn_st1">
+                            <div class="modal-header">
+                              <h5>Delete</h5>
+                              <button type="button" class="close cls_pop" title="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                            </div>
+                            <div class="head_txt">Are you sure to delete this entry?</div>
+                            <div class="modal-footer">
+                              <button class="btn btn-success cls_dlt">Yes</button>
+                              <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                            </div>
+                          </div>
+                        </span>
                       </div>
                     </td>
                   </tr>
@@ -1446,6 +1464,41 @@ jQuery(document).ready(function() {
 <script src="../date_pick/datepicker.js"></script>
 
 <!---date_picker_closed-->
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop").click(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn").focus(function(){
+    $(".drop_dnm, .pop_2").fadeOut();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2").fadeOut();
+    }
+});
+</script>
 
 </body>
 </html>
