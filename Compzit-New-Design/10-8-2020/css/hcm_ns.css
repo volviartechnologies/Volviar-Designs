@@ -2580,7 +2580,10 @@ span.box_ae{padding-right: 6px;}
 .ovrflw .icon_plcy{overflow: hidden;}
 .ovrflw .sp_laz{min-width: 60px;text-align: left;}
 .related{max-height: 300px;overflow: auto;}
-
+.sts_ico1{width: auto;margin: auto;float: left;background-color: transparent;border:none;margin-left: 60px;}
+.sts_ico1 img{width: 20px;height: auto;margin: auto;float: left;}
+.sts_ico1 .btn11{background-color: transparent;padding: 4px;border: 1px solid #FF9800;}
+.sts_ico1 .btn11:hover{box-shadow: 1px 1px 10px #ccc;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
