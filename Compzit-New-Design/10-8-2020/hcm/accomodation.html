@@ -962,16 +962,16 @@ function closeNav5() {
 <!---inner_content_sections area_started-->
           <h1 class="h1_con">Accommodation</h1>
 
-          <div class="form-group fg2 hcm_2_1">
-          <label for="email" class="fg2_la1">Accommodation Type:<span class="spn1"></span></label>
+          <div class="form-group fg5 hcm_2_1">
+          <label for="email" class="fg2_la1">Category:<span class="spn1"></span></label>
           <select class="form-control fg2_inp1 fg_chs2" autofocus="">
-            <option>Accommodation Type 1</option>
-            <option>Accommodation Type 2</option>
-            <option>Accommodation Type 3</option>
+            <option>Category 1</option>
+            <option>Category 2</option>
+            <option>Category 3</option>
           </select> 
         </div>
 
-        <div class="form-group fg2 hcm_2_1">
+        <div class="form-group fg7 hcm_2_1">
           <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
           <select class="form-control fg2_inp1 fg_chs2 inp_mst">
             <option>Active</option>
@@ -999,18 +999,19 @@ function closeNav5() {
       <div class="clearfix"></div>
       <div class="devider"></div>
 <!---=================section_devider============-->
+          <div class="pop_2" style="display: none;" ></div>
 
           <div class="hcm_res r_800">
         <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="col-md-2 tr_l">Accomodation Name
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Accomodation Name">
+                <th class="col-md-4 tr_l">Accomodation
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Accomodation">
                 </th>
-                <th class="col-md-2 tr_l">Accommodation Category
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Accommodation Category">
+                <th class="col-md-3 tr_l">Category
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Category">
                 </th>
-                <th class="col-md-4 tr_l">Address
+                <th class="col-md-3 tr_l">Address
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Address">
                 </th>
                 <th class="col-md-2">Actions</th>
@@ -1024,15 +1025,45 @@ function closeNav5() {
                 <td class="tr_l">Address2</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="btn tab_but1 butn4 btn_sti" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
-                      <i class="fa fa-times-circle"></i>
-                    </button>
+                    <span class="dropdown dd_lft0">
+                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sta opn_sts" title="Change Status">
+                        <i class="fa fa-check-circle "></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm sts_bx overlayInner">
+                        <div class="modal-header">
+                          <h5>Change Status</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to change the active status of this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc1 cls_sts" id="InputToFocus" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_sts">No</button>
+                        </div>
+                      </div>
+                    </span>
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
                       <i class="fa fa-trash"></i>
-                    </button>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
                 </td>
               </tr>
@@ -1042,15 +1073,45 @@ function closeNav5() {
                 <td class="tr_l">Address2</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status" disabled="">
-                      <i class="fa fa-check-circle "></i>
-                    </button>
+                    <span class="dropdown dd_lft0">
+                      <button class="btn dropdown-toggle tab_but1 butn1 btn_sti opn_sts_1" title="Change Status">
+                        <i class="fa fa-times-circle"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm sts_bx_1 overlayInner">
+                        <div class="modal-header">
+                          <h5>Change Status</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to change the active status of this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc1 cls_sts" id="InputToFocus_1" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_sts">No</button>
+                        </div>
+                      </div>
+                    </span>
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete">
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1" title="Delete">
                       <i class="fa fa-trash"></i>
-                    </button>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx_1">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_1" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
                 </td>
               </tr>
@@ -1078,7 +1139,7 @@ function closeNav5() {
                 <td class="tr_l">Address2</td>
                 <td>
                   <div class="btn_stl1">
-                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status">
+                    <button class="btn tab_but1 butn1 btn_sta" data-toggle="modal" data-target="#exampleModal_st" title="Change Status" disabled="">
                       <i class="fa fa-check-circle "></i>
                     </button>
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
@@ -1658,5 +1719,111 @@ $(document).ready(function() {
   </script>
 
   <!---Data_table_script for search_closed-->
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_sts_1").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx_1").show( 300);
+    $('#InputToFocus_1').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt_1").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx_1").show( 300);
+    $('#InputToFocus2_1').focus();
+  });
+  $(".opn_dlt_2").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx_2").show( 300);
+    $('#InputToFocus2_2').focus();
+  });
+  $(".opn_dlt_3").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx_3").show( 300);
+    $('#InputToFocus2_3').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_rjct1").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".rjct_bx1").show( 300);
+    $('#InputToFocus10').focus();
+  });
+  $(".opn_aprvl1").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".aprvl_bx1").show( 300);
+    $('#InputToFocus11').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
+    $('#InputToFocus6').focus();
+  });
+  $(".opn_realc").click(function(){
+    $(".pop_2").fadeIn();
+    $(".realc").show( 300);
+    $('#InputToFocus7').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    }
+});
+</script>
+
 </body>
 </html>

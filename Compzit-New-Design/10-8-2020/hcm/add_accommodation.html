@@ -967,8 +967,17 @@ function closeNav5() {
         <div class="fg6">
 
         <div class="form-group fg6 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Name:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Name" autofocus="">
+          <label for="email" class="fg2_la1">Name:<span class="spn1"></span></label>
+          <input type="text" class="form-control fg2_inp1" placeholder="Name">
+        </div>
+
+        <div class="form-group fg6 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Location:<span class="spn1"></span></label>
+          <input type="text" class="form-control fg2_inp1" placeholder="Location">
+        </div>
+        <div class="form-group fg6 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Address:<span class="spn1"></span></label>
+          <input type="text" class="form-control fg2_inp1" placeholder="Address">
         </div>
 
         <div class="form-group fg6 sa_2 sa_480">
@@ -977,39 +986,19 @@ function closeNav5() {
             <option>Category 1</option>
             <option>Category 2</option>
             <option>Category 3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
           </select>
         </div>
-
-        <div class="form-group fg6 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Floor#:<span class="spn1">*</span></label>
-          <div class="input-group number-spinner dt_wdt">
-            <span class="input-group-btn data-dwn">
-              <button class="btn btn-default btn-info blu_spn" data-dir="dwn"><span class="fa fa-minus"></span></button>
-            </span>
-            <input type="text" class="form-control text-center inp_mst" value="1" min="-10" max="40">
-            <span class="input-group-btn data-up">
-              <button class="btn btn-default btn-info blu_spn" data-dir="up"><span class="fa fa-plus"></span></button>
-            </span>
-          </div>
-        </div>
-
-        <div class="form-group fg6 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Location:<span class="spn1"></span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="Location">
-        </div>
-        <div class="form-group fg6 sa_2 sa_480">
+        <div class="fg6">
           <div class="form-group fg6 sa_2 sa_480">
-            <label for="email" class="fg2_la1 pad_l">Mess Enabled:<span class="spn1">*</span></label>
-            <div class="check1">
-              <div class="">
-                <label class="switch">
-                  <input type="checkbox" class="mes_btn" checked="" >
-                  <span class="slider_tog round"></span>
-                </label>
-              </div>
+            <label for="email" class="fg2_la1">Floor#:<span class="spn1">*</span></label>
+            <div class="input-group number-spinner dt_wdt">
+              <span class="input-group-btn data-dwn">
+                <button class="btn btn-default btn-info blu_spn" data-dir="dwn"><span class="fa fa-minus"></span></button>
+              </span>
+              <input type="text" class="form-control text-center inp_mst" value="1" min="0" max="40">
+              <span class="input-group-btn data-up">
+                <button class="btn btn-default btn-info blu_spn" data-dir="up"><span class="fa fa-plus"></span></button>
+              </span>
             </div>
           </div>
           <div class="form-group fg6 sa_2 sa_480">
@@ -1024,28 +1013,35 @@ function closeNav5() {
             </div>
           </div>
         </div>
-        <div class="form-group fg6 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Address:<span class="spn1"></span></label>
-          <textarea type="text" class="form-control fg2_inp1" placeholder="Address"></textarea>
-        </div>
-        <div class="fg6 sel_op_1 hc_op1 drp_lb1z mrb00 max_52p">
+        <div class="fg6 sel_op_1 hc_op1">
           <label class="">Business Unit:</label><br>
-          <div class="dropdown-mul-1 dropdown-multiple-label">
+          <div class="dropdown-mul-1 dropdown-multiple-label mrb8p">
             <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
           </div>
         </div>
-        <div class="fg6">
+        <div class="form-group fg6 sa_2 sa_480">
+          <label for="email" class="fg2_la1 pad_l">Mess Enabled:<span class="spn1">*</span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch" onclick="suply_tr()">
+                <input type="checkbox" class="mes_btn" id="cbx_sly" checked="" >
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="fg12">
           <div class="">
-            <div class="top_br_1 tbr_set wdt_96">
-              <div class="form-group fg12 sa_2 sa_480">
-                <label for="email" class="fg2_la1">Category:<span class="spn1">*</span></label>
+            <div class="top_br_1 tbr_set wdt_96 box_clr22">
+              <div class="form-group fg6 sa_2 sa_480">
+                <label for="email" class="fg2_la1">Coordinator:<span class="spn1">*</span></label>
                 <select class="form-control fg2_inp1 inp_mst mes_detl">
-                  <option>Category 1</option>
-                  <option>Category 2</option>
-                  <option>Category 3</option>
+                  <option>Coordinator 1</option>
+                  <option>Coordinator 2</option>
+                  <option>Coordinator 3</option>
                 </select>
               </div>
-              <div class="form-group fg6 sa_2 sa_480">
+              <div class="form-group fg5 sa_2 sa_480">
                 <label for="email" class="fg2_la1">Subscribers#:<span class="spn1">*</span></label>
                 <div class="input-group number-spinner">
                   <span class="input-group-btn data-dwn">
@@ -1064,16 +1060,13 @@ function closeNav5() {
 
         <div class="fg6 tbl_bsa">
           <h3>Accommodation Premises<span class="spn1">*</span></h3>
-          <div class="top_br_container tbr_contr">
-          <div class="top_br_1 tbr_set">
-            <!-- <p class="pre_txt">Please save the accomodation to continue...</p> -->
 
             <div class="fg12 pa_prem pre_box1" style="display:block;">
               <div class="r_640">
                 <table class="display table-bordered pro_tab1 tbl_640" cellspacing="0" width="100%">
                   <thead class="thead1">
                     <tr>
-                      <th class="col-md-6 tr_l">Room Name</th>
+                      <th class="col-md-6 tr_l">Premise</th>
                       <th class="col-md-2">Count</th>
                       <th class="col-md-3">Actions</th>
                     </tr>
@@ -1121,13 +1114,10 @@ function closeNav5() {
                 </table>
               </div>
             </div>
-
-            </div>
-          </div>
         </div>
    
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
+        <div class="free_sp2"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
@@ -1175,7 +1165,7 @@ function closeNav5() {
 
 <!-- Modal1 -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog mod1 md_premis" role="document">
+  <div class="modal-dialog mod1 md_premis md_premis1" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h2 class="modal-title mod1 flt_l" id="exampleModalLabel"> Add Premises</h2>
@@ -1764,6 +1754,12 @@ $(document).ready(function(){
     }).mouseup(function(){
         clearInterval(action);
     });
+    if (e.KeyCode == 32) {
+    if (string.IsNullOrEmpty(this.TextBox3.Text)) {
+        this.TextBox3.Text = 0;
+    }
+    this.TextBox3.Text = Convert.ToInt32(this.TextBox3.Text) + 1;
+}
 });
 </script>
 <!----spinner_script----closed---->
@@ -1832,6 +1828,18 @@ $(document).ready(function(){
       }
     });
   </script>
-<!---multiple selection new_script_closed--->
+<!---multiple selection new_script_closed-->
+
+<script>
+function suply_tr() {
+    if (document.getElementById("cbx_sly").checked==true) {
+      $(".mes_detl").prop('disabled', true);
+    }else
+    {
+      $(".mes_detl").prop('disabled', false);
+    }
+    
+}
+</script>
 </body>
 </html>

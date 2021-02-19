@@ -2584,6 +2584,26 @@ span.box_ae{padding-right: 6px;}
 .sts_ico1 img{width: 20px;height: auto;margin: auto;float: left;}
 .sts_ico1 .btn11{background-color: transparent;padding: 4px;border: 1px solid #FF9800;}
 .sts_ico1 .btn11:hover{box-shadow: 1px 1px 10px #ccc;}
+.mrb8p{margin-bottom: 8px!important;}
+.box_clr22{background-color: #f4faff; }
+.md_premis1 {position: fixed;bottom: 20%;right: 4%;}
+
+
+/*===========Candidate_login==============*/
+.cdt_lgnfix{width: 100%;height: 100%;margin:0;top: 0px;bottom: 0;left: 0;right: 0;background-color: #fff;}
+.cdt_rgt{width: 40%;height:92%;right: 0;background-color:#00467d;top: 0;bottom: 0;margin: auto;float: right;padding:10% 5%;border-radius: 100px 0 0 100px;border-left: 10px solid #d2e6ff;margin-top: 2%;}
+.cdt_rgt h2{width: 100%;height: auto;margin:auto;float: left;font-size: 30px;text-align: center;color: #fff;}
+.cdt_rgt hr{width: 50%;height: 1px;border:none;background-color: #fff;margin-top: 60px;margin-bottom: 60px;}
+.cdt_rgt i{width: 10%;margin:auto;float: left;padding: 4% 2%;color: #78aaec;}
+.cdt_rgt input{width:90%;height: 40px;border:none;border-bottom: 1px solid #78aaec;padding: 4px 10px;outline: none;background-color: transparent;color: #fff;}
+.cdt_rgt button{width: 150px;height: 40px;border-radius: 40px;background-color:#eb7c2a;color: #fff;float: right;border:none;margin-top: 40px;}
+.cdt_rgt input::placeholder{color:#78aaec;}
+.cdt_lft{width: 60%;height: 100%;right: 0;background-color: #fff;top: 0;bottom: 0;margin: auto;float:left;padding:10% 5%;padding-top: 4%;}
+.cdt_lft .bg_cdt{width:100%;height:auto;margin: auto;margin-top: 100px;}
+.cdt_lft .main_lgo{width: auto;height: auto;margin: auto;float: left;}
+.cdt_rgt button:hover, .cdt_rgt button:focus{background-color:#4498da; }
+.cdt_lft p{width: 100%;height: auto;margin: auto;float: left;text-align: center;font-size: 12px;color:#607D8B;}
+.fltr_bxv .icon_plcy{overflow: hidden;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
