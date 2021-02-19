@@ -962,16 +962,16 @@ function closeNav5() {
 
         <h3>From</h3>
 
-        <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
+          <select type="text" class="form-control fg2_inp1 inp_mst" autofocus="">
             <option>Business Unit 1</option>
             <option>Business Unit 2</option>
             <option>Business Unit 3</option>
           </select> 
         </div>
 
-        <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Department:<span class="spn1">*</span></label>
           <select type="text" class="form-control fg2_inp1 inp_mst">
             <option>Department 1</option>
@@ -980,7 +980,7 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
           <select type="text" class="form-control fg2_inp1">
             <option>Division 1</option>
@@ -989,7 +989,7 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Paygrade:<span class="spn1"></span></label>
           <select type="text" class="form-control fg2_inp1">
             <option>Paygrade 1</option>
@@ -998,7 +998,7 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Sponsor:<span class="spn1"></span></label>
           <select type="text" class="form-control fg2_inp1">
             <option>Sponsor 1</option>
@@ -1007,20 +1007,10 @@ function closeNav5() {
           </select> 
         </div>
 
-        <div class="form-group fg7 sa_fg4 sa_640_i1 sa_480">
+        <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0 ovrflw">
           <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Staff</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Worker</label>
-              </div>
-            </div>
-          </div>
+          <button class="tb_btz tb_buton1 viw_b4 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/stf.png"></i> <span class="sp_plcy sp_laz">Staff</span></button>
+          <button class="tb_btz tb_buton2 viw_b4_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/work.png"></i> <span class="sp_plcy sp_laz">Worker</span></button>
         </div>
 
         <div class="fg8 sa_fg4 sa_480">
@@ -1030,10 +1020,11 @@ function closeNav5() {
         </div>
 
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
+        <div class="free_sp2"></div>
+        <div class="devider"></div>
         
-        <div class="col-md-12">
-          <h3>Selected Employees#: <span class="rd">10</span> </h3>
+        <div class="fg12">
+          <h3 class="tr_r">Selected Employees#: <span class="rd">10</span> </h3>
           <div class="r_640">
             <table class="table table-bordered tbl_640">
               <thead class="thead1">
@@ -1044,11 +1035,11 @@ function closeNav5() {
                       <input type="checkbox" class="hidden" />
                     </span>
                   </th>
-                  <th class="th_b6 tr_l">Employee Code</th>
-                  <th class="th_b6 tr_l">Employee Name</th>
-                  <th class="th_b6 tr_l">Designation</th>
+                  <th class="th_b7 tr_l">Employee Code</th>
+                  <th class="th_b4 tr_l">Employee Name</th>
+                  <th class="th_b8 tr_l">Designation</th>
                   <th class="th_b6 tr_l">Pay Grade</th>
-                  <th class="th_b6 tr_l">Sponsor</th>
+                  <th class="th_b8 tr_l">Sponsor</th>
                 </tr>
               </thead>
               <tbody id="myTable">
@@ -1084,134 +1075,103 @@ function closeNav5() {
         </div>
 
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
+        <div class="free_sp2"></div>
         <div class="devider"></div>
 
-        <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
+        
+        <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0 ovrflw">
           <label for="email" class="fg2_la1">Transfer Type:<span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input inr_tnfr" type="radio" name="gridRadios1" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Inter office transfer</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input bsn_tnfr" type="radio" name="gridRadios1" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Business unit transfer</label>
-              </div>
-            </div>
-          </div>
+          <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Inter Office</span></button>
+          <button class="tb_btz tb_buton2 viw_b1_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/sb2.png"></i> <span class="sp_plcy sp_laz">Business Unit</span></button>
         </div>
-        <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480">
+        
+        <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0 ovrflw">
           <label for="email" class="fg2_la1">Transfer Method:<span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input tem_tnsr" type="radio" name="gridRadios2" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Temporary</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input per_tnsr" type="radio" name="gridRadios2" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Permanent</label>
-              </div>
-            </div>
-          </div>
+          <button class="tb_btz tb_buton1 viw_b2 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
+          <button class="tb_btz tb_buton2 viw_b2_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Permanent</span></button>
         </div>
-
-        <div class="form-group fg4 sa_fg4 sa_640_i1 sa_480 rmr1">
-          <label for="email" class="fg2_la1">Related To Manpower Request:<span class="spn1"></span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input cls_cls" type="radio" name="gridRadios3" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">No</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input cls_opn" type="radio" name="gridRadios3" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Yes</label>
-              </div>
-            </div>
+        
+        <div class="rmr1">
+          <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0 ovrflw">
+            <label for="email" class="fg2_la1">Related To Manpower Request:<span class="spn1"></span></label>
+            <button class="tb_btz tb_buton1 viw_b3"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/yn2.png"></i> <span class="sp_plcy sp_laz">No</span></button>
+            <button class="tb_btz tb_buton2 viw_b3_a tb_buton_sel"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/yn1.png"></i> <span class="sp_plcy sp_laz">Yes</span></button>
           </div>
-        </div>
 
+          <div class="fg12 related mxhei_12 ">
 
-
-        <div class="col-md-12 related" style="display: none;">
-
-          <div class="clearfix"></div>
-          <div class="free_sp"></div>
-          <div class="r_640">
-            <table class="display table-bordered pro_tab1 tbl_640" cellspacing="0" width="100%">
-              <thead class="thead1">
-                <tr>
-                  <th class="col-md-1">Sl#</th>
-                  <th class="col-md-2 tr_l">Ref#</th>
-                  <th class="col-md-2">Date Of Request</th>
-                  <th class="col-md-1">Vacancy</th>
-                  <th class="col-md-3 tr_l">Department</th>
-                  <th class="col-md-2 tr_l">Project</th>
-                  <th class="col-md-1">Assign</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td class="tr_l">Ref#0001</td>
-                  <td>16/10/2019</td>
-                  <td>100</td>
-                  <td class="tr_l">Department 1</td>
-                  <td class="tr_l">Project 1</td>
-                  <td>
-                    <div class="check1 wid_chk">
-                      <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+            <div class="clearfix"></div>
+            <div class="free_sp2"></div>
+            <div class="r_640">
+              <table class="display table-bordered pro_tab1 tbl_640" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                    <th class="col-md-2 tr_l">Ref#</th>
+                    <th class="col-md-2">Date Of Request</th>
+                    <th class="col-md-1">Vacancy</th>
+                    <th class="col-md-3 tr_l">Department</th>
+                    <th class="col-md-2 tr_l">Project</th>
+                    <th class="col-md-1">Assign</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tr_l">Ref#0001</td>
+                    <td>16/10/2019</td>
+                    <td>100</td>
+                    <td class="tr_l">Department 1</td>
+                    <td class="tr_l">Project 1</td>
+                    <td>
+                      <div class="check1 wid_chk">
+                        <div class="">
+                          <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider_tog round"></span>
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td class="tr_l">Ref#0001</td>
-                  <td>16/10/2019</td>
-                  <td>100</td>
-                  <td class="tr_l">Department 1</td>
-                  <td class="tr_l">Project 1</td>
-                  <td>
-                    <div class="check1 wid_chk">
-                      <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="tr_l">Ref#0001</td>
+                    <td>16/10/2019</td>
+                    <td>100</td>
+                    <td class="tr_l">Department 1</td>
+                    <td class="tr_l">Project 1</td>
+                    <td>
+                      <div class="check1 wid_chk">
+                        <div class="">
+                          <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider_tog round"></span>
+                          </label>
+                        </div>
                       </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
+        <div class="free_sp2"></div>
         <div class="devider"></div>
 
         <h3>TO</h3>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="pwd" class="fg2_la1">From Date:<span class="spn1">*</span> </label>
-          <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+          <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480 to_dte">
+        <div class="form-group fg2 to_dte sa_fg4 sa_640_i1 sa_480">
           <label for="pwd" class="fg2_la1">To Date:<span class="spn1">*</span> </label>
-          <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+          <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
             <input class="form-control inp_bdr inp_mst" type="text">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
@@ -1272,7 +1232,7 @@ function closeNav5() {
         </div>
    
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
+        <div class="free_sp2"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
@@ -1726,8 +1686,93 @@ $(document).ready(function(){
   });
 });
 </script>
-<!-----Temporary_permnt Type script_closed--->
+<!-----Temporary_permnt Type script_closed-->
 
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+  $('#Inpz1').focus();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".viw_b1").click(function(){
+    $(".viw_b1").addClass("tb_buton_sel");
+    $(".viw_b1_a").removeClass("tb_buton_sel");
+    $(".rmr1").fadeIn(100);
+  });
+  $(".viw_b1_a").click(function(){
+    $(".viw_b1_a").addClass("tb_buton_sel");
+    $(".viw_b1").removeClass("tb_buton_sel");
+    $(".rmr1").hide();
+  });
+  $(".viw_b2").click(function(){
+    $(".viw_b2").addClass("tb_buton_sel");
+    $(".viw_b2_a").removeClass("tb_buton_sel");
+    $(".to_dte").fadeIn(100);
+  });
+  $(".viw_b2_a").click(function(){
+    $(".viw_b2_a").addClass("tb_buton_sel");
+    $(".viw_b2").removeClass("tb_buton_sel");
+    $(".to_dte").hide();
+  });
+  $(".viw_b3").click(function(){
+    $(".viw_b3").addClass("tb_buton_sel");
+    $(".viw_b3_a").removeClass("tb_buton_sel");
+    $(".related").hide();
+  });
+  $(".viw_b3_a").click(function(){
+    $(".viw_b3_a").addClass("tb_buton_sel");
+    $(".viw_b3").removeClass("tb_buton_sel");
+    $(".related").fadeIn(100);
+  });
+  $(".viw_b4").click(function(){
+    $(".viw_b4").addClass("tb_buton_sel");
+    $(".viw_b4_a").removeClass("tb_buton_sel");
+  });
+  $(".viw_b4_a").click(function(){
+    $(".viw_b4_a").addClass("tb_buton_sel");
+    $(".viw_b4").removeClass("tb_buton_sel");
+  });
+
+});
+</script>
+<script>
+  $( document ).on( 'click', function ( e ) {
+    if ( $( e.target ).closest( elem ).length === 0 ) {
+        $( elem ).hide();
+    }
+});
+
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC       
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+    }
+});
+</script>
 
 </body>
 </html>
