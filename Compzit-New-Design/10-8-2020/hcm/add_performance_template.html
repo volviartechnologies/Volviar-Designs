@@ -1019,6 +1019,63 @@ function closeNav5() {
             <label for="email" class="fg2_la1">Group Name:<span class="spn1"></span></label>
             <input type="text" class="form-control fg2_inp1" placeholder="Group Name">
           </div>
+          <div class="hcm_res r_800">
+            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                </tr>
+                <tr>
+                  <th class="th_b4 tr_l">Questions</th>
+                  <th class="th_b6 tr_l">Answer Type</th>
+                  <th class="th_b4 tr_l">KPI (Key Performance Indicator)</th>
+                  <th class="th_b7">Actions</th>
+                </tr>
+               
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="Question">
+                  </td>
+                  <td>
+                    <select type="text" class="tb_inp_1 tb_in tr_l flt_l winp100">
+                      <option>Text Box</option>
+                      <option>Rating</option>
+                      <option>Check Box</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="KPI (Key Performance Indicator)">
+                  </td>
+                  <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add New">
+                      <i class="fa fa-plus-circle"></i>
+                    </button>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1" title="Delete">
+                      <i class="fa fa-trash"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx_1">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_1" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
     
           <div class="fg2 flt_r tr_r">
             <button class="btn act_btn bn11 clone" title="Add New">

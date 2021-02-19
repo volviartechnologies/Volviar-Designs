@@ -965,13 +965,11 @@ function closeNav5() {
           <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Sponsor Name" autofocus="">
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Nationality:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Indian</option>
-            <option>American</option>
-            <option>European</option>
-          </select> 
+        
+        <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0">
+          <label for="email" class="fg2_la1">Type:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Individual</span></button>
+          <button class="tb_btz tb_buton2 viw_b1_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Company</span></button>
         </div>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
@@ -979,12 +977,16 @@ function closeNav5() {
           <input type="text" class="form-control fg2_inp1" placeholder="Document#">
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Company</option>
-            <option>Individual</option>
-          </select> 
+        <div class="form-group fg2 fg2_mr sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox" >
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
         </div>
         <div class="clearfix"></div>
         <div class="free_sp2"></div>
@@ -1006,13 +1008,22 @@ function closeNav5() {
         </div>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Mobile#:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Mobile#">
+          <label for="email" class="fg2_la1">Nationality:<span class="spn1">*</span></label>
+          <select type="text" class="form-control fg2_inp1 inp_mst">
+            <option>Indian</option>
+            <option>American</option>
+            <option>European</option>
+          </select> 
         </div>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Phone#:<span class="spn1"></span></label>
-          <input type="text" class="form-control fg2_inp1" placeholder="Phone#">
+          <label for="email" class="fg2_la1">Mobile:<span class="spn1">*</span></label>
+          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Mobile">
+        </div>
+
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Phone:<span class="spn1"></span></label>
+          <input type="text" class="form-control fg2_inp1" placeholder="Phone">
         </div>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
@@ -1023,18 +1034,6 @@ function closeNav5() {
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Email:<span class="spn1"></span></label>
           <input type="text" class="form-control fg2_inp1" placeholder="Email">
-        </div>
-
-        <div class="form-group fg2 fg2_mr sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
         </div>
 
         <div class="clearfix"></div>
@@ -1440,13 +1439,94 @@ function sel1() {
 <!------hide and visible div_closed--->
 
 
-<!-----table_sec_fixed--->
+<!-----table_sec_fixed-->
 <script type="text/javascript">
   // requires jquery library
 jQuery(document).ready(function() {
    jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');   
  });
 
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+  $('#Inpz1').focus();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".viw_b1").click(function(){
+    $(".viw_b1").addClass("tb_buton_sel");
+    $(".viw_b1_a").removeClass("tb_buton_sel");
+  });
+  $(".viw_b1_a").click(function(){
+    $(".viw_b1_a").addClass("tb_buton_sel");
+    $(".viw_b1").removeClass("tb_buton_sel");
+  });
+  $(".viw_b2").click(function(){
+    $(".viw_b2").addClass("tb_buton_sel");
+    $(".viw_b2_a").removeClass("tb_buton_sel");
+  });
+  $(".viw_b2_a").click(function(){
+    $(".viw_b2_a").addClass("tb_buton_sel");
+    $(".viw_b2").removeClass("tb_buton_sel");
+  });
+  $(".viw_b3").click(function(){
+    $(".viw_b3").addClass("tb_buton_sel");
+    $(".viw_b3_a").removeClass("tb_buton_sel");
+  });
+  $(".viw_b3_a").click(function(){
+    $(".viw_b3_a").addClass("tb_buton_sel");
+    $(".viw_b3").removeClass("tb_buton_sel");
+  });
+  $(".viw_b4").click(function(){
+    $(".viw_b4").addClass("tb_buton_sel");
+    $(".viw_b4_a").removeClass("tb_buton_sel");
+  });
+  $(".viw_b4_a").click(function(){
+    $(".viw_b4_a").addClass("tb_buton_sel");
+    $(".viw_b4").removeClass("tb_buton_sel");
+  });
+
+});
+</script>
+<script>
+  $( document ).on( 'click', function ( e ) {
+    if ( $( e.target ).closest( elem ).length === 0 ) {
+        $( elem ).hide();
+    }
+});
+
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC       
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+    }
+});
 </script>
 
 </body>

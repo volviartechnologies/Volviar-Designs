@@ -2604,6 +2604,7 @@ span.box_ae{padding-right: 6px;}
 .cdt_rgt button:hover, .cdt_rgt button:focus{background-color:#4498da; }
 .cdt_lft p{width: 100%;height: auto;margin: auto;float: left;text-align: center;font-size: 12px;color:#607D8B;}
 .fltr_bxv .icon_plcy{overflow: hidden;}
+.icon_plcy{overflow: hidden;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
