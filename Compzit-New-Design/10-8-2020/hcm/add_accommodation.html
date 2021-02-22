@@ -993,11 +993,11 @@ function closeNav5() {
             <label for="email" class="fg2_la1">Floor#:<span class="spn1">*</span></label>
             <div class="input-group number-spinner dt_wdt">
               <span class="input-group-btn data-dwn">
-                <button class="btn btn-default btn-info blu_spn" data-dir="dwn"><span class="fa fa-minus"></span></button>
+                <button class="btn btn-default btn-info blu_spn" data-dir="dwn" id="minus"><span class="fa fa-minus"></span></button>
               </span>
-              <input type="text" class="form-control text-center inp_mst" value="1" min="0" max="40">
+              <input type="text" class="form-control text-center inp_mst" value="1" min="1" max="40" id="count" onkeyup="success()">
               <span class="input-group-btn data-up">
-                <button class="btn btn-default btn-info blu_spn" data-dir="up"><span class="fa fa-plus"></span></button>
+                <button class="btn btn-default btn-info blu_spn" data-dir="up" id="plus"><span class="fa fa-plus"></span></button>
               </span>
             </div>
           </div>
@@ -1006,7 +1006,7 @@ function closeNav5() {
             <div class="check1">
               <div class="">
                 <label class="switch">
-                  <input type="checkbox" >
+                  <input type="checkbox" checked="" >
                   <span class="slider_tog round"></span>
                 </label>
               </div>
@@ -1024,7 +1024,7 @@ function closeNav5() {
           <div class="check1">
             <div class="">
               <label class="switch" onclick="suply_tr()">
-                <input type="checkbox" class="mes_btn" id="cbx_sly" checked="" >
+                <input type="checkbox" class="mes_btn" id="cbx_sly">
                 <span class="slider_tog round"></span>
               </label>
             </div>
@@ -1035,7 +1035,7 @@ function closeNav5() {
             <div class="top_br_1 tbr_set wdt_96 box_clr22">
               <div class="form-group fg6 sa_2 sa_480">
                 <label for="email" class="fg2_la1">Coordinator:<span class="spn1">*</span></label>
-                <select class="form-control fg2_inp1 inp_mst mes_detl">
+                <select class="form-control fg2_inp1 inp_mst mes_detl" disabled="">
                   <option>Coordinator 1</option>
                   <option>Coordinator 2</option>
                   <option>Coordinator 3</option>
@@ -1045,11 +1045,11 @@ function closeNav5() {
                 <label for="email" class="fg2_la1">Subscribers#:<span class="spn1">*</span></label>
                 <div class="input-group number-spinner">
                   <span class="input-group-btn data-dwn">
-                    <button class="btn btn-default btn-info blu_spn mes_pls" data-dir="dwn"><span class="fa fa-minus"></span></button>
+                    <button class="btn btn-default btn-info blu_spn mes_pls" data-dir="dwn" disabled="" id="minus1"><span class="fa fa-minus"></span></button>
                   </span>
-                  <input type="text" class="form-control text-center inp_mst mes_detl" value="1" min="-10" max="40">
+                  <input type="text" class="form-control text-center inp_mst mes_detl" value="1" min="1" max="40" disabled="" id="count1">
                   <span class="input-group-btn data-up">
-                    <button class="btn btn-default btn-info blu_spn mes_pls" data-dir="up"><span class="fa fa-plus"></span></button>
+                    <button class="btn btn-default btn-info blu_spn mes_pls" data-dir="up" disabled="" id="plus1"><span class="fa fa-plus"></span></button>
                   </span>
                 </div>
               </div>
@@ -1833,13 +1833,49 @@ $(document).ready(function(){
 <script>
 function suply_tr() {
     if (document.getElementById("cbx_sly").checked==true) {
-      $(".mes_detl").prop('disabled', true);
+      $(".mes_detl").prop('disabled', false);
+      $(".mes_pls").prop('disabled', false);
     }else
     {
-      $(".mes_detl").prop('disabled', false);
+      $(".mes_detl").prop('disabled', true);
+      $(".mes_pls").prop('disabled', true);
     }
     
 }
+</script>
+
+<script>
+    // var count = 0;
+    // var countEl = document.getElementById("count");
+    // function plus(){
+    //     count++;
+    //     countEl.value = count;
+    // }
+    // function minus(){
+    //     count--;
+    //     countEl.value = count;
+    // }
+var count = 0;
+$('#minus').click(function(){
+  $("#count").val(parseInt($("#count").val())-1);
+});
+$('#plus').click(function(){
+  $("#count").val(parseInt($("#count").val())+1);
+});
+$('#minus1').click(function(){
+  $("#count1").val(parseInt($("#count1").val())-1);
+});
+$('#plus1').click(function(){
+  $("#count1").val(parseInt($("#count1").val())+1);
+});
+
+function success() {
+   if(document.getElementById("count").value==="0") { 
+            document.getElementById('minus').disabled = true; 
+        } else { 
+            document.getElementById('minus').disabled = false;
+        }
+    }
 </script>
 </body>
 </html>

@@ -113,7 +113,11 @@ function closeNav5() {
       Confirm
       </button>
     </span>
-    <button type="submit" class="btn sub2 bt_b">Retract</button>
+    <span class="dropdown dd_lft0">
+      <button class="dropdown-toggle btn nw1 sub2 opn_retzz" title="Retract">
+      Retract
+      </button>
+    </span>
     <button type="submit" class="btn sub2 bt_b">Clear</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
   </div>
@@ -1058,6 +1062,38 @@ function closeNav5() {
         <div class="pop_2" style="display: none;"> </div>
         <div class="pop_2_11" style="display: none;"> </div>
 
+    <div class="dropdown-menu drop_dnm cnfmzz_bx rgt_0b rgt_pstn">
+      <div class="modal-header">
+        <h5 class="mar_at flt_l">Confirm</h5>
+        <button type="button" class="close cls_pop" title="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="head_txt">Are you sure to confirm this entry?</div>
+      <div class="modal-footer">
+        <div class="flt_r">
+          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1_11" autofocus="on">Yes</button>
+          <button class="btn btn-danger cls_cnfm">No</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="dropdown-menu drop_dnm retzz_bx rgt_0b rgt_pstn">
+      <div class="modal-header">
+        <h5 class="mar_at flt_l">Retract</h5>
+        <button type="button" class="close cls_pop" title="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="head_txt">Are you sure to retract this resignation request?</div>
+      <div class="modal-footer">
+        <div class="flt_r">
+          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1_12" autofocus="on">Yes</button>
+          <button class="btn btn-danger cls_cnfm">No</button>
+        </div>
+      </div>
+    </div>
+
         <div class="sub_cont pull-right">
           <div class="save_sec">
             <span class="dropdown dd_lft0">
@@ -1131,22 +1167,6 @@ function closeNav5() {
 </div><!--content_container_closed------>
 
 
-      <div class="dropdown-menu drop_dnm cnfmzz_bx rgt_0b">
-        <div class="modal-header">
-          <h5>Confirm</h5>
-          <button type="button" class="close cls_pop" title="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="head_txt">Are you sure to confirm this entry?</div>
-        <div class="modal-footer">
-          <div class="flt_r">
-            <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
-            <button class="btn btn-danger cls_cnfm">No</button>
-          </div>
-        </div>
-      </div>
-
 <!-- <a href="measure_unit.html" type="button" class="list_b" title="Back to List">
 <i class="fa fa-arrow-circle-left"></i>
 </a> -->
@@ -1163,7 +1183,7 @@ function closeNav5() {
 <a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
 <i class="fa fa-save"></i>
 </a>
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
 
 
 
@@ -1569,13 +1589,18 @@ $(document).ready(function(){
   $(".opn_cnfmzz").click(function(){
     $(".pop_2_11").fadeIn();
     $(".cnfmzz_bx").show( 300);
-    $('#InputToFocus1').focus();
+    $('#InputToFocus1_11').focus();
   });
-  $(".pop_2, .btn-danger, .cls_pop").click(function(){
-    $(".drop_dnm, .pop_2").fadeOut();
+  $(".opn_retzz").click(function(){
+    $(".pop_2_11").fadeIn();
+    $(".retzz_bx").show( 300);
+    $('#InputToFocus1_12').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_11").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
   });
   $(".dropdown-toggle, .act_btn, .nw1, .bt_b").focus(function(){
-    $(".drop_dnm, .pop_2").fadeOut();
+    $(".drop_dnm, .pop_2, .pop_2_11").fadeOut();
   });
 });
 </script>
