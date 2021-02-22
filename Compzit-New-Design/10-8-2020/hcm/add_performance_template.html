@@ -971,12 +971,6 @@ function closeNav5() {
         </div>
 
         <div class="form-group fg5 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Notes/Instructions:<span class="spn1">*</span></label>
-          <textarea type="text" class="form-control fg2_inp1" placeholder="Notes/Instructions"></textarea>
-        </div>
-
-
-        <div class="form-group fg8 sa_2 sa_480">
           <label for="email" class="fg2_la1">Rating Scale:<span class="spn1"></span></label>
           <select class="form-control fg2_inp1">
             <option>1</option>
@@ -986,6 +980,11 @@ function closeNav5() {
             <option>5</option>
             <option>6</option>
           </select>
+        </div>
+
+        <div class="form-group fg5 sa_2 sa_480">
+          <label for="email" class="fg2_la1">Notes / Instructions:<span class="spn1">*</span></label>
+          <textarea type="text" class="form-control fg2_inp1" placeholder="Notes / Instructions"></textarea>
         </div>
               
         <div class="form-group fg8 sa_2 sa_480">
@@ -1000,12 +999,12 @@ function closeNav5() {
           </div>
         </div>
 
-        <div class="form-group fg5 sa_o_fg5 sa_2 sa_640_i sa_480">
+        <!-- <div class="form-group fg5 sa_o_fg5 sa_2 sa_640_i sa_480">
           <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
           <button class="btn btn-info fnt_12" data-toggle="modal" data-target="#mod_add" title=" Import Group From Existing Template">
             <i class="fa fa-code-fork"></i> Import Group
           </button>
-        </div>
+        </div> -->
                
    
         <div class="clearfix"></div>
@@ -1013,117 +1012,80 @@ function closeNav5() {
         <div class="devider"></div>
 
         <div class="clearfix"></div>
-        <div class="box_dr">
-
-          <div class="form-group fg2 sa_o_fg5 sa_fg4 sa_640_i sa_480">
-            <label for="email" class="fg2_la1">Group Name:<span class="spn1"></span></label>
-            <input type="text" class="form-control fg2_inp1" placeholder="Group Name">
-          </div>
-          <div class="hcm_res r_800">
-            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-              <thead class="thead1">
-                <tr>
-                </tr>
-                <tr>
-                  <th class="th_b4 tr_l">Questions</th>
-                  <th class="th_b6 tr_l">Answer Type</th>
-                  <th class="th_b4 tr_l">KPI (Key Performance Indicator)</th>
-                  <th class="th_b7">Actions</th>
-                </tr>
-               
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="Question">
-                  </td>
-                  <td>
-                    <select type="text" class="tb_inp_1 tb_in tr_l flt_l winp100">
-                      <option>Text Box</option>
-                      <option>Rating</option>
-                      <option>Check Box</option>
-                    </select>
-                  </td>
-                  <td>
-                    <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="KPI (Key Performance Indicator)">
-                  </td>
-                  <td>
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add New">
-                      <i class="fa fa-plus-circle"></i>
-                    </button>
-                    <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1" title="Delete">
-                      <i class="fa fa-trash"></i>
-                      </button>
-                      <div class="dropdown-menu drop_dnm repn dlt_bx_1">
-                        <div class="modal-header">
-                          <h5>Delete</h5>
-                          <button type="button" class="close cls_pop" title="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                        <div class="head_txt">Are you sure to delete this entry?</div>
-                        <div class="modal-footer">
-                          <button class="btn btn-success cls_dlt">Yes</button>
-                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_1" autofocus="">No</button>
-                        </div>
-                      </div>
-                    </span>
-                  </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-    
-          <div class="fg2 flt_r tr_r">
-            <button class="btn act_btn bn11 clone" title="Add New">
-              <i class="opp_ico_img_ptp"><img src="../images/icons/opp/copy_sec.png"></i></button>
-            <button class="btn act_btn bn3 remove" title="Delete"><i class="fa fa-trash"></i></button>
-          </div>
-
-          <div class="top_br_container tbr_contr">
-            <div class="top_br_1 tbr_set bg_txt_1"> 
-              <div class="col-md-1 sa_fg2 pull-right">
-                <button class="btn btn-danger pull-right" title="Close"><i class="fa fa-trash"></i></button>
-              </div>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Question:<span class="spn1">*</span></label>
-                <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Question">
-              </div>
-              <div class="form-group fg5 sa_fg2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">Answer Type:<span class="spn1"></span></label>
-                <select class="form-control fg2_inp1">
-                  <option>Text Box</option>
-                  <option>Rating</option>
-                  <option>Check Box</option>
-                </select>
-              </div>
-              <div class="form-group fg4 sa_2 sa_640_i sa_480">
-                <label for="email" class="fg2_la1">KPI (Key Performance Indicator):<span class="spn1"></span></label>
-                <input type="text" class="form-control fg2_inp1" placeholder="KPI (Key Performance Indicator)">
-              </div>
-
-              <div class="clearfix"></div>
-              <div class="free_sp"></div>
-
-              <div class="form-group fg7 sa_o_fg6 sa_2 sa_640_i sa_480 pull-right">
-                <button class="btn btn-info fnt_12 flt_r" data-toggle="modal" data-target="#mod_add" title="Import Questions From Existing Template">
-                  <i class="fa fa-code-fork"></i> Import Questions
-                </button>
-              </div>
-              <div class="form-group fg7 sa_o_fg7 sa_fg2 sa_640_i sa_480 pull-right">
-                <button class="btn btn-success nxt_qst fnt_12 flt_r"><i class="fa fa-plus"></i> Next Question</button>
-              </div>
-
+        <div class="box_grp1">
+          <div class="box_dr">
+            <div class="form-group fg4 sa_o_fg5 sa_fg4 sa_640_i sa_480">
+              <label for="email" class="fg2_la1 lb_2_1">Group Name:<span class="spn1"></span></label>
+              <input type="text" class="form-control fg2_inp1 lb_2_2" placeholder="Group Name">
             </div>
-          </div>
-         </div>
+            <div class="fg2 flt_r tr_r mr_tp20">
+              <button class="btn act_btn bn2 clone" title="Add New Group">
+                <i class="fa fa-clone"></i></button>
+              <button class="btn act_btn bn3 remove" title="Delete"><i class="fa fa-trash"></i></button>
+            </div>
+            <div class="hcm_res r_800 mr_tp20">
+              <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+                <thead class="thead1">
+                  <tr>
+                  </tr>
+                  <tr>
+                    <th class="th_b4 tr_l">Questions</th>
+                    <th class="th_b6 tr_l">Answer Type</th>
+                    <th class="th_b4 tr_l">KPI (Key Performance Indicator)</th>
+                    <th class="th_b7">Actions</th>
+                  </tr>
+                 
+                </thead>
+                <tbody class="tbr_co">
+                  <tr class="tr_rowe">
+                    <td>
+                      <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="Question">
+                    </td>
+                    <td>
+                      <select type="text" class="tb_inp_1 tb_in tr_l flt_l winp100">
+                        <option>Text Box</option>
+                        <option>Rating</option>
+                        <option>Check Box</option>
+                      </select>
+                    </td>
+                    <td>
+                      <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="KPI (Key Performance Indicator)">
+                    </td>
+                    <td>
+                      <div class="btn_stl1">
+                        <button class="btn act_btn bn2 nxt_qst" data-toggle="modal" data-target="#exampleModal" title="Add New">
+                          <i class="fa fa-plus-circle"></i>
+                        </button>
+                        <span class="dropdown dd_lft0 ">
+                          <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1" title="Delete">
+                          <i class="fa fa-trash"></i>
+                          </button>
+                          <div class="dropdown-menu drop_dnm repn dlt_bx_1">
+                            <div class="modal-header">
+                              <h5>Delete</h5>
+                              <button type="button" class="close cls_pop" title="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                            </div>
+                            <div class="head_txt">Are you sure to delete this entry?</div>
+                            <div class="modal-footer">
+                              <button class="btn btn-success cls_dlt">Yes</button>
+                              <button class="btn btn-danger cls_dlt" id="InputToFocus2_1" autofocus="">No</button>
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+           </div>
+        </div>
 
 
         <div class="clearfix"></div>
-        <div class="free_sp"></div>
+        <div class="free_sp2"></div>
         <div class="devider"></div>
 
         <div class="sub_cont pull-right">
@@ -1148,6 +1110,320 @@ function closeNav5() {
   </div>
 </div><!--content_container_closed------>
 
+
+<!---add sales team section-->
+        <div class="add_membrs">
+          <div class="box_add_team1"></div>
+          <div class="flt_r box_add_team">
+            <h1 class="h1_con">Import Group</h1>
+            <div class="form-group fg6 sa_480">
+              <label for="email" class="fg2_la1">Performance Template:<span class="spn1">*</span></label>
+              <select class="form-control fg2_inp1 fg_chs2 mar_btzz inp_mst" id="Input1z" autofocus="">
+                <option>Performance Template 1</option>
+                <option>Performance Template 2</option>
+              </select>
+            </div>
+            <div class="clearfix"></div>
+            <div class="devider"></div>
+            <div class="fg6 sa_480">
+              <div class="add_sec_tm">
+                <div class="fg12">
+                  <h5>Groups</h5>
+                    <div class="check1 chk_al_emp" title="Select All Groups">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  <select type="text" class="form-control ser_set sel_tm11">
+                    <option selected="">Division 1</option>
+                    <option>Division 1</option>
+                    <option>Division 1</option>
+                    <option>Division 1</option>
+                  </select>
+                </div>
+                <div class="fg12">
+                  <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
+                </div>
+                <ul class="emply_section min_hei_ad_st">
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="employe_lst">
+                    <span class="spn_name">Group 1</span>
+                    <div class="check1">
+                      <div class="">
+                        <label class="switch">
+                          <input type="checkbox">
+                          <span class="slider_tog round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="fg6 sa_480">
+              <div class="add_sec_tm">
+                <div class="fg12">
+                  <h5>Selected Groups</h5>
+                    <button class="btn tab_but1 bn3 flt_r rmv_al_tmz" title="Remove All Group">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  <div class="fg12">
+                    <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
+                  </div>
+                  </div>
+                    <ul class="emply_section list_f_mbrs">
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <button class="btn tab_but1 bn3" title="Remove">
+                          <i class="fa fa-trash"></i>
+                        </button>
+                      </li>
+                    </ul>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="devider"></div>
+            <div class="sub_cont">
+              <div class="save_sec flt_r">
+                <button type="submit" class="btn sub1">Save</button>
+                <button type="submit" class="btn sub3">Save &amp; Close</button>
+                <button type="submit" class="btn sub4">Cancel</button>
+                <button type="submit" class="btn sub2">Clear</button>
+              </div>
+              <div class="edit_sec">
+                <button type="submit" class="btn sub1">Update</button>
+                <button type="submit" class="btn sub3">Update &amp; Close</button>
+                <button type="submit" class="btn sub2">Confirm</button>
+                <button type="submit" class="btn sub4">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
 <a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
 <i class="fa fa-save"></i>
 </a>
@@ -1156,6 +1432,16 @@ function closeNav5() {
 <i class="fa fa-arrow-circle-left"></i>
 </a>
 
+
+<!---import_button_section-->
+<a href="#" type="button" class="imprt_o imp_rgt add_nw1" title=" Import Group From Existing Template">
+  <i class="fa fa-upload" aria-hidden="true"></i>
+</a>
+
+<a href="#" type="button" class="add_nw2" title="Back" style="display:none;">
+  <i class="fa fa-arrow-circle-left"></i>
+</a>
+<!---import_button_section_closed-->
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
   <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
@@ -1612,12 +1898,19 @@ jQuery(document).ready(function() {
 <script>
 $(document).ready(function(){
   $(".nxt_qst").click(function(){
-    $(".bg_txt_1").clone().appendTo(".tbr_contr");
+    $(".tr_rowe").clone().appendTo(".tbr_co");
+    $(".nxt_qst:first").hide();
   });
 });
 </script>
 
-
+<script>
+$(document).ready(function(){
+  $(".clone").click(function(){
+    $(".box_dr").clone().appendTo(".box_grp1");
+  });
+});
+</script>
 
 <script type="text/javascript">
  /*
@@ -1697,6 +1990,86 @@ console.clear();
 
 <!-----approval_set_section_script_closed--->
 
+<!----alert_message_script_closed-->
+<script>
+$(document).ready(function(){
+  $(".edt_st, .add_dr1").click(function(){
+    $(".add_membrs").addClass("add_mbr1");
+    $(".add_nw1").hide();
+    $(".add_nw2").show();
+    $('#Input1z').focus();
+  });
+  $(".add_nw1").click(function(){
+    $(".add_nw1").hide();
+    $(".add_nw2").show();
+    $(".add_membrs").addClass("add_mbr1");
+  });
+  $(".add_nw2, .box_add_team1").click(function(){
+    $(".add_nw2").hide();
+    $(".add_nw1").show();
+    $(".add_membrs").removeClass("add_mbr1");
+  });
+
+  //section_dropdown//
+  $(".add_dr1").click(function(){
+    $(".add_membrs").addClass("add_mbr1");
+  });
+  $(".cls_dr1").click(function(){
+    $(".tm_op1_ad").hide();
+  });
+  // $(".show_add_mbr1").click(function(){
+  //   $(".tm_op1").toggle();
+  //   $(".tm_op2, .tm_op3, .tm_op4").hide();
+  //   $(".tm_op1_ad").hide();
+  // });
+  $(".add_dr2").click(function(){
+    $(".tm_op2_ad").show();
+  });
+  $(".cls_dr2").click(function(){
+    $(".tm_op2_ad").hide();
+  });
+  // $(".show_add_mbr2").click(function(){
+  //   $(".tm_op2").toggle();
+  //   $(".tm_op2_ad").hide();
+  //   $(".tm_op1, .tm_op3, .tm_op4").hide();
+  // });
+  $(".add_dr3").click(function(){
+    $(".tm_op3_ad").show();
+  });
+  $(".cls_dr3").click(function(){
+    $(".tm_op3_ad").hide();
+  });
+  // $(".show_add_mbr3").click(function(){
+  //   $(".tm_op3").toggle();
+  //   $(".tm_op3_ad").hide();
+  //   $(".tm_op2, .tm_op1, .tm_op4").hide();
+  // });
+  $(".add_dr4").click(function(){
+    $(".tm_op4_ad").show();
+  });
+  $(".cls_dr4").click(function(){
+    $(".tm_op4_ad").hide();
+  });
+  // $(".show_add_mbr4").click(function(){
+  //   $(".tm_op4").toggle();
+  //   $(".tm_op4_ad").hide();
+  //   $(".tm_op2, .tm_op3, .tm_op1").hide();
+  // });
+});
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC  
+    $(".add_membrs").removeClass("add_mbr1");
+    $(".drop_tm").hide();
+    $(".add_nw2").hide();
+    $(".add_nw1").show();
+    }
+});
+// $('body').click( function() {
+       
+//         $('.drop_tm').hide();
+        
+//     });
+</script>
 
 </body>
 </html>

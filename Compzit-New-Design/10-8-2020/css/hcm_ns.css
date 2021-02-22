@@ -2553,7 +2553,7 @@ span.box_ae{padding-right: 6px;}
 .max_52p .dropdown-display-label{max-height: 52px!important;}
 .max_52p .dropdown-main ul{max-height: 190px!important;}
 .padg_rg1{padding-right: 20px;}
-.box_dr{width: 100%;height: auto;padding: 10px;border: 1px solid #ccc;margin: auto;float: left; padding-bottom: 0px;border-radius: 8px;margin-bottom: 10px;}
+.box_dr{width: 100%;height: auto;padding: 10px;border: 1px solid #ccc;margin: auto;float: left;border-radius: 8px;margin-bottom: 10px;}
 .sub_1 option {font-weight: 300;margin-bottom: 4px;padding: 2px 6px;background-color: rgba(204, 229, 249, 0.3);color: #ce0b00;border-radius: 4px;}
 .sub_2 option{font-weight: 300;margin-bottom: 4px;padding: 2px 6px;border-radius: 4px;}
 .sub_1, .sub_2{padding:6px;}
@@ -2608,6 +2608,10 @@ span.box_ae{padding-right: 6px;}
 .winp100{width: 100%!important;}
 .rgt_pstn{right: 40px;bottom: 350px;}
 .rgt_pstn:before{left: auto;right: -12px;bottom: 68px;}
+.mr_tp20{margin-top:6px;float: left;}
+.lb_2_1{width:auto;margin: auto;float: left;margin-right: 10px;padding-top: 8px;}
+.lb_2_2{width: 67%!important;margin: auto;float: left;}
+.imp_rgt{right: 26px;top: 148px;}
 
 /*.mrb10_pag{margin-top: 16px;}
 */
