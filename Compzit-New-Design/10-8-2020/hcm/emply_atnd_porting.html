@@ -961,27 +961,34 @@ function closeNav5() {
 
 <!---inner_content_sections area_started-->
           <h1 class="h1_con">Employee Attendance Porting</h1>
-          <div class="form-group fg2 sa_fg3 sa_640">
-            <label for="email" class="fg2_la1 pad_l">Choose File: <span class="spn1">&nbsp;</span></label>
+          
+          <div class="form-group fg2 sa_480">
+            <label for="email" class="fg2_la1 pad_l">&nbsp;</label>
             <input type="file" id="file-upload" multiple required />
-            <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Import data from CSV file</label>
+            <label for="file-upload" class="la_up"><i class="fa fa-upload" aria-hidden="true"></i> Upload file</label>
             <div id="file-upload-filename" class="file_n"></div>
-          </div> 
-          <div class="fg7_5 sa_480">
-            <label class="form1 mar_bo mar_tp lb_wa">
-              <span class="button-checkbox">
-                <button type="button" class="btn-d active" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                <input type="checkbox" class="hidden">
-              </span>
-              <p class="pz_s">Show Deleted Entries</p>
-            </label>
+            <button class="btn act_btn bn3 fnbtn" title="Remove Selected File">
+              <i class="fa fa-trash"></i>
+            </button>
           </div>
-          <div class="fg5 fg2_adn pull-right">
-            <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-            <button class="btn tab_but1 butn5"><i class="fa fa-download"></i> Download CSV Template</button>  
+          <div class="fg8 fg2_adn">
+            <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+            <button class="btn tab_but1 butn5" title=" Download CSV File"><i class="fa fa-download"></i></button>  
+          </div>
+              
+          <div class="form-group fg5 fg2_mr sa_fg4 sa_2 ma_bo10 sa_480">
+            <label for="email" class="fg2_la1 pad_l">My data has Headers<span class="spn1"></span></label>
+            <div class="check1">
+              <div class="">
+                <label class="switch">
+                  <input type="checkbox" >
+                  <span class="slider_tog round"></span>
+                </label>
+              </div>
+            </div>
           </div>
           <div class="clearfix"></div>
-          <div class="free_sp1"></div>
+          <div class="free_sp2"></div>
           <div class="devider"></div>
           <div class="sub_cont pull-right">
             <div class="save_sec">
@@ -1054,9 +1061,10 @@ function closeNav5() {
   <div class="modal-dialog" role="document" style="width: 90%;">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title pro_rt2" id="exampleModalLabel">Correct List</h5>
+        <h5 class="modal-title pro_rt2" id="exampleModalLabel">Incorrect List</h5>
         <h5 class="modal-title pro_rt2_1" id="exampleModalLabel" style="display: none;">Early Going List</h5>
         <h5 class="modal-title pro_rt3" id="exampleModalLabel" style="display: none;">Late Comers List</h5>
+        <h5 class="modal-title pro_rt4" id="exampleModalLabel" style="display: none;">Correct List</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -1068,12 +1076,18 @@ function closeNav5() {
         </div>
 
         <div class="pro_rt2_1 flt_r" style="display: none;">
-          <button type="submit" class="btn sub3 cl_div_b"><< Back</button>
+          <button type="submit" class="btn sub3 cl_div_b"><< Previous</button>
           <button type="submit" class="btn sub4 cl_div_b" data-dismiss="modal">Cancel</button>
           <button type="submit" class="btn sub3 cl_div_n1">Next >></button>
         </div>
 
         <div class="pro_rt3 flt_r" style="display: none;">
+          <button type="submit" class="btn sub3 cl_div_b5"><< Previous</button>
+          <button type="submit" class="btn sub4 cl_div_b5" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn sub3 cl_div_n15">Next >></button>
+        </div>
+        <div class="pro_rt4 flt_r" style="display: none;">
+          <button type="submit" class="btn sub3 cl_div_b6"><< Previous</button>
           <button type="submit" class="btn sub4 cl_div_b" data-dismiss="modal">Cancel</button>
           <button type="submit" class="btn sub1">Save</button>
         </div>
@@ -1178,6 +1192,38 @@ function closeNav5() {
             <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
           </div>
         </div>
+        <div class="pro_rt4" style="display:none;">         
+          <div class="clearfix"></div>
+
+           <div class="r_640">
+            <div class="clearfix"></div>
+            <div class="free_sp2"></div>
+            <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b6 tr_l">Employee ID</th>
+                  <th class="th_b2 tr_l">First Name</th>
+                  <th class="th_b6 tr_l">Last Name</th>
+                  <th class="th_b6 tr_c">Date</th>
+                  <th class="th_b7 tr_c">Check In</th>
+                  <th class="th_b5 tr_c">Check Out</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_l">Emp001</td>
+                  <td class="tr_l">First Name 1</td>
+                  <td class="tr_l">Last Name 1</td>
+                  <td class="tr_c">21/02/2021</td>
+                  <td class="tr_c">10:00 AM</td>
+                  <td class="tr_c">05:00 PM</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div>
+            <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
         <div class="pro_rt2">
@@ -1186,12 +1232,19 @@ function closeNav5() {
         </div>
 
         <div class="pro_rt2_1 flt_r" style="display: none;">
-          <button type="submit" class="btn sub3 cl_div_b"><< Back</button>
+          <button type="submit" class="btn sub3 cl_div_b"><< Previous</button>
           <button type="submit" class="btn sub4">Cancel</button>
           <button type="submit" class="btn sub3 cl_div_n1">Next >></button>
         </div>
 
         <div class="pro_rt3" style="display: none;">
+          <button type="submit" class="btn sub3 cl_div_b5"><< Previous</button>
+          <button type="submit" class="btn sub4">Cancel</button>
+          <button type="submit" class="btn sub3 cl_div_n15">Next >></button>
+        </div>
+
+        <div class="pro_rt4" style="display: none;">
+          <button type="submit" class="btn sub3 cl_div_b6"><< Previous</button>
           <button type="submit" class="btn sub4 cl_div_b" data-dismiss="modal">Cancel</button>
           <button type="submit" class="btn sub1">Save</button>
         </div>
@@ -1675,6 +1728,18 @@ $(document).ready(function(){
   $(".cl_div_n1").click(function(){
     $(".pro_rt2_1").hide();
     $(".pro_rt3").show();
+  });
+  $(".cl_div_n15").click(function(){
+    $(".pro_rt3").hide();
+    $(".pro_rt4").show();
+  });
+  $(".cl_div_b6").click(function(){
+    $(".pro_rt4").hide();
+    $(".pro_rt3").show();
+  });
+  $(".cl_div_b5").click(function(){
+    $(".pro_rt3").hide();
+    $(".pro_rt2_1").show();
   });
   $(".cl_div_b").click(function(){
     $(".pro_rt3, .pro_rt2_1").hide();
