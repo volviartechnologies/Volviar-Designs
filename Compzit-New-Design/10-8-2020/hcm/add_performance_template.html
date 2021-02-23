@@ -960,101 +960,65 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Add Performance Template</h2>
 
-        <div class="form-group fg5 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Ref#:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Ref#" disabled="">
-        </div>
+        <div class="fg6">
+          <div class="form-group fg6 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Template Name:<span class="spn1">*</span></label>
+            <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Template Name" autofocus="">
+          </div>
 
-        <div class="form-group fg5 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Template Name:<span class="spn1">*</span></label>
-          <input type="text" class="form-control fg2_inp1 inp_mst" placeholder="Template Name" autofocus="">
-        </div>
+          <div class="form-group fg6 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Rating Scale:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+          </div>
 
-        <div class="form-group fg5 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Rating Scale:<span class="spn1"></span></label>
-          <select class="form-control fg2_inp1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-          </select>
-        </div>
-
-        <div class="form-group fg5 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Notes / Instructions:<span class="spn1">*</span></label>
-          <textarea type="text" class="form-control fg2_inp1" placeholder="Notes / Instructions"></textarea>
-        </div>
-              
-        <div class="form-group fg8 sa_2 sa_480">
-          <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1"></span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" >
-                <span class="slider_tog round"></span>
-              </label>
+          <div class="form-group fg6 sa_2 sa_480">
+            <label for="email" class="fg2_la1">Notes / Instructions:<span class="spn1">*</span></label>
+            <textarea type="text" class="form-control fg2_inp1" placeholder="Notes / Instructions"></textarea>
+          </div>
+                  
+            <div class="form-group fg5 sa_2 sa_480">
+              <label for="email" class="fg2_la1 pad_l">Status:<span class="spn1"></span></label>
+              <div class="check1">
+                <div class="">
+                  <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider_tog round"></span>
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <!-- <div class="form-group fg5 sa_o_fg5 sa_2 sa_640_i sa_480">
-          <label for="email" class="fg2_la1 pad_l">&nbsp;<span class="spn1"></span></label>
-          <button class="btn btn-info fnt_12" data-toggle="modal" data-target="#mod_add" title=" Import Group From Existing Template">
-            <i class="fa fa-code-fork"></i> Import Group
-          </button>
-        </div> -->
-               
-   
-        <div class="clearfix"></div>
-        <div class="free_sp2"></div>
-        <div class="devider"></div>
-
-        <div class="clearfix"></div>
-        <div class="box_grp1">
-          <div class="box_dr">
-            <div class="form-group fg4 sa_o_fg5 sa_fg4 sa_640_i sa_480">
-              <label for="email" class="fg2_la1 lb_2_1">Group Name:<span class="spn1"></span></label>
-              <input type="text" class="form-control fg2_inp1 lb_2_2" placeholder="Group Name">
-            </div>
-            <div class="fg2 flt_r tr_r mr_tp20">
-              <button class="btn act_btn bn2 clone" title="Add New Group">
-                <i class="fa fa-clone"></i></button>
-              <button class="btn act_btn bn3 remove" title="Delete"><i class="fa fa-trash"></i></button>
-            </div>
-            <div class="hcm_res r_800 mr_tp20">
+          <div class="fg6 grp_sec1">
+            <h3>Evaluation Questions: <button class="btn_imprt add_nw1_imp" title=" Import Group From Existing Template"><i class="fa fa-upload" aria-hidden="true"></i></button></h3>
+            <div class="hcm_res r_800">
               <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
                   </tr>
                   <tr>
-                    <th class="th_b4 tr_l">Questions</th>
-                    <th class="th_b6 tr_l">Answer Type</th>
-                    <th class="th_b4 tr_l">KPI (Key Performance Indicator)</th>
+                    <th class="th_b11 tr_l">Group Name</th>
                     <th class="th_b7">Actions</th>
                   </tr>
-                 
                 </thead>
                 <tbody class="tbr_co">
                   <tr class="tr_rowe">
                     <td>
-                      <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="Question">
-                    </td>
-                    <td>
-                      <select type="text" class="tb_inp_1 tb_in tr_l flt_l winp100">
-                        <option>Text Box</option>
-                        <option>Rating</option>
-                        <option>Check Box</option>
-                      </select>
-                    </td>
-                    <td>
-                      <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="KPI (Key Performance Indicator)">
+                      <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="Group Name">
                     </td>
                     <td>
                       <div class="btn_stl1">
-                        <button class="btn act_btn bn2 nxt_qst" data-toggle="modal" data-target="#exampleModal" title="Add New">
+                        <button class="btn act_btn bn2 nxt_qst" data-toggle="modal" data-target="#exampleModal" title="Add New Group">
                           <i class="fa fa-plus-circle"></i>
+                        </button>
+                        <button class="btn act_btn bn1" data-toggle="modal" data-target="#crt_qtn" title="Create Questions">
+                          <i class="fa fa-question-circle"></i>
                         </button>
                         <span class="dropdown dd_lft0 ">
                           <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1" title="Delete">
@@ -1075,14 +1039,12 @@ function closeNav5() {
                           </div>
                         </span>
                       </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-           </div>
-        </div>
-
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
         <div class="clearfix"></div>
         <div class="free_sp2"></div>
@@ -1113,28 +1075,30 @@ function closeNav5() {
 
 <!---add sales team section-->
         <div class="add_membrs">
+          <div class="pop_2" style="display: none;" ></div>
           <div class="box_add_team1"></div>
           <div class="flt_r box_add_team">
             <h1 class="h1_con">Import Group</h1>
             <div class="form-group fg6 sa_480">
-              <label for="email" class="fg2_la1">Performance Template:<span class="spn1">*</span></label>
+              <label for="email" class="fg2_la1">Previous Templates:<span class="spn1">*</span></label>
               <select class="form-control fg2_inp1 fg_chs2 mar_btzz inp_mst" id="Input1z" autofocus="">
-                <option>Performance Template 1</option>
-                <option>Performance Template 2</option>
+                <option>Previous Template 1</option>
+                <option>Previous Template 2</option>
               </select>
             </div>
             <div class="clearfix"></div>
             <div class="devider"></div>
-            <div class="fg6 sa_480">
+            <div class="fg4_3 sa_480">
               <div class="add_sec_tm">
                 <div class="fg12">
                   <h5>Groups</h5>
-                    <div class="check1 chk_al_emp" title="Select All Groups">
+                    <div class="check1 chk_al_emp flt_r" title="Select All Groups">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
                       </div>
                     </div>
                   <select type="text" class="form-control ser_set sel_tm11">
@@ -1152,10 +1116,11 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
                       </div>
                     </div>
                   </li>
@@ -1163,10 +1128,11 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        
+                      <i class="button-checkbox">
+                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                        <input type="checkbox" class="hidden">
+                      </i>
                       </div>
                     </div>
                   </li>
@@ -1174,10 +1140,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1185,10 +1151,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1196,10 +1162,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1207,10 +1173,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1218,10 +1184,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1229,10 +1195,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1240,10 +1206,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1251,10 +1217,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1262,10 +1228,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1273,10 +1239,10 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
@@ -1284,28 +1250,46 @@ function closeNav5() {
                     <span class="spn_name">Group 1</span>
                     <div class="check1">
                       <div class="">
-                        <label class="switch">
-                          <input type="checkbox">
-                          <span class="slider_tog round"></span>
-                        </label>
+                        <i class="button-checkbox">
+                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                          <input type="checkbox" class="hidden">
+                        </i>
                       </div>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="fg6 sa_480">
+            <div class="fg_4_1">
+              <button class="al_add" title="Add"><i class="fa fa-plus-circle"></i></button>
+            </div>
+            <div class="fg4_3 sa_480 flt_r">
               <div class="add_sec_tm">
                 <div class="fg12">
                   <h5>Selected Groups</h5>
-                    <button class="btn tab_but1 bn3 flt_r rmv_al_tmz" title="Remove All Group">
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt_22" title="Delete">
                       <i class="fa fa-trash"></i>
-                    </button>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx_22">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_11" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
                   <div class="fg12">
                     <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
                   </div>
                   </div>
-                    <ul class="emply_section list_f_mbrs">
+                    <ul class="emply_section list_f_mbrs rmv_bg1">
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
                         <button class="btn tab_but1 bn3" title="Remove">
@@ -1409,10 +1393,8 @@ function closeNav5() {
             <div class="devider"></div>
             <div class="sub_cont">
               <div class="save_sec flt_r">
-                <button type="submit" class="btn sub1">Save</button>
-                <button type="submit" class="btn sub3">Save &amp; Close</button>
+                <button type="submit" class="btn sub1">Import</button>
                 <button type="submit" class="btn sub4">Cancel</button>
-                <button type="submit" class="btn sub2">Clear</button>
               </div>
               <div class="edit_sec">
                 <button type="submit" class="btn sub1">Update</button>
@@ -1433,10 +1415,6 @@ function closeNav5() {
 </a>
 
 
-<!---import_button_section-->
-<a href="#" type="button" class="imprt_o imp_rgt add_nw1" title=" Import Group From Existing Template">
-  <i class="fa fa-upload" aria-hidden="true"></i>
-</a>
 
 <a href="#" type="button" class="add_nw2" title="Back" style="display:none;">
   <i class="fa fa-arrow-circle-left"></i>
@@ -1454,82 +1432,86 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
-
-<!-- Modal1 -->
-<div class="modal fade" id="mod_add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog mod2" role="document">
+<!-- Modal -->
+<div class="modal fade" id="crt_qtn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog max_dlg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Import Groups</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Create Questions</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-
-        <div class="form-group fg4 sa_2 sa_640_i sa_480">
-          <label for="email" class="fg2_la1">Performance Template:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1" placeholder="KPI (Key Performance Indicator)">
-            <option>Template 1</option>
-            <option>Template 2</option>
-            <option>Template 3</option>
-            <option>Template 4</option>
-          </select>
+        <div class="fg6 grp_sec1">
+          <h3>Group Name: Group Name 1 <button class="btn_imprt" title=" Import Questions"><i class="fa fa-upload" aria-hidden="true"></i></button></h3>
         </div>
-        <div class="clearfix"></div>
-        <div class="free_sp2"></div>
-        <div class="devider"></div>
-        
-        <div class="col-md-12">
-
-<div class="subject-info-box-1 box2 bx_hei fg4">
-  <h3>Groups</h3>
-  <select multiple="multiple" id='lstBox1' class="sub_1 grp_hei">
-    <option value="employee 1">employee 1</option>
-    <option value="employee 2">employee 2</option>
-    <option value="employee 3">employee 3</option>
-    <option value="employee 4">employee 4</option>
-    <option value="employee 5">employee 5</option>
-    <option value="employee 6">employee 6</option>
-  </select>
-</div>
-
-<div class="fg8 padding_tp50">
-  <input type='button' id='btnRight' value='Add' class="btn btn-success bt_ad" /><br />
-  <input type='button' id='btnLeft' value='Remove' class="btn btn-danger bt_ad" /><br />
-</div>
-
-<div class="subject-info-box-2 box2 bx_hei fg4">
-  <h3>Selected Groups</h3>
-  <!-- <form action="/action_page.php">
-      <select type="text" placeholder="Search" id="myprsel" onkeyup="myprodta()" name="search" class="ser_set">
-        <option>1</option>
-        <option>1</option>
-        <option>1</option>
-      </select>
-    </form> -->
-  <select multiple="multiple" id='lstBox2' class="sub_2 grp_hei">
-  </select>
-
-</div>
-
-</div><!---col-md-12_closed--->
+        <div class="hcm_res r_800">
+          <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+            <thead class="thead1">
+            <tr>
+            </tr>
+            <tr>
+              <th class="th_b3 tr_l">Questions</th>
+              <th class="th_b6 tr_l">Answer Type</th>
+              <th class="th_b11 tr_l">KPI (Key Performance Indicator)</th>
+              <th class="th_b7">Actions</th>
+            </tr>
+           
+          </thead>
+          <tbody class="tbr_co1">
+            <tr class="tr_rowe1">
+              <td>
+                <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="Question">
+              </td>
+              <td>
+                <select type="text" class="tb_inp_1 tb_in tr_l flt_l winp100">
+                  <option>Text Box</option>
+                  <option>Rating</option>
+                  <option>Check Box</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="KPI (Key Performance Indicator)">
+              </td>
+              <td>
+                <div class="btn_stl1">
+                  <button class="btn act_btn bn2 nxt_qst1" data-toggle="modal" data-target="#exampleModal" title="Add New">
+                    <i class="fa fa-plus-circle"></i>
+                  </button>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1" title="Delete">
+                    <i class="fa fa-trash"></i>
+                    </button>
+                    <div class="dropdown-menu drop_dnm repn dlt_bx_1">
+                      <div class="modal-header">
+                        <h5>Delete</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to delete this entry?</div>
+                      <div class="modal-footer">
+                        <button class="btn btn-success cls_dlt">Yes</button>
+                        <button class="btn btn-danger cls_dlt" id="InputToFocus2_1" autofocus="">No</button>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="modal-footer" style="text-align: center;">
-        <div class="subject-info-arrows text-center arrows sa_2 md_grp_1">
-          <!-- <input type='button' id='btnAllRight' value='>>' class="btn btn-default" /><br /> -->
-        </div> 
-        <div class="fg6 sa_2 pull-right tr_r"> 
-          <button type='button' class="btn btn-info"><i class="fa fa-code-fork"></i> Import</button>
-          <button type='button' class="btn btn-danger mr_de" data-dismiss="modal"><i class="fa fa-close"></i> Cancel</button>
-        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success">Update</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        
       </div>
     </div>
   </div>
 </div>
-<!-- Modal1_closed -->
-
-
 
 <!--------script section_started---------->
 
@@ -1903,7 +1885,14 @@ $(document).ready(function(){
   });
 });
 </script>
-
+<script>
+$(document).ready(function(){
+  $(".nxt_qst1").click(function(){
+    $(".tr_rowe1").clone().appendTo(".tbr_co1");
+    $(".nxt_qst1:first").hide();
+  });
+});
+</script>
 <script>
 $(document).ready(function(){
   $(".clone").click(function(){
@@ -1993,9 +1982,9 @@ console.clear();
 <!----alert_message_script_closed-->
 <script>
 $(document).ready(function(){
-  $(".edt_st, .add_dr1").click(function(){
+  $(".add_nw1_imp").click(function(){
     $(".add_membrs").addClass("add_mbr1");
-    $(".add_nw1").hide();
+    // $(".add_nw1").hide();
     $(".add_nw2").show();
     $('#Input1z').focus();
   });
@@ -2071,5 +2060,43 @@ $( document ).on( 'keydown', function ( e ) {
 //     });
 </script>
 
+<script>
+$(document).ready(function(){
+  $(".opn_dlt_22").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx_22").show( 300);
+    $('#InputToFocus2_11').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, .sel_tm11").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    }
+});
+</script>
 </body>
 </html>
