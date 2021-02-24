@@ -2634,6 +2634,7 @@ span.box_ae{padding-right: 6px;}
 .dlg_bx1{width: 90%;}
 .mdl_bdy_imp{min-height: 300px;}
 .pro_rt4 table thead tr th, .pro_rt2_1 table thead tr th {font-size: 11px!important;}
+.wid_p, .wid_p li{list-style: none;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){

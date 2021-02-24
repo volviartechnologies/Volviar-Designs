@@ -1060,6 +1060,7 @@ function closeNav5() {
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title pro_rt2" id="exampleModalLabel">Incorrect List</h5>
+        <h5 class="modal-title pro_rt2_1f" id="exampleModalLabel" style="display: none;">Duplicate List</h5>
         <h5 class="modal-title pro_rt2_1" id="exampleModalLabel" style="display: none;">Early Going List</h5>
         <h5 class="modal-title pro_rt3" id="exampleModalLabel" style="display: none;">Late Comers List</h5>
         <h5 class="modal-title pro_rt4" id="exampleModalLabel" style="display: none;">Correct List</h5>
@@ -1070,11 +1071,17 @@ function closeNav5() {
       <div class="modal-body mdl_bdy_imp">
         <div class="pro_rt2 flt_r">
           <button type="submit" class="btn sub4" data-dismiss="modal" id="fcs1">Cancel</button>
+          <button type="submit" class="btn sub3 cl_div_nf">Next >></button>
+        </div>
+
+        <div class="pro_rt2_1f flt_r" style="display: none;">
+          <button type="submit" class="btn sub3 cl_div_b"><< Previous</button>
+          <button type="submit" class="btn sub4 cl_div_b" data-dismiss="modal">Cancel</button>
           <button type="submit" class="btn sub3 cl_div_n">Next >></button>
         </div>
 
         <div class="pro_rt2_1 flt_r" style="display: none;">
-          <button type="submit" class="btn sub3 cl_div_b"><< Previous</button>
+          <button type="submit" class="btn sub3 cl_div_nf"><< Previous</button>
           <button type="submit" class="btn sub4 cl_div_b" data-dismiss="modal">Cancel</button>
           <button type="submit" class="btn sub3 cl_div_n1">Next >></button>
         </div>
@@ -1088,6 +1095,62 @@ function closeNav5() {
           <button type="submit" class="btn sub3 cl_div_b6"><< Previous</button>
           <button type="submit" class="btn sub4 cl_div_b" data-dismiss="modal">Cancel</button>
           <button type="submit" class="btn sub1">Save</button>
+        </div>
+
+        <div class="pro_rt2_1f" style="display: none;">
+          <p class="wid_p"><li class="wid_p"><i class="fa fa-arrow-circle-right"></i> Attendance for the following employees are already marked. Do you want to replace ? </li>
+            <div class="form-group fg5 sa_fg3 sa_640">
+              <div class="row">
+                <div class="fg4 mar_lft_20">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios2" value="option1" checked="">
+                    <label class="form-check-label" for="gridRadios">
+                     Replace
+                    </label>
+                  </div>
+                </div>
+                <div class="fg4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      Skip
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </p>
+          <table class="display table-bordered tbl_640" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b5 tr_c"></th>
+                <th class="th_b6 tr_l">Employee ID</th>
+                <th class="th_b4 tr_l">First Name</th>
+                <th class="th_b4 tr_l">Last Name</th>
+                <th class="th_b7 tr_c">Date</th>
+                <th class="th_b7 tr_c">Check-in</th>
+                <th class="th_b7 tr_c">Check-out</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_c">
+                  <i class="button-checkbox flt_n">
+                    <button type="button" class="act_btck btn_uc3 contr1_1"><i class="state-icon fa fa-square-o gly2 ic1"></i><i class="fa fa-check-square-o ic2" style="display: none;"></i>&nbsp;</button>
+                    <input type="checkbox" class="hidden">
+                  </i>
+                </td>
+                <td class="tr_l">Emp001</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_l">Designation 1</td>
+                <td class="tr_c">21/02/2021</td>
+                <td class="tr_c">10:00 AM</td>
+                <td class="tr_c">07:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+            <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div>
+            <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
         </div>
 
         <div class="pro_rt2_1" style="display: none;">
@@ -1226,11 +1289,17 @@ function closeNav5() {
       <div class="modal-footer">
         <div class="pro_rt2">
           <button type="submit" class="btn sub4">Cancel</button>
+          <button type="submit" class="btn sub3 cl_div_nf">Next >></button>
+        </div>
+
+        <div class="pro_rt2_1f flt_r" style="display: none;">
+          <button type="submit" class="btn sub3 cl_div_b"><< Previous</button>
+          <button type="submit" class="btn sub4">Cancel</button>
           <button type="submit" class="btn sub3 cl_div_n">Next >></button>
         </div>
 
         <div class="pro_rt2_1 flt_r" style="display: none;">
-          <button type="submit" class="btn sub3 cl_div_b"><< Previous</button>
+          <button type="submit" class="btn sub3 cl_div_nf"><< Previous</button>
           <button type="submit" class="btn sub4">Cancel</button>
           <button type="submit" class="btn sub3 cl_div_n1">Next >></button>
         </div>
@@ -1719,9 +1788,13 @@ $(document).ready(function(){
     $(".pro_rt1").show();
     $(".pro_rt2, .pro_rt2_1").hide();
   });
+  $(".cl_div_nf").click(function(){
+    $(".pro_rt2_1f").show();
+    $(".pro_rt2_1, .pro_rt2, .pro_rt3").hide();
+  });
   $(".cl_div_n").click(function(){
     $(".pro_rt2_1").show();
-    $(".pro_rt2, .pro_rt1, .pro_rt3").hide();
+    $(".pro_rt2_1f, .pro_rt1, .pro_rt3").hide();
   });
   $(".cl_div_n1").click(function(){
     $(".pro_rt2_1").hide();
@@ -1740,7 +1813,7 @@ $(document).ready(function(){
     $(".pro_rt2_1").show();
   });
   $(".cl_div_b").click(function(){
-    $(".pro_rt3, .pro_rt2_1").hide();
+    $(".pro_rt3, .pro_rt2_1f").hide();
     $(".pro_rt2").show();
   });
   $(".op_tbx1").click(function(){
