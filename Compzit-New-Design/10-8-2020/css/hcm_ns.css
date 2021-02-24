@@ -2625,7 +2625,15 @@ span.box_ae{padding-right: 6px;}
 .employe_lst{margin-top: 1px;}
 .recv_bx90348{display: block;bottom:auto;top: -150px;right: 25px;}
 
-.file_n {max-width: 47%;font-size: 12px;}
+.bdr_1sld .file_n {max-width: 62%;font-size: 12px;}
+.bdr_1sld{width: 30%;margin: auto;float: left;border:1px solid #ccc;border-radius: 8px;padding: 6px;margin-right: 30px;}
+.fn_btn1{margin-right: 0px;margin-top: 6px;}
+.dwnld_csv{position: fixed;right: 10px;top: 150px;padding: 2px 16px;font-size: 18px;background-color: #fff;}
+.modal-body .btn+.btn{margin-left: 5px;}
+.dlg_bx1 .btn{font-size: 13px;}
+.dlg_bx1{width: 90%;}
+.mdl_bdy_imp{min-height: 300px;}
+.pro_rt4 table thead tr th, .pro_rt2_1 table thead tr th {font-size: 11px!important;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
