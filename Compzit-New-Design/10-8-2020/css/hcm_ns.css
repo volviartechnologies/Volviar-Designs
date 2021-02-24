@@ -2613,11 +2613,11 @@ span.box_ae{padding-right: 6px;}
 .lb_2_2{width: 67%!important;margin: auto;float: left;}
 .imp_rgt{right: 26px;top: 148px;}
 .grp_sec1 h3{margin-top: 0px;margin-bottom: 4px;}
-.max_dlg{width: 70%;}
+.max_dlg{width: 70%;margin-top: 60px;}
 .rmv_bg1 .employe_lst{background-color: #fff;border-bottom: 1px solid #eceaea;margin-bottom: 1px;padding: 2px;}
 .fg4_3{width: 47%;margin: auto;float: left;}
 .fg_4_1{width: 10%;height: auto;margin: auto;float: left;}
-.al_add{width: auto;background-color: transparent;    border: 1px solid #8BC34A;color: #8BC34A;margin: auto;border-radius: 4px;font-size: 20px;position: absolute;bottom: 110px;}
+.al_add{width: auto;background-color: transparent;    border: 1px solid #8BC34A;color: #8BC34A;margin: auto;border-radius: 4px;font-size: 20px;position: absolute;bottom: 154px;}
 .al_add:hover, .al_add:focus{background-color: #8BC34A;color: #fff;}
 .dlt_bx_22:before{bottom: auto;top: 70px;right: -10px;}
 .dlt_bx_22{bottom: auto;right: 34px;top: -70px;}
@@ -2635,6 +2635,14 @@ span.box_ae{padding-right: 6px;}
 .mdl_bdy_imp{min-height: 300px;}
 .pro_rt4 table thead tr th, .pro_rt2_1 table thead tr th {font-size: 11px!important;}
 .wid_p, .wid_p li{list-style: none;}
+.grp_sec1{width: 47%!important;}
+.dlt_pz{bottom: auto;top: -95px;right: 40px;}
+.dlt_pz:before{bottom: 34px;right: -10px;top: auto;}
+.z_indx11{z-index: 9999;}
+.header_container{z-index: 99999;}
+.z_indx11 .box_add_team1{background-color: rgba(68, 68, 68, 0.8);}
+.z_indx11 .emply_section {max-height: 266px;}
+.z_indx11 .min_hei_ad_st {max-height: 238px;    margin-top: 2px;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
