@@ -1043,6 +1043,39 @@ function closeNav5() {
                       </div>
                     </td>
                   </tr>
+                  <tr class="tr_rowe_1" style="display: none;">
+                    <td>
+                      <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="Group Name">
+                    </td>
+                    <td>
+                      <div class="btn_stl1">
+                        <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add New Group">
+                          <i class="fa fa-plus-circle"></i>
+                        </button>
+                        <button class="btn act_btn bn1" data-toggle="modal" data-target="#crt_qtn" title="Create Questions">
+                          <i class="fa fa-question-circle"></i>
+                        </button>
+                        <span class="dropdown dd_lft0 ">
+                          <button class="dropdown-toggle btn act_btn bn3" title="Delete">
+                          <i class="fa fa-trash"></i>
+                          </button>
+                          <div class="dropdown-menu drop_dnm repn ">
+                            <div class="modal-header">
+                              <h5>Delete</h5>
+                              <button type="button" class="close cls_pop" title="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                            </div>
+                            <div class="head_txt">Are you sure to delete this entry?</div>
+                            <div class="modal-footer">
+                              <button class="btn btn-success cls_dlt">Yes</button>
+                              <button class="btn btn-danger cls_dlt" id="InputToFocus2_1" autofocus="">No</button>
+                            </div>
+                          </div>
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -1077,320 +1110,633 @@ function closeNav5() {
 
 <!---add sales team section-->
         <div class="add_membrs z_indx11">
-          <div class="pop_2" style="display: none;" ></div>
+          <div class="pop_2_1" style="display: none;" ></div>
           <div class="box_add_team1"></div>
           <div class="flt_r box_add_team">
-            <h3>Import Group</h3>
+            <h3 class="grp_ls">Import Group</h3>
+            <h3 class="qstn_ls" style="display: none;">Import Questions</h3>
             <div class="form-group fg6 sa_480">
               <label for="email" class="fg2_la1">Previous Templates:<span class="spn1">*</span></label>
-              <select class="form-control fg2_inp1 fg_chs2 mar_btzz inp_mst" id="Input1z" autofocus="">
+              <select class="form-control fg2_inp1 fg_chs2 mar_btzz inp_mst grp_ls" id="Input1z" autofocus="">
+                <option>Previous Template 1</option>
+                <option>Previous Template 2</option>
+              </select>
+              <select class="form-control fg2_inp1 fg_chs2 mar_btzz inp_mst qstn_ls" id="Input1znq" autofocus="" style="display: none;">
                 <option>Previous Template 1</option>
                 <option>Previous Template 2</option>
               </select>
             </div>
             <div class="clearfix"></div>
             <div class="devider"></div>
-            <div class="fg4_3 sa_480">
-              <div class="add_sec_tm">
-                <div class="fg12">
-                  <h5>Groups</h5>
-                    <div class="check1 chk_al_emp flt_r" title="Select All Groups">
-                      <div class="">
-                        
-                      <i class="button-checkbox">
-                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </i>
-                      </div>
-                    </div>
-                  <select type="text" class="form-control ser_set sel_tm11">
-                    <option selected="">Division 1</option>
-                    <option>Division 1</option>
-                    <option>Division 1</option>
-                    <option>Division 1</option>
-                  </select>
-                </div>
-                <div class="fg12">
-                  <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
-                </div>
-                <ul class="emply_section min_hei_ad_st">
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        
-                      <i class="button-checkbox">
-                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        
-                      <i class="button-checkbox">
-                        <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                        <input type="checkbox" class="hidden">
-                      </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="employe_lst">
-                    <span class="spn_name">Group 1</span>
-                    <div class="check1">
-                      <div class="">
-                        <i class="button-checkbox">
-                          <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
-                          <input type="checkbox" class="hidden">
-                        </i>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="fg_4_1">
-              <button class="al_add" title="Add"><i class="fa fa-plus-circle"></i></button>
-            </div>
-            <div class="fg4_3 sa_480 flt_r">
-              <div class="add_sec_tm">
-                <div class="fg12">
-                  <h5>Selected Groups</h5>
-                    <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt_22" title="Delete">
-                      <i class="fa fa-trash"></i>
-                      </button>
-                      <div class="dropdown-menu drop_dnm repn dlt_bx_22">
-                        <div class="modal-header">
-                          <h5>Delete</h5>
-                          <button type="button" class="close cls_pop" title="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
+              <div class="grp_ls">
+                <div class="fg4_3 sa_480">
+                  <div class="add_sec_tm">
+                    <div class="fg12">
+                      <h5>Groups</h5>
+                        <div class="check1 chk_al_emp flt_r" title="Select All Groups">
+                          <div class="">
+                            
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          </div>
                         </div>
-                        <div class="head_txt">Are you sure to remove selected groups?</div>
-                        <div class="modal-footer">
-                          <button class="btn btn-success cls_dlt">Yes</button>
-                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_11" autofocus="">No</button>
+                      <select type="text" class="form-control ser_set sel_tm11">
+                        <option selected="">Division 1</option>
+                        <option>Division 1</option>
+                        <option>Division 1</option>
+                        <option>Division 1</option>
+                      </select>
+                    </div>
+                    <div class="fg12">
+                      <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
+                    </div>
+                    <ul class="emply_section min_hei_ad_st">
+                      <li class="employe_lst">
+                        <span class="spn_name">Group 1</span>
+                        <div class="check1">
+                          <div class="">
+                            
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          </div>
                         </div>
-                      </div>
-                    </span>
-                  <div class="fg12">
-                    <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
-                  </div>
-                  </div>
-                    <ul class="emply_section list_f_mbrs rmv_bg1">
-                      <li class="employe_lst">
-                        <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                       <li class="employe_lst">
                         <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
-                      </li>
-                      <li class="employe_lst">
-                        <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
-                      </li>
-                      <li class="employe_lst">
-                        <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
-                      </li>
-                      <li class="employe_lst">
-                        <span class="spn_name">Group 1</span>
-                        <button class="btn tab_but1 bn3" title="Remove">
-                          <i class="fa fa-trash"></i>
-                        </button>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
                       </li>
                     </ul>
+                  </div>
+                </div>
+                <div class="fg_4_1">
+                  <button class="al_add" title="Add"><i class="fa fa-plus-circle"></i></button>
+                </div>
+                <div class="fg4_3 sa_480 flt_r">
+                  <div class="add_sec_tm">
+                    <div class="fg12">
+                      <h5>Selected Groups</h5>
+                        <span class="dropdown dd_lft0 ">
+                          <button class="dropdown-toggle btn act_btn bn3 opn_dlt_22" title="Delete">
+                          <i class="fa fa-trash"></i>
+                          </button>
+                          <div class="dropdown-menu drop_dnm repn dlt_bx_22">
+                            <div class="modal-header">
+                              <h5>Delete</h5>
+                              <button type="button" class="close cls_pop" title="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                            </div>
+                            <div class="head_txt">Are you sure to remove selected groups?</div>
+                            <div class="modal-footer">
+                              <button class="btn btn-success cls_dlt">Yes</button>
+                              <button class="btn btn-danger cls_dlt" id="InputToFocus2_11" autofocus="">No</button>
+                            </div>
+                          </div>
+                        </span>
+                      <div class="fg12">
+                        <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
+                      </div>
+                      </div>
+                        <ul class="emply_section list_f_mbrs rmv_bg1">
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Group 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                        </ul>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="qstn_ls" style="display: none;">
+                <div class="fg4_3 sa_480">
+                  <div class="add_sec_tm">
+                    <div class="fg12">
+                      <h5>Questions</h5>
+                        <div class="check1 chk_al_emp flt_r" title="Select All Questions">
+                          <div class="">
+                            
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          </div>
+                        </div>
+                      <select type="text" class="form-control ser_set sel_tm11">
+                        <option selected="">Division 1</option>
+                        <option>Division 1</option>
+                        <option>Division 1</option>
+                        <option>Division 1</option>
+                      </select>
+                    </div>
+                    <div class="fg12">
+                      <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
+                    </div>
+                    <ul class="emply_section min_hei_ad_st">
+                      <h5>Group Name 1</h5>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            
+                          <i class="button-checkbox">
+                            <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                            <input type="checkbox" class="hidden">
+                          </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+
+                      <h5>Group Name 1</h5>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1</span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="employe_lst">
+                        <span class="spn_name">Question 1 </span>
+                        <div class="check1">
+                          <div class="">
+                            <i class="button-checkbox">
+                              <button type="button" class="active btn-d" data-color="p" onclick="myFunct()" ng-model="all"><i class="state-icon fa fa-square-o gly2"></i>&nbsp;</button>
+                              <input type="checkbox" class="hidden">
+                            </i>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="fg_4_1">
+                  <button class="al_add" title="Add"><i class="fa fa-plus-circle"></i></button>
+                </div>
+                <div class="fg4_3 sa_480 flt_r">
+                  <div class="add_sec_tm">
+                    <div class="fg12">
+                      <h5>Selected Questions</h5>
+                        <span class="dropdown dd_lft0 ">
+                          <button class="dropdown-toggle btn act_btn bn3 opn_dlt_22" title="Delete">
+                          <i class="fa fa-trash"></i>
+                          </button>
+                          <div class="dropdown-menu drop_dnm repn dlt_bx_22">
+                            <div class="modal-header">
+                              <h5>Delete</h5>
+                              <button type="button" class="close cls_pop" title="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                            </div>
+                            <div class="head_txt">Are you sure to remove selected groups?</div>
+                            <div class="modal-footer">
+                              <button class="btn btn-success cls_dlt">Yes</button>
+                              <button class="btn btn-danger cls_dlt" id="InputToFocus2_11" autofocus="">No</button>
+                            </div>
+                          </div>
+                        </span>
+                      <div class="fg12">
+                        <input type="text" class="form-control ser_set sel_tm11" placeholder="Search Group">
+                      </div>
+                      </div>
+                        <ul class="emply_section list_f_mbrs rmv_bg1">
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                          <li class="employe_lst">
+                            <span class="spn_name">Question 1</span>
+                            <button class="btn tab_but1 bn3" title="Remove">
+                              <i class="fa fa-trash"></i>
+                            </button>
+                          </li>
+                        </ul>
+                  </div>
+                </div>
+              </div>
             <div class="clearfix"></div>
             <div class="free_sp1"></div>
             <div class="devider"></div>
@@ -1408,6 +1754,8 @@ function closeNav5() {
             </div>
           </div>
         </div>
+
+        
 
 <a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
 <i class="fa fa-save"></i>
@@ -1438,6 +1786,7 @@ function closeNav5() {
 <!-- Modal -->
 <div class="modal fade" id="crt_qtn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog max_dlg" role="document">
+    <div class="pop_2_3"></div>
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Create Questions</h5>
@@ -1445,7 +1794,7 @@ function closeNav5() {
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body minhgt_qstn">
         <div class="fg6 grp_sec1">
           <h3>Group Name: Group Name 1 <button class="btn_imprt impt_emply" title=" Import Questions"><i class="fa fa-upload" aria-hidden="true"></i></button></h3>
         </div>
@@ -1483,10 +1832,10 @@ function closeNav5() {
                     <i class="fa fa-plus-circle"></i>
                   </button>
                   <span class="dropdown dd_lft0 ">
-                    <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1" title="Delete">
+                    <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1z" title="Delete">
                     <i class="fa fa-trash"></i>
                     </button>
-                    <div class="dropdown-menu drop_dnm repn dlt_bx_1">
+                    <div class="dropdown-menu drop_dnm repn dlt_bx_1z">
                       <div class="modal-header">
                         <h5>Delete</h5>
                         <button type="button" class="close cls_pop" title="Close">
@@ -1496,13 +1845,53 @@ function closeNav5() {
                       <div class="head_txt">Are you sure to delete this entry?</div>
                       <div class="modal-footer">
                         <button class="btn btn-success cls_dlt">Yes</button>
-                        <button class="btn btn-danger cls_dlt" id="InputToFocus2_1" autofocus="">No</button>
+                        <button class="btn btn-danger cls_dlt" id="InputToFocus2_1z" autofocus="">No</button>
                       </div>
                     </div>
                   </span>
                 </div>
                 </td>
               </tr>
+              <tr class="tr_rowe2" style="display: none;">
+                <td>
+                  <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="Question" id="fcs1">
+                </td>
+                <td>
+                  <select type="text" class="tb_inp_1 tb_in tr_l flt_l winp100">
+                    <option>Text Field</option>
+                    <option>Rating Field</option>
+                    <option>Selection Field</option>
+                  </select>
+                </td>
+                <td>
+                  <input type="text" class="tb_inp_1 tb_in tr_l flt_l winp100" placeholder="KPI (Key Performance Indicator)">
+                </td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn2 nxt_qst2" data-toggle="modal" data-target="#exampleModal" title="Add New">
+                      <i class="fa fa-plus-circle"></i>
+                    </button>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn3 dlt_qst1" title="Delete">
+                      <i class="fa fa-trash"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn">
+                        <div class="modal-header">
+                          <h5>Delete</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to delete this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_1z" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                  </td>
+                </tr>
             </tbody>
           </table>
         </div>
@@ -1880,19 +2269,24 @@ jQuery(document).ready(function() {
 
 </script>
 
+
 <script>
 $(document).ready(function(){
   $(".nxt_qst").click(function(){
-    $(".tr_rowe").clone().appendTo(".tbr_co");
-    $(".nxt_qst:first").prop('disabled',true);
+    $(".tr_rowe_1").show();
+  });
+  $(".dlt_qst").click(function(){
+    $(".tr_rowe_1").hide();
   });
 });
 </script>
 <script>
 $(document).ready(function(){
   $(".nxt_qst1").click(function(){
-    $(".tr_rowe1").clone().appendTo(".tbr_co1");
-    $(".nxt_qst1:first").prop('disabled',true);
+    $(".tr_rowe2").show();
+  });
+  $(".dlt_qst1").click(function(){
+    $(".tr_rowe2").hide();
   });
 });
 </script>
@@ -1985,12 +2379,25 @@ console.clear();
 <!----alert_message_script_closed-->
 <script>
 $(document).ready(function(){
-  $(".add_nw1_imp, .impt_emply").click(function(){
+  $(".add_nw1_imp").click(function(){
     $(".add_membrs").addClass("add_mbr1");
-    // $(".add_nw1").hide();
+    $(".qstn_ls").hide();
+    $(".grp_ls").show();
     $(".add_nw2").show();
     $('#Input1z').focus();
   });
+  $(".impt_emply").click(function(){
+    $('#Input1znq').focus();
+    $(".add_membrs").addClass("add_mbr1");
+    $(".grp_ls").hide();
+    $(".qstn_ls").show();
+    $(".add_nw2").show();
+  });
+  // $(".add_nw1").click(function(){
+  //   $(".add_nw1").hide();
+  //   $(".add_nw2").show();
+  //   $(".add_membrs").addClass("add_mbr1");
+  // });
   $(".add_nw1").click(function(){
     $(".add_nw1").hide();
     $(".add_nw2").show();
@@ -2065,8 +2472,13 @@ $( document ).on( 'keydown', function ( e ) {
 
 <script>
 $(document).ready(function(){
+  // $(".opn_dlt_22").click(function(){
+  //   $(".pop_2_1").fadeIn();
+  //   $(".dlt_bx_22").show( 300);
+  //   $('#input22').focus();
+  // });
   $(".opn_dlt_22").click(function(){
-    $(".pop_2").fadeIn();
+    $(".pop_2_1").fadeIn();
     $(".dlt_bx_22").show( 300);
     $('#InputToFocus2_11').focus();
   });
@@ -2075,11 +2487,16 @@ $(document).ready(function(){
     $(".dlt_bx_1").show( 300);
     $('#InputToFocus2_1').focus();
   });
-  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  $(".opn_dlt_1z").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z").show( 300);
+    $('#InputToFocus2_1z').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1, .pop_2_3").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
   });
   $(".dropdown-toggle, .act_btn, .paginate_button, .sel_tm11").focus(function(){
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
   });
 
   $(".sel_ar").click(function(){
@@ -2093,7 +2510,7 @@ $(document).ready(function(){
   var keyCode = e.keyCode || e.which; 
 
   if (keyCode == 27) { 
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
     document.getElementById("#InputToFocus1").hide();
   } 
 });
@@ -2102,7 +2519,7 @@ $(document).ready(function(){
   $(document).keyup(function(e) {
     if (e.which == 27) {
         $(".overlayInner").fadeOut(300); 
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
     }
 });
 </script>

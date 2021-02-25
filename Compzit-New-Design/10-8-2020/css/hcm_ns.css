@@ -2619,8 +2619,8 @@ span.box_ae{padding-right: 6px;}
 .fg_4_1{width: 10%;height: auto;margin: auto;float: left;}
 .al_add{width: auto;background-color: transparent;    border: 1px solid #8BC34A;color: #8BC34A;margin: auto;border-radius: 4px;font-size: 20px;position: absolute;bottom: 154px;}
 .al_add:hover, .al_add:focus{background-color: #8BC34A;color: #fff;}
-.dlt_bx_22:before{bottom: auto;top: 70px;right: -10px;}
-.dlt_bx_22{bottom: auto;right: 34px;top: -70px;}
+.dlt_bx_22:before, .dlt_bx_222:before{bottom: auto;top: 70px;right: -10px;}
+.dlt_bx_22, .dlt_bx_222{bottom: auto;right: 34px;top: -70px;}
 .add_sec_tm .drop_dnm .modal-header h5{background-color: transparent;}
 .employe_lst{margin-top: 1px;}
 .recv_bx90348{display: block;bottom:auto;top: -150px;right: 25px;}
@@ -2643,6 +2643,21 @@ span.box_ae{padding-right: 6px;}
 .z_indx11 .box_add_team1{background-color: rgba(68, 68, 68, 0.8);}
 .z_indx11 .emply_section {max-height: 266px;}
 .z_indx11 .min_hei_ad_st {max-height: 238px;    margin-top: 2px;}
+.modal-dialog{margin-top: 60px;}
+.emply_section h5{width: 100%;background-color:#d3f1ff;color: #000;margin-top: 4px;}
+.minhgt_qstn{min-height: 240px;}
+.dlt_bx_1z{z-index: 99999;top: -50px;bottom: auto;right: 28px;left: auto;}
+.dlt_bx_1z:before{ right: -10px;bottom: 70px;}
+.pop_2_3 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    float: left;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+    top: 48px;
+    left: 0;
+    z-index: 9999;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
