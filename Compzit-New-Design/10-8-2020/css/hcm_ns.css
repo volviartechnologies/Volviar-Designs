@@ -2663,6 +2663,14 @@ span.box_ae{padding-right: 6px;}
 .dlt_bx_cog:before{right: auto;left: -5px;top: 44px;}
 .dlt_bx1_d1{bottom: -6px;right: 29px;}
 .dlt_bx1_d1:before{right: -8px;bottom: 1px;}
+.wid_btn_rdc2{width: 73%;max-height:215px;min-height: 215px;}
+.wid_btn_rdc_1{height: auto;width: 21%;}
+.wid_btn_rdc_1 .rqst_img_box1{margin-left: 0px;}
+.wid_btn_rdc_1 .rqst_box1_btn h3{width: 45%;}
+.box_pdng10{padding:10px;}
+.box_pdng10 h3{padding-top: 22px!important;}
+.hgt_216{height: 216px;}
+
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){

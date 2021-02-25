@@ -95,7 +95,7 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
-<!--------css_Included_closed------>
+<!--------css_Included_closed------->
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
 
@@ -107,15 +107,16 @@ function closeNav5() {
  <div class="mySave1" id="mySave">
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Save</button>
-    <button type="submit" class="btn sub3 bt_b">Save & Close</button>
-    <button type="submit" class="btn sub2 bt_b">Clear</button>
+    <button type="submit" class="btn sub1 bt_b">Finish</button>
+    <button type="submit" class="btn sub4 bt_b">Close</button>
     <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Clear</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
     <button type="submit" class="btn sub3 bt_b">Update & Close</button>
     <button type="submit" class="btn sub2 bt_b">Confirm</button>
-    <button type="submit" class="btn sub4 bt_b">Cancel</button>
+    <button type="submit" class="btn sub2 bt_b">Cancel</button>
   </div>
 </div>
 
@@ -950,7 +951,8 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li class="active">Exit Interview Questions</li>
+      <li><a href="exit_partl_process.html">Exit Partial Process</a></li>
+      <li class="active">Manage Exit Partial Process</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
@@ -958,95 +960,155 @@ function closeNav5() {
       <div class="content_area_container cont_contr"> 
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
-<!---frame_border_area_opened---->
 
 <!---inner_content_sections area_started-->
-          <h1 class="h1_con">Exit Interview Questions</h1>
-
-          <div class="form-group fg2">
-            <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1" autofocus="">
-              <option>Designation 1</option>
-              <option>Designation 2</option>
-              <option>Designation 3</option>
-            </select>           
+          <h1 class="h1_con">Manage Exit Partial Process</h1>
+          <div class="fg4">
+            <div class="fg12 mar_at flt_l box_emp_br png_10 hgt_216">
+              <div class="fg12 empl_pop_dtl">
+                <h3>Employee Name 1</h3>
+                <span>EMP0001</span>
+              </div>
+              <div class="devider"></div>
+              <div class="fg5">
+                <div class="user_im_1">
+                  <img src="../images/hcm/user.jpg">
+                </div>
+              </div>
+              <div class="fg_3_1 empl_pop_dtl wid_76_pz">
+                <ul class="join_leav emp_dtl_bdr">
+                  <li><span class="spn_zp1">Department:</span> <span class="spn_sep">Department 2</span></li>
+                  <li><span class="spn_zp1">Division:</span> <span class="spn_sep">Division 2</span></li>
+                  <li class="bg_grn box_fr_staff" style="display: none;"><span class="spn_zp1">Designation:</span> <span class="spn_sep">Designation 1</span></li>
+                  <li class="bg_grn box_wrkr"><span class="spn_zp1">Trade:</span> <span class="spn_sep">Trade 1</span></li>
+                </ul>
+              </div>
+            </div>
           </div>
-
-            <div class="fg7_5 sa_fg2">
-              <label class="form1 mar_bo mar_tp lb_wa">
-                <span class="button-checkbox">
-                  <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                  <input type="checkbox" class="hidden" />
-                </span>
-                <p class="pz_s">Show Deleted Entries</p>
-              </label>
+          <div class="fg_3_1">
+            <div class="rqst_box1 stf_bx1 wid_btn_rdc_1">
+              <button class="rqst_box1_btn ar_b1 sel_btq" autofocus="">
+                <div class="rqst_img_box1">
+                  <img src="../images/hcm/fpv2.png" class="">
+                </div>
+                <h3>Ticket</h3>
+              </button>
+              <button class="rqst_box1_btn ar_b2">
+                <div class="rqst_img_box1">
+                  <img src="../images/hcm/fpv1.png" class="">
+                </div>
+                <h3>Exit Permit</h3>
+              </button>
+              <button class="rqst_box1_btn ar_b3">
+                <div class="rqst_img_box1">
+                  <img src="../images/hcm/fpv3.png" class="">
+                </div>
+                <h3>Visa/NOC</h3>
+              </button>
             </div>
 
-            <div class="fg2">
-              <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-              <button class="submit_ser"></button>
-              <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
+          <div class="rqst_box2 ad_Stf_bx1 spl_stf_bx1 wid_btn_rdc1 wid_btn_rdc2">
+            <div class="lev_rqst bdr_top_rgt box_pdng10" style="display:block;">
+              <div class="fg4">
+                <h3>Target Date: 25/02/2021</h3>
+              </div>
+              <div class="form-group fg_3_1 sa_2 sa_480">
+                <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
+                <select type="text" class="form-control fg2_inp1 inp_mst">
+                  <option>Job Assigned</option>
+                  <option>Avaliablity Check</option>
+                  <option>Awaiting, Approval from candidate</option>
+                  <option>Booking Confirm, Ticket Copy Attached</option>
+                </select>
+              </div>
+              <div class="form-group fg4 sa_o_fg2 sa_o_fg1">
+                <label for="pwd" class="fg2_la1">Assigned From Date:<span class="spn1"></span> </label>
+                <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                  <input class="form-control inp_bdr" type="text">
+                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="free_sp2"></div>
+              <div class="devider"></div>
+              <div class="sub_cont">
+                <div class="save_sec flt_r">
+                  <button type="submit" class="btn sub1">Save</button>
+                  <button type="submit" class="btn sub1">Finish</button>
+                  <button type="submit" class="btn sub4">Close</button>
+                  <button type="submit" class="btn sub4">Cancel</button>
+                  <button type="submit" class="btn sub2">Clear</button>
+                </div>
+              </div>
             </div>
-<!---=================section_devider============--->
-      <div class="clearfix"></div>
-      <div class="devider"></div>
-<!---=================section_devider============-->
-
-        <div class="pop_2" style="display: none;" ></div>
-        <div class="r_640">  
-          <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-            <thead class="thead1">
-              <tr>
-                <th class="col-md-6 tr_l">Designation
-                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
-                  <input type="text" class="tb_inp_1 tb_in" placeholder="Designation" onkeydown="return DisableEnter(event)">
-                </th>
-                <th class="col-md-4 tr_c">Question#
-                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Question#" onkeydown="return DisableEnter(event)">
-                </th>
-                <th class="col-md-2">Actions
-                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-                </th>
-              </tr>
-            </thead>
-              <tbody>
-                <tr>
-                  <td class="tr_l">Aaaaaaaaaa</td>
-                  <td class="tr_c">10</td>
-                  <td> 
-                    <div class="btn_stl1">
-                      <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                        <i class="fa fa-edit"></i>
-                      </button>
-                      <span class="dropdown dd_lft0 ">
-                        <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
-                        <i class="fa fa-trash"></i>
-                        </button>
-                        <div class="dropdown-menu drop_dnm repn dlt_bx">
-                          <div class="modal-header">
-                            <h5>Delete</h5>
-                            <button type="button" class="close cls_pop" title="Close">
-                              <span aria-hidden="true">×</span>
-                            </button>
-                          </div>
-                          <div class="head_txt">Are you sure to delete this entry?</div>
-                          <div class="modal-footer">
-                            <button class="btn btn-success cls_dlt">Yes</button>
-                            <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
-                          </div>
-                        </div>
-                      </span>
-                    </div>
-                  </td>
-                </tr>
-               
-              </tbody>
-            </table>
-        </div>
-
-        </div>
-
+            <div class="trvl_sec bdr_top_rgt box_pdng10" style="display:none;">
+              <div class="fg4">
+                <h3>Target Date: 25/03/2021</h3>
+              </div>
+              <div class="form-group fg_3_1 sa_2 sa_480">
+                <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
+                <select type="text" class="form-control fg2_inp1 inp_mst">
+                  <option>Job Assigned</option>
+                  <option>Avaliablity Check</option>
+                  <option>Awaiting, Approval from candidate</option>
+                  <option>Booking Confirm, Ticket Copy Attached</option>
+                </select>
+              </div>
+              <div class="form-group fg4 sa_o_fg2 sa_o_fg1">
+                <label for="pwd" class="fg2_la1">Assigned From Date:<span class="spn1"></span> </label>
+                <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                  <input class="form-control inp_bdr" type="text">
+                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="free_sp2"></div>
+              <div class="devider"></div>
+              <div class="sub_cont">
+                <div class="save_sec flt_r">
+                  <button type="submit" class="btn sub1">Save</button>
+                  <button type="submit" class="btn sub1">Finish</button>
+                  <button type="submit" class="btn sub4">Close</button>
+                  <button type="submit" class="btn sub4">Cancel</button>
+                  <button type="submit" class="btn sub2">Clear</button>
+                </div>
+              </div>
+            </div>
+            <div class="fmly_sec bdr_top_rgt box_pdng10" style="display:none;">
+              <div class="fg4">
+                <h3>Target Date: 25/02/2022</h3>
+              </div>
+              <div class="form-group fg_3_1 sa_2 sa_480">
+                <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
+                <select type="text" class="form-control fg2_inp1 inp_mst">
+                  <option>Job Assigned</option>
+                  <option>Avaliablity Check</option>
+                  <option>Awaiting, Approval from candidate</option>
+                  <option>Booking Confirm, Ticket Copy Attached</option>
+                </select>
+              </div>
+              <div class="form-group fg4 sa_o_fg2 sa_o_fg1">
+                <label for="pwd" class="fg2_la1">Assigned From Date:<span class="spn1"></span> </label>
+                <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                  <input class="form-control inp_bdr" type="text">
+                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="free_sp2"></div>
+              <div class="devider"></div>
+              <div class="sub_cont">
+                <div class="save_sec flt_r">
+                  <button type="submit" class="btn sub1">Save</button>
+                  <button type="submit" class="btn sub1">Finish</button>
+                  <button type="submit" class="btn sub4">Close</button>
+                  <button type="submit" class="btn sub4">Cancel</button>
+                  <button type="submit" class="btn sub2">Clear</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
 
 <!---inner_content_sections area_closed--->
 
@@ -1068,18 +1130,12 @@ function closeNav5() {
 </div><!--wrapper_closed-->
 
 
-<!---print_button--->
-<a href="#" type="button" class="print_o" title="Print page">
-  <i class="fa fa-print"></i>
+<a href="exit_partl_process.html" type="button" class="list_b" title="Back to List">
+<i class="fa fa-arrow-circle-left"></i>
 </a>
-<!---print_button_closed--->
-
-<!---add_button--->
-<a href="#" type="button" onclick="topFunction()" id="myBtn" title="Add New" data-toggle="modal" data-target="#add_exit">
-<i class="fa fa-plus-circle"></i>
+<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
+<i class="fa fa-save"></i>
 </a>
-<!---add_button_closed--->
-
 
 <div class="import_opt">
   <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
@@ -1100,7 +1156,7 @@ function closeNav5() {
 </div>
 <!----alert_message_section_closed---->
 
-<a href="#" id="scroll" style="display: none;"><span class="fa fa-angle-up"></span></a>
+
 
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico4.png"></i> Humen Capital Management</p>
@@ -1111,155 +1167,6 @@ function closeNav5() {
 </div>
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
-
-<!-- Modal -->
-<div class="modal fade" id="add_exit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog  max_dlg" role="document">
-    <div class="modal-content">
-    <div class="pop_2_1" style="display: none;" ></div>
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Interview Questions</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body minhgt_qstn">
-        <div class="form-group fg4 sa_o_fg4">
-          <label for="email" class="fg2_la1">Designation:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 inp_mst" required="" id="fcs1">
-            <option>Designation 1</option>
-            <option>Designation 2</option>
-            <option>Designation 3</option>
-            <option>Designation 4</option>
-          </select>
-        </div>
-        <div class="form-group fg4 fg2_mr sa_fg1">
-          <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
-          <span class="dropdown dd_lft0 ">
-            <button class="dropdown-toggle btn act_btn bn1 opn_dlt_cog" title="Generate Commonly Used Questions">
-            <i class="fa fa-cogs"></i>
-            </button>
-            <div class="dropdown-menu drop_dnm repn dlt_bx_cog">
-              <div class="modal-header">
-                <h5>Generate Commonly Used Questions</h5>
-                <button type="button" class="close cls_pop" title="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="head_txt">Are you sure to generate commonly used questions?</div>
-              <div class="modal-footer">
-                <button class="btn btn-success cls_dlt" id="InputToFocus2_cog" autofocus="">Yes</button>
-                <button class="btn btn-danger cls_dlt">No</button>
-              </div>
-            </div>
-          </span>
-        </div>
-        <div class="clearfix"></div>
-        <div class="free_sp2"></div>
-        <div class="r_640">
-          <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div>
-          <div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
-          <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-              <thead class="thead1">
-                <tr>
-                  <th class="col-md-8 tr_l">Questions
-                    <input type="text" class="tb_inp_1 tb_in clspzz" placeholder="Questions" onkeydown="return DisableEnter(event)">
-                  </th>
-                  <th rowspan="2" class="col-md-2">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr >
-                  <td class="tr_l col-md-8">
-                    <input type="text" name="" class="fg2_inp2 fg2_inp3 in_flw" placeholder="question 1" disabled="">
-                  </td>
-                  <td class="col-md-2">
-                    <div class="btn_stl1">
-                  <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                    <i class="fa fa-list-alt"></i>
-                  </button> -->
-                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add" disabled="">
-                    <i class="fa fa-plus-circle"></i>
-                  </button>
-                  <span class="dropdown dd_lft0 ">
-                    <button class="dropdown-toggle btn act_btn bn3 opn_dlt1_d1" title="Delete">
-                    <i class="fa fa-trash"></i>
-                    </button>
-                    <div class="dropdown-menu drop_dnm repn dlt_bx1_d1">
-                      <div class="modal-header">
-                        <h5>Delete</h5>
-                        <button type="button" class="close cls_pop" title="Close">
-                          <span aria-hidden="true">×</span>
-                        </button>
-                      </div>
-                      <div class="head_txt">Are you sure to delete this entry?</div>
-                      <div class="modal-footer">
-                        <button class="btn btn-success cls_dlt">Yes</button>
-                        <button class="btn btn-danger cls_dlt" id="InputToFocus21_d1" autofocus="">No</button>
-                      </div>
-                    </div>
-                  </span>
-                </div>
-              </td>
-                </tr>
-                <tr>
-                  <td class="tr_l">
-                    <input type="text" name="" class="fg2_inp2 fg2_inp3 in_flw">
-                  </td>
-                  <td>
-                    <div class="btn_stl1">
-                  <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
-                    <i class="fa fa-list-alt"></i>
-                  </button> -->
-                  <button class="btn act_btn bn2" title="Add">
-                    <i class="fa fa-plus-circle"></i>
-                  </button>
-                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete" disabled="">
-                    <i class="fa fa-trash"></i>
-                  </button>
-                </div>
-              </td>
-                </tr>
-               
-              </tbody>
-            </table>
-            <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 1 of 1 entries</div>
-            <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
-          </div>
-      </div>
-      <div class="modal-footer">
-          <div class="save_sec flt_r">
-            <button type="submit" class="btn sub1">Save</button>
-            <button type="submit" class="btn sub3">Save & Close</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-            <button type="submit" class="btn sub2">Clear</button>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header mo_hd1">
-        <h5 class="modal-title" id="exampleModalLabel">Change Status</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       ...
-      </div>
-      <div class="modal-footer mo_ft1">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1332,9 +1239,7 @@ function closeNav5() {
 
   </div><!--wrapper_closed-->
 
-
 <!--------script section_started---------->
-
 
 <!-----table_search------------>
 <script>
@@ -1348,7 +1253,6 @@ $(document).ready(function(){
 });
 </script>
 <!-----table_search_closed------------>
-
 
 <script>
 function openNav() {
@@ -1374,8 +1278,6 @@ function closeNav1() {
     document.getElementById("main").style.marginbottom= "0";
 }
 </script>
-
-
 
 <script>
 function openNav2() {
@@ -1413,7 +1315,6 @@ $(document).ready(function(){
 
 <!--searchbox_list_script_opened------->
 
-
 <script>
 function myFunction() {
     var input, filter, ul, li, a, i;
@@ -1432,185 +1333,7 @@ function myFunction() {
 }
 </script>
 
-<script>
-function autocomplete(inp, arr) {
-  /*the autocomplete function takes two arguments,
-  the text field element and an array of possible autocompleted values:*/
-  var currentFocus;
-  /*execute a function when someone writes in the text field:*/
-  inp.addEventListener("input", function(e) {
-      var a, b, i, val = this.value;
-      /*close any already open lists of autocompleted values*/
-      closeAllLists();
-      if (!val) { return false;}
-      currentFocus = -1;
-      /*create a DIV element that will contain the items (values):*/
-      a = document.createElement("DIV");
-      a.setAttribute("id", this.id + "autocomplete-list");
-      a.setAttribute("class", "autocomplete-items");
-      /*append the DIV element as a child of the autocomplete container:*/
-      this.parentNode.appendChild(a);
-      /*for each item in the array...*/
-      for (i = 0; i < arr.length; i++) {
-        /*check if the item starts with the same letters as the text field value:*/
-        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-          /*create a DIV element for each matching element:*/
-          b = document.createElement("DIV");
-          /*make the matching letters bold:*/
-          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-          b.innerHTML += arr[i].substr(val.length);
-          /*insert a input field that will hold the current array item's value:*/
-          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-          /*execute a function when someone clicks on the item value (DIV element):*/
-          b.addEventListener("click", function(e) {
-              /*insert the value for the autocomplete text field:*/
-              inp.value = this.getElementsByTagName("input")[0].value;
-              /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
-              closeAllLists();
-          });
-          a.appendChild(b);
-        }
-      }
-  });
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener("keydown", function(e) {
-      var x = document.getElementById(this.id + "autocomplete-list");
-      if (x) x = x.getElementsByTagName("div");
-      if (e.keyCode == 40) {
-        /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-        currentFocus++;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 38) { //up
-        /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-        currentFocus--;
-        /*and and make the current item more visible:*/
-        addActive(x);
-      } else if (e.keyCode == 13) {
-        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-        e.preventDefault();
-        if (currentFocus > -1) {
-          /*and simulate a click on the "active" item:*/
-          if (x) x[currentFocus].click();
-        }
-      }
-  });
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false;
-    /*start by removing the "active" class on all items:*/
-    removeActive(x);
-    if (currentFocus >= x.length) currentFocus = 0;
-    if (currentFocus < 0) currentFocus = (x.length - 1);
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add("autocomplete-active");
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove("autocomplete-active");
-    }
-  }
-  function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
-    var x = document.getElementsByClassName("autocomplete-items");
-    for (var i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i]);
-      }
-    }
-  }
-  /*execute a function when someone clicks in the document:*/
-  document.addEventListener("click", function (e) {
-      closeAllLists(e.target);
-  });
-}
-
-/*An array containing all the country names in the world:*/
-var countries = [""];
-
-/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("myInput"), countries);
-</script>
-
-
-<!--searchbox_list_script_closed------->
-
-
-
-<script>
-function myFunction_a() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput_1");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable_1");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
-</script>
-<script>
-function myFunction_b() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput_2");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable_1");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
-</script>
-
-
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker').datepicker({
-      uiLibrary: 'bootstrap'
-    });
-});
-</script>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker1').datepicker({
-      uiLibrary: 'bootstrap'
-    });
-});
-</script>
-
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#datepicker2').datepicker({
-      uiLibrary: 'bootstrap'
-    });
-});
-</script>
-
-
-
+<!----checkbox_started--->
 <script type="text/javascript">
 $(function () {
     $('.button-checkbox').each(function () {
@@ -1654,13 +1377,13 @@ $(function () {
             // Update the button's color
             if (isChecked) {
                 $button
-                .removeClass('btn-d')
-                .addClass('btn-' + color + ' active');
+                    .removeClass('btn-d')
+                    .addClass('btn-' + color + ' active');
             }
             else {
                 $button
-                .removeClass('btn-' + color)
-                .addClass('btn-d' + ' active');
+                    .removeClass('btn-' + color)
+                    .addClass('btn-d' + ' active');
             }
         }
 
@@ -1679,14 +1402,208 @@ $(function () {
 });
 
 </script>
-<!---------------Checkbox_section_closed------------------------->
+<!--checkbox_closed-->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab2content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker1").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker2").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker3").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<script type="text/javascript">
+  $(function () {
+  $("#datepicker4").datepicker({ 
+        autoclose: true, 
+        todayHighlight: true
+  }).datepicker('update', new Date());
+});
+</script>
+<!--date_picker--->
+
+<link href="../date_pick/datepicker.css" rel="stylesheet" type="text/css" /><!-- 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+<script src="../date_pick/datepicker.js"></script>
+<!--------tooltips------------>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip1"]').tooltip();   
+});
+</script>
+
+<!--add new div---->
+<script>
+$(document).ready(function(){
+  $("#btx1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+});
+</script>
+
+<!--button_click_disable --->
+<script>
+function myFunct() {
+    document.getElementById("myinpb").disabled = false;
+    document.getElementById("myinpc").disabled = true;
+    document.getElementById("myinpc1").disabled = true;
+    document.getElementById("myinpc2").disabled = true;
+    document.getElementById("myinpc3").disabled = true;
+}
+</script>
+
+<script>
+function mysave() {
+  var x = document.getElementById("mysav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script>
+function issue_chk() {
+  var x = document.getElementById("is_chk");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "140px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+}
+</script>
+<!--save_pop up_closed-->
+
+<!----hide/Show_section---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c1h").hide();
+  });
+  $("#show").click(function(){
+    $(".c1h").show();
+  });
+});
+</script>
+
+<!----hide/Show_section2---->
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".c2h").hide();
+  });
+  $("#show1").click(function(){
+    $(".c2h").show();
+  });
+});
+</script>
+
+<!-----Enable_disable script--->
+<script>
+$(document).ready(function(){
+  $(".bu1").click(function(){
+    $("#mySe1").toggle();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".bu").click(function(){
+    $("#mySe").toggle();
+  });
+});
+</script>
+<!-----Enable_disable script_closed--->
+
+<!------hide and visible div--->
+<script>
+function sel1() {
+  var x = document.getElementById('sel');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+</script>
+<!------hide and visible div_closed--->
+
+
+<!-----table_sec_fixed--->
+<script type="text/javascript">
+  // requires jquery library
+jQuery(document).ready(function() {
+   jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');   
+ });
+
+</script>
 <!---data_table_css & scripts_started---->
 <script type="text/javascript">
 $(document).ready(function() {
     $('#example').DataTable();
-    $('#example1').DataTable1();
+    $('#example1').DataTable();
 } );
 </script>
   <!-- <script type="text/javascript" src="../table/js1.js"></script>
@@ -1722,187 +1639,49 @@ $(document).ready(function() {
     } );
 } );
   </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-    // Setup - add a text input to each footer cell
-    $('#example1 tfoot th').each( function () {
-        var title = $(this).text();
-        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
-    } );
- 
-    // DataTable
-    var table = $('#example1').DataTable1();
- 
-    // Apply the search
-    table.columns().every( function () {
-        var that = this;
- 
-        $( 'input', this.footer() ).on( 'keyup change', function () {
-            if ( that.search() !== this.value ) {
-                that
-                    .search( this.value )
-                    .draw();
-            }
-        } );
-    } );
-} );
-  </script>
-
-  <!---Data_table_script for search_closed--->
-
-<!----data_table_css & Scripts_closed--->
-
-<!----alert message_script---->
-<script type="text/javascript">
-  function myAlertTop(){
-  $(".myAlert-top").show(100);
-  setTimeout(function(){
-    $(".myAlert-top").hide(400); 
-  }, 1500);
-}
-
-function myAlertBottom(){
-  $(".myAlert-bottom").show(100);
-  setTimeout(function(){
-    $(".myAlert-bottom").hide(400); 
-  }, 1500);
-
-}
-</script>
-
-<script type="text/javascript">
-  $( "#war-btn" ).click(function() {
-  $( "div.war" ).fadeIn( 200 ).delay( 500 ).fadeOut( 400 );
-});
-</script>
 
 <script>
 $(document).ready(function(){
-  $(".imprt_o").click(function(){
-    $(".import_opt").toggle(300);
+  $(".ar_b1").click(function(){
+    $(".ar_b1").addClass("sel_btq");
+    $(".ar_b2, .ar_b3, .ar_b4, .ar_b5, .ar_b6").removeClass("sel_btq");
+    $(".lev_rqst").show();
+    $(".trvl_sec, .fmly_sec, .cont_sec, .othr, .qualif").hide();
+
+  });
+$(".ar_b2").click(function(){
+    $(".ar_b2").addClass("sel_btq");
+    $(".ar_b1, .ar_b3, .ar_b4, .ar_b5, .ar_b6").removeClass("sel_btq");
+    $(".trvl_sec").show();
+    $(".lev_rqst, .fmly_sec, .cont_sec, .othr, .qualif").hide();
+  });
+$(".ar_b3").click(function(){
+    $(".ar_b3").addClass("sel_btq");
+    $(".ar_b1, .ar_b2, .ar_b4, .ar_b5, .ar_b6").removeClass("sel_btq");
+    $(".fmly_sec").show();
+    $(".lev_rqst, .trvl_sec, .cont_sec, .othr, .qualif").hide();
+  });
+$(".ar_b4").click(function(){
+    $(".ar_b4").addClass("sel_btq");
+    $(".ar_b1, .ar_b2, .ar_b3, .ar_b5, .ar_b6").removeClass("sel_btq");
+    $(".cont_sec").show();
+    $(".lev_rqst, .fmly_sec, .trvl_sec, .othr, .qualif").hide();
+  });
+$(".ar_b5").click(function(){
+    $(".ar_b5").addClass("sel_btq");
+    $(".ar_b1, .ar_b2, .ar_b3, .ar_b4, .ar_b6").removeClass("sel_btq");
+    $(".qualif").show();
+    $(".lev_rqst, .fmly_sec, .trvl_sec, .cont_sec, .othr").hide();
+  });
+$(".ar_b6").click(function(){
+    $(".ar_b6").addClass("sel_btq");
+    $(".ar_b1, .ar_b2, .ar_b3, .ar_b4, .ar_b5").removeClass("sel_btq");
+    $(".othr").show();
+    $(".lev_rqst, .fmly_sec, .trvl_sec, .cont_sec, .qualif").hide();
   });
 });
 </script>
 
-  <script type="text/javascript">
-  $(document).ready(function(){ 
-    $(".cont_contr").scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $(".cont_contr").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
-});
-</script>
 
-<!----alert_message_script_closed-->
-
-
-<script>
-$(document).ready(function(){
-  $(".opn_sts").click(function(){
-    $(".pop_2").fadeIn();
-    $(".sts_bx").show( 300);
-    $('#InputToFocus').focus();
-  });
-  $(".opn_cnfm").click(function(){
-    $(".pop_2").fadeIn();
-    $(".cnfm_bx").show( 300);
-    $('#InputToFocus1').focus();
-  });
-  $(".opn_dlt").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dlt_bx").show( 300);
-    $('#InputToFocus2').focus();
-  });
-  $(".opn_ropn").click(function(){
-    $(".pop_2").fadeIn();
-    $(".ropn_bx").show( 300);
-    $('#InputToFocus3').focus();
-  });
-  $(".opn_aprvl").click(function(){
-    $(".pop_2").fadeIn();
-    $(".aprvl_bx").show( 300);
-    $('#InputToFocus4').focus();
-  });
-  $(".opn_rjct").click(function(){
-    $(".pop_2").fadeIn();
-    $(".rjct_bx").show( 300);
-    $('#InputToFocus5').focus();
-  });
-  $(".opn_rjct1").click(function(){
-    $(".pop_2_1").fadeIn();
-    $(".rjct_bx1").show( 300);
-    $('#InputToFocus10').focus();
-  });
-  $(".opn_aprvl1").click(function(){
-    $(".pop_2_1").fadeIn();
-    $(".aprvl_bx1").show( 300);
-    $('#InputToFocus11').focus();
-  });
-  $(".opn_clsreq").click(function(){
-    $(".pop_2").fadeIn();
-    $(".clsreq_bx").show( 300);
-    $('#InputToFocus6').focus();
-  });
-  $(".opn_realc").click(function(){
-    $(".pop_2").fadeIn();
-    $(".realc").show( 300);
-    $('#InputToFocus7').focus();
-  });
-
-  $(".opn_dlt_cog").click(function(){
-    $(".pop_2_1").fadeIn();
-    $(".dlt_bx_cog").show( 300);
-    $('#InputToFocus2_cog').focus();
-  });
-
-  $(".opn_dlt1_d1").click(function(){
-    $(".pop_2_1").fadeIn();
-    $(".dlt_bx1_d1").show( 300);
-    $('#InputToFocus21_d1').focus();
-  });
-  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
-  });
-  $(".dropdown-toggle, .act_btn, .paginate_button, .clspzz").focus(function(){
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
-  });
-
-  $(".sel_ar").click(function(){
-    $(".op_al").show();
-    $(".op_ra").hide();
-  });
-});
-</script>
-<script>
-  $(document).on('keydown', function(e) { 
-  var keyCode = e.keyCode || e.which; 
-
-  if (keyCode == 27) { 
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
-    document.getElementById("#InputToFocus1").hide();
-  } 
-});
-</script>
-<script type="text/javascript">
-  $(document).keyup(function(e) {
-    if (e.which == 27) {
-        $(".overlayInner").fadeOut(300); 
-    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
-    }
-});
-</script>
-
-  <script type="text/javascript">
-    $('#add_exit').on('shown.bs.modal', function(e){
-    $('#fcs1').focus();
-});
-  </script>
 </body>
 </html>
