@@ -965,7 +965,7 @@ function closeNav5() {
 
           <div class="form-group fg2">
             <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1">
+            <select class="form-control fg2_inp1" autofocus="">
               <option>Designation 1</option>
               <option>Designation 2</option>
               <option>Designation 3</option>
@@ -994,55 +994,55 @@ function closeNav5() {
 
         <div class="pop_2" style="display: none;" ></div>
         <div class="r_640">  
-        <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-          <thead class="thead1">
-            <tr>
-              <th class="col-md-6 tr_l">Designation
-                <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
-                <input type="text" class="tb_inp_1 tb_in" placeholder="Designation" onkeydown="return DisableEnter(event)">
-              </th>
-              <th class="col-md-4 tr_c">Question#
-                <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
-                <input type="text" class="tb_inp_1 tb_in" placeholder="Question#" onkeydown="return DisableEnter(event)">
-              </th>
-              <th class="col-md-2">Actions
-                <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
-              </th>
-            </tr>
-          </thead>
-            <tbody>
+          <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+            <thead class="thead1">
               <tr>
-                <td class="tr_l">Aaaaaaaaaa</td>
-                <td class="tr_c">10</td>
-                <td> 
-                  <div class="btn_stl1">
-                    <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
-                      <i class="fa fa-edit"></i>
-                    </button>
-                    <span class="dropdown dd_lft0 ">
-                      <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
-                      <i class="fa fa-trash"></i>
-                      </button>
-                      <div class="dropdown-menu drop_dnm repn dlt_bx">
-                        <div class="modal-header">
-                          <h5>Delete</h5>
-                          <button type="button" class="close cls_pop" title="Close">
-                            <span aria-hidden="true">×</span>
-                          </button>
-                        </div>
-                        <div class="head_txt">Are you sure to delete this entry?</div>
-                        <div class="modal-footer">
-                          <button class="btn btn-success cls_dlt">Yes</button>
-                          <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
-                        </div>
-                      </div>
-                    </span>
-                  </div>
-                </td>
+                <th class="col-md-6 tr_l">Designation
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in" placeholder="Designation" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="col-md-4 tr_c">Question#
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Question#" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="col-md-2">Actions
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i>
+                </th>
               </tr>
-             
-            </tbody>
-          </table>
+            </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_l">Aaaaaaaaaa</td>
+                  <td class="tr_c">10</td>
+                  <td> 
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn1 bt_e" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                        <i class="fa fa-edit"></i>
+                      </button>
+                      <span class="dropdown dd_lft0 ">
+                        <button class="dropdown-toggle btn act_btn bn3 opn_dlt" title="Delete">
+                        <i class="fa fa-trash"></i>
+                        </button>
+                        <div class="dropdown-menu drop_dnm repn dlt_bx">
+                          <div class="modal-header">
+                            <h5>Delete</h5>
+                            <button type="button" class="close cls_pop" title="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="head_txt">Are you sure to delete this entry?</div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success cls_dlt">Yes</button>
+                            <button class="btn btn-danger cls_dlt" id="InputToFocus2" autofocus="">No</button>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </td>
+                </tr>
+               
+              </tbody>
+            </table>
         </div>
 
         </div>
@@ -1075,7 +1075,7 @@ function closeNav5() {
 <!---print_button_closed--->
 
 <!---add_button--->
-<a href="add_exit_intrvw_qstn.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
+<a href="#" type="button" onclick="topFunction()" id="myBtn" title="Add New" data-toggle="modal" data-target="#add_exit">
 <i class="fa fa-plus-circle"></i>
 </a>
 <!---add_button_closed--->
@@ -1112,6 +1112,132 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
 
+<!-- Modal -->
+<div class="modal fade" id="add_exit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  max_dlg" role="document">
+    <div class="modal-content">
+    <div class="pop_2_1" style="display: none;" ></div>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Interview Questions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body minhgt_qstn">
+        <div class="form-group fg4 sa_o_fg4">
+          <label for="email" class="fg2_la1">Designation:<span class="spn1">*</span></label>
+          <select class="form-control fg2_inp1 inp_mst" required="" id="fcs1">
+            <option>Designation 1</option>
+            <option>Designation 2</option>
+            <option>Designation 3</option>
+            <option>Designation 4</option>
+          </select>
+        </div>
+        <div class="form-group fg4 fg2_mr sa_fg1">
+          <label for="email" class="fg2_la1">&nbsp;<span class="spn1"></span></label>
+          <span class="dropdown dd_lft0 ">
+            <button class="dropdown-toggle btn act_btn bn1 opn_dlt_cog" title="Generate Commonly Used Questions">
+            <i class="fa fa-cogs"></i>
+            </button>
+            <div class="dropdown-menu drop_dnm repn dlt_bx_cog">
+              <div class="modal-header">
+                <h5>Generate Commonly Used Questions</h5>
+                <button type="button" class="close cls_pop" title="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="head_txt">Are you sure to generate Commonly Used Questions?</div>
+              <div class="modal-footer">
+                <button class="btn btn-success cls_dlt" id="InputToFocus2_cog" autofocus="">Yes</button>
+                <button class="btn btn-danger cls_dlt">No</button>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="free_sp2"></div>
+        <div class="r_640">
+          <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div>
+          <div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
+          <table id="" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="col-md-8 tr_l">Questions
+                    <input type="text" class="tb_inp_1 tb_in clspzz" placeholder="Questions" onkeydown="return DisableEnter(event)">
+                  </th>
+                  <th rowspan="2" class="col-md-2">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr >
+                  <td class="tr_l col-md-8">
+                    <input type="text" name="" class="fg2_inp2 fg2_inp3 in_flw" placeholder="question 1" disabled="">
+                  </td>
+                  <td class="col-md-2">
+                    <div class="btn_stl1">
+                  <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
+                    <i class="fa fa-list-alt"></i>
+                  </button> -->
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Add" disabled="">
+                    <i class="fa fa-plus-circle"></i>
+                  </button>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn act_btn bn3 opn_dlt1_d1" title="Delete">
+                    <i class="fa fa-trash"></i>
+                    </button>
+                    <div class="dropdown-menu drop_dnm repn dlt_bx1_d1">
+                      <div class="modal-header">
+                        <h5>Delete</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to delete this entry?</div>
+                      <div class="modal-footer">
+                        <button class="btn btn-success cls_dlt">Yes</button>
+                        <button class="btn btn-danger cls_dlt" id="InputToFocus21_d1" autofocus="">No</button>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+              </td>
+                </tr>
+                <tr>
+                  <td class="tr_l">
+                    <input type="text" name="" class="fg2_inp2 fg2_inp3 in_flw">
+                  </td>
+                  <td>
+                    <div class="btn_stl1">
+                  <!-- <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
+                    <i class="fa fa-list-alt"></i>
+                  </button> -->
+                  <button class="btn act_btn bn2" title="Add">
+                    <i class="fa fa-plus-circle"></i>
+                  </button>
+                  <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Delete" disabled="">
+                    <i class="fa fa-trash"></i>
+                  </button>
+                </div>
+              </td>
+                </tr>
+               
+              </tbody>
+            </table>
+            <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 1 of 1 entries</div>
+            <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
+          </div>
+      </div>
+      <div class="modal-footer">
+          <div class="save_sec flt_r">
+            <button type="submit" class="btn sub1">Save</button>
+            <button type="submit" class="btn sub3">Save & Close</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+            <button type="submit" class="btn sub2">Clear</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1560,6 +1686,7 @@ $(function () {
 <script type="text/javascript">
 $(document).ready(function() {
     $('#example').DataTable();
+    $('#example1').DataTable1();
 } );
 </script>
   <!-- <script type="text/javascript" src="../table/js1.js"></script>
@@ -1580,6 +1707,31 @@ $(document).ready(function() {
  
     // DataTable
     var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example1 tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example1').DataTable1();
  
     // Apply the search
     table.columns().every( function () {
@@ -1703,10 +1855,22 @@ $(document).ready(function(){
     $(".realc").show( 300);
     $('#InputToFocus7').focus();
   });
+
+  $(".opn_dlt_cog").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".dlt_bx_cog").show( 300);
+    $('#InputToFocus2_cog').focus();
+  });
+
+  $(".opn_dlt1_d1").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".dlt_bx1_d1").show( 300);
+    $('#InputToFocus21_d1').focus();
+  });
   $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
   });
-  $(".dropdown-toggle, .act_btn, .paginate_button").focus(function(){
+  $(".dropdown-toggle, .act_btn, .paginate_button, .clspzz").focus(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
   });
 
@@ -1735,5 +1899,10 @@ $(document).ready(function(){
 });
 </script>
 
+  <script type="text/javascript">
+    $('#add_exit').on('shown.bs.modal', function(e){
+    $('#fcs1').focus();
+});
+  </script>
 </body>
 </html>
