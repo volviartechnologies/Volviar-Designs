@@ -1246,6 +1246,7 @@ function closeNav5() {
 <div class="modal fade" id="ext_psd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog mop_dlg1_x" role="document">
     <div class="modal-content">
+      <div class="pop_2_3"></div>
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Assign Exit Procedure</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -1285,7 +1286,7 @@ function closeNav5() {
                   <th class="th_b4 tr_l">Employee</th>
                   <th class="th_b6 tr_c">Status</th>
                   <th class="th_b6 tr_c">Target</th>
-                  <th class="th_b6 tr_c">Actions</th>
+                  <th class="th_b8 tr_c">Actions</th>
                 </tr>
               </thead>
               <tbody id="myTable">
@@ -1314,12 +1315,60 @@ function closeNav5() {
                   </td>
                   <td>
                     <div class="btn_stl1">
-                      <button class="btn act_btn bn2" data-toggle="modal" data-target="#ext_psd" title="Finish">
+                      <span class="dropdown dd_lft0 ">
+                        <button class="dropdown-toggle btn act_btn bn2 opn_dlt_1z_f1" title="Finish">
                         <i class="fa fa-calendar-check-o"></i>
-                      </button>
-                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#ext_psd" title="Close">
-                        <i class="fa fa-close"></i>
-                      </button>
+                        </button>
+                        <div class="dropdown-menu drop_dnm repn dlt_bx_1z_f dlt_bx_1z_f1">
+                          <div class="modal-header">
+                            <h5>Finish</h5>
+                            <button type="button" class="close cls_pop" title="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="head_txt">Are you sure to finish this procedure?</div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success cls_dlt" id="InputToFocus2_1z_f1" autofocus="">Yes</button>
+                            <button class="btn btn-danger cls_dlt">No</button>
+                          </div>
+                        </div>
+                      </span>
+                      <span class="dropdown dd_lft0 ">
+                        <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1z1" title="Close">
+                          <i class="fa fa-close"></i>
+                        </button>
+                        <div class="dropdown-menu drop_dnm repn dlt_bx_1z dlt_bx_1z1">
+                          <div class="modal-header">
+                            <h5>Close</h5>
+                            <button type="button" class="close cls_pop" title="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="head_txt">Are you sure to close this procedure?</div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success cls_dlt">Yes</button>
+                            <button class="btn btn-danger cls_dlt" id="InputToFocus2_1z1" autofocus="">No</button>
+                          </div>
+                        </div>
+                      </span>
+                      <span class="dropdown dd_lft0 ">
+                        <button class="dropdown-toggle btn act_btn bn2 rc1" title="Recall">
+                        <i class="fa fa-calendar-check-o"></i>
+                        </button>
+                        <div class="dropdown-menu drop_dnm repn dlt_bx_1z_rc rc1">
+                          <div class="modal-header">
+                            <h5>Recall</h5>
+                            <button type="button" class="close cls_pop" title="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="head_txt">Do you want to recall this procedure?</div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success cls_dlt" id="InputToFocus2_1z_rc1" autofocus="">Yes</button>
+                            <button class="btn btn-danger cls_dlt">No</button>
+                          </div>
+                        </div>
+                      </span>
                     </div>
                   </td>
                 </tr>
@@ -1348,12 +1397,60 @@ function closeNav5() {
                   </td>
                   <td>
                     <div class="btn_stl1">
-                      <button class="btn act_btn bn2" data-toggle="modal" data-target="#ext_psd" title="Finish">
+                      <span class="dropdown dd_lft0 ">
+                        <button class="dropdown-toggle btn act_btn bn2 opn_dlt_1z_f2" title="Finish">
                         <i class="fa fa-calendar-check-o"></i>
-                      </button>
-                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#ext_psd" title="Close">
-                        <i class="fa fa-close"></i>
-                      </button>
+                        </button>
+                        <div class="dropdown-menu drop_dnm repn dlt_bx_1z_f dlt_bx_1z_f2">
+                          <div class="modal-header">
+                            <h5>Finish</h5>
+                            <button type="button" class="close cls_pop" title="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="head_txt">Are you sure to finish this procedure?</div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success cls_dlt" id="InputToFocus2_1z_f2" autofocus="">Yes</button>
+                            <button class="btn btn-danger cls_dlt">No</button>
+                          </div>
+                        </div>
+                      </span>
+                      <span class="dropdown dd_lft0 ">
+                        <button class="dropdown-toggle btn act_btn bn3 opn_dlt_1z2" title="Close">
+                          <i class="fa fa-close"></i>
+                        </button>
+                        <div class="dropdown-menu drop_dnm repn dlt_bx_1z dlt_bx_1z2">
+                          <div class="modal-header">
+                            <h5>Close</h5>
+                            <button type="button" class="close cls_pop" title="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="head_txt">Are you sure to close this procedure?</div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success cls_dlt">Yes</button>
+                            <button class="btn btn-danger cls_dlt" id="InputToFocus2_1z2" autofocus="">No</button>
+                          </div>
+                        </div>
+                      </span>
+                      <span class="dropdown dd_lft0 ">
+                        <button class="dropdown-toggle btn act_btn bn2 opn_dlt_1z_rc2" title="Recall">
+                        <i class="fa fa-calendar-check-o"></i>
+                        </button>
+                        <div class="dropdown-menu drop_dnm repn dlt_bx_1z_rc dlt_bx_1z_rc2">
+                          <div class="modal-header">
+                            <h5>Recall</h5>
+                            <button type="button" class="close cls_pop" title="Close">
+                              <span aria-hidden="true">×</span>
+                            </button>
+                          </div>
+                          <div class="head_txt">Do you want to recall this procedure?</div>
+                          <div class="modal-footer">
+                            <button class="btn btn-success cls_dlt" id="InputToFocus2_1z_rc2" autofocus="">Yes</button>
+                            <button class="btn btn-danger cls_dlt">No</button>
+                          </div>
+                        </div>
+                      </span>
                     </div>
                   </td>
                 </tr>
@@ -1363,7 +1460,7 @@ function closeNav5() {
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1">Save</button>
+        <button type="button" class="btn btn-success cls_pov" data-toggle="modal" data-target="#exampleModal1">Save</button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
         
       </div>
@@ -2022,6 +2119,71 @@ function closesave() {
     $('#ext_psd').on('shown.bs.modal', function () {
         $(".droplist input").focus();
     });
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_dlt_1z1").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z1").show( 300);
+    $('#InputToFocus2_1z1').focus();
+  });
+  $(".opn_dlt_1z_f1").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z_f1").show( 300);
+    $('#InputToFocus2_1z_f1').focus();
+  });
+  $(".rc1").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".rc1").show( 300);
+    $('#InputToFocus2_1z_rc1').focus();
+  });
+  $(".opn_dlt_1z2").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z2").show( 300);
+    $('#InputToFocus2_1z2').focus();
+  });
+  $(".opn_dlt_1z_f2").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z_f2").show( 300);
+    $('#InputToFocus2_1z_f2').focus();
+  });
+  $(".opn_dlt_1z_rc2").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z_rc2").show( 300);
+    $('#InputToFocus2_1z_rc2').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1, .pop_2_3").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, .sel_tm11, .tbl_xa input, .cls_pov").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+    }
+});
 </script>
 
 </body>
