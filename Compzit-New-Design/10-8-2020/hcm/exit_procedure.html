@@ -1244,7 +1244,7 @@ function closeNav5() {
 
 <!-- Modal -->
 <div class="modal fade" id="ext_psd" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog mop_dlg1" role="document">
+  <div class="modal-dialog mop_dlg1_x" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Assign Exit Procedure</h5>
@@ -1253,43 +1253,113 @@ function closeNav5() {
         </button>
       </div>
       <div class="modal-body mdl_mn_hgt">
-        <div class="r_480">
-          <table class="table table-bordered tbl_480 tbl_xa">
-            <thead class="thead1">
-              <tr>
-                <th class="th_b8 tr_l">Particulars</th>
-                <th class="th_b3 tr_l">Employee</th>
-                <th class="th_b7 tr_l">Status</th>
-                <th class="th_b6 tr_c">Target</th>
-              </tr>
-            </thead>
-            <tbody id="myTable">
-              <tr class="">
-                <td class="tr_l">Flight Ticket</td>
-                <td class="tr_l">
-                  <div class="dropdown-mul-1 dropdown-multiple-label mr_btm6z droplist">
-                    <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
-                  </div>
-                </td>
-                <td class="tr_l">
-                  <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
-                    <option>Job Assigned</option>
-                    <option>Availability Check</option>
-                    <option>Awaiting: Approval from candidate</option>
-                    <option>Booking Confirm, Ticket copy attach</option>
-                  </select>
-                </td>
-                <td>
-                  <div class="tdte">
-                    <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
-                      <input class="form-control inp_bdr fg2_inp2" type="text"  />
-                      <span class="input-group-addon date1 int_dt dl_nn"><i class="fa fa-calendar"></i></span>
+        <div class="fg4">
+          <div class="fg12 mar_at flt_l box_emp_br png_10">
+            <div class="fg12 empl_pop_dtl">
+              <h3>Employee Name 1</h3>
+              <span>EMP0001</span>
+            </div>
+            <div class="devider"></div>
+            <div class="fg5">
+              <div class="user_im_1">
+                <img src="../images/hcm/user.jpg">
+              </div>
+            </div>
+            <div class="fg_3_1 empl_pop_dtl wid_76_pz">
+              <ul class="join_leav emp_dtl_bdr">
+                <li><span class="spn_zp1">Department:</span> <span class="spn_sep">Department 2</span></li>
+                <li><span class="spn_zp1">Division:</span> <span class="spn_sep">Division 2</span></li>
+                <li class="bg_grn box_fr_staff" style="display: none;"><span class="spn_zp1">Designation:</span> <span class="spn_sep">Designation 1</span></li>
+                <li class="bg_grn box_wrkr"><span class="spn_zp1">Nationality:</span> <span class="spn_sep">Indian</span></li>
+                <li class="bg_grn box_wrkr"><span class="spn_zp1">Mode:</span> <span class="spn_sep">Worker</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="fg_3_1">
+          <div class="r_480">
+            <table class="table table-bordered tbl_480 tbl_xa">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b6 tr_l">Particulars</th>
+                  <th class="th_b4 tr_l">Employee</th>
+                  <th class="th_b6 tr_c">Status</th>
+                  <th class="th_b6 tr_c">Target</th>
+                  <th class="th_b6 tr_c">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr class="">
+                  <td class="tr_l">Flight Ticket</td>
+                  <td class="tr_l">
+                    <div class="dropdown-mul-1 dropdown-multiple-label mr_btm6z droplist">
+                      <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
                     </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  </td>
+                  <td class="tr_l">
+                    <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
+                      <option>Job Assigned</option>
+                      <option>Availability Check</option>
+                      <option>Awaiting: Approval from candidate</option>
+                      <option>Booking Confirm, Ticket copy attach</option>
+                    </select>
+                  </td>
+                  <td>
+                    <div class="tdte">
+                      <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
+                        <input class="form-control inp_bdr fg2_inp2" type="text"  />
+                        <span class="input-group-addon date1 int_dt dl_nn"><i class="fa fa-calendar"></i></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn2" data-toggle="modal" data-target="#ext_psd" title="Finish">
+                        <i class="fa fa-calendar-check-o"></i>
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#ext_psd" title="Close">
+                        <i class="fa fa-close"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="tr1">
+                  <td class="tr_l">Clearance</td>
+                  <td class="tr_l">
+                    <div class="dropdown-mul-1 dropdown-multiple-label mr_btm6z">
+                      <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
+                    </div>
+                  </td>
+                  <td class="tr_l">
+                    <select id="email" type="text" class="fg2_inp2 fg2_inp3 fg_chs1 in_flw">
+                      <option>Job Assigned</option>
+                      <option>Availability Check</option>
+                      <option>Awaiting: Approval from candidate</option>
+                      <option>Booking Confirm, Ticket copy attach</option>
+                    </select>
+                  </td>
+                  <td>
+                    <div class="tdte">
+                      <div id="datepicker4" class="input-group date" data-date-format="mm-dd-yyyy">
+                        <input class="form-control inp_bdr fg2_inp2" type="text"  />
+                        <span class="input-group-addon date1 int_dt dl_nn"><i class="fa fa-calendar"></i></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="btn_stl1">
+                      <button class="btn act_btn bn2" data-toggle="modal" data-target="#ext_psd" title="Finish">
+                        <i class="fa fa-calendar-check-o"></i>
+                      </button>
+                      <button class="btn act_btn bn3" data-toggle="modal" data-target="#ext_psd" title="Close">
+                        <i class="fa fa-close"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div class="modal-footer">

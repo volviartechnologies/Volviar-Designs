@@ -2670,6 +2670,11 @@ span.box_ae{padding-right: 6px;}
 .box_pdng10{padding:10px;}
 .box_pdng10 h3{padding-top: 22px!important;}
 .hgt_216{height: 216px;}
+.mop_dlg1_x{width: 80%;}
+.mop_dlg1_x .empl_pop_dtl li .spn_sep, .mop_dlg1_x .empl_pop_dtl li span{font-size: 11px!important;}
+.mop_dlg1_x .user_im_1{width: 50px;}
+.mop_dlg1_x .dropdown-multiple-label{max-width: 100%!important;}
+.mop_dlg1_x .spn_zp1{padding-top: 3px;}
 
 /*.mrb10_pag{margin-top: 16px;}
 */
