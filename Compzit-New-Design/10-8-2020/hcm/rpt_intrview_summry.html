@@ -984,7 +984,7 @@ function closeNav5() {
                 <div class="w3-red mr_bg2"></div><span>20</span>
               </button><br>
  
-              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod1">
                 <div class="w3-blue mr_bg3"></div><span>3</span>
               </button>
             </span>
@@ -1007,7 +1007,7 @@ function closeNav5() {
                 <div class="w3-red mr_bg2"></div><span>20</span>
               </button><br>
  
-              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod1">
                 <div class="w3-blue mr_bg3"></div><span>3</span>
               </button>
             </span>
@@ -1030,7 +1030,7 @@ function closeNav5() {
                 <div class="w3-red mr_bg2"></div><span>20</span>
               </button><br>
  
-              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod1">
                 <div class="w3-blue mr_bg3"></div><span>3</span>
               </button>
             </span>
@@ -1053,7 +1053,7 @@ function closeNav5() {
                 <div class="w3-red mr_bg2"></div><span>20</span>
               </button><br>
  
-              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod1">
                 <div class="w3-blue mr_bg3"></div><span>3</span>
               </button>
             </span>
@@ -1076,7 +1076,7 @@ function closeNav5() {
                 <div class="w3-red mr_bg2"></div><span>20</span>
               </button><br>
  
-              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod1">
                 <div class="w3-blue mr_bg3"></div><span>3</span>
               </button>
             </span>
@@ -1099,7 +1099,7 @@ function closeNav5() {
                 <div class="w3-red mr_bg2"></div><span>20</span>
               </button><br>
  
-              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod">
+              <button class="w3-light-grey chrt_box" title="Selected Candidates" data-toggle="modal" data-target="#dtl_mod1">
                 <div class="w3-blue mr_bg3"></div><span>3</span>
               </button>
             </span>
@@ -1252,7 +1252,7 @@ function closeNav5() {
   <div class="modal-dialog wid_th80" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Interview Attended Candidates</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -1267,7 +1267,9 @@ function closeNav5() {
           </div>
         </div>
           <div class="r_800">
-            <table id="example" class="display table-bordered pro_tab1 tbl_800 tbl_xa" cellspacing="0" width="100%">
+          <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div>
+          <div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
+            <table class="display table-bordered pro_tab1 tbl_800 tbl_xa" cellspacing="0" width="100%">
               <thead class="thead1">
                 <tr>
                   <th class="th_b4 tr_l">Candidate Name</th>
@@ -1276,23 +1278,124 @@ function closeNav5() {
                   <th class="th_b6 tr_c">Passport#</th>
                   <th class="th_b4 tr_l">Email</th>
                   <th class="th_b7">Gender</th>
+                  <th class="th_b7">Schedule</th>
                   <th class="th_b6">Interview Date</th>
-                  <th class="th_b8">Decision</th>
+                  <th class="th_b8 tr_l">Decision</th>
                   </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="tr_l">Candidate Name 1</td>
-                  <td class="tr_l">Location 1</td>
-                  <td class="tr_l">India</td>
-                  <td class="tr_l">GABP000114524147</td>
-                  <td class="tr_l">user@gmail.com</td>
-                  <td class="tr_c">male</td>
-                  <td class="tr_l">10/02/2021</td>
+                  <td class="tr_l" rowspan="3">Candidate Name 1</td>
+                  <td class="tr_l" rowspan="3">Location 1</td>
+                  <td class="tr_l" rowspan="3">India</td>
+                  <td class="tr_l" rowspan="3">GABP0001145241</td>
+                  <td class="tr_l" rowspan="3">user@gmail.com</td>
+                  <td class="tr_c" rowspan="3">male</td>
+                  <td class="tr_c">Schedule 2</td>
+                  <td class="tr_c">01/03/2021</td>
+                  <td class="tr_l">Able to next level interview</td>
+                </tr>
+                <tr>
+                  <td class="tr_c">Schedule 3</td>
+                  <td class="tr_c">01/03/2021</td>
+                  <td class="tr_l">Able to next level interview</td>
+                </tr>
+                <tr>
+                  <td class="tr_c">Schedule 4</td>
+                  <td class="tr_c">01/03/2021</td>
                   <td class="tr_l">Able to next level interview</td>
                 </tr>
               </tbody>
             </table>
+            <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 1 of 1 entries</div>
+            <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="dtl_mod1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog wid_th80" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Selected Candidates</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="fg12 mar_at flt_l box_emp_br png_10 tag_pls mx_1">
+          <div class="fg12 empl_pop_dtl">
+            <ul class="join_leav emp_dtl_bdr mx_w45">
+            <li><span class="spn_zp1">Project:</span> <span class="spn_sep">Project 1</span></li>
+            <li><span class="spn_zp1">Designation / Position:</span> <span class="spn_sep">Web Developer</span></li>
+            </ul>
+          </div>
+        </div>
+          <div class="r_800">
+          <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div>
+          <div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
+            <table class="display table-bordered pro_tab1 tbl_800 tbl_xa" cellspacing="0" width="100%">
+              <thead class="thead1">
+                <tr>
+                  <th class="th_b4 tr_l">Candidate Name</th>
+                  <th class="th_b6 tr_l">Location</th>
+                  <th class="th_b6 tr_l">Country</th>
+                  <th class="th_b6 tr_c">Passport#</th>
+                  <th class="th_b4 tr_l">Email</th>
+                  <th class="th_b7">Gender</th>
+                  <th class="th_b7">Schedule</th>
+                  <th class="th_b6">Interview Date</th>
+                  <th class="th_b8 tr_l">Decision</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="tr_l" rowspan="3">Candidate Name 1</td>
+                  <td class="tr_l" rowspan="3">Location 1</td>
+                  <td class="tr_l" rowspan="3">India</td>
+                  <td class="tr_l" rowspan="3">GABP0001145241</td>
+                  <td class="tr_l" rowspan="3">user@gmail.com</td>
+                  <td class="tr_c" rowspan="3">male</td>
+                  <td class="tr_c">Schedule 2</td>
+                  <td class="tr_c">01/03/2021</td>
+                  <td class="tr_l">Able to next level interview</td>
+                </tr>
+                <tr>
+                  <td class="tr_c">Schedule 3</td>
+                  <td class="tr_c">01/03/2021</td>
+                  <td class="tr_l">Able to next level interview</td>
+                </tr>
+                <tr>
+                  <td class="tr_c">Schedule 4</td>
+                  <td class="tr_c">01/03/2021</td>
+                  <td class="tr_l">Able to next level interview</td>
+                </tr> 
+                <tr>
+                  <td class="tr_l" rowspan="2">Candidate Name 1</td>
+                  <td class="tr_l" rowspan="2">Location 1</td>
+                  <td class="tr_l" rowspan="2">India</td>
+                  <td class="tr_l" rowspan="2">GABP0001145241</td>
+                  <td class="tr_l" rowspan="2">user@gmail.com</td>
+                  <td class="tr_c" rowspan="2">male</td>
+                  <td class="tr_c">Schedule 2</td>
+                  <td class="tr_c">01/03/2021</td>
+                  <td class="tr_l">Able to next level interview</td>
+                </tr>
+                <tr>
+                  <td class="tr_c">Schedule 4</td>
+                  <td class="tr_c">01/03/2021</td>
+                  <td class="tr_l">Able to next level interview</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="dataTables_info" id="example_info" role="status" aria-live="polite">Showing 1 to 1 of 1 entries</div>
+            <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous">Previous</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="example" data-dt-idx="2" tabindex="0" id="example_next">Next</a></div>
           </div>
       </div>
       <div class="modal-footer">
