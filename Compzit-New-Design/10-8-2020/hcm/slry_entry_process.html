@@ -745,7 +745,7 @@ function closeNav5() {
             <tbody>
               <tr>
                 <td class="tr_l">
-                  <select class="fg2_inp2 hgit brdr_rds">
+                  <select class="fg2_inp2 hgit brdr_rds" id="tez1">
                     <option>Pay Grade 1</option>
                     <option>Pay Grade 2</option>
                     <option>Pay Grade 3</option>
@@ -1485,6 +1485,10 @@ $(document).ready(function(){
   </script>
 <!---multiple selection new_script_closed-->
 
-
+<script type="text/javascript">
+  $('#dtl_mod').on('shown.bs.modal', function () {
+    $('#tez1').focus();
+}) 
+</script>
 </body>
 </html>
