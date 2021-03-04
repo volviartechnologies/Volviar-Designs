@@ -96,6 +96,12 @@ function closeNav5() {
 <link rel="stylesheet" type="text/css" href="../css/datepick.min.css">
 <script type="text/javascript" src="../js/datepick.min.js"></script>
 
+<!---multiple selection css-->
+ <script type="text/javascript" src="../m_select/mock.js"></script>  
+  <link rel="stylesheet" type="text/css" href="../m_select/jquery.dropdown.css">
+  <script src="../m_select/jquery.dropdown.js"></script>
+<!---multiple selection css closed--->
+
 <!--------css_Included_closed------->
 <Style>
   .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{padding:3px!important;}
@@ -411,81 +417,56 @@ function closeNav5() {
       <div class="content_box1 cont_contr">
         <h2>Salary Entry Process</h2>
 
-        <div class="form-group fg2 sa_fg4_1 sa_480">
-          <label for="email" class="fg2_la1">Department:<span class="spn1">*</span></label>
-          <select class="form-control fg2_inp1 inp_mst" required="">
-            <option>Department 1</option>
-            <option>Department 2</option>
-            <option>Department 3</option>
-            <option>Department 4</option>
-          </select>
-        </div>
-        <div class="form-group fg7_3 sa_2 sa_480">
-          <label for="email" class="fg2_la1">Type:<span class="spn1">*</span></label>
-          <div class="row rl_prt">
-            <div class="prtd_rat">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                <label class="form-check-label" for="gridRadios2">Staff</label>
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked="">
-                <label class="form-check-label" for="gridRadios1">Worker</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="fg2 fg2_blk">
-          <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-          <button class="submit_ser"></button>
-          <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
-        </div>
-              
+       
         <div class="clearfix"></div>
         <div class="devider"></div>
 
         <div class="r_900">
-          <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label>
-          </div>
-          <div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
-          <table id="" class="display table-bordered tbl_900" cellspacing="0" width="100%">
+          <table id="example" class="display table-bordered tbl_900" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="th_b6 tr_l">Employee Code
+                <th class="th_b7 tr_l">Employee Code
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in" placeholder="Employee Code" onkeydown="return DisableEnter(event)">
                 </th>
-                <th class="th_b2 tr_l"> Employee
+                <th class="th_b4 tr_l"> Employee
                   <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
                   <input type="text" class="tb_inp_1 tb_in" placeholder="Employee" onkeydown="return DisableEnter(event)">
                 </th>
-                <th class="th_b4 tr_l">Pay Grade</th>
-                <th class="th_b7 tr_r">Basic Pay</th>
-                <th class="th_b6 tr_c"> Action</th>
+                <th class="th_b6 tr_l"> Department
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in" placeholder="Department" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="th_b6 tr_l"> Division
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in" placeholder="Division" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="th_b6 tr_l"> Designation
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in" placeholder="Designation" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="th_b7 tr_c"> Employee Type
+                  <i class="fa fa-sort pull-right hed_fa" aria-hidden="true"></i><br>
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Employee Type" onkeydown="return DisableEnter(event)">
+                </th>
+                <th class="th_b7 tr_c">Actions
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="tr_l">Emp001</td>
                 <td class="tr_l">Employee 1</td>
-                <td class="tr_l">
-                  <select class="fg2_inp2 fg2_inp3 fg_chs1 in_flw wi_d1">
-                    <option>Pay Grade 1</option>
-                    <option>Pay Grade 2</option>
-                    <option>Pay Grade 3</option>
-                    <option>Pay Grade 4</option>
-                  </select>
-                  <span class="sp_cny cncy_z">USD</span>
-                </td>
+                <td class="tr_l">Department 1</td>
+                <td class="tr_l">Division 1</td>
+                <td class="tr_l">Designation 1</td>
+                <td class="tr_c">Staff</td>
                 <td>
-                  <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
+                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#dtl_mod" title="Add Details">
+                    <i class="fa fa-plus-circle"></i>
+                  </button>
                 </td>
-                <td>
-                  <span class="shw_dwn">
-                    <button class="btn act_btn bn8" title="Add Details">
-                      <i class="fa fa-chevron-down" aria-hidden="true" title="Add Details"></i>
-                    </button>
-                  </span>
-                </td>
-              </tr>
+              </tr><!-- 
               <tr>
                 <tbody class="add_dedu">
                   <tr>
@@ -580,8 +561,8 @@ function closeNav5() {
                     <td>
                       <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
                     </td>
-                  </tr>
-                </tbody>
+                  </tr> -->
+                </tbody><!-- 
               </tr>
               <tr class="tr1">
                 <td class="tr_l">Emp001</td>
@@ -654,14 +635,13 @@ function closeNav5() {
                 </td>
               </tr>
              
-            </tbody><!-- 
+            </tbody> --><!-- 
             <tfoot class="ft_bg1">
               <th colspan="5" class="tr_c">
                 <button type="submit" class="btn sub4">Cancel</button>
               </th>
             </tfoot> -->
           </table>
-          <div class="dataTables_paginate paging_simple_numbers" id="example_paginate"><a class="paginate_button previous disabled" aria-controls="example" data-dt-idx="0" tabindex="0" id="example_previous"><<</a><span><a class="paginate_button current" aria-controls="example" data-dt-idx="1" tabindex="0">1</a><a class="paginate_button " aria-controls="example" data-dt-idx="2" tabindex="0">2</a><a class="paginate_button " aria-controls="example" data-dt-idx="3" tabindex="0">3</a><a class="paginate_button " aria-controls="example" data-dt-idx="4" tabindex="0">4</a></span><a class="paginate_button next" aria-controls="example" data-dt-idx="5" tabindex="0" id="example_next">>></a></div>
         </div>
         </div>
         
@@ -689,9 +669,150 @@ function closeNav5() {
 
 </div><!--wrapper_closed-->
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
 
 
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
+<div class="filtr_sec mr_400">
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
+    <div class="box_cnt_zz">
+      <div class="clearfix"></div>
+      <div class="form-group fg12">
+        <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="Inpz1" autofocus="">
+          <option>Division 1</option>
+          <option>Division 2</option>
+          <option>Division 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg12">
+        <label for="email" class="fg2_la1">Department:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="Inpz1">
+          <option>Department 1</option>
+          <option>Department 2</option>
+          <option>Department 3</option>
+        </select> 
+      </div>
+      <div class="form-group fg12">
+        <label for="email" class="fg2_la1">Designation:<span class="spn1"></span></label>
+        <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="Inpz1">
+          <option>Designation 1</option>
+          <option>Designation 2</option>
+          <option>Designation 3</option>
+        </select> 
+      </div>
+      <div class="fg12 sel_op_1 hc_op1 drp_lb1z lz11 mar_bo1zaq">
+        <label class="">Employee:</label><br>
+        <div class="dropdown-mul-1 dropdown-multiple-label">
+          <select style="display:none;width:96%;" name="" multiple="" placeholder="Select"></select>
+        </div>
+      </div>
+      <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0">
+        <label for="email" class="fg2_la1">Employee Type:<span class="spn1"></span></label>
+        <button class="tb_btz tb_buton1 tb_op1 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/stf.png"></i> <span class="sp_plcy sp_laz">Staff</span></button>
+        <button class="tb_btz tb_buton2 tb_op2"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/work.png"></i> <span class="sp_plcy sp_laz">Worker</span></button>
+      </div>
+    </div>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox bt_za1 fix_serfl"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
+  </div>
+</div>
+
+<div class="modal fade" id="dtl_mod" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog wid_th80" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Salary Entry Process</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="r_800">
+          <table id="example" class="display table-bordered pro_tab1 tbl_800 tbl_xa" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b6 tr_l">Pay Grade</th>
+                <th class="th_b5 tr_r">Basic Pay</th>
+                <th class="th_b2 tr_c" colspan="3">Addition</th>
+                <th class="th_b2 tr_c" colspan="3">Deduction</th>
+                <th class="th_b5">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">
+                  <select class="fg2_inp2 hgit brdr_rds">
+                    <option>Pay Grade 1</option>
+                    <option>Pay Grade 2</option>
+                    <option>Pay Grade 3</option>
+                    <option>Pay Grade 4</option>
+                  </select>
+                </td>
+                <td class="tr_l">
+                  <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
+                </td>
+                <td class="tr_l">Addition 1</td>
+                <td class="tr_l th_b1">
+                  <span class="prtd_rat">
+                    <span class="form-check fr_dv2 wdt_44">
+                      <input class="form-check-input" type="radio" name="4" id="am4" value="option2">
+                      <label class="form-check-label" for="gridRadios2"><i class="fa fa-usd dlr_clr"></i></label>
+                    </span>
+                    <span class="form-check fr_dv2 wdt_44">
+                      <input class="form-check-input" type="radio" name="4" id="pe4" value="option1" checked="">
+                      <label class="form-check-label" for="gridRadios1"><i class="fa fa-percent per_clr"></i></label>
+                    </span>
+                  </span>
+                </td>
+                <td class="tr_l th_b5">
+                  <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
+                </td>
+                <td class="tr_l">Tax 1</td>
+                <td class="tr_l th_b1">
+                  <span class="prtd_rat">
+                    <span class="form-check fr_dv2 wdt_44">
+                      <input class="form-check-input" type="radio" name="1" id="am1" value="option2_1" checked="">
+                      <label class="form-check-label" for="gridRadios2"><i class="fa fa-usd dlr_clr"></i></label>
+                    </span>
+                    <span class="form-check fr_dv2 wdt_44">
+                      <input class="form-check-input" type="radio" name="1" id="pe1" value="option1_1">
+                      <label class="form-check-label" for="gridRadios1"><i class="fa fa-percent per_clr"></i></label>
+                    </span>
+                  </span>
+                </td>
+                <td class="tr_l th_b5">
+                  <input type="text" class="form-control fg2_inp2 tr_r" placeholder="0.00">
+                </td>
+                <td class="tr_c">
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Save">
+                      <i class="fa fa-floppy-o"></i>
+                    </button>
+                    <button class="btn act_btn bn3" data-toggle="modal" data-target="#exampleModal" title="Cancel">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="save_sec flt_r">
+          <button type="submit" class="btn sub1">Save</button>
+          <button type="submit" class="btn sub3">Save & Close</button>
+          <button type="submit" class="btn sub4" data-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn sub2">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--------script section_started---------->
 
@@ -1126,6 +1247,244 @@ $(document).ready(function(){
   });
 });
 </script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.btn_fltr').click(function() {
+  $('.filtr_sec').addClass("mr_400");
+  $('.on_show').show();
+  $('.on_hide').hide();
+  $('#Inpz1').focus();
+});
+  $('.fltr_cls, .content_container').click(function() {
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $('.btn_serbox, .fix_flt_ser').click(function() {
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+});
+  $(".op_tab1").click(function(){
+  $(".op_tab1").addClass("sel_tabz");
+  $(".op_tab2").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").hide();
+    $(".gur_opt, .gur_tabs").show();
+
+  });
+  $(".op_tab2").click(function(){
+    $(".op_tab2").addClass("sel_tabz");
+    $(".op_tab1").removeClass("sel_tabz");
+    $(".ins_opt, .ins_tabs").show();
+    $(".gur_opt, .gur_tabs").hide();
+  });
+  $(".tb_buton1").click(function(){
+    $(".tb_buton1").addClass("tb_buton_sel");
+    $(".tb_buton2").removeClass("tb_buton_sel");
+  });
+  $(".tb_buton2").click(function(){
+    $(".tb_buton2").addClass("tb_buton_sel");
+    $(".tb_buton1").removeClass("tb_buton_sel");
+  });
+  $(".viw_b1").click(function(){
+    $(".viw_b1").addClass("vw_cs_sel");
+    $(".viw_b2").removeClass("vw_cs_sel");
+    $(".widgt_view").fadeIn();
+    $(".tbl_view").hide();
+  });
+  $(".viw_b2").click(function(){
+    $(".viw_b2").addClass("vw_cs_sel");
+    $(".viw_b1").removeClass("vw_cs_sel");
+    $(".widgt_view").hide();
+    $(".tbl_view").fadeIn();
+  });
+  //buttons for report section//
+  $(".tab_postv .btn_p1").click(function(){
+    $(".tab_postv .btn_p1").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p2").click(function(){
+    $(".tab_postv .btn_p2").addClass("seltd_btn");
+    $(".tab_postv .btn_p1, .tab_postv .btn_p3, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_postv .btn_p3").click(function(){
+    $(".tab_postv .btn_p3").addClass("seltd_btn");
+    $(".tab_postv .btn_p2, .tab_postv .btn_p1, .tab_postv .btn_p4").removeClass("seltd_btn");
+  });
+
+  $(".tab_negtv .btn_p1").click(function(){
+    $(".tab_negtv .btn_p1").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p2").click(function(){
+    $(".tab_negtv .btn_p2").addClass("seltd_btn");
+    $(".tab_negtv .btn_p1, .tab_negtv .btn_p3, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p3").click(function(){
+    $(".tab_negtv .btn_p3").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p1, .tab_negtv .btn_p4").removeClass("seltd_btn");
+  });
+  $(".tab_negtv .btn_p4").click(function(){
+    $(".tab_negtv .btn_p4").addClass("seltd_btn");
+    $(".tab_negtv .btn_p2, .tab_negtv .btn_p3, .tab_negtv .btn_p1").removeClass("seltd_btn");
+  });
+
+});
+</script>
+<script>
+  $( document ).on( 'click', function ( e ) {
+    if ( $( e.target ).closest( elem ).length === 0 ) {
+        $( elem ).hide();
+    }
+});
+
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) { // ESC       
+  $('.on_show').hide();
+  $('.on_hide').show();
+  $('.filtr_sec').removeClass("mr_400");
+    }
+});
+</script>
+<script>
+function selc() {
+  document.getElementById("selc").style.display = "block";
+  document.getElementById("selc1").style.display = "none";
+}
+
+function selc1() {
+  document.getElementById("selc1").style.display = "block";
+  document.getElementById("selc").style.display = "none";
+}
+function selca() {
+  document.getElementById("selc_a").style.display = "block";
+  document.getElementById("selc1_a").style.display = "none";
+}
+
+function selc1a() {
+  document.getElementById("selc_a").style.display = "block";
+  document.getElementById("selc1_a").style.display = "none";
+}
+</script>
+
+<!--save_pop up_open-->
+<script>
+function opensave() {
+    document.getElementById("mySave").style.width = "140px";
+}
+
+function closesave() {
+    document.getElementById("mySave").style.width = "0px";
+}
+</script>
+<!--save_pop up_closed-->
+<script type="text/javascript">
+    $('#ext_psd').on('shown.bs.modal', function () {
+        $(".droplist input").focus();
+    });
+</script>
+
+
+<script>
+$(document).ready(function(){
+  $(".opn_dlt_1z1").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z1").show( 300);
+    $('#InputToFocus2_1z1').focus();
+  });
+  $(".opn_dlt_1z_f1").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z_f1").show( 300);
+    $('#InputToFocus2_1z_f1').focus();
+  });
+  $(".rc1").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".rc1").show( 300);
+    $('#InputToFocus2_1z_rc1').focus();
+  });
+  $(".opn_dlt_1z2").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z2").show( 300);
+    $('#InputToFocus2_1z2').focus();
+  });
+  $(".opn_dlt_1z_f2").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z_f2").show( 300);
+    $('#InputToFocus2_1z_f2').focus();
+  });
+  $(".opn_dlt_1z_rc2").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".dlt_bx_1z_rc2").show( 300);
+    $('#InputToFocus2_1z_rc2').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1, .pop_2_3").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, .sel_tm11, .tbl_xa input, .cls_pov").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+    }
+});
+</script>
+
+<!---multiple selection new_script-->
+<link href="../css/select2.min.css" rel="stylesheet" />
+<script src="../js/select2.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+</script>
+
+<!---multiple selection new_script-->
+  <script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(false)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+  </script>
+<!---multiple selection new_script_closed-->
+
 
 </body>
 </html>
