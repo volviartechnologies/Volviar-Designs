@@ -961,6 +961,9 @@ function closeNav5() {
         <div class="content_box1 cont_contr">
 <!---frame_border_area_opened---->
 
+
+        <div class="pop_2" style="display: none;" ></div>
+
 <!---inner_content_sections area_started-->
           <h1 class="h1_con">Manage Exit Partial Process</h1>
           <div class="fg4">
@@ -1005,24 +1008,32 @@ function closeNav5() {
                 </div>
                 <h3>Visa/NOC</h3>
               </button>
+              <button class="rqst_box1_btn ar_b4">
+                <div class="rqst_img_box1">
+                  <img src="../images/hcm/fpv4.png" class="">
+                </div>
+                <h3>Settlement</h3>
+              </button>
             </div>
 
           <div class="rqst_box2 ad_Stf_bx1 spl_stf_bx1 wid_btn_rdc1 wid_btn_rdc2">
             <div class="lev_rqst bdr_top_rgt box_pdng10" style="display:block;">
-              <div class="fg4">
-                <h3>Target Date: 25/02/2021</h3>
+              <div class="fg12">
+                <h3>Target Date: 25/02/2022</h3>
               </div>
+              <div class="clearfix"></div>
               <div class="form-group fg_3_1 sa_2 sa_480">
                 <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
-                <select type="text" class="form-control fg2_inp1 inp_mst">
+                <select type="text" class="form-control fg2_inp1 inp_mst" id="Inplev">
                   <option>Job Assigned</option>
                   <option>Avaliablity Check</option>
                   <option>Awaiting, Approval from candidate</option>
                   <option>Booking Confirm, Ticket Copy Attached</option>
                 </select>
               </div>
+              <div class="clearfix"></div>
               <div class="form-group fg4 sa_o_fg2 sa_o_fg1">
-                <label for="pwd" class="fg2_la1">Assigned From Date:<span class="spn1"></span> </label>
+                <label for="pwd" class="fg2_la1">New Target Date:<span class="spn1"></span> </label>
                 <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
                   <input class="form-control inp_bdr" type="text">
                   <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -1031,31 +1042,67 @@ function closeNav5() {
               <div class="clearfix"></div>
               <div class="free_sp2"></div>
               <div class="devider"></div>
-              <div class="sub_cont">
+              <span class="spn_sts_fns"><i class="fa fa-check-circle-o"></i> Finished</span>
+              <div class="sub_cont sv_cntv">
                 <div class="save_sec flt_r">
                   <button type="submit" class="btn sub1">Save</button>
-                  <button type="submit" class="btn sub1">Finish</button>
-                  <button type="submit" class="btn sub4">Close</button>
-                  <button type="submit" class="btn sub4">Cancel</button>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn sub1 opn_dlt">Finish</button>
+                    <div class="dropdown-menu drop_dnm repn dlt_bx fnsh">
+                      <div class="modal-header">
+                        <h5>Finish</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to finish this procedure?</div>
+                      <div class="modal-footer">
+                        <div class=" flt_r">
+                          <button class="btn btn-success cls_dlt" id="InputToFocus2" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_dlt">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn sub4 opn_dlt_cls">Close</button>
+                    <div class="dropdown-menu drop_dnm repn dlt_cls_bx cls_prc">
+                      <div class="modal-header">
+                        <h5>Close</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to close this procedure?</div>
+                      <div class="modal-footer">
+                        <div class=" flt_r">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_cls" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                  <button type="submit" class="btn sub4 cls_pop_cls">Cancel</button>
                   <button type="submit" class="btn sub2">Clear</button>
                 </div>
               </div>
             </div>
             <div class="trvl_sec bdr_top_rgt box_pdng10" style="display:none;">
-              <div class="fg4">
-                <h3>Target Date: 25/03/2021</h3>
+              <div class="fg12">
+                <h3>Target Date: 25/02/2022</h3>
               </div>
+              <div class="clearfix"></div>
               <div class="form-group fg_3_1 sa_2 sa_480">
                 <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
                 <select type="text" class="form-control fg2_inp1 inp_mst">
                   <option>Job Assigned</option>
-                  <option>Avaliablity Check</option>
-                  <option>Awaiting, Approval from candidate</option>
-                  <option>Booking Confirm, Ticket Copy Attached</option>
+                  <option>Processing</option>
+                  <option>Released</option>
                 </select>
               </div>
+              <div class="clearfix"></div>
               <div class="form-group fg4 sa_o_fg2 sa_o_fg1">
-                <label for="pwd" class="fg2_la1">Assigned From Date:<span class="spn1"></span> </label>
+                <label for="pwd" class="fg2_la1">New Target Date:<span class="spn1"></span> </label>
                 <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
                   <input class="form-control inp_bdr" type="text">
                   <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -1064,31 +1111,68 @@ function closeNav5() {
               <div class="clearfix"></div>
               <div class="free_sp2"></div>
               <div class="devider"></div>
-              <div class="sub_cont">
+              <span class="spn_sts_fns"><i class="fa fa-check-circle-o"></i> Finished</span>
+              <div class="sub_cont sv_cntv">
                 <div class="save_sec flt_r">
                   <button type="submit" class="btn sub1">Save</button>
-                  <button type="submit" class="btn sub1">Finish</button>
-                  <button type="submit" class="btn sub4">Close</button>
-                  <button type="submit" class="btn sub4">Cancel</button>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn sub1 opn_dlt_n">Finish</button>
+                    <div class="dropdown-menu drop_dnm repn dlt_bx_n fnsh">
+                      <div class="modal-header">
+                        <h5>Finish</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to finish this procedure?</div>
+                      <div class="modal-footer">
+                        <div class=" flt_r">
+                          <button class="btn btn-success cls_dlt" id="InputToFocus2_n" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_dlt">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn sub4 opn_dlt_cls_n">Close</button>
+                    <div class="dropdown-menu drop_dnm repn dlt_cls_bx_n cls_prc">
+                      <div class="modal-header">
+                        <h5>Close</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to close this procedure?</div>
+                      <div class="modal-footer">
+                        <div class=" flt_r">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_cls_n" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                  <button type="submit" class="btn sub4 cls_pop_cls">Cancel</button>
                   <button type="submit" class="btn sub2">Clear</button>
                 </div>
               </div>
             </div>
             <div class="fmly_sec bdr_top_rgt box_pdng10" style="display:none;">
-              <div class="fg4">
+              <div class="fg12">
                 <h3>Target Date: 25/02/2022</h3>
               </div>
+              <div class="clearfix"></div>
               <div class="form-group fg_3_1 sa_2 sa_480">
                 <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
                 <select type="text" class="form-control fg2_inp1 inp_mst">
                   <option>Job Assigned</option>
-                  <option>Avaliablity Check</option>
-                  <option>Awaiting, Approval from candidate</option>
-                  <option>Booking Confirm, Ticket Copy Attached</option>
+                  <option>Released</option>
+                  <option>Canceled with NOC</option>
+                  <option>Canceled without NOC</option>
                 </select>
               </div>
+              <div class="clearfix"></div>
               <div class="form-group fg4 sa_o_fg2 sa_o_fg1">
-                <label for="pwd" class="fg2_la1">Assigned From Date:<span class="spn1"></span> </label>
+                <label for="pwd" class="fg2_la1">New Target Date:<span class="spn1"></span> </label>
                 <div id="datepicker2" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
                   <input class="form-control inp_bdr" type="text">
                   <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
@@ -1097,12 +1181,117 @@ function closeNav5() {
               <div class="clearfix"></div>
               <div class="free_sp2"></div>
               <div class="devider"></div>
-              <div class="sub_cont">
+              <span class="spn_sts_cls"><i class="fa fa-times-circle"></i> Closed</span>
+              <div class="sub_cont sv_cntv">
                 <div class="save_sec flt_r">
                   <button type="submit" class="btn sub1">Save</button>
-                  <button type="submit" class="btn sub1">Finish</button>
-                  <button type="submit" class="btn sub4">Close</button>
-                  <button type="submit" class="btn sub4">Cancel</button>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn sub1 opn_dlt">Finish</button>
+                    <div class="dropdown-menu drop_dnm repn dlt_bx fnsh">
+                      <div class="modal-header">
+                        <h5>Finish</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to finish this procedure?</div>
+                      <div class="modal-footer">
+                        <div class=" flt_r">
+                          <button class="btn btn-success cls_dlt" id="InputToFocus2" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_dlt">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn sub4 opn_dlt_cls">Close</button>
+                    <div class="dropdown-menu drop_dnm repn dlt_cls_bx cls_prc">
+                      <div class="modal-header">
+                        <h5>Close</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to close this procedure?</div>
+                      <div class="modal-footer">
+                        <div class=" flt_r">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_cls" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                  <button type="submit" class="btn sub4 cls_pop_cls">Cancel</button>
+                  <button type="submit" class="btn sub2">Clear</button>
+                </div>
+              </div>
+            </div>
+            <div class="cont_sec bdr_top_rgt box_pdng10" style="display:none;">
+              <div class="fg12">
+                <h3>Target Date: 25/02/2022</h3>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group fg_3_1 sa_2 sa_480">
+                <label for="email" class="fg2_la1">Status:<span class="spn1">*</span></label>
+                <select type="text" class="form-control fg2_inp1 inp_mst">
+                  <option>Job Assigned</option>
+                  <option>Released</option>
+                  <option>Canceled with NOC</option>
+                  <option>Canceled without NOC</option>
+                </select>
+              </div>
+              <div class="clearfix"></div>
+              <div class="form-group fg4 sa_o_fg2 sa_o_fg1">
+                <label for="pwd" class="fg2_la1">New Target Date:<span class="spn1"></span> </label>
+                <div id="datepicker3" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                  <input class="form-control inp_bdr" type="text">
+                  <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="free_sp2"></div>
+              <div class="devider"></div>
+              <span class="spn_sts_fns"><i class="fa fa-check-circle-o"></i> Finished</span>
+              <div class="sub_cont sv_cntv">
+                <div class="save_sec flt_r">
+                  <button type="submit" class="btn sub1">Save</button>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn sub1 opn_dlt">Finish</button>
+                    <div class="dropdown-menu drop_dnm repn dlt_bx fnsh">
+                      <div class="modal-header">
+                        <h5>Finish</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to finish this procedure?</div>
+                      <div class="modal-footer">
+                        <div class=" flt_r">
+                          <button class="btn btn-success cls_dlt" id="InputToFocus2" autofocus="">Yes</button>
+                          <button class="btn btn-danger cls_dlt">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                  <span class="dropdown dd_lft0 ">
+                    <button class="dropdown-toggle btn sub4 opn_dlt_cls">Close</button>
+                    <div class="dropdown-menu drop_dnm repn dlt_cls_bx cls_prc">
+                      <div class="modal-header">
+                        <h5>Close</h5>
+                        <button type="button" class="close cls_pop" title="Close">
+                          <span aria-hidden="true">×</span>
+                        </button>
+                      </div>
+                      <div class="head_txt">Are you sure to close this procedure?</div>
+                      <div class="modal-footer">
+                        <div class=" flt_r">
+                          <button class="btn btn-success cls_dlt">Yes</button>
+                          <button class="btn btn-danger cls_dlt" id="InputToFocus2_cls" autofocus="">No</button>
+                        </div>
+                      </div>
+                    </div>
+                  </span>
+                  <button type="submit" class="btn sub4 cls_pop_cls">Cancel</button>
                   <button type="submit" class="btn sub2">Clear</button>
                 </div>
               </div>
@@ -1682,6 +1871,87 @@ $(".ar_b6").click(function(){
 });
 </script>
 
+<script>
+$(document).ready(function(){
+  $(".opn_sts").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sts_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_dlt_cls").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_cls_bx").show( 300);
+    $('#InputToFocus2_cls').focus();
+  });
+  $(".opn_dlt_n").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx_n").show( 300);
+    $('#InputToFocus2_n').focus();
+  });
+  $(".opn_dlt_cls_n").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_cls_bx_n").show( 300);
+    $('#InputToFocus2_cls_n').focus();
+  });
+
+  $(".opn_dlt_cog").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".dlt_bx_cog").show( 300);
+    $('#InputToFocus2_cog').focus();
+  });
+
+  $(".opn_dlt1_d1").click(function(){
+    $(".pop_2_1").fadeIn();
+    $(".dlt_bx1_d1").show( 300);
+    $('#InputToFocus21_d1').focus();
+  });
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, .clspzz, .sub4").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
+    }
+});
+</script>
+
+  <script type="text/javascript">
+    $('#add_exit').on('shown.bs.modal', function(e){
+    $('#fcs1').focus();
+});
+  </script>
 
 </body>
 </html>
