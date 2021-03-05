@@ -2690,6 +2690,14 @@ span.box_ae{padding-right: 6px;}
 .per_clr{color:#FF9800;}
 .wid_th90{width: 90%;}
 .hgt_inp_at{height: auto;}
+.trfr_lbl{width: 32%;border-bottom:none;}
+.tb_btz.trfr_btn{width: 34%!important;padding:0px;}
+.mr_tp_trsfr20{margin-top: 20px!important;}
+.fix_user_sngl{width: 46px;height:28px;border-radius: 37px;margin: auto;position: fixed;top:150px;right: 10px;background-color:#00aeef;color: #f2f2f2;border:none;}
+.fix_user_sngl:hover{background-color: #8bc34a;color: #fff;}
+.fix_user_blk{width: 46px;height:28px;border-radius: 37px;margin: auto;position: fixed;top:200px;right: 10px;background-color:#39558a;color: #f2f2f2;border:none;}
+.fix_user_blk:hover{background-color: #8bc34a;color: #fff;}
+
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){

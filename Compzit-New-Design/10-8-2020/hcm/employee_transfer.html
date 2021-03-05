@@ -959,19 +959,7 @@ function closeNav5() {
 <!---frame_border_area_opened---->
 
 <!---inner_content_sections area_started-->
-          <h1 class="h1_con">Employee Transfer  
-            <div class="transf_contain flt_r">
-              <h3>New Transfer</h3>
-              <div class="">
-                <a href="add_emply_single.html">
-                  <button class="bu_trf1"><i class="fa fa-user"></i> Single Transfer</button>
-                </a>
-                <a href="add_emply_bulk.html">
-                  <button class="bu_trf2"><i class="fa fa-users"></i> Bulk Transfer</button>
-                </a>
-              </div>
-            </div>
-          </h1>
+          <h1 class="h1_con">Employee Transfer</h1>
 
           <div class="pop_2" style="display: none;" ></div>
 
@@ -1085,11 +1073,11 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------>
 
-
-
+<button class="fix_user_sngl" title="Single Transfer" onclick="location.href='add_emply_single.html';"><i class="fa fa-user"></i></button>
+<button class="fix_user_blk" title="Bulk Transfer" onclick="location.href='add_emply_bulk.html';"><i class="fa fa-users"></i></button>
 
 <button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
-<div class="filtr_sec mr_400">
+<div class="filtr_sec fltr_plcy mr_400">
   <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
     <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
     <div class="box_cnt_zz">
@@ -1097,28 +1085,28 @@ function closeNav5() {
       <h3>Transfer Type</h3>
       
       <div class="fltr_bxv">
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0"><!-- 
-          <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label> -->
-          <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Single</span></button>
-          <button class="tb_btz tb_buton2 viw_b1_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/sb2.png"></i> <span class="sp_plcy sp_laz">Bulk</span></button>
+        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+          <label for="email" class="fg2_la1 trfr_lbl">Transfer Mode:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel trfr_btn" autofocus="" id="Inpz1"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Single</span></button>
+          <button class="tb_btz tb_buton2 viw_b1_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/sb2.png"></i> <span class="sp_plcy sp_laz">Bulk</span></button>
         </div>
         
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0"><!-- 
-          <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label> -->
-          <button class="tb_btz tb_buton1 viw_b2 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/ib1.png"></i> <span class="sp_plcy sp_laz">Inter Office</span></button>
-          <button class="tb_btz tb_buton2 viw_b2_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/ib2.png"></i> <span class="sp_plcy sp_laz">Business Unit</span></button>
+        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+          <label for="email" class="fg2_la1 trfr_lbl">Transfer Location:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton2 viw_b2_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/ib2.png"></i> <span class="sp_plcy sp_laz">Business Unit</span></button>
+          <button class="tb_btz tb_buton1 viw_b2 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/ib1.png"></i> <span class="sp_plcy sp_laz">Inter Office</span></button>
         </div>
         
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0"><!-- 
-          <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label> -->
-          <button class="tb_btz tb_buton1 viw_b3 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/mn.png"></i> <span class="sp_plcy sp_laz">Manpower Request</span></button>
-          <button class="tb_btz tb_buton2 viw_b3_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/mn2.png"></i> <span class="sp_plcy sp_laz">Normal</span></button>
+        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+          <label for="email" class="fg2_la1 trfr_lbl">Transfer Based On:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton2 viw_b3_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/mn2.png"></i> <span class="sp_plcy sp_laz">Normal</span></button>
+          <button class="tb_btz tb_buton1 viw_b3 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/mn.png"></i> <span class="sp_plcy sp_laz">Manpower Request</span></button>
         </div>
         
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0"><!-- 
-          <label for="email" class="fg2_la1">Report Type:<span class="spn1"></span></label> -->
-          <button class="tb_btz tb_buton1 viw_b4 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
-          <button class="tb_btz tb_buton2 viw_b4_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Permanent</span></button>
+        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+          <label for="email" class="fg2_la1 trfr_lbl">Transfer Type:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton1 viw_b4 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
+          <button class="tb_btz tb_buton2 viw_b4_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Permanent</span></button>
         </div>
       </div>
 
