@@ -1086,25 +1086,25 @@ function closeNav5() {
       
       <div class="fltr_bxv">
         <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
-          <label for="email" class="fg2_la1 trfr_lbl">Transfer Mode:<span class="spn1"></span></label>
+          <label for="email" class="fg2_la1 trfr_lbl lbl_clr1">Transfer Mode:<span class="spn1"></span></label>
           <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel trfr_btn" autofocus="" id="Inpz1"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Single</span></button>
           <button class="tb_btz tb_buton2 viw_b1_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/sb2.png"></i> <span class="sp_plcy sp_laz">Bulk</span></button>
         </div>
         
         <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
-          <label for="email" class="fg2_la1 trfr_lbl">Transfer Location:<span class="spn1"></span></label>
+          <label for="email" class="fg2_la1 trfr_lbl lbl_clr2">Transfer Location:<span class="spn1"></span></label>
           <button class="tb_btz tb_buton2 viw_b2_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/ib2.png"></i> <span class="sp_plcy sp_laz">Business Unit</span></button>
           <button class="tb_btz tb_buton1 viw_b2 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/ib1.png"></i> <span class="sp_plcy sp_laz">Inter Office</span></button>
         </div>
         
         <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
-          <label for="email" class="fg2_la1 trfr_lbl">Transfer Based On:<span class="spn1"></span></label>
+          <label for="email" class="fg2_la1 trfr_lbl lbl_clr3">Transfer Based On:<span class="spn1"></span></label>
           <button class="tb_btz tb_buton2 viw_b3_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/mn2.png"></i> <span class="sp_plcy sp_laz">Normal</span></button>
           <button class="tb_btz tb_buton1 viw_b3 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/mn.png"></i> <span class="sp_plcy sp_laz">Manpower Request</span></button>
         </div>
         
         <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
-          <label for="email" class="fg2_la1 trfr_lbl">Transfer Type:<span class="spn1"></span></label>
+          <label for="email" class="fg2_la1 trfr_lbl lbl_clr4">Transfer Type:<span class="spn1"></span></label>
           <button class="tb_btz tb_buton1 viw_b4 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
           <button class="tb_btz tb_buton2 viw_b4_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Permanent</span></button>
         </div>
@@ -1667,13 +1667,14 @@ $(document).ready(function(){
   });
 });
 </script>
-<script>
+<!-- <script>
   $(document).on('keydown', function(e) { 
   var keyCode = e.keyCode || e.which; 
 
   if (keyCode == 27) { 
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
     document.getElementById("#InputToFocus1").hide();
+    $('.filtr_sec').removeClass("mr_400");
   } 
 });
 </script>
@@ -1684,7 +1685,7 @@ $(document).ready(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
     }
 });
-</script>
+</script> -->
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -1750,6 +1751,7 @@ $(document).ready(function(){
 
 });
 </script>
+
 <script>
   $( document ).on( 'click', function ( e ) {
     if ( $( e.target ).closest( elem ).length === 0 ) {

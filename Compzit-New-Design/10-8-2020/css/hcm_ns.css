@@ -2715,6 +2715,12 @@ span.box_ae{padding-right: 6px;}
 .fg4_30{width: 30%;margin: auto;float: left;}
 .fg_3_170{width: 70%!important;margin: auto;float: left;}
 .mx_hgtat{max-height:280px;overflow: auto;}
+.filtr_sec {z-index: 999911!important;}
+.lbl_clr1{color:#4caf50;font-weight: 600!important;}
+.lbl_clr2{color:#e91e63;font-weight: 600!important;}
+.lbl_clr3{color:#ff5722;font-weight: 600!important;}
+.lbl_clr4{color:#607d8b;font-weight: 600!important;}
+
 
 /*.mrb10_pag{margin-top: 16px;}
 */
