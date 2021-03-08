@@ -2688,6 +2688,32 @@ span.box_ae{padding-right: 6px;}
 .wdt_44{width: 44%;}
 .dlr_clr{color:#8bc34a;}
 .per_clr{color:#FF9800;}
+.wid_th90{width: 90%;}
+.hgt_inp_at{height: auto;}
+.trfr_lbl{width: 32%;border-bottom:none;}
+.tb_btz.trfr_btn{width: 34%!important;padding:0px;}
+.mr_tp_trsfr20{margin-top: 20px!important;}
+.fix_user_sngl{width: 46px;height:28px;border-radius: 37px;margin: auto;position: fixed;top:150px;right: 10px;background-color:#00aeef;color: #f2f2f2;border:none;}
+.fix_user_sngl:hover{background-color: #8bc34a;color: #fff;}
+.fix_user_blk{width: 46px;height:28px;border-radius: 37px;margin: auto;position: fixed;top:200px;right: 10px;background-color:#39558a;color: #f2f2f2;border:none;}
+.fix_user_blk:hover{background-color: #8bc34a;color: #fff;}
+.bdr_sep{background-color:#cadcff!important;}
+.th_b5_11_5{width:0.005%!important;}
+.fixd_box{width:100%;height: 100%;position: fixed;left:0;top:0;right: 0;bottom: 0;background-color: rgba(0, 0, 0, .7);z-index: 99999;}
+.modl_dlg_bx{width: 50%;height:auto;background-color: #fff;margin: auto;margin-top: 8%;border-radius: 8px;padding:20px;max-height: 300px;position: absolute;margin:10% 20%;}
+.modl_dlg_bx h3{color: #0fd0f9;font-size: 18px;font-weight:400;margin-top: 0px;}
+.modl_dlg_bx hr{background-color:  #9fe9f9;height:4px;width: 60%;margin: auto;float: left;border:none;}
+.bu_img{width: 80%;height: auto;margin: auto;float: left;margin-top: 20px;}
+.bu_img img{width: 100%;height: auto;margin: auto;max-height: 100%;}
+.bnt_bus{width:45%;height: 80px;margin:auto;float: left;background-color: #fff;box-shadow: 1px 1px 15px #ccc;border:1px solid #fff;border-radius: 4px;margin:1% 2.5%;}
+.bnt_bus:hover, .bnt_bus:focus{border:1px solid #9fe9f9;}
+.bnt_bus h5{color: #333!important;padding-top: 10px;}
+.bnt_bus img{width: 25px;height: 25px;}
+.cls_bu{width: 25px;height: 25px;margin: auto;float: right;color:#fff;margin-right: -30px!important;margin-top: -30px;border-radius: 20px;border:none;background-color: #fd8888;}
+.cls_bu:hover, .cls_bu:focus{background-color:#dc3c3c;}
+.box_bu_in{width: auto;height: auto;margin: auto;float: left;min-height: 185px;max-height: 350px;}
+.fg4_30{width: 30%;margin: auto;float: left;}
+.fg_3_170{width: 70%!important;margin: auto;float: left;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
