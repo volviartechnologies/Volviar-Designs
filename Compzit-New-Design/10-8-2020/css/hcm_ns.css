@@ -2714,6 +2714,8 @@ span.box_ae{padding-right: 6px;}
 .box_bu_in{width:100%;height: auto;margin: auto;float: left;min-height: 185px;max-height: 350px;}
 .fg4_30{width: 30%;margin: auto;float: left;}
 .fg_3_170{width: 70%!important;margin: auto;float: left;}
+.mx_hgtat{max-height:280px;overflow: auto;}
+
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
