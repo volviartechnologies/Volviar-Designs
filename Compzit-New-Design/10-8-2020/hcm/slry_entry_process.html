@@ -731,7 +731,7 @@ function closeNav5() {
         </button>
       </div>
       <div class="modal-body">
-        <div class="fg4">
+        <div class="fg4_30">
           <div class="fg12 mar_at flt_l box_emp_br edt_mnt wdtz95">
             <div class="clearfix"></div>
             <div class="fg12 empl_pop_dtl">
@@ -753,7 +753,7 @@ function closeNav5() {
             </div>
           </div>
         </div>
-        <div class="fg_3_1">
+        <div class="fg_3_170">
           <div class="form-group fg4 sa_2 sa_480">
             <label for="email" class="fg2_la1">Pay Grade:<span class="spn1">*</span></label>
             <select class="form-control fg2_inp1 inp_mst" id="tez1">
@@ -774,24 +774,29 @@ function closeNav5() {
               <table id="example" class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
-                    <th class="th_b2 tr_c" colspan="3">Addition</th>
+                    <th class="th_b2 tr_c" colspan="4">Addition</th>
                     <th class="th_b5_11_5 bdr_sep"></th>
                     </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="tr_l">Addition 1</td>
-                    <td class="tr_l th_b1">
+                    <td class="tr_l th_b5">Addition 1</td>
+                    <td class="tr_l th_b5">
                       <span class="prtd_rat">
                         <span class="form-check fr_dv2 wdt_44">
-                          <input class="form-check-input" type="radio" name="1_1" id="am1" value="option2">
+                          <input class="form-check-input" type="radio" name="1_1" id="am1" value="option2" onclick="per1_c()">
                           <label class="form-check-label" for="am4"><i class="fa fa-money dlr_clr"></i></label>
                         </span>
                         <span class="form-check fr_dv2 wdt_44">
-                          <input class="form-check-input" type="radio" name="1_1" id="pe1" value="option1" checked="">
+                          <input class="form-check-input" type="radio" name="1_1" id="pe1" value="option1" checked="" onclick="per2_c()">
                           <label class="form-check-label" for="pe4"><i class="fa fa-percent per_clr"></i></label>
                         </span>
                       </span>
+                    </td>
+                    <td class="tr_l th_b5">
+                      <select type="text" class="form-control fg2_inp2 tr_r hgt_inp_at"  id="sel_dsbl_c">
+                        <option>Total</option>
+                      </select>
                     </td>
                     <td class="tr_l th_b5">
                       <input type="text" class="form-control fg2_inp2 tr_r hgt_inp_at" placeholder="0.00">
@@ -800,17 +805,22 @@ function closeNav5() {
                   </tr>
                    <tr>
                     <td class="tr_l">Addition 1</td>
-                    <td class="tr_l th_b1">
+                    <td class="tr_l th_b5">
                       <span class="prtd_rat">
                         <span class="form-check fr_dv2 wdt_44">
-                          <input class="form-check-input" type="radio" name="1" id="am1_a" value="option2">
+                          <input class="form-check-input" type="radio" name="1" id="am1_a" value="option2" onclick="per1_b()">
                           <label class="form-check-label" for="am4_a"><i class="fa fa-money dlr_clr"></i></label>
                         </span>
                         <span class="form-check fr_dv2 wdt_44">
-                          <input class="form-check-input" type="radio" name="1" id="pe1_a" value="option1" checked="">
+                          <input class="form-check-input" type="radio" name="1" id="pe1_a" value="option1" checked="" onclick="per2_b()">
                           <label class="form-check-label" for="pe4_a"><i class="fa fa-percent per_clr"></i></label>
                         </span>
                       </span>
+                    </td>
+                    <td class="tr_l th_b5">
+                      <select type="text" class="form-control fg2_inp2 tr_r hgt_inp_at"  id="sel_dsbl_b">
+                        <option>Total</option>
+                      </select>
                     </td>
                     <td class="tr_l th_b5">
                       <input type="text" class="form-control fg2_inp2 tr_r hgt_inp_at" placeholder="0.00">
@@ -826,23 +836,28 @@ function closeNav5() {
               <table id="example" class="display table-bordered pro_tab1 tbl_800" cellspacing="0" width="100%">
                 <thead class="thead1">
                   <tr>
-                    <th class="th_b2 tr_c" colspan="3">Deduction</th>
+                    <th class="th_b2 tr_c" colspan="4">Deduction</th>
                     </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td class="tr_l">Deduction 1</td>
-                    <td class="tr_l th_b1">
+                    <td class="tr_l th_b5">Deduction 1</td>
+                    <td class="tr_l th_b5">
                       <span class="prtd_rat">
                         <span class="form-check fr_dv2 wdt_44">
-                          <input class="form-check-input" type="radio" name="4_1" id="am4" value="option2">
+                          <input class="form-check-input" type="radio" name="4_1" id="am4" value="option2" onclick="per1_a()">
                           <label class="form-check-label" for="am4"><i class="fa fa-money dlr_clr"></i></label>
                         </span>
                         <span class="form-check fr_dv2 wdt_44">
-                          <input class="form-check-input" type="radio" name="4_1" id="pe4" value="option1" checked="">
+                          <input class="form-check-input" type="radio" name="4_1" id="pe4" value="option1" checked="" onclick="per2_a()">
                           <label class="form-check-label" for="pe4"><i class="fa fa-percent per_clr"></i></label>
                         </span>
                       </span>
+                    </td>
+                    <td class="tr_l th_b5">
+                      <select type="text" class="form-control fg2_inp2 tr_r hgt_inp_at" id="sel_dsbl_a">
+                        <option>Total</option>
+                      </select>
                     </td>
                     <td class="tr_l th_b5">
                       <input type="text" class="form-control fg2_inp2 tr_r hgt_inp_at" placeholder="0.00">
@@ -853,14 +868,19 @@ function closeNav5() {
                     <td class="tr_l th_b1">
                       <span class="prtd_rat">
                         <span class="form-check fr_dv2 wdt_44">
-                          <input class="form-check-input" type="radio" name="4" id="am4_a" value="option2">
+                          <input class="form-check-input" type="radio" name="4" id="am4_a" value="option2" onclick="per1()">
                           <label class="form-check-label" for="am4_a"><i class="fa fa-money dlr_clr"></i></label>
                         </span>
                         <span class="form-check fr_dv2 wdt_44">
-                          <input class="form-check-input" type="radio" name="4" id="pe4_a" value="option1" checked="">
+                          <input class="form-check-input" type="radio" name="4" id="pe4_a" value="option1" checked="" onclick="per2()">
                           <label class="form-check-label" for="pe4_a"><i class="fa fa-percent per_clr"></i></label>
                         </span>
                       </span>
+                    </td>
+                    <td class="tr_l th_b5">
+                      <select type="text" class="form-control fg2_inp2 tr_r hgt_inp_at" id="sel_dsbl">
+                        <option>Total</option>
+                      </select>
                     </td>
                     <td class="tr_l th_b5">
                       <input type="text" class="form-control fg2_inp2 tr_r hgt_inp_at" placeholder="0.00">
@@ -1559,6 +1579,37 @@ $(document).ready(function(){
   $('#dtl_mod').on('shown.bs.modal', function () {
     $('#tez1').focus();
 }) 
+</script>
+
+<script>
+function per1() {
+  document.getElementById("sel_dsbl").disabled = true;
+}
+
+function per2() {
+  document.getElementById("sel_dsbl").disabled = false;
+}
+function per1_a() {
+  document.getElementById("sel_dsbl_a").disabled = true;
+}
+
+function per2_a() {
+  document.getElementById("sel_dsbl_a").disabled = false;
+}
+function per1_b() {
+  document.getElementById("sel_dsbl_b").disabled = true;
+}
+
+function per2_b() {
+  document.getElementById("sel_dsbl_b").disabled = false;
+}
+function per1_c() {
+  document.getElementById("sel_dsbl_c").disabled = true;
+}
+
+function per2_c() {
+  document.getElementById("sel_dsbl_c").disabled = false;
+}
 </script>
 </body>
 </html>
