@@ -959,7 +959,9 @@ function closeNav5() {
 <!---frame_border_area_opened---->
 
 <!---inner_content_sections area_started-->
-          <h1 class="h1_con">Employee Transfer</h1>
+          <h1 class="h1_con">
+            <span class="flt_l"> Employee Transfer</span> <span class="sub_mnhd">  (INDIVIDUAL)</span> 
+          </h1>
 
           <div class="pop_2" style="display: none;" ></div>
 
@@ -1061,7 +1063,11 @@ function closeNav5() {
 </div>
 <!----alert_message_section_closed---->
 
-
+<!---add_button--->
+<a href="add_emply_single.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
+<i class="fa fa-plus-circle"></i>
+</a>
+<!---add_button_closed--->
 
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico4.png"></i> Humen Capital Management</p>
@@ -1073,8 +1079,8 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------>
 
-<button class="fix_user_sngl" title="Single Transfer" onclick="location.href='add_emply_single.html';"><i class="fa fa-user"></i></button>
-<button class="fix_user_blk" title="Bulk Transfer" onclick="location.href='add_emply_bulk.html';"><i class="fa fa-users"></i></button>
+<!-- <button class="fix_user_sngl" title="Single Transfer" onclick="location.href='add_emply_single.html';"><i class="fa fa-user"></i></button>
+<button class="fix_user_blk" title="Bulk Transfer" onclick="location.href='add_emply_bulk.html';"><i class="fa fa-users"></i></button> -->
 
 <button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
 <div class="filtr_sec fltr_plcy mr_400">
@@ -1082,14 +1088,13 @@ function closeNav5() {
     <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
     <div class="box_cnt_zz">
       <div class="clearfix"></div>
-      <h3>Transfer Type</h3>
       
       <div class="fltr_bxv">
-        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+        <!-- <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
           <label for="email" class="fg2_la1 trfr_lbl lbl_clr1">Transfer Mode:<span class="spn1"></span></label>
           <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel trfr_btn" autofocus="" id="Inpz1"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Single</span></button>
           <button class="tb_btz tb_buton2 viw_b1_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/sb2.png"></i> <span class="sp_plcy sp_laz">Bulk</span></button>
-        </div>
+        </div> -->
         
         <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
           <label for="email" class="fg2_la1 trfr_lbl lbl_clr2">Transfer Location:<span class="spn1"></span></label>
@@ -1105,8 +1110,8 @@ function closeNav5() {
         
         <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
           <label for="email" class="fg2_la1 trfr_lbl lbl_clr4">Transfer Type:<span class="spn1"></span></label>
-          <button class="tb_btz tb_buton1 viw_b4 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
           <button class="tb_btz tb_buton2 viw_b4_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Permanent</span></button>
+          <button class="tb_btz tb_buton1 viw_b4 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
         </div>
       </div>
 
@@ -1719,10 +1724,14 @@ $(document).ready(function(){
   $(".viw_b1").click(function(){
     $(".viw_b1").addClass("tb_buton_sel");
     $(".viw_b1_a").removeClass("tb_buton_sel");
+    $(".idivdl").show();
+    $(".idivdl1").hide();
   });
   $(".viw_b1_a").click(function(){
     $(".viw_b1_a").addClass("tb_buton_sel");
     $(".viw_b1").removeClass("tb_buton_sel");
+    $(".idivdl1").show();
+    $(".idivdl").hide();
   });
   $(".viw_b2").click(function(){
     $(".viw_b2").addClass("tb_buton_sel");
