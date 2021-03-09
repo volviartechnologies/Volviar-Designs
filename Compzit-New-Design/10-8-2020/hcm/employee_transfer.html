@@ -975,22 +975,28 @@ function closeNav5() {
             <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
             <thead class="thead1">
               <tr>
-                <th class="col-md-3 tr_l"> Employee Name
+                <th class="th_b4 tr_l"> Employee Name
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Employee Name">
                 </th>
-                <th class="col-md-2 tr_l"> Department
+                <th class="th_b8 tr_l"> Department
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
                 </th>
-                <th class="col-md-3 tr_l"> PayGrade
+                <th class="th_b6 tr_l"> PayGrade
                   <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Paygrade">
                 </th>
-                <th class="col-md-1 tr_c"> From Date
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="From Date">
+                <th class="th_b7 tr_c"> From Date
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="From Date">
                 </th>
-                <th class="col-md-1 tr_c"> To Date
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="To Date">
+                <th class="th_b7 tr_c"> To Date
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="To Date">
                 </th>
-                <th class="col-md-2">Actions</th>
+                <th class="th_b7 tr_c"> Method
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Method">
+                </th>
+                <th class="th_b7 tr_c"> Type
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Type">
+                </th>
+                <th class="th_b8">Actions</th>
               </tr>
              
             </thead>
@@ -1001,14 +1007,68 @@ function closeNav5() {
                 <td class="tr_l">40</td>
                 <td>03/09/2019</td>
                 <td>10/09/2019</td>
+                <td>Method 1</td>
+                <td>Type 1</td>
                 <td>
                   <div class="btn_stl1">
                     <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
                       <i class="fa fa-edit"></i>
                     </button>
-                    <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal1" title="Renew">
-                      <i class="fa fa-repeat"></i>
+                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
+                      <i class="fa fa-list-alt"></i>
                     </button>
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_cnfm" title="Confirm">
+                      <i class="fa fa-check"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm cnfm_bx">
+                        <div class="modal-header">
+                          <h5>Confirm</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to confirm this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                          <button class="btn btn-danger cls_cnfm">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_dlt" title="Renew">
+                      <i class="fa fa-repeat"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx rnew_bxs">
+                        <div class="modal-header">
+                          <h5>Renew</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          <div class="fg6">
+                            <label for="pwd" class="fg2_la1">From:<span class="spn1"></span> </label>
+                            <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                              <input class="form-control inp_bdr" type="text" id="dte_1_a">
+                              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                            </div>
+                          </div>
+                          <div class="fg6">
+                            <label for="pwd" class="fg2_la1">To:<span class="spn1"></span> </label>
+                            <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                              <input class="form-control inp_bdr" type="text" id="dte_1_a">
+                              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt" id="InputToFocus2" autofocus="">Renew</button>
+                          <button class="btn btn-danger cls_dlt">Cancel</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
                 </td>
               </tr>
@@ -1079,8 +1139,8 @@ function closeNav5() {
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------>
 
-<!-- <button class="fix_user_sngl" title="Single Transfer" onclick="location.href='add_emply_single.html';"><i class="fa fa-user"></i></button>
-<button class="fix_user_blk" title="Bulk Transfer" onclick="location.href='add_emply_bulk.html';"><i class="fa fa-users"></i></button> -->
+<!-- <button class="fix_user_sngl" title="Single Transfer" onclick="location.href='add_emply_single.html';"><i class="fa fa-user"></i></button>-->
+<button class="fix_user_blk" title="Employee Transfer (Group)" onclick="location.href='employee_transfer_group.html';"><i class="fa fa-users"></i></button> 
 
 <button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
 <div class="filtr_sec fltr_plcy mr_400">
@@ -1133,7 +1193,7 @@ function closeNav5() {
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body"><!-- 
         <div class="fg6">
           <label for="pwd" class="fg2_la1">To:<span class="spn1"></span> </label>
           <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
@@ -1148,7 +1208,7 @@ function closeNav5() {
             <input class="form-control inp_bdr" type="text" id="dte_1_a">
             <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1">Save</button>
