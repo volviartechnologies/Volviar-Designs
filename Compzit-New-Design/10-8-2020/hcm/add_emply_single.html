@@ -959,8 +959,7 @@ function closeNav5() {
       
       <div class="content_box1 cont_contr">
         <h2>Single Employee Transfer</h2>
-
-        <h3>From</h3>
+        <div class="pop_2" style="display: none;" ></div>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Business Unit:<span class="spn1">*</span></label>
@@ -973,190 +972,71 @@ function closeNav5() {
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
+          <select type="text" class="form-control fg2_inp1 inp_mst wid_90pzza">
             <option>Employee 1</option>
             <option>Employee 2</option>
             <option>Employee 3</option>
-          </select> 
-        </div>
-
-        <div class="clearfix"></div>
-        <div class="free_sp2"></div>
-        <div class="devider"></div>
-
-        
-        <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0 ovrflw">
-          <label for="email" class="fg2_la1">Transfer Type:<span class="spn1"></span></label>
-          <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Inter Office</span></button>
-          <button class="tb_btz tb_buton2 viw_b1_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/sb2.png"></i> <span class="sp_plcy sp_laz">Business Unit</span></button>
-        </div>
-        
-        <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0 ovrflw">
-          <label for="email" class="fg2_la1">Transfer Method:<span class="spn1"></span></label>
-          <button class="tb_btz tb_buton1 viw_b2 tb_buton_sel"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
-          <button class="tb_btz tb_buton2 viw_b2_a"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Permanent</span></button>
-        </div>
-        
-        <div class="rmr1">
-          <div class="form-group fg2 sa_640 dt_bsd1 gur_opt mar_tp0 ovrflw">
-            <label for="email" class="fg2_la1">Related To Manpower Request:<span class="spn1"></span></label>
-            <button class="tb_btz tb_buton1 viw_b3"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/yn2.png"></i> <span class="sp_plcy sp_laz">No</span></button>
-            <button class="tb_btz tb_buton2 viw_b3_a tb_buton_sel"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/yn1.png"></i> <span class="sp_plcy sp_laz">Yes</span></button>
-          </div>
-
-          <div class="fg12 related mxhei_12 ">
-
-            <div class="clearfix"></div>
-            <div class="free_sp2"></div>
-            <div class="r_640">
-              <table class="display table-bordered pro_tab1 tbl_640" cellspacing="0" width="100%">
-                <thead class="thead1">
-                  <tr>
-                    <th class="col-md-2 tr_l">Ref#</th>
-                    <th class="col-md-2">Date Of Request</th>
-                    <th class="col-md-1">Vacancy</th>
-                    <th class="col-md-3 tr_l">Department</th>
-                    <th class="col-md-2 tr_l">Project</th>
-                    <th class="col-md-1">Assign</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="tr_l">Ref#0001</td>
-                    <td>16/10/2019</td>
-                    <td>100</td>
-                    <td class="tr_l">Department 1</td>
-                    <td class="tr_l">Project 1</td>
-                    <td>
-                      <div class="check1 wid_chk">
-                        <div class="">
-                          <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider_tog round"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tr_l">Ref#0001</td>
-                    <td>16/10/2019</td>
-                    <td>100</td>
-                    <td class="tr_l">Department 1</td>
-                    <td class="tr_l">Project 1</td>
-                    <td>
-                      <div class="check1 wid_chk">
-                        <div class="">
-                          <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider_tog round"></span>
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          </select>
+          <span class="dropdown dd_lft0 ">
+          <button class="dropdown-toggle opn_dtls viw_emplydt"><i class="fa fa-address-card"></i></button>
+            <div class="dropdown-menu drop_dnm dtls_bx bx_dtlet et_empy_dtl">
+              <div class="modal-header">
+                <h5>Employee Details</h5>
+                <button type="button" class="close cls_pop" title="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+              <div class="head_txt">
+                <div class="fg12">
+                  <div class="fg12 empl_pop_dtl">
+                    <h3>Employee Name 1</h3>
+                    <span>EMP0001</span>
+                  </div>
+                  <div class="devider"></div>
+                  <div class="fg5">
+                    <div class="user_im_1">
+                      <img src="../images/hcm/user.jpg">
+                    </div>
+                  </div>
+                  <div class="fg_3_1 empl_pop_dtl wid_76_pz">
+                    <ul class="join_leav emp_dtl_bdr">
+                      <li><span class="spn_zp1">Business Unit:</span> <span class="spn_sep">Business Unit 2</span></li>
+                      <li><span class="spn_zp1">Department:</span> <span class="spn_sep">Department 2</span></li>
+                      <li><span class="spn_zp1">Division:</span> <span class="spn_sep">Division 2</span></li>
+                      <li class="bg_grn box_fr_staff" style="display: none;"><span class="spn_zp1">Designation:</span> <span class="spn_sep">Designation 1</span></li>
+                      <li class="bg_grn box_wrkr"><span class="spn_zp1">Reporting Officer:</span> <span class="spn_sep">Reporting Officer 1</span></li>
+                      <li class="bg_grn box_wrkr"><span class="spn_zp1">Sponsor:</span> <span class="spn_sep">Sponsor 1</span></li>
+                      <li class="bg_grn box_wrkr"><span class="spn_zp1">Project:</span> <span class="spn_sep">Project 1</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-danger cls_aprvl" id="InputToFocus9">Cancel</button>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="clearfix"></div>
-        <div class="free_sp2"></div>
-        <div class="devider"></div>
-
-        <h3>TO</h3>
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="pwd" class="fg2_la1">From Date:<span class="spn1">*</span> </label>
-          <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr inp_mst" type="text">
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-
-        <div class="form-group fg2 to_dte sa_fg4 sa_640_i1 sa_480">
-          <label for="pwd" class="fg2_la1">To Date:<span class="spn1">*</span> </label>
-          <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr inp_mst" type="text">
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
+          </span>
         </div>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Department:<span class="spn1">*</span></label>
+          <label for="email" class="fg2_la1">Transfer Method:<span class="spn1">*</span></label>
           <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Department 1</option>
-            <option>Department 2</option>
-            <option>Department 3</option>
+            <option>Permanent</option>
+            <option>Temporary</option>
           </select> 
         </div>
 
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Division:<span class="spn1"></span></label>
-          <select type="text" class="form-control fg2_inp1">
-            <option>Division 1</option>
-            <option>Division 2</option>
-            <option>Division 3</option>
-          </select> 
+          <label for="email" class="fg2_la1">Manpower Request:<span class="spn1">*</span></label> 
+          <select type="text" class="form-control fg2_inp1 inp_mst wid_90pzza">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+          <button class="viw_emplydt1" data-toggle="modal" data-target="#mnpower"><i class="fa fa-list-alt"></i></button> 
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Pay Grade:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Pay Grade 1</option>
-            <option>Pay Grade 2</option>
-            <option>Pay Grade 3</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Reporting Officer:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Reporting Officer 1</option>
-            <option>Reporting Officer 2</option>
-            <option>Reporting Officer 3</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Sponsor:<span class="spn1"></span></label>
-          <select type="text" class="form-control fg2_inp1">
-            <option>Sponsor 1</option>
-            <option>Sponsor 2</option>
-            <option>Sponsor 3</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
-          <select type="text" class="form-control fg2_inp1">
-            <option>Project 1</option>
-            <option>Project 2</option>
-            <option>Project 3</option>
-          </select> 
-        </div>
-   
-        <div class="clearfix"></div>
-        <div class="free_sp2"></div>
-        <div class="devider"></div>
-
-        <div class="sub_cont pull-right">
-          <div class="save_sec">
-            <button type="submit" class="btn sub1">Save</button>
-            <button type="submit" class="btn sub3">Save & Close</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-            <button type="submit" class="btn sub2">Clear</button>
-          </div>
-
-          <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update & Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-        </div>
-        
+       
       </div>
     </div>
     </div>
@@ -1182,7 +1062,197 @@ function closeNav5() {
 </div><!--wrapper_closed-->
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
+<!-- Modal -->
+<div class="modal fade" id="mnpower" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog dlx_bx_mnpowr" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Assign</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="pop_2_3" style="display: none;"></div>
+        <div class="form-group fg5">
+          <label for="email" class="fg2_la1">Division<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="tez1" autofocus="">
+            <option>Division 1</option>
+            <option>Division 2</option>
+            <option>Division 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg5">
+          <label for="email" class="fg2_la1">Department<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>Department 1</option>
+            <option>Department 2</option>
+            <option>Department 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg5">
+          <label for="email" class="fg2_la1">Designation<span class="spn1"></span>:</label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" autofocus="">
+            <option>Designation 1</option>
+            <option>Designation 2</option>
+            <option>Designation 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg5">
+          <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>Project 1</option>
+            <option>Project 2</option>
+            <option>Project 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg5">
+          <label for="email" class="fg2_la1">Role:<span class="spn1"></span></label>
+          <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
+            <option>Role 1</option>
+            <option>Role 2</option>
+            <option>Role 3</option>
+          </select> 
+        </div>
+        <div class="clearfix"></div>
+         <div class="r_1024">
+            <table id="" class="display table-bordered" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b7 tr_l">Ref#</th>
+                <th class="th_b8 tr_l">Division</th>
+                <th class="th_b8 tr_l">Department</th>
+                <th class="th_b4 tr_l">Project</th>
+                <th class="th_b2 tr_l">Designation</th>
+                <th class="th_b8 tr_l">Requested By</th>
+                <th class="th_b7 tr_c">Resources#</th>
+                <th class="th_b7 tr_c">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">ref00001</td>
+                <td class="tr_l">Division 2</td>
+                <td class="tr_l">Department 1</td>
+                <td class="tr_l">Project 1</td>
+                <td class="tr_l">Designation 2</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_c">100</td>
+                <td>
+                  <span class="button-checkbox flt_n mr_r0">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                </td>
+              </tr><!-- 
+              <tr>
+                <td class="tr_l">ref00001</td>
+                <td class="tr_l">Division 2</td>
+                <td class="tr_l">Department 1</td>
+                <td class="tr_l">Project 1</td>
+                <td class="tr_l">Designation 2</td>
+                <td class="tr_l">Employee 1</td>
+                <td class="tr_c">100</td>
+                <td>
+                  <span class="button-checkbox flt_n mr_r0">
+                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
+                    <input type="checkbox" class="hidden" />
+                  </span>
+                </td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <div class="clearfix"></div>
+        <div class="free_sp2"></div>
 
+        <div class="form-group fg5 sa_fg4 sa_640_i1 sa_480">
+          <label for="pwd" class="fg2_la1">From Date:<span class="spn1">*</span> </label>
+          <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+
+        <div class="form-group fg5 to_dte sa_fg4 sa_640_i1 sa_480">
+          <label for="pwd" class="fg2_la1">To Date:<span class="spn1">*</span> </label>
+          <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr inp_mst" type="text">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+
+        <div class="form-group fg5 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Reporting Officer:<span class="spn1">*</span></label>
+          <select type="text" class="form-control fg2_inp1 inp_mst">
+            <option>Reporting Officer 1</option>
+            <option>Reporting Officer 2</option>
+            <option>Reporting Officer 3</option>
+          </select> 
+        </div>
+
+        <div class="form-group fg5 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Sponsor:<span class="spn1"></span></label>
+          <select type="text" class="form-control fg2_inp1">
+            <option>Sponsor 1</option>
+            <option>Sponsor 2</option>
+            <option>Sponsor 3</option>
+          </select> 
+        </div>
+        <div class="form-group fg5 sa_2 sa_480">
+          <label for="email" class="fg2_la1 pad_l">New Employee ID:<span class="spn1">*</span></label>
+          <div class="check1">
+            <div class="">
+              <label class="switch">
+                <input type="checkbox" checked="" >
+                <span class="slider_tog round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <div class="pull-right">
+          <div class="save_sec">
+            <button type="submit" class="btn sub1">Save</button>
+            <span class="dropdown dd_lft0">
+              <button class="dropdown-toggle btn nw1 sub3 opn_cnfmzaq" title="Confirm">
+              Confirm
+              </button>
+              <div class="dropdown-menu drop_dnm cnfm_bx cnfm_bxzaq rgt_0b1c rgt_alg">
+                <div class="modal-header">
+                  <h5>Confirm</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">Are you sure to confirm this entry?</div>
+                <div class="modal-footer">
+                  <div class="flt_r">
+                    <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                    <button class="btn btn-danger cls_cnfm">No</button>
+                  </div>
+                </div>
+              </div>
+            </span>
+            <button type="submit" class="btn sub3">Save & Close</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+            <button type="submit" class="btn sub2">Clear</button>
+          </div>
+
+          <div class="edit_sec">
+            <button type="submit" class="btn sub1">Update</button>
+            <button type="submit" class="btn sub3">Update & Close</button>
+            <button type="submit" class="btn sub2">Confirm</button>
+            <button type="submit" class="btn sub4">Cancel</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!--------script section_started---------->
@@ -1786,6 +1856,103 @@ $( document ).on( 'keydown', function ( e ) {
   $('.filtr_sec').removeClass("mr_400");
     }
 });
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".opn_sls").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sls_bx").show( 300);
+    $('#InputToFocus').focus();
+  });
+  $(".opn_cnfm").click(function(){
+    $(".pop_2").fadeIn();
+    $(".cnfm_bx").show( 300);
+    $('#InputToFocus1').focus();
+  });
+  $(".opn_dlt").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dlt_bx").show( 300);
+    $('#InputToFocus2').focus();
+  });
+  $(".opn_ropn").click(function(){
+    $(".pop_2").fadeIn();
+    $(".ropn_bx").show( 300);
+    $('#InputToFocus3').focus();
+  });
+  $(".opn_aprvl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".aprvl_bx").show( 300);
+    $('#InputToFocus4').focus();
+  });
+  $(".opn_sche").click(function(){
+    $(".pop_2").fadeIn();
+    $(".sche_bx").show( 300);
+    $('#InputToFocus8').focus();
+  });
+  $(".opn_dtls").click(function(){
+    $(".pop_2").fadeIn();
+    $(".dtls_bx").show( 300);
+    $('#InputToFocus9').focus();
+  });
+  $(".opn_rjct").click(function(){
+    $(".pop_2").fadeIn();
+    $(".rjct_bx").show( 300);
+    $('#InputToFocus5').focus();
+  });
+  $(".opn_clsreq").click(function(){
+    $(".pop_2").fadeIn();
+    $(".clsreq_bx").show( 300);
+    $('#InputToFocus6').focus();
+  });
+  $(".opn_realc").click(function(){
+    $(".pop_2").fadeIn();
+    $(".realc").show( 300);
+    $('#InputToFocus7').focus();
+  });
+
+  $(".opn_cnfmzaq").click(function(){
+    $(".pop_2_3").fadeIn();
+    $(".cnfm_bxzaq").show( 300);
+    $('#InputToFocus1').focus();
+  });
+
+  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1, .pop_2_3").click(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+  });
+  $(".dropdown-toggle, .act_btn, .paginate_button, .sel_tm11, .sub3").focus(function(){
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+  });
+
+  $(".sel_ar").click(function(){
+    $(".op_al").show();
+    $(".op_ra").hide();
+  });
+});
+</script>
+<script>
+  $(document).on('keydown', function(e) { 
+  var keyCode = e.keyCode || e.which; 
+
+  if (keyCode == 27) { 
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+    document.getElementById("#InputToFocus1").hide();
+  } 
+});
+</script>
+<script type="text/javascript">
+  $(document).keyup(function(e) {
+    if (e.which == 27) {
+        $(".overlayInner").fadeOut(300); 
+    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
+    }
+});
+</script>
+
+<script type="text/javascript">
+  $('#mnpower').on('shown.bs.modal', function () {
+    $('#tez1').focus();
+}) 
 </script>
 
 </body>
