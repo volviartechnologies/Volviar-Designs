@@ -108,8 +108,8 @@ function closeNav5() {
   <div class="save_sec">
     <button type="submit" class="btn sub1 bt_b">Save</button>
     <button type="submit" class="btn sub3 bt_b">Save & Close</button>
-    <button type="submit" class="btn sub4 bt_b">Cancel</button>
     <button type="submit" class="btn sub2 bt_b">Clear</button>
+    <button type="submit" class="btn sub4 bt_b">Cancel</button>
   </div>
   <div class="edit_sec">
     <button type="submit" class="btn sub1 bt_b">Update</button>
@@ -949,297 +949,292 @@ function closeNav5() {
     <ol class="breadcrumb">
       <li><a href="#">Home</a></li>
       <li><a href="#">HCM</a></li>
-      <li><a href="employee_transfer.html">Employee Transfer</a></li>
-      <li class="active">Individual Transfer</li>
+      <li class="active">Employee Transfer (Group)</li>
     </ol>
 <!---breadcrumb_section_started----> 
 
-  <div class="content_sec2 cont_contr">
-    <div class="content_area_container cont_contr">
-      
-      <div class="content_box1 cont_contr">
-        <h2>Individual Transfer</h2>
-        <div class="pop_2" style="display: none;" ></div>
+    <div class="content_sec2 cont_contr">
+      <div class="content_area_container cont_contr"> 
+        <div class="content_box1 cont_contr">
+<!---frame_border_area_opened---->
 
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Employee:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst wid_90pzza" autofocus="">
-            <option>Employee 1</option>
-            <option>Employee 2</option>
-            <option>Employee 3</option>
-          </select>
-          <span class="dropdown dd_lft0 ">
-          <button class="dropdown-toggle opn_dtls viw_emplydt"><i class="fa fa-address-card"></i></button>
-            <div class="dropdown-menu drop_dnm dtls_bx bx_dtlet et_empy_dtl">
-              <div class="modal-header">
-                <h5>Employee Details</h5>
-                <button type="button" class="close cls_pop" title="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="head_txt">
-                <div class="fg12">
-                  <div class="fg12 empl_pop_dtl">
-                    <h3>Employee Name 1</h3>
-                    <span>EMP0001</span>
+<!---inner_content_sections area_started-->
+          <h1 class="h1_con">
+            <span class="flt_l"> Employee Transfer</span> <span class="sub_mnhd">  (GROUP)</span> 
+          </h1>
+
+          <div class="pop_2" style="display: none;" ></div>
+
+         
+<!---=================section_devider============-->
+      <div class="clearfix"></div>
+      <div class="free_sp2"></div>
+      <div class="devider"></div>
+<!---=================section_devider============-->
+          <div class="r_1024">
+            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
+            <thead class="thead1">
+              <tr>
+                <th class="th_b8 tr_l"> Department
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
+                </th>
+                <th class="th_b6 tr_l"> PayGrade
+                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Paygrade">
+                </th>
+                <th class="th_b4 tr_c"> Employee Count
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Employee Count">
+                </th>
+                <th class="th_b7 tr_c"> From Date
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="From Date">
+                </th>
+                <th class="th_b7 tr_c"> To Date
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="To Date">
+                </th>
+                <th class="th_b7 tr_c"> Method
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Method">
+                </th>
+                <th class="th_b7 tr_c"> Type
+                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Type">
+                </th>
+                <th class="th_b8">Actions</th>
+              </tr>
+             
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tr_l">Department 1</td>
+                <td class="tr_l">40</td>
+                <td class="tr_c">11</td>
+                <td>03/09/2019</td>
+                <td>10/09/2019</td>
+                <td>Method 1</td>
+                <td>Type 1</td>
+                <td>
+                  <div class="btn_stl1">
+                    <button class="btn act_btn bn1" data-toggle="modal" data-target="#exampleModal" title="Edit">
+                      <i class="fa fa-edit"></i>
+                    </button>
+                    <button class="btn act_btn bn4" data-toggle="modal" data-target="#exampleModal" title="View">
+                      <i class="fa fa-list-alt"></i>
+                    </button>
+                    <span class="dropdown dd_lft0">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_cnfm" title="Confirm">
+                      <i class="fa fa-check"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm cnfm_bx">
+                        <div class="modal-header">
+                          <h5>Confirm</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">Are you sure to confirm this entry?</div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success foc2 cls_cnfm" id="InputToFocus1" autofocus="on">Yes</button>
+                          <button class="btn btn-danger cls_cnfm">No</button>
+                        </div>
+                      </div>
+                    </span>
+                    <span class="dropdown dd_lft0 ">
+                      <button class="dropdown-toggle btn act_btn bn2 opn_dlt" title="Renew">
+                      <i class="fa fa-repeat"></i>
+                      </button>
+                      <div class="dropdown-menu drop_dnm repn dlt_bx rnew_bxs">
+                        <div class="modal-header">
+                          <h5>Renew</h5>
+                          <button type="button" class="close cls_pop" title="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="head_txt">
+                          <div class="fg6">
+                            <label for="pwd" class="fg2_la1">From:<span class="spn1"></span> </label>
+                            <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                              <input class="form-control inp_bdr" type="text" id="dte_1_a">
+                              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                            </div>
+                          </div>
+                          <div class="fg6">
+                            <label for="pwd" class="fg2_la1">To:<span class="spn1"></span> </label>
+                            <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+                              <input class="form-control inp_bdr" type="text" id="dte_1_a">
+                              <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button class="btn btn-success cls_dlt" id="InputToFocus2" autofocus="">Renew</button>
+                          <button class="btn btn-danger cls_dlt">Cancel</button>
+                        </div>
+                      </div>
+                    </span>
                   </div>
-                  <div class="devider"></div>
-                  <div class="fg5">
-                    <div class="user_im_1">
-                      <img src="../images/hcm/user.jpg">
-                    </div>
-                  </div>
-                  <div class="fg_3_1 empl_pop_dtl wid_76_pz">
-                    <ul class="join_leav emp_dtl_bdr">
-                      <li><span class="spn_zp1">Business Unit:</span> <span class="spn_sep">Business Unit 2</span></li>
-                      <li><span class="spn_zp1">Department:</span> <span class="spn_sep">Department 2</span></li>
-                      <li><span class="spn_zp1">Division:</span> <span class="spn_sep">Division 2</span></li>
-                      <li class="bg_grn box_fr_staff" style="display: none;"><span class="spn_zp1">Designation:</span> <span class="spn_sep">Designation 1</span></li>
-                      <li class="bg_grn box_wrkr"><span class="spn_zp1">Reporting Officer:</span> <span class="spn_sep">Reporting Officer 1</span></li>
-                      <li class="bg_grn box_wrkr"><span class="spn_zp1">Sponsor:</span> <span class="spn_sep">Sponsor 1</span></li>
-                      <li class="bg_grn box_wrkr"><span class="spn_zp1">Project:</span> <span class="spn_sep">Project 1</span></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-              <div class="modal-footer">
-                <button class="btn btn-danger cls_aprvl" id="InputToFocus9">Cancel</button>
-              </div>
-            </div>
-          </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Transfer Method:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Permanent</option>
-            <option>Temporary</option>
-          </select> 
-        </div>
 
-        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Based On:<span class="spn1">*</span></label> 
-          <select type="text" class="form-control fg2_inp1 inp_mst wid_90pzza">
-            <option>Direct Transfer</option>
-            <option>Manpower Requirement</option>
-          </select>
-          <button class="viw_emplydt1" data-toggle="modal" data-target="#mnpower" disabled=""><i class="fa fa-list-alt"></i></button> 
-        </div>
+<!---inner_content_sections area_closed--->
 
-       
+<!---frame_border_area_closed---->
+        </div>
       </div>
     </div>
-    </div>
   </div>
-</div><!--content_container_closed------>
+<!----------------------------------------------Content_section_opened------------------------------------------------------------->
 
-<a href="#" onmouseover="opensave()" type="button" class="save_b" title="Save">
-<i class="fa fa-save"></i>
-</a>
+<!-------------------footer_section_opened------------------------------------->
+  <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
+    <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico.png"></i> Procurement Management</p>
+    <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
+    <p class="pull-right tr_c foot_l ">Designed by <span>Volviar</span> Technologies</p>
+  </div>
+<!-------------------footer_section_closed------------------------------------->
 
-<a href="employee_transfer.html" type="button" class="list_b" title="Back to List">
-<i class="fa fa-arrow-circle-left"></i>
+</div><!--wrapper_closed-->
+
+
+<!---print_button--->
+<a href="#" type="button" class="print_o" title="Print page">
+  <i class="fa fa-print"></i>
 </a>
+<!---print_button_closed--->
+
+
+<div class="import_opt">
+  <button class="csv_b"><i class="fa fa-file-excel-o" aria-hidden="true"></i>CSV</button> 
+  <button class="pdf_b"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
+</div>
+<!---import_button_section_closed--->
+
+
+<!---alert_message_section---->
+<div class="myAlert-top alert alert-success">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Success!</strong> Changes completed succesfully is simply dummy text of the printing and typesetting industry.
+</div>
+
+<div class="myAlert-bottom alert alert-danger">
+  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  <strong>Danger!</strong> Request not conmpleted is simply dummy text of the printing and typesetting industry.
+</div>
+<!----alert_message_section_closed---->
+
+<!---add_button--->
+<a href="add_emply_bulk.html" type="button" onclick="topFunction()" id="myBtn" title="Add New">
+<i class="fa fa-plus-circle"></i>
+</a>
+<!---add_button_closed--->
 
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
-  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico1.png"></i> Human Capital Management</p>
+  <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico4.png"></i> Humen Capital Management</p>
   <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
   <p class="pull-right tr_c foot_l ">
     Designed by <span>Volviar</span> Technologies
   </p>
 </div>
 
-</div><!--wrapper_closed-->
+<!----------------------------------------------Content_section_closed------------------------------------------------------------>
 
-<!----------------------------------------------Content_section_closed------------------------------------------------------------->
+ <button class="fix_user_sngl" title="Single Transfer" onclick="location.href='employee_transfer.html';"><i class="fa fa-user"></i></button><!-- 
+<button class="fix_user_blk" title="Employee Transfer (Group)" onclick="location.href='employee_transfer_group.html';"><i class="fa fa-users"></i></button>  -->
+
+<button class="btn_fltr" title="Show Filter"><i class="fa fa-chevron-left rgt_arwz"></i> <i class="fa fa-sliders"></i></button>
+<div class="filtr_sec fltr_plcy mr_400">
+  <div class="filtr_sec_cnt cntnt_bx1 png_tp3 bdr_to_blu">
+    <button class="fltr_cls"> <i class="fa fa-sliders"></i> <i class="fa fa-chevron-right lft_arw"></i></button>
+    <div class="box_cnt_zz">
+      <div class="clearfix"></div>
+      
+      <div class="fltr_bxv">
+        <!-- <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+          <label for="email" class="fg2_la1 trfr_lbl lbl_clr1">Transfer Mode:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton1 viw_b1 tb_buton_sel trfr_btn" autofocus="" id="Inpz1"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/sb1.png"></i> <span class="sp_plcy sp_laz">Single</span></button>
+          <button class="tb_btz tb_buton2 viw_b1_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/sb2.png"></i> <span class="sp_plcy sp_laz">Bulk</span></button>
+        </div> -->
+        
+        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+          <label for="email" class="fg2_la1 trfr_lbl lbl_clr2">Transfer Location:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton2 viw_b2_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/ib2.png"></i> <span class="sp_plcy sp_laz">Business Unit</span></button>
+          <button class="tb_btz tb_buton1 viw_b2 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/ib1.png"></i> <span class="sp_plcy sp_laz">Inter Office</span></button>
+        </div>
+        
+        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+          <label for="email" class="fg2_la1 trfr_lbl lbl_clr3">Transfer Based On:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton2 viw_b3_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/mn2.png"></i> <span class="sp_plcy sp_laz">Normal</span></button>
+          <button class="tb_btz tb_buton1 viw_b3 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/mn.png"></i> <span class="sp_plcy sp_laz">Manpower Request</span></button>
+        </div>
+        
+        <div class="form-group fg12 sa_640 dt_bsd1 gur_opt mar_tp0 mr_tp_trsfr20">
+          <label for="email" class="fg2_la1 trfr_lbl lbl_clr4">Transfer Type:<span class="spn1"></span></label>
+          <button class="tb_btz tb_buton2 viw_b4_a trfr_btn"><i class="awd1 icon_plcy icn_va"><img src="../images/hcm/tp2.png"></i> <span class="sp_plcy sp_laz">Permanent</span></button>
+          <button class="tb_btz tb_buton1 viw_b4 tb_buton_sel trfr_btn"><i class="bid1 icon_plcy icn_va"><img src="../images/hcm/tp1.png"></i> <span class="sp_plcy sp_laz">Temporary</span></button>
+        </div>
+      </div>
+
+    </div>
+    <div class="box_cnt_zz">
+      <button class="btn_serbox bt_za1"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i> Search</button>
+    </div>
+    <button class="fix_flt_ser" title="Search"><i class="fa fa-search on_show" ></i> <i class="fa fa-spinner fa-spin on_hide" style="display: none;"></i></button>
+  </div>
+</div>
+
 <!-- Modal -->
-<div class="modal fade" id="mnpower" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog dlx_bx_mnpowr" role="document">
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Search Manpower Requirement</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Renew</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><!-- 
+        <div class="fg6">
+          <label for="pwd" class="fg2_la1">To:<span class="spn1"></span> </label>
+          <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr" type="text" id="dte_1_a">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div>
+
+        <div class="fg6">
+          <label for="pwd" class="fg2_la1">To:<span class="spn1"></span> </label>
+          <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
+            <input class="form-control inp_bdr" type="text" id="dte_1_a">
+            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
+          </div>
+        </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal1">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure delete?</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <div class="pop_2_3" style="display: none;"></div>
-        <div class="fg_3_1">
-          <div class="form-group fg4">
-            <label for="email" class="fg2_la1">Division<span class="spn1"></span>:</label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" id="tez1" autofocus="">
-              <option>Division 1</option>
-              <option>Division 2</option>
-              <option>Division 3</option>
-            </select> 
-          </div>
-          <div class="form-group fg4">
-            <label for="email" class="fg2_la1">Department<span class="spn1"></span>:</label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-              <option>Department 1</option>
-              <option>Department 2</option>
-              <option>Department 3</option>
-            </select> 
-          </div>
-          <div class="form-group fg4">
-            <label for="email" class="fg2_la1">Designation<span class="spn1"></span>:</label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_wid_f" autofocus="">
-              <option>Designation 1</option>
-              <option>Designation 2</option>
-              <option>Designation 3</option>
-            </select> 
-          </div>
-          <div class="form-group fg4">
-            <label for="email" class="fg2_la1">Project:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-              <option>Project 1</option>
-              <option>Project 2</option>
-              <option>Project 3</option>
-            </select> 
-          </div>
-          <div class="form-group fg4">
-            <label for="email" class="fg2_la1">Role:<span class="spn1"></span></label>
-            <select class="form-control fg2_inp1 fg_chs2 fg_wid_f">
-              <option>Role 1</option>
-              <option>Role 2</option>
-              <option>Role 3</option>
-            </select> 
-          </div>
-        </div>
-        <div class="fg4">
-          <div class="fg12 tr_c">
-            <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
-            <button class="submit_ser"></button>
-            <!-- <button class="btn tab_but1 butn5"><i class="fa fa-search"></i> Search</button>   -->
-          </div>
-        </div>
-        <div class="clearfix"></div>
-         <div class="r_1024">
-            <table id="" class="display table-bordered" cellspacing="0" width="100%">
-            <thead class="thead1">
-              <tr>
-                <th class="th_b5_2"></th>
-                <th class="th_b4 tr_l">Division
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Division">
-                </th>
-                <th class="th_b4 tr_l">Department
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
-                </th>
-                <th class="th_b4 tr_l">Project
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Project">
-                </th>
-                <th class="th_b4 tr_l">Designation
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
-                </th>
-                <th class="th_b6 tr_c">Requsted Date
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Requsted Date">
-                </th>
-                <th class="th_b7 tr_c">Resources#</th>
-                <th class="th_b7 tr_c">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="button-checkbox flt_n mr_r0">
-                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                    <input type="checkbox" class="hidden" />
-                  </span>
-                </td>
-                <td class="tr_l">Division 2</td>
-                <td class="tr_l">Department 1</td>
-                <td class="tr_l">Project 1</td>
-                <td class="tr_l">Designation 2</td>
-                <td class="tr_c">10/03/2021</td>
-                <td class="tr_c">100</td>
-                <td class="tr_c">
-                  <button class="btn act_btn bn2" data-toggle="modal" data-target="#exampleModal" title="Select">
-                    <i class="fa fa-archive"></i>
-                  </button>
-                </td>
-              </tr><!-- 
-              <tr>
-                <td class="tr_l">ref00001</td>
-                <td class="tr_l">Division 2</td>
-                <td class="tr_l">Department 1</td>
-                <td class="tr_l">Project 1</td>
-                <td class="tr_l">Designation 2</td>
-                <td class="tr_l">Employee 1</td>
-                <td class="tr_c">100</td>
-                <td>
-                  <span class="button-checkbox flt_n mr_r0">
-                    <button type="button" class="btn-d" data-color="p" onclick="myFunct()" ng-model="all"></button>
-                    <input type="checkbox" class="hidden" />
-                  </span>
-                </td>
-              </tr> -->
-            </tbody>
-          </table>
-        </div>
-        <!-- <div class="clearfix"></div>
-        <div class="free_sp2"></div>
-
-        <div class="form-group fg5 sa_fg4 sa_640_i1 sa_480">
-          <label for="pwd" class="fg2_la1">From Date:<span class="spn1">*</span> </label>
-          <div id="datepicker" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr inp_mst" type="text">
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-
-        <div class="form-group fg5 to_dte sa_fg4 sa_640_i1 sa_480">
-          <label for="pwd" class="fg2_la1">To Date:<span class="spn1">*</span> </label>
-          <div id="datepicker1" class="input-group date dt_wdt" data-date-format="mm-dd-yyyy">
-            <input class="form-control inp_bdr inp_mst" type="text">
-            <span class="input-group-addon date1"><i class="fa fa-calendar"></i></span>
-          </div>
-        </div>
-
-        <div class="form-group fg5 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Reporting Officer:<span class="spn1">*</span></label>
-          <select type="text" class="form-control fg2_inp1 inp_mst">
-            <option>Reporting Officer 1</option>
-            <option>Reporting Officer 2</option>
-            <option>Reporting Officer 3</option>
-          </select> 
-        </div>
-
-        <div class="form-group fg5 sa_fg4 sa_640_i1 sa_480">
-          <label for="email" class="fg2_la1">Sponsor:<span class="spn1"></span></label>
-          <select type="text" class="form-control fg2_inp1">
-            <option>Sponsor 1</option>
-            <option>Sponsor 2</option>
-            <option>Sponsor 3</option>
-          </select> 
-        </div>
-        <div class="form-group fg5 sa_2 sa_480">
-          <label for="email" class="fg2_la1 pad_l">New Employee ID:<span class="spn1">*</span></label>
-          <div class="check1">
-            <div class="">
-              <label class="switch">
-                <input type="checkbox" checked="" >
-                <span class="slider_tog round"></span>
-              </label>
-            </div>
-          </div>
-        </div> -->
-
+       ...
       </div>
-      <div class="modal-footer">
-        <div class="pull-right">
-          <div class="save_sec">
-            <button type="submit" class="btn sub1">Select</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-
-          <div class="edit_sec">
-            <button type="submit" class="btn sub1">Update</button>
-            <button type="submit" class="btn sub3">Update & Close</button>
-            <button type="submit" class="btn sub2">Confirm</button>
-            <button type="submit" class="btn sub4">Cancel</button>
-          </div>
-        </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">Yes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
         
       </div>
     </div>
@@ -1247,7 +1242,57 @@ function closeNav5() {
 </div>
 
 
+<!-- Modal1 -->
+<div class="modal fade" id="exampleModal1">
+  <div class="modal-dialog mod1" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Reason for delete</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="al-box war">Warning Alert !!!</div>
+        <textarea placeholder="Write reason for delete" row="6" class="text_ar1"></textarea>
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn btn-primary" id="war-btn">Proceed</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2 -->
+<div class="modal fade mod2_c" id="exampleModal2">
+  <div class="modal-dialog mod2" role="document">
+    <div class="modal-content mod2_con">
+      <div class="modal-header mbo_btm">
+        <h5 class="modal-title mod2_tit" id="exampleModalLabel"><i class="fa fa-sitemap"></i> Select Business Unit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <button class="btn bu_btn bu_at"><i class="fa fa-building"></i> Albalagh Trading Company - Qatar</button>
+        <button class="btn bu_btn"><i class="fa fa-building"></i> Albalagh Trading Company - Dubai</button>
+        <button class="btn bu_btn"><i class="fa fa-building"></i> Albalagh Trading Company - Saudi Arabia</button>
+        <button class="btn bu_btn"><i class="fa fa-building"></i> Albalagh Trading Company - Oman</button>
+      </div>
+      <div class="modal-footer mbo_tp">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button><!-- 
+        <button type="button" class="btn btn-primary">Proceed</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div><!--wrapper_closed-->
+
+
 <!--------script section_started---------->
+
 
 <!-----table_search------------>
 <script>
@@ -1261,6 +1306,7 @@ $(document).ready(function(){
 });
 </script>
 <!-----table_search_closed------------>
+
 
 <script>
 function openNav() {
@@ -1286,6 +1332,8 @@ function closeNav1() {
     document.getElementById("main").style.marginbottom= "0";
 }
 </script>
+
+
 
 <script>
 function openNav2() {
@@ -1321,7 +1369,8 @@ $(document).ready(function(){
 
 </script>
 
-<!--searchbox_list_script_opened------->
+<!--searchbox_list_script_opened------>
+
 
 <script>
 function myFunction() {
@@ -1341,94 +1390,46 @@ function myFunction() {
 }
 </script>
 
-<!----checkbox_started--->
-<script type="text/javascript">
-$(function () {
-    $('.button-checkbox').each(function () {
-
-        // Settings
-        var $widget = $(this),
-            $button = $widget.find('button'),
-            $checkbox = $widget.find('input:checkbox'),
-            color = $button.data('color'),
-            settings = {
-                on: {
-                    icon: 'fa fa-check-square-o'
-                },
-                off: {
-                    icon: 'fa fa-square-o gly2'
-                }
-            };
-
-        // Event Handlers
-        $button.on('click', function () {
-            $checkbox.prop('checked', !$checkbox.is(':checked'));
-            $checkbox.triggerHandler('change');
-            updateDisplay();
-        });
-        $checkbox.on('change', function () {
-            updateDisplay();
-        });
-
-        // Actions
-        function updateDisplay() {
-            var isChecked = $checkbox.is(':checked');
-
-            // Set the button's state
-            $button.data('state', (isChecked) ? "on" : "off");
-
-            // Set the button's icon
-            $button.find('.state-icon')
-                .removeClass()
-                .addClass('state-icon ' + settings[$button.data('state')].icon);
-
-            // Update the button's color
-            if (isChecked) {
-                $button
-                    .removeClass('btn-d')
-                    .addClass('btn-' + color + ' active');
-            }
-            else {
-                $button
-                    .removeClass('btn-' + color)
-                    .addClass('btn-d' + ' active');
-            }
-        }
-
-        // Initialization
-        function init() {
-
-            updateDisplay();
-
-            // Inject the icon if applicable
-            if ($button.find('.state-icon').length == 0) {
-                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
-            }
-        }
-        init();
-    });
-});
-
-</script>
-<!--checkbox_closed-->
 
 <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tab2content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+function myFunction_a() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput_1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable_1");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+</script>
+<script>
+function myFunction_b() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput_2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable_1");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
 </script>
 
 
@@ -1478,183 +1479,169 @@ document.getElementById("defaultOpen").click();
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
 <script src="../date_pick/datepicker.js"></script>
 
-<!---date_picker_closed-->
-
-<!--------tooltips------------>
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-});
-</script>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip1"]').tooltip();   
-});
-</script>
-
-<!--add new div---->
-<script>
-$(document).ready(function(){
-  $("#btx1").click(function(){
-    $("p").append(" <b>Appended text</b>.");
-  });
-});
-</script>
-
-<!--button_click_disable --->
-<script>
-function myFunct() {
-    document.getElementById("myinpb").disabled = false;
-    document.getElementById("myinpc").disabled = true;
-    document.getElementById("myinpc1").disabled = true;
-    document.getElementById("myinpc2").disabled = true;
-    document.getElementById("myinpc3").disabled = true;
-}
-</script>
-
-<script>
-function mysave() {
-  var x = document.getElementById("mysav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-
-<script>
-function issue_chk() {
-  var x = document.getElementById("is_chk");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-
-<!--save_pop up_open-->
-<script>
-function opensave() {
-    document.getElementById("mySave").style.width = "140px";
-}
-
-function closesave() {
-    document.getElementById("mySave").style.width = "0px";
-}
-</script>
-<!--save_pop up_closed-->
-
-<!----hide/Show_section---->
-<script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $(".c1h").hide();
-  });
-  $("#show").click(function(){
-    $(".c1h").show();
-  });
-});
-</script>
-
-<!----hide/Show_section2---->
-<script>
-$(document).ready(function(){
-  $("#hide").click(function(){
-    $(".c2h").hide();
-  });
-  $("#show1").click(function(){
-    $(".c2h").show();
-  });
-});
-</script>
-
-<!-----Enable_disable script--->
-<script>
-$(document).ready(function(){
-  $(".bu1").click(function(){
-    $("#mySe1").toggle();
-  });
-});
-</script>
-<script>
-$(document).ready(function(){
-  $(".bu").click(function(){
-    $("#mySe").toggle();
-  });
-});
-</script>
-<!-----Enable_disable script_closed--->
-
-<!------hide and visible div--->
-<script>
-function sel1() {
-  var x = document.getElementById('sel');
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
-}
-</script>
-<!------hide and visible div_closed--->
 
 
-<!-----table_sec_fixed--->
+
 <script type="text/javascript">
-  // requires jquery library
-jQuery(document).ready(function() {
-   jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');   
- });
+$(function () {
+    $('.button-checkbox').each(function () {
+
+        // Settings
+        var $widget = $(this),
+            $button = $widget.find('button'),
+            $checkbox = $widget.find('input:checkbox'),
+            color = $button.data('color'),
+            settings = {
+                on: {
+                    icon: 'fa fa-check-square-o'
+                },
+                off: {
+                    icon: 'fa fa-square-o gly2'
+                }
+            };
+
+        // Event Handlers
+        $button.on('click', function () {
+            $checkbox.prop('checked', !$checkbox.is(':checked'));
+            $checkbox.triggerHandler('change');
+            updateDisplay();
+        });
+        $checkbox.on('change', function () {
+            updateDisplay();
+        });
+
+        // Actions
+        function updateDisplay() {
+            var isChecked = $checkbox.is(':checked');
+
+            // Set the button's state
+            $button.data('state', (isChecked) ? "on" : "off");
+
+            // Set the button's icon
+            $button.find('.state-icon')
+                .removeClass()
+                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+            // Update the button's color
+            if (isChecked) {
+                $button
+                .removeClass('btn-d')
+                .addClass('btn-' + color + ' active');
+            }
+            else {
+                $button
+                .removeClass('btn-' + color)
+                .addClass('btn-d' + ' active');
+            }
+        }
+
+        // Initialization
+        function init() {
+
+            updateDisplay();
+
+            // Inject the icon if applicable
+            if ($button.find('.state-icon').length == 0) {
+                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i> ');
+            }
+        }
+        init();
+    });
+});
 
 </script>
+<!---------------Checkbox_section_closed------------------------->
 
-<!-----Related To Manpower Request: script_started--->
+
+<!----alert message_script---->
+<script type="text/javascript">
+  function myAlertTop(){
+  $(".myAlert-top").show(100);
+  setTimeout(function(){
+    $(".myAlert-top").hide(400); 
+  }, 1500);
+}
+
+function myAlertBottom(){
+  $(".myAlert-bottom").show(100);
+  setTimeout(function(){
+    $(".myAlert-bottom").hide(400); 
+  }, 1500);
+
+}
+</script>
+
+<script type="text/javascript">
+  $( "#war-btn" ).click(function() {
+  $( "div.war" ).fadeIn( 200 ).delay( 500 ).fadeOut( 400 );
+});
+</script>
+
+<!----alert_message_script_closed--->
+
+<!----==========Procurement_management_script_section_started=======--->
+
+
+<!-------------print_script_start--------------------->
 <script>
 $(document).ready(function(){
-  $(".cls_opn").click(function(){
-    $(".related").show(400);
-  });
-});
-$(document).ready(function(){
-  $(".cls_cls").click(function(){
-    $(".related").hide(200);
+  $(".imprt_o").click(function(){
+    $(".import_opt").toggle(300);
   });
 });
 </script>
-<!-----Related To Manpower Request: script_closed--->
+<script type="text/javascript">
+$(".wr2").click(function(){
+  $(".import_opt").hide(400);
+});
+</script>
 
-<!-----Transfer Type script_started--->
-<script>
-$(document).ready(function(){
-  $(".inr_tnfr").click(function(){
-    $(".rmr1").show(400);
-  });
-});
-$(document).ready(function(){
-  $(".bsn_tnfr").click(function(){
-    $(".rmr1").hide(200);
-  });
-});
-</script>
-<!-----Transfer Type script_closed--->
+<!-------------print_script_close-------------------->
 
-<!-----Temporary_permnt Type script_started--->
-<script>
-$(document).ready(function(){
-  $(".tem_tnsr").click(function(){
-    $(".to_dte").show(400);
-  });
-});
-$(document).ready(function(){
-  $(".per_tnsr").click(function(){
-    $(".to_dte").hide(200);
-  });
-});
+
+<!---data_table_css & scripts_started---->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#example').DataTable();
+} );
 </script>
-<!-----Temporary_permnt Type script_closed-->
+  <!-- <script type="text/javascript" src="../table/js1.js"></script>
+  <script type="text/javascript" src="../table/js2.js"></script> -->
+  <script type="text/javascript" src="../table/js3.js"></script>
+
+  <link rel="stylesheet" type="text/css" href=../table/table.css">
+
+
+  <!---data_table_script for search--->
+  <script type="text/javascript">
+    $(document).ready(function() {
+    // Setup - add a text input to each footer cell
+    $('#example tfoot th').each( function () {
+        var title = $(this).text();
+        $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+    } );
+ 
+    // DataTable
+    var table = $('#example').DataTable();
+ 
+    // Apply the search
+    table.columns().every( function () {
+        var that = this;
+ 
+        $( 'input', this.footer() ).on( 'keyup change', function () {
+            if ( that.search() !== this.value ) {
+                that
+                    .search( this.value )
+                    .draw();
+            }
+        } );
+    } );
+} );
+  </script>
+
+  <!---Data_table_script for search_closed-->
+
+
 <script>
 $(document).ready(function(){
   $(".opn_sts").click(function(){
@@ -1745,13 +1732,14 @@ $(document).ready(function(){
   });
 });
 </script>
-<script>
+<!-- <script>
   $(document).on('keydown', function(e) { 
   var keyCode = e.keyCode || e.which; 
 
   if (keyCode == 27) { 
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
     document.getElementById("#InputToFocus1").hide();
+    $('.filtr_sec').removeClass("mr_400");
   } 
 });
 </script>
@@ -1762,7 +1750,7 @@ $(document).ready(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
     }
 });
-</script>
+</script> -->
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -1796,32 +1784,30 @@ $(document).ready(function(){
   $(".viw_b1").click(function(){
     $(".viw_b1").addClass("tb_buton_sel");
     $(".viw_b1_a").removeClass("tb_buton_sel");
-    $(".rmr1").fadeIn(100);
+    $(".idivdl").show();
+    $(".idivdl1").hide();
   });
   $(".viw_b1_a").click(function(){
     $(".viw_b1_a").addClass("tb_buton_sel");
     $(".viw_b1").removeClass("tb_buton_sel");
-    $(".rmr1").hide();
+    $(".idivdl1").show();
+    $(".idivdl").hide();
   });
   $(".viw_b2").click(function(){
     $(".viw_b2").addClass("tb_buton_sel");
     $(".viw_b2_a").removeClass("tb_buton_sel");
-    $(".to_dte").fadeIn(100);
   });
   $(".viw_b2_a").click(function(){
     $(".viw_b2_a").addClass("tb_buton_sel");
     $(".viw_b2").removeClass("tb_buton_sel");
-    $(".to_dte").hide();
   });
   $(".viw_b3").click(function(){
     $(".viw_b3").addClass("tb_buton_sel");
     $(".viw_b3_a").removeClass("tb_buton_sel");
-    $(".related").hide();
   });
   $(".viw_b3_a").click(function(){
     $(".viw_b3_a").addClass("tb_buton_sel");
     $(".viw_b3").removeClass("tb_buton_sel");
-    $(".related").fadeIn(100);
   });
   $(".viw_b4").click(function(){
     $(".viw_b4").addClass("tb_buton_sel");
@@ -1834,6 +1820,7 @@ $(document).ready(function(){
 
 });
 </script>
+
 <script>
   $( document ).on( 'click', function ( e ) {
     if ( $( e.target ).closest( elem ).length === 0 ) {
@@ -1847,111 +1834,6 @@ $( document ).on( 'keydown', function ( e ) {
   $('.on_hide').show();
   $('.filtr_sec').removeClass("mr_400");
     }
-});
-</script>
-
-<script>
-$(document).ready(function(){
-  $(".opn_sls").click(function(){
-    $(".pop_2").fadeIn();
-    $(".sls_bx").show( 300);
-    $('#InputToFocus').focus();
-  });
-  $(".opn_cnfm").click(function(){
-    $(".pop_2").fadeIn();
-    $(".cnfm_bx").show( 300);
-    $('#InputToFocus1').focus();
-  });
-  $(".opn_dlt").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dlt_bx").show( 300);
-    $('#InputToFocus2').focus();
-  });
-  $(".opn_ropn").click(function(){
-    $(".pop_2").fadeIn();
-    $(".ropn_bx").show( 300);
-    $('#InputToFocus3').focus();
-  });
-  $(".opn_aprvl").click(function(){
-    $(".pop_2").fadeIn();
-    $(".aprvl_bx").show( 300);
-    $('#InputToFocus4').focus();
-  });
-  $(".opn_sche").click(function(){
-    $(".pop_2").fadeIn();
-    $(".sche_bx").show( 300);
-    $('#InputToFocus8').focus();
-  });
-  $(".opn_dtls").click(function(){
-    $(".pop_2").fadeIn();
-    $(".dtls_bx").show( 300);
-    $('#InputToFocus9').focus();
-  });
-  $(".opn_rjct").click(function(){
-    $(".pop_2").fadeIn();
-    $(".rjct_bx").show( 300);
-    $('#InputToFocus5').focus();
-  });
-  $(".opn_clsreq").click(function(){
-    $(".pop_2").fadeIn();
-    $(".clsreq_bx").show( 300);
-    $('#InputToFocus6').focus();
-  });
-  $(".opn_realc").click(function(){
-    $(".pop_2").fadeIn();
-    $(".realc").show( 300);
-    $('#InputToFocus7').focus();
-  });
-
-  $(".opn_cnfmzaq").click(function(){
-    $(".pop_2_3").fadeIn();
-    $(".cnfm_bxzaq").show( 300);
-    $('#InputToFocus1').focus();
-  });
-
-  $(".pop_2, .btn-danger, .cls_pop, .pop_2_1, .pop_2_3").click(function(){
-    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
-  });
-  $(".dropdown-toggle, .act_btn, .paginate_button, .sel_tm11, .sub3").focus(function(){
-    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
-  });
-
-  $(".sel_ar").click(function(){
-    $(".op_al").show();
-    $(".op_ra").hide();
-  });
-});
-</script>
-<script>
-  $(document).on('keydown', function(e) { 
-  var keyCode = e.keyCode || e.which; 
-
-  if (keyCode == 27) { 
-    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
-    document.getElementById("#InputToFocus1").hide();
-  } 
-});
-</script>
-<script type="text/javascript">
-  $(document).keyup(function(e) {
-    if (e.which == 27) {
-        $(".overlayInner").fadeOut(300); 
-    $(".drop_dnm, .pop_2, .pop_2_1, .pop_2_3").fadeOut();
-    }
-});
-</script>
-
-<script type="text/javascript">
-  $('#mnpower').on('shown.bs.modal', function () {
-    $('#tez1').focus();
-}) 
-</script>
-
-<script>
-$(document).ready(function(){
-  $(".wid_90pzza").click(function(){
-    $(".viw_emplydt1").prop('disabled', false);
-  });
 });
 </script>
 
