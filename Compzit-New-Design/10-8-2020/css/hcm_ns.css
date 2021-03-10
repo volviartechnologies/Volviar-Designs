@@ -2738,7 +2738,11 @@ span.box_ae{padding-right: 6px;}
 .md_premis1 .modal-body{}
 .viw_emplydt1:disabled{background-color: #ccc;color: #000;cursor: not-allowed;}
 .nt_alw{visibility: hidden;}
-
+.dt_wdt95{width: 95%!important;}
+.emly_id{width: auto;margin:auto;float: left;margin-left: 40px;font-weight: 600;color: #48abf1;}
+.ui-autocomplete{z-index:9999111!important;}
+.fltr_plcy{z-index: 9999!important;}
+.cnfrm_zaq:before{right: 150px;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
