@@ -1029,52 +1029,39 @@ function closeNav5() {
           </select>
           <button class="viw_emplydt1" data-toggle="modal" data-target="#mnpower" disabled=""><i class="fa fa-list-alt"></i></button> 
         </div>
-        <div class="trfr_dtl1" style="display: none;">
-          <div class="clearfix"></div>
-          <div class="free_sp2"></div>
-          <div class="devider"></div>
 
-          <div class="r_1024">
-            <table id="example" class="display table-bordered tbl_640" cellspacing="0" width="100%">
-            <thead class="thead1">
-              <tr>
-                <th class="th_b8 tr_l"> Division
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Division">
-                </th>
-                <th class="th_b8 tr_l"> Department
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Department">
-                </th>
-                <th class="th_b8 tr_l"> Designation
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Designation">
-                </th>
-                <th class="th_b6 tr_l"> Project
-                  <input type="text" class="tb_inp_1 tb_in tr_l" placeholder="Project">
-                </th>
-                <th class="th_b7 tr_c"> Requested Date
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Requested Date">
-                </th>
-                <th class="th_b7 tr_c"> Target Date
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Target Date">
-                </th>
-                <th class="th_b6 tr_c"> Required Resources#
-                  <input type="text" class="tb_inp_1 tb_in tr_c" placeholder="Required Resources#">
-                </th>
-              </tr>
-             
-            </thead>
-            <tbody>
-              <tr>
-                <td class="tr_l">Division 2</td>
-                <td class="tr_l">Department 2</td>
-                <td class="tr_l">Designation 2</td>
-                <td class="tr_l">Project 2</td>
-                <td class="">10/03/2021</td>
-                <td class="">10/03/2021</td>
-                <td class="">100</td>
-              </tr>
-            </tbody>
-            </table>
+        <div class="trfr_dtl1" style="display: none;">
+          <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
+            <label for="email" class="fg2_la1">Requirement Ref#:<span class="spn1"></span></label> 
+            <input type="text" class="form-control fg2_inp1 inp_mst wid_90pzza" placeholder="Requirement Ref#" disabled="">
+            <span class="dropdown dd_lft0">
+              <button class="dropdown-toggle viw_empref opn_empdtl" title="View Manpower Requirement"><i class="fa fa-id-card-o"></i></button>
+              <div class="dropdown-menu drop_dnm empdtl_bx ">
+                <div class="modal-header">
+                  <h5>Manpower Requirement</h5>
+                  <button type="button" class="close cls_pop" title="Close">
+                    <span aria-hidden="true">×</span>
+                  </button>
+                </div>
+                <div class="head_txt">
+                  <ul class="join_leav emp_dtl_bdr">
+                    <li class="bg_red elg_2"><span class="spn_zp1">Division:</span> <span class="frz_ll">Division 1</span></li>
+                    <li class="bg_red"><span class="spn_zp1">Department:</span> <span class="frz_ll">Department 1</span></li>
+                    <li class="bg_grn elg_2"><span class="spn_zp1">Designation:</span> <span class="frz_ll">Designation 1</span></li>
+                    <li class="bg_red elg_2"><span class="spn_zp1">Project:</span> <span class="frz_ll">Project 1</span></li>
+                    <li class="bg_grn elg_2"><span class="spn_zp1">Requested Date:</span> <span class="frz_ll">15/03/2021</span></li>
+                    <li class="bg_red elg_2"><span class="spn_zp1">Target Date:</span> <span class="frz_ll">15/03/2021</span></li>
+                    <li class="bg_red elg_2"><span class="spn_zp1">Required Resources#:</span> <span class="frz_ll">100</span></li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-danger cls_cnfm" id="inp_close">Close</button>
+                </div>
+              </div>
+            </span>
+            <button class="viw_empref bg_0_icon" title="Clear Manpower Requirement"><i class="fa fa-repeat"></i></button> 
           </div>
+        </div>
           <div class="clearfix"></div>
           <div class="free_sp2"></div>
           <div class="devider"></div>
@@ -1876,10 +1863,15 @@ $(document).ready(function(){
     $(".renew_bx").show( 300);
     $('#renew1').focus();
   });
+  $(".opn_empdtl").click(function(){
+    $(".pop_2").fadeIn();
+    $(".empdtl_bx").show( 300);
+    $('#inp_close').focus();
+  });
   $(".pop_2, .btn-danger, .cls_pop, .pop_2_1").click(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
   });
-  $(".dropdown-toggle, .act_btn, .paginate_button, .sub4").focus(function(){
+  $(".dropdown-toggle, .act_btn, .paginate_button, .sub4, .bg_0_icon").focus(function(){
     $(".drop_dnm, .pop_2, .pop_2_1").fadeOut();
   });
 

@@ -2739,11 +2739,19 @@ span.box_ae{padding-right: 6px;}
 .viw_emplydt1:disabled{background-color: #ccc;color: #000;cursor: not-allowed;}
 .nt_alw{visibility: hidden;}
 .dt_wdt95{width: 95%!important;}
-.emly_id{width: auto;margin:auto;float: left;margin-left: 40px;font-weight: 600;color: #48abf1;}
+.emly_id{width: auto;margin:auto;float: left;margin-left: 40px;font-weight: 600;color: #48abf1;padding: 4px 20px;border: 1px solid #ccc;border-radius: 4px;}
 .ui-autocomplete{z-index:9999111!important;}
 .fltr_plcy{z-index: 9999!important;}
 .cnfrm_zaq:before{right: 150px;}
 .mr_icl{margin-left: 10px;}
+.viw_empref{font-size: 9px;margin: auto;margin-top: 0px;float: left;border:1px solid #8BC34A;background-color: transparent;width: 100%;width: 10%;padding: 1.2px;border-radius: 0 4px 4px 0;
+            color: #8BC34A;border-left:0px;}
+.viw_empref:hover, .viw_empref:focus{color: #fff;background-color:#8BC34A;}
+.bg_0_icon{color:#f18200;border:1px solid #f18200;border-left:0px;}
+.bg_0_icon:hover, .bg_0_icon:focus{background-color:#f18200;color: #fff;}
+.empdtl_bx{top: -50px;bottom: auto; right: 27px;}
+.empdtl_bx:before{right: -10px;top: 54px;bottom: auto;}
+.empdtl_bx .head_txt{margin: auto;float: left;}
 /*.mrb10_pag{margin-top: 16px;}
 */
 @media only screen and (max-width:1100px){
