@@ -2772,7 +2772,7 @@ span.box_ae{padding-right: 6px;}
 .brdr_rds_40{border-radius: 4px 0px 0px 4px!important;}
 .wid_70wiz {width: 70%!important;}
 .mrg_20{margin-right: 20px;}
-.viw_empref:disabled{border:1px solid #ccc;cursor: not-allowed;}
+.viw_empref:disabled, .viw_empref:disabled:hover, .viw_empref:disabled:focus{border:1px solid #ccc;cursor: not-allowed;background-color: transparent;color: #ccc;}
 /*
 .wdt370{max-width: 370px;left: 0;}
 .wdt370:before{right: auto;}*/
