@@ -964,17 +964,21 @@ function closeNav5() {
         <h2>Group Transfer</h2>
         <div class="pop_2" style="display: none;" ></div>
 
-
         <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
           <label for="email" class="fg2_la1">Transfer Method:<span class="spn1">*</span></label> 
-          <select type="text" class="form-control fg2_inp1 inp_mst wid_90pzza wid_78wiz" autofocus="">
+          <select type="text" class="form-control fg2_inp1 inp_mst" autofocus="">
             <option>Permanent</option>
             <option>Temporary</option>
           </select>
-          <button class="viw_emplydt1 flt_l" data-toggle="modal" data-target="#mnpower" title="View Employees"><i class="fa fa-users"></i></button> 
-            <button class="viw_empref stl_dsp" data-toggle="modal" data-target="#mnpower_1 " title="View Selected Employees" style="display: none;"><i class="fa fa-id-card-o"></i></button>
-            <span class="dropdown dd_lft0 stl_dsp" style="display: none;">
-              <button class="dropdown-toggle viw_empref bg_0_icon opn_clear_1" title="Clear Selected Employees"><i class="fa fa-repeat"></i></button> 
+        </div>
+
+        <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
+          <label for="email" class="fg2_la1">Employee Selection:<span class="spn1">*</span></label> 
+          <button class="viw_emplydt1 flt_l brdr_rds_40" data-toggle="modal" data-target="#mnpower" title="View Employees"><i class="fa fa-users"></i></button> 
+          <input type="text" class="form-control fg2_inp1 inp_mst wid_90pzza wid_70wiz" autofocus="" placeholder="Employee Count#" disabled="">
+            <button class="viw_empref stl_dsp mrg_20 on_dis" data-toggle="modal" data-target="#mnpower_1 " title="View Selected Employees" disabled=""><i class="fa fa-id-card-o"></i></button>
+            <span class="dropdown dd_lft0 stl_dsp">
+              <button class="dropdown-toggle viw_empref bg_0_icon opn_clear_1 on_dis" title="Clear Selected Employees" disabled=""><i class="fa fa-repeat"></i></button> 
               <div class="dropdown-menu drop_dnm clear_1_bx ">
                 <div class="modal-header">
                   <h5>Clear</h5>
@@ -993,10 +997,10 @@ function closeNav5() {
             </span>
         </div>
 
-        <div class="trfr_dtl1" style="display: none;">
+        <div class="trfr_dtl1">
           <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
             <label for="email" class="fg2_la1">Based On:<span class="spn1">*</span></label> 
-            <select type="text" class="form-control fg2_inp1 inp_mst wid_90pzza_0">
+            <select type="text" class="form-control fg2_inp1 inp_mst wid_90pzza_0 wid_78wiz">
               <option>Direct Transfer</option>
               <option>Manpower Requirement</option>
             </select>
@@ -1004,13 +1008,13 @@ function closeNav5() {
           </div>
         </div>
 
-        <div class="trfr_dtl1_0" style="display: none;">
+        <div class="trfr_dtl1_0">
           <div class="form-group fg2 sa_fg4 sa_640_i1 sa_480">
             <label for="email" class="fg2_la1">Requirement Ref#:<span class="spn1"></span></label> 
             <input type="text" class="form-control fg2_inp1 inp_mst wid_90pzza" placeholder="Requirement Ref#" disabled="">
             <span class="dropdown dd_lft0">
-              <button class="dropdown-toggle viw_empref opn_empdtl" title="View Manpower Requirement"><i class="fa fa-id-card-o"></i></button>
-              <div class="dropdown-menu drop_dnm empdtl_bx wdt370">
+              <button class="dropdown-toggle viw_empref opn_empdtl on_dis1" title="View Manpower Requirement" disabled=""><i class="fa fa-id-card-o"></i></button>
+              <div class="dropdown-menu drop_dnm empdtl_bx">
                 <div class="modal-header">
                   <h5>Manpower Requirement</h5>
                   <button type="button" class="close cls_pop" title="Close">
@@ -1034,7 +1038,7 @@ function closeNav5() {
               </div>
             </span>
             <span class="dropdown dd_lft0">
-              <button class="dropdown-toggle viw_empref bg_0_icon opn_clear" title="Clear Manpower Requirement"><i class="fa fa-repeat"></i></button> 
+              <button class="dropdown-toggle viw_empref bg_0_icon opn_clear on_dis1" title="Clear Manpower Requirement" disabled=""><i class="fa fa-repeat"></i></button> 
               <div class="dropdown-menu drop_dnm clear_bx ">
                 <div class="modal-header">
                   <h5>Clear</h5>
@@ -2367,10 +2371,10 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $(".shw_trfr_dtl1").click(function(){
-    $(".trfr_dtl1, .stl_dsp").show();
+    $(".on_dis").prop('disabled', false);
   });
   $(".shw_trfr_dtl1_0").click(function(){
-    $(".trfr_dtl1_0").show();
+    $(".on_dis1").prop('disabled', false);
   });
 });
 </script>
