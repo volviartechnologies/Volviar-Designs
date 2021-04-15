@@ -3577,6 +3577,26 @@ body{position: fixed;left: 0;right: 0;}
 .pnt_mod{margin-right: 10px;font-size: 18px;height: auto;width: auto;}
 .tbl_purlr tbody tr:hover{box-shadow: none!important;cursor:default;}
 .tbl_purlr{padding-top: 0px;padding-right: 0px;border-right: 0px;}
+
+.cpy_frm_pv {
+    position: fixed;
+    top: 163px;
+    right: 150px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #ad71ec;
+    color: #d4d4d4;
+    cursor: pointer;
+    padding: 0px;
+    border-radius: 4px;
+    border-radius: 37px;
+    width: 46px;
+    height: 28px;
+    text-align: center;
+    transition-delay: 0.1s;
+    padding-top: 0px;
 @media screen and (max-width: 800px){
   .licnce_pck{height: auto;margin-top: 20px;width:48%;margin-right: 2%;} 
   .licnce_pck .fg_3_1{width:66.66%!important;}

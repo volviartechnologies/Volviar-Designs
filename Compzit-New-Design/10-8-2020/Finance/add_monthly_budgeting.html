@@ -575,10 +575,12 @@ function closeNav5() {
         </select>           
       </div>
 
-      <div class="fg2">
+      <div class="fg8">
         <label for="pwd" class="fg2_la1 nbsp1">&nbsp;</label>
         <button class="btn tab_but1 butn5"><i class=""></i> Create Budget</button>  
       </div>
+
+      
 
       <div class="clearfix"></div>
       <div class="devider"></div>
@@ -610,6 +612,11 @@ function closeNav5() {
                <td>
                  <div class="input-group t_bx">
                   <span class="input-group-addon cur5 cur_mnth" title="JANUARY" id="tdlc">JAN</span>
+
+                  <a href="#" class="pull-right apd1"  data-toggle="modal" data-target="#exampleModal_stm"  title="Incremental copying"><i class="fa fa-clone ad_fa ad_fa1 mar_dtl"></i></a>
+
+              <a href="#" class="pull-right"  data-toggle="modal" data-target="#exampleModal_stl"  title="Copy for all months"> <i class="fa fa-clipboard ad_fa18 mar_dtl" aria-hidden="true"></i></a>
+
                   <input id="email" type="text" class="form-control fg2_inp2 tr_r amt_1" name="email" placeholder="0.00" disabled="">
                 </div>
                 <div class="input-group t_bx">
@@ -802,6 +809,10 @@ function closeNav5() {
                <td>
                  <div class="input-group t_bx">
                   <span class="input-group-addon cur5 cur_mnth" title="JANUARY" id="tdlc">JAN</span>
+
+                  <a href="#" class="pull-right apd1"  data-toggle="modal" data-target="#exampleModal_stm"  title="Incremental copying"><i class="fa fa-clone ad_fa ad_fa1 mar_dtl"></i></a>
+
+              <a href="#" class="pull-right"  data-toggle="modal" data-target="#exampleModal_stl"  title="Copy for all months"> <i class="fa fa-clipboard ad_fa18 mar_dtl" aria-hidden="true"></i></a>
                   <input id="email" type="text" class="form-control fg2_inp2 tr_r amt_1" name="email" placeholder="0.00" disabled="">
                 </div>
                 <div class="input-group t_bx">
@@ -997,6 +1008,13 @@ function closeNav5() {
 <i class="fa fa-arrow-circle-left"></i>
 </a>
 
+<!---print_button--->
+<a href="#" type="button" class="cpy_frm_pv" data-toggle="modal" data-target="#exampleModal_st"  title="Copy from previous">
+  <i class="fa fa-files-o" aria-hidden="true"></i>
+
+</a>
+<!---print_button_closed--->
+
 <div class="footer" onclick="closeNav4(), closeNav5(), closeNav()">
   <p class="tr_l foot_l up_cs"><i class="ft_ico"><img src="../images/ft_ico.png"></i> FINANCE MANAGEMENT System</p>
   <p class="p_col1"><img src="../images/logo.png" class="img_foot"></p>
@@ -1006,6 +1024,92 @@ function closeNav5() {
 </div>
 
 <!----------------------------------------------Content_section_closed------------------------------------------------------------->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_st" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure to copy budget from previous year?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group fg4">
+            <label for="email" class="fg2_la1">Previous year:<span class="spn1"></span></label>
+            <select class="form-control fg2_inp1">
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+          </select> 
+          </div>
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn sub1" data-toggle="modal" data-target="#exampleModal1">Copy</button>
+        <button type="button" class="btn sub4" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_stm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure to copying this month budget value for all other months incrementally?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="form-group fg4 sa_fg1">
+                <label for="email" class="fg2_la1">Increment Percentage:<span class="spn1">*</span></label>
+                <input id="myinpc3" type="text" class="form-control fg2_inp1 inp_mst" id="email" placeholder="Increment Percentage" name="email">
+              </div>
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn sub1" data-toggle="modal" data-target="#exampleModal1">Copy</button>
+        <button type="button" class="btn sub4" data-dismiss="modal">Cancel</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal_stl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header mo_hd1">
+        <h5 class="modal-title" id="exampleModalLabel">Are you sure to copy this month budget value for all other months?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+       
+      </div>
+      <div class="modal-footer mo_ft1">
+        <button type="button" class="btn sub1" data-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">No</button>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
